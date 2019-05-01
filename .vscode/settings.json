@@ -1,0 +1,80 @@
+{
+  "search.exclude": {
+    "**/.nuxt": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "editor.autoIndent": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "[css]": {
+    "editor.formatOnSave": true,
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+  },
+  //
+  // Emmet
+  // -------------------------------------------------------
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "jsx-sublime-babel-tags": "javascriptreact",
+    "vue": "html",
+    "vue-html": "html"
+  },
+  //
+  // JS
+  // -------------------------------------------------------
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.options": {
+    "extensions": [
+      ".html",
+      ".js",
+      ".vue",
+      ".jsx"
+    ]
+  },
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  //
+  // Styles
+  // -------------------------------------------------------
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  //
+  // Vetur
+  // -------------------------------------------------------
+  "vetur.validation.template": false,
+  "vetur.validation.style": false,
+  "vetur.grammar.customBlocks": {
+    "page-query": "graphql",
+    "static-query": "graphql"
+  },
+  //
+  // Prettier
+  // -------------------------------------------------------
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.disableLanguages": []
+}

@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "octref.vetur",
+        "shinnn.stylelint",
+        "CoenraadS.bracket-pair-colorizer",
+        "wmaurer.change-case",
+        "mikestead.dotenv",
+        "christian-kohler.path-intellisense",
+        "redhat.vscode-yaml"
+    ]
+}

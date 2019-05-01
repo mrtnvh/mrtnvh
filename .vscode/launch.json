@@ -1,0 +1,48 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9000
+    },
+    {
+      "name": "Launch currently open script",
+      "type": "php",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "port": 9000
+    },
+    {
+      "name": "Listen for XDebug on Homestead",
+      "type": "php",
+      "request": "launch",
+      "pathMappings": {
+        "/home/vagrant/Code/omnitruck": "${workspaceRoot}"
+      },
+      "port": 9000
+    },
+    {
+      "name": "Debug Nuxt",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/node_modules/.bin/nuxt",
+      "stopOnEntry": false,
+      "args": [
+        "dev"
+      ],
+      "cwd": "${workspaceRoot}",
+      "sourceMaps": true,
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "nuxt:*,app"
+      }
+    }
+  ]
+}
