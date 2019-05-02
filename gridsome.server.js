@@ -6,7 +6,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = (/* api */) => {
-    // api.loadSource((store) => {
-    // // Use the Data store API here: https://gridsome.org/docs/data-store-api
-    // });
+	// api.loadSource((store) => {
+	// // Use the Data store API here: https://gridsome.org/docs/data-store-api
+	// });
 };

@@ -6,8 +6,9 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "stylelint": "stylelint --fix",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "stylelint": "stylelint --fix",
+    "stylelint-check": "stylelint-config-prettier-check",
     "release": "standard-version"
   },
   "dependencies": {
@@ -15,14 +16,16 @@
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^4.0.1",
+    "@wemake-services/stylelint-config-scss": "^0.1.4",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-gridsome": "^1.1.1",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.2.2",
+    "prettier": "^1.17.0",
     "stylelint": "^10.0.1",
-    "stylelint-config-shopify": "^7.2.1",
+    "stylelint-config-prettier": "^5.1.0",
     "stylelint-order": "^3.0.0",
     "vue-eslint-parser": "^6.0.4"
   }
