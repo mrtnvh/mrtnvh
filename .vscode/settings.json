@@ -76,5 +76,9 @@
   // -------------------------------------------------------
   "prettier.eslintIntegration": true,
   "prettier.stylelintIntegration": true,
-  "prettier.disableLanguages": []
+  "prettier.disableLanguages": [],
+  //
+  // Yaml
+  // -------------------------------------------------------
+  "yaml.format.enable": true,
 }

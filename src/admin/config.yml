@@ -1,0 +1,21 @@
+collections:
+  - name: "project"
+    label: "Projects"
+    folder: "project"
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
