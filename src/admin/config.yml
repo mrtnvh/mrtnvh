@@ -1,7 +1,8 @@
 site_url: https://mrtnvh.com
 backend:
-  name: "github"
-  repo: "mrtnvh/mrtnvh"
+  name: git-gateway
+  accept_roles:
+    - Admin
 media_folder: "static/media"
 public_folder: "media"
 collections:
