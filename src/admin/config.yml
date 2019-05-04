@@ -1,8 +1,16 @@
+site_url: https://mrtnvh.com
+backend:
+  name: "github"
+  repo: "mrtnvh/mrtnvh"
+media_folder: "static/media"
+public_folder: "media"
 collections:
   - name: "project"
     label: "Projects"
-    folder: "project"
+    folder: "content/project"
+    create: true
     slug: "{{slug}}"
+    identifier_field: "title"
     fields:
       - label: "Title"
         name: "title"
@@ -10,12 +18,15 @@ collections:
       - label: "Subtitle"
         name: "subtitle"
         widget: "string"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - label: "Color"
+        name: "color"
+        widget: "color"
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
         media_library:
           config:
             multiple: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

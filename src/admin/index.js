@@ -5,6 +5,6 @@
  */
 
 import CMS from "netlify-cms";
-import * as NativeColorWidget from "netlify-cms-widget-native-color";
+import * as ColorWidget from "netlify-cms-widget-color";
 
-CMS.registerWidget("native-color", NativeColorWidget.Control);
+CMS.registerWidget("color", ColorWidget.Control);
