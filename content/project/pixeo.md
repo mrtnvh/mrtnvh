@@ -1,3 +1,10 @@
+---
+title: Pixeo
+subtitle: Web agency
+thumbnail: 
+color: 85FFFF
+---
+
 ## Whois Pixeo
 
 [Pixeo](https://pixeo.be) from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.
