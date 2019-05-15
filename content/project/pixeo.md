@@ -3,6 +3,7 @@ title: Pixeo
 subtitle: Web agency
 thumbnail: 
 color: 85FFFF
+current: false
 ---
 
 ## Whois Pixeo
