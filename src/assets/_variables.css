@@ -1,0 +1,12 @@
+:root {
+	--dark: rgb(0, 0, 0);
+	--light: rgb(255, 255, 255);
+	--space: 1.5rem;
+	--font-family: "Helvetica Now Text";
+	--line-height: 1.5;
+	--headings-font-family: "Helvetica Now Display";
+	--headings-color: var(--dark);
+	--headings-font-weight: 900;
+	--stroke-width: 1px;
+	--stroke-color: var(--dark);
+}

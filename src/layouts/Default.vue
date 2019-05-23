@@ -1,55 +1,56 @@
 <template>
 	<div class="layout">
 		<header class="header">
-			<strong>
-				<g-link to="/">{{ $static.metaData.siteName }}</g-link>
-			</strong>
-			<nav class="nav">
-				<g-link class="nav__link" to="/">
-					Home
-				</g-link>
-				<g-link class="nav__link" to="/about">
-					About
-				</g-link>
-			</nav>
+			<brand />
+			<nav class="nav">Social link</nav>
+			<nav class="nav">Social link</nav>
+			<nav class="nav">Social link</nav>
 		</header>
-		<slot />
+		<main>
+			<slot />
+		</main>
+		<footer>
+			&copy; Maarten Van Hoof
+		</footer>
 	</div>
 </template>
 
-<static-query>
-query {
-  metaData {
-    siteName
-  }
-}
-</static-query>
+<script>
+import Brand from "~/components/Brand.vue";
+
+export default {
+	components: {
+		Brand,
+	},
+};
+</script>
 
 <style>
-:root {
-	--font-family: "Helvetica Neue";
-}
-
 body {
 	font-family: var(--font-family);
+	color: var(--dark);
+	background: var(--light);
 	margin: 0;
 	padding: 0;
-	line-height: 1.5;
+	line-height: var(--line-height);
 }
 
 .layout {
-	max-width: 760px;
-	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
-	height: 80px;
+	padding: 0 var(--space);
+}
+
+main {
+	flex-grow: 1;
 }
 
 .nav__link {

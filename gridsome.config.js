@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const pkg = require("./package.json");
+const postcssConfig = require("./postcss.config");
 
 module.exports = {
 	siteName: pkg.name,
@@ -12,6 +13,12 @@ module.exports = {
 	siteDescription: pkg.description,
 
 	titleTemplate: "%s - Maarten Van Hoof",
+
+	css: {
+		loaderOptions: {
+			postcss: postcssConfig,
+		},
+	},
 
 	transformers: {
 		remark: {
