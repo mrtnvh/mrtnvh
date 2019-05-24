@@ -1,20 +1,26 @@
 <template>
-	<g-link to="/" class="brand">
+	<g-link :class="{ desktop: $eq.desktop }" to="/" class="brand">
 		<div class="name firstname">Maarten</div>
 		<div class="name lastname">Van Hoof</div>
 	</g-link>
 </template>
 
 <script>
-export default {};
+export default {
+	eq: {
+		breakpoints: {
+			desktop: { minWidth: 300 },
+		},
+	},
+};
 </script>
 
 <style scoped>
 .brand {
-	--brand-font-size: 4.5rem;
+	--brand-font-size: 5vw;
 	--firstname-z-index: 2;
 	--lastname-z-index: 1;
-	--brand-animation-constant: 0.75rem;
+	--brand-animation-constant: 10%;
 
 	color: var(--headings-color);
 	font-family: var(--headings-font-family);
@@ -23,6 +29,10 @@ export default {};
 	position: relative;
 	text-transform: uppercase;
 	text-decoration: none;
+
+	@media (min-width: 1400px) {
+		--brand-font-size: 4.5rem;
+	}
 }
 
 .name {

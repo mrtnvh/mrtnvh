@@ -1,12 +1,36 @@
 :root {
+	/**
+	* Colors
+	*/
 	--dark: rgb(0, 0, 0);
 	--light: rgb(255, 255, 255);
+
+	/**
+	* Spacing
+	*/
 	--space: 1.5rem;
+	--grid-gap: calc(var(--space) * 2);
+
+	/**
+	* Fonts
+	*/
 	--font-family: "Helvetica Now Text";
 	--line-height: 1.5;
 	--headings-font-family: "Helvetica Now Display";
 	--headings-color: var(--dark);
 	--headings-font-weight: 900;
+
+	/**
+	* Strokes
+	*/
 	--stroke-width: 1px;
 	--stroke-color: var(--dark);
+
+	/**
+	* Media queries
+	*/
+	--screen-small: 480px;
+	--screen-medium: 764px;
+	--screen-large: 1200px;
+	--screen-extra-large: 1440px;
 }

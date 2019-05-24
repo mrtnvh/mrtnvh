@@ -4,4 +4,7 @@ module.exports = {
 		"stylelint-config-prettier",
 	],
 	plugins: ["stylelint-order"],
+	rules: {
+		"scss/media-feature-value-dollar-variable": null,
+	},
 };
