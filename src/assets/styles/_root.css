@@ -6,3 +6,7 @@ body {
 	padding: 0;
 	line-height: var(--line-height);
 }
+
+svg {
+	fill: currentColor;
+}

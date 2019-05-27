@@ -1,15 +1,17 @@
+/* stylelint-disable no-duplicate-selectors */
+
 :root {
 	/**
 	* Colors
 	*/
-	--dark: rgb(0, 0, 0);
-	--light: rgb(255, 255, 255);
-
-	/**
-	* Spacing
-	*/
-	--space: 1.5rem;
-	--grid-gap: calc(var(--space) * 2);
+	--dark: hsla(0, 0%, 0%, 1);
+	--grey: hsla(0, 0%, 50%, 1);
+	--grey-light: hsla(0, 0%, 90%, 1);
+	--light: hsla(0, 0%, 100%, 1);
+	--primary: hsla(85, 100%, 50%, 1);
+	--primary-dark: hsla(85, 100%, 20%, 1);
+	--github: hsla(134, 62%, 51%, 1);
+	--twitter: hsla(206, 89%, 59%, 1);
 
 	/**
 	* Fonts
@@ -33,4 +35,24 @@
 	--screen-medium: 764px;
 	--screen-large: 1200px;
 	--screen-extra-large: 1440px;
+
+	/**
+	* Animations
+	*/
+	--animation-timing-function: cubic-bezier(0.75, -0.5, 0.25, 1.5);
+}
+
+/**
+* Spacing
+*/
+:root {
+	--space: 1rem;
+	--grid-gap: calc(var(--space) / 2);
+
+	@media (min-width: 700px) {
+		--grid-gap: calc(var(--space));
+	}
+	@media (min-width: 1200px) {
+		--grid-gap: calc(var(--space) * 2);
+	}
 }

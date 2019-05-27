@@ -6,11 +6,13 @@
 			<a href="https://isaac.nl" target="_blank" rel="noopener">ISAAC</a>
 			<span> in Eindhoven</span>
 		</div>
-		<a href="/">About me</a>
+		<div>
+			<a href="/">About me</a>
+		</div>
 		<div class="social">
-			<button @click="handleMailClick" class="reset"><email /></button>
-			<a href="/"><github /></a>
-			<a href="/"><twitter /></a>
+			<button @click="handleMailClick" class="reset link"><email /></button>
+			<a href="/" class="github"><github /></a>
+			<a href="/" class="twitter"><twitter /></a>
 		</div>
 	</nav>
 </template>
@@ -42,11 +44,13 @@ export default {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: calc(var(--space) * 2);
+	padding-bottom: calc(var(--space) * 2);
 
 	@media (min-width: 1400px) {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr 1fr;
-		grid-gap: var(--grid-gap);
+		grid-column-gap: var(--grid-gap);
 	}
 }
 

@@ -19,6 +19,7 @@ export default {
 .brand {
 	--brand-font-size: 5vw;
 	--firstname-z-index: 2;
+	--firstname-letter-spacing: 0.25vw;
 	--lastname-z-index: 1;
 	--brand-animation-constant: 10%;
 
@@ -30,45 +31,53 @@ export default {
 	text-transform: uppercase;
 	text-decoration: none;
 
+	&::before,
+	&::after {
+		display: none;
+	}
+
 	@media (min-width: 1400px) {
-		--brand-font-size: 4.5rem;
+		--brand-font-size: 3.75rem;
 	}
 }
 
 .name {
 	white-space: nowrap;
 	line-height: 1;
-	transition: transform 0.33s cubic-bezier(0.75, -0.5, 0.25, 1.5);
+	transition: transform 0.33s;
+	transition-timing-function: var(--animation-timing-function);
 }
 
 .firstname {
 	position: relative;
 	z-index: var(--firstname-z-index);
-	letter-spacing: 0.25rem;
+	letter-spacing: var(--firstname-letter-spacing);
+	transform: translate(0, -25%);
 
 	.brand:hover &,
 	.brand:focus & {
 		transform: translate(
-			calc(var(--brand-animation-constant) * 0.25),
-			calc(var(--brand-animation-constant) * -1)
+			calc(var(--brand-animation-constant) * 0),
+			calc(var(--brand-animation-constant) * -3.75)
 		);
 	}
 }
 
 .lastname {
 	position: absolute;
-	top: 50%;
-	left: 5%;
+	top: 0;
+	left: 1%;
 	z-index: var(--lastname-z-index);
 	color: transparent;
 	-webkit-text-stroke: var(--stroke-width) var(--stroke-color);
+	transform: translate(
+		calc(var(--brand-animation-constant) * 1),
+		calc(var(--brand-animation-constant) * 3)
+	);
 
 	.brand:hover &,
 	.brand:focus & {
-		transform: translate(
-			calc(var(--brand-animation-constant) * -1),
-			calc(var(--brand-animation-constant) * 1)
-		);
+		transform: translate(0, calc(var(--brand-animation-constant) * 5));
 	}
 }
 </style>

@@ -1,0 +1,72 @@
+a,
+button.link {
+	--link-hover-color: var(--primary-dark);
+	--link-transition-speed: 0.5s;
+	--underline-z-index: -2;
+	--underline-background-color: var(--grey-light);
+	--underline-height: 0.5rem;
+	--underline-position-left: 0.5rem;
+	--underline-position-bottom: 0.125rem;
+	--underline-position-width: calc(
+		100% - (var(--underline-position-left) / 2)
+	);
+	--underline-hover-z-index: -1;
+	--underline-hover-background-color: var(--primary);
+	--underline-animation-timing-function: var(--animation-timing-function);
+
+	color: var(--dark);
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	transition: color var(--link-transition-speed);
+
+	svg {
+		fill: currentColor !important;
+		transition: fill var(--link-transition-speed);
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		bottom: var(--underline-position-bottom);
+		left: var(--underline-position-left);
+		width: var(--underline-position-width);
+		height: var(--underline-height);
+		background-color: var(--underline-background-color);
+		content: "";
+		z-index: var(--underline-z-index);
+		transform-origin: 0 0;
+		transition: opacity var(--link-transition-speed);
+		opacity: 1;
+	}
+
+	&::after {
+		opacity: 0.5;
+		z-index: var(--underline-hover-z-index);
+		background-color: var(--underline-hover-background-color);
+		transform: scaleX(0);
+		transition: transform var(--link-transition-speed);
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--link-hover-color);
+		&::before {
+			opacity: 0;
+		}
+
+		&::after {
+			transform: scaleX(1);
+		}
+	}
+
+	&.github {
+		--link-hover-color: var(--github);
+		--underline-hover-background-color: var(--github);
+	}
+
+	&.twitter {
+		--link-hover-color: var(--twitter);
+		--underline-hover-background-color: var(--twitter);
+	}
+}
