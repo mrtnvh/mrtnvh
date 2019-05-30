@@ -8,7 +8,6 @@ module.exports = {
 		require("postcss-url"),
 		require("autoprefixer")({
 			cascade: false,
-			grid: true,
 		}),
 		require("postcss-preset-env")({
 			stage: 0,

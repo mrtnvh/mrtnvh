@@ -3,6 +3,7 @@
 import VueElementQuery from "vue-element-query";
 
 import DefaultLayout from "./layouts/Default.vue";
+import "normalize.css";
 import "./assets/styles/app.css";
 
 export default function(Vue /* , { router, head, isClient } */) {

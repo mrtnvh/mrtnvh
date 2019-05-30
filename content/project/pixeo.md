@@ -1,7 +1,7 @@
 ---
 title: Pixeo
 subtitle: Web agency
-thumbnail: 
+thumbnail: "/media/pixeo.jpg" 
 color: 85FFFF
 current: false
 ---

@@ -70,3 +70,10 @@ button.link {
 		--underline-hover-background-color: var(--twitter);
 	}
 }
+
+a.reset {
+	&::before,
+	&::after {
+		display: none;
+	}
+}

@@ -1,7 +1,7 @@
 ---
 title: RockXXL
 subtitle: Loud Noise Community
-thumbnail: 
+thumbnail: "/media/rockxxl.jpg"
 color: FF4E4E
 current: false
 ---

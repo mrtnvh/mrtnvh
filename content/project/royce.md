@@ -1,9 +1,9 @@
 ---
 title: Royce
 subtitle: Metal
-thumbnail: 
+thumbnail: "/media/royce.jpg"
 color: FF005C
-current: false
+current: true
 ---
 
 Guitarist, producer, management, booking & founding member of Belgian metalcore formation, [Royce](https://roycetheband.com).

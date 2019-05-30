@@ -1,7 +1,7 @@
 ---
 title: ISAAC
 subtitle: Fullservice Digital Agency
-thumbnail: 
+thumbnail: "/media/isaac.jpg"
 color: FF4E4E
 current: true
 ---

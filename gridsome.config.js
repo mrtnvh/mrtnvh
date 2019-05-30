@@ -16,17 +16,6 @@ module.exports = {
 		},
 	},
 
-	transformers: {
-		remark: {
-			externalLinksTarget: "_blank",
-			externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-			anchorClassName: "icon icon-link",
-			plugins: [
-				// ...global plugins
-			],
-		},
-	},
-
 	plugins: [
 		{
 			use: `gridsome-plugin-netlify-cms`,
@@ -37,36 +26,23 @@ module.exports = {
 		{
 			use: "@gridsome/source-filesystem",
 			options: {
-				path: "project/**/*.md",
+				path: "content/project/**/*.md",
 				typeName: "Project",
-				remark: {
-					plugins: [
-						// ...local plugins
-					],
-				},
+				route: "/projects/:slug",
 			},
 		},
 	],
 
-	// configureWebpack(config) {
-	// 	const newConfig = {
-	// 		module: {
-	// 			rules: [
-	// 				{
-	// 					test: /\.svg$/,
-	// 					use: [
-	// 						"vue-loader",
-	// 						{
-	// 							loader: "svg-to-vue-component/loader",
-	// 						},
-	// 					],
-	// 				},
-	// 			],
-	// 		},
-	// 	};
-
-	// 	return merge(newConfig, config);
-	// },
+	transformers: {
+		remark: {
+			externalLinksTarget: "_blank",
+			externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+			anchorClassName: "icon icon-link",
+			plugins: [
+				// ...global plugins
+			],
+		},
+	},
 
 	chainWebpack: config => {
 		// Only convert .svg files that are imported by these files as Vue component

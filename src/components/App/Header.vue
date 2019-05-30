@@ -60,6 +60,7 @@ export default {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr 1fr;
 		grid-template-rows: 1fr;
+		align-items: end;
 	}
 }
 
