@@ -1,16 +1,18 @@
 <template>
 	<nav class="header container">
-		<brand />
-		<div>
+		<brand class="brand" />
+		<div class="subtitle">
 			<span>Front-end developer at </span>
 			<a href="https://isaac.nl" target="_blank" rel="noopener">ISAAC</a>
 			<span> in Eindhoven</span>
 		</div>
-		<div>
+		<div class="about">
 			<a href="/">About me</a>
 		</div>
 		<div class="social">
-			<button @click="handleMailClick" class="reset link"><email /></button>
+			<button @click="handleMailClick" class="reset link">
+				<email />
+			</button>
 			<a href="/" class="github"><github /></a>
 			<a href="/" class="twitter"><twitter /></a>
 		</div>
@@ -41,29 +43,63 @@ export default {
 
 <style scoped>
 .header {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr 1.5fr;
 	align-items: center;
-	padding-top: calc(var(--space) * 2);
-	padding-bottom: calc(var(--space) * 2);
+	padding-top: calc(var(--grid-gap));
+	padding-bottom: calc(var(--grid-gap));
+	font-size: var(--font-size-sm);
+	grid-column-gap: var(--grid-gap);
+
+	@media (min-width: 800px) {
+		font-size: var(--font-size-base);
+	}
 
 	@media (min-width: 1400px) {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr 1fr;
-		grid-column-gap: var(--grid-gap);
+		grid-template-rows: 1fr;
 	}
+}
+
+.brand {
+	grid-area: 1 / 1 / 3 / 3;
+	margin-top: calc(var(--space) / -3);
+
+	@media (min-width: 1400px) {
+		margin-top: 0;
+	}
+}
+
+.subtitle {
+	grid-area: 1 / 3 / 2 / 7;
+	align-self: end;
+}
+
+.about {
+	grid-area: 2 / 3 / 3 / 5;
 }
 
 .social {
 	display: flex;
 	justify-content: flex-end;
+	grid-area: 2 / 5 / 3 / 7;
 
+	button,
 	a {
-		margin-left: var(--grid-gap);
+		line-height: 0;
+		margin: calc(var(--space) / 2) calc(var(--space));
 	}
 }
 
-.nav__link {
-	margin-left: 20px;
+.brand,
+.subtitle,
+.about,
+.social {
+	@media (min-width: 1400px) {
+		grid-area: auto;
+		align-self: auto;
+	}
 }
 </style>

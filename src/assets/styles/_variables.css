@@ -16,6 +16,14 @@
 	/**
 	* Fonts
 	*/
+	--font-size-root: 14px;
+	--font-size-sm: 0.8rem;
+	--font-size-base: 1rem;
+	--font-size-lg: 1.25rem;
+	--font-size-xl: 1.563rem;
+	--font-size-2xl: 1.953rem;
+	--font-size-3xl: 2.441rem;
+	--font-size-4xl: 3.052rem;
 	--font-family: "Helvetica Now Text";
 	--line-height: 1.5;
 	--headings-font-family: "Helvetica Now Display";

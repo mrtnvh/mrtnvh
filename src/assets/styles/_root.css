@@ -1,4 +1,9 @@
+html {
+	font-size: var(--font-size-root);
+}
+
 body {
+	font-size: 1rem; /* stylelint-disable-line */
 	font-family: var(--font-family);
 	color: var(--dark);
 	background: var(--light);

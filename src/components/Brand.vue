@@ -36,7 +36,7 @@ export default {
 		display: none;
 	}
 
-	@media (min-width: 1400px) {
+	@media (min-width: 950px) {
 		--brand-font-size: 3.75rem;
 	}
 }
