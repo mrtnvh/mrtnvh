@@ -1,19 +1,16 @@
 <template>
 	<Layout>
-		<PageSection title="Projects">
-			<SubSection title="Current">
-				<Projects v-model="currentProjects" class="projects" />
-			</SubSection>
-			<SubSection title="Previous">
-				<Projects v-model="previousProjects" class="projects" />
-			</SubSection>
-		</PageSection>
+		<Section title="Current" title-small="projects">
+			<Projects v-model="currentProjects" class="projects" />
+		</Section>
+		<Section title="Previous" title-small="projects">
+			<Projects v-model="previousProjects" class="projects" />
+		</Section>
 	</Layout>
 </template>
 
 <script>
-import PageSection from "~/components/Page/Section.vue";
-import SubSection from "~/components/Page/SubSection.vue";
+import Section from "~/components/Page/Section.vue";
 import Projects from "~/components/Project/List.vue";
 
 export default {
@@ -22,7 +19,7 @@ export default {
 		titleTemplate: "",
 	},
 
-	components: { Projects, PageSection, SubSection },
+	components: { Projects, Section },
 
 	computed: {
 		projects() {

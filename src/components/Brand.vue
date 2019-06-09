@@ -1,7 +1,7 @@
 <template>
 	<g-link :class="{ desktop: $eq.desktop }" to="/" class="brand">
 		<div class="name firstname">Maarten</div>
-		<div class="name lastname">Van Hoof</div>
+		<div class="name lastname outline">Van Hoof</div>
 	</g-link>
 </template>
 
@@ -68,8 +68,6 @@ export default {
 	top: 0;
 	left: 1%;
 	z-index: var(--lastname-z-index);
-	color: transparent;
-	-webkit-text-stroke: var(--stroke-width) var(--stroke-color);
 	transform: translate(
 		calc(var(--brand-animation-constant) * 1),
 		calc(var(--brand-animation-constant) * 3)

@@ -26,6 +26,7 @@
 	--font-size-4xl: 3.052rem;
 	--font-family: "Helvetica Now Text";
 	--line-height: 1.5;
+	--line-height-sm: 1.225;
 	--headings-font-family: "Helvetica Now Display";
 	--headings-color: var(--dark);
 	--headings-font-weight: 900;
@@ -55,12 +56,12 @@
 */
 :root {
 	--space: 1rem;
-	--grid-gap: calc(var(--space) / 2);
+	--grid-gap: calc(var(--space));
 
 	@media (min-width: 700px) {
-		--grid-gap: calc(var(--space));
+		--grid-gap: calc(var(--space) * 2);
 	}
 	@media (min-width: 1200px) {
-		--grid-gap: calc(var(--space) * 2);
+		--grid-gap: calc(var(--space) * 4);
 	}
 }

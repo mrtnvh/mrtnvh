@@ -1,5 +1,6 @@
 a,
 button.link {
+	--link-color: var(--dark);
 	--link-hover-color: var(--primary-dark);
 	--link-transition-speed: 0.5s;
 	--underline-z-index: -2;
@@ -14,11 +15,12 @@ button.link {
 	--underline-hover-background-color: var(--primary);
 	--underline-animation-timing-function: var(--animation-timing-function);
 
-	color: var(--dark);
+	color: var(--link-color);
 	text-decoration: none;
 	position: relative;
 	display: inline-block;
-	transition: color var(--link-transition-speed);
+
+	/* transition: color var(--link-transition-speed); */
 
 	svg {
 		fill: currentColor !important;
