@@ -5,6 +5,8 @@
 :--headings {
 	margin: 0;
 	margin-bottom: var(--space);
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 h1,

@@ -20,6 +20,10 @@ figure {
 	margin: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 .clear-inner-spacing {
 	> *:first-child { margin-top: 0 !important; }
 	> *:last-child { margin-top: 0 !important; }

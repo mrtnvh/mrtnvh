@@ -29,7 +29,7 @@ collections:
           config:
             multiple: false
       - label: "Body"
-        name: "body"
+        name: "content"
         widget: "markdown"
       - label: "Date published"
         name: "datePublished"
