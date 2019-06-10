@@ -31,3 +31,8 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+      - label: "Date published"
+        name: "datePublished"
+        widget: "date"
+        default: ""
+        format: "YYYYMMDD"

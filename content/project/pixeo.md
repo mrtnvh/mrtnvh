@@ -4,6 +4,7 @@ subtitle: Web agency
 thumbnail: "/media/pixeo.jpg" 
 color: 85FFFF
 current: false
+datePublished: 20130101
 ---
 
 ## Whois Pixeo

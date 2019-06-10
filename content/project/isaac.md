@@ -4,6 +4,7 @@ subtitle: Fullservice Digital Agency
 thumbnail: "/media/isaac.jpg"
 color: FF4E4E
 current: true
+datePublished: 20190520
 ---
 
 ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions.

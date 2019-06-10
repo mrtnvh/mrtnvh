@@ -4,6 +4,7 @@ subtitle: Loud Noise Community
 thumbnail: "/media/rockxxl.jpg"
 color: FF4E4E
 current: false
+datePublished: 20190105
 ---
 
 RockXXL is an organization that deals with webzine and blog and with the rock and metal world in general (with a nod to Belgium in particular!). As an organization we have the goal to put smaller, Belgian bands in the spotlight by using. reviews, interviews, live reports, shows ... Of course we not only stay with the smaller underground bands but also the established values ​​get the attention they deserve. RockXXL runs 100% on volunteers and has almost no fixed stream of income. It is run by people with a passion for the alternative genre. 
