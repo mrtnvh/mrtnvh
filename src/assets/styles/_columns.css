@@ -1,0 +1,6 @@
+.column-lg-2 {
+	@media (min-width: 1200px) {
+		column-count: 2;
+		column-gap: var(--grid-gap);
+	}
+}

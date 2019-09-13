@@ -30,6 +30,7 @@
 	--font-family: "Helvetica Now Text";
 	--line-height: 1.5;
 	--line-height-sm: 1.225;
+	--line-height-xxs: 0.75;
 	--headings-font-family: "Helvetica Now Display";
 	--headings-color: var(--dark);
 	--headings-font-weight: 900;

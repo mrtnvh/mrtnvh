@@ -54,12 +54,7 @@ export default {
 
 <style>
 #project .body > section {
-	padding-bottom: var(--grid-gap);
-
-	@media (min-width: 1200px) {
-		column-count: 2;
-		column-gap: var(--grid-gap);
-	}
+	margin-bottom: var(--grid-gap);
 }
 </style>
 
@@ -86,6 +81,7 @@ export default {
 .title {
 	font-size: var(--font-size-7xl);
 	text-transform: uppercase;
+	line-height: var(--line-height-xxs);
 }
 
 .media {
