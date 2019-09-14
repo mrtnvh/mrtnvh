@@ -5,7 +5,10 @@
 			Build with
 			<a href="https://gridsome.org/" rel="noopener" target="_blank"
 				>Gridsome</a
-			>. Hosted on Netlify.
+			>. Hosted on
+			<a href="https://www.netlify.com/" rel="noopener" target="_blank"
+				>Netlify</a
+			>.
 		</div>
 		<div class="peace"><Peace /></div>
 	</footer>
