@@ -60,28 +60,28 @@ export default {
 
 <style scoped>
 .container {
+	padding-top: calc(var(--grid-gap));
+	padding-bottom: calc(var(--grid-gap));
+
 	@media (min-width: 800px) {
 		display: grid;
-		grid-template-columns: 2fr 2fr 1fr 1fr;
+		grid-template-columns: 30.5% 69.5%;
 		grid-column-gap: var(--grid-gap);
-		padding-top: calc(var(--grid-gap) / 2);
-		padding-bottom: calc(var(--grid-gap) / 2);
+		width: calc(100% - (var(--grid-gap)));
 	}
-}
-
-.content {
-	grid-area: auto / 2 / auto / 5;
 }
 
 .sticky {
 	position: sticky;
-	top: 3rem;
+	z-index: var(--project-header-zindex);
+	top: var(--project-header-top-position);
 }
 
 .title {
-	font-size: var(--font-size-7xl);
+	font-size: var(--project-title-size);
+	margin: var(--project-title-margin);
 	text-transform: uppercase;
-	line-height: var(--line-height-xxs);
+	line-height: 0.75em;
 }
 
 .media {

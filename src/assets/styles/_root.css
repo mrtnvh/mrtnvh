@@ -1,12 +1,19 @@
 html {
 	font-size: var(--font-size-root);
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 body {
 	font-size: 1rem; /* stylelint-disable-line */
 	font-family: var(--font-family);
-	color: var(--dark);
-	background: var(--light);
+	color: var(--text-color);
+	background: var(--background-color);
 	margin: 0;
 	padding: 0;
 	line-height: var(--line-height);

@@ -3,7 +3,7 @@
 		<brand class="brand" />
 		<div class="subtitle">
 			<span>Front-end developer at </span>
-			<a href="https://isaac.nl" target="_blank" rel="noopener">ISAAC</a>
+			<a href="https://isaac.nl" target="_blank" rel="noopener" class="isaac">ISAAC</a>
 			<span> in Eindhoven</span>
 		</div>
 		<div class="about">
@@ -51,6 +51,7 @@ export default {
 	padding-bottom: calc(var(--grid-gap));
 	font-size: var(--font-size-sm);
 	grid-column-gap: var(--grid-gap);
+	border-bottom: 1px solid var(--grey);
 
 	@media (min-width: 800px) {
 		font-size: var(--font-size-base);

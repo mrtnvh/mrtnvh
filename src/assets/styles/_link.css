@@ -1,8 +1,9 @@
 a,
 button.link {
-	--link-color: var(--dark);
-	--link-hover-color: var(--primary-dark);
-	--link-transition-speed: 0.5s;
+	--link-color: var(--text-color);
+	--link-hover-color: var(--primary);
+	--link-transition-speed: 0.15s;
+	--link-text-decoration: underline;
 	--underline-z-index: -2;
 	--underline-background-color: var(--grey-light);
 	--underline-height: 0.5rem;
@@ -16,50 +17,20 @@ button.link {
 	--underline-animation-timing-function: var(--animation-timing-function);
 
 	color: var(--link-color);
-	text-decoration: none;
+	text-decoration: var(--link-text-decoration);
 	position: relative;
 	display: inline-block;
 
-	/* transition: color var(--link-transition-speed); */
+	transition: color var(--link-transition-speed);
 
 	svg {
 		fill: currentColor !important;
 		transition: fill var(--link-transition-speed);
 	}
 
-	&::before,
-	&::after {
-		position: absolute;
-		bottom: var(--underline-position-bottom);
-		left: var(--underline-position-left);
-		width: var(--underline-position-width);
-		height: var(--underline-height);
-		background-color: var(--underline-background-color);
-		content: "";
-		z-index: var(--underline-z-index);
-		transform-origin: 0 0;
-		transition: opacity var(--link-transition-speed);
-		opacity: 1;
-	}
-
-	&::after {
-		opacity: 0.5;
-		z-index: var(--underline-hover-z-index);
-		background-color: var(--underline-hover-background-color);
-		transform: scaleX(0);
-		transition: transform var(--link-transition-speed);
-	}
-
 	&:hover,
 	&:focus {
 		color: var(--link-hover-color);
-		&::before {
-			opacity: 0;
-		}
-
-		&::after {
-			transform: scaleX(1);
-		}
 	}
 
 	&.github {
@@ -70,6 +41,11 @@ button.link {
 	&.twitter {
 		--link-hover-color: var(--twitter);
 		--underline-hover-background-color: var(--twitter);
+	}
+
+	&.isaac {
+		--link-hover-color: var(--isaac);
+		--underline-hover-background-color: var(--isaac);
 	}
 }
 

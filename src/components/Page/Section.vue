@@ -32,13 +32,14 @@ section {
 	position: relative;
 	padding-top: calc(var(--grid-gap) * 2);
 	padding-bottom: calc(var(--grid-gap) * 2);
+	border-bottom: 1px solid var(--grey);
 
 	@media (min-width: 800px) {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr 1fr;
 		grid-column-gap: var(--grid-gap);
-		padding-top: calc(var(--grid-gap) / 2);
-		padding-bottom: calc(var(--grid-gap) / 2);
+		padding-top: calc(var(--grid-gap));
+		padding-bottom: calc(var(--grid-gap));
 	}
 }
 

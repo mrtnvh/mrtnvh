@@ -45,6 +45,7 @@ export default {
 .link {
 	--link-color: var(--dark);
 	--link-hover-color: var(--dark);
+	--link-text-decoration: none;
 }
 
 .content {
