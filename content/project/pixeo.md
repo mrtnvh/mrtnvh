@@ -8,7 +8,7 @@ datePublished: 20130101
 ---
 
 ## Whois Pixeo
-<div class="column-lg-2">
+<div class="column-lg-2 column-xxl-3">
 
 [Pixeo](https://pixeo.be) from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.
 
@@ -18,7 +18,7 @@ Due to the size of Pixeo, at most 6 people, we could behave like a startup. The 
 </div>
 
 ## [Evenementenkluis](https://mol.evenementenkluis.be)
-<div class="column-lg-2">
+<div class="column-lg-2 column-xxl-3">
 This project began at the end of 2017. The Evenementenkluis (roughly translated the "Event Vault") is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time.
 
 With the help of a few simple multiple choice questions, organizers can get the necessary form, fill it in online and submit it. The competent authorities can provide their own specialized advice per form. Depending on these recommendations, an organizer can make the necessary changes in time before the start of the event.
@@ -36,7 +36,7 @@ You can visit this platform at mol.evenementenkluis.be and evenementen.balen.be.
 
 
 ## Omnitruck
-<div class="column-lg-2">
+<div class="column-lg-2 column-xxl-3">
 In the summer of 2018 I was commissioned to develop a knowledge-base for a logistics/transport company, codenamed Omnitruck.
 
 The purpose of this platform is to provide a fast, easy and digital documentation platform for all their drivers.

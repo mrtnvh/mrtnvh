@@ -4,3 +4,17 @@
 		column-gap: var(--grid-gap);
 	}
 }
+
+.column-xxl-2 {
+	@media (min-width: 1200px) {
+		column-count: 2;
+		column-gap: var(--grid-gap);
+	}
+}
+
+.column-xxl-3 {
+	@media (min-width: 1920px) {
+		column-count: 3;
+		column-gap: var(--grid-gap);
+	}
+}
