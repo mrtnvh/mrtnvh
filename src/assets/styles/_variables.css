@@ -12,7 +12,7 @@
 	--primary-dark: hsla(85, 100%, 20%, 1);
 	--github: hsla(134, 62%, 51%, 1);
 	--twitter: hsla(206, 89%, 59%, 1);
-	--isaac: #00b6ff;
+	--isaac: rgb(0, 182, 255);
 	--text-color: var(--dark);
 	--background-color: var(--light);
 
@@ -84,6 +84,6 @@
 
 	@media (min-width: 800px) {
 		--project-title-size: 15vw;
-		--project-title-margin: var(--grid-gap) 0 1rem -0.05em;
+		--project-title-margin: 0 0 1rem -0.05em;
 	}
 }

@@ -7,10 +7,16 @@ current: true
 datePublished: 20190520
 ---
 
-ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions.
+<div class="intro mb-4">
 
-ISAAC excels at e-commerce, e-finance, Artificial Intelligence & Virtual Reality. With focus on technique, usability, safety and robustness, ISAAC delivers value for their clients as for the end user.
+ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence & Virtual Reality.
+
+</div>
+
+<div class="column-lg-2 column-xxl-3 mb-4">
+
+Starting in May 2019, I've joined their front-end team in building awesome web-experiences.
 
 They've ~~weilded Mjolnir~~ proven their skills by being crowned **#1 Fullservice Digital Agency** 2 consecutive years in a row in 2018 and 2019.
 
-Starting from May 2019, I will be joining their front-end team in building awesome web-experiences.
+</div>

@@ -7,18 +7,24 @@ current: false
 datePublished: 20130101
 ---
 
-## Whois Pixeo
-<div class="column-lg-2 column-xxl-3">
+<div class="intro mb-4">
 
 [Pixeo](https://pixeo.be) from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.
+
+</div>
+
+<div class="column-lg-2 column-xxl-3 mb-4">
 
 I started at Pixeo in 2013 ago as a Junior Front-end Developer with the main task of designing and building websites. Over the years I have been able to contribute to a whole smörgåsbord of projects, often as a Lead Front-end Developer.
 
 Due to the size of Pixeo, at most 6 people, we could behave like a startup. The tech stack of Pixeo has changed drastically over the course of our mutual career. Every new technology popping up was viewed with a critical eye, assessed as to whether it benefits our daily workflow, tested and depending on the results, implemented as quickly as possible.
+
 </div>
 
-## [Evenementenkluis](https://mol.evenementenkluis.be)
-<div class="column-lg-2 column-xxl-3">
+## Evenementenkluis
+
+<div class="column-lg-2 column-xxl-3 mb-4">
+
 This project began at the end of 2017. The Evenementenkluis (roughly translated the "Event Vault") is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time.
 
 With the help of a few simple multiple choice questions, organizers can get the necessary form, fill it in online and submit it. The competent authorities can provide their own specialized advice per form. Depending on these recommendations, an organizer can make the necessary changes in time before the start of the event.
@@ -32,11 +38,14 @@ Since September 2018 we have been in production with v1.0.0 of the Event Safe in
 Shortly after the release of v1.0.0, my function within the project was briefly changed to following up on incoming feedback, bugs and feature requests. A.h.v. screenshots or video replays of the relevant feedback, I pass this on as clearly as possible to my fellow developers via the GitLab issue boards. I consult with the team on how we can implement new features in the most usable and efficient way.
 
 You can visit this platform at mol.evenementenkluis.be and evenementen.balen.be.
+
 </div>
 
 
 ## Omnitruck
-<div class="column-lg-2 column-xxl-3">
+
+<div class="column-lg-2 column-xxl-3 mb-4">
+
 In the summer of 2018 I was commissioned to develop a knowledge-base for a logistics/transport company, codenamed Omnitruck.
 
 The purpose of this platform is to provide a fast, easy and digital documentation platform for all their drivers.
@@ -54,6 +63,7 @@ I had the opportunity to develop the complete application. This application is b
 -  Server-side rendering
 -  [CKEditor](https://ckeditor.com/ckeditor-5/) integration
 -  ...
+
 </div>
 
 ## Other work

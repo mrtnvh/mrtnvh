@@ -42,3 +42,13 @@ h6 {
 	color: transparent;
 	-webkit-text-stroke: var(--stroke-width) var(--stroke-color);
 }
+
+.intro {
+	font-size: var(--font-size-lg);
+	line-height: var(--line-height-sm);
+	font-weight: 700;
+
+	@media (min-width: 800px) {
+		font-size: var(--font-size-xl);
+	}
+}

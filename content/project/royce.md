@@ -7,9 +7,13 @@ current: true
 datePublished: 20130813
 ---
 
-Guitarist, producer, management, booking & founding member of Belgian metalcore formation, [Royce](https://roycetheband.com).
+<div class="intro mb-4">
 
-A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.
+Guitarist, producer, management, booking & founding member of Belgian metalcore formation, [Royce](https://roycetheband.com). A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.
+
+</div>
+
+<div class="column-lg-2 column-xxl-3 mb-4">
 
 After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy & bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named Royce.
 
@@ -19,5 +23,7 @@ Combined with several other creative and professional abilities on which they ap
 
 Open your eyes, the change is right in front of you.
 
-[Instagram](https://instagram.com/roycetheband)
+[Instagram](https://instagram.com/roycetheband) <br/>
 [Facebook](https://facebook.com/roycetheband)
+
+</div>
