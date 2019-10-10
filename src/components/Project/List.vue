@@ -6,7 +6,7 @@
 					<g-image
 						:src="project.thumbnail"
 						:alt="project.title"
-						class="thumbnail"
+						class="image"
 					/>
 				</figure>
 				<div class="content">
@@ -35,22 +35,26 @@ export default {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-gap: calc(var(--grid-gap) * 2) var(--grid-gap);
+	grid-gap: var(--grid-gap-y) var(--grid-gap-x);
 }
 
-.thumbnail {
-	width: 100%;
+.media {
+	margin-bottom: 0;
 }
 
 .link {
 	--link-color: var(--dark);
 	--link-hover-color: var(--dark);
 	--link-text-decoration: none;
+
+	display: block;
 }
 
 .content {
-	margin-top: calc(var(--space) * -2.25);
-	padding: 0 calc(var(--grid-gap) / 1.5);
+	position: relative;
+	z-index: 1;
+	margin-top: calc(var(--space) * -2);
+	padding: 0 calc(var(--space) * 1.5);
 }
 
 .title {
@@ -59,7 +63,7 @@ export default {
 }
 
 .subtitle {
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-base);
 	font-weight: 400;
 	margin: 0;
 }

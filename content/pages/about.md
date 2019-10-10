@@ -7,7 +7,7 @@ type: about
 datePublished: 20190914
 ---
 
-<div class="column-lg-2 column-xxl-3 mb-4">
+<div class="column-lg-2 column-xxl-3 mb-ggy">
 
 I'm a proud father of Adriaan & Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.
 
@@ -19,15 +19,16 @@ All the knowledge I currently possess is self-taught through experience, tutoria
 
 </div>
 
-## Ambition
+<div class="column-lg-2">
+<div class="break-inside-avoid mb-ggy">
 
-<div class="mb-4">
+## Ambition
 
 I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.
 
 </div>
 
-<div class="mb-4">
+<div class="break-inside-avoid mb-ggy">
 
 ## Likes
 *   Isomorphic Web Applications
@@ -40,12 +41,13 @@ I want to be part of a team with clear vision and resources to build an awesome 
 *   Dad jokes
 
 </div>
+</div>
 
 ## Skills
-<table class="mb-4">
+<table class="mb-ggy">
 	<tr>
 		<td>Web</td>
-		<td>
+		<td colspan="2">
 			Offline & mobile first <br/>
 			a11y<br/>
 			Progressive Web Apps <br/>
@@ -54,35 +56,58 @@ I want to be part of a team with clear vision and resources to build an awesome 
 	</tr>
 	<tr>
 		<td>HTML</td>
-		<td>Semantics</td>
+		<td colspan="2">Semantics</td>
 	</tr>
 	<tr>
 		<td>JavaScript</td>
-		<td>
-			Node <br/>
-			ES20... <br/>
-			Typescript <br/>
-			React <br/>
-			Vue <br/>
-			Web- & service workers <br/>
-			Isomorphic web applications (Nuxt.js & Next.js)<br/>
-			Testing (Unit to e2e)
+		<td colspan="2">
+			<div class="column-lg-2">
+				Node <br/>
+				ES20... <br/>
+				Typescript <br/>
+				React <br/>
+				Vue <br/>
+				Web- & service workers <br/>
+				Testing (Unit to e2e) <br/>
+				Isomorphic web applications
+			</div>
 		</td>
 	</tr>
 	<tr>
 		<td>CSS</td>
-		<td>
-			Grid <br/>
-			Custom properties <br/>
-			CSS-in-JS <br/>
-			SCSS <br/>
-			PostCSS
+		<td colspan="2">
+			<div class="column-lg-2">
+				Grid <br/>
+				Custom properties <br/>
+				CSS-in-JS <br/>
+				SCSS <br/>
+				PostCSS
+			</div>
 		</td>
 	</tr>
 	<tr>
 		<td class="whitespace-nowrap">Experience with</td>
-		<td>
-			Laravel, Git, Docker, Webpack, Grunt, Gulp, .NET Core C# Web API & MVC, EF Core, Redux, Material-UI, Bootstrap, Vuetify, SQL, IIS, NPM, ESLint, Stylelint, Prettier, EditorConfig, ...
+		<td colspan="2">
+			<ul class="column-lg-2 list-unstyled">
+				<li>Laravel</li>
+				<li>Git</li>
+				<li>Docker</li>
+				<li>NPM</li>
+				<li>ESLint</li>
+				<li>Stylelint</li>
+				<li>Prettier</li>
+				<li>EditorConfig</li>
+				<li>Webpack</li>
+				<li>Grunt</li>
+				<li>Gulp</li>
+				<li>EF Core</li>
+				<li>Redux</li>
+				<li>Material-UI</li>
+				<li>Bootstrap</li>
+				<li>SQL</li>
+				<li>IIS</li>
+				<li>...</li>
+			</ul>
 		</td>
 	</tr>
 </table>

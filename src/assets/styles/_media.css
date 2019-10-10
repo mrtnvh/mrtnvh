@@ -1,0 +1,16 @@
+.media {
+	padding-bottom: 56.25%;
+	box-shadow: inset 0 0 0 1px var(--dark);
+	position: relative;
+	overflow: hidden;
+	margin-bottom: calc(var(--space) * 4);
+
+	.image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

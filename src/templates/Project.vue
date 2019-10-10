@@ -60,14 +60,14 @@ export default {
 
 <style scoped>
 .container {
-	padding-top: calc(var(--grid-gap));
-	padding-bottom: calc(var(--grid-gap));
+	padding-top: var(--grid-gap-y);
+	padding-bottom: var(--grid-gap-y);
 
 	@media (min-width: 800px) {
 		display: grid;
 		grid-template-columns: 30.5% 69.5%;
-		grid-column-gap: var(--grid-gap);
-		width: calc(100% - (var(--grid-gap)));
+		grid-column-gap: var(--grid-gap-x);
+		width: calc(100% - (var(--grid-gap-x)));
 	}
 }
 
@@ -81,7 +81,7 @@ export default {
 	font-size: var(--project-title-size);
 	margin: var(--project-title-margin);
 	text-transform: uppercase;
-	line-height: 0.75em;
+	line-height: 0.66em;
 }
 
 .thumbnail {

@@ -30,16 +30,14 @@ export default {
 <style scoped>
 section {
 	position: relative;
-	padding-top: calc(var(--grid-gap) * 2);
-	padding-bottom: calc(var(--grid-gap) * 2);
+	padding-top: var(--grid-gap-y);
+	padding-bottom: var(--grid-gap-y);
 	border-bottom: 1px solid var(--grey);
 
 	@media (min-width: 800px) {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr 1fr;
-		grid-column-gap: var(--grid-gap);
-		padding-top: calc(var(--grid-gap));
-		padding-bottom: calc(var(--grid-gap));
+		grid-column-gap: var(--grid-gap-x);
 	}
 }
 

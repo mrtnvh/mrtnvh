@@ -35,8 +35,8 @@ footer {
 	--text-color: var(--light);
 
 	font-size: var(--font-size-sm);
-	padding-top: calc(var(--grid-gap));
-	padding-bottom: calc(var(--grid-gap));
+	padding-top: var(--grid-gap-y);
+	padding-bottom: var(--grid-gap-y);
 	background: var(--dark);
 	color: var(--text-color);
 	display: grid;

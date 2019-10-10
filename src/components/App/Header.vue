@@ -53,10 +53,10 @@ export default {
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr 1.5fr;
 	align-items: center;
-	padding-top: calc(var(--grid-gap));
-	padding-bottom: calc(var(--grid-gap));
+	padding-top: var(--grid-gap-y);
+	padding-bottom: var(--grid-gap-y);
 	font-size: var(--font-size-sm);
-	grid-column-gap: var(--grid-gap);
+	grid-column-gap: var(--grid-gap-x);
 	border-bottom: 1px solid var(--grey);
 
 	@media (min-width: 800px) {
@@ -65,7 +65,7 @@ export default {
 
 	@media (min-width: 1400px) {
 		display: grid;
-		grid-template-columns: 2fr 2fr 1fr 1fr;
+		grid-template-columns: 2fr 2.125fr 0.875fr 1fr;
 		grid-template-rows: 1fr;
 		align-items: end;
 	}
