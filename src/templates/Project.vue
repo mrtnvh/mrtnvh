@@ -84,13 +84,6 @@ export default {
 	line-height: 0.75em;
 }
 
-.media {
-	padding-bottom: 56.25%;
-	position: relative;
-	overflow: hidden;
-	margin-bottom: var(--grid-gap);
-}
-
 .thumbnail {
 	position: absolute;
 	top: 0;

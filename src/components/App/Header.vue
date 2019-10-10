@@ -3,11 +3,17 @@
 		<brand class="brand" />
 		<div class="subtitle">
 			<span>Front-end developer at </span>
-			<a href="https://isaac.nl" target="_blank" rel="noopener" class="isaac">ISAAC</a>
+			<a
+				href="https://isaac.nl"
+				target="_blank"
+				rel="noopener"
+				class="isaac"
+				>ISAAC</a
+			>
 			<span> in Eindhoven</span>
 		</div>
 		<div class="about">
-			<a href="/">About me</a>
+			<g-link to="/about">About me</g-link>
 		</div>
 		<div class="social">
 			<button @click="handleMailClick" class="reset link">

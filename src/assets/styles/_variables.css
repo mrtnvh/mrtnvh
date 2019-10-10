@@ -32,11 +32,11 @@
 	--font-size-7xl: 5.96rem;
 	--font-size-8xl: 7.451rem;
 	--font-size-9xl: 9.313rem;
-	--font-family: "Helvetica Now Text";
+	--font-family: "Helvetica Now Text", system-ui;
 	--line-height: 1.5;
 	--line-height-sm: 1.225;
 	--line-height-xxs: 0.75;
-	--headings-font-family: "Helvetica Now Display";
+	--headings-font-family: "Helvetica Now Display", system-ui;
 	--headings-color: var(--dark);
 	--headings-font-weight: 900;
 
@@ -65,25 +65,48 @@
 */
 :root {
 	--space: 1rem;
+	--grid-gap-x: calc(var(--space));
+	--grid-gap-y: calc(var(--space) * 2);
 	--grid-gap: calc(var(--space));
 
-	/**
-	* Project
-	*/
+	@media (min-width: 700px) {
+		--grid-gap-x: calc(var(--space) * 2);
+	}
+
+	@media (min-width: 1200px) {
+		--grid-gap-x: calc(var(--space) * 4);
+		--grid-gap-y: calc(var(--space) * 4);
+	}
+}
+
+/**
+* Project
+*/
+:root {
 	--project-header-zindex: 1;
-	--project-header-top-position: 3rem;
+	--project-header-top-position: var(--grid-gap);
 	--project-title-size: 10vw;
 	--project-title-margin: 0;
 
-	@media (min-width: 700px) {
-		--grid-gap: calc(var(--space) * 2);
-	}
-	@media (min-width: 1200px) {
-		--grid-gap: calc(var(--space) * 4);
-	}
 
 	@media (min-width: 800px) {
 		--project-title-size: 15vw;
 		--project-title-margin: 0 0 1rem -0.05em;
+	}
+}
+
+/**
+* Folio
+*/
+:root {
+	--folio-header-zindex: 1;
+	--folio-header-top-position: var(--grid-gap);
+	--folio-title-size: 10vw;
+	--folio-title-margin: 0;
+
+
+	@media (min-width: 800px) {
+		--folio-title-size: 15vw;
+		--folio-title-margin: 0 0 1rem -0.05em;
 	}
 }

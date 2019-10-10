@@ -1,15 +1,13 @@
 ---
 title: About
-subtitle: A 30-year front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
+subtitle: A 30-year front end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
 thumbnail: "/media/portrait.jpg"
 thumbnailAlt: A portrait photo of Maarten Van Hoof.
 type: about
 datePublished: 20190914
 ---
 
-## Hi there,
-
-I'm Maarten Van Hoof, a 30-year front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
+<div class="column-lg-2 column-xxl-3 mb-4">
 
 I'm a proud father of Adriaan & Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.
 
@@ -19,10 +17,17 @@ I have a [Professional Bachelor Multimedia and Communication Technology](https:/
 
 All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.
 
+</div>
 
 ## Ambition
+
+<div class="mb-4">
+
 I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.
 
+</div>
+
+<div class="mb-4">
 
 ## Likes
 *   Isomorphic Web Applications
@@ -34,9 +39,10 @@ I want to be part of a team with clear vision and resources to build an awesome 
 *   Open, transparent but time-appropriate and concise communication
 *   Dad jokes
 
+</div>
 
 ## Skills
-<table>
+<table class="mb-4">
 	<tr>
 		<td>Web</td>
 		<td>
@@ -73,10 +79,16 @@ I want to be part of a team with clear vision and resources to build an awesome 
 			PostCSS
 		</td>
 	</tr>
+	<tr>
+		<td class="whitespace-nowrap">Experience with</td>
+		<td>
+			Laravel, Git, Docker, Webpack, Grunt, Gulp, .NET Core C# Web API & MVC, EF Core, Redux, Material-UI, Bootstrap, Vuetify, SQL, IIS, NPM, ESLint, Stylelint, Prettier, EditorConfig, ...
+		</td>
+	</tr>
 </table>
 
 
-Experience with Laravel, Git, Docker, Webpack, Grunt, Gulp, .NET Core C# Web API & MVC, EF Core, Redux, Material-UI, Bootstrap, Vuetify, SQL, IIS, NPM, ESLint, Stylelint, Prettier, EditorConfig, ...
+
 
 
 ## Physical languages
