@@ -1,12 +1,12 @@
 <template>
-	<Layout>
+	<div>
 		<Section title="Current" title-small="projects">
 			<Projects v-model="currentProjects" class="projects" />
 		</Section>
 		<Section title="Previous" title-small="projects">
 			<Projects v-model="previousProjects" class="projects" />
 		</Section>
-	</Layout>
+	</div>
 </template>
 
 <script>

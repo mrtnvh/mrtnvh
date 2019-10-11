@@ -16,6 +16,11 @@ module.exports = {
 		},
 	},
 
+	templates: {
+		Project: "/projects/:title",
+		Folio: "/:title",
+	},
+
 	plugins: [
 		{
 			use: `gridsome-plugin-netlify-cms`,
@@ -28,7 +33,6 @@ module.exports = {
 			options: {
 				path: "content/project/**/*.md",
 				typeName: "Project",
-				route: "/projects/:slug",
 			},
 		},
 		{
@@ -36,7 +40,6 @@ module.exports = {
 			options: {
 				path: "content/pages/**/*.md",
 				typeName: "Folio",
-				route: "/:slug",
 			},
 		},
 	],

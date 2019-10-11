@@ -1,8 +1,6 @@
 <template>
-	<Layout>
-		<!-- eslint-disable-next-line vue/require-component-is -->
-		<component :is="type" :page="{ ...$page.folio }" />
-	</Layout>
+	<!-- eslint-disable-next-line vue/require-component-is -->
+	<component :is="type" :page="{ ...$page.folio }" />
 </template>
 
 <page-query>
@@ -18,13 +16,9 @@ query Folio($path: String!) {
 </page-query>
 
 <script>
-import Layout from "~/layouts/Default.vue";
 import About from "~/components/Page/Type/About.vue";
 
 export default {
-	components: {
-		Layout,
-	},
 	metaInfo() {
 		return {
 			titleTemplate: ["%s", process.env.GRIDSOME_TITLE_TEMPLATE].join(
