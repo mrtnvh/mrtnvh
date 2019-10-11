@@ -7,7 +7,7 @@
 				<g-image
 					:src="$page.folio.thumbnail"
 					:alt="$page.folio.title"
-					class="thumbnail"
+					class="image"
 				/>
 			</figure>
 		</div>
@@ -80,14 +80,5 @@ export default {
 	@media (min-width: 800px) {
 		grid-area: 2 / 2 / 4 / 3;
 	}
-}
-
-.thumbnail {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	object-fit: cover;
-	object-position: center center;
 }
 </style>
