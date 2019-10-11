@@ -7,16 +7,14 @@
 					<div class="subtitle">{{ $page.project.subtitle }}</div>
 				</div>
 			</header>
-			<div class="content">
-				<figure class="media">
-					<g-image
-						:src="$page.project.thumbnail"
-						:alt="$page.project.title"
-						class="thumbnail"
-					/>
-				</figure>
-				<div v-html="$page.project.content" class="body" />
-			</div>
+			<figure class="media">
+				<g-image
+					:src="$page.project.thumbnail"
+					:alt="$page.project.title"
+					class="thumbnail"
+				/>
+			</figure>
+			<div v-html="$page.project.content" class="body" />
 		</div>
 	</Layout>
 </template>
@@ -52,22 +50,30 @@ export default {
 };
 </script>
 
-<style>
-#project .body > section {
-	margin-bottom: var(--grid-gap);
-}
-</style>
-
 <style scoped>
 .container {
 	padding-top: var(--grid-gap-y);
 	padding-bottom: var(--grid-gap-y);
+	display: flex;
+	flex-direction: column;
 
 	@media (min-width: 800px) {
 		display: grid;
 		grid-template-columns: 30.5% 69.5%;
+		grid-template-areas: "header media" "header body";
 		grid-column-gap: var(--grid-gap-x);
 		width: calc(100% - (var(--grid-gap-x)));
+	}
+}
+
+header {
+	grid-area: header;
+	margin-bottom: var(--grid-gap-y);
+
+	@media (max-width: 799px) {
+		order: 2;
+		margin-top: calc(var(--grid-gap) * -2.5);
+		margin-left: var(--grid-gap);
 	}
 }
 
@@ -82,6 +88,19 @@ export default {
 	margin: var(--project-title-margin);
 	text-transform: uppercase;
 	line-height: 0.66em;
+}
+
+.media {
+	grid-area: media;
+
+	@media (max-width: 799px) {
+		order: 1;
+	}
+}
+
+.body {
+	grid-area: body;
+	order: 3;
 }
 
 .thumbnail {

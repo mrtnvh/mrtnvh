@@ -105,6 +105,9 @@ export default {
 .subtitle,
 .about,
 .social {
+	position: relative;
+	z-index: 1;
+
 	@media (min-width: 1400px) {
 		grid-area: auto;
 		align-self: auto;

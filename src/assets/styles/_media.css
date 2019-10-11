@@ -1,9 +1,9 @@
 .media {
 	padding-bottom: 56.25%;
-	box-shadow: inset 0 0 0 1px var(--dark);
+	border: var(--stroke-width) solid var(--stroke-color);
 	position: relative;
 	overflow: hidden;
-	margin-bottom: calc(var(--space) * 4);
+	margin-bottom: var(--grid-gap-y);
 
 	.image {
 		position: absolute;
