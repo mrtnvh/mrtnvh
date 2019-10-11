@@ -1,22 +1,20 @@
 <template>
-	<Layout>
-		<div id="project" class="container">
-			<header>
-				<div class="sticky">
-					<h1 class="title outline">{{ $page.project.title }}</h1>
-					<div class="subtitle">{{ $page.project.subtitle }}</div>
-				</div>
-			</header>
-			<figure class="media">
-				<g-image
-					:src="$page.project.thumbnail"
-					:alt="$page.project.title"
-					class="thumbnail"
-				/>
-			</figure>
-			<div v-html="$page.project.content" class="body" />
-		</div>
-	</Layout>
+	<div id="project" class="container">
+		<header>
+			<div class="sticky">
+				<h1 class="title outline">{{ $page.project.title }}</h1>
+				<div class="subtitle">{{ $page.project.subtitle }}</div>
+			</div>
+		</header>
+		<figure class="media">
+			<g-image
+				:src="$page.project.thumbnail"
+				:alt="$page.project.title"
+				class="thumbnail"
+			/>
+		</figure>
+		<div v-html="$page.project.content" class="body" />
+	</div>
 </template>
 
 <page-query>
@@ -31,12 +29,7 @@ query Project($path: String!) {
 </page-query>
 
 <script>
-import Layout from "~/layouts/Default.vue";
-
 export default {
-	components: {
-		Layout,
-	},
 	metaInfo() {
 		return {
 			titleTemplate: [
