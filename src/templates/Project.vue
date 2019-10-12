@@ -7,10 +7,10 @@
 			</div>
 		</header>
 		<figure class="media">
-			<g-image
+			<Thumbnail
 				:src="$page.project.thumbnail"
 				:alt="$page.project.title"
-				class="thumbnail"
+				class="image"
 			/>
 		</figure>
 		<div v-html="$page.project.content" class="body" />
@@ -29,6 +29,8 @@ query Project($path: String!) {
 </page-query>
 
 <script>
+import Image from "~/components/Image";
+
 export default {
 	metaInfo() {
 		return {
@@ -39,6 +41,10 @@ export default {
 			].join(" \\\\ "),
 			title: this.$page.project.title,
 		};
+	},
+
+	components: {
+		Thumbnail: Image,
 	},
 };
 </script>
@@ -94,14 +100,5 @@ header {
 .body {
 	grid-area: body;
 	order: 3;
-}
-
-.thumbnail {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	object-fit: cover;
-	object-position: center center;
 }
 </style>
