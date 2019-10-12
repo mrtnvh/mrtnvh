@@ -15,7 +15,7 @@ RockXXL is an 100% volunteer-ran organization that deals with webzine and blog a
 
 <div class="column-lg-2 column-xxl-3 mb-ggy">
 
-At the end of 2018 they were looking for a volunteer to breathe new life into their website. I immediately offered my services. The old website has been transformed from WordPress into a immaculate JAMstack. [rockxxl.com](https://rockxxl.com) now runs on [Gatsby.js](https://gatsbyjs.org), is managed via [Netlify CMS](https://www.netlifycms.org/) and is 100% free hosted on [Netlify](https://www.netlify.com/). The source code 100% open source and is [available on Github](https://github.com/rockxxl/rockxxl). 
+At the end of 2018 they were looking for a volunteer to breathe new life into their website. I immediately offered my services. The old website has been transformed from WordPress into a immaculate JAMstack. [rockxxl.be](https://rockxxl.be) now runs on [Gatsby.js](https://gatsbyjs.org), is managed via [Netlify CMS](https://www.netlifycms.org/) and is 100% free hosted on [Netlify](https://www.netlify.com/). The source code 100% open source and is [available on Github](https://github.com/rockxxl/rockxxl). 
 
 With the aim of maintaining their SEO ranking, we have been able to move all legacy Wordpress data and images without any problem. All existing URLs are neatly redirected to the new URL structure. Via a few customized scripts, all posts were exported to Markdown files. 
 
