@@ -1,0 +1,21 @@
+.slide-up-fade,
+.slide-up-fade-enter-active,
+.slide-up-fade-leave-active {
+	transition: opacity, transform;
+	transition-duration: var(--animation-duration);
+	transition-timing-function: var(--animation-timing-function);
+}
+
+.slide-up-fade-active,
+.slide-up-fade-enter-active,
+.slide-up-fade-leave-active {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.slide-up-fade-inactive,
+.slide-up-fade-enter,
+.slide-up-fade-leave-to {
+	opacity: 0;
+	transform: translateY(var(--space));
+}
