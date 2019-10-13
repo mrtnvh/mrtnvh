@@ -1,20 +1,38 @@
 <template>
-	<div id="project" class="container">
-		<header>
-			<div class="sticky">
-				<h1 class="title outline">{{ $page.project.title }}</h1>
-				<div class="subtitle">{{ $page.project.subtitle }}</div>
-			</div>
-		</header>
-		<figure class="media">
-			<Thumbnail
-				:src="$page.project.thumbnail"
-				:alt="$page.project.title"
-				class="image"
+	<intersect @enter="intersected = true" @leave="intersected = false">
+		<div id="project" class="container">
+			<header>
+				<div class="sticky">
+					<div
+						:class="[
+							`slide-up-fade`,
+							`slide-up-fade-${
+								intersected ? 'active' : 'inactive'
+							}`,
+						]"
+					>
+						<h1 class="title outline">{{ $page.project.title }}</h1>
+						<div class="subtitle">{{ $page.project.subtitle }}</div>
+					</div>
+				</div>
+			</header>
+			<figure class="media">
+				<Thumbnail
+					:src="$page.project.thumbnail"
+					:alt="$page.project.title"
+					class="image"
+				/>
+			</figure>
+			<div
+				v-html="$page.project.content"
+				:class="[
+					'body',
+					`slide-up-fade`,
+					`slide-up-fade-${intersected ? 'active' : 'inactive'}`,
+				]"
 			/>
-		</figure>
-		<div v-html="$page.project.content" class="body" />
-	</div>
+		</div>
+	</intersect>
 </template>
 
 <page-query>
@@ -30,6 +48,7 @@ query Project($path: String!) {
 
 <script>
 import Image from "~/components/Image";
+import IntersectMixin from "~/components/Intersect/IntersectMixin";
 
 export default {
 	metaInfo() {
@@ -46,6 +65,8 @@ export default {
 	components: {
 		Thumbnail: Image,
 	},
+
+	mixins: [IntersectMixin],
 };
 </script>
 

@@ -1,9 +1,11 @@
 <template>
-	<Layout>
-		<transition name="fade" mode="out-in">
-			<router-view class="fade-short" />
-		</transition>
-	</Layout>
+	<transition v-if="mounted" name="fade">
+		<Layout>
+			<transition name="fade" mode="out-in">
+				<router-view class="fade-short" />
+			</transition>
+		</Layout>
+	</transition>
 </template>
 
 <script>
@@ -12,6 +14,13 @@ import Layout from "~/layouts/Default.vue";
 export default {
 	components: {
 		Layout,
+	},
+	data: () => ({
+		mounted: false,
+	}),
+
+	mounted() {
+		this.mounted = true;
 	},
 };
 </script>

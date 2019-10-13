@@ -5,11 +5,13 @@
 	transition-timing-function: var(--animation-timing-function);
 }
 
+.fade-active,
 .fade-enter-active,
 .fade-leave-active {
 	opacity: 1;
 }
 
+.fade-inactive,
 .fade-enter,
 .fade-leave-to {
 	opacity: 0;

@@ -1,7 +1,7 @@
 <template>
 	<Intersect @enter="intersected = true" @leave="intersected = false">
 		<article
-			:style="{ transitionDelay: `calc(0.25s * ${index})` }"
+			:style="animationDelay(index)"
 			:class="{
 				'slide-up-fade': true,
 				'slide-up-fade-inactive': !intersected,
@@ -28,13 +28,15 @@
 
 <script>
 import Image from "~/components/Image";
-import Intersect from "~/components/Intersect/Intersect";
+import IntersectMixin from "~/components/Intersect/IntersectMixin";
+import AnimationMixin from "~/components/Animation/AnimationMixin";
 
 export default {
 	components: {
 		Thumbnail: Image,
-		Intersect,
 	},
+
+	mixins: [IntersectMixin, AnimationMixin],
 
 	props: {
 		value: {
@@ -45,10 +47,6 @@ export default {
 			type: Number,
 			default: 0,
 		},
-	},
-
-	data() {
-		return { intersected: false };
 	},
 };
 </script>

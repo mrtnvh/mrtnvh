@@ -1,19 +1,25 @@
 <template>
-	<section class="container">
-		<div class="header clear-inner-spacing">
-			<h2 v-if="title" class="title">
-				<span class="main outline">{{ title }}</span>
-				<small>{{ titleSmall }}</small>
-			</h2>
-		</div>
-		<div class="content">
-			<slot />
-		</div>
-	</section>
+	<intersect @enter="intersected = true" @leave="intersected = false">
+		<section class="container">
+			<div class="header clear-inner-spacing">
+				<h2 v-if="title" :class="['title', ...animationClass]">
+					<span class="main outline">{{ title }}</span>
+					<small>{{ titleSmall }}</small>
+				</h2>
+			</div>
+			<div class="content">
+				<slot />
+			</div>
+		</section>
+	</intersect>
 </template>
 
 <script>
+import IntersectMixin from "~/components/Intersect/IntersectMixin";
+
 export default {
+	mixins: [IntersectMixin],
+
 	props: {
 		title: {
 			type: String,
@@ -22,6 +28,13 @@ export default {
 		titleSmall: {
 			type: String,
 			default: "",
+		},
+	},
+
+	computed: {
+		animationClass() {
+			const state = this.intersected ? "active" : "inactive";
+			return [`slide-up-fade`, `slide-up-fade-${state}`];
 		},
 	},
 };

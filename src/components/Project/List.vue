@@ -2,7 +2,7 @@
 	<div class="grid">
 		<ListItem
 			:value="project"
-			:index="index"
+			:index="index + 1"
 			v-for="(project, index) in value"
 			:key="project.id"
 		/>

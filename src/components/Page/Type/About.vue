@@ -1,25 +1,55 @@
 <template>
-	<div id="folio" class="container">
-		<h1 class="title outline">{{ $page.folio.title }}</h1>
-		<div class="subtitle intro">{{ $page.folio.subtitle }}</div>
-		<div class="media-container">
-			<figure class="media">
-				<g-image
-					:src="$page.folio.thumbnail"
-					:alt="$page.folio.title"
-					class="image"
-				/>
-			</figure>
+	<intersect @enter="intersected = true" @leave="intersected = false">
+		<div id="folio" class="container">
+			<h1
+				:class="['title', 'outline', ...slideUpFadeClass]"
+				:style="animationDelay(1)"
+			>
+				{{ $page.folio.title }}
+			</h1>
+			<div
+				:class="['subtitle', 'intro', ...slideUpFadeClass]"
+				:style="animationDelay(2)"
+			>
+				{{ $page.folio.subtitle }}
+			</div>
+			<div
+				:class="['media-container', ...slideUpFadeClass]"
+				:style="animationDelay(3)"
+			>
+				<figure class="media">
+					<g-image
+						:src="$page.folio.thumbnail"
+						:alt="$page.folio.title"
+						class="image"
+					/>
+				</figure>
+			</div>
+			<div
+				v-html="$page.folio.content"
+				:class="['body', ...slideUpFadeClass]"
+				:style="animationDelay(4)"
+			/>
 		</div>
-		<div v-html="$page.folio.content" class="body" />
-	</div>
+	</intersect>
 </template>
 
 <script>
 import mixins from "./mixins";
+import IntersectMixin from "~/components/Intersect/IntersectMixin";
+import AnimationMixin from "~/components/Animation/AnimationMixin";
 
 export default {
-	mixins: [mixins],
+	mixins: [mixins, IntersectMixin, AnimationMixin],
+
+	computed: {
+		slideUpFadeClass() {
+			return [
+				`slide-up-fade`,
+				`slide-up-fade-${this.intersected ? "active" : "inactive"}`,
+			];
+		},
+	},
 };
 </script>
 
