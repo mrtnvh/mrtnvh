@@ -1,5 +1,5 @@
 <template>
-	<transition v-if="mounted" name="fade">
+	<transition name="fade" appear>
 		<Layout>
 			<transition name="fade" mode="out-in">
 				<router-view class="fade-short" />
@@ -14,13 +14,6 @@ import Layout from "~/layouts/Default.vue";
 export default {
 	components: {
 		Layout,
-	},
-	data: () => ({
-		mounted: false,
-	}),
-
-	mounted() {
-		this.mounted = true;
 	},
 };
 </script>
