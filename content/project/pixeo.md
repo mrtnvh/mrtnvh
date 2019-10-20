@@ -1,7 +1,7 @@
 ---
 title: Pixeo
 subtitle: Web agency
-thumbnail: "/media/pixeo.jpg"
+thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/pixeo.jpg"
 color: 85FFFF
 current: false
 datePublished: 20130101

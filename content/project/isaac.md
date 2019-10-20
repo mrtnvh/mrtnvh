@@ -1,7 +1,7 @@
 ---
 title: ISAAC
 subtitle: Fullservice Digital Agency
-thumbnail: "/media/isaac.jpg"
+thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871100/mrtnvh.com/isaac.jpg"
 color: FF4E4E
 current: true
 datePublished: 20190520

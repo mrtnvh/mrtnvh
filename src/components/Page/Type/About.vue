@@ -18,7 +18,7 @@
 				:style="animationDelay(3)"
 			>
 				<figure class="media">
-					<g-image
+					<Thumbnail
 						:src="$page.folio.thumbnail"
 						:alt="$page.folio.title"
 						class="image"
@@ -36,10 +36,14 @@
 
 <script>
 import mixins from "./mixins";
+import Image from "~/components/Image/Image.vue";
 import IntersectMixin from "~/components/Intersect/IntersectMixin";
 import AnimationMixin from "~/components/Animation/AnimationMixin";
 
 export default {
+	components: {
+		Thumbnail: Image,
+	},
 	mixins: [mixins, IntersectMixin, AnimationMixin],
 
 	computed: {

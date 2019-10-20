@@ -1,7 +1,7 @@
 ---
 title: About
 subtitle: A 30-year front end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
-thumbnail: "/media/portrait.jpg"
+thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871092/mrtnvh.com/portrait.jpg"
 thumbnailAlt: A portrait photo of Maarten Van Hoof.
 type: about
 datePublished: 20190914

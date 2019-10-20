@@ -1,7 +1,10 @@
 <template>
 	<intersect @enter="intersected = true" @leave="intersected = false">
 		<img
+			ref="image"
 			:src="source"
+			:srcset="sourceSet"
+			:sizes="sizes"
 			:alt="alt"
 			@load="loaded = true"
 			:style="{ opacity: loaded ? 1 : 0 }"
@@ -12,6 +15,8 @@
 
 <script>
 import Intersect from "~/components/Intersect/Intersect";
+import { getSrcSet } from "./cloudinary";
+import getImageSize from "./getImageSize";
 
 export default {
 	components: { Intersect },
@@ -33,12 +38,24 @@ export default {
 			intersected: false,
 			loaded: false,
 			source: null,
+			sourceSet: null,
+			sizes: "1px",
 		};
 	},
 
 	watch: {
 		intersected(intersected) {
-			this.source = intersected ? this.src : null;
+			const { src, srcSet } = getSrcSet({
+				src: this.src,
+			});
+
+			this.source = intersected ? src : null;
+			this.sourceSet = intersected ? srcSet : null;
+			this.sizes =
+				intersected && this.sizes === "1px"
+					? getImageSize({ image: this.$refs.image })
+					: "1px";
+
 			if (!intersected) this.loaded = intersected;
 		},
 	},
@@ -46,10 +63,6 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-	display: flex;
-}
-
 img {
 	object-fit: cover;
 }

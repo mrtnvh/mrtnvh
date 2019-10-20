@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Image from "~/components/Image";
+import Image from "~/components/Image/Image.vue";
 import IntersectMixin from "~/components/Intersect/IntersectMixin";
 import AnimationMixin from "~/components/Animation/AnimationMixin";
 

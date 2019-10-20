@@ -47,7 +47,7 @@ query Project($path: String!) {
 </page-query>
 
 <script>
-import Image from "~/components/Image";
+import Image from "~/components/Image/Image.vue";
 import IntersectMixin from "~/components/Intersect/IntersectMixin";
 
 export default {

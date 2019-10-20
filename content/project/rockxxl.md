@@ -1,7 +1,7 @@
 ---
 title: RockXXL
 subtitle: Loud Noise Community
-thumbnail: "/media/rockxxl.jpg"
+thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871100/mrtnvh.com/rockxxl.jpg"
 color: FF4E4E
 current: false
 datePublished: 20190105

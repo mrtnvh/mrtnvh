@@ -1,7 +1,7 @@
 ---
 title: Royce
 subtitle: Metal
-thumbnail: "/media/royce.jpg"
+thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/royce.jpg"
 color: FF005C
 current: true
 datePublished: 20130813
