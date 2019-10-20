@@ -39,7 +39,7 @@ export default {
 
 <page-query>
 query {
-	projects: allProject {
+	projects: allProject(sortBy: "datePublished") {
 		edges {
 			node {
 				title
@@ -48,6 +48,7 @@ query {
 				color
 				current
 				path
+				datePublished
 			}
 		}
 	}
