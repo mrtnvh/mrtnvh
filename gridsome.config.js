@@ -24,12 +24,6 @@ module.exports = {
 
 	plugins: [
 		{
-			use: `gridsome-plugin-netlify-cms`,
-			options: {
-				modulePath: `src/admin/index.js`,
-			},
-		},
-		{
 			use: "@gridsome/source-filesystem",
 			options: {
 				path: "content/project/**/*.md",
@@ -63,7 +57,7 @@ module.exports = {
 				shortName: "mrtnvh",
 				themeColor: "#95ff00",
 				backgroundColor: "#ffffff",
-				icon: "", // must be supplied!
+				icon: "./src/favicon.png",
 			},
 		},
 	],
@@ -100,6 +94,6 @@ module.exports = {
 			.end()
 			.use("svg-to-vue-component")
 			.loader("svg-to-vue-component/loader")
-			.options({ svgoConfig: svgoConfig });
+			.options({ svgoConfig });
 	},
 };
