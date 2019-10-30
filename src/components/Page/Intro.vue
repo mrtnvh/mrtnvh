@@ -17,7 +17,11 @@
 			<div class="intro__subtitle">
 				<transition name="slide-up-fade" appear>
 					<span :style="animationDelay(1)">
-						<a href="" target="_blank" rel="noopener">
+						<a
+							href="https://www.credential.net/o040z9qg"
+							target="_blank"
+							rel="noopener"
+						>
 							Google Mobile Web Specialist
 						</a>
 						<span class="mr-space">,</span>
@@ -37,9 +41,10 @@
 				</transition>
 				<transition name="slide-up-fade" appear>
 					<span :style="animationDelay(3)">
-						<g-link href="/projects/royce">
-							Loud Noise Generator </g-link
-						>.
+						<g-link to="/projects/royce">
+							Loud Noise Generator
+						</g-link>
+						.
 					</span>
 				</transition>
 			</div>
