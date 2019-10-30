@@ -32,18 +32,14 @@ export default {
 
 <style scoped>
 footer {
-	--text-color: var(--light);
-
 	font-size: var(--font-size-sm);
 	padding-top: var(--grid-gap-y);
 	padding-bottom: var(--grid-gap-y);
-	background: var(--dark);
-	color: var(--text-color);
 	display: grid;
 	align-items: center;
 
 	@media (min-width: 800px) {
-		grid-template-columns: 2fr 2fr 2fr;
+		grid-template-columns: 2fr 3.5fr 0.5fr;
 		grid-template-rows: 1fr;
 		align-items: end;
 		font-size: var(--font-size-base);

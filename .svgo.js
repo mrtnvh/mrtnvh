@@ -37,7 +37,7 @@ module.exports = {
 		{ removeUnusedNS: true },
 		{ removeUselessDefs: true },
 		{ removeUselessStrokeAndFill: true },
-		{ removeViewBox: true },
+		{ removeViewBox: false },
 		{ removeXMLNS: false },
 		{ removeXMLProcInst: true },
 		{ sortAttrs: true },

@@ -43,6 +43,11 @@ button.link {
 		--underline-hover-background-color: var(--twitter);
 	}
 
+	&.linkedin {
+		--link-hover-color: var(--linkedin);
+		--underline-hover-background-color: var(--linkedin);
+	}
+
 	&.isaac {
 		--link-hover-color: var(--isaac);
 		--underline-hover-background-color: var(--isaac);

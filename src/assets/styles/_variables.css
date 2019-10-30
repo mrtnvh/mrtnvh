@@ -12,6 +12,7 @@
 	--primary-dark: hsla(85, 100%, 20%, 1);
 	--github: hsla(134, 62%, 51%, 1);
 	--twitter: hsla(206, 89%, 59%, 1);
+	--linkedin: hsla(201, 100%, 36%, 1);
 	--isaac: rgb(0, 182, 255);
 	--text-color: var(--dark);
 	--background-color: var(--light);
@@ -33,6 +34,8 @@
 	--font-size-8xl: 7.451rem;
 	--font-size-9xl: 9.313rem;
 	--font-family: "Helvetica Now Text", system-ui;
+	--font-weight-normal: 400;
+	--line-height-lg: 1.75;
 	--line-height: 1.5;
 	--line-height-sm: 1.225;
 	--line-height-xxs: 0.75;
@@ -57,8 +60,8 @@
 	/**
 	* Animations
 	*/
-	--animation-duration: 1s;
-	--animation-timing-function: cubic-bezier(0.75, -0.5, 0.25, 1.5);
+	--animation-duration: 0.25s;
+	--animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);
 }
 
 /**

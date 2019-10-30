@@ -29,7 +29,11 @@ export default {
 <style scoped>
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 	grid-gap: var(--grid-gap-y) var(--grid-gap-x);
+
+	@media (min-width: 450px) {
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	}
 }
 </style>

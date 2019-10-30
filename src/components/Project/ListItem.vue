@@ -52,6 +52,10 @@ export default {
 </script>
 
 <style scoped>
+article {
+	max-width: 100%;
+}
+
 .media {
 	margin-bottom: 0;
 }

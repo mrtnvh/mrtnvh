@@ -2,46 +2,50 @@
 	<nav class="header container">
 		<brand class="brand" />
 		<div class="subtitle">
-			<span>Front-end developer at </span>
-			<a
-				href="https://isaac.nl"
-				target="_blank"
-				rel="noopener"
-				class="isaac"
-				>ISAAC</a
-			>
-			<span> in Eindhoven</span>
+			<transition name="slide-up-fade">
+				<div v-if="!isHomepage">
+					<span class="mr-space">Front-end developer at</span>
+					<span class="whitespace-nowrap">
+						<a
+							href="https://isaac.nl"
+							target="_blank"
+							rel="noopener"
+							class="isaac mr-space"
+							>ISAAC</a
+						>in Eindhoven.</span
+					>
+				</div>
+			</transition>
 		</div>
-		<div class="about">
-			<g-link to="/about">About me</g-link>
+		<div v-if="!$eq.small" class="navs">
+			<Nav class="nav" />
+			<Social class="social" />
 		</div>
-		<div class="social">
-			<button @click="handleMailClick" class="reset link">
-				<email />
-			</button>
-			<a href="/" class="github"><github /></a>
-			<a href="/" class="twitter"><twitter /></a>
-		</div>
+		<OffCanvasMenu v-else class="offCanvasMenu" />
 	</nav>
 </template>
 
 <script>
 import Brand from "~/components/Brand.vue";
-import Email from "~/assets/images/email.svg";
-import Github from "~/assets/images/github.svg";
-import Twitter from "~/assets/images/twitter.svg";
+import OffCanvasMenu from "~/components/App/OffCanvasMenu";
+import Nav from "~/components/App/Nav";
+import Social from "~/components/App/Social";
 
 export default {
 	components: {
 		Brand,
-		Email,
-		Github,
-		Twitter,
+		OffCanvasMenu,
+		Nav,
+		Social,
 	},
-	methods: {
-		handleMailClick: () => {
-			const mailLinkArray = ["mailto:", "info", "@", "mrtnvh", ".com"];
-			window.location.href = mailLinkArray.join("");
+	computed: {
+		isHomepage() {
+			return this.$route.path === "/";
+		},
+	},
+	eq: {
+		breakpoints: {
+			small: { maxWidth: 499 },
 		},
 	},
 };
@@ -50,8 +54,6 @@ export default {
 <style scoped>
 .header {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 1fr 1.5fr;
 	align-items: center;
 	padding-top: var(--grid-gap-y);
 	padding-bottom: var(--grid-gap-y);
@@ -61,19 +63,26 @@ export default {
 
 	@media (min-width: 800px) {
 		font-size: var(--font-size-base);
+		grid-template-columns: 2fr 4fr;
+		grid-template-rows: 1fr 1.5fr;
 	}
 
 	@media (min-width: 1400px) {
 		display: grid;
-		grid-template-columns: 2fr 2.125fr 0.875fr 1fr;
+		grid-template-columns: 3.2fr 3fr 3fr;
+		grid-column-gap: var(--grid-gap-x);
 		grid-template-rows: 1fr;
 		align-items: end;
 	}
 }
 
 .brand {
-	grid-area: 1 / 1 / 3 / 3;
-	margin-top: calc(var(--space) / -3);
+	grid-area: 1 / 1 / 3 / 2;
+	margin-left: calc(var(--space) / -3);
+
+	@media (min-width: 1400px) {
+		grid-area: 1 / 1 / 3 / 3;
+	}
 
 	@media (min-width: 1400px) {
 		margin-top: 0;
@@ -81,29 +90,50 @@ export default {
 }
 
 .subtitle {
-	grid-area: 1 / 3 / 2 / 7;
-	align-self: end;
+	grid-area: 1 / 2 / 1 / 3;
+
+	/* @media (min-width: 500px) {
+		grid-area: 1 / 3 / 1 / 3;
+	} */
+
+	@media (min-width: 1400px) {
+		grid-area: 1 / 2/ 1 / 2;
+	}
 }
 
-.about {
-	grid-area: 2 / 3 / 3 / 5;
+.offCanvasMenu {
+	grid-area: 1 / 3 / 1 / 3;
+	text-align: right;
+}
+
+.navs {
+	grid-area: 2 / 2 / 2 / 3;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: var(--grid-gap-x);
+	align-items: center;
+
+	@media (min-width: 1400px) {
+		grid-area: 1 / 3 / 1 / 3;
+	}
+}
+
+.nav {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(3, max-content);
+	grid-gap: var(--space);
 }
 
 .social {
 	display: flex;
 	justify-content: flex-end;
-	grid-area: 2 / 5 / 3 / 7;
-
-	button,
-	a {
-		line-height: 0;
-		margin: calc(var(--space) / 2) calc(var(--space));
-	}
 }
 
 .brand,
 .subtitle,
-.about,
+.nav,
 .social {
 	position: relative;
 	z-index: 1;

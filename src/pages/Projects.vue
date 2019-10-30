@@ -1,24 +1,25 @@
 <template>
 	<div>
-		<Intro />
 		<Section title="Current" title-small="projects">
 			<Projects v-model="currentProjects" class="projects" />
+		</Section>
+		<Section title="Previous" title-small="projects">
+			<Projects v-model="previousProjects" class="projects" />
 		</Section>
 	</div>
 </template>
 
 <script>
 import Section from "~/components/Page/Section.vue";
-import Intro from "~/components/Page/Intro.vue";
 import Projects from "~/components/Project/List.vue";
 
 export default {
 	metaInfo: {
-		title: process.env.GRIDSOME_TITLE_TEMPLATE,
+		title: ["", process.env.GRIDSOME_TITLE_TEMPLATE].join(" \\\\ "),
 		titleTemplate: "",
 	},
 
-	components: { Projects, Section, Intro },
+	components: { Projects, Section },
 
 	computed: {
 		projects() {
@@ -27,6 +28,10 @@ export default {
 
 		currentProjects() {
 			return this.projects.filter(({ current }) => current);
+		},
+
+		previousProjects() {
+			return this.projects.filter(({ current }) => !current);
 		},
 	},
 };

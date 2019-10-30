@@ -19,3 +19,7 @@
 	opacity: 0;
 	transform: translateX(calc(var(--space) * -1));
 }
+
+.slide-right-fade-leave-to {
+	transform: translateX(calc(var(--space)));
+}

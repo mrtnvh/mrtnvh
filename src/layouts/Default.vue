@@ -1,10 +1,11 @@
 <template>
 	<div class="layout">
 		<app-header />
-		<main>
+		<main v-show="!portalContent">
 			<slot />
 		</main>
-		<app-footer />
+		<app-footer v-show="!portalContent" />
+		<PortalTarget @change="handlePortalUpdate" name="root" class="portal" />
 	</div>
 </template>
 
@@ -17,6 +18,16 @@ export default {
 		AppHeader: Header,
 		AppFooter: Footer,
 	},
+	data() {
+		return {
+			portalContent: false,
+		};
+	},
+	methods: {
+		handlePortalUpdate(newContent) {
+			this.portalContent = newContent;
+		},
+	},
 };
 </script>
 
@@ -28,7 +39,18 @@ export default {
 	flex-direction: column;
 }
 
-main {
+main,
+.portal {
 	flex-grow: 1;
+}
+
+.portal {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	&:empty {
+		display: none;
+	}
 }
 </style>

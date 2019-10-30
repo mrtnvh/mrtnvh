@@ -19,3 +19,7 @@
 	opacity: 0;
 	transform: translateY(var(--space));
 }
+
+.slide-up-fade-leave-to {
+	transform: translateY(calc(var(--space) * -1));
+}

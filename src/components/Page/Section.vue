@@ -7,9 +7,7 @@
 					<small>{{ titleSmall }}</small>
 				</h2>
 			</div>
-			<div class="content">
-				<slot />
-			</div>
+			<slot />
 		</section>
 	</intersect>
 </template>
@@ -45,17 +43,16 @@ section {
 	position: relative;
 	padding-top: var(--grid-gap-y);
 	padding-bottom: var(--grid-gap-y);
-	border-bottom: 1px solid var(--grey);
+
+	&:not(:last-child) {
+		border-bottom: 1px solid var(--grey);
+	}
 
 	@media (min-width: 800px) {
 		display: grid;
-		grid-template-columns: 2fr 2fr 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
 		grid-column-gap: var(--grid-gap-x);
 	}
-}
-
-.content {
-	grid-area: auto / 2 / auto / 5;
 }
 
 .title {
