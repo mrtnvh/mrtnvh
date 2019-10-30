@@ -7,6 +7,7 @@ module.exports = {
 	siteName: pkg.name,
 	siteUrl: pkg.homepage,
 	siteDescription: pkg.description,
+	icon: "./src/favicon.png",
 
 	titleTemplate: "%s - Maarten Van Hoof",
 
@@ -40,6 +41,29 @@ module.exports = {
 			options: {
 				path: "content/pages/**/*.md",
 				typeName: "Folio",
+			},
+		},
+		{
+			use: "gridsome-plugin-gtm",
+			options: {
+				id: "GTM-NFXGVVV",
+				enabled: true,
+				debug: true,
+			},
+		},
+		{
+			use: "gridsome-plugin-pwa",
+			options: {
+				title: "Maarten Van Hoof",
+				startUrl: "/",
+				display: "standalone",
+				statusBarStyle: "default",
+				manifestPath: "manifest.json",
+				serviceWorkerPath: "service-worker.js",
+				shortName: "mrtnvh",
+				themeColor: "#95ff00",
+				backgroundColor: "#ffffff",
+				icon: "", // must be supplied!
 			},
 		},
 	],
