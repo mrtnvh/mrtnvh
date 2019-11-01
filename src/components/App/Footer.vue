@@ -6,9 +6,14 @@
 			<a href="https://gridsome.org/" rel="noopener" target="_blank"
 				>Gridsome</a
 			>. Hosted on
-			<a href="https://www.netlify.com/" rel="noopener" target="_blank"
-				>Netlify</a
-			>.
+			<a href="https://www.zeit.co/" rel="noopener" target="_blank"
+				>Zeit</a
+			>
+			&
+			<a href="https://www.cloudinary.com/" rel="noopener" target="_blank"
+				>Cloudinary</a
+			>
+			.
 		</div>
 		<div class="peace"><Peace /></div>
 	</footer>

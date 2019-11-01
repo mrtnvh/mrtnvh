@@ -1,0 +1,6 @@
+{
+  "env": {
+    "GRIDSOME_TITLE_TEMPLATE": "@gridsome_title_template",
+    "GRIDSOME_CLOUDINARY_CLOUD_NAME": "@gridsome_cloudinary_cloud_name"
+  }
+}
