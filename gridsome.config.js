@@ -9,8 +9,6 @@ module.exports = {
 	siteDescription: pkg.description,
 	icon: "./src/favicon.png",
 
-	titleTemplate: "%s - Maarten Van Hoof",
-
 	css: {
 		loaderOptions: {
 			postcss: postcssConfig,

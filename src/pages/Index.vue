@@ -13,11 +13,6 @@ import Intro from "~/components/Page/Intro.vue";
 import Projects from "~/components/Project/List.vue";
 
 export default {
-	metaInfo: {
-		title: process.env.GRIDSOME_TITLE_TEMPLATE,
-		titleTemplate: "",
-	},
-
 	components: { Projects, Section, Intro },
 
 	computed: {

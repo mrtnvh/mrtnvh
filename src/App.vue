@@ -10,8 +10,12 @@
 
 <script>
 import Layout from "~/layouts/Default.vue";
+import Seo from "./lib/Seo";
 
 export default {
+	metaInfo() {
+		return Seo({ path: this.$route.path });
+	},
 	components: {
 		Layout,
 	},

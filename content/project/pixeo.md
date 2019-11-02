@@ -1,6 +1,7 @@
 ---
 title: Pixeo
 subtitle: Web agency
+description: 6 years of front-end development experience gained, evolving from a absolute beginner to a lead engineer for a small web agency.
 thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/pixeo.jpg"
 color: 85FFFF
 current: false
