@@ -1,6 +1,7 @@
 ---
 title: RockXXL
 subtitle: Loud Noise Community
+description: Breathing new life in RockXXL, a volunteer-ran online platform for the local rock and metal community
 thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871100/mrtnvh.com/rockxxl.jpg"
 color: FF4E4E
 current: false
@@ -9,7 +10,7 @@ datePublished: 20190105
 
 <div class="intro mb-ggy">
 
-RockXXL is an 100% volunteer-ran organization that deals with webzine and blog and with the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ... 
+RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ... 
 
 </div>
 

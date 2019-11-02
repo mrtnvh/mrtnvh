@@ -7,6 +7,7 @@
 query Folio($path: String!) {
 	folio(path: $path) {
 		title
+		description
 		subtitle
 		content
 		thumbnail
@@ -17,16 +18,17 @@ query Folio($path: String!) {
 
 <script>
 import About from "~/components/Page/Type/About.vue";
+import Seo from "~/lib/Seo";
 
 export default {
 	metaInfo() {
-		return {
-			titleTemplate: ["%s", process.env.GRIDSOME_TITLE_TEMPLATE].join(
-				" \\\\ ",
-			),
-			title: this.$page.folio.title,
-			// description: this.$page.folio.subtitle,
-		};
+		const { title, description, subtitle } = this.$page.folio;
+		const { path } = this.$route;
+		return Seo({
+			title,
+			description: description || subtitle,
+			path,
+		});
 	},
 	computed: {
 		type() {

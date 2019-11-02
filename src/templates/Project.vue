@@ -49,17 +49,19 @@ query Project($path: String!) {
 <script>
 import Image from "~/components/Image/Image.vue";
 import IntersectMixin from "~/components/Intersect/IntersectMixin";
+import Seo, { titleDefault } from "~/lib/Seo";
 
 export default {
 	metaInfo() {
-		return {
-			titleTemplate: [
-				"%s",
-				"Projects",
-				process.env.GRIDSOME_TITLE_TEMPLATE,
-			].join(" \\\\ "),
-			title: this.$page.project.title,
-		};
+		const { title, description, subtitle, thumbnail } = this.$page.project;
+		const { path } = this.$route;
+		return Seo({
+			title,
+			titleTemplate: ["%s", "Projects", titleDefault].join(" \\\\ "),
+			description: description || subtitle,
+			path,
+			image: thumbnail,
+		});
 	},
 
 	components: {

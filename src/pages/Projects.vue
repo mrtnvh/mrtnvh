@@ -14,9 +14,18 @@ import Section from "~/components/Page/Section.vue";
 import Projects from "~/components/Project/List.vue";
 
 export default {
-	metaInfo: {
-		title: ["", process.env.GRIDSOME_TITLE_TEMPLATE].join(" \\\\ "),
-		titleTemplate: "",
+	metaInfo() {
+		return {
+			title: "Projects",
+			meta: [
+				{
+					key: "description",
+					name: "description",
+					content:
+						"A selection of my current and previous projects. Work, musical and open source experiences",
+				},
+			],
+		};
 	},
 
 	components: { Projects, Section },
