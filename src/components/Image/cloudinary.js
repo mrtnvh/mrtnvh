@@ -22,6 +22,14 @@ const getPublicId = input =>
 
 const isCloudinaryUrl = url => url.includes("https://res.cloudinary.com/");
 
+export const getOgImage = ({ src }) => {
+	if (!isCloudinaryUrl(src)) return src;
+	const publicId = getPublicId(src);
+	return config.core.url(publicId, {
+		transformation: "og_image",
+	});
+};
+
 export const getSrcSet = ({ publicId: publicIdProp, src, srcSet }) => {
 	if (!publicIdProp && !isCloudinaryUrl(src))
 		return {
