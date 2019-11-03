@@ -1,6 +1,6 @@
 import urljoin from "url-join";
+import { getOgImage } from "~/components/Image/cloudinary";
 import pkg from "../../package.json";
-import defaultOgImage from "../og.png";
 
 const isBranchMaster = process.env.NOW_GITHUB_COMMIT_REF === "master";
 
@@ -20,19 +20,11 @@ export default ({
 	title = titleDefault,
 	titleTemplate = titleTemplateDefault,
 	description = descriptionDefault,
-	image: imageProp,
+	image,
 	path,
 }) => {
-	// const slugifyConfig = { lower: true };
-
-	/* eslint-disable no-nested-ternary */
-	const image = imageProp
-		? imageProp.includes("http")
-			? imageProp
-			: urljoin(siteUrl, imageProp)
-		: defaultOgImage;
-	/* eslint-enable no-nested-ternary */
-
+	const defaultOgImagePath = urljoin(siteUrl, "/og.png");
+	const imagePath = image ? getOgImage({ src: image }) : defaultOgImagePath;
 	const url = urljoin(siteUrl, path);
 
 	const schemaOrg = [
@@ -81,7 +73,7 @@ export default ({
 				content: "DPR, Viewport-Width, Width",
 			},
 			{ key: "description", name: "description", content: description },
-			{ key: "image", name: "image", content: image },
+			{ key: "image", name: "image", content: imagePath },
 
 			// Open graph
 			{ key: "og:title", property: "og:title", content: title },
@@ -97,7 +89,7 @@ export default ({
 				property: "og:site_name",
 				content: "mrtnvh",
 			},
-			{ key: "og:image", property: "og:image", content: image },
+			{ key: "og:image", property: "og:image", content: imagePath },
 			{
 				key: "og:image:width",
 				property: "og:image:width",
