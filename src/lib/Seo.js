@@ -1,9 +1,11 @@
 import urljoin from "url-join";
-// import slugify from "slugify";
 import pkg from "../../package.json";
 import defaultOgImage from "../og.png";
 
+const isBranchMaster = process.env.NOW_GITHUB_COMMIT_REF === "master";
+
 export const titleDefault = "Maarten Van Hoof \\\\ Front End Developer";
+
 const descriptionDefault =
 	"Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator";
 
@@ -52,7 +54,27 @@ export default ({
 				json: JSON.stringify(schemaOrg),
 			},
 		],
+		link: [
+			...(isBranchMaster
+				? [
+						{
+							key: "robots",
+							rel: "canonical",
+							href: url,
+						},
+				  ]
+				: []),
+		],
 		meta: [
+			...(!isBranchMaster
+				? [
+						{
+							key: "robots",
+							name: "robots",
+							content: "noindex, nofollow",
+						},
+				  ]
+				: []),
 			{
 				key: "Accept-CH",
 				httpEquiv: "Accept-CH",
