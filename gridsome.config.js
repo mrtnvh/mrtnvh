@@ -3,6 +3,8 @@ const pkg = require("./package.json");
 const postcssConfig = require("./postcss.config");
 const svgoConfig = require("./.svgo");
 
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
 	siteName: pkg.name,
 	siteUrl: pkg.homepage,
@@ -35,14 +37,18 @@ module.exports = {
 				typeName: "Folio",
 			},
 		},
-		{
-			use: "gridsome-plugin-gtm",
-			options: {
-				id: "GTM-NFXGVVV",
-				enabled: true,
-				debug: true,
-			},
-		},
+		...(isProd
+			? [
+					{
+						use: "gridsome-plugin-gtm",
+						options: {
+							id: "GTM-NFXGVVV",
+							enabled: true,
+							debug: true,
+						},
+					},
+			  ]
+			: []),
 		{
 			use: "gridsome-plugin-pwa",
 			options: {
