@@ -20,7 +20,6 @@ button.link {
 	text-decoration: var(--link-text-decoration);
 	position: relative;
 	display: inline-block;
-
 	transition: color var(--link-transition-speed);
 
 	svg {
@@ -29,7 +28,8 @@ button.link {
 	}
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&.active {
 		color: var(--link-hover-color);
 	}
 

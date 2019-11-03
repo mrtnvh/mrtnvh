@@ -10,6 +10,7 @@
 			:key="link.title"
 			:to="link.to"
 			:style="animationDelay(index)"
+			:exact="link.to === '/'"
 		>
 			{{ link.title }}
 		</g-link>
