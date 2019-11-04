@@ -39,6 +39,11 @@ export default {
 	flex-direction: column;
 }
 
+main {
+	display: flex !important;
+	flex-direction: column;
+}
+
 main,
 .portal {
 	flex-grow: 1;
