@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.2](https://github.com/mrtnvh/mrtnvh/compare/v4.0.1...v4.0.2) (2019-11-05)
+
+
+### Bug Fixes
+
+* **Analytics:** Replace GTM with G Analytics ([a844485](https://github.com/mrtnvh/mrtnvh/commit/a844485))
+
+
+
 ## [4.0.1](https://github.com/mrtnvh/mrtnvh/compare/v4.0.0...v4.0.1) (2019-11-05)
 
 
