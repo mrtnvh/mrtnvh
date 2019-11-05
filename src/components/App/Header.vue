@@ -92,10 +92,6 @@ export default {
 .subtitle {
 	grid-area: 1 / 2 / 1 / 3;
 
-	/* @media (min-width: 500px) {
-		grid-area: 1 / 3 / 1 / 3;
-	} */
-
 	@media (min-width: 1400px) {
 		grid-area: 1 / 2/ 1 / 2;
 	}
@@ -111,7 +107,7 @@ export default {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: var(--grid-gap-x);
+	grid-gap: calc(var(--space) / 2);
 	align-items: center;
 
 	@media (min-width: 1400px) {
@@ -121,8 +117,8 @@ export default {
 
 .nav {
 	display: grid;
-	grid-auto-flow: row;
-	grid-template-columns: repeat(3, max-content);
+	grid-auto-flow: column;
+	grid-template-columns: minmax(min-content, auto);
 	grid-gap: var(--space);
 }
 

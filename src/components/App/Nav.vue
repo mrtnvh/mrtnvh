@@ -66,5 +66,9 @@ export default {
 			text-decoration: none;
 		}
 	}
+
+	a {
+		white-space: nowrap;
+	}
 }
 </style>
