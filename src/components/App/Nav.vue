@@ -41,6 +41,10 @@ export default {
 				title: "Projects",
 			},
 			{
+				to: "/talks",
+				title: "Talks",
+			},
+			{
 				to: "/about",
 				title: "About me",
 			},
