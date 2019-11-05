@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.1](https://github.com/mrtnvh/mrtnvh/compare/v4.0.0...v4.0.1) (2019-11-05)
+
+
+### Bug Fixes
+
+* **Header:** Handle navigation layout automatically ([2ae3b03](https://github.com/mrtnvh/mrtnvh/commit/2ae3b03))
+
+
+
 # 4.0.0 (2019-11-05)
 
 
