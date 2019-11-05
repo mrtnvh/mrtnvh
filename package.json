@@ -20,12 +20,12 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "@pake/react-color": "^3.0.0",
     "cloudinary-core": "^2.7.4",
     "gridsome": "^0.7.9",
-    "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-pwa": "0.0.9",
     "lodash": "^4.17.15",
     "netlify-cms": "^2.9.1",

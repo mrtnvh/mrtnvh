@@ -37,18 +37,15 @@ module.exports = {
 				typeName: "Folio",
 			},
 		},
-		...(isProd
-			? [
-					{
-						use: "gridsome-plugin-gtm",
-						options: {
-							id: "GTM-NFXGVVV",
-							enabled: true,
-							debug: true,
-						},
-					},
-			  ]
-			: []),
+		{
+			use: "@gridsome/plugin-google-analytics",
+			options: {
+				id: " UA-113455479-1",
+				debug: {
+					sendHitTask: isProd,
+				},
+			},
+		},
 		{
 			use: "gridsome-plugin-pwa",
 			options: {
