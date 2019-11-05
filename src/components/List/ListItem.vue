@@ -71,13 +71,14 @@ article {
 .content {
 	position: relative;
 	z-index: 1;
-	margin-top: calc(var(--space) * -2);
+	margin-top: calc(var(--space) * -1.375);
 	padding: 0 calc(var(--space) * 1.5);
 }
 
 .title {
 	text-transform: uppercase;
-	margin: 0;
+	margin: 0 0 0.5rem 0;
+	line-height: 0.85em;
 }
 
 .subtitle {

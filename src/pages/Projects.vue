@@ -1,17 +1,17 @@
 <template>
 	<div>
 		<Section title="Current" title-small="projects">
-			<Projects v-model="currentProjects" class="projects" />
+			<List :value="currentProjects" class="projects" />
 		</Section>
 		<Section title="Previous" title-small="projects">
-			<Projects v-model="previousProjects" class="projects" />
+			<List :value="previousProjects" class="projects" />
 		</Section>
 	</div>
 </template>
 
 <script>
 import Section from "~/components/Page/Section.vue";
-import Projects from "~/components/Project/List.vue";
+import List from "~/components/List/List.vue";
 
 export default {
 	metaInfo() {
@@ -28,7 +28,7 @@ export default {
 		};
 	},
 
-	components: { Projects, Section },
+	components: { List, Section },
 
 	computed: {
 		projects() {
