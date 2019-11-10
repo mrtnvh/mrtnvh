@@ -9,7 +9,7 @@
 			</template>
 		</button>
 		<Portal to="root">
-			<div v-if="open" class="offCanvasMenu">
+			<div v-if="open" :class="$style.offCanvasMenu">
 				<Nav class="nav" off-canvas />
 				<Social class="social" off-canvas />
 			</div>
@@ -34,12 +34,20 @@ export default {
 };
 </script>
 
-<style scoped>
+<style module>
 .offCanvasMenu {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
+	top: calc(var(--project-header-top-position) * 2.5);
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	background: var(--light);
+	z-index: 100;
+	position: fixed;
+	border-top: 1px solid var(--grey);
 }
 </style>
