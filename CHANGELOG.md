@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.1.0](https://github.com/mrtnvh/mrtnvh/compare/v4.0.3...v4.1.0) (2019-11-14)
+
+
+### Features
+
+* **Talks:** Add Talks page and first talk ([bd1c348](https://github.com/mrtnvh/mrtnvh/commit/bd1c348))
+
+
+
 ## [4.0.3](https://github.com/mrtnvh/mrtnvh/compare/v4.0.2...v4.0.3) (2019-11-10)
 
 
