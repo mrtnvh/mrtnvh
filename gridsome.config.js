@@ -61,6 +61,15 @@ module.exports = {
 				icon: "./src/favicon.png",
 			},
 		},
+		{
+			use: "gridsome-plugin-sentry",
+			options: {
+				dsn: process.env.SENTRY_DSN,
+				attachProps: true,
+				release: `${pkg.name}@${pkg.version}`,
+				environment: process.env.VERCEL_GITHUB_COMMIT_REF, // Use branch name to define environment
+			},
+		},
 	],
 
 	transformers: {
