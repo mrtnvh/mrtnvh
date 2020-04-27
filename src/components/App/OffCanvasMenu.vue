@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<button @click="open = !open" class="reset link menu-toggle">
+		<button class="reset link menu-toggle" @click="open = !open">
 			<template v-if="!open">
 				Menu
 			</template>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Nav from "~/components/App/Nav";
-import Social from "~/components/App/Social";
+import Nav from "~/components/App/Nav.vue";
+import Social from "~/components/App/Social.vue";
 
 export default {
 	components: { Social, Nav },

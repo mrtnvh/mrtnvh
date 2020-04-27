@@ -14,13 +14,13 @@ const config = {
 	},
 };
 
-const getPublicId = input =>
+const getPublicId = (input) =>
 	input.replace(
 		/(?:https:\/\/res.cloudinary.com\/.*\/image\/upload\/)(.*\/?.*)\..*/,
 		"$1",
 	);
 
-const isCloudinaryUrl = url => url.includes("https://res.cloudinary.com/");
+const isCloudinaryUrl = (url) => url.includes("https://res.cloudinary.com/");
 
 export const getOgImage = ({ src }) => {
 	if (!isCloudinaryUrl(src)) return src;
@@ -46,7 +46,7 @@ export const getSrcSet = ({ publicId: publicIdProp, src, srcSet }) => {
 		src: cldnrySrc,
 		srcSet: [
 			...[`${cldnrySrc} 32w`],
-			...config.srcSetSizes.map(size => {
+			...config.srcSetSizes.map((size) => {
 				const url = config.core.url(publicId, {
 					...config.defaultOptions,
 					width: size,

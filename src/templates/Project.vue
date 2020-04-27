@@ -23,27 +23,29 @@
 					class="image"
 				/>
 			</figure>
+			<!-- eslint-disable vue/no-v-html -->
 			<div
-				v-html="$page.project.content"
 				:class="[
 					'body',
 					`slide-up-fade`,
 					`slide-up-fade-${intersected ? 'active' : 'inactive'}`,
 				]"
+				v-html="$page.project.content"
 			/>
+			<!-- eslint-enable vue/no-v-html -->
 		</div>
 	</intersect>
 </template>
 
 <page-query>
-query Project($path: String!) {
-	project(path: $path) {
-		title
-		subtitle
-		content
-		thumbnail
+	query Project($path: String!) {
+		project(path: $path) {
+			title
+			subtitle
+			content
+			thumbnail
+		}
 	}
-}
 </page-query>
 
 <script>

@@ -15,7 +15,7 @@
 <script>
 import IntersectMixin from "~/components/Intersect/IntersectMixin";
 import AnimationMixin from "~/components/Animation/AnimationMixin";
-import List from "~/components/List/List";
+import List from "~/components/List/List.vue";
 
 export default {
 	metaInfo() {

@@ -4,16 +4,16 @@
 </template>
 
 <page-query>
-query Folio($path: String!) {
-	folio(path: $path) {
-		title
-		description
-		subtitle
-		content
-		thumbnail
-		thumbnailAlt
+	query Folio($path: String!) {
+		folio(path: $path) {
+			title
+			description
+			subtitle
+			content
+			thumbnail
+			thumbnailAlt
+		}
 	}
-}
 </page-query>
 
 <script>

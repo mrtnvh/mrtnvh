@@ -26,19 +26,19 @@ export default {
 </script>
 
 <page-query>
-query {
-	projects: allProject(sortBy: "datePublished") {
-		edges {
-			node {
-				title
-				subtitle
-				thumbnail
-				color
-				current
-				path
-				datePublished
+	query {
+		projects: allProject(sortBy: "datePublished") {
+			edges {
+				node {
+					title
+					subtitle
+					thumbnail
+					color
+					current
+					path
+					datePublished
+				}
 			}
 		}
 	}
-}
 </page-query>

@@ -9,7 +9,7 @@ export const titleDefault = "Maarten Van Hoof \\\\ Front End Developer";
 const descriptionDefault =
 	"Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator";
 
-const titleTemplateDefault = titleChunk => {
+const titleTemplateDefault = (titleChunk) => {
 	return titleChunk && titleChunk !== titleDefault
 		? [titleChunk, titleDefault].join(" \\\\ ")
 		: titleDefault;

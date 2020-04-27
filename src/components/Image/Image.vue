@@ -6,9 +6,9 @@
 			:srcset="sourceSet"
 			:sizes="sizes"
 			:alt="alt"
-			@load="loaded = true"
 			:style="{ opacity: loaded ? 1 : 0 }"
 			class="fade"
+			@load="loaded = true"
 		/>
 	</intersect>
 </template>

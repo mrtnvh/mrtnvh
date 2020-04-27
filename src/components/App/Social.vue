@@ -1,6 +1,6 @@
 <template>
 	<nav :class="{ social: true, 'social--offCanvas': offCanvas }">
-		<button @click="handleMailClick" class="reset link">
+		<button class="reset link" @click="handleMailClick">
 			<email />
 		</button>
 		<a

@@ -25,11 +25,13 @@
 					/>
 				</figure>
 			</div>
+			<!-- eslint-disable vue/no-v-html -->
 			<div
-				v-html="$page.folio.content"
 				:class="['body', ...slideUpFadeClass]"
 				:style="animationDelay(4)"
+				v-html="$page.folio.content"
 			/>
+			<!-- eslint-enable vue/no-v-html -->
 		</div>
 	</intersect>
 </template>

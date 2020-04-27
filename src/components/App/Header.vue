@@ -27,9 +27,9 @@
 
 <script>
 import Brand from "~/components/Brand.vue";
-import OffCanvasMenu from "~/components/App/OffCanvasMenu";
-import Nav from "~/components/App/Nav";
-import Social from "~/components/App/Social";
+import OffCanvasMenu from "~/components/App/OffCanvasMenu.vue";
+import Nav from "~/components/App/Nav.vue";
+import Social from "~/components/App/Social.vue";
 
 export default {
 	components: {

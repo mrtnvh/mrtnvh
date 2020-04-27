@@ -1,16 +1,16 @@
 <template>
 	<div :class="{ grid: true, 'grid--large': large }">
 		<ListItem
-			:value="item"
-			:index="index + 1"
 			v-for="(item, index) in value"
 			:key="item.id || item.title"
+			:value="item"
+			:index="index + 1"
 		/>
 	</div>
 </template>
 
 <script>
-import ListItem from "./ListItem";
+import ListItem from "./ListItem.vue";
 
 export default {
 	components: {

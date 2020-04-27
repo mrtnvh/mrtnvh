@@ -2,7 +2,7 @@
 import Vue from "vue";
 import { observe, unobserve } from "./Observer";
 
-const warn = msg => {
+const warn = (msg) => {
 	if (!Vue.config.silent) {
 		console.warn(msg);
 	}
@@ -43,7 +43,7 @@ export default {
 
 			observe(
 				this.$slots.default[0].elm,
-				intersected => {
+				(intersected) => {
 					if (!intersected) {
 						this.$emit("leave");
 					} else {

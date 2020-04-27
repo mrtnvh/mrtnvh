@@ -5,7 +5,7 @@
 			<slot />
 		</main>
 		<app-footer v-show="!portalContent" />
-		<PortalTarget @change="handlePortalUpdate" name="root" class="portal" />
+		<PortalTarget name="root" class="portal" @change="handlePortalUpdate" />
 	</div>
 </template>
 

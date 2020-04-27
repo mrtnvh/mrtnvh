@@ -71,18 +71,18 @@ module.exports = {
 		},
 	},
 
-	chainWebpack: config => {
+	chainWebpack: (config) => {
 		const FILE_RE = /\.(vue|js|ts|svg)$/;
 
 		config.module
 			.rule("svg")
-			.issuer(file => !FILE_RE.test(file))
+			.issuer((file) => !FILE_RE.test(file))
 			.oneOf("svg");
 
 		config.module
 			.rule("svg-component")
 			.test(/\.svg$/)
-			.issuer(file => FILE_RE.test(file))
+			.issuer((file) => FILE_RE.test(file))
 			.oneOf("ignore")
 			.resourceQuery(/\?ignore/)
 			.use("file-loader")
