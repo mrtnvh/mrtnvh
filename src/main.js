@@ -1,11 +1,11 @@
 /* eslint-disable no-param-reassign */
-import VueElementQuery from "vue-element-query";
 import VuePortal from "portal-vue";
+import VueElementQuery from "./lib/ElementQuery";
 import DefaultLayout from "./layouts/Default.vue";
 import "normalize.css";
 import "./assets/styles/app.css";
 
-export default function(Vue) {
+export default function (Vue) {
 	/**
 	 * Layout
 	 */
