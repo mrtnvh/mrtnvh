@@ -14,9 +14,7 @@
     "dev": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "stylelint": "stylelint --fix",
-    "stylelint-check": "stylelint-config-prettier-check",
+    "stylelint": "stylelint --fix src/**/*.css, src/**/*.vue",
     "release": "standard-version"
   },
   "dependencies": {
