@@ -69,13 +69,24 @@ export default {
 				 */
 				$_elementQueryMixin_init() {
 					this.$data.$_elementQueryMixin_resizeObserver = new ResizeObserver(
-						([entry]) => {
-							const { height, width } = entry.contentRect;
+						(entries) => {
+							// We wrap it in requestAnimationFrame to avoid this error - ResizeObserver loop limit exceeded
+							window.requestAnimationFrame(() => {
+								if (
+									!Array.isArray(entries) ||
+									!entries.length
+								) {
+									return;
+								}
 
-							if (this.$data.$_elementQueryMixin_size) {
-								this.$data.$_elementQueryMixin_size.height = height;
-								this.$data.$_elementQueryMixin_size.width = width;
-							}
+								const [entry] = entries;
+								const { height, width } = entry.contentRect;
+
+								if (this.$data.$_elementQueryMixin_size) {
+									this.$data.$_elementQueryMixin_size.height = height;
+									this.$data.$_elementQueryMixin_size.width = width;
+								}
+							});
 						},
 					).observe(this.$el);
 				},
