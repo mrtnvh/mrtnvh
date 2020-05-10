@@ -19,7 +19,7 @@ module.exports = {
 	settings: {
 		"import/resolver": {
 			nuxt: {
-				nuxtSrcDir: 'src',
+				nuxtSrcDir: "src",
 			},
 		},
 	},
