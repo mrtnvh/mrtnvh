@@ -1,7 +1,6 @@
 /* eslint-disable no-param-reassign */
 import VuePortal from "portal-vue";
 import VueElementQuery from "./lib/ElementQuery";
-import PerformanceTracking from "./lib/PerformanceTracking";
 import DefaultLayout from "./layouts/Default.vue";
 import "normalize.css";
 import "./assets/styles/app.css";
@@ -21,7 +20,11 @@ export default (Vue, { router }) => {
 	/**
 	 * Performance tracking
 	 */
-	if (process.isClient) {
-		PerformanceTracking(Vue.$ga, router);
+	if (typeof window !== "undefined") {
+		import("./lib/PerformanceTracking").then(
+			({ default: PerformanceTracking }) => {
+				PerformanceTracking(Vue.$ga, router);
+			},
+		);
 	}
 };
