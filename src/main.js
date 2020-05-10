@@ -21,5 +21,7 @@ export default (Vue, { router }) => {
 	/**
 	 * Performance tracking
 	 */
-	PerformanceTracking(Vue.$ga, router);
+	if (process.isClient) {
+		PerformanceTracking(Vue.$ga, router);
+	}
 };
