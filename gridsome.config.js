@@ -54,7 +54,7 @@ module.exports = {
 				display: "standalone",
 				statusBarStyle: "default",
 				manifestPath: "manifest.json",
-				disableServiceWorker: true,
+				disableServiceWorker: false,
 				serviceWorkerPath: "service-worker.js",
 				shortName: "mrtnvh",
 				themeColor: "#95ff00",
