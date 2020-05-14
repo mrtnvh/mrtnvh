@@ -10,6 +10,7 @@
     "url": "https://mrtnvh.com"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "gridsome build",
     "dev": "gridsome develop",
     "explore": "gridsome explore",
@@ -54,10 +55,14 @@
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
     "remark-containers": "^1.1.2",
+    "sharp": "^0.25.2",
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-order": "^4.0.0",
     "svg-to-vue-component": "^0.3.8",
     "vue-eslint-parser": "^7.0.0"
+  },
+  "resolutions": {
+    "sharp": "^0.25.2"
   }
 }

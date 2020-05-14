@@ -54,11 +54,12 @@ module.exports = {
 				display: "standalone",
 				statusBarStyle: "default",
 				manifestPath: "manifest.json",
+				disableServiceWorker: process.env.NODE_ENV === "production",
 				serviceWorkerPath: "service-worker.js",
 				shortName: "mrtnvh",
 				themeColor: "#95ff00",
 				backgroundColor: "#ffffff",
-				icon: "./src/favicon.png",
+				icon: "src/favicon.png",
 			},
 		},
 		{

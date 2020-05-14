@@ -4,7 +4,7 @@ import { Cloudinary } from "cloudinary-core";
 const config = {
 	srcSetSizes: [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400],
 	core: new Cloudinary({
-		cloud_name: process.env.GRIDSOME_CLOUDINARY_CLOUD_NAME,
+		cloud_name: process.env.GRIDSOME_CLOUDINARY_CLOUD_NAME || "",
 	}),
 	defaultOptions: {
 		dpr: 1,
