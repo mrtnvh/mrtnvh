@@ -54,7 +54,7 @@ module.exports = {
 				display: "standalone",
 				statusBarStyle: "default",
 				manifestPath: "manifest.json",
-				disableServiceWorker: process.env.NODE_ENV === "production",
+				disableServiceWorker: true,
 				serviceWorkerPath: "service-worker.js",
 				shortName: "mrtnvh",
 				themeColor: "#95ff00",
