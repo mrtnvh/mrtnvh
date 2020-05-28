@@ -13,6 +13,8 @@
 						:src="value.thumbnail"
 						:alt="value.title"
 						class="image"
+						width="1600"
+						heigth="900"
 					/>
 				</figure>
 				<div class="content">

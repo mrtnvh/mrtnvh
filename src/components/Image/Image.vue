@@ -1,26 +1,23 @@
 <template>
-	<intersect @enter="intersected = true" @leave="intersected = false">
-		<img
-			ref="image"
-			:src="source"
-			:srcset="sourceSet"
-			:sizes="sizes"
-			:alt="alt"
-			:style="{ opacity: loaded ? 1 : 0 }"
-			class="fade"
-			@load="loaded = true"
-		/>
-	</intersect>
+	<img
+		ref="image"
+		:src="source"
+		:srcset="sourceSet"
+		:sizes="sizes"
+		:alt="alt"
+		class="fade"
+		loading="lazy"
+		:width="width"
+		:heigth="heigth"
+		@load="handleLoad"
+	/>
 </template>
 
 <script>
-import Intersect from "~/components/Intersect/Intersect";
 import { getSrcSet } from "./cloudinary";
 import getImageSize from "./getImageSize";
 
 export default {
-	components: { Intersect },
-
 	props: {
 		src: {
 			type: String,
@@ -31,32 +28,42 @@ export default {
 			type: String,
 			required: true,
 		},
+
+		width: {
+			type: String,
+			required: true,
+		},
+
+		heigth: {
+			type: String,
+			required: true,
+		},
 	},
 
 	data() {
 		return {
-			intersected: false,
-			loaded: false,
 			source: null,
 			sourceSet: null,
 			sizes: "1px",
 		};
 	},
 
-	watch: {
-		intersected(intersected) {
-			const { src, srcSet } = getSrcSet({
-				src: this.src,
-			});
+	created() {
+		const { src, srcSet } = getSrcSet({
+			src: this.src,
+		});
 
-			this.source = intersected ? src : null;
-			this.sourceSet = intersected ? srcSet : null;
-			this.sizes =
-				intersected && this.sizes === "1px"
-					? getImageSize({ image: this.$refs.image })
-					: "1px";
+		this.source = src;
+		this.sourceSet = srcSet;
+	},
 
-			if (!intersected) this.loaded = intersected;
+	mounted() {
+		this.sizes = getImageSize({ image: this.$refs.image });
+	},
+
+	methods: {
+		handleLoad(event) {
+			console.log("loaded", event.target);
 		},
 	},
 };

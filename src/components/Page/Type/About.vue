@@ -22,6 +22,8 @@
 						:src="$page.folio.thumbnail"
 						:alt="$page.folio.title"
 						class="image"
+						width="800"
+						height="800"
 					/>
 				</figure>
 			</div>

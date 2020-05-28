@@ -21,6 +21,8 @@
 					:src="$page.project.thumbnail"
 					:alt="$page.project.title"
 					class="image"
+					width="1600"
+					heigth="900"
 				/>
 			</figure>
 			<!-- eslint-disable vue/no-v-html -->
