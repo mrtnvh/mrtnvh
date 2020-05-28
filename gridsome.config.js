@@ -71,6 +71,23 @@ module.exports = {
 				environment: process.env.VERCEL_GITHUB_COMMIT_REF, // Use branch name to define environment
 			},
 		},
+		{
+			use: "@gridsome/plugin-sitemap",
+			options: {
+				config: {
+					"/": {
+						priority: 1,
+					},
+					"/talks": {
+						changefreq: "monthly",
+					},
+					"/about": {
+						changefreq: "yearly",
+						priority: 0.7,
+					},
+				},
+			},
+		},
 	],
 
 	transformers: {
