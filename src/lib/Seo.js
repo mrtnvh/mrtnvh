@@ -2,7 +2,7 @@ import urljoin from "url-join";
 import { getOgImage } from "~/components/Image/cloudinary";
 import pkg from "../../package.json";
 
-const isBranchMaster = process.env.NOW_GITHUB_COMMIT_REF === "master";
+const isBranchMaster = process.env.IS_MASTER === "true";
 
 export const titleDefault = "Maarten Van Hoof \\\\ Front End Developer";
 
