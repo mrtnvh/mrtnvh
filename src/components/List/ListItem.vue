@@ -1,44 +1,32 @@
 <template>
-	<Intersect @enter="intersected = true" @leave="intersected = false">
-		<article
-			:style="animationDelay(index)"
-			:class="{
-				'slide-up-fade': true,
-				'slide-up-fade-inactive': !intersected,
-			}"
-		>
-			<g-link :to="value.path" class="reset link">
-				<figure class="media">
-					<Thumbnail
-						:src="value.thumbnail"
-						:alt="value.title"
-						class="image"
-						width="1600"
-						heigth="900"
-					/>
-				</figure>
-				<div class="content">
-					<h1 class="title outline">
-						{{ value.title }}
-					</h1>
-					<h2 class="subtitle">{{ value.subtitle }}</h2>
-				</div>
-			</g-link>
-		</article>
-	</Intersect>
+	<article>
+		<g-link :to="value.path" class="reset link">
+			<figure class="media">
+				<Thumbnail
+					:src="value.thumbnail"
+					:alt="value.title"
+					class="image"
+					width="1600"
+					heigth="900"
+				/>
+			</figure>
+			<div class="content">
+				<h1 class="title outline">
+					{{ value.title }}
+				</h1>
+				<h2 class="subtitle">{{ value.subtitle }}</h2>
+			</div>
+		</g-link>
+	</article>
 </template>
 
 <script>
 import Image from "~/components/Image/Image.vue";
-import IntersectMixin from "~/components/Intersect/IntersectMixin";
-import AnimationMixin from "~/components/Animation/AnimationMixin";
 
 export default {
 	components: {
 		Thumbnail: Image,
 	},
-
-	mixins: [IntersectMixin, AnimationMixin],
 
 	props: {
 		value: {

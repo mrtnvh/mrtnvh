@@ -1,20 +1,13 @@
 <template>
-	<intersect @enter="intersected = true" @leave="intersected = false">
-		<div class="container">
-			<h1
-				:class="['title', 'outline', ...slideUpFadeClass]"
-				:style="animationDelay(1)"
-			>
-				Talks
-			</h1>
-			<List :value="list" large />
-		</div>
-	</intersect>
+	<div class="container">
+		<h1 :class="['title', 'outline']">
+			Talks
+		</h1>
+		<List :value="list" large />
+	</div>
 </template>
 
 <script>
-import IntersectMixin from "~/components/Intersect/IntersectMixin";
-import AnimationMixin from "~/components/Animation/AnimationMixin";
 import List from "~/components/List/List.vue";
 
 export default {
@@ -36,8 +29,6 @@ export default {
 		List,
 	},
 
-	mixins: [IntersectMixin, AnimationMixin],
-
 	data: () => ({
 		list: [
 			{
@@ -58,15 +49,6 @@ export default {
 			},
 		],
 	}),
-
-	computed: {
-		slideUpFadeClass() {
-			return [
-				`slide-up-fade`,
-				`slide-up-fade-${this.intersected ? "active" : "inactive"}`,
-			];
-		},
-	},
 };
 </script>
 

@@ -1,42 +1,24 @@
 <template>
-	<intersect @enter="intersected = true" @leave="intersected = false">
-		<div id="project" class="container">
-			<header>
-				<div class="sticky">
-					<div
-						:class="[
-							`slide-up-fade`,
-							`slide-up-fade-${
-								intersected ? 'active' : 'inactive'
-							}`,
-						]"
-					>
-						<h1 class="title outline">{{ $page.project.title }}</h1>
-						<div class="subtitle">{{ $page.project.subtitle }}</div>
-					</div>
-				</div>
-			</header>
-			<figure class="media">
-				<Thumbnail
-					:src="$page.project.thumbnail"
-					:alt="$page.project.title"
-					class="image"
-					width="1600"
-					heigth="900"
-				/>
-			</figure>
-			<!-- eslint-disable vue/no-v-html -->
-			<div
-				:class="[
-					'body',
-					`slide-up-fade`,
-					`slide-up-fade-${intersected ? 'active' : 'inactive'}`,
-				]"
-				v-html="$page.project.content"
+	<div id="project" class="container">
+		<header>
+			<div class="sticky">
+				<h1 class="title outline">{{ $page.project.title }}</h1>
+				<div class="subtitle">{{ $page.project.subtitle }}</div>
+			</div>
+		</header>
+		<figure class="media">
+			<Thumbnail
+				:src="$page.project.thumbnail"
+				:alt="$page.project.title"
+				class="image"
+				width="1600"
+				heigth="900"
 			/>
-			<!-- eslint-enable vue/no-v-html -->
-		</div>
-	</intersect>
+		</figure>
+		<!-- eslint-disable vue/no-v-html -->
+		<div :class="['body']" v-html="$page.project.content" />
+		<!-- eslint-enable vue/no-v-html -->
+	</div>
 </template>
 
 <page-query>
@@ -52,7 +34,6 @@
 
 <script>
 import Image from "~/components/Image/Image.vue";
-import IntersectMixin from "~/components/Intersect/IntersectMixin";
 import Seo, { titleDefault } from "~/lib/Seo";
 
 export default {
@@ -71,8 +52,6 @@ export default {
 	components: {
 		Thumbnail: Image,
 	},
-
-	mixins: [IntersectMixin],
 };
 </script>
 

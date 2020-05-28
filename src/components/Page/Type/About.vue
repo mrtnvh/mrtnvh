@@ -1,22 +1,13 @@
 <template>
 	<intersect @enter="intersected = true" @leave="intersected = false">
 		<div id="folio" class="container">
-			<h1
-				:class="['title', 'outline', ...slideUpFadeClass]"
-				:style="animationDelay(1)"
-			>
+			<h1 :class="['title', 'outline']">
 				{{ $page.folio.title }}
 			</h1>
-			<div
-				:class="['subtitle', 'intro', ...slideUpFadeClass]"
-				:style="animationDelay(2)"
-			>
+			<div :class="['subtitle', 'intro']">
 				{{ $page.folio.subtitle }}
 			</div>
-			<div
-				:class="['media-container', ...slideUpFadeClass]"
-				:style="animationDelay(3)"
-			>
+			<div :class="['media-container']">
 				<figure class="media">
 					<Thumbnail
 						:src="$page.folio.thumbnail"
@@ -28,11 +19,7 @@
 				</figure>
 			</div>
 			<!-- eslint-disable vue/no-v-html -->
-			<div
-				:class="['body', ...slideUpFadeClass]"
-				:style="animationDelay(4)"
-				v-html="$page.folio.content"
-			/>
+			<div :class="['body']" v-html="$page.folio.content" />
 			<!-- eslint-enable vue/no-v-html -->
 		</div>
 	</intersect>
@@ -41,23 +28,12 @@
 <script>
 import mixins from "./mixins";
 import Image from "~/components/Image/Image.vue";
-import IntersectMixin from "~/components/Intersect/IntersectMixin";
-import AnimationMixin from "~/components/Animation/AnimationMixin";
 
 export default {
 	components: {
 		Thumbnail: Image,
 	},
-	mixins: [mixins, IntersectMixin, AnimationMixin],
-
-	computed: {
-		slideUpFadeClass() {
-			return [
-				`slide-up-fade`,
-				`slide-up-fade-${this.intersected ? "active" : "inactive"}`,
-			];
-		},
-	},
+	mixins: [mixins],
 };
 </script>
 
