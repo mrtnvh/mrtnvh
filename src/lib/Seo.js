@@ -45,6 +45,37 @@ export default ({
 				type: "application/ld+json",
 				json: JSON.stringify(schemaOrg),
 			},
+			{
+				key: "structuredData",
+				type: "application/ld+json",
+				json: {
+					"@context": "http://schema.org/",
+					"@type": "Person",
+					name: "Maarten Van Hoof",
+					image:
+						"https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait",
+					jobTitle: "Front-end Developer",
+					url: "https://mrtnvh.com",
+					sameAs: "https://mrtnvh.com",
+					hasOccupation: {
+						"@type": "Occupation",
+						name: "Front-end Developer",
+						occupationalCategory: {
+							"@type": "CategoryCode",
+							inCodeSet: {
+								"@type": "CategoryCodeSet",
+								name: "O*Net-SOC",
+								dateModified: "2019",
+								url: "https://www.onetonline.org/",
+							},
+							codeValue: "15-1132.00",
+							name: "Software Developers, Applications",
+							url:
+								"https://www.onetonline.org/link/summary/15-1132.00",
+						},
+					},
+				},
+			},
 		],
 		link: [
 			...(isBranchMaster
