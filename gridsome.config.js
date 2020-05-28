@@ -74,7 +74,6 @@ module.exports = {
 		{
 			use: "@gridsome/plugin-sitemap",
 			options: {
-				exclude: ["/exclude-me"],
 				config: {
 					"/": {
 						priority: 1,
