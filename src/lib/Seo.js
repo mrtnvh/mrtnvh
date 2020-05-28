@@ -27,15 +27,6 @@ export default ({
 	const imagePath = image ? getOgImage({ src: image }) : defaultOgImagePath;
 	const url = urljoin(siteUrl, path);
 
-	const schemaOrg = [
-		{
-			"@context": "http://schema.org",
-			"@type": "WebSite",
-			url: siteUrl,
-			name: pkg.name,
-		},
-	];
-
 	return {
 		title,
 		titleTemplate,
@@ -43,7 +34,12 @@ export default ({
 			{
 				key: "schemaOrg",
 				type: "application/ld+json",
-				json: JSON.stringify(schemaOrg),
+				json: {
+					"@context": "http://schema.org",
+					"@type": "WebSite",
+					url: siteUrl,
+					name: pkg.name,
+				},
 			},
 			{
 				key: "structuredData",
@@ -57,6 +53,24 @@ export default ({
 					jobTitle: "Front-end Developer",
 					url: "https://mrtnvh.com",
 					sameAs: "https://mrtnvh.com",
+					memberOf: {
+						"@context": "http://schema.org",
+						"@type": "Organization",
+						name: "ISAAC",
+						url: "https://isaac.nl",
+						sameAs: "https://isaac.nl",
+						slogan: "Turning .complexity into profitability",
+						description:
+							"Digital Agency specialized in Commerce en Finance",
+						image: "https://www.isaac.nl/global/images/logo.svg",
+						address: {
+							"@type": "PostalAddress",
+							addressLocality: "Eindhoven, The Netherlands",
+							postalCode: "5621 AA",
+							streetAddress: "Marconilaan 16",
+						},
+						email: "welkom@isaac.nl",
+					},
 				},
 			},
 		],
