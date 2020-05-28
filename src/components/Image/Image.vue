@@ -9,7 +9,6 @@
 		loading="lazy"
 		:width="width"
 		:heigth="heigth"
-		@load="handleLoad"
 	/>
 </template>
 
@@ -59,12 +58,6 @@ export default {
 
 	mounted() {
 		this.sizes = getImageSize({ image: this.$refs.image });
-	},
-
-	methods: {
-		handleLoad(event) {
-			console.log("loaded", event.target);
-		},
 	},
 };
 </script>
