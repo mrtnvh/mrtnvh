@@ -57,23 +57,6 @@ export default ({
 					jobTitle: "Front-end Developer",
 					url: "https://mrtnvh.com",
 					sameAs: "https://mrtnvh.com",
-					hasOccupation: {
-						"@type": "Occupation",
-						name: "Front-end Developer",
-						occupationalCategory: {
-							"@type": "CategoryCode",
-							inCodeSet: {
-								"@type": "CategoryCodeSet",
-								name: "O*Net-SOC",
-								dateModified: "2019",
-								url: "https://www.onetonline.org/",
-							},
-							codeValue: "15-1132.00",
-							name: "Software Developers, Applications",
-							url:
-								"https://www.onetonline.org/link/summary/15-1132.00",
-						},
-					},
 				},
 			},
 		],
