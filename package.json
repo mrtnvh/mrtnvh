@@ -28,7 +28,7 @@
     "gridsome": "^0.7.14",
     "gridsome-plugin-pwa": "0.0.17",
     "gridsome-plugin-sentry": "^1.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "normalize.css": "^8.0.1",
     "perfume.js": "^5.0.2",
     "portal-vue": "^2.1.7",
