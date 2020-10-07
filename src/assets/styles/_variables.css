@@ -111,3 +111,11 @@
 		--folio-title-margin: 0 0 1rem -0.05em;
 	}
 }
+
+
+/**
+* Off Canvas Menu
+*/
+:root {
+	--offcanvasmenu-zindex: 100;
+}

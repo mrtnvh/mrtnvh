@@ -1,57 +1,34 @@
 <template>
-	<div id="project" class="container">
+	<article id="project" class="container">
 		<header>
 			<div class="sticky">
-				<h1 class="title outline">{{ $page.project.title }}</h1>
-				<div class="subtitle">{{ $page.project.subtitle }}</div>
+				<h1 class="title outline">{{ page.title }}</h1>
+				<div class="subtitle">{{ page.subtitle }}</div>
 			</div>
 		</header>
 		<figure class="media">
 			<Thumbnail
-				:src="$page.project.thumbnail"
-				:alt="$page.project.title"
+				:src="page.thumbnail"
+				:alt="page.title"
 				class="image"
 				width="1600"
-				heigth="900"
+				height="900"
 			/>
 		</figure>
-		<!-- eslint-disable vue/no-v-html -->
-		<div :class="['body']" v-html="$page.project.content" />
-		<!-- eslint-enable vue/no-v-html -->
-	</div>
+		<nuxt-content :class="['body']" :document="page" />
+	</article>
 </template>
 
-<page-query>
-	query Project($path: String!) {
-		project(path: $path) {
-			title
-			subtitle
-			content
-			thumbnail
-		}
-	}
-</page-query>
-
 <script>
+import mixins from "./mixins";
 import Image from "~/components/Image/Image.vue";
-import Seo, { titleDefault } from "~/lib/Seo";
 
 export default {
-	metaInfo() {
-		const { title, description, subtitle, thumbnail } = this.$page.project;
-		const { path } = this.$route;
-		return Seo({
-			title,
-			titleTemplate: ["%s", "Projects", titleDefault].join(" \\\\ "),
-			description: description || subtitle,
-			path,
-			image: thumbnail,
-		});
-	},
-
 	components: {
 		Thumbnail: Image,
 	},
+
+	mixins: [mixins],
 };
 </script>
 

@@ -1,8 +1,8 @@
 <template>
-	<g-link :class="{ desktop: $eq.desktop }" to="/" class="brand">
+	<nuxt-link :class="{ desktop: $eq.desktop }" to="/" class="brand">
 		<div class="name firstname">Maarten</div>
 		<div class="name lastname outline">Van Hoof</div>
-	</g-link>
+	</nuxt-link>
 </template>
 
 <script>

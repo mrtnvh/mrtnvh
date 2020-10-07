@@ -1,28 +1,24 @@
 <template>
-	<intersect @enter="intersected = true" @leave="intersected = false">
-		<div id="folio" class="container">
-			<h1 :class="['title', 'outline']">
-				{{ $page.folio.title }}
-			</h1>
-			<div :class="['subtitle', 'intro']">
-				{{ $page.folio.subtitle }}
-			</div>
-			<div :class="['media-container']">
-				<figure class="media">
-					<Thumbnail
-						:src="$page.folio.thumbnail"
-						:alt="$page.folio.title"
-						class="image"
-						width="800"
-						height="800"
-					/>
-				</figure>
-			</div>
-			<!-- eslint-disable vue/no-v-html -->
-			<div :class="['body']" v-html="$page.folio.content" />
-			<!-- eslint-enable vue/no-v-html -->
+	<article id="folio" class="container">
+		<h1 :class="['title', 'outline']">
+			{{ page.title }}
+		</h1>
+		<div :class="['subtitle', 'intro']">
+			{{ page.subtitle }}
 		</div>
-	</intersect>
+		<div :class="['media-container']">
+			<figure class="media">
+				<Thumbnail
+					:src="page.thumbnail"
+					:alt="page.title"
+					class="image"
+					width="800"
+					height="800"
+				/>
+			</figure>
+		</div>
+		<nuxt-content :class="['body']" :document="page" />
+	</article>
 </template>
 
 <script>
@@ -72,13 +68,13 @@ export default {
 
 .subtitle {
 	@media (min-width: 800px) {
-		grid-area: 2 / 1 / 3 / 2;
+		grid-area: 2 / 1 / 2 / 2;
 	}
 }
 
 .media-container {
 	@media (min-width: 800px) {
-		grid-area: 3 / 1 / 4 / 2;
+		grid-area: 2 / 1 / 4 / 2;
 	}
 }
 

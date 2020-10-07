@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import Email from "~/assets/images/email.svg";
-import Github from "~/assets/images/github.svg";
-import Twitter from "~/assets/images/twitter.svg";
-import LinkedIn from "~/assets/images/linkedin.svg";
+import Email from "~/assets/images/email.svg?inline";
+import Github from "~/assets/images/github.svg?inline";
+import Twitter from "~/assets/images/twitter.svg?inline";
+import LinkedIn from "~/assets/images/linkedin.svg?inline";
 
 export default {
 	components: {

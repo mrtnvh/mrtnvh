@@ -1,12 +1,8 @@
 <template>
 	<div>
 		<button class="reset link menu-toggle" @click="open = !open">
-			<template v-if="!open">
-				Menu
-			</template>
-			<template v-else>
-				Close
-			</template>
+			<template v-if="!open"> Menu </template>
+			<template v-else> Close </template>
 		</button>
 		<Portal to="root">
 			<div v-if="open" :class="$style.offCanvasMenu">
@@ -46,7 +42,7 @@ export default {
 	width: 100%;
 	bottom: 0;
 	background: var(--light);
-	z-index: 100;
+	z-index: var(--offcanvasmenu-zindex);
 	position: fixed;
 	border-top: 1px solid var(--grey);
 }

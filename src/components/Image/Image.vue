@@ -8,7 +8,7 @@
 		class="fade"
 		loading="lazy"
 		:width="width"
-		:heigth="heigth"
+		:height="height"
 	/>
 </template>
 
@@ -33,7 +33,7 @@ export default {
 			required: true,
 		},
 
-		heigth: {
+		height: {
 			type: String,
 			required: true,
 		},

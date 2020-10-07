@@ -2,7 +2,7 @@
 	<div class="layout">
 		<app-header />
 		<main v-show="!portalContent">
-			<slot />
+			<Nuxt />
 		</main>
 		<app-footer v-show="!portalContent" />
 		<PortalTarget name="root" class="portal" @change="handlePortalUpdate" />
@@ -10,11 +10,15 @@
 </template>
 
 <script>
+// import PortalTarget from "portal-vue";
+import Seo from "~/lib/Seo";
+import pkg from "../../package.json";
 import Header from "~/components/App/Header.vue";
 import Footer from "~/components/App/Footer.vue";
 
 export default {
 	components: {
+		// PortalTarget,
 		AppHeader: Header,
 		AppFooter: Footer,
 	},
@@ -27,6 +31,9 @@ export default {
 		handlePortalUpdate(newContent) {
 			this.portalContent = newContent;
 		},
+	},
+	head() {
+		return Seo({ siteUrl: pkg.homepage });
 	},
 };
 </script>

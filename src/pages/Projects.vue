@@ -14,27 +14,14 @@ import Section from "~/components/Page/Section.vue";
 import List from "~/components/List/List.vue";
 
 export default {
-	metaInfo() {
-		return {
-			title: "Projects",
-			meta: [
-				{
-					key: "description",
-					name: "description",
-					content:
-						"A selection of my current and previous projects. Work, musical and open source experiences",
-				},
-			],
-		};
-	},
-
 	components: { List, Section },
 
-	computed: {
-		projects() {
-			return this.$page.projects.edges.map(({ node }) => node);
-		},
+	async asyncData({ $content }) {
+		const projects = await $content("projects").fetch();
+		return { projects };
+	},
 
+	computed: {
 		currentProjects() {
 			return this.projects.filter(({ current }) => current);
 		},
@@ -43,23 +30,17 @@ export default {
 			return this.projects.filter(({ current }) => !current);
 		},
 	},
+
+	head: {
+		title: "Projects",
+		meta: [
+			{
+				key: "description",
+				name: "description",
+				content:
+					"A selection of my current and previous projects. Work, musical and open source experiences",
+			},
+		],
+	},
 };
 </script>
-
-<page-query>
-	query {
-		projects: allProject(sortBy: "datePublished") {
-			edges {
-				node {
-					title
-					subtitle
-					thumbnail
-					color
-					current
-					path
-					datePublished
-				}
-			}
-		}
-	}
-</page-query>

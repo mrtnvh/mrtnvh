@@ -1,13 +1,18 @@
 <template>
 	<article>
-		<g-link :to="value.path" class="reset link">
+		<component
+			:is="value.path.startsWith('http') ? 'a' : 'nuxt-link'"
+			:to="value.path"
+			:href="value.path"
+			class="reset link"
+		>
 			<figure class="media">
 				<Thumbnail
 					:src="value.thumbnail"
 					:alt="value.title"
 					class="image"
 					width="1600"
-					heigth="900"
+					height="900"
 				/>
 			</figure>
 			<div class="content">
@@ -16,7 +21,7 @@
 				</h1>
 				<h2 class="subtitle">{{ value.subtitle }}</h2>
 			</div>
-		</g-link>
+		</component>
 	</article>
 </template>
 
@@ -60,6 +65,7 @@ article {
 
 .content {
 	position: relative;
+	/* stylelint-disable-next-line */
 	z-index: 1;
 	margin-top: calc(var(--space) * -1.375);
 	padding: 0 calc(var(--space) * 1.5);

@@ -132,6 +132,7 @@ export default {
 .nav,
 .social {
 	position: relative;
+	/* stylelint-disable-next-line */
 	z-index: 1;
 
 	@media (min-width: 1400px) {

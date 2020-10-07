@@ -31,9 +31,9 @@
 				</a>
 				<span class="mr-space">,</span>
 
-				<g-link to="/projects/royce">
+				<nuxt-link to="/projects/royce">
 					Loud Noise Generator
-				</g-link>
+				</nuxt-link>
 				.
 			</div>
 		</div>
