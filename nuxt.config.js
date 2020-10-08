@@ -1,6 +1,6 @@
 import path from "path";
 import pkg from "./package.json";
-import { createSitemapRoutes } from "~/lib/Sitemap";
+import { createSitemapRoutes } from "./src/lib/Sitemap";
 
 export default {
 	publicRuntimeConfig: {
