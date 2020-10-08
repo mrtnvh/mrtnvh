@@ -4,13 +4,14 @@ import { Cloudinary } from "cloudinary-core";
 const config = {
 	srcSetSizes: [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400],
 	core: new Cloudinary({
-		cloud_name: process.env.CLOUDINARY_CLOUD_NAME || "mrtnvh",
+		cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
 	}),
 	defaultOptions: {
 		dpr: 1,
 		crop: "scale",
 		fetch_format: "auto",
 		quality: "auto",
+		secure: true,
 	},
 };
 
