@@ -10,7 +10,12 @@ export default {
 	srcDir: "src",
 	layoutTransition: "fade",
 	css: ["normalize.css", "./assets/styles/app.css"],
-	modules: ["@nuxt/content", "portal-vue/nuxt", "@nuxtjs/sitemap"],
+	modules: [
+		"@nuxt/content",
+		"portal-vue/nuxt",
+		"@nuxtjs/sitemap",
+		"@nuxtjs/sentry",
+	],
 	plugins: ["~/plugins/elementQuery"],
 	buildModules: [
 		"@nuxtjs/pwa",
