@@ -6,7 +6,6 @@ export default {
 	env: {
 		cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
 	},
-	ssr: false,
 	target: "static",
 	srcDir: "src",
 	layoutTransition: "fade",
