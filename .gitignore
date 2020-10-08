@@ -7,3 +7,4 @@ dist
 .env
 .env.*
 .nuxt
+src/static/sw.js
