@@ -3,7 +3,7 @@ import pkg from "./package.json";
 import { createSitemapRoutes } from "./src/lib/Sitemap";
 
 export default {
-	publicRuntimeConfig: {
+	env: {
 		cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
 	},
 	target: "static",
