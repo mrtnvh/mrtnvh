@@ -9,7 +9,6 @@ export default {
 	target: "static",
 	srcDir: "src",
 	layoutTransition: "fade",
-	css: ["normalize.css", "./assets/styles/app.css"],
 	modules: [
 		"@nuxt/content",
 		"portal-vue/nuxt",
@@ -34,7 +33,6 @@ export default {
 	content: {
 		dir: path.resolve(__dirname, "content"),
 	},
-
 	pwa: {
 		meta: {
 			theme_color: "#95FF00",
@@ -51,10 +49,20 @@ export default {
 			],
 		},
 	},
-
 	sitemap: {
 		hostname: pkg.homepage,
 		gzip: true,
 		routes: createSitemapRoutes,
 	},
+	head: {
+		script: [
+			{
+				async: true,
+				defer: true,
+				"data-domain": "mrtnvh.com",
+				src: "https://stats.mrtnvh.com/js/index.js",
+			},
+		],
+	},
+	css: ["normalize.css", "./assets/styles/app.css"],
 };
