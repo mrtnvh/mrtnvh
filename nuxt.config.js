@@ -1,4 +1,6 @@
 import path from "path";
+import pkg from "./package.json";
+import { createSitemapRoutes } from "~/lib/Sitemap";
 
 export default {
 	publicRuntimeConfig: {
@@ -8,7 +10,7 @@ export default {
 	srcDir: "src",
 	layoutTransition: "fade",
 	css: ["normalize.css", "./assets/styles/app.css"],
-	modules: ["@nuxt/content", "portal-vue/nuxt"],
+	modules: ["@nuxt/content", "portal-vue/nuxt", "@nuxtjs/sitemap"],
 	plugins: ["~/plugins/elementQuery"],
 	buildModules: [
 		"@nuxtjs/pwa",
@@ -43,5 +45,11 @@ export default {
 				},
 			],
 		},
+	},
+
+	sitemap: {
+		hostname: pkg.homepage,
+		gzip: true,
+		routes: createSitemapRoutes,
 	},
 };
