@@ -28,6 +28,7 @@ export const getOgImage = ({ src }) => {
 	const publicId = getPublicId(src);
 	return config.core.url(publicId, {
 		transformation: "og_image",
+		secure: true,
 	});
 };
 
@@ -41,6 +42,7 @@ export const getSrcSet = ({ publicId: publicIdProp, src, srcSet }) => {
 	const publicId = getPublicId(src);
 	const cldnrySrc = config.core.url(publicId, {
 		transformation: "responsive_placeholder",
+		secure: true,
 	});
 
 	return {
