@@ -1,5 +1,5 @@
+/* eslint-disable global-require */
 import Vue from "vue";
-import ResizeObserver from "resize-observer-polyfill";
 
 const installClientPlugin = () => {
 	if (!Vue.elementQueryMixin) {
@@ -167,7 +167,11 @@ const installClientPlugin = () => {
 		});
 	}
 };
-export default (_context, inject) => {
+export default async (_context, inject) => {
+	if (!process.modern) {
+		require("resize-observer-polyfill");
+	}
+
 	if (process.client) {
 		installClientPlugin();
 	}
