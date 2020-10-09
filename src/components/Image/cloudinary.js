@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import { Cloudinary } from "cloudinary-core";
 
 const config = {
@@ -32,7 +31,12 @@ export const getOgImage = ({ src }) => {
 	});
 };
 
-export const getSrcSet = ({ publicId: publicIdProp, src, srcSet }) => {
+export const getSrcSet = ({
+	publicId: publicIdProp,
+	src,
+	srcSet,
+	type = "auto",
+}) => {
 	if (!publicIdProp && !isCloudinaryUrl(src))
 		return {
 			src,
@@ -40,18 +44,19 @@ export const getSrcSet = ({ publicId: publicIdProp, src, srcSet }) => {
 		};
 
 	const publicId = getPublicId(src);
-	const cldnrySrc = config.core.url(publicId, {
+	const placeholder = config.core.url(publicId, {
 		transformation: "responsive_placeholder",
 		secure: true,
 	});
 
 	return {
-		src: cldnrySrc,
+		src: placeholder,
 		srcSet: [
-			...[`${cldnrySrc} 32w`],
+			...[`${placeholder} 32w`],
 			...config.srcSetSizes.map((size) => {
 				const url = config.core.url(publicId, {
 					...config.defaultOptions,
+					fetch_format: type,
 					width: size,
 				});
 				return `${url} ${size}w`;
