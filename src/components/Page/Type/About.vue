@@ -3,10 +3,9 @@
 		<h1 :class="['title', 'outline']">
 			{{ page.title }}
 		</h1>
-		<div :class="['subtitle', 'intro']">
+		<aside :class="['subtitle', 'intro']">
 			{{ page.subtitle }}
-		</div>
-		<div :class="['media-container']">
+
 			<figure class="media">
 				<Thumbnail
 					:src="page.thumbnail"
@@ -16,8 +15,10 @@
 					height="800"
 				/>
 			</figure>
-		</div>
-		<nuxt-content :class="['body']" :document="page" />
+		</aside>
+		<section :class="['body']">
+			<nuxt-content :document="page" />
+		</section>
 	</article>
 </template>
 
@@ -50,7 +51,7 @@ export default {
 	@media (min-width: 800px) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		grid-template-rows: auto auto 1fr;
+		grid-template-rows: auto auto;
 		grid-column-gap: var(--grid-gap-x);
 	}
 }
@@ -68,22 +69,27 @@ export default {
 
 .subtitle {
 	@media (min-width: 800px) {
-		grid-area: 2 / 1 / 2 / 2;
+		grid-area: 2 / 1 / 4 / 2;
+		position: relative;
 	}
 }
 
-.media-container {
+/* .media-container {
 	@media (min-width: 800px) {
 		grid-area: 2 / 1 / 4 / 2;
 	}
-}
+} */
 
 .media {
-	position: sticky;
-	z-index: var(--folio-header-zindex);
-	top: var(--folio-header-top-position);
+	margin-top: var(--grid-gap-y);
 	padding-bottom: 100%;
 	margin-bottom: 0;
+
+	@media (min-width: 800px) {
+		position: sticky;
+		z-index: var(--folio-header-zindex);
+		top: var(--folio-header-top-position);
+	}
 }
 
 .body {
