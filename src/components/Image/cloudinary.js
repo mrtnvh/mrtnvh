@@ -1,34 +1,11 @@
-import { Cloudinary } from "cloudinary-core";
-
-const config = {
-	srcSetSizes: [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400],
-	core: new Cloudinary({
-		cloud_name: process.env.cloudinaryCloudName,
-	}),
-	defaultOptions: {
-		dpr: 1,
-		crop: "scale",
-		fetch_format: "auto",
-		quality: "auto",
-		secure: true,
-	},
-};
-
-const getPublicId = (input) =>
-	input.replace(
-		/(?:https:\/\/res.cloudinary.com\/.*\/image\/upload\/)(.*\/?.*)\..*/,
-		"$1",
-	);
+const SRC_SET_SIZES = [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400];
 
 const isCloudinaryUrl = (url) => url.includes("https://res.cloudinary.com/");
 
 export const getOgImage = ({ src }) => {
 	if (!isCloudinaryUrl(src)) return src;
-	const publicId = getPublicId(src);
-	return config.core.url(publicId, {
-		transformation: "og_image",
-		secure: true,
-	});
+	const [preUrl, postUrl] = src.split("/upload");
+	return `${preUrl}/upload/t_og_image/${postUrl}`;
 };
 
 export const getSrcSet = ({
@@ -43,24 +20,17 @@ export const getSrcSet = ({
 			srcSet,
 		};
 
-	const publicId = getPublicId(src);
-	const placeholder = config.core.url(publicId, {
-		transformation: "responsive_placeholder",
-		secure: true,
-	});
+	const [preUrl, postUrl] = src.split("/upload");
+	const placeholder = `${preUrl}/upload/t_responsive_placeholder/${postUrl}`;
 
 	return {
 		src: placeholder,
 		srcSet: [
 			...[`${placeholder} 32w`],
-			...config.srcSetSizes.map((size) => {
-				const url = config.core.url(publicId, {
-					...config.defaultOptions,
-					fetch_format: type,
-					width: size,
-				});
-				return `${url} ${size}w`;
-			}),
+			...SRC_SET_SIZES.map(
+				(size) =>
+					`${preUrl}/upload/c_scale,dpr_1.0,f_${type},q_auto,w_${size}/${postUrl} ${size}w`,
+			),
 		],
 	};
 };
