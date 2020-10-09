@@ -8,8 +8,8 @@ export default {
 	},
 	target: "static",
 	srcDir: "src",
-	modern: true,
-	layoutTransition: "fade",
+	modern: process.env.NODE_ENV === "production",
+	pageTransition: "fade",
 	modules: [
 		"@nuxt/content",
 		"portal-vue/nuxt",
