@@ -8,6 +8,7 @@ export default {
 	},
 	target: "static",
 	srcDir: "src",
+	modern: true,
 	layoutTransition: "fade",
 	modules: [
 		"@nuxt/content",
@@ -23,6 +24,7 @@ export default {
 		["@nuxtjs/stylelint-module", { fix: true }],
 	],
 	build: {
+		extractCSS: true,
 		extend(config, { isDev }) {
 			return {
 				...config,
@@ -53,6 +55,9 @@ export default {
 		hostname: pkg.homepage,
 		gzip: true,
 		routes: createSitemapRoutes,
+	},
+	sentry: {
+		lazy: true,
 	},
 	head: {
 		script: [
