@@ -65,7 +65,7 @@ export default {
 				async: true,
 				defer: true,
 				"data-domain": "mrtnvh.com",
-				src: "https://stats.mrtnvh.com/js/index.js",
+				src: "https://plausible.io/js/plausible.js",
 			},
 		],
 	},
