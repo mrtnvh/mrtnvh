@@ -67,6 +67,7 @@ export default {
 				src: "https://plausible.io/js/plausible.js",
 			},
 		],
+		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
 	},
 	css: ["normalize.css", "./assets/styles/app.css"],
 };
