@@ -2,6 +2,8 @@ import path from "path";
 import pkg from "./package.json";
 import { createSitemapRoutes } from "./src/lib/Sitemap";
 
+const isMaster = process.env.IS_MASTER === "true";
+
 export default {
 	env: {
 		cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
@@ -60,12 +62,16 @@ export default {
 	},
 	head: {
 		script: [
-			{
-				async: true,
-				defer: true,
-				"data-domain": "mrtnvh.com",
-				src: "https://stats.mrtnvh.com/js/index.js",
-			},
+			...(isMaster
+				? [
+						{
+							async: true,
+							defer: true,
+							"data-domain": "mrtnvh.com",
+							src: "https://stats.mrtnvh.com/js/index.js",
+						},
+				  ]
+				: []),
 		],
 		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
 	},
