@@ -4,7 +4,7 @@
 		<div class="buildwith">
 			Build with
 			<a href="https://nuxtjs.org/" rel="noopener" target="_blank"
-				>Gridsome</a
+				>Nuxt.js</a
 			>. Hosted on
 			<a href="https://www.vercel.co/" rel="noopener" target="_blank"
 				>Vercel</a
