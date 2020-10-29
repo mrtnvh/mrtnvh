@@ -64,7 +64,7 @@ export default {
 				async: true,
 				defer: true,
 				"data-domain": "mrtnvh.com",
-				src: "https://plausible.io/js/plausible.js",
+				src: "https://stats.mrtnvh.com/js/index.js",
 			},
 		],
 		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
