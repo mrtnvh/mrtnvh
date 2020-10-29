@@ -14,31 +14,11 @@ import List from "~/components/List/List.vue";
 
 export default {
 	components: { List, Section, Intro },
-
-	computed: {
-		projects() {
-			return this.$page.projects.edges
-				.map(({ node }) => node)
-				.filter(({ current }) => current);
-		},
+	async asyncData({ $content }) {
+		const projects = await $content("projects")
+			.where({ current: true })
+			.fetch();
+		return { projects };
 	},
 };
 </script>
-
-<page-query>
-	query {
-		projects: allProject(sortBy: "datePublished") {
-			edges {
-				node {
-					title
-					subtitle
-					thumbnail
-					color
-					current
-					path
-					datePublished
-				}
-			}
-		}
-	}
-</page-query>

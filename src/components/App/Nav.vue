@@ -5,7 +5,7 @@
 		tag="nav"
 		appear
 	>
-		<g-link
+		<nuxt-link
 			v-for="(link, index) in links"
 			:key="link.title"
 			:to="link.to"
@@ -13,7 +13,7 @@
 			:exact="link.to === '/'"
 		>
 			{{ link.title }}
-		</g-link>
+		</nuxt-link>
 	</transition-group>
 </template>
 
@@ -55,6 +55,10 @@ export default {
 
 <style scoped>
 .nav {
+	a {
+		white-space: nowrap;
+	}
+
 	&.nav--offCanvas {
 		font-size: var(--font-size-3xl);
 		font-family: var(--headings-font-family);
@@ -69,10 +73,6 @@ export default {
 		a {
 			text-decoration: none;
 		}
-	}
-
-	a {
-		white-space: nowrap;
 	}
 }
 </style>

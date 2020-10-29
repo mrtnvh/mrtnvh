@@ -1,8 +1,6 @@
 <template>
 	<div class="container">
-		<h1 :class="['title', 'outline']">
-			Talks
-		</h1>
+		<h1 :class="['title', 'outline']">Talks</h1>
 		<List :value="list" large />
 	</div>
 </template>

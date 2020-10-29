@@ -60,7 +60,7 @@
 	/**
 	* Animations
 	*/
-	--animation-duration: 0.25s;
+	--animation-duration: 0.2s;
 	--animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);
 }
 
@@ -110,4 +110,12 @@
 		--folio-title-size: 15vw;
 		--folio-title-margin: 0 0 1rem -0.05em;
 	}
+}
+
+
+/**
+* Off Canvas Menu
+*/
+:root {
+	--offcanvasmenu-zindex: 100;
 }

@@ -1,28 +1,25 @@
 <template>
-	<intersect @enter="intersected = true" @leave="intersected = false">
-		<div id="folio" class="container">
-			<h1 :class="['title', 'outline']">
-				{{ $page.folio.title }}
-			</h1>
-			<div :class="['subtitle', 'intro']">
-				{{ $page.folio.subtitle }}
-			</div>
-			<div :class="['media-container']">
-				<figure class="media">
-					<Thumbnail
-						:src="$page.folio.thumbnail"
-						:alt="$page.folio.title"
-						class="image"
-						width="800"
-						height="800"
-					/>
-				</figure>
-			</div>
-			<!-- eslint-disable vue/no-v-html -->
-			<div :class="['body']" v-html="$page.folio.content" />
-			<!-- eslint-enable vue/no-v-html -->
-		</div>
-	</intersect>
+	<article id="folio" class="container">
+		<h1 :class="['title', 'outline']">
+			{{ page.title }}
+		</h1>
+		<aside :class="['subtitle', 'intro']">
+			{{ page.subtitle }}
+
+			<figure class="media">
+				<Thumbnail
+					:src="page.thumbnail"
+					:alt="page.title"
+					class="image"
+					width="800"
+					height="800"
+				/>
+			</figure>
+		</aside>
+		<section :class="['body']">
+			<nuxt-content :document="page" />
+		</section>
+	</article>
 </template>
 
 <script>
@@ -54,7 +51,7 @@ export default {
 	@media (min-width: 800px) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		grid-template-rows: auto auto 1fr;
+		grid-template-rows: auto auto;
 		grid-column-gap: var(--grid-gap-x);
 	}
 }
@@ -72,22 +69,27 @@ export default {
 
 .subtitle {
 	@media (min-width: 800px) {
-		grid-area: 2 / 1 / 3 / 2;
+		grid-area: 2 / 1 / 4 / 2;
+		position: relative;
 	}
 }
 
-.media-container {
+/* .media-container {
 	@media (min-width: 800px) {
-		grid-area: 3 / 1 / 4 / 2;
+		grid-area: 2 / 1 / 4 / 2;
 	}
-}
+} */
 
 .media {
-	position: sticky;
-	z-index: var(--folio-header-zindex);
-	top: var(--folio-header-top-position);
+	margin-top: var(--grid-gap-y);
 	padding-bottom: 100%;
 	margin-bottom: 0;
+
+	@media (min-width: 800px) {
+		position: sticky;
+		z-index: var(--folio-header-zindex);
+		top: var(--folio-header-top-position);
+	}
 }
 
 .body {

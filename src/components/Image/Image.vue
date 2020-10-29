@@ -1,15 +1,18 @@
 <template>
-	<img
-		ref="image"
-		:src="source"
-		:srcset="sourceSet"
-		:sizes="sizes"
-		:alt="alt"
-		class="fade"
-		loading="lazy"
-		:width="width"
-		:heigth="heigth"
-	/>
+	<picture ref="picture">
+		<source :sizes="sizes" :srcset="sourceSetWebp" type="image/webp" />
+		<img
+			ref="image"
+			:src="source"
+			:srcset="sourceSet"
+			:sizes="sizes"
+			:alt="alt"
+			class="image fade"
+			loading="lazy"
+			:width="width"
+			:height="height"
+		/>
+	</picture>
 </template>
 
 <script>
@@ -33,7 +36,7 @@ export default {
 			required: true,
 		},
 
-		heigth: {
+		height: {
 			type: String,
 			required: true,
 		},
@@ -43,6 +46,7 @@ export default {
 		return {
 			source: null,
 			sourceSet: null,
+			sourceSetWebp: null,
 			sizes: "1px",
 		};
 	},
@@ -52,8 +56,14 @@ export default {
 			src: this.src,
 		});
 
+		const { srcSet: srcSetWebp } = getSrcSet({
+			src: this.src,
+			type: "webp",
+		});
+
 		this.source = src;
 		this.sourceSet = srcSet;
+		this.sourceSetWebp = srcSetWebp;
 	},
 
 	mounted() {
@@ -64,6 +74,8 @@ export default {
 
 <style scoped>
 img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 </style>
