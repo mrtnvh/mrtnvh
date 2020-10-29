@@ -24,7 +24,6 @@ export default {
 		["@nuxtjs/stylelint-module", { fix: true }],
 	],
 	build: {
-		extractCSS: true,
 		extend(config, { isDev }) {
 			return {
 				...config,
