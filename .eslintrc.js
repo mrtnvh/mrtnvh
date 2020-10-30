@@ -13,9 +13,7 @@ module.exports = {
 		"plugin:prettier/recommended",
 		"@vue/prettier",
 	],
-	// plugins: ["vue"],
 	rules: {
-		// camelcase: 0,
 		"no-console": process.env.NODE_ENV === "production" ? "error" : "off",
 		"no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
 		"import/no-unresolved": [
@@ -34,4 +32,16 @@ module.exports = {
 			},
 		},
 	},
+	overrides: [
+		{
+			files: ["tests/**/*.*"],
+			extends: ["plugin:jest/recommended"],
+			globals: {
+				page: true,
+				browser: true,
+				context: true,
+				jestPuppeteer: true,
+			},
+		},
+	],
 };
