@@ -26,3 +26,9 @@ jobs:
         run: 'npm run ${{ matrix.test-type }}'
         env:
           CI: true
+
+      - name: Archive snapshot artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapshots
+          path: tests/__image_snapshots__
