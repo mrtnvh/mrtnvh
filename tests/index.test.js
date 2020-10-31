@@ -23,10 +23,4 @@ describe.each(pages)("Snapshot - %s", (path) => {
 			allowSizeMismatch: true,
 		});
 	});
-
-	test("markup", async () => {
-		await page.goto(getUrl(path));
-		const html = await page.content();
-		expect(html).toMatchSnapshot();
-	});
 });
