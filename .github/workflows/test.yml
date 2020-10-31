@@ -29,6 +29,8 @@ jobs:
 
       - name: Archive snapshot artifacts
         uses: actions/upload-artifact@v2
+        if: ${{ always() }}
         with:
           name: snapshots
           path: tests/__image_snapshots__
+          retention-days: 5
