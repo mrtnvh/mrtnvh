@@ -1,13 +1,23 @@
+const parser = require("fast-xml-parser");
+const fs = require("fs");
+
 const port = 3001;
 const getUrl = (p) => `http://localhost:${port}${p}`;
+const sitemap = fs.readFileSync(`${process.cwd()}/dist/sitemap.xml`, "utf-8");
+const sitemapJson = parser.parse(sitemap);
+const pages = sitemapJson.urlset.url.map(({ loc }) => {
+	const url = new URL(loc);
+	return url.pathname;
+});
+const customSnapshotIdentifier = (path) => `pages${path.split("/").join("-")}`;
 
-describe("Homepage", () => {
-	it('should contain text "Maarten" in brand', async () => {
-		await page.goto(getUrl("/"));
-		const brandHTML = await page.$eval(
-			".brand",
-			(brand) => brand.innerHTML,
-		);
-		await expect(brandHTML).toContain("Maarten");
+describe("Visual regression", () => {
+	test.each(pages)("snapshot %s", async (path) => {
+		await page.setCacheEnabled(false);
+		await page.goto(getUrl(path));
+		const image = await page.screenshot({ fullPage: true });
+		expect(image).toMatchImageSnapshot({
+			customSnapshotIdentifier: customSnapshotIdentifier(path),
+		});
 	});
 });
