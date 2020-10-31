@@ -11,9 +11,8 @@ const pages = sitemapJson.urlset.url.map(({ loc }) => {
 });
 const customSnapshotIdentifier = (path) => `pages${path.split("/").join("-")}`;
 
-describe("Visual regression", () => {
-	test.each(pages)("snapshot %s", async (path) => {
-		await page.setCacheEnabled(false);
+describe.each(pages)("Snapshot - %s", (path) => {
+	test("visual", async () => {
 		await page.goto(getUrl(path));
 		const image = await page.screenshot({ fullPage: true });
 		expect(image).toMatchImageSnapshot({
@@ -23,5 +22,11 @@ describe("Visual regression", () => {
 			customSnapshotIdentifier: customSnapshotIdentifier(path),
 			allowSizeMismatch: true,
 		});
+	});
+
+	test("markup", async () => {
+		await page.goto(getUrl(path));
+		const html = await page.content();
+		expect(html).toMatchSnapshot();
 	});
 });
