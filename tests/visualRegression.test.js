@@ -17,9 +17,11 @@ describe("Visual regression", () => {
 		await page.goto(getUrl(path));
 		const image = await page.screenshot({ fullPage: true });
 		expect(image).toMatchImageSnapshot({
+			comparisonMethod: "ssim",
+			failureThreshold: 0.1,
 			failureThresholdType: "percent",
-			failureThreshold: 1,
 			customSnapshotIdentifier: customSnapshotIdentifier(path),
+			allowSizeMismatch: true,
 		});
 	});
 });
