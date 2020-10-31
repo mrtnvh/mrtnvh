@@ -17,7 +17,9 @@ export default {
 	components: { List, Section },
 
 	async asyncData({ $content }) {
-		const projects = await $content("projects").fetch();
+		const projects = await $content("projects")
+			.sortBy("datePublished", "desc")
+			.fetch();
 		return { projects };
 	},
 

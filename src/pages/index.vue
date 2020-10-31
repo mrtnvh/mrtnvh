@@ -17,6 +17,7 @@ export default {
 	async asyncData({ $content }) {
 		const projects = await $content("projects")
 			.where({ current: true })
+			.sortBy("datePublished", "desc")
 			.fetch();
 		return { projects };
 	},
