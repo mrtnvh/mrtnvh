@@ -17,6 +17,8 @@ describe("Visual regression", () => {
 		await page.goto(getUrl(path));
 		const image = await page.screenshot({ fullPage: true });
 		expect(image).toMatchImageSnapshot({
+			failureThresholdType: "percent",
+			failureThreshold: 1,
 			customSnapshotIdentifier: customSnapshotIdentifier(path),
 		});
 	});
