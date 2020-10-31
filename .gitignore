@@ -8,3 +8,5 @@ dist
 .env.*
 .nuxt
 src/static/sw.js
+
+__diff_output__
