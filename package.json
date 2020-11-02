@@ -40,7 +40,7 @@
     "@nuxtjs/svg": "^0.1.12",
     "@types/jest": "^26.0.15",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "@wemake-services/stylelint-config-scss": "^0.3.0",
+    "@wemake-services/stylelint-config-scss": "^0.4.0",
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
     "eslint": "^7.10.0",
