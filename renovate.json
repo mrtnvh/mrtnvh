@@ -1,13 +1,10 @@
 {
-  "assignees": ["vanhoofmaarten"],
-  "automerge": true,
   "extends": [
     "config:base",
     "group:allNonMajor",
-    ":semanticCommitTypeAll(chore)"
+    ":automergeAll",
+    "lockFileMaintenance"
   ],
-  "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
-  },
-  "rangeStrategy": "update-lockfile"
+  "rangeStrategy": "update-lockfile",
+  "prHourlyLimit": 5
 }
