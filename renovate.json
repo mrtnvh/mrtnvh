@@ -3,7 +3,7 @@
     "config:base",
     "group:allNonMajor",
     ":automergeAll",
-    "lockFileMaintenance"
+    ":lockFileMaintenance"
   ],
   "rangeStrategy": "update-lockfile",
   "prHourlyLimit": 5
