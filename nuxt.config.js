@@ -10,7 +10,7 @@ export default {
 	},
 	target: "static",
 	srcDir: "src",
-	modern: process.env.NODE_ENV === "production",
+	modern: true,
 	pageTransition: "fade",
 	modules: [
 		"@nuxt/content",
