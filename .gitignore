@@ -8,5 +8,6 @@ dist
 .env.*
 .nuxt
 src/static/sw.js
+.eslintcache
 
 __diff_output__
