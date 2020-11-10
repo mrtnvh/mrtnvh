@@ -49,6 +49,10 @@ export default {
 					urlPattern: "https?://res.cloudinary.com/mrtnvh/.*",
 					handler: "StaleWhileRevalidate",
 				},
+				{
+					urlPattern: "https?://rsms.me/inter/.*",
+					handler: "StaleWhileRevalidate",
+				},
 			],
 		},
 	},
@@ -73,7 +77,18 @@ export default {
 				  ]
 				: []),
 		],
-		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
+		link: [
+			{ rel: "icon", type: "image/x-icon", href: "/favicon.png" },
+			{
+				rel: "preload",
+				href: "https://rsms.me/inter/inter.css",
+				as: "style",
+			},
+			{
+				rel: "stylesheet",
+				href: "https://rsms.me/inter/inter.css",
+			},
+		],
 	},
 	css: ["normalize.css", "./assets/styles/app.css"],
 };

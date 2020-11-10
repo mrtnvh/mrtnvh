@@ -18,6 +18,7 @@ export default {
 <style scoped>
 .brand {
 	--brand-font-size: 5vw;
+	--brand-font-weight: 900;
 	--firstname-z-index: 2;
 	--firstname-letter-spacing: 0.25vw;
 	--lastname-z-index: 1;
@@ -26,7 +27,7 @@ export default {
 	color: var(--headings-color);
 	font-family: var(--headings-font-family);
 	font-size: var(--brand-font-size);
-	font-weight: var(--headings-font-weight);
+	font-weight: var(--brand-font-weight);
 	position: relative;
 	text-transform: uppercase;
 	text-decoration: none;

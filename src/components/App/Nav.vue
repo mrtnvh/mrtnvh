@@ -62,7 +62,7 @@ export default {
 	&.nav--offCanvas {
 		font-size: var(--font-size-3xl);
 		font-family: var(--headings-font-family);
-		font-weight: var(--headings-font-weight);
+		font-weight: var(--fat-font-weight);
 		text-transform: uppercase;
 		display: flex;
 		flex-direction: column;

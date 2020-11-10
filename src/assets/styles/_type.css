@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 800;
+	font-weight: var(--headings-font-weight);
 	line-height: var(--line-height-sm);
 }
 

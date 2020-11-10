@@ -58,6 +58,7 @@ export default {
 
 .title {
 	font-size: var(--folio-title-size);
+	font-weight: var(--fat-font-weight);
 	text-transform: uppercase;
 	line-height: 0.75em;
 	margin-bottom: 0;

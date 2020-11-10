@@ -33,15 +33,16 @@
 	--font-size-7xl: 5.96rem;
 	--font-size-8xl: 7.451rem;
 	--font-size-9xl: 9.313rem;
-	--font-family: "Helvetica Now Text", system-ui;
+	--font-family: "Inter", "Helvetica Now Text", system-ui;
 	--font-weight-normal: 400;
 	--line-height-lg: 1.75;
 	--line-height: 1.5;
 	--line-height-sm: 1.225;
 	--line-height-xxs: 0.75;
-	--headings-font-family: "Helvetica Now Display", system-ui;
+	--headings-font-family: "Inter", "Helvetica Now Display", system-ui;
 	--headings-color: var(--dark);
-	--headings-font-weight: 900;
+	--headings-font-weight: 800;
+	--fat-font-weight: 900;
 
 	/**
 	* Strokes
