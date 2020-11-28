@@ -62,6 +62,7 @@ export default {
 		routes: createSitemapRoutes,
 	},
 	sentry: {
+		tracing: true,
 		lazy: true,
 	},
 	head: {
