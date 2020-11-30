@@ -63,7 +63,6 @@ export default {
 	},
 	sentry: {
 		tracing: true,
-		lazy: true,
 	},
 	head: {
 		script: [
