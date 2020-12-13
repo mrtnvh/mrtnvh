@@ -20,20 +20,13 @@ describe("Snapshots", () => {
 		test(
 			"visual",
 			async () => {
+				const page = await browser.newPage();
 				await page.goto(getUrl(path));
+				await page.waitForFunction("!!window.$nuxt");
 
-				const bodyWidth = await page.evaluate(
-					() => document.body.scrollWidth,
-				);
-				const bodyHeight = await page.evaluate(
-					() => document.body.scrollHeight,
-				);
-				await page.setViewport({
-					width: bodyWidth,
-					height: bodyHeight,
-				});
+				await page.waitForTimeout(500);
 
-				const image = await page.screenshot();
+				const image = await page.screenshot({ fullPage: true });
 				expect(image).toMatchImageSnapshot({
 					comparisonMethod: "ssim",
 					failureThreshold: 0.1,
