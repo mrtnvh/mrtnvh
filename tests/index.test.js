@@ -11,20 +11,38 @@ const pages = sitemapJson.urlset.url.map(({ loc }) => {
 });
 const customSnapshotIdentifier = (path) => `pages${path.split("/").join("-")}`;
 
-describe.each(pages)("Snapshot - %s", (path) => {
-	test(
-		"visual",
-		async () => {
-			await page.goto(getUrl(path));
-			const image = await page.screenshot({ fullPage: true });
-			expect(image).toMatchImageSnapshot({
-				comparisonMethod: "ssim",
-				failureThreshold: 0.1,
-				failureThresholdType: "percent",
-				customSnapshotIdentifier: customSnapshotIdentifier(path),
-				allowSizeMismatch: true,
-			});
-		},
-		20 * 1000,
-	);
+describe("Snapshots", () => {
+	beforeEach(async () => {
+		await jestPuppeteer.resetBrowser();
+	});
+
+	describe.each(pages)("%s", (path) => {
+		test(
+			"visual",
+			async () => {
+				await page.goto(getUrl(path));
+
+				const bodyWidth = await page.evaluate(
+					() => document.body.scrollWidth,
+				);
+				const bodyHeight = await page.evaluate(
+					() => document.body.scrollHeight,
+				);
+				await page.setViewport({
+					width: bodyWidth,
+					height: bodyHeight,
+				});
+
+				const image = await page.screenshot();
+				expect(image).toMatchImageSnapshot({
+					comparisonMethod: "ssim",
+					failureThreshold: 0.1,
+					failureThresholdType: "percent",
+					customSnapshotIdentifier: customSnapshotIdentifier(path),
+					allowSizeMismatch: true,
+				});
+			},
+			20 * 1000,
+		);
+	});
 });
