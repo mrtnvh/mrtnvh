@@ -11,16 +11,31 @@ const pages = sitemapJson.urlset.url.map(({ loc }) => {
 });
 const customSnapshotIdentifier = (path) => `pages${path.split("/").join("-")}`;
 
-describe.each(pages)("Snapshot - %s", (path) => {
-	test("visual", async () => {
-		await page.goto(getUrl(path));
-		const image = await page.screenshot({ fullPage: true });
-		expect(image).toMatchImageSnapshot({
-			comparisonMethod: "ssim",
-			failureThreshold: 0.1,
-			failureThresholdType: "percent",
-			customSnapshotIdentifier: customSnapshotIdentifier(path),
-			allowSizeMismatch: true,
-		});
+describe("Snapshots", () => {
+	beforeEach(async () => {
+		await jestPuppeteer.resetBrowser();
+	});
+
+	describe.each(pages)("%s", (path) => {
+		test(
+			"visual",
+			async () => {
+				const page = await browser.newPage();
+				await page.goto(getUrl(path));
+				await page.waitForFunction("!!window.$nuxt");
+
+				await page.waitForTimeout(500);
+
+				const image = await page.screenshot({ fullPage: true });
+				expect(image).toMatchImageSnapshot({
+					comparisonMethod: "ssim",
+					failureThreshold: 0.1,
+					failureThresholdType: "percent",
+					customSnapshotIdentifier: customSnapshotIdentifier(path),
+					allowSizeMismatch: true,
+				});
+			},
+			20 * 1000,
+		);
 	});
 });
