@@ -56,11 +56,17 @@ article {
 }
 
 .link {
-	--link-color: var(--dark);
-	--link-hover-color: var(--dark);
+	--link-color: var(--text-color);
+	--link-hover-color: var(--text-color);
 	--link-text-decoration: none;
 
 	display: block;
+
+	&:hover,
+	&:focus {
+		--stroke-inner-color: var(--text-color);
+		--stroke-color: var(--text-color);
+	}
 }
 
 .content {

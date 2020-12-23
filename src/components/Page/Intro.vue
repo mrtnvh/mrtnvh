@@ -42,12 +42,12 @@
 
 <style scoped>
 .intro {
-	background: var(--dark);
+	background: var(--text-color);
 	padding: var(--grid-gap-y) 0;
 
 	&,
 	a {
-		color: var(--light);
+		color: var(--background-color);
 	}
 }
 

@@ -7,7 +7,7 @@ table {
 th, td {
 	text-align: left;
 	vertical-align: top;
-	border-bottom: 1px solid var(--dark);
+	border-bottom: 1px solid var(--text-color);
 	padding: calc(var(--space)) 0;
 
 	&:not(:first-child) {
@@ -19,6 +19,6 @@ th, td {
 	}
 
 	tr:first-child & {
-		border-top: 1px solid var(--dark);
+		border-top: 1px solid var(--text-color);
 	}
 }

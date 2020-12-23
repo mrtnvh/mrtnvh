@@ -20,15 +20,6 @@ export default {
 
 		return { page };
 	},
-
-	computed: {
-		type() {
-			const { dir, slug } = this.page;
-			if (dir === "/projects") return Project;
-			if (dir === "/" && slug === "about") return About;
-			return Default;
-		},
-	},
 	head() {
 		const { title, description, subtitle, thumbnail } = this.page;
 		const { path } = this.$route;
@@ -48,6 +39,15 @@ export default {
 			path,
 			image: thumbnail,
 		});
+	},
+
+	computed: {
+		type() {
+			const { dir, slug } = this.page;
+			if (dir === "/projects") return Project;
+			if (dir === "/" && slug === "about") return About;
+			return Default;
+		},
 	},
 };
 </script>

@@ -23,16 +23,6 @@ export default {
 		return { projects };
 	},
 
-	computed: {
-		currentProjects() {
-			return this.projects.filter(({ current }) => current);
-		},
-
-		previousProjects() {
-			return this.projects.filter(({ current }) => !current);
-		},
-	},
-
 	head: {
 		title: "Projects",
 		meta: [
@@ -43,6 +33,16 @@ export default {
 					"A selection of my current and previous projects. Work, musical and open source experiences",
 			},
 		],
+	},
+
+	computed: {
+		currentProjects() {
+			return this.projects.filter(({ current }) => current);
+		},
+
+		previousProjects() {
+			return this.projects.filter(({ current }) => !current);
+		},
 	},
 };
 </script>

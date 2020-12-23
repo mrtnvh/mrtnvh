@@ -25,13 +25,13 @@ export default {
 			portalContent: false,
 		};
 	},
+	head() {
+		return Seo({ siteUrl: pkg.homepage });
+	},
 	methods: {
 		handlePortalUpdate(newContent) {
 			this.portalContent = newContent;
 		},
-	},
-	head() {
-		return Seo({ siteUrl: pkg.homepage });
 	},
 };
 </script>

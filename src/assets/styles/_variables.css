@@ -9,13 +9,19 @@
 	--grey-light: hsla(0, 0%, 90%, 1);
 	--light: hsla(0, 0%, 100%, 1);
 	--primary: hsla(85, 100%, 50%, 1);
-	--primary-dark: hsla(85, 100%, 20%, 1);
+	--primary-dark: hsla(85, 100%, 26%, 1);
 	--github: hsla(134, 62%, 51%, 1);
 	--twitter: hsla(206, 89%, 59%, 1);
 	--linkedin: hsla(201, 100%, 36%, 1);
 	--isaac: rgb(0, 182, 255);
+
 	--text-color: var(--dark);
 	--background-color: var(--light);
+
+	@media (prefers-color-scheme: dark) {
+		--text-color: var(--light);
+		--background-color: var(--dark);
+	}
 
 	/**
 	* Fonts
@@ -40,15 +46,16 @@
 	--line-height-sm: 1.225;
 	--line-height-xxs: 0.75;
 	--headings-font-family: "Inter", "Helvetica Now Display", system-ui;
-	--headings-color: var(--dark);
+	--headings-color: var(--text-color);
 	--headings-font-weight: 800;
 	--fat-font-weight: 900;
 
 	/**
 	* Strokes
 	*/
+	--stroke-inner-color: transparent;
 	--stroke-width: 1px;
-	--stroke-color: var(--dark);
+	--stroke-color: var(--text-color);
 
 	/**
 	* Media queries
@@ -112,7 +119,6 @@
 		--folio-title-margin: 0 0 1rem -0.05em;
 	}
 }
-
 
 /**
 * Off Canvas Menu

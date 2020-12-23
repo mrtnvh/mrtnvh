@@ -41,7 +41,7 @@ export default {
 	left: 0;
 	width: 100%;
 	bottom: 0;
-	background: var(--light);
+	background: var(--background-color);
 	z-index: var(--offcanvasmenu-zindex);
 	position: fixed;
 	border-top: 1px solid var(--grey);

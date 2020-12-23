@@ -39,7 +39,7 @@ h6 {
 }
 
 .outline {
-	color: transparent;
+	color: var(--stroke-inner-color);
 	-webkit-text-stroke: var(--stroke-width) var(--stroke-color);
 }
 

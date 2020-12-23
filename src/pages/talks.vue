@@ -62,4 +62,10 @@ export default {
 	line-height: 0.75em;
 	margin-bottom: var(--grid-gap-y);
 }
+
+.container >>> img {
+	@media (prefers-color-scheme: dark) {
+		filter: invert(1) hue-rotate(180deg);
+	}
+}
 </style>
