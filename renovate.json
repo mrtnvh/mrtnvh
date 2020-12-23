@@ -6,6 +6,6 @@
     ":maintainLockFilesWeekly",
     "schedule:weekly"
   ],
-  "rangeStrategy": "update-lockfile",
+  "rangeStrategy": "bump",
   "prHourlyLimit": 5
 }
