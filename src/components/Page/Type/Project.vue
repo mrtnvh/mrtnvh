@@ -15,7 +15,9 @@
 				height="900"
 			/>
 		</figure>
-		<nuxt-content :class="['body']" :document="page" />
+		<div :class="['body']">
+			<nuxt-content :document="page" />
+		</div>
 	</article>
 </template>
 
