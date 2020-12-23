@@ -21,6 +21,11 @@ describe("Snapshots", () => {
 			"visual",
 			async () => {
 				const page = await browser.newPage();
+
+				// Ensure light mode
+				await page.emulateMediaFeatures([
+					{ name: "prefers-color-scheme", value: "light" },
+				]);
 				await page.goto(getUrl(path));
 				await page.waitForFunction("!!window.$nuxt");
 
