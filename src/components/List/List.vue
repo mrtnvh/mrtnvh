@@ -37,14 +37,12 @@ export default {
 	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 	grid-gap: var(--grid-gap-y) var(--grid-gap-x);
 
-	&.grid--large {
-		@media (min-width: 900px) {
-			grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-		}
-	}
-
 	@media (min-width: 450px) {
 		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	@media (min-width: 900px) {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 </style>
