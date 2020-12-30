@@ -23,7 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run ${{ matrix.test-type }}
-        run: 'npm run ${{ matrix.test-type }}'
+        run: "npm run ${{ matrix.test-type }}"
         env:
           CI: true
 

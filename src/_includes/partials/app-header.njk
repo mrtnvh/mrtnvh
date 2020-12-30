@@ -1,0 +1,28 @@
+<header class="app__header container">
+  <a href="/" class="app__header__brand brand">
+    <div class="brand__name brand__firstname">Maarten</div>
+    <div class="brand__name brand__lastname outline">Van Hoof</div>
+  </a>
+  <div class="app__header__subtitle">
+    <div>
+      <span class="mr-space">Front-end developer at</span>
+      <span class="whitespace-nowrap">
+        <a
+            href="https://isaac.nl"
+            target="_blank"
+            rel="noopener"
+            class="isaac mr-space"
+            >ISAAC</a
+          >in Eindhoven.</span
+        >
+    </div>
+  </div>
+  <div class="app__header__navs">
+    <div class="app__header__nav">
+      {% include "partials/nav.njk" %}
+    </div>
+    <div class="app__header__social">
+      {% include "partials/social.njk" %}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,21 @@
+---
+title: Talks
+description: Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.
+eleventyNavigation:
+  key: talks
+  title: Talks
+  order: 3
+---
+
+{% extends 'layouts/base.njk' %}
+{% import "macros/list.njk" as list %}
+{% block content %}
+<div class="container talks__container">
+  <h1 class="talks__title outline">Talks</h1>
+  {% list talks %}
+</div>
+{% endblock %}
+
+<style>
+
+</style>

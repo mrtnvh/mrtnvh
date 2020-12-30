@@ -1,0 +1,128 @@
+/* stylelint-disable no-duplicate-selectors */
+
+:root {
+  /**
+	* Colors
+	*/
+  --dark: hsla(0, 0%, 0%, 1);
+  --grey: hsla(0, 0%, 50%, 1);
+  --grey-light: hsla(0, 0%, 90%, 1);
+  --light: hsla(0, 0%, 100%, 1);
+  --primary: hsla(85, 100%, 50%, 1);
+  --primary-dark: hsla(85, 100%, 26%, 1);
+  --github: hsla(134, 62%, 51%, 1);
+  --twitter: hsla(206, 89%, 59%, 1);
+  --linkedin: hsla(201, 100%, 36%, 1);
+  --isaac: rgb(0, 182, 255);
+
+  --text-color: var(--dark);
+  --background-color: var(--light);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--light);
+    --background-color: var(--dark);
+  }
+
+  /**
+	* Fonts
+	*/
+  --font-size-root: 14px;
+  --font-size-sm: 0.8rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.563rem;
+  --font-size-2xl: 1.953rem;
+  --font-size-3xl: 2.441rem;
+  --font-size-4xl: 3.052rem;
+  --font-size-5xl: 3.815rem;
+  --font-size-6xl: 4.768rem;
+  --font-size-7xl: 5.96rem;
+  --font-size-8xl: 7.451rem;
+  --font-size-9xl: 9.313rem;
+  --font-family: "Inter", "Helvetica Now Text", system-ui;
+  --font-weight-normal: 400;
+  --line-height-lg: 1.75;
+  --line-height: 1.5;
+  --line-height-sm: 1.225;
+  --line-height-xxs: 0.75;
+  --headings-font-family: "Inter", "Helvetica Now Display", system-ui;
+  --headings-color: var(--text-color);
+  --headings-font-weight: 800;
+  --fat-font-weight: 900;
+
+  /**
+	* Strokes
+	*/
+  --stroke-inner-color: transparent;
+  --stroke-width: 1px;
+  --stroke-color: var(--text-color);
+
+  /**
+	* Media queries
+	*/
+  --screen-small: 480px;
+  --screen-medium: 764px;
+  --screen-large: 1200px;
+  --screen-extra-large: 1440px;
+
+  /**
+	* Animations
+	*/
+  --animation-duration: 0.2s;
+  --animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);
+}
+
+/**
+* Spacing
+*/
+:root {
+  --space: 1rem;
+  --grid-gap-x: calc(var(--space));
+  --grid-gap-y: calc(var(--space) * 2);
+
+  @media (min-width: 700px) {
+    --grid-gap-x: calc(var(--space) * 2);
+  }
+
+  @media (min-width: 1200px) {
+    --grid-gap-x: calc(var(--space) * 4);
+    --grid-gap-y: calc(var(--space) * 4);
+  }
+}
+
+/**
+* Project
+*/
+:root {
+  --project-header-zindex: 1;
+  --project-header-top-position: var(--grid-gap-y);
+  --project-title-size: 10vw;
+  --project-title-margin: 0;
+
+  @media (min-width: 800px) {
+    --project-title-size: 15vw;
+    --project-title-margin: var(--grid-gap-y) 0 calc(var(--grid-gap-y) / 2) -0.05em;
+  }
+}
+
+/**
+* Folio
+*/
+:root {
+  --folio-header-zindex: 1;
+  --folio-header-top-position: var(--grid-gap-y);
+  --folio-title-size: 10vw;
+  --folio-title-margin: 0;
+
+  @media (min-width: 800px) {
+    --folio-title-size: 15vw;
+    --folio-title-margin: 0 0 1rem -0.05em;
+  }
+}
+
+/**
+* Off Canvas Menu
+*/
+:root {
+  --offcanvasmenu-zindex: 100;
+}

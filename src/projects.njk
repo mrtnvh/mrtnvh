@@ -1,0 +1,19 @@
+---
+eleventyNavigation:
+  key: projects
+  title: Projects
+  order: 2
+title: Projects
+description: A selection of my current and previous projects. Work, musical and open source experiences
+---
+
+{% extends 'layouts/base.njk' %}
+{% import "macros/list.njk" as list %}
+{% block content %}
+  {% section "Current", "projects" %}
+    {{ list.list(collections.currentProjects, 'Projects') }}
+  {% endsection %}
+  {% section "Previous", "projects" %}
+    {{ list.list(collections.pastProjects, 'Projects') }}
+  {% endsection %}
+{% endblock %}

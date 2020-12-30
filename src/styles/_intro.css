@@ -1,0 +1,15 @@
+.intro {
+	background: var(--text-color);
+	padding: var(--grid-gap-y) 0;
+
+	&,
+	a {
+		color: var(--background-color);
+	}
+}
+
+.intro__subtitle {
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-normal);
+	line-height: var(--line-height-lg);
+}

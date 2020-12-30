@@ -1,0 +1,19 @@
+.social {
+  &.social--offCanvas {
+    padding: var(--grid-gap-y) 0;
+  }
+
+  button.link,
+  a {
+    line-height: 0;
+    margin: calc(var(--space) / 2) calc(var(--space));
+  }
+
+  svg {
+    height: var(--font-size-base);
+
+    .social--offCanvas & {
+      height: var(--font-size-lg);
+    }
+  }
+}
