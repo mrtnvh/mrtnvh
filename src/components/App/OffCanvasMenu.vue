@@ -1,6 +1,10 @@
 <template>
 	<div>
-		<button class="reset link menu-toggle" @click="open = !open">
+		<button
+			class="reset link menu-toggle"
+			data-testid="offcanvasmenu-toggle"
+			@click="open = !open"
+		>
 			<template v-if="!open"> Menu </template>
 			<template v-else> Close </template>
 		</button>

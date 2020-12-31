@@ -11,6 +11,7 @@
 			:to="link.to"
 			:style="animationDelay(index)"
 			:exact="link.to === '/'"
+			:data-testid="`navigation-${link.key}`"
 		>
 			{{ link.title }}
 		</nuxt-link>
@@ -33,18 +34,22 @@ export default {
 	data: () => ({
 		links: [
 			{
+				key: "home",
 				to: "/",
 				title: "Home",
 			},
 			{
+				key: "projects",
 				to: "/projects",
 				title: "Projects",
 			},
 			{
+				key: "talks",
 				to: "/talks",
 				title: "Talks",
 			},
 			{
+				key: "about",
 				to: "/about",
 				title: "About me",
 			},

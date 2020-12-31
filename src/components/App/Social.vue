@@ -10,6 +10,7 @@
 			:class="name"
 			target="_blank"
 			rel="noopener"
+			:data-testid="`navigation-${name}`"
 		>
 			<!-- eslint-disable-next-line vue/require-component-is -->
 			<component :is="icon" />

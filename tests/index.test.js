@@ -1,9 +1,8 @@
 const parser = require("fast-xml-parser");
 const fs = require("fs");
-const puppeteer = require("puppeteer");
+const { devices } = require("./setup/config");
+const { getUrl } = require("./setup/utils");
 
-const port = 3001;
-const getUrl = (p) => `http://localhost:${port}${p}`;
 const sitemap = fs.readFileSync(`${process.cwd()}/dist/sitemap.xml`, "utf-8");
 const sitemapJson = parser.parse(sitemap);
 const pages = sitemapJson.urlset.url.map(({ loc }) => {
@@ -14,20 +13,6 @@ const customSnapshotIdentifier = (path, environmentName) =>
 	`pages${
 		path === "/" ? "-index" : path.split("/").join("-")
 	}-${environmentName}`;
-
-const devices = {
-	mobile: puppeteer.devices["iPhone X"],
-	desktop: {
-		viewport: {
-			width: 1440,
-			height: 900,
-			deviceScaleFactor: 2,
-			isLandscape: true,
-		},
-		userAgent:
-			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:85.0) Gecko/20100101 Firefox/85.0",
-	},
-};
 
 describe("Snapshots", () => {
 	beforeEach(async () => {
