@@ -51,5 +51,14 @@ describe("Snapshots", () => {
 				20 * 1000,
 			);
 		});
+
+		test("content", async () => {
+			await page.goto(getUrl(path));
+			await page.waitForFunction("!!window.$nuxt");
+			await page.waitForTimeout(500);
+			const content = await page.$eval("main", (el) => el.innerHTML);
+			const sanitizedContent = content.replace(/data-v-.*=""\s?/gm, "");
+			expect(sanitizedContent).toMatchSnapshot();
+		});
 	});
 });
