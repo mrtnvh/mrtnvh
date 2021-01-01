@@ -38,7 +38,7 @@ describe("Lighthouse", () => {
 					expect(score, name).toBeGreaterThan(0.7);
 				});
 			},
-			20 * 1000,
+			60 * 1000,
 		);
 	});
 });
