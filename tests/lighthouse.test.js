@@ -10,6 +10,8 @@ const ligthouseConfigs = {
 	desktop: lighthouseDesktopConfig,
 };
 
+jest.retryTimes(3);
+
 describe("Lighthouse", () => {
 	describe.each(pages)("%s", (path) => {
 		beforeEach(async () => {
@@ -36,7 +38,7 @@ describe("Lighthouse", () => {
 					expect(score, name).toBeGreaterThan(0.7);
 				});
 			},
-			10 * 1000,
+			20 * 1000,
 		);
 	});
 });
