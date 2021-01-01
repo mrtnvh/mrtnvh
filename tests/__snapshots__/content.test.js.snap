@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshots / content 1`] = `
+exports[`Content DOM snapshots / 1`] = `
 "<div><section class=\\"intro\\" >
 				Google Mobile Web Specialist
 			</a> <span class=\\"mr-space\\" >
@@ -16,7 +16,7 @@ exports[`Snapshots / content 1`] = `
 			</h1> <h2 class=\\"subtitle\\" >Metal</h2></div></a></article></div></section></div>"
 `;
 
-exports[`Snapshots /about content 1`] = `
+exports[`Content DOM snapshots /about 1`] = `
 "<article class=\\"title outline\\">
 		About
 	</h1> <aside class=\\"subtitle intro\\">
@@ -147,7 +147,7 @@ exports[`Snapshots /about content 1`] = `
 </table></div></section></article>"
 `;
 
-exports[`Snapshots /projects content 1`] = `
+exports[`Content DOM snapshots /projects 1`] = `
 "<div><section class=\\"title outline\\">
 				ISAAC
 			</h1> <h2 class=\\"title outline\\">
@@ -159,7 +159,7 @@ exports[`Snapshots /projects content 1`] = `
 			</h1> <h2 class=\\"subtitle\\">Web agency</h2></div></a></article></div></section></div>"
 `;
 
-exports[`Snapshots /projects/isaac content 1`] = `
+exports[`Content DOM snapshots /projects/isaac 1`] = `
 "<article class=\\"intro mb-ggy\\">
 <p >ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence &amp; Virtual Reality.</p>
 </div>
@@ -176,7 +176,7 @@ exports[`Snapshots /projects/isaac content 1`] = `
 </div></div></div></article>"
 `;
 
-exports[`Snapshots /projects/pixeo content 1`] = `
+exports[`Content DOM snapshots /projects/pixeo 1`] = `
 "<article class=\\"intro mb-ggy\\">
 <p href=\\"https://pixeo.be\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Pixeo</a> from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.</p>
 </div>
@@ -219,7 +219,7 @@ exports[`Snapshots /projects/pixeo content 1`] = `
 <p >Design &amp; build for a local sports complex</p></div></div></article>"
 `;
 
-exports[`Snapshots /projects/rockxxl content 1`] = `
+exports[`Content DOM snapshots /projects/rockxxl 1`] = `
 "<article class=\\"intro mb-ggy\\">
 <p >RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ...</p>
 </div>
@@ -231,7 +231,7 @@ exports[`Snapshots /projects/rockxxl content 1`] = `
 </div></div></div></article>"
 `;
 
-exports[`Snapshots /projects/royce content 1`] = `
+exports[`Content DOM snapshots /projects/royce 1`] = `
 "<article class=\\"intro mb-ggy\\">
 <p href=\\"https://roycetheband.com\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Royce</a>. A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.</p>
 </div>
@@ -245,7 +245,7 @@ exports[`Snapshots /projects/royce content 1`] = `
 </div></div></div></article>"
 `;
 
-exports[`Snapshots /talks content 1`] = `
+exports[`Content DOM snapshots /talks 1`] = `
 "<div class=\\"title outline\\">
 				Why OpenAPI
 			</h1> <h2 class=\\"title outline\\">

@@ -42,6 +42,9 @@ module.exports = {
 				context: true,
 				jestPuppeteer: true,
 			},
+			rules: {
+				"jest/valid-expect": 0,
+			},
 		},
 	],
 };
