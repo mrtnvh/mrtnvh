@@ -6,5 +6,11 @@ module.exports = {
   plugins: ["stylelint-order"],
   rules: {
     "scss/media-feature-value-dollar-variable": null,
+    "plugin/no-low-performance-animation-properties": [
+      true,
+      {
+        ignoreProperties: ["color"],
+      },
+    ],
   },
 };

@@ -14,14 +14,8 @@
   --twitter: hsla(206, 89%, 59%, 1);
   --linkedin: hsla(201, 100%, 36%, 1);
   --isaac: rgb(0, 182, 255);
-
   --text-color: var(--dark);
   --background-color: var(--light);
-
-  @media (prefers-color-scheme: dark) {
-    --text-color: var(--light);
-    --background-color: var(--dark);
-  }
 
   /**
 	* Fonts
@@ -70,6 +64,11 @@
 	*/
   --animation-duration: 0.2s;
   --animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: var(--light);
+    --background-color: var(--dark);
+  }
 }
 
 /**

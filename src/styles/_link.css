@@ -2,9 +2,6 @@ a,
 button.link {
   --link-color: var(--text-color);
   --link-hover-color: var(--primary-dark);
-  @media (prefers-color-scheme: dark) {
-    --link-hover-color: var(--primary);
-  }
   --link-transition-speed: 0.15s;
   --link-text-decoration: underline;
   --underline-z-index: -2;
@@ -52,6 +49,9 @@ button.link {
   &.isaac {
     --link-hover-color: var(--isaac);
     --underline-hover-background-color: var(--isaac);
+  }
+  @media (prefers-color-scheme: dark) {
+    --link-hover-color: var(--primary);
   }
 }
 
