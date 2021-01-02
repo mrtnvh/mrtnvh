@@ -11,8 +11,10 @@
     <meta name="theme-color" content="#95FF00"/>
 
     {%- block seo -%}
-      <title>{{ title }}
-        {% if page.url != "/" %} \\ {{ site.titleAffix }}
+      <title>
+        {{ title }}
+        {% if page.url != "/" %}
+        \\ {{ site.titleAffix }}
         {%- endif -%}
       </title>
       <meta name="description" content="{% block description %}{{ description }}{% endblock %}">
@@ -43,13 +45,25 @@
       <script type="application/ld+json">
         {{ site.structuredData | jsonStringify | safe }}
       </script>
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () {
+            navigator
+              .serviceWorker
+              .register('/sw.js')
+              .then((registration) => {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              }, (err) => {
+                console.log('ServiceWorker registration failed: ', err);
+              });
+          });
+        }
+      </script>
     {%- endblock -%}
 
-    {# Icon #}
+    {# Styles #}
     <link rel="preload" href="https://rsms.me/inter/inter.css" as="style"/>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
-
-    {# Styles #}
     <link rel="preload" href="/styles/index.css" as="style">
     <link rel="stylesheet" href="/styles/index.css">
   </head>

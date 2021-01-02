@@ -1,13 +1,14 @@
 const isProd = process.env.NODE_ENV === "production";
 
+const fs = require("fs");
 const navigationPlugin = require("@11ty/eleventy-navigation");
 const criticalCss = require("eleventy-critical-css");
+const pwaPlugin = require("@pragmatics/eleventy-plugin-pwa");
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
-const favicons = require("./config/favicons");
-const fs = require("fs");
 
 const pkg = require("./package.json");
 const shortcodes = require("./config/shortcodes");
+const favicons = require("./config/favicons");
 
 process.setMaxListeners(25);
 
@@ -27,14 +28,12 @@ module.exports = function (config) {
       .filter(({ data }) => data.tag === "projects")
       .reverse(),
   );
-
   config.addCollection("currentProjects", (collectionApi) =>
     collectionApi
       .getAllSorted()
       .filter(({ data }) => data.tag === "projects" && data.current)
       .reverse(),
   );
-
   config.addCollection("pastProjects", (collectionApi) =>
     collectionApi
       .getAllSorted()
@@ -52,11 +51,16 @@ module.exports = function (config) {
     const [preUrl, postUrl] = src.split("/upload");
     return `${preUrl}/upload/t_og_image/${postUrl}`;
   });
-
   config.addFilter("jsonStringify", (obj) => JSON.stringify(obj));
 
   if (isProd) {
     config.addPlugin(criticalCss, {
+      rebase: ({ url }) => {
+        if (url.includes("font-files")) {
+          const cdnUrl = "https://rsms.me/inter/";
+          return cdnUrl + url;
+        }
+      },
       minify: true,
       dimensions: [
         { height: 480, width: 360 },
@@ -74,7 +78,7 @@ module.exports = function (config) {
       iconPath: "./src/static/favicon.png",
       outDir: "./dist",
       configuration: {
-        path: "/icons",
+        path: "/",
         appName: pkg.name,
         appShortName: pkg.name,
         appDescription: pkg.description,
@@ -82,8 +86,6 @@ module.exports = function (config) {
         developerURL: pkg.author.url,
         dir: "auto",
         lang: "en-US",
-        background: "#fff",
-        theme_color: "#fff",
         appleStatusBarStyle: "black-translucent",
         orientation: "any",
         scope: "/",
@@ -107,6 +109,21 @@ module.exports = function (config) {
           yandex: false,
         },
       },
+    });
+
+    config.addPlugin(pwaPlugin, {
+      swDest: "./dist/sw.js",
+      globDirectory: "./dist",
+      runtimeCaching: [
+        {
+          urlPattern: /https?:\/\/res.cloudinary.com\/mrtnvh\/.*/,
+          handler: "StaleWhileRevalidate",
+        },
+        {
+          urlPattern: /https?:\/\/rsms.me\/inter\/.*/,
+          handler: "StaleWhileRevalidate",
+        },
+      ],
     });
   }
 
