@@ -17,18 +17,21 @@ const addIconsToHead = (html) => (tree) => {
 
 module.exports = async (config, options) => {
   const iconPath = options.iconPath || "./";
-  const outDir = options.outDir || `${config.dir.output}/icons`;
+  const outDir = options.outDir || `${config.dir.output}`;
   const configuration = options.configuration || {};
 
-  let images = "";
   let html = "";
-  let files = "";
 
   config.on("beforeBuild", async () => {
     const response = await favicons(iconPath, configuration);
-    images = response.images;
+    const { images, files } = response;
     html = response.html;
-    files = response.files;
+
+    await Promise.all(
+      [...images, ...files].map(({ name, contents }) =>
+        fs.outputFile(path.resolve(outDir, name), contents),
+      ),
+    );
   });
 
   config.addTransform("favicons", async (content, outputPath) => {
@@ -43,10 +46,4 @@ module.exports = async (config, options) => {
     }
     return content;
   });
-
-  await Promise.all(
-    [...images, ...files].map(({ name, contents }) =>
-      fs.outputFile(path.resolve(outDir, name), contents),
-    ),
-  );
 };
