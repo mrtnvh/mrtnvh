@@ -1,11 +1,18 @@
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
   mount: {
     dist: { url: "/", static: true },
     "./src/scripts": { url: "/scripts" },
-    "./src/styles": { url: "/styles" },
   },
   plugins: [
-    "@snowpack/plugin-postcss",
+    [
+      "@snowpack/plugin-run-script",
+      {
+        cmd: "postcss src/styles/index.css -d dist/styles -m",
+        watch: "$1 --watch",
+      },
+    ],
     [
       "@snowpack/plugin-run-script",
       {
@@ -13,12 +20,22 @@ module.exports = {
         watch: "$1 --watch",
       },
     ],
+    ...(!isProd
+      ? []
+      : [
+          [
+            "snowpack-plugin-optimize",
+            {
+              minifyCss: false,
+            },
+          ],
+        ]),
   ],
   installOptions: {
     NODE_ENV: true,
   },
   buildOptions: {
-    clean: true,
+    clean: false,
     out: "dist",
   },
   devOptions: {

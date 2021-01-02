@@ -7,7 +7,13 @@ module.exports = {
     card: "summary_large_image",
     creator: "@mrtnvh",
   },
-  jsonLd: {
+  schema: {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    url: "https://mrtnvh.com",
+    name: "mrtnvh",
+  },
+  structuredData: {
     "@context": "http://schema.org/",
     "@type": "Person",
     name: "Maarten Van Hoof",

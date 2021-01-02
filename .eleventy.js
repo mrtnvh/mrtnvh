@@ -1,7 +1,15 @@
+const isProd = process.env.NODE_ENV === "production";
+
 const navigationPlugin = require("@11ty/eleventy-navigation");
+const criticalCss = require("eleventy-critical-css");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
+const favicons = require("./config/favicons");
 const fs = require("fs");
+
 const pkg = require("./package.json");
 const shortcodes = require("./config/shortcodes");
+
+process.setMaxListeners(25);
 
 module.exports = function (config) {
   config.addPassthroughCopy({ "./src/static": "/" });
@@ -45,7 +53,62 @@ module.exports = function (config) {
     return `${preUrl}/upload/t_og_image/${postUrl}`;
   });
 
-  config.addFilter("jsonStringify", (obj) => JSON.stringify(obj))
+  config.addFilter("jsonStringify", (obj) => JSON.stringify(obj));
+
+  if (isProd) {
+    config.addPlugin(criticalCss, {
+      minify: true,
+      dimensions: [
+        { height: 480, width: 360 },
+        { height: 900, width: 1200 },
+      ],
+    });
+
+    config.addPlugin(sitemap, {
+      sitemap: {
+        hostname: pkg.homepage + "/sitemap.xml",
+      },
+    });
+
+    config.addPlugin(favicons, {
+      iconPath: "./src/static/favicon.png",
+      outDir: "./dist",
+      configuration: {
+        path: "/icons",
+        appName: pkg.name,
+        appShortName: pkg.name,
+        appDescription: pkg.description,
+        developerName: pkg.author.name,
+        developerURL: pkg.author.url,
+        dir: "auto",
+        lang: "en-US",
+        background: "#fff",
+        theme_color: "#fff",
+        appleStatusBarStyle: "black-translucent",
+        orientation: "any",
+        scope: "/",
+        start_url: "/?standalone=true",
+        display: "browser",
+        background: "#ffffff",
+        theme_color: "#95FF00",
+        lang: "en",
+        version: pkg.version,
+        logging: false,
+        pixel_art: false,
+        loadManifestWithCredentials: false,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: false,
+          coast: false,
+          favicons: true,
+          firefox: false,
+          windows: false,
+          yandex: false,
+        },
+      },
+    });
+  }
 
   return {
     dir: {

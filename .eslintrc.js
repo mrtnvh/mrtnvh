@@ -19,6 +19,12 @@ module.exports = {
   globals: {},
   overrides: [
     {
+      files: ["config/**/*.*"],
+      rules: {
+        "import/no-extraneous-dependencies": 0,
+      },
+    },
+    {
       files: ["tests/**/*.*"],
       extends: ["plugin:jest/recommended"],
       globals: {
