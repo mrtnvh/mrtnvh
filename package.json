@@ -20,7 +20,6 @@
     "lint:es": "eslint --fix --ext .js --ignore-path .gitignore .",
     "lint:format": "prettier --write --ignore-path .gitignore **/*.{js,css,md,json}",
     "lint:style": "stylelint --fix src/**/*.css",
-    "pretest": "run-s build",
     "test": "jest --runInBand"
   },
   "dependencies": {
