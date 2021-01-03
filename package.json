@@ -15,16 +15,16 @@
   "scripts": {
     "generate": "run-s build",
     "build": "NODE_ENV=production run-s clean build:*",
-    "build:snowpack": "snowpack build",
-    "clean": "rimraf dist",
+    "build:snowpack": "npx snowpack build",
+    "clean": "npx rimraf dist",
     "dev": "NODE_ENV=development run-s clean dev:*",
-    "dev:snowpack": "snowpack dev",
-    "start": "http-server dist",
+    "dev:snowpack": "npx snowpack dev",
+    "start": "npx http-server dist",
     "lint": "run-p lint:*",
-    "lint:es": "eslint --fix --ext .js --ignore-path .gitignore .",
-    "lint:format": "prettier --write --ignore-path .gitignore **/*.{js,css,md,json}",
-    "lint:style": "stylelint --fix src/**/*.css",
-    "test": "jest --runInBand"
+    "lint:es": "npx eslint --fix --ext .js --ignore-path .gitignore .",
+    "lint:format": "npx prettier --write --ignore-path .gitignore **/*.{js,css,md,json}",
+    "lint:style": "npx stylelint --fix src/**/*.css",
+    "test": "npx jest --runInBand"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
