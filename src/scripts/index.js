@@ -1,4 +1,11 @@
+import { listen } from "quicklink";
+
 const isDesktop = window.matchMedia("@media (min-width: 700px)").matches;
+
+// Quicklink
+window.addEventListener("load", () => {
+  listen();
+});
 
 // E-mail
 const handleMailClick = () => {

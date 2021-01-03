@@ -24,7 +24,8 @@
     "test": "jest --runInBand"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "quicklink": "^2.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
