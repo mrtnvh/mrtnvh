@@ -2,9 +2,9 @@ const { setup: setupPuppeteer } = require("jest-environment-puppeteer");
 const { setup: setupDevServer } = require("jest-dev-server");
 const { port, browserTimeout } = require("./config");
 
-const setupNuxt = async () => {
+const setupServer = async () => {
   await setupDevServer({
-    command: `nuxt start --port=${port}`,
+    command: `http-server dist --port=${port}`,
     port,
     launchTimeout: browserTimeout,
   });
@@ -12,5 +12,5 @@ const setupNuxt = async () => {
 
 module.exports = async function globalSetup(globalConfig) {
   await setupPuppeteer(globalConfig);
-  await setupNuxt();
+  await setupServer();
 };

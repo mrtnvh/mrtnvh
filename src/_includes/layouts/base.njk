@@ -62,10 +62,8 @@
     {%- endblock -%}
 
     {# Styles #}
-    <link rel="preload" href="https://rsms.me/inter/inter.css" as="style"/>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
-    <link rel="preload" href="/styles/index.css" as="style">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="dns-prefetch" href="https://rsms.me">
+
   </head>
 
   <body class="app">
@@ -74,12 +72,19 @@
       {% block content %}{% endblock %}
     </main>
     {% include "partials/app-footer.njk" %}
+
+    <link rel="preload" href="/styles/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="preload" href="https://rsms.me/inter/inter.css" as="style"/>
+      <link rel="preload" href="/styles/index.css" as="style">
+    </noscript>
+
+    {# Scripts #}
+    <script src="/scripts/index.js" type="module"></script>
+    {% if env != "production" %}
+      <script async data-domain="mrtnvh.com" src="https://stats.mrtnvh.com/js/index.js"></script>
+    {%- endif -%}
+
   </body>
-
-  {# Scripts #}
-  <script src="/scripts/index.js" type="module"></script>
-  {% if env != "production" %}
-    <script async data-domain="mrtnvh.com" src="https://stats.mrtnvh.com/js/index.js"></script>
-  {%- endif -%}
-
 </html>

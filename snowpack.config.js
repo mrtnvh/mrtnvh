@@ -24,11 +24,15 @@ module.exports = {
       ? []
       : [
           [
-            "snowpack-plugin-optimize",
+            "./config/purgecss.snowpack.js",
             {
-              minifyCss: false,
+              content: ["./dist/*.html"],
+              css: ["./dist/styles/*.css"],
+              output: ["./dist/styles/"],
+              safelist: ["loaded"],
             },
           ],
+          "snowpack-plugin-optimize",
         ]),
   ],
   installOptions: {

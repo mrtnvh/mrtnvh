@@ -3,7 +3,12 @@ const { getUrl } = require("./setup/utils");
 
 const customSnapshotIdentifier = (path, environmentName) =>
   `pages${
-    path === "/" ? "-index" : path.split("/").join("-")
+    path === "/"
+      ? "-index"
+      : path
+          .slice(0, path.length - 1)
+          .split("/")
+          .join("-")
   }-${environmentName}`;
 
 beforeEach(async () => {
@@ -23,7 +28,6 @@ describe.each(pages)("%s", (path) => {
           { name: "prefers-color-scheme", value: "light" },
         ]);
         await page.goto(getUrl(path));
-        await page.waitForFunction("!!window.$nuxt");
 
         await page.waitForTimeout(500);
 

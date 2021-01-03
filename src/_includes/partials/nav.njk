@@ -1,7 +1,7 @@
 {% set navPages = collections.all | eleventyNavigation %}
 <nav class="nav">
   {%- for entry in navPages %}
-    <a{% if entry.url == page.url %} class="active"{% endif %} href="{{ entry.url | url }}">
+    <a{% if entry.url == page.url %} class="active"{% endif %} href="{{ entry.url | url }}" data-testid="navigation-{{ entry.key }}" >
       {{ entry.title }}
     </a>
   {%- endfor %}

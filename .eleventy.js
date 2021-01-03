@@ -9,6 +9,7 @@ const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const pkg = require("./package.json");
 const shortcodes = require("./config/shortcodes");
 const favicons = require("./config/favicons");
+const inlineCss = require("./config/inlineCss");
 
 process.setMaxListeners(25);
 
@@ -63,8 +64,8 @@ module.exports = function (config) {
       },
       minify: true,
       dimensions: [
-        { height: 480, width: 360 },
-        { height: 900, width: 1200 },
+        { height: 640, width: 480 },
+        // { height: 900, width: 1200 },
       ],
     });
 
@@ -73,6 +74,10 @@ module.exports = function (config) {
         hostname: pkg.homepage + "/sitemap.xml",
       },
     });
+
+    // config.addPlugin(inlineCss, {
+    //   input: "./dist/styles/index.css"
+    // })
 
     config.addPlugin(favicons, {
       iconPath: "./src/static/favicon.png",
@@ -89,8 +94,8 @@ module.exports = function (config) {
         appleStatusBarStyle: "black-translucent",
         orientation: "any",
         scope: "/",
-        start_url: "/?standalone=true",
-        display: "browser",
+        start_url: "/",
+        display: "minimal-ui",
         background: "#ffffff",
         theme_color: "#95FF00",
         lang: "en",
@@ -104,7 +109,7 @@ module.exports = function (config) {
           appleStartup: false,
           coast: false,
           favicons: true,
-          firefox: false,
+          firefox: true,
           windows: false,
           yandex: false,
         },

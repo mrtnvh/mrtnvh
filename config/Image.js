@@ -35,14 +35,14 @@ module.exports = (src, alt, className, width, height) => {
   });
 
   return `
-  <picture style="background-image: url(${source})">
-    <source sizes="1px" srcset="${sourceSetWebp}" type="image/webp" />
+  <picture>
+    <source sizes="100vw" srcset="${sourceSetWebp}" type="image/webp" />
     <img
       src="${source}"
       srcset="${sourceSet}"
-      sizes="1px"
+      sizes="100vw"
       alt="${alt}"
-      class="image fade"
+      class="image"
       loading="lazy"
       width="${width}"
       height="${height}"

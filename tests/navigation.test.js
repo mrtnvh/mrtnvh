@@ -21,7 +21,6 @@ jest.retryTimes(3);
 describe("Navigation", () => {
   beforeEach(async () => {
     await page.goto(getUrl("/"));
-    await page.waitForFunction("!!window.$nuxt");
   });
 
   describe.each(Object.entries(links))("Navigate to %s", (key, to) => {

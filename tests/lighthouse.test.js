@@ -10,8 +10,6 @@ const ligthouseConfigs = {
   desktop: lighthouseDesktopConfig,
 };
 
-jest.retryTimes(3);
-
 describe("Lighthouse", () => {
   describe.each(pages)("%s", (path) => {
     beforeEach(async () => {

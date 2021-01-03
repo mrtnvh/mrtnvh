@@ -31,14 +31,14 @@ figure {
 img {
   max-width: 100%;
 
-  &[loading="lazy"] {
+  /* &[loading="lazy"] {
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
 
     &.loaded {
       opacity: 1;
     }
-  }
+  } */
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
