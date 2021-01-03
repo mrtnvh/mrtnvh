@@ -1,4 +1,7 @@
 {
+  "github": {
+    "enabled": false
+  },
   "trailingSlash": true,
   "cleanUrls": true
 }
