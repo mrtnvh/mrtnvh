@@ -45,6 +45,12 @@
       <script type="application/ld+json">
         {{ site.structuredData | jsonStringify | safe }}
       </script>
+    {%- endblock -%}
+
+    {# Styles #}
+    <link rel="dns-prefetch" href="https://rsms.me">
+
+    {% if env == "production" %}
       <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function () {
@@ -59,14 +65,11 @@
           });
         }
       </script>
-    {%- endblock -%}
-
-    {# Styles #}
-    <link rel="dns-prefetch" href="https://rsms.me">
+    {%- endif -%}
 
   </head>
 
-  <body class="app">
+  <body class="app app--{% if page.fileSlug | length > 0 %}{{ page.fileSlug }}{% else %}home{%- endif -%}">
     {% include "partials/app-header.njk" %}
     <main class="app__content">
       {% block content %}{% endblock %}
@@ -82,7 +85,7 @@
 
     {# Scripts #}
     <script src="/scripts/index.js" type="module"></script>
-    {% if env != "production" %}
+    {% if env == "production" %}
       <script async data-domain="mrtnvh.com" src="https://stats.mrtnvh.com/js/index.js"></script>
     {%- endif -%}
 

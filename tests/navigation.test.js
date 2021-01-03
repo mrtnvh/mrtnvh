@@ -8,9 +8,9 @@ const { getUrl } = require("./setup/utils");
 
 const links = {
   home: "/",
-  projects: "/projects",
-  talks: "/talks",
-  about: "/about",
+  projects: "/projects/",
+  talks: "/talks/",
+  about: "/about/",
   github: "https://github.com/vanhoofmaarten/",
   twitter: "https://twitter.com/mrtnvh/",
   linkedin: "https://www.linkedin.com/in/mrtnvh/",
@@ -28,14 +28,16 @@ describe("Navigation", () => {
       "%s",
       async (environmentName, emulationSettings) => {
         await page.emulate(emulationSettings);
-        const $document = await getDocument(page);
+        let $root = await getDocument(page);
 
         if (environmentName === "mobile") {
-          const $toggle = await getByTestId($document, `offcanvasmenu-toggle`);
+          const $toggle = await getByTestId($root, `offcanvasmenu-toggle`);
           await $toggle.click();
+          $root = await getByTestId($root, `offcanvasmenu`);
+          await page.waitForTimeout(500);
         }
 
-        const $link = await getByTestId($document, `navigation-${key}`);
+        const $link = await getByTestId($root, `navigation-${key}`);
         await $link.click();
 
         if (to.includes("http")) {

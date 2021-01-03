@@ -18,8 +18,6 @@ module.exports = function (config) {
 
   shortcodes(config);
 
-  config.addPlugin(navigationPlugin);
-
   config.addLayoutAlias("default", "layouts/base.njk");
   config.addLayoutAlias("project", "layouts/project.njk");
 
@@ -54,6 +52,13 @@ module.exports = function (config) {
   });
   config.addFilter("jsonStringify", (obj) => JSON.stringify(obj));
 
+  config.addPlugin(navigationPlugin);
+  config.addPlugin(sitemap, {
+      sitemap: {
+        hostname: pkg.homepage + "/sitemap.xml",
+      },
+    });
+
   if (isProd) {
     config.addPlugin(criticalCss, {
       rebase: ({ url }) => {
@@ -67,12 +72,6 @@ module.exports = function (config) {
         { height: 640, width: 480 },
         // { height: 900, width: 1200 },
       ],
-    });
-
-    config.addPlugin(sitemap, {
-      sitemap: {
-        hostname: pkg.homepage + "/sitemap.xml",
-      },
     });
 
     // config.addPlugin(inlineCss, {

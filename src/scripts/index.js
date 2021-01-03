@@ -30,3 +30,32 @@ if (isDesktop) {
     });
   });
 }
+
+// OffCanvasMenu
+let isOffCanvasMenuOpen = false;
+const $offCanvasMenuToggle = document.querySelector("#offcanvasmenuToggle");
+const $body = document.querySelector("body");
+const $nav = document.querySelector("#nav").cloneNode(true);
+const $social = document.querySelector("#social").cloneNode(true);
+
+const $offCanvasMenu = document.createElement("div");
+$offCanvasMenu.id = "offCanvasMenu";
+$nav.classList.add("nav--offCanvas");
+$social.classList.add("social--offCanvas");
+$offCanvasMenu.classList.add("offCanvasMenu");
+$offCanvasMenu.setAttribute("data-testid", "offcanvasmenu");
+$offCanvasMenu.append($nav, $social);
+
+$offCanvasMenuToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (!isOffCanvasMenuOpen) {
+    $body.append($offCanvasMenu);
+    $offCanvasMenuToggle.textContent = "Close";
+    isOffCanvasMenuOpen = true;
+  } else {
+    $body.removeChild($offCanvasMenu);
+    $offCanvasMenuToggle.textContent = "Menu";
+    isOffCanvasMenuOpen = false;
+  }
+});
