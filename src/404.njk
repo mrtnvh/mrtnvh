@@ -1,0 +1,30 @@
+---
+title: Page not found
+permalink: 404.html
+---
+{% extends 'layouts/base.njk' %}
+{% block content %}
+  <div class="error container">
+    <h1 class="error__title">{{ title }}</h1>
+    <a href="{{ "/" | url }}">Go to homepage</a>
+  </div>
+{% endblock %}
+
+{% block css %}
+  <style>
+    .error.container {
+      padding-top: var(--grid-gap-y);
+      padding-bottom: var(--grid-gap-y);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+    }
+    .error__title {
+      font-size: var(--folio-title-size);
+      text-transform: uppercase;
+      line-height: 0.75em;
+      display: inline-block;
+    }
+  </style>
+{% endblock %}

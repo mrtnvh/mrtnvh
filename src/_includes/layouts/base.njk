@@ -53,6 +53,7 @@
       </script>
     {%- endif -%}
 
+    {% block css %}{%- endblock -%}
   </head>
 
   <body class="app app--{% if page.fileSlug | length > 0 %}{{ page.fileSlug }}{% else %}home{%- endif -%}">
