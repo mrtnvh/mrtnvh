@@ -10,6 +10,13 @@ const ligthouseConfigs = {
   desktop: lighthouseDesktopConfig,
 };
 
+let testTimeout = 45 * 1000;
+
+if (process.env.CI === "true") {
+  testTimeout = 60 * 1000;
+  jest.retryTimes(2);
+}
+
 describe("Lighthouse", () => {
   describe.each(pages)("%s", (path) => {
     beforeEach(async () => {
@@ -36,7 +43,7 @@ describe("Lighthouse", () => {
           expect(score, name).toBeGreaterThan(0.7);
         });
       },
-      60 * 1000,
+      testTimeout,
     );
   });
 });
