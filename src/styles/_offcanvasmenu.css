@@ -1,0 +1,15 @@
+.offCanvasMenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	top: calc(var(--project-header-top-position) * 2.5);
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	background: var(--background-color);
+	z-index: var(--offcanvasmenu-zindex);
+	position: fixed;
+	border-top: 1px solid var(--grey);
+}

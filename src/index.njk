@@ -1,0 +1,17 @@
+---
+title: Maarten Van Hoof \\ Front End Developer
+description: "Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator"
+eleventyNavigation:
+  key: home
+  title: Home
+  order: 1
+---
+
+{% extends 'layouts/base.njk' %}
+{% import "macros/list.njk" as list %}
+{% block content %}
+  {% include "partials/intro.njk" %}
+  {% section "Current", "Projects" %}
+    {{ list.list(collections.currentProjects, 'projects') }}
+  {% endsection %}
+{% endblock %}

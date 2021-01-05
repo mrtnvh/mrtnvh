@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+
+    {# PWA #}
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content="mrtnvh"/>
+    <meta name="author" content="Maarten Van Hoof"/>
+    <meta name="theme-color" content="#95FF00"/>
+
+    {%- block seo -%}
+      <title>{{ title }}{% if page.url != "/" %}\\ {{ site.titleAffix }}{%- endif -%}</title>
+      <meta name="description" content="{% block description %}{{ description }}{% endblock %}">
+      <meta property="og:image" content="{{ thumbnail | ogImageFromThumbnail }}">
+
+      {# Twitter Card #}
+      <meta name="twitter:card" content="{{ site.twitter.card }}">
+      <meta name="twitter:creator" content="{{ site.twitter.creator }}">
+      <meta name="twitter:url" content="{{ site.baseURL }}{{ page.url }}">
+      <meta name="twitter:title" content="{{ title }}">
+      <meta name="twitter:description" content="{{ description }}">
+
+      {#  Facebook OpenGraph #}
+      <meta property="og:url" content="{{ site.baseURL }}{{ page.url }}">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="{{ title }}">
+      <meta property="og:description" content="{{ description }}">
+      <meta property="og:site_name" content="{{ site.title }}">
+      <meta property="og:locale" content="en_GB">
+      <meta property="og:image" content="{{ thumbnail | ogImageFromThumbnail }}">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:image:alt" content="{{ title }}">
+
+      <script type="application/ld+json">{{ site.schema | jsonStringify | safe }}</script>
+      <script type="application/ld+json">{{ site.structuredData | jsonStringify | safe }}</script>
+    {%- endblock -%}
+
+    {# Styles #}
+    <link rel="dns-prefetch" href="https://rsms.me">
+
+    {% if env.isProd %}
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator
+              .serviceWorker
+              .register('/sw.js');
+          });
+        }
+      </script>
+    {%- endif -%}
+
+    {% block css %}{%- endblock -%}
+  </head>
+
+  <body class="app app--{% if page.fileSlug | length > 0 %}{{ page.fileSlug }}{% else %}home{%- endif -%}">
+    {% include "partials/app-header.njk" %}
+    <main class="app__content">
+      {% block content %}{% endblock %}
+    </main>
+    {% include "partials/app-footer.njk" %}
+
+    <link rel="preload" href="/styles/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="preload" href="https://rsms.me/inter/inter.css" as="style"/>
+      <link rel="preload" href="/styles/index.css" as="style">
+    </noscript>
+
+    {# Scripts #}
+    <script src="/scripts/index.js" type="module"></script>
+    {% if env.isMain and env.isProd %}
+      <script async data-domain="mrtnvh.com" src="https://stats.mrtnvh.com/js/index.js"></script>
+    {%- endif -%}
+
+  </body>
+</html>

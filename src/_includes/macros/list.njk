@@ -1,0 +1,26 @@
+{% macro item(entry) %}
+<article class="list__item">
+  <a
+    href="{{ entry.url }}"
+    class="reset list__link"
+  >
+    <figure class="media list__media">
+      {% image entry.data.thumbnail, entry.data.title, 'image', 1600, 900 %}
+    </figure>
+    <div class="list__content">
+      <h1 class="list__title outline">
+        {{ entry.data.title }}
+      </h1>
+      <h2 class="list__subtitle">{{ entry.data.subtitle }}</h2>
+    </div>
+  </a>
+</article>
+{% endmacro %}
+
+{% macro list(entries, class) %}
+<div class="grid {{ class }}">
+{% for entry in entries %}
+  {{ item(entry) }}
+{% endfor %}
+</div>
+{% endmacro %}

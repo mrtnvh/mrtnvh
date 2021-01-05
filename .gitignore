@@ -6,8 +6,11 @@ node_modules
 dist
 .env
 .env.*
-.nuxt
+_site
+_src
 src/static/sw.js
 .eslintcache
 
 __diff_output__
+
+.vercel

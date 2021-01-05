@@ -6,39 +6,44 @@ const { pages } = require("./setup/config");
 const { getUrl } = require("./setup/utils");
 
 const ligthouseConfigs = {
-	mobile: lighthouseMobileConfig,
-	desktop: lighthouseDesktopConfig,
+  mobile: lighthouseMobileConfig,
+  desktop: lighthouseDesktopConfig,
 };
 
-jest.retryTimes(3);
+let testTimeout = 45 * 1000;
+
+if (process.env.CI === "true") {
+  testTimeout = 60 * 1000;
+  jest.retryTimes(2);
+}
 
 describe("Lighthouse", () => {
-	describe.each(pages)("%s", (path) => {
-		beforeEach(async () => {
-			await jestPuppeteer.resetPage();
-		});
+  describe.each(pages)("%s", (path) => {
+    beforeEach(async () => {
+      await jestPuppeteer.resetPage();
+    });
 
-		test.each(Object.entries(ligthouseConfigs))(
-			"%s",
-			async (environmentName, environmentConfig) => {
-				const { lhr } = await lighthouse(
-					getUrl(path),
-					{
-						port: new URL(browser.wsEndpoint()).port,
-						output: "json",
-					},
-					environmentConfig,
-				);
+    test.each(Object.entries(ligthouseConfigs))(
+      "%s",
+      async (environmentName, environmentConfig) => {
+        const { lhr } = await lighthouse(
+          getUrl(path),
+          {
+            port: new URL(browser.wsEndpoint()).port,
+            output: "json",
+          },
+          environmentConfig,
+        );
 
-				const scores = Object.entries(
-					lhr.categories,
-				).map(([name, { score }]) => [name, score]);
+        const scores = Object.entries(
+          lhr.categories,
+        ).map(([name, { score }]) => [name, score]);
 
-				scores.forEach(([name, score]) => {
-					expect(score, name).toBeGreaterThan(0.7);
-				});
-			},
-			60 * 1000,
-		);
-	});
+        scores.forEach(([name, score]) => {
+          expect(score, name).toBeGreaterThan(0.7);
+        });
+      },
+      testTimeout,
+    );
+  });
 });

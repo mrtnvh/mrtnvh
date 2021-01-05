@@ -1,0 +1,104 @@
+name: Build, test & deploy
+
+on: [push, pull_request]
+
+env:
+  CI: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Run build
+        run: "npm run build"
+        env:
+          CI: true
+
+      - name: Archive build output
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: dist
+          retention-days: 1
+
+  test:
+    runs-on: macos-10.15
+
+    needs: build
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        test-type: [test, eslint, stylelint, prettier]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        if: ${{ matrix.test-type }} == test
+        with:
+          name: build
+          path: dist
+
+      - name: Run ${{ matrix.test-type }}
+        run: "npm run ${{ matrix.test-type }}"
+
+      - name: Archive snapshot artifacts
+        uses: actions/upload-artifact@v2
+        if: ${{ matrix.test-type }} == test
+        with:
+          name: snapshots
+          path: tests/__image_snapshots__
+          retention-days: 5
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: test
+
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+
+      - name: Upload to Vercel (Preview)
+        uses: amondnet/vercel-action@v20
+        if: github.ref != 'refs/heads/main'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+
+      - name: Upload to Vercel (Production)
+        uses: amondnet/vercel-action@v20
+        if: github.ref == 'refs/heads/main'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-args: '--prod'

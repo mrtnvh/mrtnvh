@@ -1,0 +1,18 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <article id="project" class="container project">
+    <header class="project__header">
+      <div class="project__sticky">
+        <h1 class="project__title outline">{{ title }}</h1>
+        <div class="project__subtitle">{{ subtitle }}</div>
+      </div>
+    </header>
+    <figure class="media project__media">
+      {% image thumbnail, title, 'image', 1600, 900 %}
+    </figure>
+    <div class="project__body">
+      {{ content | safe }}
+    </div>
+  </article>
+{% endblock %}

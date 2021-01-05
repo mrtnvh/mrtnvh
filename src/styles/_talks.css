@@ -1,0 +1,17 @@
+.talks__container {
+	padding-top: var(--grid-gap-y);
+	padding-bottom: var(--grid-gap-y);
+}
+
+.talks__title {
+	font-size: var(--folio-title-size);
+	text-transform: uppercase;
+	line-height: 0.75em;
+	margin-bottom: var(--grid-gap-y);
+}
+
+.talks__container img {
+	@media (prefers-color-scheme: dark) {
+		filter: invert(1) hue-rotate(180deg);
+	}
+}

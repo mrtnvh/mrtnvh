@@ -1,0 +1,25 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--text-color);
+  padding: calc(var(--space)) 0;
+
+  &:not(:first-child) {
+    padding-left: calc(var(--space) / 2);
+  }
+
+  &:not(:last-child) {
+    padding-right: calc(var(--space) / 2);
+  }
+
+  tr:first-child & {
+    border-top: 1px solid var(--text-color);
+  }
+}
