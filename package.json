@@ -76,7 +76,7 @@
     "pptr-testing-library": "^0.6.4",
     "prettier": "^2.2.1",
     "prettier-plugin-packagejson": "^2.2.10",
-    "puppeteer": "^7.1.0",
+    "puppeteer": "^8.0.0",
     "purgecss": "^4.0.2",
     "rimraf": "^3.0.2",
     "snowpack": "^2.18.5",
