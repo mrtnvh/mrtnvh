@@ -62,7 +62,6 @@ jobs:
 
       - name: Archive snapshot artifacts
         uses: actions/upload-artifact@v2
-        if: ${{ matrix.test-type == e2e }}
         with:
           name: snapshots
           path: tests/visual/__image_snapshots__
