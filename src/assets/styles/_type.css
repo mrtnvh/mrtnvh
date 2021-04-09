@@ -9,12 +9,7 @@
 	break-inside: avoid;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:--headings {
 	font-weight: var(--headings-font-weight);
 	line-height: var(--line-height-sm);
 }

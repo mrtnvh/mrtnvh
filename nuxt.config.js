@@ -12,20 +12,28 @@ export default {
 	srcDir: "src",
 	modern: true,
 	pageTransition: "fade",
-	modules: [
-		"@nuxt/content",
-		"portal-vue/nuxt",
-		"@nuxtjs/sitemap",
-		"@nuxtjs/sentry",
-	],
+	modules: ["@nuxt/content", "portal-vue/nuxt", "@nuxtjs/sitemap"],
 	plugins: ["~/plugins/elementQuery"],
 	buildModules: [
+		"@nuxt/postcss8",
 		"@nuxtjs/pwa",
 		"@nuxtjs/svg",
 		["@nuxtjs/eslint-module", { fix: true }],
 		["@nuxtjs/stylelint-module", { fix: true }],
 	],
 	build: {
+		postcss: {
+			plugins: {
+				"postcss-import": {},
+				"postcss-nested": {},
+				"postcss-custom-selectors": {},
+				cssnano: {
+					preset: "default",
+					discardComments: { removeAll: true },
+					zindex: false,
+				},
+			},
+		},
 		extend(config, { isDev }) {
 			return {
 				...config,
