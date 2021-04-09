@@ -17,24 +17,24 @@ exports[`Content DOM snapshots / 1`] = `
 `;
 
 exports[`Content DOM snapshots /about 1`] = `
-"<article class=\\"title outline\\">
+"<article id=\\"folio\\" class=\\"container\\" >
 		About
-	</h1> <aside class=\\"subtitle intro\\">
+	</h1> <aside class=\\"subtitle intro\\" >
 		A 30-year front end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
 
-		<figure class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
+		<figure class=\\"media\\" >
 <p >I'm a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.</p>
-<p href=\\"http://roycetheband.com\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Royce</a> rock out the local and non-local watering holes from time to time.</p>
-<p href=\\"https://www.kdg.be/en/education/study-programmes-dutch/multimedia-and-communication-technology/multimedia-technology\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Professional Bachelor Multimedia and Communication Technology</a>, specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.</p>
+<p >Royce</a> rock out the local and non-local watering holes from time to time.</p>
+<p >Professional Bachelor Multimedia and Communication Technology</a>, specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.</p>
 <p >All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.</p>
 </div>
-<div class=\\"column-lg-2\\">
-<div class=\\"break-inside-avoid mb-ggy\\">
-<h2 class=\\"icon icon-link\\"></span></a>Ambition</h2>
+<div class=\\"column-lg-2\\" >
+<div class=\\"break-inside-avoid mb-ggy\\" >
+<h2 id=\\"ambition\\" ></span></a>Ambition</h2>
 <p >I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.</p>
 </div>
-<div class=\\"break-inside-avoid mb-ggy\\">
-<h2 class=\\"icon icon-link\\"></span></a>Likes</h2>
+<div class=\\"break-inside-avoid mb-ggy\\" >
+<h2 id=\\"likes\\" ></span></a>Likes</h2>
 <ul >
 <li >Isomorphic Web Applications</li>
 <li >Offline first</li>
@@ -47,11 +47,11 @@ exports[`Content DOM snapshots /about 1`] = `
 </ul>
 </div>
 </div>
-<h2 class=\\"icon icon-link\\"></span></a>Skills</h2>
-<table class=\\"mb-ggy\\">
+<h2 id=\\"skills\\" ></span></a>Skills</h2>
+<table class=\\"mb-ggy\\" >
 	<tbody >
 		<td >Web</td>
-		<td colspan=\\"2\\">
+		<td colspan=\\"2\\" >
 			Offline &amp; mobile first <br >
 			a11y<br >
 			Progressive Web Apps <br >
@@ -60,12 +60,12 @@ exports[`Content DOM snapshots /about 1`] = `
 	</tr>
 	<tr >
 		<td >HTML</td>
-		<td colspan=\\"2\\">Semantics</td>
+		<td colspan=\\"2\\" >Semantics</td>
 	</tr>
 	<tr >
 		<td >JavaScript</td>
-		<td colspan=\\"2\\">
-			<div class=\\"column-lg-2\\">
+		<td colspan=\\"2\\" >
+			<div class=\\"column-lg-2\\" >
 				Node <br >
 				ES20... <br >
 				Typescript <br >
@@ -79,8 +79,8 @@ exports[`Content DOM snapshots /about 1`] = `
 	</tr>
 	<tr >
 		<td >CSS</td>
-		<td colspan=\\"2\\">
-			<div class=\\"column-lg-2\\">
+		<td colspan=\\"2\\" >
+			<div class=\\"column-lg-2\\" >
 				Grid <br >
 				Custom properties <br >
 				CSS-in-JS <br >
@@ -90,9 +90,9 @@ exports[`Content DOM snapshots /about 1`] = `
 		</td>
 	</tr>
 	<tr >
-		<td class=\\"whitespace-nowrap\\">Experience with</td>
-		<td colspan=\\"2\\">
-			<ul class=\\"column-lg-2 list-unstyled\\">
+		<td class=\\"whitespace-nowrap\\" >Experience with</td>
+		<td colspan=\\"2\\" >
+			<ul class=\\"column-lg-2 list-unstyled\\" >
 				<li >Laravel</li>
 				<li >Git</li>
 				<li >Docker</li>
@@ -115,7 +115,7 @@ exports[`Content DOM snapshots /about 1`] = `
 		</td>
 	</tr>
 </tbody></table>
-<h2 class=\\"icon icon-link\\"></span></a>Physical languages</h2>
+<h2 id=\\"physical-languages\\" ></span></a>Physical languages</h2>
 <table >
 	<thead >
 		<tr >
@@ -148,58 +148,58 @@ exports[`Content DOM snapshots /about 1`] = `
 `;
 
 exports[`Content DOM snapshots /projects 1`] = `
-"<div><section class=\\"title outline\\">
+"<div><section class=\\"container\\" >
 				ISAAC
-			</h1> <h2 class=\\"title outline\\">
+			</h1> <h2 class=\\"subtitle\\" >
 				Royce
-			</h1> <h2 class=\\"title outline\\">
+			</h1> <h2 class=\\"subtitle\\" >
 				RockXXL
-			</h1> <h2 class=\\"title outline\\">
+			</h1> <h2 class=\\"subtitle\\" >
 				Pixeo
-			</h1> <h2 class=\\"subtitle\\">Web agency</h2></div></a></article></div></section></div>"
+			</h1> <h2 class=\\"subtitle\\" >Web agency</h2></div></a></article></div></section></div>"
 `;
 
 exports[`Content DOM snapshots /projects/isaac 1`] = `
-"<article class=\\"intro mb-ggy\\">
+"<article id=\\"project\\" class=\\"container\\" >
 <p >ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence &amp; Virtual Reality.</p>
 </div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
-<p href=\\"https://intracto.group\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Intracto Group</a>.</p>
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
+<p >Intracto Group</a>.</p>
 <p >X</strong>periences, I quickly joined the ISAAC Testing Guild, cross-company group featuring members from all specialisations which ISAAC has to offer, where best practices around testing software are researched, documented and  offered to the entire ISAAC team.</p>
 </div>
-<h2 class=\\"icon icon-link\\"></span></a>Open Source</h2>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
+<h2 id=\\"open-source\\" ></span></a>Open Source</h2>
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
 <p >A company like ISAAC, one that provides and builds large-scale software solutions, relies daily on Open Source Software. Without it, we, let alone the modern world, wouldn't be standing where we are today. The foundation of the entire modern economy is maintained by passionate developers who care and who are eager to share their solutions with others.</p>
 <p >ISAAC believes that a passion for open source, open standards and contributing to ‘the community’ is a valuable part of a modern-day developer’s life and why it, as an enterprise, has the obligation to give back to the Open Source.</p>
-<p href=\\"https://www.isaac.nl/nl/developer-blog/open-source-manifest\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">ISAAC Open Source Manifesto</a>.</p>
+<p >ISAAC Open Source Manifesto</a>.</p>
 <p >Because of the clear benefits in our day-to-day workflows and all-round Developer Experience, this manifesto now offers our developers the opportunity to dedicate time to Open Source Software. To raise awareness with, I've been giving the opportunity to host Lunch 'n Learns and co-organize the first company-wide Open Source Contribution Day, a virtual hackathon dedicated to contributing to Open Source Software where participants were received a whole workday to contribute to their favorite Open Source projects.</p>
 </div></div></div></article>"
 `;
 
 exports[`Content DOM snapshots /projects/pixeo 1`] = `
-"<article class=\\"intro mb-ggy\\">
-<p href=\\"https://pixeo.be\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Pixeo</a> from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.</p>
+"<article id=\\"project\\" class=\\"container\\" >
+<p >Pixeo</a> from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.</p>
 </div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
 <p >I started at Pixeo in 2013 ago as a Junior Front-end Developer with the main task of designing and building websites. Over the years I have been able to contribute to a whole smörgåsbord of projects, often as a Lead Front-end Developer.</p>
 <p >Due to the size of Pixeo, at most 6 people, we could behave like a startup. The tech stack of Pixeo has changed drastically over the course of our mutual career. Every new technology popping up was viewed with a critical eye, assessed as to whether it benefits our daily workflow, tested and depending on the results, implemented as quickly as possible.</p>
 </div>
-<h2 class=\\"icon icon-link\\"></span></a>Evenementenkluis</h2>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
+<h2 id=\\"evenementenkluis\\" ></span></a>Evenementenkluis</h2>
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
 <p >This project began at the end of 2017. The Evenementenkluis (roughly translated the \\"Event Vault\\") is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time.</p>
 <p >With the help of a few simple multiple choice questions, organizers can get the necessary form, fill it in online and submit it. The competent authorities can provide their own specialized advice per form. Depending on these recommendations, an organizer can make the necessary changes in time before the start of the event.</p>
 <p >As of 2019, Pixeo is full build-mode for the Evenementenkluis's next feature, a full blown rental module. This enables organizers to immediately rent out the necessary materials for her/his event. From the organizer's point of view, everything is nicely bundled and organized within one event view en several subviews. Behind the scenes, the rental request is send to the right person within the municipality, like the rental-manager, logistic personnel.</p>
-<p href=\\"https://cypress.io\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Cypress</a>.</p>
+<p >Cypress</a>.</p>
 <p >Since September 2018 we have been in production with v1.0.0 of the Event Safe in 2 municipalities. The goal of the Evenementenkluis is provide every municipality in Flanders with this platform.</p>
 <p >Shortly after the release of v1.0.0, my function within the project was briefly changed to following up on incoming feedback, bugs and feature requests. A.h.v. screenshots or video replays of the relevant feedback, I pass this on as clearly as possible to my fellow developers via the GitLab issue boards. I consult with the team on how we can implement new features in the most usable and efficient way.</p>
 <p >You can visit this platform at mol.evenementenkluis.be and evenementen.balen.be.</p>
 </div>
-<h2 class=\\"icon icon-link\\"></span></a>Omnitruck</h2>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
+<h2 id=\\"omnitruck\\" ></span></a>Omnitruck</h2>
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
 <p >In the summer of 2018 I was commissioned to develop a knowledge-base for a logistics/transport company, codenamed Omnitruck.</p>
 <p >The purpose of this platform is to provide a fast, easy and digital documentation platform for all their drivers.</p>
 <p >PWA</strong>, after which the user only has to retrieve the content from the server. This will ensure that despite the high possibility of suboptimal network conditions, truck drivers will consult the app at lightning fast speeds.</p>
-<p href=\\"https://developers.google.com/web/progressive-web-apps/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PWA</a> on the user's device. The applications contains following features:</p>
+<p >PWA</a> on the user's device. The applications contains following features:</p>
 <ul >
 <li >Internationalization of 6 languages</li>
 <li >Authentication via an OAuth2 layer</li>
@@ -208,47 +208,47 @@ exports[`Content DOM snapshots /projects/pixeo 1`] = `
 <li >Search</li>
 <li >PWA functionality</li>
 <li >Server-side rendering</li>
-<li href=\\"https://ckeditor.com/ckeditor-5/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">CKEditor</a> integration</li>
+<li >CKEditor</a> integration</li>
 <li >...</li>
 </ul>
 </div>
-<h2 class=\\"icon icon-link\\"></span></a>Other work</h2>
-<h3 href=\\"https://www.arkana.be/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Arkana</a></h3>
-<p href=\\"http://jobs.benrbouwgroep.be/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">B&amp;R Building Group</a></p>
-<h3 href=\\"http://www.bemdhal.be/nl-BE/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Bemdhal</a></h3>
+<h2 id=\\"other-work\\" ></span></a>Other work</h2>
+<h3 id=\\"arkana\\" >Arkana</a></h3>
+<p >B&amp;R Building Group</a></p>
+<h3 id=\\"bemdhal\\" >Bemdhal</a></h3>
 <p >Design &amp; build for a local sports complex</p></div></div></article>"
 `;
 
 exports[`Content DOM snapshots /projects/rockxxl 1`] = `
-"<article class=\\"intro mb-ggy\\">
+"<article id=\\"project\\" class=\\"container\\" >
 <p >RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ...</p>
 </div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
-<p href=\\"https://github.com/rockxxl/rockxxl\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">available on Github</a>.</p>
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
+<p >available on Github</a>.</p>
 <p >With the aim of maintaining their SEO ranking, we have been able to move all legacy Wordpress data and images without any problem. All existing URLs are neatly redirected to the new URL structure. Via a few customized scripts, all posts were exported to Markdown files.</p>
-<p href=\\"https://cloudinary.com\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Cloudinary</a>, a heavy-duty media hosting platform with integrated image transformations and CDN. Thanks to Cloudinary, the backend is not required to perform heavy edits and we can still display the most optimal image per user.</p>
+<p >Cloudinary</a>, a heavy-duty media hosting platform with integrated image transformations and CDN. Thanks to Cloudinary, the backend is not required to perform heavy edits and we can still display the most optimal image per user.</p>
 <p >After only a handful of evenings, a funky fresh RockXXL is ready rock your socks off!</p>
 </div></div></div></article>"
 `;
 
 exports[`Content DOM snapshots /projects/royce 1`] = `
-"<article class=\\"intro mb-ggy\\">
-<p href=\\"https://roycetheband.com\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Royce</a>. A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.</p>
+"<article id=\\"project\\" class=\\"container\\" >
+<p >Royce</a>. A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.</p>
 </div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\">
+<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
 <p >After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy &amp; bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named Royce.</p>
 <p >After a well thought out one-year writing phase, they released their first self-recorded demo song „Words”. Main influences range from melodic punk like AFI and Alexisonfire via pounding metalcore, Parkway Drive &amp; Trivium to the more extreme forms of the metal genre like Gojira and Behemoth. But that’s only the tip of the iceberg. Their music tends to be an original take on the modern metalcore genre that exists today.</p>
 <p >Combined with several other creative and professional abilities on which they apply a hardcore DIY working ethic they will get you to notice them, in one way or another. Royce is about doing the things you like with you’re friends and doing it with most the passion and conviction as possible.</p>
 <p >Open your eyes, the change is right in front of you.</p>
 <p >
-<a href=\\"https://facebook.com/roycetheband\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Facebook</a></p>
+<a href=\\"https://facebook.com/roycetheband\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\" >Facebook</a></p>
 </div></div></div></article>"
 `;
 
 exports[`Content DOM snapshots /talks 1`] = `
-"<div class=\\"title outline\\">
+"<div class=\\"container\\" >
 				Why OpenAPI
-			</h1> <h2 class=\\"title outline\\">
+			</h1> <h2 class=\\"subtitle\\" >
 				OpenAPI + Testing
-			</h1> <h2 class=\\"subtitle\\">Ministry of Testing Eindhoven</h2></div></a></article></div></div>"
+			</h1> <h2 class=\\"subtitle\\" >Ministry of Testing Eindhoven</h2></div></a></article></div></div>"
 `;
