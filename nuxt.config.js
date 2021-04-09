@@ -69,9 +69,6 @@ export default {
 		gzip: true,
 		routes: createSitemapRoutes,
 	},
-	sentry: {
-		lazy: true,
-	},
 	head: {
 		script: [
 			...(isMaster
