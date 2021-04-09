@@ -1,4 +1,4 @@
-/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable no-duplicate-selectors, order/order */
 
 :root {
 	/**
@@ -14,7 +14,6 @@
 	--twitter: hsla(206, 89%, 59%, 1);
 	--linkedin: hsla(201, 100%, 36%, 1);
 	--isaac: rgb(0, 182, 255);
-
 	--text-color: var(--dark);
 	--background-color: var(--light);
 
@@ -70,12 +69,10 @@
 	*/
 	--animation-duration: 0.2s;
 	--animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);
-}
 
-/**
-* Spacing
-*/
-:root {
+	/**
+	* Spacing
+	*/
 	--space: 1rem;
 	--grid-gap-x: calc(var(--space));
 	--grid-gap-y: calc(var(--space) * 2);
@@ -88,12 +85,11 @@
 		--grid-gap-x: calc(var(--space) * 4);
 		--grid-gap-y: calc(var(--space) * 4);
 	}
-}
 
-/**
-* Project
-*/
-:root {
+
+	/**
+	* Project
+	*/
 	--project-header-zindex: 1;
 	--project-header-top-position: var(--grid-gap-y);
 	--project-title-size: 10vw;
@@ -103,12 +99,10 @@
 		--project-title-size: 15vw;
 		--project-title-margin: var(--grid-gap-y) 0 calc(var(--grid-gap-y) / 2) -0.05em;
 	}
-}
 
-/**
-* Folio
-*/
-:root {
+	/**
+	* Folio
+	*/
 	--folio-header-zindex: 1;
 	--folio-header-top-position: var(--grid-gap-y);
 	--folio-title-size: 10vw;
@@ -118,11 +112,9 @@
 		--folio-title-size: 15vw;
 		--folio-title-margin: 0 0 1rem -0.05em;
 	}
-}
 
-/**
-* Off Canvas Menu
-*/
-:root {
+	/**
+	* Off Canvas Menu
+	*/
 	--offcanvasmenu-zindex: 100;
 }

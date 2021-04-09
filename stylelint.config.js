@@ -6,5 +6,6 @@ module.exports = {
 	plugins: ["stylelint-order"],
 	rules: {
 		"scss/media-feature-value-dollar-variable": null,
+		"scale-unlimited/declaration-strict-value": null,
 	},
 };
