@@ -1,5 +1,5 @@
-const { pages } = require("./setup/config");
-const { getUrl } = require("./setup/utils");
+const { pages } = require("../setup/config");
+const { getUrl } = require("../setup/utils");
 
 describe("Content DOM snapshots", () => {
 	test.each(pages)("%s", async (path) => {

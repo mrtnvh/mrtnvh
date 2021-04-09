@@ -1,5 +1,5 @@
-const { devices, pages } = require("./setup/config");
-const { getUrl } = require("./setup/utils");
+const { devices, pages } = require("../setup/config");
+const { getUrl } = require("../setup/utils");
 
 const customSnapshotIdentifier = (path, environmentName) =>
 	`pages${

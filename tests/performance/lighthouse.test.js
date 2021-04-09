@@ -2,8 +2,8 @@ const lighthouse = require("lighthouse");
 const lighthouseMobileConfig = require("lighthouse/lighthouse-core/config/lr-mobile-config");
 const lighthouseDesktopConfig = require("lighthouse/lighthouse-core/config/lr-mobile-config");
 
-const { pages } = require("./setup/config");
-const { getUrl } = require("./setup/utils");
+const { pages } = require("../setup/config");
+const { getUrl } = require("../setup/utils");
 
 const ligthouseConfigs = {
 	mobile: lighthouseMobileConfig,

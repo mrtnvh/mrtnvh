@@ -15,11 +15,14 @@
     "dev-debug": "node --inspect node_modules/nuxt/bin/nuxt",
     "generate": "nuxt generate",
     "start": "nuxt start",
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "stylelint": "stylelint --fix src/**/*.css, src/**/*.vue",
     "release": "npx standard-version",
     "pretest": "npm run generate",
-    "test": "jest --runInBand"
+    "test": "run-s test:*",
+    "test:lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "test:style": "stylelint --fix src/**/*.css, src/**/*.vue",
+    "test:e2e": "jest --selectProjects e2e",
+    "test:visual": "jest --selectProjects visual",
+    "test:performance": "jest --selectProjects performance"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -61,6 +64,7 @@
     "jest-image-snapshot": "^4.4.1",
     "jest-puppeteer": "^4.4.0",
     "lighthouse": "^7.3.0",
+    "npm-run-all": "^4.1.5",
     "postcss-custom-selectors": "^6.0.0",
     "postcss-import": "^14.0.1",
     "postcss-nested": "^5.0.5",

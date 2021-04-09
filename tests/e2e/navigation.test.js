@@ -3,8 +3,8 @@ const {
 	getDocument,
 	queries: { getByTestId },
 } = require("pptr-testing-library");
-const { devices } = require("./setup/config");
-const { getUrl } = require("./setup/utils");
+const { devices } = require("../setup/config");
+const { getUrl } = require("../setup/utils");
 
 const links = {
 	home: "/",
