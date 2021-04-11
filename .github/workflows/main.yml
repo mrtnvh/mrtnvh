@@ -64,7 +64,7 @@ jobs:
           path: dist
 
       - name: Run ${{ matrix.test-type }}
-        run: "npm run ${{ matrix.test-type }}"
+        run: "npm run test:${{ matrix.test-type }}"
 
       - name: Archive snapshot artifacts
         uses: actions/upload-artifact@v2
