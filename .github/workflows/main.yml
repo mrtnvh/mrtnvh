@@ -1,6 +1,11 @@
 name: Build, test & deploy
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
 
 env:
   CI: true
