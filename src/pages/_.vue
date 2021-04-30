@@ -8,6 +8,7 @@ import Seo, { titleDefault } from "~/lib/Seo";
 import About from "~/components/Page/Type/About.vue";
 import Project from "~/components/Page/Type/Project.vue";
 import Default from "~/components/Page/Type/Default.vue";
+import Talk from "~/components/Page/Type/Talk.vue";
 
 export default {
 	async asyncData({ $content, params, error }) {
@@ -44,6 +45,7 @@ export default {
 	computed: {
 		type() {
 			const { dir, slug } = this.page;
+			if (dir === "/talks") return Talk;
 			if (dir === "/projects") return Project;
 			if (dir === "/" && slug === "about") return About;
 			return Default;

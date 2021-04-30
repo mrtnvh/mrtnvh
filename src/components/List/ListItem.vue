@@ -1,9 +1,12 @@
 <template>
 	<article>
 		<component
-			:is="value.path.startsWith('http') ? 'a' : 'nuxt-link'"
-			:to="value.path"
-			:href="value.path"
+			:is="
+				value.redirect || value.path.startsWith('http')
+					? 'a'
+					: 'nuxt-link'
+			"
+			v-bind="{ ...link }"
 			class="reset link"
 		>
 			<figure class="media">
@@ -41,6 +44,28 @@ export default {
 		index: {
 			type: Number,
 			default: 0,
+		},
+	},
+
+	computed: {
+		link() {
+			if (this.value.redirect) {
+				return {
+					href: this.value.redirect,
+					target: "_blank",
+					rel: "nooopener",
+				};
+			}
+
+			if (this.value.path.startsWith("http")) {
+				return {
+					href: this.value.path,
+					target: "_blank",
+					rel: "nooopener",
+				};
+			}
+
+			return { to: this.value.path };
 		},
 	},
 };

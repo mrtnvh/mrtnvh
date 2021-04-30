@@ -27,6 +27,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
+    "date-fns": "^2.21.1",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.15.4",

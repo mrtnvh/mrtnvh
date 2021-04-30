@@ -4,11 +4,16 @@ table {
 	border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom: 1px solid var(--text-color);
 	padding: calc(var(--space)) 0;
+
+	.table-borderless & {
+		border-bottom: 0;
+	}
 
 	&:not(:first-child) {
 		padding-left: calc(var(--space) / 2);
@@ -20,5 +25,9 @@ th, td {
 
 	tr:first-child & {
 		border-top: 1px solid var(--text-color);
+
+		.table-borderless & {
+			border-top: 0;
+		}
 	}
 }

@@ -1,11 +1,12 @@
 <template>
 	<div class="container">
 		<h1 :class="['title', 'outline']">Talks</h1>
-		<List :value="list" large />
+		<List :value="talks" large />
 	</div>
 </template>
 
 <script>
+import { format } from "date-fns";
 import List from "~/components/List/List.vue";
 
 export default {
@@ -27,26 +28,14 @@ export default {
 		List,
 	},
 
-	data: () => ({
-		list: [
-			{
-				title: "Why OpenAPI",
-				subtitle: "Dutch version - Tech Tuesdays",
-				thumbnail:
-					"https://res.cloudinary.com/mrtnvh/image/upload/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
-				color: "#000",
-				path: "https://youtu.be/lLfgrt-_8sE",
-			},
-			{
-				title: "OpenAPI + Testing",
-				subtitle: "Ministry of Testing Eindhoven",
-				thumbnail:
-					"https://res.cloudinary.com/mrtnvh/image/upload/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
-				color: "#000",
-				path: "https://mot.mrtnvh.com",
-			},
-		],
-	}),
+	async asyncData({ $content }) {
+		const dateNow = format(new Date(), "yyyyMMdd");
+		const talks = await $content("talks")
+			.where({ datePublished: { $lte: dateNow } })
+			.sortBy("datePublished", "desc")
+			.fetch();
+		return { talks };
+	},
 };
 </script>
 
