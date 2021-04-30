@@ -11,9 +11,13 @@ import Default from "~/components/Page/Type/Default.vue";
 import Talk from "~/components/Page/Type/Talk.vue";
 
 export default {
-	async asyncData({ $content, params, error }) {
+	async asyncData({ $content, params, error, redirect }) {
 		const path = `/${params.pathMatch || "index"}`;
 		const [page] = await $content({ deep: true }).where({ path }).fetch();
+
+		if (page.redirect) {
+			redirect(page.redirect);
+		}
 
 		if (!page) {
 			return error({ statusCode: 404 });
@@ -45,7 +49,6 @@ export default {
 	computed: {
 		type() {
 			const { dir, slug } = this.page;
-			console.log(this.page);
 			if (dir === "/talks") return Talk;
 			if (dir === "/projects") return Project;
 			if (dir === "/" && slug === "about") return About;
