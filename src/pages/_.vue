@@ -45,6 +45,7 @@ export default {
 	computed: {
 		type() {
 			const { dir, slug } = this.page;
+			console.log(this.page);
 			if (dir === "/talks") return Talk;
 			if (dir === "/projects") return Project;
 			if (dir === "/" && slug === "about") return About;

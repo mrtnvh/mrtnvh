@@ -9,7 +9,7 @@ videoPreview: "https://res.cloudinary.com/mrtnvh/image/upload/v1619779713/mrtnvh
 video: "https://www.youtube.com/watch?v=YXXE0LSVnCs"
 demo: "https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo"
 conference: Tech Fair Live
-slides: https://a-technical-look-at-openapi.mrtnvh.com
+slides: https://a-technical-look-at-openapi.mrtnvh.com/
 ---
 
 Examples of how the OpenAPI specification can improve your Front End workflow

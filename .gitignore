@@ -11,3 +11,5 @@ src/static/sw.js
 .eslintcache
 
 __diff_output__
+
+.vercel
