@@ -4,5 +4,5 @@ import NuxtContent from "@nuxt/content";
 export const createSitemapRoutes = async () => {
 	const { $content } = NuxtContent;
 	const pages = await $content({ deep: true }).fetch();
-	return pages.map(({ path }) => path);
+	return pages.filter(({ redirect }) => !redirect).map(({ path }) => path);
 };
