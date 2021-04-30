@@ -247,8 +247,12 @@ exports[`Content DOM snapshots /projects/royce 1`] = `
 
 exports[`Content DOM snapshots /talks 1`] = `
 "<div class=\\"container\\" >
+				A Technical Look at OpenAPI
+			</h1> <h2 class=\\"subtitle\\" >
 				Why OpenAPI
 			</h1> <h2 class=\\"subtitle\\" >
 				OpenAPI + Testing
 			</h1> <h2 class=\\"subtitle\\" >Ministry of Testing Eindhoven</h2></div></a></article></div></div>"
 `;
+
+exports[`Content DOM snapshots /talks/a-technical-look-at-openapi 1`] = `"<article >Examples of how the OpenAPI specification can improve your Front End workflow</p></div></div></article>"`;
