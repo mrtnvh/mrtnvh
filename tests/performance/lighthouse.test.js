@@ -30,9 +30,9 @@ describe("Lighthouse", () => {
 					environmentConfig,
 				);
 
-				const scores = Object.entries(
-					lhr.categories,
-				).map(([name, { score }]) => [name, score]);
+				const scores = Object.entries(lhr.categories).map(
+					([name, { score }]) => [name, score],
+				);
 
 				scores.forEach(([name, score]) => {
 					expect(score, name).toBeGreaterThan(0.7);

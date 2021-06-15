@@ -38,10 +38,12 @@ const installClientPlugin = () => {
 								).reduce(
 									(accumulator, currentValue) => ({
 										...accumulator,
-										[currentValue]: this.$_elementQueryMixin_checkAllConditions(
-											this.$data.$_elementQueryMixin_eq
-												.breakpoints[currentValue],
-										),
+										[currentValue]:
+											this.$_elementQueryMixin_checkAllConditions(
+												this.$data
+													.$_elementQueryMixin_eq
+													.breakpoints[currentValue],
+											),
 									}),
 									{},
 								);
@@ -73,8 +75,8 @@ const installClientPlugin = () => {
 						 * initialize the ResizeObserver for this component
 						 */
 						$_elementQueryMixin_init() {
-							this.$data.$_elementQueryMixin_resizeObserver = new ResizeObserver(
-								(entries) => {
+							this.$data.$_elementQueryMixin_resizeObserver =
+								new ResizeObserver((entries) => {
 									// We wrap it in requestAnimationFrame to avoid this error - ResizeObserver loop limit exceeded
 									window.requestAnimationFrame(() => {
 										if (
@@ -85,20 +87,19 @@ const installClientPlugin = () => {
 										}
 
 										const [entry] = entries;
-										const {
-											height,
-											width,
-										} = entry.contentRect;
+										const { height, width } =
+											entry.contentRect;
 
 										if (
 											this.$data.$_elementQueryMixin_size
 										) {
-											this.$data.$_elementQueryMixin_size.height = height;
-											this.$data.$_elementQueryMixin_size.width = width;
+											this.$data.$_elementQueryMixin_size.height =
+												height;
+											this.$data.$_elementQueryMixin_size.width =
+												width;
 										}
 									});
-								},
-							).observe(this.$el);
+								}).observe(this.$el);
 						},
 
 						/**

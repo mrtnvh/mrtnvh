@@ -46,8 +46,7 @@ export default ({
 					"@context": "http://schema.org/",
 					"@type": "Person",
 					name: "Maarten Van Hoof",
-					image:
-						"https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait",
+					image: "https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait",
 					jobTitle: "Front-end Developer",
 					url: "https://mrtnvh.com",
 					sameAs: "https://mrtnvh.com",
