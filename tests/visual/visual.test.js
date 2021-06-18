@@ -1,10 +1,5 @@
 const { devices, pages } = require("../setup/config");
-const { getUrl } = require("../setup/utils");
-
-const customSnapshotIdentifier = (path, environmentName) =>
-	`pages${
-		path === "/" ? "-index" : path.split("/").join("-")
-	}-${environmentName}`;
+const { getUrl, customSnapshotIdentifier } = require("../setup/utils");
 
 beforeEach(async () => {
 	await jestPuppeteer.resetBrowser();

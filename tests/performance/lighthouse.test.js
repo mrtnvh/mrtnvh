@@ -1,9 +1,12 @@
+const fs = require("fs-extra");
 const lighthouse = require("lighthouse");
 const lighthouseMobileConfig = require("lighthouse/lighthouse-core/config/lr-mobile-config");
 const lighthouseDesktopConfig = require("lighthouse/lighthouse-core/config/lr-mobile-config");
 
+const threshold = 0.6;
+
 const { pages } = require("../setup/config");
-const { getUrl } = require("../setup/utils");
+const { getUrl, customSnapshotIdentifier } = require("../setup/utils");
 
 const ligthouseConfigs = {
 	mobile: lighthouseMobileConfig,
@@ -21,13 +24,23 @@ describe("Lighthouse", () => {
 		test.each(Object.entries(ligthouseConfigs))(
 			"%s",
 			async (environmentName, environmentConfig) => {
-				const { lhr } = await lighthouse(
+				const { lhr, report } = await lighthouse(
 					getUrl(path),
 					{
 						port: new URL(browser.wsEndpoint()).port,
-						output: "json",
+						output: "html",
 					},
 					environmentConfig,
+				);
+
+				const reportFileName = customSnapshotIdentifier(
+					path,
+					environmentName,
+				);
+
+				await fs.outputFile(
+					`${__dirname}/__reports__/${reportFileName}.html`,
+					report,
 				);
 
 				const scores = Object.values(lhr.categories).map(
@@ -38,7 +51,10 @@ describe("Lighthouse", () => {
 				);
 
 				scores.forEach(({ title, score }) => {
-					expect(score, title).toBeGreaterThanOrEqual(0.65);
+					expect(
+						score,
+						`${title} score below threshold of ${threshold * 100}%`,
+					).toBeGreaterThanOrEqual(threshold);
 				});
 			},
 			60 * 1000,

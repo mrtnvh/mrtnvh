@@ -79,6 +79,14 @@ jobs:
           path: tests/visual/__image_snapshots__
           retention-days: 5
 
+      - name: Archive performance reports
+        uses: actions/upload-artifact@v2
+        if: ${{ matrix.test-type }} == performance
+        with:
+          name: performance_reports
+          path: tests/performance/__reports__
+          retention-days: 5
+
   deploy:
     runs-on: ubuntu-latest
 
