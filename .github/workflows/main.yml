@@ -49,7 +49,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-        test-type: [lint, style, e2e, visual, performance]
+        test-type: ['lint', 'style', 'e2e', 'visual', 'performance']
 
     steps:
       - uses: actions/checkout@v2
@@ -73,7 +73,7 @@ jobs:
 
       - name: Archive snapshot artifacts
         uses: actions/upload-artifact@v2
-        if: startsWith(matrix.test-type, visual)
+        if: matrix.test-type == 'visual'
         with:
           name: image_snapshots
           path: tests/visual/__image_snapshots__
@@ -81,7 +81,7 @@ jobs:
 
       - name: Archive performance reports
         uses: actions/upload-artifact@v2
-        if: startsWith(matrix.test-type, performance)
+        if: matrix.test-type == 'performance'
         with:
           name: performance_reports
           path: tests/performance/__reports__
