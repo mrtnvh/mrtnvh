@@ -73,6 +73,7 @@ jobs:
 
       - name: Archive snapshot artifacts
         uses: actions/upload-artifact@v2
+        continue-on-error: true
         if: startsWith(matrix.test-type, 'visual')
         with:
           name: image_snapshots
@@ -81,6 +82,7 @@ jobs:
 
       - name: Archive performance reports
         uses: actions/upload-artifact@v2
+        continue-on-error: true
         if: startsWith(matrix.test-type, 'performance')
         with:
           name: performance_reports
