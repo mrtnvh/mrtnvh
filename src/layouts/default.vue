@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import Seo from "~/lib/Seo";
-import pkg from "../../package.json";
 import Header from "~/components/App/Header.vue";
 import Footer from "~/components/App/Footer.vue";
 
@@ -24,9 +22,6 @@ export default {
 		return {
 			portalContent: false,
 		};
-	},
-	head() {
-		return Seo({ siteUrl: pkg.homepage });
 	},
 	methods: {
 		handlePortalUpdate(newContent) {

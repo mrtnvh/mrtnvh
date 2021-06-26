@@ -1,5 +1,5 @@
 import urljoin from "url-join";
-import { getOgImage } from "../components/Image/cloudinary";
+import { getOgImage, getSrcSet } from "../components/Image/cloudinary";
 import pkg from "../../package.json";
 
 const isBranchMaster = process.env.IS_MASTER === "true";
@@ -24,6 +24,8 @@ export default ({
 }) => {
 	const defaultOgImagePath = urljoin(siteUrl, "/og.png");
 	const imagePath = image ? getOgImage({ src: image }) : defaultOgImagePath;
+	const { srcSet: imageSrcSet } = getSrcSet({ src: image, type: "webp" });
+	const imageSizes = "100vw";
 
 	return {
 		title,
@@ -71,17 +73,20 @@ export default ({
 				},
 			},
 		],
-		// link: [
-		// 	...(isBranchMaster
-		// 		? [
-		// 				{
-		// 					hid: "robots",
-		// 					rel: "canonical",
-		// 					href: url,
-		// 				},
-		// 		  ]
-		// 		: []),
-		// ],
+		link: [
+			...(imagePath && imageSrcSet && imageSizes
+				? [
+						{
+							hid: "preloadThumbnail",
+							rel: "preload",
+							as: "image",
+							href: imagePath,
+							imagesrcset: imageSrcSet,
+							imagesizes: imageSizes,
+						},
+				  ]
+				: []),
+		],
 		meta: [
 			...(!isBranchMaster
 				? [
