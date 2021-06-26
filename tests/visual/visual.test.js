@@ -22,7 +22,8 @@ describe.each(pages)("%s", (path) => {
 
 				await page.waitForTimeout(500);
 
-				const image = await page.screenshot({ fullPage: true });
+				const body = await page.$("body");
+				const image = await body.screenshot();
 				expect(image).toMatchImageSnapshot({
 					comparisonMethod: "ssim",
 					failureThreshold: 0.1,
