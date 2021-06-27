@@ -74,10 +74,9 @@ export default {
 			...(isMaster
 				? [
 						{
-							async: true,
 							defer: true,
 							"data-domain": "mrtnvh.com",
-							src: "https://stats.mrtnvh.com/js/index.js",
+							src: "/js/stats.js",
 						},
 				  ]
 				: []),
