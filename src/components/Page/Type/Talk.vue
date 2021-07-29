@@ -10,21 +10,21 @@
 			<table class="table-borderless">
 				<tr>
 					<td style="width: 6rem">Slides</td>
-					<td>
-						<a :href="page.slides" target="_blank" rel="noopener">{{
-							page.slides
-						}}</a>
+					<td v-if="page.slides">
+						<a :href="page.slides" target="_blank" rel="noopener">
+							{{ page.slides }}
+						</a>
 					</td>
 				</tr>
-				<tr>
+				<tr v-if="page.demo">
 					<td>Demo</td>
 					<td>
-						<a :href="page.demo" target="_blank" rel="noopener">{{
-							page.demo
-						}}</a>
+						<a :href="page.demo" target="_blank" rel="noopener">
+							{{ page.demo }}
+						</a>
 					</td>
 				</tr>
-				<tr>
+				<tr v-if="page.video">
 					<td>Video</td>
 					<td>
 						<a :href="page.video" target="_blank" rel="noopener">{{

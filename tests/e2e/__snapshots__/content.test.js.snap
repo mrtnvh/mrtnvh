@@ -247,6 +247,8 @@ exports[`Content DOM snapshots /projects/royce 1`] = `
 
 exports[`Content DOM snapshots /talks 1`] = `
 "<div class=\\"container\\" >
+				Container Queries
+			</h1> <h2 class=\\"subtitle\\" >
 				A Technical Look at OpenAPI
 			</h1> <h2 class=\\"subtitle\\" >
 				Why OpenAPI
@@ -255,4 +257,16 @@ exports[`Content DOM snapshots /talks 1`] = `
 			</h1> <h2 class=\\"subtitle\\" >Ministry of Testing Eindhoven</h2></div></a></article></div></div>"
 `;
 
-exports[`Content DOM snapshots /talks/a-technical-look-at-openapi 1`] = `"<article >Examples of how the OpenAPI specification can improve your Front End workflow</p></div></div></article>"`;
+exports[`Content DOM snapshots /talks/a-technical-look-at-openapi 1`] = `
+"<article href=\\"https://a-technical-look-at-openapi.mrtnvh.com/\\" target=\\"_blank\\" rel=\\"noopener\\">
+						https://a-technical-look-at-openapi.mrtnvh.com/
+					</a></td></tr> <tr href=\\"https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo\\" target=\\"_blank\\" rel=\\"noopener\\">
+						https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo
+					</a></td></tr> <tr >Examples of how the OpenAPI specification can improve your Front End workflow</p></div></div></article>"
+`;
+
+exports[`Content DOM snapshots /talks/devcast-english-june-2021 1`] = `
+"<article href=\\"https://devcast-june-2021.mrtnvh.com/\\" target=\\"_blank\\" rel=\\"noopener\\">
+						https://devcast-june-2021.mrtnvh.com/
+					</a></td></tr> <!----> <tr >Modular, componentized frameworks and libraries are more popular than ever, but currently screen size is the only dimensional constraint to which a web design can adapt to. In this talk, Maarten will explain what Container Queries are and show you how each component can adapt its design to the dimensions of its container. Join us on our journey towards a more modular CSS.</p></div></div></article>"
+`;
