@@ -86,6 +86,6 @@ export default async () => {
 	await replaceFilesContent("**/*.html", async (content) => {
 		const splitAndJoinString = "</head>";
 		const [pre, post] = content.split(splitAndJoinString);
-		return [[pre, html].join(""), post].join(splitAndJoinString);
+		return [[pre, html.join("")].join(""), post].join(splitAndJoinString);
 	});
 };
