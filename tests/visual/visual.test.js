@@ -1,11 +1,11 @@
-const { devices, pages } = require("../setup/config");
+const { devices, getPages } = require("../setup/config");
 const { getUrl, customSnapshotIdentifier } = require("../setup/utils");
 
 beforeEach(async () => {
 	await jestPuppeteer.resetBrowser();
 });
 
-describe.each(pages)("%s", (path) => {
+describe.each(getPages())("%s", (path) => {
 	describe("Visual snapshots", () => {
 		test.each(Object.entries(devices))(
 			"%s",
@@ -18,7 +18,6 @@ describe.each(pages)("%s", (path) => {
 					{ name: "prefers-color-scheme", value: "light" },
 				]);
 				await page.goto(getUrl(path));
-				await page.waitForFunction("!!window.$nuxt");
 
 				await page.waitForTimeout(500);
 

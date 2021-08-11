@@ -1,0 +1,45 @@
+html {
+	font-size: var(--font-size-root);
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1rem; /* stylelint-disable-line */
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background: var(--background-color);
+	margin: 0;
+	padding: 0;
+	line-height: var(--line-height);
+}
+
+svg {
+	width: calc(var(--space) * 1.5);
+	height: calc(var(--space) * 1.5);
+	fill: currentColor;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

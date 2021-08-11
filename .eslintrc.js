@@ -5,14 +5,7 @@ module.exports = {
 		node: true,
 		es6: true,
 	},
-	parser: "vue-eslint-parser",
-	extends: [
-		"airbnb-base",
-		"plugin:vue/recommended",
-		"plugin:nuxt/recommended",
-		"plugin:prettier/recommended",
-		"@vue/prettier",
-	],
+	extends: ["airbnb-base", "plugin:prettier/recommended"],
 	rules: {
 		"no-console": process.env.NODE_ENV === "production" ? "error" : "off",
 		"no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
@@ -23,16 +16,19 @@ module.exports = {
 			},
 		],
 	},
-	globals: {},
-	settings: {
-		"import/core-modules": ["vue"],
-		"import/resolver": {
-			nuxt: {
-				nuxtSrcDir: "src",
+	overrides: [
+		{
+			files: ["*.*"],
+			rules: {
+				"import/no-extraneous-dependencies": 0,
 			},
 		},
-	},
-	overrides: [
+		{
+			files: ["scripts/**/*.*"],
+			rules: {
+				"import/extensions": 0,
+			},
+		},
 		{
 			files: ["tests/**/*.*"],
 			extends: ["plugin:jest/recommended"],

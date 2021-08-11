@@ -1,272 +1,1613 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Content DOM snapshots / 1`] = `
-"<div><section class=\\"intro\\" >
-				Google Mobile Web Specialist
-			</a> <span class=\\"mr-space\\" >
-				Open Source Contributer
-			</a> <span class=\\"mr-space\\" >
-				Loud Noise Generator
-			</a>
-			.
-		</div></div></section> <section class=\\"container\\" >
-				ISAAC
-			</h1> <h2 class=\\"subtitle\\" >
-				Royce
-			</h1> <h2 class=\\"subtitle\\" >Metal</h2></div></a></article></div></section></div>"
+Object {
+  "section": Array [
+    Object {
+      "@_class": "intro",
+      "div": Object {
+        "@_class": "container",
+        "div": Object {
+          "#text": ".",
+          "@_class": "intro__subtitle",
+          "a": Array [
+            Object {
+              "#text": "Google Mobile Web Specialist",
+              "@_class": "",
+              "@_href": "https://www.credential.net/o040z9qg",
+              "@_rel": "noopener",
+              "@_target": "_blank",
+            },
+            Object {
+              "#text": "Open Source Contributer",
+              "@_class": "",
+              "@_href": "https://github.com/vanhoofmaarten",
+              "@_rel": "noopener",
+              "@_target": "_blank",
+            },
+            Object {
+              "#text": "Loud Noise Generator",
+              "@_class": "",
+              "@_href": "/projects/royce",
+            },
+          ],
+          "span": Array [
+            Object {
+              "#text": ",",
+              "@_class": "mr-space",
+            },
+            Object {
+              "#text": ",",
+              "@_class": "mr-space",
+            },
+          ],
+        },
+        "p": Object {
+          "@_class": "",
+          "a": Object {
+            "#text": "ISAAC",
+            "@_class": "isaac",
+            "@_href": "https://isaac.nl",
+            "@_rel": "noopener",
+            "@_target": "_blank",
+          },
+          "span": Array [
+            Object {
+              "#text": "Front-end developer at",
+              "@_class": "",
+            },
+            Object {
+              "#text": "in Eindhoven, The Netherlands.",
+              "@_class": "",
+            },
+          ],
+        },
+      },
+    },
+    Object {
+      "@_class": "container",
+      "div": Array [
+        Object {
+          "@_class": "header clear-inner-spacing",
+          "h2": Object {
+            "@_class": "title",
+            "small": Object {
+              "#text": "projects",
+              "@_class": "",
+            },
+            "span": Object {
+              "#text": "Current",
+              "@_class": "main outline",
+            },
+          },
+        },
+        Object {
+          "@_class": "grid ",
+          "article": Object {
+            "@_class": "",
+            "a": Object {
+              "@_class": "reset link",
+              "@_href": "/projects/isaac",
+              "article": Object {
+                "@_class": "",
+                "a": Object {
+                  "@_class": "reset link",
+                  "@_href": "/projects/royce",
+                  "figure": Object {
+                    "@_class": "media",
+                    "picture": Object {
+                      "@_class": "",
+                      "div": Object {
+                        "@_class": "content",
+                        "h1": Object {
+                          "#text": "Royce",
+                          "@_class": "title outline",
+                        },
+                        "h2": Object {
+                          "#text": "Metal",
+                          "@_class": "subtitle",
+                        },
+                      },
+                      "source": Object {
+                        "@_class": "",
+                        "@_sizes": "1px",
+                        "@_type": "image/webp",
+                        "img": Object {
+                          "@_alt": "Royce",
+                          "@_class": "image fade fade-active",
+                          "@_height": "900",
+                          "@_loading": "lazy",
+                          "@_sizes": "1px",
+                          "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
+                          "@_width": "1600",
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+              "figure": Object {
+                "@_class": "media",
+                "picture": Object {
+                  "@_class": "",
+                  "div": Object {
+                    "@_class": "content",
+                    "h1": Object {
+                      "#text": "ISAAC",
+                      "@_class": "title outline",
+                    },
+                    "h2": Object {
+                      "#text": "Fullservice Digital Agency",
+                      "@_class": "subtitle",
+                    },
+                  },
+                  "source": Object {
+                    "@_class": "",
+                    "@_sizes": "1px",
+                    "@_type": "image/webp",
+                    "img": Object {
+                      "@_alt": "ISAAC",
+                      "@_class": "image fade fade-active",
+                      "@_height": "900",
+                      "@_loading": "lazy",
+                      "@_sizes": "1px",
+                      "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
+                      "@_width": "1600",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      ],
+    },
+  ],
+}
 `;
 
-exports[`Content DOM snapshots /about 1`] = `
-"<article id=\\"folio\\" class=\\"container\\" >
-		About
-	</h1> <aside class=\\"subtitle intro\\" >
-		A 30-year front end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
-
-		<figure class=\\"media\\" >
-<p >I'm a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.</p>
-<p >Royce</a> rock out the local and non-local watering holes from time to time.</p>
-<p >Professional Bachelor Multimedia and Communication Technology</a>, specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.</p>
-<p >All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.</p>
-</div>
-<div class=\\"column-lg-2\\" >
-<div class=\\"break-inside-avoid mb-ggy\\" >
-<h2 id=\\"ambition\\" ></span></a>Ambition</h2>
-<p >I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.</p>
-</div>
-<div class=\\"break-inside-avoid mb-ggy\\" >
-<h2 id=\\"likes\\" ></span></a>Likes</h2>
-<ul >
-<li >Isomorphic Web Applications</li>
-<li >Offline first</li>
-<li >Component-based development</li>
-<li >Automating tools</li>
-<li >Well-documented &amp; tested projects</li>
-<li >Well-grounded arguments</li>
-<li >Open, transparent but time-appropriate and concise communication</li>
-<li >Dad jokes</li>
-</ul>
-</div>
-</div>
-<h2 id=\\"skills\\" ></span></a>Skills</h2>
-<table class=\\"mb-ggy\\" >
-	<tbody >
-		<td >Web</td>
-		<td colspan=\\"2\\" >
-			Offline &amp; mobile first <br >
-			a11y<br >
-			Progressive Web Apps <br >
-			OpenAPI
-		</td>
-	</tr>
-	<tr >
-		<td >HTML</td>
-		<td colspan=\\"2\\" >Semantics</td>
-	</tr>
-	<tr >
-		<td >JavaScript</td>
-		<td colspan=\\"2\\" >
-			<div class=\\"column-lg-2\\" >
-				Node <br >
-				ES20... <br >
-				Typescript <br >
-				React <br >
-				Vue <br >
-				Web- &amp; service workers <br >
-				Testing (Unit to e2e) <br >
-				Isomorphic web applications
-			</div>
-		</td>
-	</tr>
-	<tr >
-		<td >CSS</td>
-		<td colspan=\\"2\\" >
-			<div class=\\"column-lg-2\\" >
-				Grid <br >
-				Custom properties <br >
-				CSS-in-JS <br >
-				SCSS <br >
-				PostCSS
-			</div>
-		</td>
-	</tr>
-	<tr >
-		<td class=\\"whitespace-nowrap\\" >Experience with</td>
-		<td colspan=\\"2\\" >
-			<ul class=\\"column-lg-2 list-unstyled\\" >
-				<li >Laravel</li>
-				<li >Git</li>
-				<li >Docker</li>
-				<li >NPM</li>
-				<li >ESLint</li>
-				<li >Stylelint</li>
-				<li >Prettier</li>
-				<li >EditorConfig</li>
-				<li >Webpack</li>
-				<li >Grunt</li>
-				<li >Gulp</li>
-				<li >EF Core</li>
-				<li >Redux</li>
-				<li >Material-UI</li>
-				<li >Bootstrap</li>
-				<li >SQL</li>
-				<li >IIS</li>
-				<li >...</li>
-			</ul>
-		</td>
-	</tr>
-</tbody></table>
-<h2 id=\\"physical-languages\\" ></span></a>Physical languages</h2>
-<table >
-	<thead >
-		<tr >
-			<th >Language</th>
-			<th >Written</th>
-			<th >Spoken</th>
-		</tr>
-	</thead>
-	<tbody >
-		<tr >
-			<td >
-				Dutch  <br >
-				<em >Native tongue</em>
-			</td>
-			<td >Very good</td>
-			<td >Very good</td>
-		</tr>
-		<tr >
-			<td >English</td>
-			<td >Good</td>
-			<td >Good</td>
-		</tr>
-		<tr >
-			<td >French</td>
-			<td >Basic</td>
-			<td >Basic</td>
-		</tr>
-	</tbody>
-</table></div></section></article>"
+exports[`Content DOM snapshots /about/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "folio",
+    "aside": Object {
+      "#text": "A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.",
+      "@_class": "subtitle intro",
+      "figure": Object {
+        "@_class": "media",
+        "picture": Object {
+          "@_class": "",
+          "source": Object {
+            "@_class": "",
+            "@_sizes": "1px",
+            "@_type": "image/webp",
+            "img": Object {
+              "@_alt": "About",
+              "@_class": "image fade fade-active",
+              "@_height": "800",
+              "@_loading": "lazy",
+              "@_sizes": "1px",
+              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871092/mrtnvh.com/portrait.jpg",
+              "@_width": "800",
+            },
+          },
+        },
+        "section": Object {
+          "@_class": "body",
+          "link": Object {
+            "@_href": "/_astro/about/index-4lI2E.css",
+            "@_rel": "stylesheet",
+            "@_type": "text/css",
+            "div": Array [
+              Object {
+                "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+                "p": Array [
+                  "I’m a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I’m incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.",
+                  Object {
+                    "#text": "I have a profound love for. In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies inrock out the local and non-local watering holes from time to time.",
+                    "a": Array [
+                      Object {
+                        "#text": "loud and emotive music",
+                        "@_href": "https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI",
+                      },
+                      Object {
+                        "#text": "Royce",
+                        "@_href": "http://roycetheband.com",
+                      },
+                    ],
+                  },
+                  Object {
+                    "#text": "I have a, specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.",
+                    "a": Object {
+                      "#text": "Professional Bachelor Multimedia and Communication Technology",
+                      "@_href": "https://www.kdg.be/en/education/study-programmes-dutch/multimedia-and-communication-technology/multimedia-technology",
+                    },
+                  },
+                  "All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.",
+                ],
+              },
+              Object {
+                "@_class": "column-lg-2",
+                "div": Array [
+                  Object {
+                    "@_class": "break-inside-avoid mb-ggy",
+                    "h2": Object {
+                      "#text": "Ambition",
+                      "@_id": "ambition",
+                    },
+                    "p": "I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.",
+                  },
+                  Object {
+                    "@_class": "break-inside-avoid mb-ggy",
+                    "h2": Object {
+                      "#text": "Likes",
+                      "@_id": "likes",
+                    },
+                    "ul": Object {
+                      "li": Array [
+                        "Isomorphic Web Applications",
+                        "Offline first",
+                        "Component-based development",
+                        "Automating tools",
+                        "Well-documented &amp; tested projects",
+                        "Well-grounded arguments",
+                        "Open, transparent but time-appropriate and concise communication",
+                        "Dad jokes",
+                      ],
+                    },
+                  },
+                ],
+              },
+            ],
+            "h2": Object {
+              "#text": "Skills",
+              "@_id": "skills",
+            },
+            "table": Object {
+              "@_class": "mb-ggy",
+              "tbody": Object {
+                "tr": Object {
+                  "td": Array [
+                    "Web",
+                    Object {
+                      "#text": "Offline &amp; mobile first",
+                      "@_colspan": "2",
+                      "br": Object {
+                        "#text": "a11y",
+                        "br": Object {
+                          "#text": "Progressive Web Apps",
+                          "br": "OpenAPI",
+                        },
+                        "tr": Array [
+                          Object {
+                            "td": Array [
+                              "HTML",
+                              Object {
+                                "#text": "Semantics",
+                                "@_colspan": "2",
+                              },
+                            ],
+                          },
+                          Object {
+                            "td": Array [
+                              "JavaScript",
+                              Object {
+                                "@_colspan": "2",
+                                "div": Object {
+                                  "#text": "Node",
+                                  "@_class": "column-lg-2",
+                                  "br": Object {
+                                    "#text": "ES20...",
+                                    "br": Object {
+                                      "#text": "Typescript",
+                                      "br": Object {
+                                        "#text": "React",
+                                        "br": Object {
+                                          "#text": "Vue",
+                                          "br": Object {
+                                            "#text": "Web- &amp; service workers",
+                                            "br": Object {
+                                              "#text": "Testing (Unit to e2e)",
+                                              "br": "Isomorphic web applications",
+                                            },
+                                          },
+                                          "tr": Object {
+                                            "td": Array [
+                                              "CSS",
+                                              Object {
+                                                "@_colspan": "2",
+                                                "div": Object {
+                                                  "#text": "Grid",
+                                                  "@_class": "column-lg-2",
+                                                  "br": Object {
+                                                    "#text": "Custom properties",
+                                                    "br": Object {
+                                                      "#text": "CSS-in-JS",
+                                                      "br": Object {
+                                                        "#text": "SCSS",
+                                                        "br": "PostCSS",
+                                                      },
+                                                    },
+                                                    "tr": Object {
+                                                      "td": Array [
+                                                        Object {
+                                                          "#text": "Experience with",
+                                                          "@_class": "whitespace-nowrap",
+                                                        },
+                                                        Object {
+                                                          "@_colspan": "2",
+                                                          "ul": Object {
+                                                            "@_class": "column-lg-2 list-unstyled",
+                                                            "li": Array [
+                                                              "Laravel",
+                                                              "Git",
+                                                              "Docker",
+                                                              "NPM",
+                                                              "ESLint",
+                                                              "Stylelint",
+                                                              "Prettier",
+                                                              "EditorConfig",
+                                                              "Webpack",
+                                                              "Grunt",
+                                                              "Gulp",
+                                                              "EF Core",
+                                                              "Redux",
+                                                              "Material-UI",
+                                                              "Bootstrap",
+                                                              "SQL",
+                                                              "IIS",
+                                                              "...",
+                                                            ],
+                                                          },
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                },
+                                                "h2": Object {
+                                                  "#text": "Physical languages",
+                                                  "@_id": "physical-languages",
+                                                },
+                                                "table": Object {
+                                                  "tbody": Object {
+                                                    "tr": Object {
+                                                      "td": Object {
+                                                        "#text": "Dutch",
+                                                        "br": Object {
+                                                          "em": "Native tongue",
+                                                        },
+                                                        "td": Array [
+                                                          "Very good",
+                                                          "Very good",
+                                                        ],
+                                                      },
+                                                      "tr": Array [
+                                                        Object {
+                                                          "td": Array [
+                                                            "English",
+                                                            "Good",
+                                                            "Good",
+                                                          ],
+                                                        },
+                                                        Object {
+                                                          "td": Array [
+                                                            "French",
+                                                            "Basic",
+                                                            "Basic",
+                                                          ],
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                  "thead": Object {
+                                                    "tr": Object {
+                                                      "th": Array [
+                                                        "Language",
+                                                        "Written",
+                                                        "Spoken",
+                                                      ],
+                                                    },
+                                                  },
+                                                },
+                                              },
+                                            ],
+                                          },
+                                        },
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "h1": Object {
+      "#text": "About",
+      "@_class": "title outline",
+    },
+  },
+}
 `;
 
-exports[`Content DOM snapshots /projects 1`] = `
-"<div><section class=\\"container\\" >
-				ISAAC
-			</h1> <h2 class=\\"subtitle\\" >
-				Royce
-			</h1> <h2 class=\\"subtitle\\" >
-				RockXXL
-			</h1> <h2 class=\\"subtitle\\" >
-				Pixeo
-			</h1> <h2 class=\\"subtitle\\" >Web agency</h2></div></a></article></div></section></div>"
+exports[`Content DOM snapshots /projects/ 1`] = `
+Object {
+  "meta": Object {
+    "@_content": "A selection of my current and previous projects. Work, musical and open source experiences",
+    "@_name": "description",
+    "section": Object {
+      "@_class": "container",
+      "div": Array [
+        Object {
+          "@_class": "header clear-inner-spacing",
+          "h2": Object {
+            "@_class": "title",
+            "small": Object {
+              "#text": "projects",
+              "@_class": "",
+            },
+            "span": Object {
+              "#text": "Current",
+              "@_class": "main outline",
+            },
+          },
+        },
+        Object {
+          "@_class": "grid ",
+          "article": Object {
+            "@_class": "",
+            "a": Object {
+              "@_class": "reset link",
+              "@_href": "/projects/isaac",
+              "article": Object {
+                "@_class": "",
+                "a": Object {
+                  "@_class": "reset link",
+                  "@_href": "/projects/royce",
+                  "figure": Object {
+                    "@_class": "media",
+                    "picture": Object {
+                      "@_class": "",
+                      "div": Object {
+                        "@_class": "content",
+                        "h1": Object {
+                          "#text": "Royce",
+                          "@_class": "title outline",
+                        },
+                        "h2": Object {
+                          "#text": "Metal",
+                          "@_class": "subtitle",
+                        },
+                      },
+                      "source": Object {
+                        "@_class": "",
+                        "@_sizes": "1px",
+                        "@_type": "image/webp",
+                        "img": Object {
+                          "@_alt": "Royce",
+                          "@_class": "image fade fade-active",
+                          "@_height": "900",
+                          "@_loading": "lazy",
+                          "@_sizes": "1px",
+                          "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
+                          "@_width": "1600",
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+              "figure": Object {
+                "@_class": "media",
+                "picture": Object {
+                  "@_class": "",
+                  "div": Object {
+                    "@_class": "content",
+                    "h1": Object {
+                      "#text": "ISAAC",
+                      "@_class": "title outline",
+                    },
+                    "h2": Object {
+                      "#text": "Fullservice Digital Agency",
+                      "@_class": "subtitle",
+                    },
+                  },
+                  "source": Object {
+                    "@_class": "",
+                    "@_sizes": "1px",
+                    "@_type": "image/webp",
+                    "img": Object {
+                      "@_alt": "ISAAC",
+                      "@_class": "image fade fade-active",
+                      "@_height": "900",
+                      "@_loading": "lazy",
+                      "@_sizes": "1px",
+                      "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
+                      "@_width": "1600",
+                    },
+                  },
+                },
+              },
+              "section": Object {
+                "@_class": "container",
+                "div": Array [
+                  Object {
+                    "@_class": "header clear-inner-spacing",
+                    "h2": Object {
+                      "@_class": "title",
+                      "small": Object {
+                        "#text": "projects",
+                        "@_class": "",
+                      },
+                      "span": Object {
+                        "#text": "Previous",
+                        "@_class": "main outline",
+                      },
+                    },
+                  },
+                  Object {
+                    "@_class": "grid ",
+                    "article": Object {
+                      "@_class": "",
+                      "a": Object {
+                        "@_class": "reset link",
+                        "@_href": "/projects/rockxxl",
+                        "article": Object {
+                          "@_class": "",
+                          "a": Object {
+                            "@_class": "reset link",
+                            "@_href": "/projects/pixeo",
+                            "figure": Object {
+                              "@_class": "media",
+                              "picture": Object {
+                                "@_class": "",
+                                "div": Object {
+                                  "@_class": "content",
+                                  "h1": Object {
+                                    "#text": "Pixeo",
+                                    "@_class": "title outline",
+                                  },
+                                  "h2": Object {
+                                    "#text": "Web agency",
+                                    "@_class": "subtitle",
+                                  },
+                                },
+                                "source": Object {
+                                  "@_class": "",
+                                  "@_sizes": "1px",
+                                  "@_type": "image/webp",
+                                  "img": Object {
+                                    "@_alt": "Pixeo",
+                                    "@_class": "image fade fade-active",
+                                    "@_height": "900",
+                                    "@_loading": "lazy",
+                                    "@_sizes": "1px",
+                                    "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
+                                    "@_width": "1600",
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                        "figure": Object {
+                          "@_class": "media",
+                          "picture": Object {
+                            "@_class": "",
+                            "div": Object {
+                              "@_class": "content",
+                              "h1": Object {
+                                "#text": "RockXXL",
+                                "@_class": "title outline",
+                              },
+                              "h2": Object {
+                                "#text": "Loud Noise Community",
+                                "@_class": "subtitle",
+                              },
+                            },
+                            "source": Object {
+                              "@_class": "",
+                              "@_sizes": "1px",
+                              "@_type": "image/webp",
+                              "img": Object {
+                                "@_alt": "RockXXL",
+                                "@_class": "image fade fade-active",
+                                "@_height": "900",
+                                "@_loading": "lazy",
+                                "@_sizes": "1px",
+                                "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
+                                "@_width": "1600",
+                              },
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+          },
+        },
+      ],
+    },
+  },
+  "title": "Projects",
+}
 `;
 
-exports[`Content DOM snapshots /projects/isaac 1`] = `
-"<article id=\\"project\\" class=\\"container\\" >
-<p >ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence &amp; Virtual Reality.</p>
-</div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >Intracto Group</a>.</p>
-<p >X</strong>periences, I quickly joined the ISAAC Testing Guild, cross-company group featuring members from all specialisations which ISAAC has to offer, where best practices around testing software are researched, documented and  offered to the entire ISAAC team.</p>
-</div>
-<h2 id=\\"open-source\\" ></span></a>Open Source</h2>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >A company like ISAAC, one that provides and builds large-scale software solutions, relies daily on Open Source Software. Without it, we, let alone the modern world, wouldn't be standing where we are today. The foundation of the entire modern economy is maintained by passionate developers who care and who are eager to share their solutions with others.</p>
-<p >ISAAC believes that a passion for open source, open standards and contributing to ‘the community’ is a valuable part of a modern-day developer’s life and why it, as an enterprise, has the obligation to give back to the Open Source.</p>
-<p >ISAAC Open Source Manifesto</a>.</p>
-<p >Because of the clear benefits in our day-to-day workflows and all-round Developer Experience, this manifesto now offers our developers the opportunity to dedicate time to Open Source Software. To raise awareness with, I've been giving the opportunity to host Lunch 'n Learns and co-organize the first company-wide Open Source Contribution Day, a virtual hackathon dedicated to contributing to Open Source Software where participants were received a whole workday to contribute to their favorite Open Source projects.</p>
-</div></div></div></article>"
+exports[`Content DOM snapshots /projects/isaac/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "project",
+    "figure": Object {
+      "@_class": "media",
+      "picture": Object {
+        "@_class": "",
+        "div": Object {
+          "@_class": "body",
+          "div": Array [
+            Object {
+              "@_class": "intro mb-ggy",
+              "p": "ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence &amp; Virtual Reality.",
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                Object {
+                  "#text": "Starting in May 2019, I’ve joined the front-end team at ISAAC to built awesome web-experiences. I focus mostly on implementing&amp;in enterprise level web applications. ISAAC has proven its skills by being crowned2 consecutive years in a row in 2018 and 2019. In 2020 ISAAC became part of the West-European full-service powerhouse.",
+                  "a": Array [
+                    Object {
+                      "#text": "Vue.js",
+                      "@_href": "https://vuejs.org/",
+                    },
+                    Object {
+                      "#text": "Nuxt",
+                      "@_href": "https://nuxtjs.org/",
+                    },
+                    Object {
+                      "#text": "Intracto Group",
+                      "@_href": "https://intracto.group",
+                    },
+                  ],
+                  "strong": "#1 Fullservice Digital Agency",
+                },
+                Object {
+                  "#text": "As a profound advocate for qualitativeser eperiences, I quickly joined the ISAAC Testing Guild, cross-company group featuring members from all specialisations which ISAAC has to offer, where best practices around testing software are researched, documented and  offered to the entire ISAAC team.",
+                  "strong": Array [
+                    "U",
+                    "X",
+                  ],
+                },
+              ],
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                "A company like ISAAC, one that provides and builds large-scale software solutions, relies daily on Open Source Software. Without it, we, let alone the modern world, wouldn’t be standing where we are today. The foundation of the entire modern economy is maintained by passionate developers who care and who are eager to share their solutions with others.",
+                "ISAAC believes that a passion for open source, open standards and contributing to ‘the community’ is a valuable part of a modern-day developer’s life and why it, as an enterprise, has the obligation to give back to the Open Source.",
+                Object {
+                  "#text": "Together with(CTO),(Technical Director Front-end) and(former Technical Director PHP), we’ve penned down our vision and mission towards the Open Source Community. This has resulted in the.",
+                  "a": Array [
+                    Object {
+                      "#text": "Friso Geerlings",
+                      "@_href": "https://www.linkedin.com/in/friso-geerlings-b47b384/",
+                    },
+                    Object {
+                      "#text": "Koen Peters",
+                      "@_href": "https://www.linkedin.com/in/kfapeters/",
+                    },
+                    Object {
+                      "#text": "Jelle Raaijmakers",
+                      "@_href": "https://www.linkedin.com/in/jelleraaijmakers/",
+                    },
+                    Object {
+                      "#text": "ISAAC Open Source Manifesto",
+                      "@_href": "https://www.isaac.nl/nl/developer-blog/open-source-manifest",
+                    },
+                  ],
+                },
+                "Because of the clear benefits in our day-to-day workflows and all-round Developer Experience, this manifesto now offers our developers the opportunity to dedicate time to Open Source Software. To raise awareness with, I’ve been giving the opportunity to host Lunch ‘n Learns and co-organize the first company-wide Open Source Contribution Day, a virtual hackathon dedicated to contributing to Open Source Software where participants were received a whole workday to contribute to their favorite Open Source projects.",
+              ],
+            },
+          ],
+          "h2": Object {
+            "#text": "Open Source",
+            "@_id": "open-source",
+          },
+        },
+        "source": Object {
+          "@_class": "",
+          "@_sizes": "1px",
+          "@_type": "image/webp",
+          "img": Object {
+            "@_alt": "ISAAC",
+            "@_class": "image fade fade-active",
+            "@_height": "900",
+            "@_loading": "lazy",
+            "@_sizes": "1px",
+            "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
+            "@_width": "1600",
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "Fullservice Digital Agency",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "ISAAC",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
 `;
 
-exports[`Content DOM snapshots /projects/pixeo 1`] = `
-"<article id=\\"project\\" class=\\"container\\" >
-<p >Pixeo</a> from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.</p>
-</div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >I started at Pixeo in 2013 ago as a Junior Front-end Developer with the main task of designing and building websites. Over the years I have been able to contribute to a whole smörgåsbord of projects, often as a Lead Front-end Developer.</p>
-<p >Due to the size of Pixeo, at most 6 people, we could behave like a startup. The tech stack of Pixeo has changed drastically over the course of our mutual career. Every new technology popping up was viewed with a critical eye, assessed as to whether it benefits our daily workflow, tested and depending on the results, implemented as quickly as possible.</p>
-</div>
-<h2 id=\\"evenementenkluis\\" ></span></a>Evenementenkluis</h2>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >This project began at the end of 2017. The Evenementenkluis (roughly translated the \\"Event Vault\\") is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time.</p>
-<p >With the help of a few simple multiple choice questions, organizers can get the necessary form, fill it in online and submit it. The competent authorities can provide their own specialized advice per form. Depending on these recommendations, an organizer can make the necessary changes in time before the start of the event.</p>
-<p >As of 2019, Pixeo is full build-mode for the Evenementenkluis's next feature, a full blown rental module. This enables organizers to immediately rent out the necessary materials for her/his event. From the organizer's point of view, everything is nicely bundled and organized within one event view en several subviews. Behind the scenes, the rental request is send to the right person within the municipality, like the rental-manager, logistic personnel.</p>
-<p >Cypress</a>.</p>
-<p >Since September 2018 we have been in production with v1.0.0 of the Event Safe in 2 municipalities. The goal of the Evenementenkluis is provide every municipality in Flanders with this platform.</p>
-<p >Shortly after the release of v1.0.0, my function within the project was briefly changed to following up on incoming feedback, bugs and feature requests. A.h.v. screenshots or video replays of the relevant feedback, I pass this on as clearly as possible to my fellow developers via the GitLab issue boards. I consult with the team on how we can implement new features in the most usable and efficient way.</p>
-<p >You can visit this platform at mol.evenementenkluis.be and evenementen.balen.be.</p>
-</div>
-<h2 id=\\"omnitruck\\" ></span></a>Omnitruck</h2>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >In the summer of 2018 I was commissioned to develop a knowledge-base for a logistics/transport company, codenamed Omnitruck.</p>
-<p >The purpose of this platform is to provide a fast, easy and digital documentation platform for all their drivers.</p>
-<p >PWA</strong>, after which the user only has to retrieve the content from the server. This will ensure that despite the high possibility of suboptimal network conditions, truck drivers will consult the app at lightning fast speeds.</p>
-<p >PWA</a> on the user's device. The applications contains following features:</p>
-<ul >
-<li >Internationalization of 6 languages</li>
-<li >Authentication via an OAuth2 layer</li>
-<li >Authorization via multiple roles</li>
-<li >Diff-view of the latest changes</li>
-<li >Search</li>
-<li >PWA functionality</li>
-<li >Server-side rendering</li>
-<li >CKEditor</a> integration</li>
-<li >...</li>
-</ul>
-</div>
-<h2 id=\\"other-work\\" ></span></a>Other work</h2>
-<h3 id=\\"arkana\\" >Arkana</a></h3>
-<p >B&amp;R Building Group</a></p>
-<h3 id=\\"bemdhal\\" >Bemdhal</a></h3>
-<p >Design &amp; build for a local sports complex</p></div></div></article>"
+exports[`Content DOM snapshots /projects/pixeo/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "project",
+    "figure": Object {
+      "@_class": "media",
+      "picture": Object {
+        "@_class": "",
+        "div": Object {
+          "@_class": "body",
+          "div": Array [
+            Object {
+              "@_class": "intro mb-ggy",
+              "p": Object {
+                "#text": "from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.",
+                "a": Object {
+                  "#text": "Pixeo",
+                  "@_href": "https://pixeo.be",
+                },
+              },
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                "I started at Pixeo in 2013 ago as a Junior Front-end Developer with the main task of designing and building websites. Over the years I have been able to contribute to a whole smörgåsbord of projects, often as a Lead Front-end Developer.",
+                "Due to the size of Pixeo, at most 6 people, we could behave like a startup. The tech stack of Pixeo has changed drastically over the course of our mutual career. Every new technology popping up was viewed with a critical eye, assessed as to whether it benefits our daily workflow, tested and depending on the results, implemented as quickly as possible.",
+              ],
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                "This project began at the end of 2017. The Evenementenkluis (roughly translated the “Event Vault”) is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time.",
+                "With the help of a few simple multiple choice questions, organizers can get the necessary form, fill it in online and submit it. The competent authorities can provide their own specialized advice per form. Depending on these recommendations, an organizer can make the necessary changes in time before the start of the event.",
+                "As of 2019, Pixeo is full build-mode for the Evenementenkluis’s next feature, a full blown rental module. This enables organizers to immediately rent out the necessary materials for her/his event. From the organizer’s point of view, everything is nicely bundled and organized within one event view en several subviews. Behind the scenes, the rental request is send to the right person within the municipality, like the rental-manager, logistic personnel.",
+                Object {
+                  "#text": "In this project I helped build the technical framework. The front end is built on Nuxt.js, the Vue counterpart of Next.js and the backend on a .NET Core Web API. The entire project follows the principle of Continuous Delivery with a weekly patch-release cycle and a monthly minor-release cycle. This is also possible thanks to a well-designed GitLab CI / CD configuration and a thorough testing suite build upon.",
+                  "a": Object {
+                    "#text": "Cypress",
+                    "@_href": "https://cypress.io",
+                  },
+                },
+                "Since September 2018 we have been in production with v1.0.0 of the Event Safe in 2 municipalities. The goal of the Evenementenkluis is provide every municipality in Flanders with this platform.",
+                "Shortly after the release of v1.0.0, my function within the project was briefly changed to following up on incoming feedback, bugs and feature requests. A.h.v. screenshots or video replays of the relevant feedback, I pass this on as clearly as possible to my fellow developers via the GitLab issue boards. I consult with the team on how we can implement new features in the most usable and efficient way.",
+                "You can visit this platform at mol.evenementenkluis.be and evenementen.balen.be.",
+              ],
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                "In the summer of 2018 I was commissioned to develop a knowledge-base for a logistics/transport company, codenamed Omnitruck.",
+                "The purpose of this platform is to provide a fast, easy and digital documentation platform for all their drivers.",
+                Object {
+                  "#text": "Due to the large number of internationalities of employees within the company, the platform had to be available in 6 different languages. After the first load, the web app skeleton is stored on the user’s device as a, after which the user only has to retrieve the content from the server. This will ensure that despite the high possibility of suboptimal network conditions, truck drivers will consult the app at lightning fast speeds.",
+                  "strong": "PWA",
+                },
+                Object {
+                  "#text": "I had the opportunity to develop the complete application. This application is built on afrontend andAPI back-end. The initial load is renderedand is saved as aon the user’s device. The applications contains following features:",
+                  "a": Array [
+                    Object {
+                      "#text": "Nuxt.js",
+                      "@_href": "https://nuxtjs.org/",
+                    },
+                    Object {
+                      "#text": "Laravel",
+                      "@_href": "https://laravel.com/",
+                    },
+                    Object {
+                      "#text": "Server-Side",
+                      "@_href": "https://ssr.vuejs.org/#what-is-server-side-rendering-ssr",
+                    },
+                    Object {
+                      "#text": "PWA",
+                      "@_href": "https://developers.google.com/web/progressive-web-apps/",
+                    },
+                  ],
+                },
+              ],
+              "ul": Object {
+                "li": Array [
+                  "Internationalization of 6 languages",
+                  "Authentication via an OAuth2 layer",
+                  "Authorization via multiple roles",
+                  "Diff-view of the latest changes",
+                  "Search",
+                  "PWA functionality",
+                  "Server-side rendering",
+                  Object {
+                    "#text": "integration",
+                    "a": Object {
+                      "#text": "CKEditor",
+                      "@_href": "https://ckeditor.com/ckeditor-5/",
+                    },
+                  },
+                  "…",
+                ],
+              },
+            },
+          ],
+          "h2": Array [
+            Object {
+              "#text": "Evenementenkluis",
+              "@_id": "evenementenkluis",
+            },
+            Object {
+              "#text": "Omnitruck",
+              "@_id": "omnitruck",
+            },
+            Object {
+              "#text": "Other work",
+              "@_id": "other-work",
+            },
+          ],
+          "h3": Array [
+            Object {
+              "@_id": "arkana",
+              "a": Object {
+                "#text": "Arkana",
+                "@_href": "https://www.arkana.be/",
+              },
+            },
+            Object {
+              "@_id": "bemdhal",
+              "a": Object {
+                "#text": "Bemdhal",
+                "@_href": "http://www.bemdhal.be/nl-BE/",
+              },
+            },
+          ],
+          "p": Array [
+            Object {
+              "#text": "Front-end implementation of a design system used throughout the entire",
+              "a": Object {
+                "#text": "B&amp;R Building Group",
+                "@_href": "http://jobs.benrbouwgroep.be/",
+              },
+            },
+            "Design &amp; build for a local sports complex",
+          ],
+        },
+        "source": Object {
+          "@_class": "",
+          "@_sizes": "1px",
+          "@_type": "image/webp",
+          "img": Object {
+            "@_alt": "Pixeo",
+            "@_class": "image fade fade-active",
+            "@_height": "900",
+            "@_loading": "lazy",
+            "@_sizes": "1px",
+            "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
+            "@_width": "1600",
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "Web agency",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "Pixeo",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
 `;
 
-exports[`Content DOM snapshots /projects/rockxxl 1`] = `
-"<article id=\\"project\\" class=\\"container\\" >
-<p >RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ...</p>
-</div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >available on Github</a>.</p>
-<p >With the aim of maintaining their SEO ranking, we have been able to move all legacy Wordpress data and images without any problem. All existing URLs are neatly redirected to the new URL structure. Via a few customized scripts, all posts were exported to Markdown files.</p>
-<p >Cloudinary</a>, a heavy-duty media hosting platform with integrated image transformations and CDN. Thanks to Cloudinary, the backend is not required to perform heavy edits and we can still display the most optimal image per user.</p>
-<p >After only a handful of evenings, a funky fresh RockXXL is ready rock your socks off!</p>
-</div></div></div></article>"
+exports[`Content DOM snapshots /projects/rockxxl/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "project",
+    "figure": Object {
+      "@_class": "media",
+      "picture": Object {
+        "@_class": "",
+        "div": Object {
+          "@_class": "body",
+          "div": Array [
+            Object {
+              "@_class": "intro mb-ggy",
+              "p": "RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, …",
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                Object {
+                  "#text": "At the end of 2018 they were looking for a volunteer to breathe new life into their website. I immediately offered my services. The old website has been transformed from WordPress into a immaculate JAMstack.now runs on, is managed viaand is 100% free hosted on. The source code 100% open source and is.",
+                  "a": Array [
+                    Object {
+                      "#text": "rockxxl.be",
+                      "@_href": "https://rockxxl.be",
+                    },
+                    Object {
+                      "#text": "Gatsby.js",
+                      "@_href": "https://gatsbyjs.org",
+                    },
+                    Object {
+                      "#text": "Netlify CMS",
+                      "@_href": "https://www.netlifycms.org/",
+                    },
+                    Object {
+                      "#text": "Netlify",
+                      "@_href": "https://www.netlify.com/",
+                    },
+                    Object {
+                      "#text": "available on Github",
+                      "@_href": "https://github.com/rockxxl/rockxxl",
+                    },
+                  ],
+                },
+                "With the aim of maintaining their SEO ranking, we have been able to move all legacy Wordpress data and images without any problem. All existing URLs are neatly redirected to the new URL structure. Via a few customized scripts, all posts were exported to Markdown files.",
+                Object {
+                  "#text": "Images are hosted on, a heavy-duty media hosting platform with integrated image transformations and CDN. Thanks to Cloudinary, the backend is not required to perform heavy edits and we can still display the most optimal image per user.",
+                  "a": Object {
+                    "#text": "Cloudinary",
+                    "@_href": "https://cloudinary.com",
+                  },
+                },
+                "After only a handful of evenings, a funky fresh RockXXL is ready rock your socks off!",
+              ],
+            },
+          ],
+        },
+        "source": Object {
+          "@_class": "",
+          "@_sizes": "1px",
+          "@_type": "image/webp",
+          "img": Object {
+            "@_alt": "RockXXL",
+            "@_class": "image fade fade-active",
+            "@_height": "900",
+            "@_loading": "lazy",
+            "@_sizes": "1px",
+            "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
+            "@_width": "1600",
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "Loud Noise Community",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "RockXXL",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
 `;
 
-exports[`Content DOM snapshots /projects/royce 1`] = `
-"<article id=\\"project\\" class=\\"container\\" >
-<p >Royce</a>. A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.</p>
-</div>
-<div class=\\"column-lg-2 column-xxl-3 mb-ggy\\" >
-<p >After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy &amp; bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named Royce.</p>
-<p >After a well thought out one-year writing phase, they released their first self-recorded demo song „Words”. Main influences range from melodic punk like AFI and Alexisonfire via pounding metalcore, Parkway Drive &amp; Trivium to the more extreme forms of the metal genre like Gojira and Behemoth. But that’s only the tip of the iceberg. Their music tends to be an original take on the modern metalcore genre that exists today.</p>
-<p >Combined with several other creative and professional abilities on which they apply a hardcore DIY working ethic they will get you to notice them, in one way or another. Royce is about doing the things you like with you’re friends and doing it with most the passion and conviction as possible.</p>
-<p >Open your eyes, the change is right in front of you.</p>
-<p >
-<a href=\\"https://facebook.com/roycetheband\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\" >Facebook</a></p>
-</div></div></div></article>"
+exports[`Content DOM snapshots /projects/royce/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "project",
+    "figure": Object {
+      "@_class": "media",
+      "picture": Object {
+        "@_class": "",
+        "div": Object {
+          "@_class": "body",
+          "div": Array [
+            Object {
+              "@_class": "intro mb-ggy",
+              "p": Object {
+                "#text": "Guitarist, producer, management, booking &amp; founding member of Belgian metalcore formation,. A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.",
+                "a": Object {
+                  "#text": "Royce",
+                  "@_href": "https://roycetheband.com",
+                },
+              },
+            },
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                "After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy &amp; bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named Royce.",
+                "After a well thought out one-year writing phase, they released their first self-recorded demo song „Words”. Main influences range from melodic punk like AFI and Alexisonfire via pounding metalcore, Parkway Drive &amp; Trivium to the more extreme forms of the metal genre like Gojira and Behemoth. But that’s only the tip of the iceberg. Their music tends to be an original take on the modern metalcore genre that exists today.",
+                "Combined with several other creative and professional abilities on which they apply a hardcore DIY working ethic they will get you to notice them, in one way or another. Royce is about doing the things you like with you’re friends and doing it with most the passion and conviction as possible.",
+                "Open your eyes, the change is right in front of you.",
+                Object {
+                  "a": Object {
+                    "#text": "Instagram",
+                    "@_href": "https://instagram.com/roycetheband",
+                  },
+                  "br": Object {
+                    "a": Object {
+                      "#text": "Facebook",
+                      "@_href": "https://facebook.com/roycetheband",
+                    },
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        "source": Object {
+          "@_class": "",
+          "@_sizes": "1px",
+          "@_type": "image/webp",
+          "img": Object {
+            "@_alt": "Royce",
+            "@_class": "image fade fade-active",
+            "@_height": "900",
+            "@_loading": "lazy",
+            "@_sizes": "1px",
+            "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
+            "@_width": "1600",
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "Metal",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "Royce",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
 `;
 
-exports[`Content DOM snapshots /talks 1`] = `
-"<div class=\\"container\\" >
-				Container Queries
-			</h1> <h2 class=\\"subtitle\\" >
-				A Technical Look at OpenAPI
-			</h1> <h2 class=\\"subtitle\\" >
-				Why OpenAPI
-			</h1> <h2 class=\\"subtitle\\" >
-				OpenAPI + Testing
-			</h1> <h2 class=\\"subtitle\\" >Ministry of Testing Eindhoven</h2></div></a></article></div></div>"
+exports[`Content DOM snapshots /talks/ 1`] = `
+Object {
+  "meta": Object {
+    "@_content": "Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
+    "@_name": "description",
+    "div": Object {
+      "@_class": "container",
+      "div": Object {
+        "@_class": "grid grid--large",
+        "article": Object {
+          "@_class": "",
+          "a": Object {
+            "@_class": "reset link",
+            "@_href": "/talks/devcast-english-june-2021",
+            "article": Object {
+              "@_class": "",
+              "a": Object {
+                "@_class": "reset link",
+                "@_href": "/talks/a-technical-look-at-openapi",
+                "article": Object {
+                  "@_class": "",
+                  "a": Object {
+                    "@_class": "reset link",
+                    "@_href": "https://youtu.be/lLfgrt-_8sE",
+                    "@_rel": "nooopener",
+                    "@_target": "_blank",
+                    "article": Object {
+                      "@_class": "",
+                      "a": Object {
+                        "@_class": "reset link",
+                        "@_href": "https://mot.mrtnvh.com",
+                        "@_rel": "nooopener",
+                        "@_target": "_blank",
+                        "figure": Object {
+                          "@_class": "media",
+                          "picture": Object {
+                            "@_class": "",
+                            "div": Object {
+                              "@_class": "content",
+                              "h1": Object {
+                                "#text": "OpenAPI + Testing",
+                                "@_class": "title outline",
+                              },
+                              "h2": Object {
+                                "#text": "Ministry of Testing Eindhoven",
+                                "@_class": "subtitle",
+                              },
+                            },
+                            "source": Object {
+                              "@_class": "",
+                              "@_sizes": "1px",
+                              "@_type": "image/webp",
+                              "img": Object {
+                                "@_alt": "OpenAPI + Testing",
+                                "@_class": "image fade fade-active",
+                                "@_height": "900",
+                                "@_loading": "lazy",
+                                "@_sizes": "1px",
+                                "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
+                                "@_width": "1600",
+                              },
+                            },
+                          },
+                        },
+                      },
+                    },
+                    "figure": Object {
+                      "@_class": "media",
+                      "picture": Object {
+                        "@_class": "",
+                        "div": Object {
+                          "@_class": "content",
+                          "h1": Object {
+                            "#text": "Why OpenAPI",
+                            "@_class": "title outline",
+                          },
+                          "h2": Object {
+                            "#text": "Dutch version - Tech Tuesdays",
+                            "@_class": "subtitle",
+                          },
+                        },
+                        "source": Object {
+                          "@_class": "",
+                          "@_sizes": "1px",
+                          "@_type": "image/webp",
+                          "img": Object {
+                            "@_alt": "Why OpenAPI",
+                            "@_class": "image fade fade-active",
+                            "@_height": "900",
+                            "@_loading": "lazy",
+                            "@_sizes": "1px",
+                            "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
+                            "@_width": "1600",
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                "figure": Object {
+                  "@_class": "media",
+                  "picture": Object {
+                    "@_class": "",
+                    "div": Object {
+                      "@_class": "content",
+                      "h1": Object {
+                        "#text": "A Technical Look at OpenAPI",
+                        "@_class": "title outline",
+                      },
+                      "h2": Object {
+                        "@_class": "subtitle",
+                      },
+                    },
+                    "source": Object {
+                      "@_class": "",
+                      "@_sizes": "1px",
+                      "@_type": "image/webp",
+                      "img": Object {
+                        "@_alt": "A Technical Look at OpenAPI",
+                        "@_class": "image fade fade-active",
+                        "@_height": "900",
+                        "@_loading": "lazy",
+                        "@_sizes": "1px",
+                        "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg",
+                        "@_width": "1600",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+            "figure": Object {
+              "@_class": "media",
+              "picture": Object {
+                "@_class": "",
+                "div": Object {
+                  "@_class": "content",
+                  "h1": Object {
+                    "#text": "Container Queries",
+                    "@_class": "title outline",
+                  },
+                  "h2": Object {
+                    "#text": "The next step towards a truly modular CSS",
+                    "@_class": "subtitle",
+                  },
+                },
+                "source": Object {
+                  "@_class": "",
+                  "@_sizes": "1px",
+                  "@_type": "image/webp",
+                  "img": Object {
+                    "@_alt": "Container Queries",
+                    "@_class": "image fade fade-active",
+                    "@_height": "900",
+                    "@_loading": "lazy",
+                    "@_sizes": "1px",
+                    "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1627588090/mrtnvh.com/devcast-juni-2021.jpg",
+                    "@_width": "1600",
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      "h1": Object {
+        "#text": "Talks",
+        "@_class": "title outline",
+      },
+    },
+  },
+  "title": "Talks",
+}
 `;
 
-exports[`Content DOM snapshots /talks/a-technical-look-at-openapi 1`] = `
-"<article href=\\"https://a-technical-look-at-openapi.mrtnvh.com/\\" target=\\"_blank\\" rel=\\"noopener\\">
-						https://a-technical-look-at-openapi.mrtnvh.com/
-					</a></td></tr> <tr href=\\"https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo\\" target=\\"_blank\\" rel=\\"noopener\\">
-						https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo
-					</a></td></tr> <tr >Examples of how the OpenAPI specification can improve your Front End workflow</p></div></div></article>"
+exports[`Content DOM snapshots /talks/a-technical-look-at-openapi/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "talk",
+    "aside": Object {
+      "@_class": "",
+      "table": Object {
+        "@_class": "table-borderless",
+        "tbody": Object {
+          "tr": Array [
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Slides",
+                  "@_class": "",
+                  "@_style": "width: 6rem;",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://a-technical-look-at-openapi.mrtnvh.com/",
+                    "@_class": "",
+                    "@_href": "https://a-technical-look-at-openapi.mrtnvh.com/",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Demo",
+                  "@_class": "",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo",
+                    "@_class": "",
+                    "@_href": "https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Video",
+                  "@_class": "",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://www.youtube.com/watch?v=YXXE0LSVnCs",
+                    "@_class": "",
+                    "@_href": "https://www.youtube.com/watch?v=YXXE0LSVnCs",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+    "div": Object {
+      "@_class": "preview",
+      "a": Object {
+        "@_class": "media media--video-overlay",
+        "@_href": "https://www.youtube.com/watch?v=YXXE0LSVnCs",
+        "@_rel": "noopener",
+        "@_target": "_blank",
+        "div": Object {
+          "@_class": "body",
+          "p": "Examples of how the OpenAPI specification can improve your Front End workflow",
+        },
+        "picture": Object {
+          "@_class": "",
+          "source": Object {
+            "@_class": "",
+            "@_sizes": "1px",
+            "@_type": "image/webp",
+            "img": Object {
+              "@_alt": "A Technical Look at OpenAPI",
+              "@_class": "image fade fade-active",
+              "@_height": "900",
+              "@_loading": "lazy",
+              "@_sizes": "1px",
+              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg",
+              "@_width": "1600",
+            },
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "A Technical Look at OpenAPI",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
 `;
 
-exports[`Content DOM snapshots /talks/devcast-english-june-2021 1`] = `
-"<article href=\\"https://devcast-june-2021.mrtnvh.com/\\" target=\\"_blank\\" rel=\\"noopener\\">
-						https://devcast-june-2021.mrtnvh.com/
-					</a></td></tr> <!----> <tr >Modular, componentized frameworks and libraries are more popular than ever, but currently screen size is the only dimensional constraint to which a web design can adapt to. In this talk, Maarten will explain what Container Queries are and show you how each component can adapt its design to the dimensions of its container. Join us on our journey towards a more modular CSS.</p></div></div></article>"
+exports[`Content DOM snapshots /talks/devcast-english-june-2021/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "talk",
+    "aside": Object {
+      "@_class": "",
+      "table": Object {
+        "@_class": "table-borderless",
+        "tbody": Object {
+          "tr": Array [
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Slides",
+                  "@_class": "",
+                  "@_style": "width: 6rem;",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://devcast-june-2021.mrtnvh.com/",
+                    "@_class": "",
+                    "@_href": "https://devcast-june-2021.mrtnvh.com/",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Video",
+                  "@_class": "",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://youtu.be/Hr5lIsbiWpY?t=178",
+                    "@_class": "",
+                    "@_href": "https://youtu.be/Hr5lIsbiWpY?t=178",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+    "div": Object {
+      "@_class": "preview",
+      "a": Object {
+        "@_class": "media media--video-overlay",
+        "@_href": "https://youtu.be/Hr5lIsbiWpY?t=178",
+        "@_rel": "noopener",
+        "@_target": "_blank",
+        "div": Object {
+          "@_class": "body",
+          "p": "Modular, componentized frameworks and libraries are more popular than ever, but currently screen size is the only dimensional constraint to which a web design can adapt to. In this talk, Maarten will explain what Container Queries are and show you how each component can adapt its design to the dimensions of its container. Join us on our journey towards a more modular CSS.",
+        },
+        "picture": Object {
+          "@_class": "",
+          "source": Object {
+            "@_class": "",
+            "@_sizes": "1px",
+            "@_type": "image/webp",
+            "img": Object {
+              "@_alt": "Container Queries",
+              "@_class": "image fade fade-active",
+              "@_height": "900",
+              "@_loading": "lazy",
+              "@_sizes": "1px",
+              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg",
+              "@_width": "1600",
+            },
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "The next step towards a truly modular CSS",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "Container Queries",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Content DOM snapshots /talks/openapi-and-testing/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "talk",
+    "aside": Object {
+      "@_class": "",
+      "table": Object {
+        "@_class": "table-borderless",
+      },
+    },
+    "div": Object {
+      "@_class": "preview",
+      "figure": Object {
+        "@_class": "media",
+        "div": Object {
+          "@_class": "body",
+        },
+        "picture": Object {
+          "@_class": "",
+          "source": Object {
+            "@_class": "",
+            "@_sizes": "1px",
+            "@_type": "image/webp",
+            "img": Object {
+              "@_alt": "OpenAPI + Testing",
+              "@_class": "image fade fade-active",
+              "@_height": "900",
+              "@_loading": "lazy",
+              "@_sizes": "1px",
+              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
+              "@_width": "1600",
+            },
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "Ministry of Testing Eindhoven",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "OpenAPI + Testing",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Content DOM snapshots /talks/why-openapi/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "talk",
+    "aside": Object {
+      "@_class": "",
+      "table": Object {
+        "@_class": "table-borderless",
+      },
+    },
+    "div": Object {
+      "@_class": "preview",
+      "figure": Object {
+        "@_class": "media",
+        "div": Object {
+          "@_class": "body",
+        },
+        "picture": Object {
+          "@_class": "",
+          "source": Object {
+            "@_class": "",
+            "@_sizes": "1px",
+            "@_type": "image/webp",
+            "img": Object {
+              "@_alt": "Why OpenAPI",
+              "@_class": "image fade fade-active",
+              "@_height": "900",
+              "@_loading": "lazy",
+              "@_sizes": "1px",
+              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
+              "@_width": "1600",
+            },
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "Dutch version - Tech Tuesdays",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "Why OpenAPI",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
 `;

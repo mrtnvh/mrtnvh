@@ -4,7 +4,7 @@ const {
 	queries: { getByTestId },
 } = require("pptr-testing-library");
 const { devices } = require("../setup/config");
-const { getUrl } = require("../setup/utils");
+const { getUrl, removeTrailingSlash } = require("../setup/utils");
 
 const links = {
 	home: "/",
@@ -21,7 +21,6 @@ jest.retryTimes(3);
 describe("Navigation", () => {
 	beforeEach(async () => {
 		await page.goto(getUrl("/"));
-		await page.waitForFunction("!!window.$nuxt");
 	});
 
 	describe.each(Object.entries(links))("Navigate to %s", (key, to) => {
@@ -30,6 +29,12 @@ describe("Navigation", () => {
 			async (environmentName, emulationSettings) => {
 				await page.emulate(emulationSettings);
 				const $document = await getDocument(page);
+				const $linkContainer = await getByTestId(
+					$document,
+					environmentName === "mobile"
+						? `offcanvasmenu`
+						: `app-header-navs`,
+				);
 
 				if (environmentName === "mobile") {
 					const $toggle = await getByTestId(
@@ -39,7 +44,10 @@ describe("Navigation", () => {
 					await $toggle.click();
 				}
 
-				const $link = await getByTestId($document, `navigation-${key}`);
+				const $link = await getByTestId(
+					$linkContainer,
+					`navigation-${key}`,
+				);
 				await $link.click();
 
 				if (to.includes("http")) {
@@ -53,12 +61,16 @@ describe("Navigation", () => {
 							new URL(to).hostname,
 						);
 					} else {
-						expect(url).toEqual(to);
+						expect(removeTrailingSlash(url)).toEqual(
+							removeTrailingSlash(to),
+						);
 					}
 				} else {
 					await page.waitForTimeout(300);
 					const url = await page.url();
-					expect(url).toEqual(getUrl(to));
+					expect(removeTrailingSlash(url)).toEqual(
+						removeTrailingSlash(getUrl(to)),
+					);
 				}
 			},
 		);

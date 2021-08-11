@@ -5,7 +5,7 @@ const lighthouseDesktopConfig = require("lighthouse/lighthouse-core/config/lr-mo
 
 const threshold = 0.6;
 
-const { pages } = require("../setup/config");
+const { getPages } = require("../setup/config");
 const { getUrl, customSnapshotIdentifier } = require("../setup/utils");
 
 const ligthouseConfigs = {
@@ -13,10 +13,10 @@ const ligthouseConfigs = {
 	desktop: lighthouseDesktopConfig,
 };
 
-jest.retryTimes(3);
+// jest.retryTimes(3);
 
 describe("Lighthouse", () => {
-	describe.each(pages)("%s", (path) => {
+	describe.each(getPages())("%s", (path) => {
 		beforeEach(async () => {
 			await jestPuppeteer.resetPage();
 		});

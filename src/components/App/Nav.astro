@@ -1,0 +1,68 @@
+---
+const { offCanvas = false } = Astro.props
+
+const links = [
+	{
+		key: "home",
+		href: "/",
+		title: "Home",
+	},
+	{
+		key: "projects",
+		href: "/projects",
+		title: "Projects",
+	},
+	{
+		key: "talks",
+		href: "/talks",
+		title: "Talks",
+	},
+	{
+		key: "about",
+		href: "/about",
+		title: "About me",
+	},
+];
+---
+
+<nav class={`nav ${offCanvas ? 'nav--offCanvas' : ''}`}>
+	{links.map(link =>
+		<a
+			key={link.title}
+			href={link.href}
+			exact={link.to === '/'}
+			data-testid={`navigation-${link.key}`}
+		>
+			{ link.title }
+		</a>
+	)}
+</nav>
+
+<style>
+.nav {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: minmax(min-content, auto);
+	grid-gap: var(--space);
+
+	a {
+		white-space: nowrap;
+	}
+
+	&.nav--offCanvas {
+		font-size: var(--font-size-3xl);
+		font-family: var(--headings-font-family);
+		font-weight: var(--fat-font-weight);
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+</style>

@@ -1,0 +1,85 @@
+---
+import Seo from "../components/Seo.astro";
+import Header from "../components/App/Header.astro";
+import Footer from "../components/App/Footer.astro";
+import SvgSprite from "../components/SvgSprite.astro";
+
+const isProd = import.meta.env.NODE_ENV === 'production'
+---
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="/favicon.png"/>
+		<!-- <link rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.81f135.png" sizes="512x512"/> -->
+		<!-- <link rel="shortcut icon" href="/_nuxt/icons/icon_64x64.81f135.png" /> -->
+		<!-- <link rel="manifest" href="/_nuxt/manifest.ecb75f93.json" /> -->
+		<meta httpequiv="Accept-CH" content="DPR, Viewport-Width, Width" />
+		<meta name="apple-mobile-web-app-title" content="mrtnvh" />
+		<meta name="mobile-web-app-capable" content="yes"/>
+		<meta name="theme-color" content="#95FF00" />
+		<link rel="preload" href="/styles/app.css" as="style" />
+		<link rel="stylesheet" href="/styles/app.css" />
+		<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+		{ isProd &&
+			<script defer data-domain="mrtnvh.com" src="/js/stats.js"></script>
+			<script>
+				if ('serviceWorker' in navigator) {
+					window.addEventListener('load', () => {
+						navigator.serviceWorker.register('/sw.js');
+					});
+				}
+			</script>
+		}
+	</head>
+	<Seo { ...Astro.props } />
+	<body>
+		<div class="svg-sprite">
+			<SvgSprite />
+		</div>
+		<div class="layout">
+			<Header/>
+			<main>
+				<slot />
+			</main>
+			<Footer/>
+		</div>
+		<script type="module" async src="/js/main.js"></script>
+	</body>
+</html>
+
+<style global>
+.svg-sprite {
+	display: none;
+}
+
+.layout {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+main {
+	display: flex !important;
+	flex-direction: column;
+}
+
+main,
+.portal {
+	flex-grow: 1;
+}
+
+.portal {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	&:empty {
+		display: none;
+	}
+}
+</style>

@@ -23,13 +23,15 @@ export const getSrcSet = ({
 		};
 
 	const [preUrl, postUrl] = src.split("/upload");
-	const placeholder = `${preUrl}/upload/t_responsive_placeholder/${postUrl}`;
+	const placeholder = `${preUrl}/upload/t_responsive_placeholder${postUrl}`;
 
-	return {
+	const returnValue = {
 		src: placeholder,
 		srcSet: SRC_SET_SIZES.map(
 			(size) =>
-				`${preUrl}/upload/c_scale,dpr_1.0,f_${type},q_auto,w_${size}${postUrl} ${size}w`,
-		),
+				`${preUrl}/upload/c_scale%2Cdpr_1.0%2Cf_${type}%2Cq_auto%2Cw_${size}${postUrl} ${size}w`,
+		).join(", "),
 	};
+
+	return returnValue;
 };

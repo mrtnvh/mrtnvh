@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Run build
-        run: "npm run generate"
+        run: "npm run build"
         env:
           CI: true
 
@@ -48,7 +48,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
         test-type: ['lint', 'style', 'e2e', 'visual', 'performance']
 
     steps:

@@ -1,0 +1,86 @@
+---
+import Thumbnail from "../Image/Image.astro";
+
+export interface Props {
+	item: any;
+	index?: number;
+}
+
+const { item, index = 0 } = Astro.props
+
+const linkProps = () => {
+	if (item?.redirect || item?.astro?.url?.startsWith("http")) {
+		return {
+			href: item.redirect || item.astro?.url,
+			target: "_blank",
+			rel: "nooopener",
+		};
+	}
+
+	return { href: item.url };
+}
+---
+
+<article>
+	<a { ...linkProps() } class="reset link">
+		<figure class="media">
+			<Thumbnail
+				src={item.thumbnail}
+				alt={item.title}
+				class="image"
+				width="1600"
+				height="900"
+			/>
+		</figure>
+		<div class="content">
+			<h1 class="title outline">
+				{ item.title }
+			</h1>
+			<h2 class="subtitle">{ item.subtitle }</h2>
+		</div>
+	</a>
+</article>
+
+<style>
+article {
+	max-width: 100%;
+}
+
+.media {
+	margin-bottom: 0;
+}
+
+.link {
+	--link-color: var(--text-color);
+	--link-hover-color: var(--text-color);
+	--link-text-decoration: none;
+
+	display: block;
+
+	&:hover,
+	&:focus {
+		--stroke-inner-color: var(--text-color);
+		--stroke-color: var(--text-color);
+	}
+}
+
+.content {
+	position: relative;
+	/* stylelint-disable-next-line */
+	z-index: 1;
+	margin-top: calc(var(--space) * -1.375);
+	padding: 0 calc(var(--space) * 1.5);
+}
+
+.title {
+	text-transform: uppercase;
+	margin: 0 0 0.5rem 0;
+	line-height: 0.85em;
+}
+
+.subtitle {
+	font-size: var(--font-size-base);
+	font-weight: 400;
+	margin: 0;
+}
+</style>
