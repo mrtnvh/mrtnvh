@@ -6,7 +6,9 @@ export default () =>
 	workboxBuild.generateSW({
 		globDirectory: BUILD_DIRECTORY,
 		globPatterns: ["**/*.{html,json,js,css}"],
+		globIgnores: ["**/stats.js"],
 		swDest: "dist/sw.js",
+		sourcemap: false,
 		runtimeCaching: [
 			{
 				urlPattern: "https?://res.cloudinary.com/mrtnvh/.*",

@@ -2,6 +2,7 @@ import criticalCss from "./critical-css.mjs";
 import purgeCss from "./purge-css.mjs";
 import favicons from "./favicons.mjs";
 import hash from "./hash.mjs";
+import workbox from "./workbox.mjs";
 
 (async () => {
 	console.log("[FAVICONS]", "Start");
@@ -15,6 +16,10 @@ import hash from "./hash.mjs";
 	console.log("[CRITICAL CSS]", "Start");
 	await criticalCss();
 	console.log("[CRITICAL CSS]", "Completed");
+
+	console.log("[WORKBOX]", "Start");
+	await workbox();
+	console.log("[WORKBOX]", "Completed");
 
 	console.log("[HASH]", "Start");
 	const { hashedAndOriginalFilePaths, alteredFiles } = await hash();

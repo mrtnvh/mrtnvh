@@ -5,7 +5,7 @@ import { replaceFilesContent, BUILD_DIRECTORY } from "./_utils.mjs";
 import pkg from "../../package.json";
 
 const source = "public/favicon.png";
-const iconOutPath = "/icons";
+const iconOutPath = "";
 
 const configuration = {
 	// Path for overriding default icons path. `string`
@@ -30,7 +30,7 @@ const configuration = {
 	theme_color: "#95FF00",
 
 	// Preferred display mode: "fullscreen", "standalone", "minimal-ui" or "browser". `string`
-	display: "browser",
+	display: "minimal-ui",
 
 	// Start URL when launching the application from a device. `string`
 	start_url: "/?homescreen=1",
@@ -77,11 +77,21 @@ const configuration = {
 };
 
 export default async () => {
-	const { html, images } = await promisify(favicons)(source, configuration);
+	const { html, images, files } = await promisify(favicons)(
+		source,
+		configuration,
+	);
+
 	await Promise.all(
 		images.map(async ({ name, contents }) =>
 			fs.outputFile(`${BUILD_DIRECTORY}${iconOutPath}/${name}`, contents),
 		),
+	);
+
+	await Promise.all(
+		Object.values(files).map(async ({ name, contents }) => {
+			return fs.outputFile(`${BUILD_DIRECTORY}/${name}`, contents);
+		}),
 	);
 	await replaceFilesContent("**/*.html", async (content) => {
 		const splitAndJoinString = "</head>";
