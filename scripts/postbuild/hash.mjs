@@ -49,7 +49,7 @@ const renameFiles = (hashedAndOriginalFilePaths) =>
 	);
 
 const replaceReferences = (hashedAndOriginalFilePaths) =>
-	replaceFilesContent("**/*.*", async (content, filePath) =>
+	replaceFilesContent("**/*.*", async (content) =>
 		hashedAndOriginalFilePaths.reduce((acc, { original, hashed }) => {
 			const originalBasename = basename(original);
 			const hashedBasename = basename(hashed);
