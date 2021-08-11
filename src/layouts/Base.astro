@@ -23,7 +23,7 @@ const isProd = import.meta.env.NODE_ENV === 'production'
 		<link rel="stylesheet" href="/styles/app.css" />
 		<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
-		{ isProd &&
+		{ isProd && `
 			<script defer data-domain="mrtnvh.com" src="/js/stats.js"></script>
 			<script>
 				if ('serviceWorker' in navigator) {
@@ -32,7 +32,7 @@ const isProd = import.meta.env.NODE_ENV === 'production'
 					});
 				}
 			</script>
-		}
+		`}
 	</head>
 	<Seo { ...Astro.props } />
 	<body>
