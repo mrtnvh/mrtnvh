@@ -1,6 +1,7 @@
 import criticalCss from "./critical-css.mjs";
 import purgeCss from "./purge-css.mjs";
 import favicons from "./favicons.mjs";
+import hash from "./hash.mjs";
 
 (async () => {
 	console.log("[FAVICONS]", "Start");
@@ -14,4 +15,8 @@ import favicons from "./favicons.mjs";
 	console.log("[CRITICAL CSS]", "Start");
 	await criticalCss();
 	console.log("[CRITICAL CSS]", "Completed");
+
+	console.log("[HASH]", "Start");
+	await hash();
+	console.log("[HASH]", "Completed");
 })();

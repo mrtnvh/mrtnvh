@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import { globby } from "globby";
-import fs from "fs/promises";
+import fs from "fs-extra";
 
 export const BUILD_DIRECTORY = "dist";
 
@@ -14,14 +14,16 @@ export const replaceFilesContent = async (glob, callback) => {
 		})),
 	);
 	const alteredFiles = await Promise.all(
-		files.map(async ({ content, ...file }) => ({
-			...file,
-			content: await callback(content),
+		files.map(async ({ content, path }) => ({
+			path,
+			content: await callback(content, path),
 		})),
 	);
 	await Promise.all(
 		alteredFiles.map(async ({ path, content }) =>
-			fs.writeFile(path, content, "utf-8"),
+			fs.outputFile(path, content, "utf-8"),
 		),
 	);
+
+	return { files };
 };
