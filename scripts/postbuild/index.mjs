@@ -17,6 +17,10 @@ import hash from "./hash.mjs";
 	console.log("[CRITICAL CSS]", "Completed");
 
 	console.log("[HASH]", "Start");
-	await hash();
-	console.log("[HASH]", "Completed");
+	const { hashedAndOriginalFilePaths, alteredFiles } = await hash();
+	console.log(
+		"[HASH] Completed \n       Hashed %d files, replaced in %d files",
+		hashedAndOriginalFilePaths.length,
+		alteredFiles.length,
+	);
 })();

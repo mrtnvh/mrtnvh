@@ -61,19 +61,14 @@ const replaceReferences = (hashedAndOriginalFilePaths) =>
 	);
 
 export default async () => {
-	// const hash = await createHashFromFilePath(file, opts).then((hash) => hash);
-};
-
-(async () => {
 	const hashedAndOriginalFilePaths = await getFilePathsToHash();
 	const { files: alteredFiles } = await replaceReferences(
 		hashedAndOriginalFilePaths,
 	);
 	await renameFiles(hashedAndOriginalFilePaths);
 
-	console.log(
-		"[HASH] Hashed %d files, replaced in %d files",
-		hashedAndOriginalFilePaths.length,
-		alteredFiles.length,
-	);
-})();
+	return {
+		hashedAndOriginalFilePaths,
+		alteredFiles,
+	};
+};
