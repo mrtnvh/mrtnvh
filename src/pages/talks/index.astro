@@ -1,5 +1,5 @@
 ---
-import { orderBy } from 'lodash-es'
+import { orderBy, defaultsDeep } from 'lodash-es'
 import { format } from "date-fns";
 import BaseLayout from '../../layouts/Base.astro';
 import List from "../../components/List/List.astro";
@@ -8,13 +8,19 @@ const dateNow = format(new Date(), "yyyyMMdd");
 const allTalks = Astro.fetchContent('./*.md');
 const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
 const publishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished <= dateNow);
+const baseLayoutProps = defaultsDeep(
+  {
+    content: {
+      title: "Talks",
+      description:
+        "Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
+    },
+  },
+  Astro.props
+);
 ---
 
-<BaseLayout { ...Astro.props }>
-	<head>
-		<title>Talks</title>
-		<meta name="description" content="Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here." />
-	</head>
+<BaseLayout { ...baseLayoutProps }>
 	<div class="container">
 		<h1 class="title outline">Talks</h1>
 		<List items={publishedTalks} large />

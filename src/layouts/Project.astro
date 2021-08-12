@@ -4,7 +4,7 @@ import Thumbnail from '../components/Image/Image.astro';
 const { content: { title, subtitle, thumbnail } } = Astro.props;
 ---
 
-<BaseLayout { ...Astro.props }>
+<BaseLayout { ...Astro.props } category="Projects">
 	<article id="project" class="container">
 		<header>
 			<div class="sticky">

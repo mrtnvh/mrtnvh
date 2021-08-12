@@ -1,5 +1,5 @@
 ---
-import { orderBy } from 'lodash-es'
+import { orderBy, defaultsDeep } from 'lodash-es'
 import BaseLayout from '../../layouts/Base.astro';
 import Section from "../../components/Page/Section.astro";
 import List from "../../components/List/List.astro";
@@ -8,13 +8,18 @@ const allProjects = Astro.fetchContent('./*.md');
 const allProjectsOrdered = orderBy(allProjects, ['datePublished'], ['desc']);
 const currentProjects = allProjectsOrdered.filter(({ current }) => current);
 const previousProjects = allProjectsOrdered.filter(({ current }) => !current);
+const baseLayoutProps = defaultsDeep(
+  {
+    content: {
+      title: "Projects",
+      description: "A selection of my current and previous projects. Work, musical and open source experiences",
+    },
+  },
+  Astro.props
+);
 ---
 
-<BaseLayout { ...Astro.props }>
-	<head>
-		<title>Projects</title>
-		<meta name="description" content="A selection of my current and previous projects. Work, musical and open source experiences" />
-	</head>
+<BaseLayout { ...baseLayoutProps }>
 	<Section title="Current" titleSmall="projects">
 		<List items={currentProjects} class="projects" />
 	</Section>

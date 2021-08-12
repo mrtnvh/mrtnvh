@@ -13,9 +13,9 @@ datePublished: 20190914
 
 I'm a proud father of Adriaan & Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.
 
-I have a profound love for [loud and emotive music](https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI). In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies in [Royce](http://roycetheband.com) rock out the local and non-local watering holes from time to time.
+I have a profound love for [loud and emotive music](https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI). In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies in [ROYCE](http://roycetheband.com) rock out the local and non-local watering holes from time to time.
 
-I have a [Professional Bachelor Multimedia and Communication Technology](https://www.kdg.be/en/education/study-programmes-dutch/multimedia-and-communication-technology/multimedia-technology), specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.
+I have a [Professional Bachelor Multimedia and Communication Technology](https://www.kdg.be/multimedia-creative-technologies), specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.
 
 All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.
 

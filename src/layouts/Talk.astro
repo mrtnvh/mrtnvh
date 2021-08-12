@@ -6,7 +6,7 @@ import VideoPreview from '../components/VideoPreview.astro';
 const { content } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout { ...Astro.props } category="Talks">
 	<article id="talk" class="container">
 		<header>
 			<div class="sticky">

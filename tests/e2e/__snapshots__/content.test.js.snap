@@ -100,7 +100,7 @@ Object {
                       "div": Object {
                         "@_class": "content",
                         "h1": Object {
-                          "#text": "Royce",
+                          "#text": "ROYCE",
                           "@_class": "title outline",
                         },
                         "h2": Object {
@@ -113,7 +113,7 @@ Object {
                         "@_sizes": "1px",
                         "@_type": "image/webp",
                         "img": Object {
-                          "@_alt": "Royce",
+                          "@_alt": "ROYCE",
                           "@_class": "image fade fade-active",
                           "@_height": "900",
                           "@_loading": "lazy",
@@ -212,7 +212,7 @@ Object {
                         "@_href": "https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI",
                       },
                       Object {
-                        "#text": "Royce",
+                        "#text": "ROYCE",
                         "@_href": "http://roycetheband.com",
                       },
                     ],
@@ -481,7 +481,7 @@ Object {
                       "div": Object {
                         "@_class": "content",
                         "h1": Object {
-                          "#text": "Royce",
+                          "#text": "ROYCE",
                           "@_class": "title outline",
                         },
                         "h2": Object {
@@ -494,7 +494,7 @@ Object {
                         "@_sizes": "1px",
                         "@_type": "image/webp",
                         "img": Object {
-                          "@_alt": "Royce",
+                          "@_alt": "ROYCE",
                           "@_class": "image fade fade-active",
                           "@_height": "900",
                           "@_loading": "lazy",
@@ -1043,7 +1043,7 @@ Object {
               "p": Object {
                 "#text": "Guitarist, producer, management, booking &amp; founding member of Belgian metalcore formation,. A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.",
                 "a": Object {
-                  "#text": "Royce",
+                  "#text": "ROYCE",
                   "@_href": "https://roycetheband.com",
                 },
               },
@@ -1051,9 +1051,9 @@ Object {
             Object {
               "@_class": "column-lg-2 column-xxl-3 mb-ggy",
               "p": Array [
-                "After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy &amp; bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named Royce.",
+                "After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy &amp; bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named ROYCE.",
                 "After a well thought out one-year writing phase, they released their first self-recorded demo song „Words”. Main influences range from melodic punk like AFI and Alexisonfire via pounding metalcore, Parkway Drive &amp; Trivium to the more extreme forms of the metal genre like Gojira and Behemoth. But that’s only the tip of the iceberg. Their music tends to be an original take on the modern metalcore genre that exists today.",
-                "Combined with several other creative and professional abilities on which they apply a hardcore DIY working ethic they will get you to notice them, in one way or another. Royce is about doing the things you like with you’re friends and doing it with most the passion and conviction as possible.",
+                "Combined with several other creative and professional abilities on which they apply a hardcore DIY working ethic they will get you to notice them, in one way or another. ROYCE is about doing the things you like with you’re friends and doing it with most the passion and conviction as possible.",
                 "Open your eyes, the change is right in front of you.",
                 Object {
                   "a": Object {
@@ -1076,7 +1076,7 @@ Object {
           "@_sizes": "1px",
           "@_type": "image/webp",
           "img": Object {
-            "@_alt": "Royce",
+            "@_alt": "ROYCE",
             "@_class": "image fade fade-active",
             "@_height": "900",
             "@_loading": "lazy",
@@ -1096,7 +1096,7 @@ Object {
           "@_class": "subtitle",
         },
         "h1": Object {
-          "#text": "Royce",
+          "#text": "ROYCE",
           "@_class": "title outline",
         },
       },
