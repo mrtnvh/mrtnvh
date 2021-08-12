@@ -90,6 +90,20 @@ export default async () => {
 
 	await Promise.all(
 		Object.values(files).map(async ({ name, contents }) => {
+			if (name === "manifest.json") {
+				const parsedContents = JSON.parse(contents);
+				const purposedContents = {
+					...parsedContents,
+					icons: parsedContents.icons.map((icon) => ({
+						...icon,
+						purpose: "any maskable",
+					})),
+				};
+				return fs.outputFile(
+					`${BUILD_DIRECTORY}/${name}`,
+					JSON.stringify(purposedContents),
+				);
+			}
 			return fs.outputFile(`${BUILD_DIRECTORY}/${name}`, contents);
 		}),
 	);
