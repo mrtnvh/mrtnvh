@@ -94,14 +94,21 @@ jobs:
 
     needs: test
 
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
-
     steps:
       - uses: actions/checkout@v2
 
       - name: Upload to Vercel (Preview)
         uses: amondnet/vercel-action@v20
-        if: github.ref != 'refs/heads/main'
+        if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/develop'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+
+      - name: Upload to Vercel (Staging)
+        uses: amondnet/vercel-action@v20
+        if: github.ref == 'refs/heads/develop'
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
