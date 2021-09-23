@@ -22,8 +22,13 @@ const isProd = import.meta.env.NODE_ENV === 'production'
 		<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
 		{ isProd && `
-			<script defer data-domain="mrtnvh.com" src="/js/stats"></script>
 			<script>
+				const statsScript = document.createElement( 'script' );
+				statsScript.setAttribute( 'src', '/js/stats' );
+				statsScript.setAttribute( 'defer', true );
+				statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
+				document.body.appendChild( statsScript );
+
 				if ('serviceWorker' in navigator) {
 					window.addEventListener('load', () => {
 						navigator.serviceWorker.register('/sw.js');
