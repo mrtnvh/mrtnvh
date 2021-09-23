@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import { globby } from "globby";
 import fs from "fs-extra";
 

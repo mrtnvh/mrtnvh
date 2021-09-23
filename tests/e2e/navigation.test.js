@@ -16,8 +16,6 @@ const links = {
 	linkedin: "https://www.linkedin.com/in/mrtnvh/",
 };
 
-jest.retryTimes(3);
-
 describe("Navigation", () => {
 	beforeEach(async () => {
 		await page.goto(getUrl("/"));
@@ -51,7 +49,7 @@ describe("Navigation", () => {
 				await $link.click();
 
 				if (to.includes("http")) {
-					await page.waitForTimeout(1000);
+					await page.waitForTimeout(2000);
 					const tabs = await browser.pages();
 					const latestTabIndex = tabs.length - 1;
 					const url = await tabs[latestTabIndex].url();

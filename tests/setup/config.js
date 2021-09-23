@@ -4,8 +4,15 @@ const puppeteer = require("puppeteer");
 
 module.exports = {
 	getPages() {
+		const sitemapFileName = fs
+			.readdirSync(`dist`)
+			.reduce(
+				(acc, fileName) =>
+					fileName.includes("sitemap") ? fileName : acc,
+				"",
+			);
 		const sitemap = fs.readFileSync(
-			`${process.cwd()}/dist/sitemap.xml`,
+			`${process.cwd()}/dist/${sitemapFileName}`,
 			"utf-8",
 		);
 		const sitemapJson = parser.parse(sitemap);

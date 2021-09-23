@@ -3,7 +3,7 @@ const lighthouse = require("lighthouse");
 const lighthouseMobileConfig = require("lighthouse/lighthouse-core/config/lr-mobile-config");
 const lighthouseDesktopConfig = require("lighthouse/lighthouse-core/config/lr-mobile-config");
 
-const threshold = 0.6;
+const threshold = 0.9;
 
 const { getPages } = require("../setup/config");
 const { getUrl, customSnapshotIdentifier } = require("../setup/utils");
@@ -12,8 +12,6 @@ const ligthouseConfigs = {
 	mobile: lighthouseMobileConfig,
 	desktop: lighthouseDesktopConfig,
 };
-
-// jest.retryTimes(3);
 
 describe("Lighthouse", () => {
 	describe.each(getPages())("%s", (path) => {

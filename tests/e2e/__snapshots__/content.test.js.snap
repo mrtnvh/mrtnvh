@@ -111,14 +111,16 @@ Object {
                       "source": Object {
                         "@_class": "",
                         "@_sizes": "1px",
+                        "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
                         "@_type": "image/webp",
                         "img": Object {
                           "@_alt": "ROYCE",
-                          "@_class": "image fade fade-active",
+                          "@_class": "image",
                           "@_height": "900",
                           "@_loading": "lazy",
                           "@_sizes": "1px",
                           "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
+                          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
                           "@_width": "1600",
                         },
                       },
@@ -144,14 +146,16 @@ Object {
                   "source": Object {
                     "@_class": "",
                     "@_sizes": "1px",
+                    "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
                     "@_type": "image/webp",
                     "img": Object {
                       "@_alt": "ISAAC",
-                      "@_class": "image fade fade-active",
+                      "@_class": "image",
                       "@_height": "900",
                       "@_loading": "lazy",
                       "@_sizes": "1px",
                       "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
+                      "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
                       "@_width": "1600",
                     },
                   },
@@ -181,251 +185,248 @@ Object {
           "source": Object {
             "@_class": "",
             "@_sizes": "1px",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871092/mrtnvh.com/portrait.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871092/mrtnvh.com/portrait.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871092/mrtnvh.com/portrait.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871092/mrtnvh.com/portrait.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871092/mrtnvh.com/portrait.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871092/mrtnvh.com/portrait.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871092/mrtnvh.com/portrait.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871092/mrtnvh.com/portrait.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871092/mrtnvh.com/portrait.jpg 2400w",
             "@_type": "image/webp",
             "img": Object {
               "@_alt": "About",
-              "@_class": "image fade fade-active",
+              "@_class": "image",
               "@_height": "800",
               "@_loading": "lazy",
               "@_sizes": "1px",
               "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871092/mrtnvh.com/portrait.jpg",
+              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871092/mrtnvh.com/portrait.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871092/mrtnvh.com/portrait.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871092/mrtnvh.com/portrait.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871092/mrtnvh.com/portrait.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871092/mrtnvh.com/portrait.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871092/mrtnvh.com/portrait.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871092/mrtnvh.com/portrait.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871092/mrtnvh.com/portrait.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871092/mrtnvh.com/portrait.jpg 2400w",
               "@_width": "800",
             },
           },
         },
         "section": Object {
           "@_class": "body",
-          "link": Object {
-            "@_href": "/_astro/about/index-4lI2E.css",
-            "@_rel": "stylesheet",
-            "@_type": "text/css",
-            "div": Array [
-              Object {
-                "@_class": "column-lg-2 column-xxl-3 mb-ggy",
-                "p": Array [
-                  "I’m a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I’m incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.",
-                  Object {
-                    "#text": "I have a profound love for. In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies inrock out the local and non-local watering holes from time to time.",
-                    "a": Array [
-                      Object {
-                        "#text": "loud and emotive music",
-                        "@_href": "https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI",
-                      },
-                      Object {
-                        "#text": "ROYCE",
-                        "@_href": "http://roycetheband.com",
-                      },
+          "div": Array [
+            Object {
+              "@_class": "column-lg-2 column-xxl-3 mb-ggy",
+              "p": Array [
+                "I’m a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I’m incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.",
+                Object {
+                  "#text": "I have a profound love for. In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies inrock out the local and non-local watering holes from time to time.",
+                  "a": Array [
+                    Object {
+                      "#text": "loud and emotive music",
+                      "@_href": "https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI",
+                    },
+                    Object {
+                      "#text": "ROYCE",
+                      "@_href": "http://roycetheband.com",
+                    },
+                  ],
+                },
+                Object {
+                  "#text": "I have a, specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.",
+                  "a": Object {
+                    "#text": "Professional Bachelor Multimedia and Communication Technology",
+                    "@_href": "https://www.kdg.be/multimedia-creative-technologies",
+                  },
+                },
+                "All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.",
+              ],
+            },
+            Object {
+              "@_class": "column-lg-2",
+              "div": Array [
+                Object {
+                  "@_class": "break-inside-avoid mb-ggy",
+                  "h2": Object {
+                    "#text": "Ambition",
+                    "@_id": "ambition",
+                  },
+                  "p": "I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.",
+                },
+                Object {
+                  "@_class": "break-inside-avoid mb-ggy",
+                  "h2": Object {
+                    "#text": "Likes",
+                    "@_id": "likes",
+                  },
+                  "ul": Object {
+                    "li": Array [
+                      "Isomorphic Web Applications",
+                      "Offline first",
+                      "Component-based development",
+                      "Automating tools",
+                      "Well-documented &amp; tested projects",
+                      "Well-grounded arguments",
+                      "Open, transparent but time-appropriate and concise communication",
+                      "Dad jokes",
                     ],
                   },
-                  Object {
-                    "#text": "I have a, specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time.",
-                    "a": Object {
-                      "#text": "Professional Bachelor Multimedia and Communication Technology",
-                      "@_href": "https://www.kdg.be/en/education/study-programmes-dutch/multimedia-and-communication-technology/multimedia-technology",
-                    },
-                  },
-                  "All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.",
-                ],
-              },
-              Object {
-                "@_class": "column-lg-2",
-                "div": Array [
-                  Object {
-                    "@_class": "break-inside-avoid mb-ggy",
-                    "h2": Object {
-                      "#text": "Ambition",
-                      "@_id": "ambition",
-                    },
-                    "p": "I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.",
-                  },
-                  Object {
-                    "@_class": "break-inside-avoid mb-ggy",
-                    "h2": Object {
-                      "#text": "Likes",
-                      "@_id": "likes",
-                    },
-                    "ul": Object {
-                      "li": Array [
-                        "Isomorphic Web Applications",
-                        "Offline first",
-                        "Component-based development",
-                        "Automating tools",
-                        "Well-documented &amp; tested projects",
-                        "Well-grounded arguments",
-                        "Open, transparent but time-appropriate and concise communication",
-                        "Dad jokes",
-                      ],
-                    },
-                  },
-                ],
-              },
-            ],
-            "h2": Object {
-              "#text": "Skills",
-              "@_id": "skills",
+                },
+              ],
             },
-            "table": Object {
-              "@_class": "mb-ggy",
-              "tbody": Object {
-                "tr": Object {
-                  "td": Array [
-                    "Web",
-                    Object {
-                      "#text": "Offline &amp; mobile first",
-                      "@_colspan": "2",
+          ],
+          "h2": Object {
+            "#text": "Skills",
+            "@_id": "skills",
+          },
+          "table": Object {
+            "@_class": "mb-ggy",
+            "tbody": Object {
+              "tr": Object {
+                "td": Array [
+                  "Web",
+                  Object {
+                    "#text": "Offline &amp; mobile first",
+                    "@_colspan": "2",
+                    "br": Object {
+                      "#text": "a11y",
                       "br": Object {
-                        "#text": "a11y",
-                        "br": Object {
-                          "#text": "Progressive Web Apps",
-                          "br": "OpenAPI",
+                        "#text": "Progressive Web Apps",
+                        "br": "OpenAPI",
+                      },
+                      "tr": Array [
+                        Object {
+                          "td": Array [
+                            "HTML",
+                            Object {
+                              "#text": "Semantics",
+                              "@_colspan": "2",
+                            },
+                          ],
                         },
-                        "tr": Array [
-                          Object {
-                            "td": Array [
-                              "HTML",
-                              Object {
-                                "#text": "Semantics",
-                                "@_colspan": "2",
-                              },
-                            ],
-                          },
-                          Object {
-                            "td": Array [
-                              "JavaScript",
-                              Object {
-                                "@_colspan": "2",
-                                "div": Object {
-                                  "#text": "Node",
-                                  "@_class": "column-lg-2",
+                        Object {
+                          "td": Array [
+                            "JavaScript",
+                            Object {
+                              "@_colspan": "2",
+                              "div": Object {
+                                "#text": "Node",
+                                "@_class": "column-lg-2",
+                                "br": Object {
+                                  "#text": "ES20...",
                                   "br": Object {
-                                    "#text": "ES20...",
+                                    "#text": "Typescript",
                                     "br": Object {
-                                      "#text": "Typescript",
+                                      "#text": "React",
                                       "br": Object {
-                                        "#text": "React",
+                                        "#text": "Vue",
                                         "br": Object {
-                                          "#text": "Vue",
+                                          "#text": "Web- &amp; service workers",
                                           "br": Object {
-                                            "#text": "Web- &amp; service workers",
-                                            "br": Object {
-                                              "#text": "Testing (Unit to e2e)",
-                                              "br": "Isomorphic web applications",
-                                            },
+                                            "#text": "Testing (Unit to e2e)",
+                                            "br": "Isomorphic web applications",
                                           },
-                                          "tr": Object {
-                                            "td": Array [
-                                              "CSS",
-                                              Object {
-                                                "@_colspan": "2",
-                                                "div": Object {
-                                                  "#text": "Grid",
-                                                  "@_class": "column-lg-2",
+                                        },
+                                        "tr": Object {
+                                          "td": Array [
+                                            "CSS",
+                                            Object {
+                                              "@_colspan": "2",
+                                              "div": Object {
+                                                "#text": "Grid",
+                                                "@_class": "column-lg-2",
+                                                "br": Object {
+                                                  "#text": "Custom properties",
                                                   "br": Object {
-                                                    "#text": "Custom properties",
+                                                    "#text": "CSS-in-JS",
                                                     "br": Object {
-                                                      "#text": "CSS-in-JS",
-                                                      "br": Object {
-                                                        "#text": "SCSS",
-                                                        "br": "PostCSS",
-                                                      },
-                                                    },
-                                                    "tr": Object {
-                                                      "td": Array [
-                                                        Object {
-                                                          "#text": "Experience with",
-                                                          "@_class": "whitespace-nowrap",
-                                                        },
-                                                        Object {
-                                                          "@_colspan": "2",
-                                                          "ul": Object {
-                                                            "@_class": "column-lg-2 list-unstyled",
-                                                            "li": Array [
-                                                              "Laravel",
-                                                              "Git",
-                                                              "Docker",
-                                                              "NPM",
-                                                              "ESLint",
-                                                              "Stylelint",
-                                                              "Prettier",
-                                                              "EditorConfig",
-                                                              "Webpack",
-                                                              "Grunt",
-                                                              "Gulp",
-                                                              "EF Core",
-                                                              "Redux",
-                                                              "Material-UI",
-                                                              "Bootstrap",
-                                                              "SQL",
-                                                              "IIS",
-                                                              "...",
-                                                            ],
-                                                          },
-                                                        },
-                                                      ],
+                                                      "#text": "SCSS",
+                                                      "br": "PostCSS",
                                                     },
                                                   },
-                                                },
-                                                "h2": Object {
-                                                  "#text": "Physical languages",
-                                                  "@_id": "physical-languages",
-                                                },
-                                                "table": Object {
-                                                  "tbody": Object {
-                                                    "tr": Object {
-                                                      "td": Object {
-                                                        "#text": "Dutch",
-                                                        "br": Object {
-                                                          "em": "Native tongue",
-                                                        },
-                                                        "td": Array [
-                                                          "Very good",
-                                                          "Very good",
-                                                        ],
+                                                  "tr": Object {
+                                                    "td": Array [
+                                                      Object {
+                                                        "#text": "Experience with",
+                                                        "@_class": "whitespace-nowrap",
                                                       },
-                                                      "tr": Array [
-                                                        Object {
-                                                          "td": Array [
-                                                            "English",
-                                                            "Good",
-                                                            "Good",
+                                                      Object {
+                                                        "@_colspan": "2",
+                                                        "ul": Object {
+                                                          "@_class": "column-lg-2 list-unstyled",
+                                                          "li": Array [
+                                                            "Laravel",
+                                                            "Git",
+                                                            "Docker",
+                                                            "NPM",
+                                                            "ESLint",
+                                                            "Stylelint",
+                                                            "Prettier",
+                                                            "EditorConfig",
+                                                            "Webpack",
+                                                            "Grunt",
+                                                            "Gulp",
+                                                            "EF Core",
+                                                            "Redux",
+                                                            "Material-UI",
+                                                            "Bootstrap",
+                                                            "SQL",
+                                                            "IIS",
+                                                            "...",
                                                           ],
                                                         },
-                                                        Object {
-                                                          "td": Array [
-                                                            "French",
-                                                            "Basic",
-                                                            "Basic",
-                                                          ],
-                                                        },
-                                                      ],
-                                                    },
-                                                  },
-                                                  "thead": Object {
-                                                    "tr": Object {
-                                                      "th": Array [
-                                                        "Language",
-                                                        "Written",
-                                                        "Spoken",
-                                                      ],
-                                                    },
+                                                      },
+                                                    ],
                                                   },
                                                 },
                                               },
-                                            ],
-                                          },
+                                              "h2": Object {
+                                                "#text": "Physical languages",
+                                                "@_id": "physical-languages",
+                                              },
+                                              "table": Object {
+                                                "tbody": Object {
+                                                  "tr": Object {
+                                                    "td": Object {
+                                                      "#text": "Dutch",
+                                                      "br": Object {
+                                                        "em": "Native tongue",
+                                                      },
+                                                      "td": Array [
+                                                        "Very good",
+                                                        "Very good",
+                                                      ],
+                                                    },
+                                                    "tr": Array [
+                                                      Object {
+                                                        "td": Array [
+                                                          "English",
+                                                          "Good",
+                                                          "Good",
+                                                        ],
+                                                      },
+                                                      Object {
+                                                        "td": Array [
+                                                          "French",
+                                                          "Basic",
+                                                          "Basic",
+                                                        ],
+                                                      },
+                                                    ],
+                                                  },
+                                                },
+                                                "thead": Object {
+                                                  "tr": Object {
+                                                    "th": Array [
+                                                      "Language",
+                                                      "Written",
+                                                      "Spoken",
+                                                    ],
+                                                  },
+                                                },
+                                              },
+                                            },
+                                          ],
                                         },
                                       },
                                     },
                                   },
                                 },
                               },
-                            ],
-                          },
-                        ],
-                      },
+                            },
+                          ],
+                        },
+                      ],
                     },
-                  ],
-                },
+                  },
+                ],
               },
             },
           },
@@ -442,207 +443,210 @@ Object {
 
 exports[`Content DOM snapshots /projects/ 1`] = `
 Object {
-  "meta": Object {
-    "@_content": "A selection of my current and previous projects. Work, musical and open source experiences",
-    "@_name": "description",
-    "section": Object {
-      "@_class": "container",
-      "div": Array [
-        Object {
-          "@_class": "header clear-inner-spacing",
-          "h2": Object {
-            "@_class": "title",
-            "small": Object {
-              "#text": "projects",
-              "@_class": "",
-            },
-            "span": Object {
-              "#text": "Current",
-              "@_class": "main outline",
-            },
-          },
-        },
-        Object {
-          "@_class": "grid ",
-          "article": Object {
+  "section": Object {
+    "@_class": "container",
+    "div": Array [
+      Object {
+        "@_class": "header clear-inner-spacing",
+        "h2": Object {
+          "@_class": "title",
+          "small": Object {
+            "#text": "projects",
             "@_class": "",
-            "a": Object {
-              "@_class": "reset link",
-              "@_href": "/projects/isaac",
-              "article": Object {
-                "@_class": "",
-                "a": Object {
-                  "@_class": "reset link",
-                  "@_href": "/projects/royce",
-                  "figure": Object {
-                    "@_class": "media",
-                    "picture": Object {
-                      "@_class": "",
-                      "div": Object {
-                        "@_class": "content",
-                        "h1": Object {
-                          "#text": "ROYCE",
-                          "@_class": "title outline",
-                        },
-                        "h2": Object {
-                          "#text": "Metal",
-                          "@_class": "subtitle",
-                        },
-                      },
-                      "source": Object {
-                        "@_class": "",
-                        "@_sizes": "1px",
-                        "@_type": "image/webp",
-                        "img": Object {
-                          "@_alt": "ROYCE",
-                          "@_class": "image fade fade-active",
-                          "@_height": "900",
-                          "@_loading": "lazy",
-                          "@_sizes": "1px",
-                          "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
-                          "@_width": "1600",
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-              "figure": Object {
-                "@_class": "media",
-                "picture": Object {
-                  "@_class": "",
-                  "div": Object {
-                    "@_class": "content",
-                    "h1": Object {
-                      "#text": "ISAAC",
-                      "@_class": "title outline",
-                    },
-                    "h2": Object {
-                      "#text": "Fullservice Digital Agency",
-                      "@_class": "subtitle",
-                    },
-                  },
-                  "source": Object {
+          },
+          "span": Object {
+            "#text": "Current",
+            "@_class": "main outline",
+          },
+        },
+      },
+      Object {
+        "@_class": "grid ",
+        "article": Object {
+          "@_class": "",
+          "a": Object {
+            "@_class": "reset link",
+            "@_href": "/projects/isaac",
+            "article": Object {
+              "@_class": "",
+              "a": Object {
+                "@_class": "reset link",
+                "@_href": "/projects/royce",
+                "figure": Object {
+                  "@_class": "media",
+                  "picture": Object {
                     "@_class": "",
-                    "@_sizes": "1px",
-                    "@_type": "image/webp",
-                    "img": Object {
-                      "@_alt": "ISAAC",
-                      "@_class": "image fade fade-active",
-                      "@_height": "900",
-                      "@_loading": "lazy",
+                    "div": Object {
+                      "@_class": "content",
+                      "h1": Object {
+                        "#text": "ROYCE",
+                        "@_class": "title outline",
+                      },
+                      "h2": Object {
+                        "#text": "Metal",
+                        "@_class": "subtitle",
+                      },
+                    },
+                    "source": Object {
+                      "@_class": "",
                       "@_sizes": "1px",
-                      "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
-                      "@_width": "1600",
+                      "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
+                      "@_type": "image/webp",
+                      "img": Object {
+                        "@_alt": "ROYCE",
+                        "@_class": "image",
+                        "@_height": "900",
+                        "@_loading": "lazy",
+                        "@_sizes": "1px",
+                        "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
+                        "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
+                        "@_width": "1600",
+                      },
                     },
                   },
                 },
               },
-              "section": Object {
-                "@_class": "container",
-                "div": Array [
-                  Object {
-                    "@_class": "header clear-inner-spacing",
-                    "h2": Object {
-                      "@_class": "title",
-                      "small": Object {
-                        "#text": "projects",
-                        "@_class": "",
-                      },
-                      "span": Object {
-                        "#text": "Previous",
-                        "@_class": "main outline",
-                      },
-                    },
+            },
+            "figure": Object {
+              "@_class": "media",
+              "picture": Object {
+                "@_class": "",
+                "div": Object {
+                  "@_class": "content",
+                  "h1": Object {
+                    "#text": "ISAAC",
+                    "@_class": "title outline",
                   },
-                  Object {
-                    "@_class": "grid ",
-                    "article": Object {
-                      "@_class": "",
-                      "a": Object {
-                        "@_class": "reset link",
-                        "@_href": "/projects/rockxxl",
-                        "article": Object {
-                          "@_class": "",
-                          "a": Object {
-                            "@_class": "reset link",
-                            "@_href": "/projects/pixeo",
-                            "figure": Object {
-                              "@_class": "media",
-                              "picture": Object {
-                                "@_class": "",
-                                "div": Object {
-                                  "@_class": "content",
-                                  "h1": Object {
-                                    "#text": "Pixeo",
-                                    "@_class": "title outline",
-                                  },
-                                  "h2": Object {
-                                    "#text": "Web agency",
-                                    "@_class": "subtitle",
-                                  },
-                                },
-                                "source": Object {
-                                  "@_class": "",
-                                  "@_sizes": "1px",
-                                  "@_type": "image/webp",
-                                  "img": Object {
-                                    "@_alt": "Pixeo",
-                                    "@_class": "image fade fade-active",
-                                    "@_height": "900",
-                                    "@_loading": "lazy",
-                                    "@_sizes": "1px",
-                                    "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
-                                    "@_width": "1600",
-                                  },
-                                },
-                              },
-                            },
-                          },
-                        },
-                        "figure": Object {
-                          "@_class": "media",
-                          "picture": Object {
-                            "@_class": "",
-                            "div": Object {
-                              "@_class": "content",
-                              "h1": Object {
-                                "#text": "RockXXL",
-                                "@_class": "title outline",
-                              },
-                              "h2": Object {
-                                "#text": "Loud Noise Community",
-                                "@_class": "subtitle",
-                              },
-                            },
-                            "source": Object {
-                              "@_class": "",
-                              "@_sizes": "1px",
-                              "@_type": "image/webp",
-                              "img": Object {
-                                "@_alt": "RockXXL",
-                                "@_class": "image fade fade-active",
-                                "@_height": "900",
-                                "@_loading": "lazy",
-                                "@_sizes": "1px",
-                                "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
-                                "@_width": "1600",
-                              },
-                            },
-                          },
-                        },
-                      },
-                    },
+                  "h2": Object {
+                    "#text": "Fullservice Digital Agency",
+                    "@_class": "subtitle",
                   },
-                ],
+                },
+                "source": Object {
+                  "@_class": "",
+                  "@_sizes": "1px",
+                  "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
+                  "@_type": "image/webp",
+                  "img": Object {
+                    "@_alt": "ISAAC",
+                    "@_class": "image",
+                    "@_height": "900",
+                    "@_loading": "lazy",
+                    "@_sizes": "1px",
+                    "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
+                    "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
+                    "@_width": "1600",
+                  },
+                },
               },
+            },
+            "section": Object {
+              "@_class": "container",
+              "div": Array [
+                Object {
+                  "@_class": "header clear-inner-spacing",
+                  "h2": Object {
+                    "@_class": "title",
+                    "small": Object {
+                      "#text": "projects",
+                      "@_class": "",
+                    },
+                    "span": Object {
+                      "#text": "Previous",
+                      "@_class": "main outline",
+                    },
+                  },
+                },
+                Object {
+                  "@_class": "grid ",
+                  "article": Object {
+                    "@_class": "",
+                    "a": Object {
+                      "@_class": "reset link",
+                      "@_href": "/projects/rockxxl",
+                      "article": Object {
+                        "@_class": "",
+                        "a": Object {
+                          "@_class": "reset link",
+                          "@_href": "/projects/pixeo",
+                          "figure": Object {
+                            "@_class": "media",
+                            "picture": Object {
+                              "@_class": "",
+                              "div": Object {
+                                "@_class": "content",
+                                "h1": Object {
+                                  "#text": "Pixeo",
+                                  "@_class": "title outline",
+                                },
+                                "h2": Object {
+                                  "#text": "Web agency",
+                                  "@_class": "subtitle",
+                                },
+                              },
+                              "source": Object {
+                                "@_class": "",
+                                "@_sizes": "1px",
+                                "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
+                                "@_type": "image/webp",
+                                "img": Object {
+                                  "@_alt": "Pixeo",
+                                  "@_class": "image",
+                                  "@_height": "900",
+                                  "@_loading": "lazy",
+                                  "@_sizes": "1px",
+                                  "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
+                                  "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
+                                  "@_width": "1600",
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      "figure": Object {
+                        "@_class": "media",
+                        "picture": Object {
+                          "@_class": "",
+                          "div": Object {
+                            "@_class": "content",
+                            "h1": Object {
+                              "#text": "RockXXL",
+                              "@_class": "title outline",
+                            },
+                            "h2": Object {
+                              "#text": "Loud Noise Community",
+                              "@_class": "subtitle",
+                            },
+                          },
+                          "source": Object {
+                            "@_class": "",
+                            "@_sizes": "1px",
+                            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
+                            "@_type": "image/webp",
+                            "img": Object {
+                              "@_alt": "RockXXL",
+                              "@_class": "image",
+                              "@_height": "900",
+                              "@_loading": "lazy",
+                              "@_sizes": "1px",
+                              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
+                              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
+                              "@_width": "1600",
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              ],
             },
           },
         },
-      ],
-    },
+      },
+    ],
   },
-  "title": "Projects",
 }
 `;
 
@@ -730,14 +734,16 @@ Object {
         "source": Object {
           "@_class": "",
           "@_sizes": "1px",
+          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
           "@_type": "image/webp",
           "img": Object {
             "@_alt": "ISAAC",
-            "@_class": "image fade fade-active",
+            "@_class": "image",
             "@_height": "900",
             "@_loading": "lazy",
             "@_sizes": "1px",
             "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
             "@_width": "1600",
           },
         },
@@ -904,14 +910,16 @@ Object {
         "source": Object {
           "@_class": "",
           "@_sizes": "1px",
+          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
           "@_type": "image/webp",
           "img": Object {
             "@_alt": "Pixeo",
-            "@_class": "image fade fade-active",
+            "@_class": "image",
             "@_height": "900",
             "@_loading": "lazy",
             "@_sizes": "1px",
             "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
             "@_width": "1600",
           },
         },
@@ -995,14 +1003,16 @@ Object {
         "source": Object {
           "@_class": "",
           "@_sizes": "1px",
+          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
           "@_type": "image/webp",
           "img": Object {
             "@_alt": "RockXXL",
-            "@_class": "image fade fade-active",
+            "@_class": "image",
             "@_height": "900",
             "@_loading": "lazy",
             "@_sizes": "1px",
             "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
             "@_width": "1600",
           },
         },
@@ -1074,14 +1084,16 @@ Object {
         "source": Object {
           "@_class": "",
           "@_sizes": "1px",
+          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
           "@_type": "image/webp",
           "img": Object {
             "@_alt": "ROYCE",
-            "@_class": "image fade fade-active",
+            "@_class": "image",
             "@_height": "900",
             "@_loading": "lazy",
             "@_sizes": "1px",
             "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
             "@_width": "1600",
           },
         },
@@ -1107,176 +1119,179 @@ Object {
 
 exports[`Content DOM snapshots /talks/ 1`] = `
 Object {
-  "meta": Object {
-    "@_content": "Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
-    "@_name": "description",
+  "div": Object {
+    "@_class": "container",
     "div": Object {
-      "@_class": "container",
-      "div": Object {
-        "@_class": "grid grid--large",
-        "article": Object {
-          "@_class": "",
-          "a": Object {
-            "@_class": "reset link",
-            "@_href": "/talks/devcast-english-june-2021",
-            "article": Object {
-              "@_class": "",
-              "a": Object {
-                "@_class": "reset link",
-                "@_href": "/talks/a-technical-look-at-openapi",
-                "article": Object {
-                  "@_class": "",
-                  "a": Object {
-                    "@_class": "reset link",
-                    "@_href": "https://youtu.be/lLfgrt-_8sE",
-                    "@_rel": "nooopener",
-                    "@_target": "_blank",
-                    "article": Object {
-                      "@_class": "",
-                      "a": Object {
-                        "@_class": "reset link",
-                        "@_href": "https://mot.mrtnvh.com",
-                        "@_rel": "nooopener",
-                        "@_target": "_blank",
-                        "figure": Object {
-                          "@_class": "media",
-                          "picture": Object {
-                            "@_class": "",
-                            "div": Object {
-                              "@_class": "content",
-                              "h1": Object {
-                                "#text": "OpenAPI + Testing",
-                                "@_class": "title outline",
-                              },
-                              "h2": Object {
-                                "#text": "Ministry of Testing Eindhoven",
-                                "@_class": "subtitle",
-                              },
-                            },
-                            "source": Object {
-                              "@_class": "",
-                              "@_sizes": "1px",
-                              "@_type": "image/webp",
-                              "img": Object {
-                                "@_alt": "OpenAPI + Testing",
-                                "@_class": "image fade fade-active",
-                                "@_height": "900",
-                                "@_loading": "lazy",
-                                "@_sizes": "1px",
-                                "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
-                                "@_width": "1600",
-                              },
-                            },
-                          },
-                        },
-                      },
-                    },
-                    "figure": Object {
-                      "@_class": "media",
-                      "picture": Object {
-                        "@_class": "",
-                        "div": Object {
-                          "@_class": "content",
-                          "h1": Object {
-                            "#text": "Why OpenAPI",
-                            "@_class": "title outline",
-                          },
-                          "h2": Object {
-                            "#text": "Dutch version - Tech Tuesdays",
-                            "@_class": "subtitle",
-                          },
-                        },
-                        "source": Object {
+      "@_class": "grid grid--large",
+      "article": Object {
+        "@_class": "",
+        "a": Object {
+          "@_class": "reset link",
+          "@_href": "/talks/devcast-english-june-2021",
+          "article": Object {
+            "@_class": "",
+            "a": Object {
+              "@_class": "reset link",
+              "@_href": "/talks/a-technical-look-at-openapi",
+              "article": Object {
+                "@_class": "",
+                "a": Object {
+                  "@_class": "reset link",
+                  "@_href": "https://youtu.be/lLfgrt-_8sE",
+                  "@_rel": "nooopener",
+                  "@_target": "_blank",
+                  "article": Object {
+                    "@_class": "",
+                    "a": Object {
+                      "@_class": "reset link",
+                      "@_href": "https://mot.mrtnvh.com",
+                      "@_rel": "nooopener",
+                      "@_target": "_blank",
+                      "figure": Object {
+                        "@_class": "media",
+                        "picture": Object {
                           "@_class": "",
-                          "@_sizes": "1px",
-                          "@_type": "image/webp",
-                          "img": Object {
-                            "@_alt": "Why OpenAPI",
-                            "@_class": "image fade fade-active",
-                            "@_height": "900",
-                            "@_loading": "lazy",
+                          "div": Object {
+                            "@_class": "content",
+                            "h1": Object {
+                              "#text": "OpenAPI + Testing",
+                              "@_class": "title outline",
+                            },
+                            "h2": Object {
+                              "#text": "Ministry of Testing Eindhoven",
+                              "@_class": "subtitle",
+                            },
+                          },
+                          "source": Object {
+                            "@_class": "",
                             "@_sizes": "1px",
-                            "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
-                            "@_width": "1600",
+                            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
+                            "@_type": "image/webp",
+                            "img": Object {
+                              "@_alt": "OpenAPI + Testing",
+                              "@_class": "image",
+                              "@_height": "900",
+                              "@_loading": "lazy",
+                              "@_sizes": "1px",
+                              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
+                              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
+                              "@_width": "1600",
+                            },
                           },
                         },
                       },
                     },
                   },
-                },
-                "figure": Object {
-                  "@_class": "media",
-                  "picture": Object {
-                    "@_class": "",
-                    "div": Object {
-                      "@_class": "content",
-                      "h1": Object {
-                        "#text": "A Technical Look at OpenAPI",
-                        "@_class": "title outline",
-                      },
-                      "h2": Object {
-                        "@_class": "subtitle",
-                      },
-                    },
-                    "source": Object {
+                  "figure": Object {
+                    "@_class": "media",
+                    "picture": Object {
                       "@_class": "",
-                      "@_sizes": "1px",
-                      "@_type": "image/webp",
-                      "img": Object {
-                        "@_alt": "A Technical Look at OpenAPI",
-                        "@_class": "image fade fade-active",
-                        "@_height": "900",
-                        "@_loading": "lazy",
+                      "div": Object {
+                        "@_class": "content",
+                        "h1": Object {
+                          "#text": "Why OpenAPI",
+                          "@_class": "title outline",
+                        },
+                        "h2": Object {
+                          "#text": "Dutch version - Tech Tuesdays",
+                          "@_class": "subtitle",
+                        },
+                      },
+                      "source": Object {
+                        "@_class": "",
                         "@_sizes": "1px",
-                        "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg",
-                        "@_width": "1600",
+                        "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
+                        "@_type": "image/webp",
+                        "img": Object {
+                          "@_alt": "Why OpenAPI",
+                          "@_class": "image",
+                          "@_height": "900",
+                          "@_loading": "lazy",
+                          "@_sizes": "1px",
+                          "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
+                          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
+                          "@_width": "1600",
+                        },
                       },
                     },
                   },
                 },
               },
-            },
-            "figure": Object {
-              "@_class": "media",
-              "picture": Object {
-                "@_class": "",
-                "div": Object {
-                  "@_class": "content",
-                  "h1": Object {
-                    "#text": "Container Queries",
-                    "@_class": "title outline",
+              "figure": Object {
+                "@_class": "media",
+                "picture": Object {
+                  "@_class": "",
+                  "div": Object {
+                    "@_class": "content",
+                    "h1": Object {
+                      "#text": "A Technical Look at OpenAPI",
+                      "@_class": "title outline",
+                    },
+                    "h2": Object {
+                      "@_class": "subtitle",
+                    },
                   },
-                  "h2": Object {
-                    "#text": "The next step towards a truly modular CSS",
-                    "@_class": "subtitle",
+                  "source": Object {
+                    "@_class": "",
+                    "@_sizes": "1px",
+                    "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
+                    "@_type": "image/webp",
+                    "img": Object {
+                      "@_alt": "A Technical Look at OpenAPI",
+                      "@_class": "image",
+                      "@_height": "900",
+                      "@_loading": "lazy",
+                      "@_sizes": "1px",
+                      "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg",
+                      "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
+                      "@_width": "1600",
+                    },
                   },
                 },
-                "source": Object {
-                  "@_class": "",
+              },
+            },
+          },
+          "figure": Object {
+            "@_class": "media",
+            "picture": Object {
+              "@_class": "",
+              "div": Object {
+                "@_class": "content",
+                "h1": Object {
+                  "#text": "Container Queries",
+                  "@_class": "title outline",
+                },
+                "h2": Object {
+                  "#text": "The next step towards a truly modular CSS",
+                  "@_class": "subtitle",
+                },
+              },
+              "source": Object {
+                "@_class": "",
+                "@_sizes": "1px",
+                "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
+                "@_type": "image/webp",
+                "img": Object {
+                  "@_alt": "Container Queries",
+                  "@_class": "image",
+                  "@_height": "900",
+                  "@_loading": "lazy",
                   "@_sizes": "1px",
-                  "@_type": "image/webp",
-                  "img": Object {
-                    "@_alt": "Container Queries",
-                    "@_class": "image fade fade-active",
-                    "@_height": "900",
-                    "@_loading": "lazy",
-                    "@_sizes": "1px",
-                    "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1627588090/mrtnvh.com/devcast-juni-2021.jpg",
-                    "@_width": "1600",
-                  },
+                  "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1627588090/mrtnvh.com/devcast-juni-2021.jpg",
+                  "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
+                  "@_width": "1600",
                 },
               },
             },
           },
         },
       },
-      "h1": Object {
-        "#text": "Talks",
-        "@_class": "title outline",
-      },
+    },
+    "h1": Object {
+      "#text": "Talks",
+      "@_class": "title outline",
     },
   },
-  "title": "Talks",
 }
 `;
 
@@ -1369,14 +1384,16 @@ Object {
           "source": Object {
             "@_class": "",
             "@_sizes": "1px",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2400w",
             "@_type": "image/webp",
             "img": Object {
               "@_alt": "A Technical Look at OpenAPI",
-              "@_class": "image fade fade-active",
+              "@_class": "image",
               "@_height": "900",
               "@_loading": "lazy",
               "@_sizes": "1px",
               "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg",
+              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2400w",
               "@_width": "1600",
             },
           },
@@ -1470,14 +1487,16 @@ Object {
           "source": Object {
             "@_class": "",
             "@_sizes": "1px",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2400w",
             "@_type": "image/webp",
             "img": Object {
               "@_alt": "Container Queries",
-              "@_class": "image fade fade-active",
+              "@_class": "image",
               "@_height": "900",
               "@_loading": "lazy",
               "@_sizes": "1px",
               "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg",
+              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2400w",
               "@_width": "1600",
             },
           },
@@ -1525,14 +1544,16 @@ Object {
           "source": Object {
             "@_class": "",
             "@_sizes": "1px",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
             "@_type": "image/webp",
             "img": Object {
               "@_alt": "OpenAPI + Testing",
-              "@_class": "image fade fade-active",
+              "@_class": "image",
               "@_height": "900",
               "@_loading": "lazy",
               "@_sizes": "1px",
               "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
+              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
               "@_width": "1600",
             },
           },
@@ -1580,14 +1601,16 @@ Object {
           "source": Object {
             "@_class": "",
             "@_sizes": "1px",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
             "@_type": "image/webp",
             "img": Object {
               "@_alt": "Why OpenAPI",
-              "@_class": "image fade fade-active",
+              "@_class": "image",
               "@_height": "900",
               "@_loading": "lazy",
               "@_sizes": "1px",
               "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
+              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
               "@_width": "1600",
             },
           },

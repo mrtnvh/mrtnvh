@@ -18,7 +18,7 @@ describe.each(getPages())("%s", (path) => {
 					{ name: "prefers-color-scheme", value: "light" },
 				]);
 				await page.goto(getUrl(path));
-
+				await page.waitForSelector('img:not([sizes="1px"])');
 				await page.waitForTimeout(500);
 
 				const body = await page.$("body");
@@ -34,7 +34,7 @@ describe.each(getPages())("%s", (path) => {
 					allowSizeMismatch: true,
 				});
 			},
-			20 * 1000,
+			25 * 1000,
 		);
 	});
 });
