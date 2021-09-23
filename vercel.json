@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/js/stats.js",
+      "source": "/js/stats",
       "destination": "https://plausible.io/js/plausible.js"
     },
     {
