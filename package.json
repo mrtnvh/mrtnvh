@@ -59,7 +59,7 @@
     "get-port": "^5.1.1",
     "jest": "^27.2.2",
     "jest-circus": "^27.2.2",
-    "jest-dev-server": "^5.0.3",
+    "jest-dev-server": "^6.0.0",
     "jest-environment-puppeteer": "^5.0.4",
     "jest-expect-message": "^1.0.2",
     "jest-image-snapshot": "^4.5.1",
