@@ -5,7 +5,7 @@ import { replaceFilesContent, BUILD_DIRECTORY } from "./_utils.mjs";
 import pkg from "../../package.json";
 
 const source = "public/favicon.png";
-const iconOutPath = "";
+const iconOutPath = "/";
 
 const configuration = {
 	// Path for overriding default icons path. `string`
@@ -107,6 +107,9 @@ export default async () => {
 			return fs.outputFile(`${BUILD_DIRECTORY}/${name}`, contents);
 		}),
 	);
+
+	console.log(html);
+
 	await replaceFilesContent("**/*.html", async (content) => {
 		const splitAndJoinString = "</head>";
 		const [pre, post] = content.split(splitAndJoinString);
