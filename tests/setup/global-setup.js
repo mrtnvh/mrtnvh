@@ -4,7 +4,7 @@ const { port, browserTimeout } = require("./config");
 
 const setupApp = async () => {
 	await setupDevServer({
-		command: `http-server dist --port=${port}`,
+		command: `ws -z -d dist -p ${port}`,
 		port,
 		launchTimeout: browserTimeout,
 	});
