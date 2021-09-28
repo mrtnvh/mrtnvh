@@ -23,12 +23,6 @@ const isProd = import.meta.env.NODE_ENV === 'production'
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
 		{ isProd && `
 			<script>
-				const statsScript = document.createElement( 'script' );
-				statsScript.setAttribute( 'src', '/js/stats' );
-				statsScript.setAttribute( 'defer', true );
-				statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
-				document.body.appendChild( statsScript );
-
 				if ('serviceWorker' in navigator) {
 					window.addEventListener('load', () => {
 						navigator.serviceWorker.register('/sw.js');
@@ -50,6 +44,15 @@ const isProd = import.meta.env.NODE_ENV === 'production'
 			<Footer/>
 		</div>
 		<script type="module" async src="/js/main.js"></script>
+		{ isProd && `
+			<script>
+				const statsScript = document.createElement( 'script' );
+				statsScript.setAttribute( 'src', '/js/stats' );
+				statsScript.setAttribute( 'defer', true );
+				statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
+				document.body.appendChild( statsScript );
+			</script>
+		`}
 	</body>
 </html>
 
