@@ -8,7 +8,7 @@ export interface Props {
 	height: string;
 }
 
-const { alt, src: source, width, height } = Astro.props
+const { alt, src: source, width, height, loading } = Astro.props
 const { src, srcSet } = getSrcSet({ src: source });
 const { srcSet: srcSetWebp } = getSrcSet({ src: source, type: "webp" });
 ---
@@ -21,7 +21,7 @@ const { srcSet: srcSetWebp } = getSrcSet({ src: source, type: "webp" });
 		sizes="1px"
 		alt={alt}
 		class="image"
-		loading="lazy"
+		loading={loading}
 		width={width}
 		height={height}
 	/>
