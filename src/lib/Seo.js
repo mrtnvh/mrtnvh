@@ -1,4 +1,5 @@
 import urljoin from "url-join";
+import defaultsDeep from "lodash/defaultsDeep";
 import { getOgImage, getSrcSet } from "../components/Image/cloudinary";
 import pkg from "../../package.json";
 
@@ -15,13 +16,18 @@ const titleTemplateDefault = (titleChunk) => {
 		: titleDefault;
 };
 
-export default ({
-	siteUrl = pkg.homepage,
-	title = titleDefault,
-	titleTemplate = titleTemplateDefault,
-	description = descriptionDefault,
-	image,
-}) => {
+const defaultSeoOptions = {
+	siteUrl: pkg.homepage,
+	title: titleDefault,
+	titleTemplate: titleTemplateDefault,
+	description: descriptionDefault,
+};
+
+export default (options) => {
+	const { siteUrl, title, titleTemplate, description, image } = defaultsDeep(
+		options,
+		defaultSeoOptions,
+	);
 	const defaultOgImagePath = urljoin(siteUrl, "/og.png");
 	const imagePath = image ? getOgImage({ src: image }) : defaultOgImagePath;
 	const { srcSet: imageSrcSet } = getSrcSet({ src: image, type: "webp" });

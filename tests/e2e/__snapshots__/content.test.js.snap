@@ -247,6 +247,8 @@ exports[`Content DOM snapshots /projects/royce 1`] = `
 
 exports[`Content DOM snapshots /talks 1`] = `
 "<div class=\\"container\\" >
+				Frontend ♥︎ OpenAPI
+			</h1> <h2 class=\\"subtitle\\" >
 				Container Queries
 			</h1> <h2 class=\\"subtitle\\" >
 				A Technical Look at OpenAPI
@@ -269,4 +271,14 @@ exports[`Content DOM snapshots /talks/devcast-english-june-2021 1`] = `
 "<article href=\\"https://devcast-june-2021.mrtnvh.com/\\" target=\\"_blank\\" rel=\\"noopener\\">
 						https://devcast-june-2021.mrtnvh.com/
 					</a></td></tr> <!----> <tr >Modular, componentized frameworks and libraries are more popular than ever, but currently screen size is the only dimensional constraint to which a web design can adapt to. In this talk, Maarten will explain what Container Queries are and show you how each component can adapt its design to the dimensions of its container. Join us on our journey towards a more modular CSS.</p></div></div></article>"
+`;
+
+exports[`Content DOM snapshots /talks/frontend-loves-openapi 1`] = `
+"<article href=\\"https://frontend-loves-openapi.mrtnvh.com\\" target=\\"_blank\\" rel=\\"noopener\\">
+						https://frontend-loves-openapi.mrtnvh.com
+					</a></td></tr> <tr href=\\"https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo\\" target=\\"_blank\\" rel=\\"noopener\\">
+						https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo
+					</a></td></tr> <!----></table></aside> <figure >As a front end developer, building projects with RESTful API dependencies ain’t all sunshine and rainbows. Security implications, parallel development, time or budget restrictions for writing documentation, …, in an enterprise you might not always have the ability to rely on your RESTful API dependencies for development, let alone for an automated testing environment.</p>
+<p >The OpenAPI ecosystem offers us solutions in the form of virtually complete independence from a REST API during development and testing.</p>
+<p >Maarten will show you how your front-end project workflow can reap the benefits the OpenAPI ecosystem offers with battle-tested examples.</p></div></div></article>"
 `;
