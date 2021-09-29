@@ -1,7 +1,7 @@
 ---
 title: A Technical Look at OpenAPI
 slug: a-technical-look-at-openapi
-subtitle: 
+subtitle: Tech Fair Live
 description: Examples of how the OpenAPI specification can improve your Front End workflow
 thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg"
 datePublished: 20210430

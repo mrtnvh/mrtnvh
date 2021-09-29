@@ -7,27 +7,13 @@
 
 <script>
 import { format } from "date-fns";
+import Seo from "~/lib/Seo";
 import List from "~/components/List/List.vue";
 
 export default {
-	metaInfo() {
-		return {
-			title: "Talks",
-			meta: [
-				{
-					key: "description",
-					name: "description",
-					content:
-						"Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
-				},
-			],
-		};
-	},
-
 	components: {
 		List,
 	},
-
 	async asyncData({ $content }) {
 		const dateNow = format(new Date(), "yyyyMMdd");
 		const talks = await $content("talks")
@@ -35,6 +21,13 @@ export default {
 			.sortBy("datePublished", "desc")
 			.fetch();
 		return { talks };
+	},
+	head() {
+		return Seo({
+			title: "Talks",
+			description:
+				"Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
+		});
 	},
 };
 </script>

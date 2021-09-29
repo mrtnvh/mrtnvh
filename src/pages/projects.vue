@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import Seo from "~/lib/Seo";
 import Section from "~/components/Page/Section.vue";
 import List from "~/components/List/List.vue";
 
@@ -23,16 +24,12 @@ export default {
 		return { projects };
 	},
 
-	head: {
-		title: "Projects",
-		meta: [
-			{
-				key: "description",
-				name: "description",
-				content:
-					"A selection of my current and previous projects. Work, musical and open source experiences",
-			},
-		],
+	head() {
+		return Seo({
+			title: "Projects",
+			description:
+				"A selection of my current and previous projects. Work, musical and open source experiences",
+		});
 	},
 
 	computed: {
