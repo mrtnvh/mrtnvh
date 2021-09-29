@@ -25,6 +25,9 @@ describe.each(getPages())("%s", (path) => {
 				const image = await body.screenshot();
 				expect(image).toMatchImageSnapshot({
 					comparisonMethod: "ssim",
+					customDiffConfig: {
+						ssim: "original",
+					},
 					failureThreshold: 0.1,
 					failureThresholdType: "percent",
 					customSnapshotIdentifier: customSnapshotIdentifier(
