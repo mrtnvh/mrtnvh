@@ -20,7 +20,7 @@ describe.each(pages)("%s", (path) => {
 				await page.goto(getUrl(path));
 				await page.waitForFunction("!!window.$nuxt");
 
-				await page.waitForTimeout(500);
+				await page.waitForTimeout(1000);
 
 				const body = await page.$("body");
 				const image = await body.screenshot();
@@ -28,6 +28,7 @@ describe.each(pages)("%s", (path) => {
 					comparisonMethod: "ssim",
 					failureThreshold: 0.1,
 					failureThresholdType: "percent",
+					blur: 3,
 					customSnapshotIdentifier: customSnapshotIdentifier(
 						path,
 						environmentName,
