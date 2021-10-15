@@ -7,5 +7,31 @@
     "schedule:weekly"
   ],
   "rangeStrategy": "bump",
-  "prHourlyLimit": 5
+  "prHourlyLimit": 5,
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^eslint"
+      ],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": [
+        "^jest"
+      ],
+      "groupName": "jest"
+    },
+    {
+      "matchPackagePatterns": [
+        "^postcss"
+      ],
+      "groupName": "postcss"
+    },
+    {
+      "matchPackagePatterns": [
+        "^stylelint"
+      ],
+      "groupName": "stylelint"
+    }
+  ]
 }
