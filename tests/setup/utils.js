@@ -3,7 +3,8 @@ const { port } = require("./config");
 const removeTrailingSlash = (url) =>
 	url.endsWith("/") ? url.slice(0, url.length - 1) : url;
 
-const getUrl = (p) => `http://localhost:${port}${p}`;
+const getUrl = (p) =>
+	(process.env.CI_BASEURL || `http://localhost:${port}`) + p;
 
 const customSnapshotIdentifier = (path, environmentName) =>
 	`pages${
