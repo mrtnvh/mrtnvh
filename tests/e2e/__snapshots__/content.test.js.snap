@@ -1116,26 +1116,65 @@ Object {
         "@_class": "",
         "a": Object {
           "@_class": "reset link",
-          "@_href": "/talks/devcast-english-june-2021",
+          "@_href": "/talks/frontend-loves-openapi",
           "article": Object {
             "@_class": "",
             "a": Object {
               "@_class": "reset link",
-              "@_href": "/talks/a-technical-look-at-openapi",
+              "@_href": "/talks/devcast-english-june-2021",
               "article": Object {
                 "@_class": "",
                 "a": Object {
                   "@_class": "reset link",
-                  "@_href": "https://youtu.be/lLfgrt-_8sE",
-                  "@_rel": "nooopener",
-                  "@_target": "_blank",
+                  "@_href": "/talks/a-technical-look-at-openapi",
                   "article": Object {
                     "@_class": "",
                     "a": Object {
                       "@_class": "reset link",
-                      "@_href": "https://mot.mrtnvh.com",
+                      "@_href": "https://youtu.be/lLfgrt-_8sE",
                       "@_rel": "nooopener",
                       "@_target": "_blank",
+                      "article": Object {
+                        "@_class": "",
+                        "a": Object {
+                          "@_class": "reset link",
+                          "@_href": "https://mot.mrtnvh.com",
+                          "@_rel": "nooopener",
+                          "@_target": "_blank",
+                          "figure": Object {
+                            "@_class": "media",
+                            "picture": Object {
+                              "@_class": "",
+                              "div": Object {
+                                "@_class": "content",
+                                "h1": Object {
+                                  "#text": "OpenAPI + Testing",
+                                  "@_class": "title outline",
+                                },
+                                "h2": Object {
+                                  "#text": "Ministry of Testing Eindhoven",
+                                  "@_class": "subtitle",
+                                },
+                              },
+                              "source": Object {
+                                "@_class": "",
+                                "@_sizes": "1px",
+                                "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
+                                "@_type": "image/webp",
+                                "img": Object {
+                                  "@_alt": "OpenAPI + Testing",
+                                  "@_class": "image",
+                                  "@_height": "900",
+                                  "@_sizes": "1px",
+                                  "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
+                                  "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
+                                  "@_width": "1600",
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
                       "figure": Object {
                         "@_class": "media",
                         "picture": Object {
@@ -1143,26 +1182,26 @@ Object {
                           "div": Object {
                             "@_class": "content",
                             "h1": Object {
-                              "#text": "OpenAPI + Testing",
+                              "#text": "Why OpenAPI",
                               "@_class": "title outline",
                             },
                             "h2": Object {
-                              "#text": "Ministry of Testing Eindhoven",
+                              "#text": "Dutch version - Tech Tuesdays",
                               "@_class": "subtitle",
                             },
                           },
                           "source": Object {
                             "@_class": "",
                             "@_sizes": "1px",
-                            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
+                            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
                             "@_type": "image/webp",
                             "img": Object {
-                              "@_alt": "OpenAPI + Testing",
+                              "@_alt": "Why OpenAPI",
                               "@_class": "image",
                               "@_height": "900",
                               "@_sizes": "1px",
-                              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
-                              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
+                              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
+                              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
                               "@_width": "1600",
                             },
                           },
@@ -1177,26 +1216,26 @@ Object {
                       "div": Object {
                         "@_class": "content",
                         "h1": Object {
-                          "#text": "Why OpenAPI",
+                          "#text": "A Technical Look at OpenAPI",
                           "@_class": "title outline",
                         },
                         "h2": Object {
-                          "#text": "Dutch version - Tech Tuesdays",
+                          "#text": "Tech Fair Live",
                           "@_class": "subtitle",
                         },
                       },
                       "source": Object {
                         "@_class": "",
                         "@_sizes": "1px",
-                        "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
+                        "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
                         "@_type": "image/webp",
                         "img": Object {
-                          "@_alt": "Why OpenAPI",
+                          "@_alt": "A Technical Look at OpenAPI",
                           "@_class": "image",
                           "@_height": "900",
                           "@_sizes": "1px",
-                          "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
-                          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
+                          "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg",
+                          "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
                           "@_width": "1600",
                         },
                       },
@@ -1211,25 +1250,26 @@ Object {
                   "div": Object {
                     "@_class": "content",
                     "h1": Object {
-                      "#text": "A Technical Look at OpenAPI",
+                      "#text": "Container Queries",
                       "@_class": "title outline",
                     },
                     "h2": Object {
+                      "#text": "The next step towards a truly modular CSS",
                       "@_class": "subtitle",
                     },
                   },
                   "source": Object {
                     "@_class": "",
                     "@_sizes": "1px",
-                    "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
+                    "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
                     "@_type": "image/webp",
                     "img": Object {
-                      "@_alt": "A Technical Look at OpenAPI",
+                      "@_alt": "Container Queries",
                       "@_class": "image",
                       "@_height": "900",
                       "@_sizes": "1px",
-                      "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg",
-                      "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
+                      "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1627588090/mrtnvh.com/devcast-juni-2021.jpg",
+                      "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
                       "@_width": "1600",
                     },
                   },
@@ -1244,26 +1284,26 @@ Object {
               "div": Object {
                 "@_class": "content",
                 "h1": Object {
-                  "#text": "Container Queries",
+                  "#text": "Frontend ♥︎ OpenAPI",
                   "@_class": "title outline",
                 },
                 "h2": Object {
-                  "#text": "The next step towards a truly modular CSS",
+                  "#text": "API Specification Conference 2021",
                   "@_class": "subtitle",
                 },
               },
               "source": Object {
                 "@_class": "",
                 "@_sizes": "1px",
-                "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
+                "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1632934649/mrtnvh.com/api-spec-conf.png 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1632934649/mrtnvh.com/api-spec-conf.png 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1632934649/mrtnvh.com/api-spec-conf.png 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1632934649/mrtnvh.com/api-spec-conf.png 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1632934649/mrtnvh.com/api-spec-conf.png 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1632934649/mrtnvh.com/api-spec-conf.png 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1632934649/mrtnvh.com/api-spec-conf.png 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1632934649/mrtnvh.com/api-spec-conf.png 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1632934649/mrtnvh.com/api-spec-conf.png 2400w",
                 "@_type": "image/webp",
                 "img": Object {
-                  "@_alt": "Container Queries",
+                  "@_alt": "Frontend ♥︎ OpenAPI",
                   "@_class": "image",
                   "@_height": "900",
                   "@_sizes": "1px",
-                  "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1627588090/mrtnvh.com/devcast-juni-2021.jpg",
-                  "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
+                  "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1632934649/mrtnvh.com/api-spec-conf.png",
+                  "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1632934649/mrtnvh.com/api-spec-conf.png 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1632934649/mrtnvh.com/api-spec-conf.png 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1632934649/mrtnvh.com/api-spec-conf.png 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1632934649/mrtnvh.com/api-spec-conf.png 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1632934649/mrtnvh.com/api-spec-conf.png 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1632934649/mrtnvh.com/api-spec-conf.png 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1632934649/mrtnvh.com/api-spec-conf.png 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1632934649/mrtnvh.com/api-spec-conf.png 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1632934649/mrtnvh.com/api-spec-conf.png 2400w",
                   "@_width": "1600",
                 },
               },
@@ -1389,6 +1429,7 @@ Object {
       "div": Object {
         "@_class": "sticky",
         "div": Object {
+          "#text": "Tech Fair Live",
           "@_class": "subtitle",
         },
         "h1": Object {
@@ -1496,6 +1537,132 @@ Object {
         },
         "h1": Object {
           "#text": "Container Queries",
+          "@_class": "title outline",
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Content DOM snapshots /talks/frontend-loves-openapi/ 1`] = `
+Object {
+  "article": Object {
+    "@_class": "container",
+    "@_id": "talk",
+    "aside": Object {
+      "@_class": "",
+      "table": Object {
+        "@_class": "table-borderless",
+        "tbody": Object {
+          "tr": Array [
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Slides",
+                  "@_class": "",
+                  "@_style": "width: 6rem;",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://frontend-loves-openapi.mrtnvh.com",
+                    "@_class": "",
+                    "@_href": "https://frontend-loves-openapi.mrtnvh.com",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Demo",
+                  "@_class": "",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo",
+                    "@_class": "",
+                    "@_href": "https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+            Object {
+              "@_class": "",
+              "td": Array [
+                Object {
+                  "#text": "Video",
+                  "@_class": "",
+                },
+                Object {
+                  "@_class": "",
+                  "a": Object {
+                    "#text": "https://www.youtube.com/watch?v=3IKbLDbq5ww",
+                    "@_class": "",
+                    "@_href": "https://www.youtube.com/watch?v=3IKbLDbq5ww",
+                    "@_rel": "noopener",
+                    "@_target": "_blank",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+    "div": Object {
+      "@_class": "preview",
+      "a": Object {
+        "@_class": "media media--video-overlay",
+        "@_href": "https://www.youtube.com/watch?v=3IKbLDbq5ww",
+        "@_rel": "noopener",
+        "@_target": "_blank",
+        "div": Object {
+          "@_class": "body",
+          "p": Array [
+            "As a front end developer, building projects with RESTful API dependencies ain’t all sunshine and rainbows. Security implications, parallel development, time or budget restrictions for writing documentation, …, in an enterprise you might not always have the ability to rely on your RESTful API dependencies for development, let alone for an automated testing environment.",
+            "The OpenAPI ecosystem offers us solutions in the form of virtually complete independence from a REST API during development and testing.",
+            "Maarten will show you how your front-end project workflow can reap the benefits the OpenAPI ecosystem offers with battle-tested examples.",
+          ],
+        },
+        "picture": Object {
+          "@_class": "",
+          "source": Object {
+            "@_class": "",
+            "@_sizes": "1px",
+            "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2400w",
+            "@_type": "image/webp",
+            "img": Object {
+              "@_alt": "Frontend ♥︎ OpenAPI",
+              "@_class": "image",
+              "@_height": "900",
+              "@_sizes": "1px",
+              "@_src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg",
+              "@_srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2400w",
+              "@_width": "1600",
+            },
+          },
+        },
+      },
+    },
+    "header": Object {
+      "@_class": "",
+      "div": Object {
+        "@_class": "sticky",
+        "div": Object {
+          "#text": "API Specification Conference 2021",
+          "@_class": "subtitle",
+        },
+        "h1": Object {
+          "#text": "Frontend ♥︎ OpenAPI",
           "@_class": "title outline",
         },
       },

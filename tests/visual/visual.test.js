@@ -30,6 +30,7 @@ describe.each(getPages())("%s", (path) => {
 					},
 					failureThreshold: 0.1,
 					failureThresholdType: "percent",
+					blur: 12,
 					customSnapshotIdentifier: customSnapshotIdentifier(
 						path,
 						environmentName,
