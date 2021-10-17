@@ -9,17 +9,17 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "container astro-RYCDPf0Z",
+          "class": "container",
         },
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-RYCDPf0Z",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-RYCDPf0Z",
+                  "class": "",
                 },
                 "content": Array [
                   "Front-end developer at ",
@@ -29,9 +29,6 @@ Array [
               Object {
                 "attrs": Object {
                   "class": "isaac",
-                  "href": "https://isaac.nl",
-                  "rel": "noopener",
-                  "target": "_blank",
                 },
                 "content": Array [
                   "ISAAC",
@@ -40,7 +37,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "astro-RYCDPf0Z",
+                  "class": "",
                 },
                 "content": Array [
                   " in Eindhoven, The Netherlands.",
@@ -57,10 +54,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-RYCDPf0Z",
-                  "href": "https://www.credential.net/o040z9qg",
-                  "rel": "noopener",
-                  "target": "_blank",
+                  "class": "",
                 },
                 "content": Array [
                   "
@@ -80,10 +74,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "astro-RYCDPf0Z",
-                  "href": "https://github.com/vanhoofmaarten",
-                  "rel": "noopener",
-                  "target": "_blank",
+                  "class": "",
                 },
                 "content": Array [
                   "
@@ -103,8 +94,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "astro-RYCDPf0Z",
-                  "href": "/projects/royce",
+                  "class": "",
                 },
                 "content": Array [
                   "
@@ -137,7 +127,7 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "title astro-1nU5E9i7",
+              "class": "title",
             },
             "content": Array [
               Object {
@@ -151,7 +141,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "astro-1nU5E9i7",
+                  "class": "",
                 },
                 "content": Array [
                   "projects",
@@ -171,43 +161,33 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/projects/isaac",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "475.328125px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "ISAAC",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "475.328125px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -219,7 +199,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -233,7 +213,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Fullservice Digital Agency",
@@ -251,43 +231,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/projects/royce",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "475.328125px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "ROYCE",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "475.328125px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -299,7 +269,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -313,7 +283,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Metal",
@@ -343,12 +313,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "folio",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "title outline astro-bBiWQomJ",
+          "class": "title outline",
         },
         "content": Array [
           "About",
@@ -363,32 +332,23 @@ Array [
           "A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.",
           Object {
             "attrs": Object {
-              "class": "media astro-bBiWQomJ",
+              "class": "media",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
+                  "class": "",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-QkKmI0bx",
-                      "sizes": "236.6640625px",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871092/mrtnvh.com/portrait.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871092/mrtnvh.com/portrait.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871092/mrtnvh.com/portrait.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871092/mrtnvh.com/portrait.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871092/mrtnvh.com/portrait.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871092/mrtnvh.com/portrait.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871092/mrtnvh.com/portrait.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871092/mrtnvh.com/portrait.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871092/mrtnvh.com/portrait.jpg 2400w",
-                      "type": "image/webp",
+                      "class": "",
                     },
                     "tag": "source",
                   },
                   Object {
                     "attrs": Object {
-                      "alt": "About",
                       "class": "image",
-                      "height": "800",
-                      "sizes": "236.6640625px",
-                      "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871092/mrtnvh.com/portrait.jpg",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871092/mrtnvh.com/portrait.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871092/mrtnvh.com/portrait.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871092/mrtnvh.com/portrait.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871092/mrtnvh.com/portrait.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871092/mrtnvh.com/portrait.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871092/mrtnvh.com/portrait.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871092/mrtnvh.com/portrait.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871092/mrtnvh.com/portrait.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871092/mrtnvh.com/portrait.jpg 2400w",
-                      "width": "800",
                     },
                     "tag": "img",
                   },
@@ -403,18 +363,16 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-bBiWQomJ",
+          "class": "body",
         },
         "content": Array [
           Object {
             "attrs": Object {
               "as": "style",
-              "href": "/_astro/about/index-Z1lh8L6.css",
               "rel": "preload",
               "type": "text/css",
             },
-            "content": Array [],
-            "tag": false,
+            "tag": "link",
           },
           Object {
             "attrs": Object {
@@ -1060,7 +1018,7 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "title astro-1nU5E9i7",
+              "class": "title",
             },
             "content": Array [
               Object {
@@ -1074,7 +1032,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "astro-1nU5E9i7",
+                  "class": "",
                 },
                 "content": Array [
                   "projects",
@@ -1094,43 +1052,33 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/projects/isaac",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "475.328125px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "ISAAC",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "475.328125px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -1142,7 +1090,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -1156,7 +1104,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Fullservice Digital Agency",
@@ -1174,43 +1122,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/projects/royce",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "475.328125px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "ROYCE",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "475.328125px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -1222,7 +1160,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -1236,7 +1174,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Metal",
@@ -1270,7 +1208,7 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "title astro-1nU5E9i7",
+              "class": "title",
             },
             "content": Array [
               Object {
@@ -1284,7 +1222,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "astro-1nU5E9i7",
+                  "class": "",
                 },
                 "content": Array [
                   "projects",
@@ -1304,43 +1242,33 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/projects/rockxxl",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "475.328125px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "RockXXL",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "475.328125px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -1352,7 +1280,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -1366,7 +1294,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Loud Noise Community",
@@ -1384,43 +1312,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/projects/pixeo",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "475.328125px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "Pixeo",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "475.328125px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -1432,7 +1350,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -1446,7 +1364,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Web agency",
@@ -1476,12 +1394,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "project",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-3J5ajZSa",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -1500,7 +1417,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-3J5ajZSa",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Fullservice Digital Agency",
@@ -1520,27 +1437,18 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-QkKmI0bx",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
-                  "sizes": "495.6171875px",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
-                  "type": "image/webp",
+                  "class": "",
                 },
                 "tag": "source",
               },
               Object {
                 "attrs": Object {
-                  "alt": "ISAAC",
                   "class": "image",
-                  "height": "900",
-                  "sizes": "495.6171875px",
-                  "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/isaac.jpg",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/isaac.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/isaac.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/isaac.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/isaac.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/isaac.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/isaac.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/isaac.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/isaac.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/isaac.jpg 2400w",
-                  "width": "1600",
                 },
                 "tag": "img",
               },
@@ -1552,7 +1460,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-3J5ajZSa",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -1735,12 +1643,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "project",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-3J5ajZSa",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -1759,7 +1666,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-3J5ajZSa",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Web agency",
@@ -1779,27 +1686,18 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-QkKmI0bx",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
-                  "sizes": "495.6171875px",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
-                  "type": "image/webp",
+                  "class": "",
                 },
                 "tag": "source",
               },
               Object {
                 "attrs": Object {
-                  "alt": "Pixeo",
                   "class": "image",
-                  "height": "900",
-                  "sizes": "495.6171875px",
-                  "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/pixeo.jpg",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/pixeo.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/pixeo.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/pixeo.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/pixeo.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/pixeo.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/pixeo.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/pixeo.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/pixeo.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/pixeo.jpg 2400w",
-                  "width": "1600",
                 },
                 "tag": "img",
               },
@@ -1811,7 +1709,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-3J5ajZSa",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -2160,12 +2058,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "project",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-3J5ajZSa",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -2184,7 +2081,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-3J5ajZSa",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Loud Noise Community",
@@ -2204,27 +2101,18 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-QkKmI0bx",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
-                  "sizes": "495.6171875px",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
-                  "type": "image/webp",
+                  "class": "",
                 },
                 "tag": "source",
               },
               Object {
                 "attrs": Object {
-                  "alt": "RockXXL",
                   "class": "image",
-                  "height": "900",
-                  "sizes": "495.6171875px",
-                  "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871100/mrtnvh.com/rockxxl.jpg",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871100/mrtnvh.com/rockxxl.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871100/mrtnvh.com/rockxxl.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871100/mrtnvh.com/rockxxl.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871100/mrtnvh.com/rockxxl.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871100/mrtnvh.com/rockxxl.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871100/mrtnvh.com/rockxxl.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871100/mrtnvh.com/rockxxl.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871100/mrtnvh.com/rockxxl.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871100/mrtnvh.com/rockxxl.jpg 2400w",
-                  "width": "1600",
                 },
                 "tag": "img",
               },
@@ -2236,7 +2124,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-3J5ajZSa",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -2359,12 +2247,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "project",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-3J5ajZSa",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -2383,7 +2270,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-3J5ajZSa",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Metal",
@@ -2403,27 +2290,18 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-QkKmI0bx",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
-                  "sizes": "495.6171875px",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
-                  "type": "image/webp",
+                  "class": "",
                 },
                 "tag": "source",
               },
               Object {
                 "attrs": Object {
-                  "alt": "ROYCE",
                   "class": "image",
-                  "height": "900",
-                  "sizes": "495.6171875px",
-                  "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1570871095/mrtnvh.com/royce.jpg",
-                  "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1570871095/mrtnvh.com/royce.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1570871095/mrtnvh.com/royce.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1570871095/mrtnvh.com/royce.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1570871095/mrtnvh.com/royce.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1570871095/mrtnvh.com/royce.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1570871095/mrtnvh.com/royce.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1570871095/mrtnvh.com/royce.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1570871095/mrtnvh.com/royce.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1570871095/mrtnvh.com/royce.jpg 2400w",
-                  "width": "1600",
                 },
                 "tag": "img",
               },
@@ -2435,7 +2313,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-3J5ajZSa",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -2538,7 +2416,7 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "title outline astro-YrPeutpP",
+          "class": "title outline",
         },
         "content": Array [
           "Talks",
@@ -2552,43 +2430,33 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/talks/frontend-loves-openapi",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "742px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1632934649/mrtnvh.com/api-spec-conf.png 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1632934649/mrtnvh.com/api-spec-conf.png 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1632934649/mrtnvh.com/api-spec-conf.png 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1632934649/mrtnvh.com/api-spec-conf.png 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1632934649/mrtnvh.com/api-spec-conf.png 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1632934649/mrtnvh.com/api-spec-conf.png 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1632934649/mrtnvh.com/api-spec-conf.png 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1632934649/mrtnvh.com/api-spec-conf.png 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1632934649/mrtnvh.com/api-spec-conf.png 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "Frontend ♥︎ OpenAPI",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "742px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1632934649/mrtnvh.com/api-spec-conf.png",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1632934649/mrtnvh.com/api-spec-conf.png 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1632934649/mrtnvh.com/api-spec-conf.png 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1632934649/mrtnvh.com/api-spec-conf.png 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1632934649/mrtnvh.com/api-spec-conf.png 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1632934649/mrtnvh.com/api-spec-conf.png 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1632934649/mrtnvh.com/api-spec-conf.png 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1632934649/mrtnvh.com/api-spec-conf.png 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1632934649/mrtnvh.com/api-spec-conf.png 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1632934649/mrtnvh.com/api-spec-conf.png 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -2600,7 +2468,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -2614,7 +2482,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "API Specification Conference 2021",
@@ -2632,43 +2500,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/talks/devcast-english-june-2021",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "742px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "Container Queries",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "742px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1627588090/mrtnvh.com/devcast-juni-2021.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1627588090/mrtnvh.com/devcast-juni-2021.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -2680,7 +2538,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -2694,7 +2552,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "The next step towards a truly modular CSS",
@@ -2712,43 +2570,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "/talks/a-technical-look-at-openapi",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "742px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "A Technical Look at OpenAPI",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "742px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1619779156/mrtnvh.com/a-technical-look-at-openapi.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -2760,7 +2608,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -2774,7 +2622,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Tech Fair Live",
@@ -2792,45 +2640,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "https://youtu.be/lLfgrt-_8sE",
-                  "rel": "nooopener",
-                  "target": "_blank",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "742px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "Why OpenAPI",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "742px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -2842,7 +2678,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -2856,7 +2692,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Dutch version - Tech Tuesdays",
@@ -2874,45 +2710,33 @@ Array [
           },
           Object {
             "attrs": Object {
-              "class": "astro-08nD21d3",
+              "class": "",
             },
             "content": Array [
               Object {
                 "attrs": Object {
                   "class": "reset link",
-                  "href": "https://mot.mrtnvh.com",
-                  "rel": "nooopener",
-                  "target": "_blank",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "media astro-08nD21d3",
+                      "class": "media",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-QkKmI0bx",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-QkKmI0bx",
-                              "sizes": "742px",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
-                              "type": "image/webp",
+                              "class": "",
                             },
                             "tag": "source",
                           },
                           Object {
                             "attrs": Object {
-                              "alt": "OpenAPI + Testing",
                               "class": "image",
-                              "height": "900",
-                              "sizes": "742px",
-                              "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
-                              "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
-                              "width": "1600",
                             },
                             "tag": "img",
                           },
@@ -2924,7 +2748,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "content astro-08nD21d3",
+                      "class": "content",
                     },
                     "content": Array [
                       Object {
@@ -2938,7 +2762,7 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "subtitle astro-08nD21d3",
+                          "class": "subtitle",
                         },
                         "content": Array [
                           "Ministry of Testing Eindhoven",
@@ -2968,12 +2792,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "talk",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -2992,7 +2815,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-bHGItQrN",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Tech Fair Live",
@@ -3007,7 +2830,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3019,13 +2842,12 @@ Array [
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
-                          "style": "width: 6rem;",
+                          "class": "",
                         },
                         "content": Array [
                           "Slides",
@@ -3034,15 +2856,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://a-technical-look-at-openapi.mrtnvh.com/",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://a-technical-look-at-openapi.mrtnvh.com/",
@@ -3057,12 +2876,12 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           "Demo",
@@ -3071,15 +2890,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://github.com/vanhoofmaarten/talks/tree/main/packages/a-technical-look-at-openapi/demo",
@@ -3094,12 +2910,12 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           "Video",
@@ -3108,15 +2924,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://www.youtube.com/watch?v=YXXE0LSVnCs",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://www.youtube.com/watch?v=YXXE0LSVnCs",
@@ -3146,34 +2959,22 @@ Array [
           Object {
             "attrs": Object {
               "class": "media media--video-overlay",
-              "href": "https://www.youtube.com/watch?v=YXXE0LSVnCs",
-              "rel": "noopener",
-              "target": "_blank",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
+                  "class": "",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-QkKmI0bx",
-                      "sizes": "495.6171875px",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2400w",
-                      "type": "image/webp",
+                      "class": "",
                     },
                     "tag": "source",
                   },
                   Object {
                     "attrs": Object {
-                      "alt": "A Technical Look at OpenAPI",
                       "class": "image",
-                      "height": "900",
-                      "sizes": "495.6171875px",
-                      "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1619779713/mrtnvh.com/a-technical-look-at-openapi-video-preview.jpg 2400w",
-                      "width": "1600",
                     },
                     "tag": "img",
                   },
@@ -3188,7 +2989,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-bHGItQrN",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -3211,12 +3012,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "talk",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3235,7 +3035,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-bHGItQrN",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "The next step towards a truly modular CSS",
@@ -3250,7 +3050,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3262,13 +3062,12 @@ Array [
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
-                          "style": "width: 6rem;",
+                          "class": "",
                         },
                         "content": Array [
                           "Slides",
@@ -3277,15 +3076,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://devcast-june-2021.mrtnvh.com/",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://devcast-june-2021.mrtnvh.com/",
@@ -3300,12 +3096,12 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           "Video",
@@ -3314,15 +3110,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://youtu.be/Hr5lIsbiWpY?t=178",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://youtu.be/Hr5lIsbiWpY?t=178",
@@ -3352,34 +3145,22 @@ Array [
           Object {
             "attrs": Object {
               "class": "media media--video-overlay",
-              "href": "https://youtu.be/Hr5lIsbiWpY?t=178",
-              "rel": "noopener",
-              "target": "_blank",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
+                  "class": "",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-QkKmI0bx",
-                      "sizes": "495.6171875px",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2400w",
-                      "type": "image/webp",
+                      "class": "",
                     },
                     "tag": "source",
                   },
                   Object {
                     "attrs": Object {
-                      "alt": "Container Queries",
                       "class": "image",
-                      "height": "900",
-                      "sizes": "495.6171875px",
-                      "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg 2400w",
-                      "width": "1600",
                     },
                     "tag": "img",
                   },
@@ -3394,7 +3175,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-bHGItQrN",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -3417,12 +3198,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "talk",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3441,7 +3221,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-bHGItQrN",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "API Specification Conference 2021",
@@ -3456,7 +3236,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3468,13 +3248,12 @@ Array [
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
-                          "style": "width: 6rem;",
+                          "class": "",
                         },
                         "content": Array [
                           "Slides",
@@ -3483,15 +3262,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://frontend-loves-openapi.mrtnvh.com",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://frontend-loves-openapi.mrtnvh.com",
@@ -3506,12 +3282,12 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           "Demo",
@@ -3520,15 +3296,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo",
@@ -3543,12 +3316,12 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "astro-bHGItQrN",
+                      "class": "",
                     },
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           "Video",
@@ -3557,15 +3330,12 @@ Array [
                       },
                       Object {
                         "attrs": Object {
-                          "class": "astro-bHGItQrN",
+                          "class": "",
                         },
                         "content": Array [
                           Object {
                             "attrs": Object {
-                              "class": "astro-bHGItQrN",
-                              "href": "https://www.youtube.com/watch?v=3IKbLDbq5ww",
-                              "rel": "noopener",
-                              "target": "_blank",
+                              "class": "",
                             },
                             "content": Array [
                               "https://www.youtube.com/watch?v=3IKbLDbq5ww",
@@ -3595,34 +3365,22 @@ Array [
           Object {
             "attrs": Object {
               "class": "media media--video-overlay",
-              "href": "https://www.youtube.com/watch?v=3IKbLDbq5ww",
-              "rel": "noopener",
-              "target": "_blank",
             },
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
+                  "class": "",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-QkKmI0bx",
-                      "sizes": "495.6171875px",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2400w",
-                      "type": "image/webp",
+                      "class": "",
                     },
                     "tag": "source",
                   },
                   Object {
                     "attrs": Object {
-                      "alt": "Frontend ♥︎ OpenAPI",
                       "class": "image",
-                      "height": "900",
-                      "sizes": "495.6171875px",
-                      "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg 2400w",
-                      "width": "1600",
                     },
                     "tag": "img",
                   },
@@ -3637,7 +3395,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-bHGItQrN",
+          "class": "body",
         },
         "content": Array [
           Object {
@@ -3672,12 +3430,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "talk",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3696,7 +3453,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-bHGItQrN",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Ministry of Testing Eindhoven",
@@ -3711,7 +3468,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3725,7 +3482,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "preview astro-bHGItQrN",
+          "class": "preview",
         },
         "content": Array [
           Object {
@@ -3735,27 +3492,18 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
+                  "class": "",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-QkKmI0bx",
-                      "sizes": "495.6171875px",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
-                      "type": "image/webp",
+                      "class": "",
                     },
                     "tag": "source",
                   },
                   Object {
                     "attrs": Object {
-                      "alt": "OpenAPI + Testing",
                       "class": "image",
-                      "height": "900",
-                      "sizes": "495.6171875px",
-                      "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1572982689/mrtnvh.com/mot-eindhoven.jpg",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1572982689/mrtnvh.com/mot-eindhoven.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1572982689/mrtnvh.com/mot-eindhoven.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1572982689/mrtnvh.com/mot-eindhoven.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1572982689/mrtnvh.com/mot-eindhoven.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1572982689/mrtnvh.com/mot-eindhoven.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1572982689/mrtnvh.com/mot-eindhoven.jpg 2400w",
-                      "width": "1600",
                     },
                     "tag": "img",
                   },
@@ -3770,7 +3518,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-bHGItQrN",
+          "class": "body",
         },
         "tag": "div",
       },
@@ -3785,12 +3533,11 @@ Array [
   Object {
     "attrs": Object {
       "class": "container",
-      "id": "talk",
     },
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3809,7 +3556,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "subtitle astro-bHGItQrN",
+                  "class": "subtitle",
                 },
                 "content": Array [
                   "Dutch version - Tech Tuesdays",
@@ -3824,7 +3571,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "astro-bHGItQrN",
+          "class": "",
         },
         "content": Array [
           Object {
@@ -3838,7 +3585,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "preview astro-bHGItQrN",
+          "class": "preview",
         },
         "content": Array [
           Object {
@@ -3848,27 +3595,18 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "astro-QkKmI0bx",
+                  "class": "",
                 },
                 "content": Array [
                   Object {
                     "attrs": Object {
-                      "class": "astro-QkKmI0bx",
-                      "sizes": "495.6171875px",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_webp%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
-                      "type": "image/webp",
+                      "class": "",
                     },
                     "tag": "source",
                   },
                   Object {
                     "attrs": Object {
-                      "alt": "Why OpenAPI",
                       "class": "image",
-                      "height": "900",
-                      "sizes": "495.6171875px",
-                      "src": "https://res.cloudinary.com/mrtnvh/image/upload/t_responsive_placeholder/v1589461696/mrtnvh.com/mrtnvh-play.jpg",
-                      "srcset": "https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_150/v1589461696/mrtnvh.com/mrtnvh-play.jpg 150w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_300/v1589461696/mrtnvh.com/mrtnvh-play.jpg 300w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_600/v1589461696/mrtnvh.com/mrtnvh-play.jpg 600w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_900/v1589461696/mrtnvh.com/mrtnvh-play.jpg 900w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1200/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1200w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1500/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1500w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_1800/v1589461696/mrtnvh.com/mrtnvh-play.jpg 1800w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2100/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2100w, https://res.cloudinary.com/mrtnvh/image/upload/c_scale%2Cdpr_1.0%2Cf_auto%2Cq_auto%2Cw_2400/v1589461696/mrtnvh.com/mrtnvh-play.jpg 2400w",
-                      "width": "1600",
                     },
                     "tag": "img",
                   },
@@ -3883,7 +3621,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "body astro-bHGItQrN",
+          "class": "body",
         },
         "tag": "div",
       },

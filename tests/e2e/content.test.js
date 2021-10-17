@@ -1,7 +1,8 @@
 const posthtml = require("posthtml");
-const removeTags = require("posthtml-remove-tags");
+const removeAttributes = require("posthtml-remove-attributes");
 const { getPages } = require("../setup/config");
 const { getUrl } = require("../setup/utils");
+const { removeClass } = require("../setup/posthtml/removeClass");
 
 describe("Content DOM snapshots", () => {
 	test.each(getPages())(
@@ -12,7 +13,16 @@ describe("Content DOM snapshots", () => {
 			const content = await page.$eval("main", (el) => el.innerHTML);
 
 			const { tree: sanitizedContent } = await posthtml()
-				.use(removeTags({ tags: ["link"] }))
+				.use(
+					removeClass("astro"),
+					removeAttributes([
+						"sizes",
+						{
+							name: "href",
+							value: /astro/,
+						},
+					]),
+				)
 				.process(content);
 			await expect(sanitizedContent).toMatchSnapshot();
 		},
