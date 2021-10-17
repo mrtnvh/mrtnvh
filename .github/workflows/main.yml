@@ -41,44 +41,44 @@ jobs:
           path: dist
           retention-days: 1
 
-  # test:
-  #   runs-on: macos-10.15
+  test:
+    runs-on: macos-10.15
 
-  #   needs: build
+    needs: build
 
-  #   strategy:
-  #     matrix:
-  #       node-version: [16.x]
-  #       test-type: ["lint", "style", "e2e", "visual"]
+    strategy:
+      matrix:
+        node-version: [16.x]
+        test-type: ["lint", "style", "e2e", "visual"]
 
-  #   steps:
-  #     - uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
 
-  #     - name: Use Node.js ${{ matrix.node-version }}
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
 
-  #     - name: Install dependencies
-  #       uses: bahmutov/npm-install@v1
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
 
-  #     - name: Download build artifact
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: build
-  #         path: dist
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: dist
 
-  #     - name: Run ${{ matrix.test-type }}
-  #       run: "npm run test:${{ matrix.test-type }}"
+      - name: Run ${{ matrix.test-type }}
+        run: "npm run test:${{ matrix.test-type }}"
 
-  #     - name: Archive snapshot artifacts
-  #       uses: actions/upload-artifact@v2
-  #       continue-on-error: true
-  #       if: ${{ success() || failure() }}
-  #       with:
-  #         name: image_snapshots
-  #         path: tests/visual/__image_snapshots__
-  #         retention-days: 5
+      - name: Archive snapshot artifacts
+        uses: actions/upload-artifact@v2
+        continue-on-error: true
+        if: ${{ success() || failure() }}
+        with:
+          name: image_snapshots
+          path: tests/visual/__image_snapshots__
+          retention-days: 5
 
   deploy:
     runs-on: ubuntu-latest
