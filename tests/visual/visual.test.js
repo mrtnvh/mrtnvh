@@ -28,9 +28,9 @@ describe.each(getPages())("%s", (path) => {
 					customDiffConfig: {
 						ssim: "original",
 					},
-					failureThreshold: 0.1,
+					failureThreshold: 0.2,
 					failureThresholdType: "percent",
-					blur: 12,
+					blur: 25,
 					customSnapshotIdentifier: customSnapshotIdentifier(
 						path,
 						environmentName,
