@@ -1,3 +1,4 @@
+.transition-fade,
 .fade,
 .fade-enter-active,
 .fade-leave-active {
@@ -5,12 +6,14 @@
 	transition-timing-function: var(--animation-timing-function);
 }
 
+.transition-fade,
 .fade-active,
 .fade-enter-active,
 .fade-leave-active {
 	opacity: 1;
 }
 
+html.is-animating .transition-fade,
 .fade-inactive,
 .fade-enter,
 .fade-leave-to {

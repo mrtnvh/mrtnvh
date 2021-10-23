@@ -23,10 +23,12 @@
     "test:performance": "jest --selectProjects performance"
   },
   "dependencies": {
+    "@swup/preload-plugin": "^1.0.3",
     "astro": "^0.18.6",
     "date-fns": "^2.25.0",
     "lodash-es": "^4.17.21",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swup": "^2.0.14"
   },
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.4.3",

@@ -32,6 +32,7 @@ const links = [
 			href={link.href}
 			exact={link.to === '/'}
 			data-testid={`navigation-${link.key}`}
+			data-swup-preload
 		>
 			{ link.title }
 		</a>
