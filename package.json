@@ -24,7 +24,7 @@
     "test:performance": "jest --selectProjects performance"
   },
   "dependencies": {
-    "@nuxt/content": "^1.14.0",
+    "@nuxt/content": "^1.15.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.25.0",
@@ -54,7 +54,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.20.0",
-    "fast-xml-parser": "^3.20.3",
+    "fast-xml-parser": "^3.21.0",
     "fs-extra": "^10.0.0",
     "get-port": "^6.0.0",
     "jest": "^27.3.1",
