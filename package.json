@@ -57,7 +57,7 @@
     "fast-xml-parser": "^3.21.1",
     "fs-extra": "^10.0.0",
     "get-port": "^6.0.0",
-    "jest": "^27.4.3",
+    "jest": "^27.4.4",
     "jest-dev-server": "^6.0.2",
     "jest-environment-puppeteer": "^6.0.2",
     "jest-expect-message": "^1.0.2",
