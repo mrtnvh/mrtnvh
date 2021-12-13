@@ -72,9 +72,9 @@
     "pptr-testing-library": "^0.7.0",
     "prettier": "^2.5.1",
     "puppeteer": "^11.0.0",
-    "stylelint": "^13.13.1",
+    "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-order": "^4.1.0",
+    "stylelint-order": "^5.0.0",
     "svg-to-vue-component": "^0.3.8",
     "ts-jest": "^27.1.1",
     "typescript": "^4.5.3"
