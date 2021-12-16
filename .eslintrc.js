@@ -22,6 +22,7 @@ module.exports = {
 				ignore: [".svg"],
 			},
 		],
+		"vue/multi-word-component-names": "off",
 	},
 	globals: {},
 	settings: {
