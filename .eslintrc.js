@@ -24,6 +24,12 @@ module.exports = {
 			},
 		},
 		{
+			files: ["public/js/**/*.*"],
+			rules: {
+				"import/extensions": "ignorePackages",
+			},
+		},
+		{
 			files: ["scripts/**/*.*"],
 			rules: {
 				"import/extensions": 0,

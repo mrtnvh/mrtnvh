@@ -1,13 +1,14 @@
 import Swup from "swup";
 import SwupPreloadPlugin from "@swup/preload-plugin";
-import { setImagesSizes } from "./setImagesSizes";
+import SwupHeadPlugin from "@swup/head-plugin";
+import { setImagesSizes } from "./setImagesSizes.js";
 
 function init() {
 	setImagesSizes();
 }
 
 const swup = new Swup({
-	plugins: [new SwupPreloadPlugin()],
+	plugins: [new SwupPreloadPlugin(), new SwupHeadPlugin()],
 });
 
 window.plausible =

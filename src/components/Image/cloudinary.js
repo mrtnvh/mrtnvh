@@ -9,7 +9,7 @@ export const getOgImage = ({ src }) => {
 };
 
 export const getSrcSet = ({
-	publicId: publicIdProp,
+	publicId: publicIdProp = undefined,
 	src,
 	srcSet,
 	type = "auto",
