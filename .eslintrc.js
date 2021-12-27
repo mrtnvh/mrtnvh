@@ -24,13 +24,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ["public/js/**/*.*"],
-			rules: {
-				"import/extensions": "ignorePackages",
-			},
-		},
-		{
-			files: ["scripts/**/*.*"],
+			files: ["src/js/**/*.*", "scripts/**/*.*"],
 			rules: {
 				"import/extensions": 0,
 			},

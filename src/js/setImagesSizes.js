@@ -9,7 +9,7 @@ export const setImagesSizes = () => {
 		const size = getImageSize({ image });
 		// eslint-disable-next-line no-param-reassign
 		image.sizes = size;
-		image.addEventListener(`load`, (event) => {
+		image.addEventListener(`load`, () => {
 			image.classList.remove("fade-inactive");
 			image.classList.add("fade-active");
 		});
