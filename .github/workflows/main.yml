@@ -80,7 +80,7 @@ jobs:
           path: tests/visual/__image_snapshots__
           retention-days: 5
 
-  deploy:
+  deploy-preview:
     runs-on: ubuntu-latest
 
     needs: build
@@ -100,7 +100,6 @@ jobs:
       - name: Upload to Vercel (Preview)
         id: deployment-preview
         uses: amondnet/vercel-action@v20
-        if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/develop'
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -109,36 +108,13 @@ jobs:
           alias-domains: |
             pr-{{PR_NUMBER}}.mrtnvh.com
 
-      - name: Upload to Vercel (Staging)
-        id: deployment-staging
-        uses: amondnet/vercel-action@v20
-        if: github.ref == 'refs/heads/develop'
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          alias-domains: |
-            staging.mrtnvh.com
-
-      - name: Upload to Vercel (Production)
-        id: deployment-prod
-        uses: amondnet/vercel-action@v20
-        if: github.ref == 'refs/heads/main'
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          vercel-args: '--prod'
-
   performance:
     runs-on: ubuntu-latest
 
-    needs: deploy
+    needs: deploy-preview
 
     env:
-      CI_BASEURL: ${{needs.deploy.outputs.deployment}}
+      CI_BASEURL: ${{needs.deploy-preview.outputs.deployment}}
 
     strategy:
       matrix:
@@ -172,3 +148,42 @@ jobs:
           name: performance_reports
           path: tests/performance/__reports__
           retention-days: 5
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: [build, test, performance]
+
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: dist
+
+      - name: Upload to Vercel (Staging)
+        id: deployment-staging
+        uses: amondnet/vercel-action@v20
+        if: github.ref == 'refs/heads/develop'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          alias-domains: |
+            staging.mrtnvh.com
+
+      - name: Upload to Vercel (Production)
+        id: deployment-prod
+        uses: amondnet/vercel-action@v20
+        if: github.ref == 'refs/heads/main'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-args: '--prod'
