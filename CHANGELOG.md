@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/vanhoofmaarten/mrtnvh/compare/v5.1.0...v6.0.0) (2021-12-28)
+
+### Bug Fixes
+
+- **deps:** update all non-major dependencies ([528ac80](https://github.com/vanhoofmaarten/mrtnvh/commit/528ac80d00f24a7d37aebd240008ade000c8b2e7))
+- **deps:** update all non-major dependencies ([a0be4e1](https://github.com/vanhoofmaarten/mrtnvh/commit/a0be4e19550afe1ece76f372f6df86e8efbd0509))
+
+### Refactor
+
+- **global:** Use Astro ([fc2a3b1](https://github.com/vanhoofmaarten/mrtnvh/commit/fc2a3b100ce9bc771ee7ffac1c1ac6bb811ca471))
+
+### Chores
+
+- **deps:** update all non-major dependencies ([2840103](https://github.com/vanhoofmaarten/mrtnvh/commit/2840103fabb01269977455be85952044042f41cb))
+- **deps:** update all non-major dependencies ([8bb8d32](https://github.com/vanhoofmaarten/mrtnvh/commit/8bb8d32d0bd784d4572faa8ee66b5e94a7f21371))
+- **deps:** update all non-major dependencies ([baf6a1e](https://github.com/vanhoofmaarten/mrtnvh/commit/baf6a1e5b0ac751b126b6606d629c9f66cc0b861))
+- **deps:** update all non-major dependencies ([4a1eb31](https://github.com/vanhoofmaarten/mrtnvh/commit/4a1eb3138fa6cd2911bd606cfb847b135e980384))
+- **deps:** update all non-major dependencies ([9797912](https://github.com/vanhoofmaarten/mrtnvh/commit/97979122fd0d99f693b5e14ca8faec437f281b17))
+- **deps:** update dependency @vue/eslint-config-prettier to v7 ([efbc43e](https://github.com/vanhoofmaarten/mrtnvh/commit/efbc43edf6875d47a712b4ca5754d63c6ec9a51c))
+- **deps:** update dependency cssnano to ^5.0.10 ([7e2a0cf](https://github.com/vanhoofmaarten/mrtnvh/commit/7e2a0cff30a41747f0a0f741525e52144001572b))
+- **deps:** update dependency cssnano to ^5.0.14 ([febb2da](https://github.com/vanhoofmaarten/mrtnvh/commit/febb2dac28b6d9a7f241313073a412d7ed9ce02c))
+- **deps:** update dependency eslint to ^8.5.0 ([9d1d618](https://github.com/vanhoofmaarten/mrtnvh/commit/9d1d618b12678572e5b40445c3fcb51b0c2b5036))
+- **deps:** update dependency eslint-plugin-jest to ^25.2.2 ([5c353d3](https://github.com/vanhoofmaarten/mrtnvh/commit/5c353d33015a87efd4007dcd33a59c72795f99a2))
+- **deps:** update dependency eslint-plugin-nuxt to v3 ([95cd83f](https://github.com/vanhoofmaarten/mrtnvh/commit/95cd83faf0769834e4bc27fe57e029d5688ac625))
+- **deps:** update dependency jest to ^27.3.1 ([bf16dd4](https://github.com/vanhoofmaarten/mrtnvh/commit/bf16dd427dd372e3e57250f3e0b7e094ba31e747))
+- **deps:** update dependency jest to ^27.4.3 ([99b8ed4](https://github.com/vanhoofmaarten/mrtnvh/commit/99b8ed44ddea3bc3f25f80a9c8457290fd1695ba))
+- **deps:** update dependency jest to ^27.4.4 ([421ed8c](https://github.com/vanhoofmaarten/mrtnvh/commit/421ed8c6069f1341205bdb8446927af9a554e111))
+- **deps:** update dependency lighthouse to v9 ([982fa75](https://github.com/vanhoofmaarten/mrtnvh/commit/982fa75595b385ea45da4195bb1d9e853709c75b))
+- **deps:** update dependency puppeteer to v11 ([5ef2fc5](https://github.com/vanhoofmaarten/mrtnvh/commit/5ef2fc5f8cbfdfa45a540a0a27a251ad162e792a))
+- **deps:** update dependency puppeteer to v13 ([#180](https://github.com/vanhoofmaarten/mrtnvh/issues/180)) ([94954f0](https://github.com/vanhoofmaarten/mrtnvh/commit/94954f0b4c44a7c1f1c692b312eef91e0ba02541))
+- **deps:** update dependency ts-jest to ^27.0.7 ([e166c9e](https://github.com/vanhoofmaarten/mrtnvh/commit/e166c9efc5667ed56fe8446b59eeeb09bc32a601))
+- **deps:** update eslint ([a172374](https://github.com/vanhoofmaarten/mrtnvh/commit/a1723749829fd6ca7e22a4291dfcbe1de2350753))
+- **deps:** update jest ([c927c6b](https://github.com/vanhoofmaarten/mrtnvh/commit/c927c6bfddc9ebb25a2a0f6ee7ebd2eec66deff4))
+- **deps:** update jest to ^6.0.2 ([bd96e11](https://github.com/vanhoofmaarten/mrtnvh/commit/bd96e116b40d7694d38aa0843409fb905e38776f))
+- **eslint:** update eslint dependencies ([93416db](https://github.com/vanhoofmaarten/mrtnvh/commit/93416db9dc94f0222a5b162506d25258fcdf63ad))
+
 ## [5.1.0](https://github.com/vanhoofmaarten/mrtnvh/compare/v5.0.0...v5.1.0) (2021-10-15)
 
 ### Features
