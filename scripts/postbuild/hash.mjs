@@ -8,6 +8,8 @@ import { BUILD_DIRECTORY, replaceFilesContent } from "./_utils.mjs";
 const FILES_TO_EXCLUDE = [
 	"robots.txt",
 	".html",
+	".css",
+	".js",
 	"/_astro/",
 	"stats.js",
 	"workbox",

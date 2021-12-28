@@ -22,7 +22,7 @@ Array [
                   "class": "",
                 },
                 "content": Array [
-                  "Front-end developer at ",
+                  "Front-end developer at",
                 ],
                 "tag": "span",
               },
@@ -40,7 +40,7 @@ Array [
                   "class": "",
                 },
                 "content": Array [
-                  " in Eindhoven, The Netherlands.",
+                  "in Eindhoven, The Netherlands.",
                 ],
                 "tag": "span",
               },
@@ -57,9 +57,7 @@ Array [
                   "class": "",
                 },
                 "content": Array [
-                  "
-				Google Mobile Web Specialist
-			",
+                  "Google Mobile Web Specialist",
                 ],
                 "tag": "a",
               },
@@ -77,9 +75,7 @@ Array [
                   "class": "",
                 },
                 "content": Array [
-                  "
-				Open Source Contributer
-			",
+                  "Open Source Contributer",
                 ],
                 "tag": "a",
               },
@@ -97,15 +93,11 @@ Array [
                   "class": "",
                 },
                 "content": Array [
-                  "
-				Loud Noise Generator
-			",
+                  "Loud Noise Generator",
                 ],
                 "tag": "a",
               },
-              "
-			.
-		",
+              ".",
             ],
             "tag": "div",
           },
@@ -122,7 +114,7 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "header clear-inner-spacing",
+          "class": "clear-inner-spacing header",
         },
         "content": Array [
           Object {
@@ -156,7 +148,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "grid ",
+          "class": "grid",
         },
         "content": Array [
           Object {
@@ -166,7 +158,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -187,7 +179,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -204,7 +196,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "ISAAC",
@@ -236,7 +228,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -257,7 +249,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -274,7 +266,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "ROYCE",
@@ -317,7 +309,7 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "title outline",
+          "class": "outline title",
         },
         "content": Array [
           "About",
@@ -326,7 +318,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "subtitle intro",
+          "class": "intro subtitle",
         },
         "content": Array [
           "A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.",
@@ -348,7 +340,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "image",
+                      "class": "fade image fade-active",
                     },
                     "tag": "img",
                   },
@@ -368,14 +360,6 @@ Array [
         "content": Array [
           Object {
             "attrs": Object {
-              "as": "style",
-              "rel": "preload",
-              "type": "text/css",
-            },
-            "tag": "link",
-          },
-          Object {
-            "attrs": Object {
               "class": "column-lg-2 column-xxl-3 mb-ggy",
             },
             "content": Array [
@@ -387,7 +371,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "I have a profound love for ",
+                  "I have a profound love for",
                   Object {
                     "attrs": Object {
                       "href": "https://open.spotify.com/user/116335225/playlist/1VXRoUysOyzh5Y0m82jjVI",
@@ -397,7 +381,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  ". In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies in ",
+                  ". In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies in",
                   Object {
                     "attrs": Object {
                       "href": "http://roycetheband.com",
@@ -407,13 +391,13 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " rock out the local and non-local watering holes from time to time.",
+                  "rock out the local and non-local watering holes from time to time.",
                 ],
                 "tag": "p",
               },
               Object {
                 "content": Array [
-                  "I have a ",
+                  "I have a",
                   Object {
                     "attrs": Object {
                       "href": "https://www.kdg.be/multimedia-creative-technologies",
@@ -566,24 +550,19 @@ Array [
                           "colspan": "2",
                         },
                         "content": Array [
-                          "
-			Offline &amp; mobile first ",
+                          "Offline &amp; mobile first",
                           Object {
                             "tag": "br",
                           },
-                          "
-			a11y",
+                          "a11y",
                           Object {
                             "tag": "br",
                           },
-                          "
-			Progressive Web Apps ",
+                          "Progressive Web Apps",
                           Object {
                             "tag": "br",
                           },
-                          "
-			OpenAPI
-		",
+                          "OpenAPI",
                         ],
                         "tag": "td",
                       },
@@ -628,44 +607,35 @@ Array [
                               "class": "column-lg-2",
                             },
                             "content": Array [
-                              "
-				Node ",
+                              "Node",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				ES20... ",
+                              "ES20...",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				Typescript ",
+                              "Typescript",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				React ",
+                              "React",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				Vue ",
+                              "Vue",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				Web- &amp; service workers ",
+                              "Web- &amp; service workers",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				Testing (Unit to e2e) ",
+                              "Testing (Unit to e2e)",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				Isomorphic web applications
-			",
+                              "Isomorphic web applications",
                             ],
                             "tag": "div",
                           },
@@ -693,29 +663,23 @@ Array [
                               "class": "column-lg-2",
                             },
                             "content": Array [
-                              "
-				Grid ",
+                              "Grid",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				Custom properties ",
+                              "Custom properties",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				CSS-in-JS ",
+                              "CSS-in-JS",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				SCSS ",
+                              "SCSS",
                               Object {
                                 "tag": "br",
                               },
-                              "
-				PostCSS
-			",
+                              "PostCSS",
                             ],
                             "tag": "div",
                           },
@@ -914,8 +878,7 @@ Array [
                     "content": Array [
                       Object {
                         "content": Array [
-                          "
-				Dutch  ",
+                          "Dutch",
                           Object {
                             "tag": "br",
                           },
@@ -1013,7 +976,7 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "header clear-inner-spacing",
+          "class": "clear-inner-spacing header",
         },
         "content": Array [
           Object {
@@ -1047,7 +1010,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "grid ",
+          "class": "grid",
         },
         "content": Array [
           Object {
@@ -1057,7 +1020,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -1078,7 +1041,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -1095,7 +1058,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "ISAAC",
@@ -1127,7 +1090,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -1148,7 +1111,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -1165,7 +1128,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "ROYCE",
@@ -1203,7 +1166,7 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "header clear-inner-spacing",
+          "class": "clear-inner-spacing header",
         },
         "content": Array [
           Object {
@@ -1237,7 +1200,7 @@ Array [
       },
       Object {
         "attrs": Object {
-          "class": "grid ",
+          "class": "grid",
         },
         "content": Array [
           Object {
@@ -1247,7 +1210,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -1268,7 +1231,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -1285,7 +1248,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "RockXXL",
@@ -1317,7 +1280,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -1338,7 +1301,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -1355,7 +1318,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "Pixeo",
@@ -1408,7 +1371,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "ISAAC",
@@ -1448,7 +1411,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "image",
+                  "class": "fade image fade-active",
                 },
                 "tag": "img",
               },
@@ -1470,7 +1433,7 @@ Array [
             "content": Array [
               Object {
                 "content": Array [
-                  "ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering  e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence &amp; Virtual Reality.",
+                  "ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence &amp; Virtual Reality.",
                 ],
                 "tag": "p",
               },
@@ -1484,7 +1447,7 @@ Array [
             "content": Array [
               Object {
                 "content": Array [
-                  "Starting in May 2019, I’ve joined the front-end team at ISAAC to built awesome web-experiences. I focus mostly on implementing ",
+                  "Starting in May 2019, I’ve joined the front-end team at ISAAC to built awesome web-experiences. I focus mostly on implementing",
                   Object {
                     "attrs": Object {
                       "href": "https://vuejs.org/",
@@ -1494,7 +1457,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " &amp; ",
+                  "&amp;",
                   Object {
                     "attrs": Object {
                       "href": "https://nuxtjs.org/",
@@ -1504,14 +1467,14 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " in enterprise level web applications. ISAAC has proven its skills by being crowned ",
+                  "in enterprise level web applications. ISAAC has proven its skills by being crowned",
                   Object {
                     "content": Array [
                       "#1 Fullservice Digital Agency",
                     ],
                     "tag": "strong",
                   },
-                  " 2 consecutive years in a row in 2018 and 2019. In 2020 ISAAC became part of the West-European full-service powerhouse ",
+                  "2 consecutive years in a row in 2018 and 2019. In 2020 ISAAC became part of the West-European full-service powerhouse",
                   Object {
                     "attrs": Object {
                       "href": "https://intracto.group",
@@ -1527,7 +1490,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "As a profound advocate for qualitative ",
+                  "As a profound advocate for qualitative",
                   Object {
                     "content": Array [
                       "U",
@@ -1541,7 +1504,7 @@ Array [
                     ],
                     "tag": "strong",
                   },
-                  "periences, I quickly joined the ISAAC Testing Guild, cross-company group featuring members from all specialisations which ISAAC has to offer, where best practices around testing software are researched, documented and  offered to the entire ISAAC team.",
+                  "periences, I quickly joined the ISAAC Testing Guild, cross-company group featuring members from all specialisations which ISAAC has to offer, where best practices around testing software are researched, documented and offered to the entire ISAAC team.",
                 ],
                 "tag": "p",
               },
@@ -1576,7 +1539,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "Together with ",
+                  "Together with",
                   Object {
                     "attrs": Object {
                       "href": "https://www.linkedin.com/in/friso-geerlings-b47b384/",
@@ -1586,7 +1549,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " (CTO), ",
+                  "(CTO),",
                   Object {
                     "attrs": Object {
                       "href": "https://www.linkedin.com/in/kfapeters/",
@@ -1596,7 +1559,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " (Technical Director Front-end) and ",
+                  "(Technical Director Front-end) and",
                   Object {
                     "attrs": Object {
                       "href": "https://www.linkedin.com/in/jelleraaijmakers/",
@@ -1606,7 +1569,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " (former Technical Director PHP), we’ve penned down our vision and mission towards the Open Source Community. This has resulted in the ",
+                  "(former Technical Director PHP), we’ve penned down our vision and mission towards the Open Source Community. This has resulted in the",
                   Object {
                     "attrs": Object {
                       "href": "https://www.isaac.nl/nl/developer-blog/open-source-manifest",
@@ -1657,7 +1620,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "Pixeo",
@@ -1697,7 +1660,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "image",
+                  "class": "fade image fade-active",
                 },
                 "tag": "img",
               },
@@ -1728,7 +1691,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.",
+                  "from Arendonk, Belgium offers total digital packages, gaining from graphic design to websites over web apps and digital marketing, to small and medium-sized companies that believe in their own digital future.",
                 ],
                 "tag": "p",
               },
@@ -1789,7 +1752,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "In this project I helped build the technical framework. The front end is built on Nuxt.js, the Vue counterpart of Next.js and the backend on a .NET Core Web API. The entire project follows the principle of Continuous Delivery with a weekly patch-release cycle and a monthly minor-release cycle. This is also possible thanks to a well-designed GitLab CI / CD configuration and a thorough testing suite build upon ",
+                  "In this project I helped build the technical framework. The front end is built on Nuxt.js, the Vue counterpart of Next.js and the backend on a .NET Core Web API. The entire project follows the principle of Continuous Delivery with a weekly patch-release cycle and a monthly minor-release cycle. This is also possible thanks to a well-designed GitLab CI / CD configuration and a thorough testing suite build upon",
                   Object {
                     "attrs": Object {
                       "href": "https://cypress.io",
@@ -1852,7 +1815,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "Due to the large number of internationalities of employees within the company, the platform had to be available in 6 different languages. After the first load, the web app skeleton is stored on the user’s device as a ",
+                  "Due to the large number of internationalities of employees within the company, the platform had to be available in 6 different languages. After the first load, the web app skeleton is stored on the user’s device as a",
                   Object {
                     "content": Array [
                       "PWA",
@@ -1865,7 +1828,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "I had the opportunity to develop the complete application. This application is built on a ",
+                  "I had the opportunity to develop the complete application. This application is built on a",
                   Object {
                     "attrs": Object {
                       "href": "https://nuxtjs.org/",
@@ -1875,7 +1838,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " frontend and ",
+                  "frontend and",
                   Object {
                     "attrs": Object {
                       "href": "https://laravel.com/",
@@ -1885,7 +1848,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " API back-end. The initial load is rendered ",
+                  "API back-end. The initial load is rendered",
                   Object {
                     "attrs": Object {
                       "href": "https://ssr.vuejs.org/#what-is-server-side-rendering-ssr",
@@ -1895,7 +1858,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " and is saved as a ",
+                  "and is saved as a",
                   Object {
                     "attrs": Object {
                       "href": "https://developers.google.com/web/progressive-web-apps/",
@@ -1905,7 +1868,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " on the user’s device. The applications contains following features:",
+                  "on the user’s device. The applications contains following features:",
                 ],
                 "tag": "p",
               },
@@ -1964,7 +1927,7 @@ Array [
                         ],
                         "tag": "a",
                       },
-                      " integration",
+                      "integration",
                     ],
                     "tag": "li",
                   },
@@ -2008,7 +1971,7 @@ Array [
           },
           Object {
             "content": Array [
-              "Front-end implementation of a design system used throughout the entire ",
+              "Front-end implementation of a design system used throughout the entire",
               Object {
                 "attrs": Object {
                   "href": "http://jobs.benrbouwgroep.be/",
@@ -2072,7 +2035,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "RockXXL",
@@ -2112,7 +2075,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "image",
+                  "class": "fade image fade-active",
                 },
                 "tag": "img",
               },
@@ -2148,7 +2111,7 @@ Array [
             "content": Array [
               Object {
                 "content": Array [
-                  "At the end of 2018 they were looking for a volunteer to breathe new life into their website. I immediately offered my services. The old website has been transformed from WordPress into a immaculate JAMstack. ",
+                  "At the end of 2018 they were looking for a volunteer to breathe new life into their website. I immediately offered my services. The old website has been transformed from WordPress into a immaculate JAMstack.",
                   Object {
                     "attrs": Object {
                       "href": "https://rockxxl.be",
@@ -2158,7 +2121,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " now runs on ",
+                  "now runs on",
                   Object {
                     "attrs": Object {
                       "href": "https://gatsbyjs.org",
@@ -2168,7 +2131,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  ", is managed via ",
+                  ", is managed via",
                   Object {
                     "attrs": Object {
                       "href": "https://www.netlifycms.org/",
@@ -2178,7 +2141,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  " and is 100% free hosted on ",
+                  "and is 100% free hosted on",
                   Object {
                     "attrs": Object {
                       "href": "https://www.netlify.com/",
@@ -2188,7 +2151,7 @@ Array [
                     ],
                     "tag": "a",
                   },
-                  ". The source code 100% open source and is ",
+                  ". The source code 100% open source and is",
                   Object {
                     "attrs": Object {
                       "href": "https://github.com/rockxxl/rockxxl",
@@ -2210,7 +2173,7 @@ Array [
               },
               Object {
                 "content": Array [
-                  "Images are hosted on ",
+                  "Images are hosted on",
                   Object {
                     "attrs": Object {
                       "href": "https://cloudinary.com",
@@ -2261,7 +2224,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "ROYCE",
@@ -2301,7 +2264,7 @@ Array [
               },
               Object {
                 "attrs": Object {
-                  "class": "image",
+                  "class": "fade image fade-active",
                 },
                 "tag": "img",
               },
@@ -2323,7 +2286,7 @@ Array [
             "content": Array [
               Object {
                 "content": Array [
-                  "Guitarist, producer, management, booking &amp; founding member of Belgian metalcore formation, ",
+                  "Guitarist, producer, management, booking &amp; founding member of Belgian metalcore formation,",
                   Object {
                     "attrs": Object {
                       "href": "https://roycetheband.com",
@@ -2370,30 +2333,25 @@ Array [
                 "tag": "p",
               },
               Object {
+                "attrs": Object {
+                  "href": "https://instagram.com/roycetheband",
+                },
                 "content": Array [
-                  Object {
-                    "attrs": Object {
-                      "href": "https://instagram.com/roycetheband",
-                    },
-                    "content": Array [
-                      "Instagram",
-                    ],
-                    "tag": "a",
-                  },
-                  Object {
-                    "tag": "br",
-                  },
-                  Object {
-                    "attrs": Object {
-                      "href": "https://facebook.com/roycetheband",
-                    },
-                    "content": Array [
-                      "Facebook",
-                    ],
-                    "tag": "a",
-                  },
+                  "Instagram",
                 ],
-                "tag": "p",
+                "tag": "a",
+              },
+              Object {
+                "tag": "br",
+              },
+              Object {
+                "attrs": Object {
+                  "href": "https://facebook.com/roycetheband",
+                },
+                "content": Array [
+                  "Facebook",
+                ],
+                "tag": "a",
               },
             ],
             "tag": "div",
@@ -2416,7 +2374,7 @@ Array [
     "content": Array [
       Object {
         "attrs": Object {
-          "class": "title outline",
+          "class": "outline title",
         },
         "content": Array [
           "Talks",
@@ -2435,7 +2393,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -2456,7 +2414,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -2473,7 +2431,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "Frontend ♥︎ OpenAPI",
@@ -2505,7 +2463,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -2526,7 +2484,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -2543,7 +2501,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "Container Queries",
@@ -2575,7 +2533,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -2596,7 +2554,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -2613,7 +2571,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "A Technical Look at OpenAPI",
@@ -2645,7 +2603,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -2666,7 +2624,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -2683,7 +2641,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "Why OpenAPI",
@@ -2715,7 +2673,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "reset link",
+                  "class": "link reset",
                 },
                 "content": Array [
                   Object {
@@ -2736,7 +2694,7 @@ Array [
                           },
                           Object {
                             "attrs": Object {
-                              "class": "image",
+                              "class": "fade image fade-active",
                             },
                             "tag": "img",
                           },
@@ -2753,7 +2711,7 @@ Array [
                     "content": Array [
                       Object {
                         "attrs": Object {
-                          "class": "title outline",
+                          "class": "outline title",
                         },
                         "content": Array [
                           "OpenAPI + Testing",
@@ -2806,7 +2764,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "A Technical Look at OpenAPI",
@@ -2974,7 +2932,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "image",
+                      "class": "fade image fade-active",
                     },
                     "tag": "img",
                   },
@@ -3026,7 +2984,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "Container Queries",
@@ -3160,7 +3118,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "image",
+                      "class": "fade image fade-active",
                     },
                     "tag": "img",
                   },
@@ -3212,7 +3170,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "Frontend ♥︎ OpenAPI",
@@ -3380,7 +3338,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "image",
+                      "class": "fade image fade-active",
                     },
                     "tag": "img",
                   },
@@ -3444,7 +3402,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "OpenAPI + Testing",
@@ -3503,7 +3461,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "image",
+                      "class": "fade image fade-active",
                     },
                     "tag": "img",
                   },
@@ -3547,7 +3505,7 @@ Array [
             "content": Array [
               Object {
                 "attrs": Object {
-                  "class": "title outline",
+                  "class": "outline title",
                 },
                 "content": Array [
                   "Why OpenAPI",
@@ -3606,7 +3564,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "image",
+                      "class": "fade image fade-active",
                     },
                     "tag": "img",
                   },

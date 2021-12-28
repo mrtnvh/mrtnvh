@@ -2,12 +2,11 @@ import { promisify } from "util";
 import fs from "fs-extra";
 import favicons from "favicons";
 import { replaceFilesContent, BUILD_DIRECTORY } from "./_utils.mjs";
-import pkg from "../../package.json";
 
 const source = "public/favicon.png";
 const iconOutPath = "/";
 
-const configuration = {
+const getConfiguration = (pkg) => ({
 	// Path for overriding default icons path. `string`
 	path: iconOutPath,
 
@@ -74,12 +73,13 @@ const configuration = {
 		// Create Yandex browser icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
 		yandex: false,
 	},
-};
+});
 
 export default async () => {
+	const pkg = await fs.readJSON("package.json");
 	const { html, images, files } = await promisify(favicons)(
 		source,
-		configuration,
+		getConfiguration(pkg),
 	);
 
 	await Promise.all(
@@ -107,8 +107,6 @@ export default async () => {
 			return fs.outputFile(`${BUILD_DIRECTORY}/${name}`, contents);
 		}),
 	);
-
-	console.log(html);
 
 	await replaceFilesContent("**/*.html", async (content) => {
 		const splitAndJoinString = "</head>";
