@@ -114,7 +114,7 @@ jobs:
     needs: deploy-preview
 
     env:
-      CI_BASEURL: ${{needs.deploy.outputs.deployment}}
+      CI_BASEURL: ${{needs.deploy-preview.outputs.deployment}}
 
     strategy:
       matrix:
@@ -153,6 +153,8 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: [build, test, performance]
+
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
 
     steps:
       - uses: actions/checkout@v2
