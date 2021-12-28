@@ -18,6 +18,41 @@ const description = content?.description || descriptionDefault;
 const image = content?.thumbnail
   ? getOgImage({ src: content?.thumbnail })
   : urljoin(siteUrl, '/og.png');
+
+const schemaWebsite = JSON.stringify({
+  '@context': 'http://schema.org',
+  '@type': 'WebSite',
+  url: 'https://mrtnvh.com',
+  name: 'Maarten Van Hoof',
+});
+
+const schemaPerson = JSON.stringify({
+  '@context': 'http://schema.org/',
+  '@type': 'Person',
+  name: 'Maarten Van Hoof',
+  image:
+    'https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait',
+  jobTitle: 'Front-end Developer',
+  url: 'https://mrtnvh.com',
+  sameAs: 'https://mrtnvh.com',
+  memberOf: {
+    '@context': 'http://schema.org',
+    '@type': 'Organization',
+    name: 'ISAAC',
+    url: 'https://isaac.nl',
+    sameAs: 'https://isaac.nl',
+    slogan: 'Turning .complexity into profitability',
+    description: 'Digital Agency specialized in Commerce en Finance',
+    image: 'https://www.isaac.nl/global/images/logo.svg',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Eindhoven, The Netherlands',
+      postalCode: '5621 AA',
+      streetAddress: 'Marconilaan 16',
+    },
+    email: 'welkom@isaac.nl',
+  },
+});
 ---
 
 <head>
@@ -25,13 +60,11 @@ const image = content?.thumbnail
   <meta name="description" content={description} />
   <meta name="author" content="Maarten Van Hoof" />
   <meta name="image" content={image} />
-
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@mrtnvh" />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
   <meta name="twitter:title" content={title} />
-
   <meta property="og:description" content={description} />
   <meta property="og:image:alt" content={title} />
   <meta property="og:image:height" content="630" />
@@ -41,22 +74,8 @@ const image = content?.thumbnail
   <meta property="og:site_name" content="mrtnvh" />
   <meta property="og:title" content={title} />
   <meta property="og:type" content="article" />
-  <script type="application/ld+json">
-    { "@context": "http://schema.org", "@type": "WebSite", "url":
-    "https://mrtnvh.com", "name": "Maarten Van Hoof" }
-  </script>
-  <script type="application/ld+json">
-    { "@context": "http://schema.org/", "@type": "Person", "name": "Maarten Van
-    Hoof", "image":
-    "https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait",
-    "jobTitle": "Front-end Developer", "url": "https://mrtnvh.com", "sameAs":
-    "https://mrtnvh.com", "memberOf": { "@context": "http://schema.org",
-    "@type": "Organization", "name": "ISAAC", "url": "https://isaac.nl",
-    "sameAs": "https://isaac.nl", "slogan": "Turning .complexity into
-    profitability", "description": "Digital Agency specialized in Commerce en
-    Finance", "image": "https://www.isaac.nl/global/images/logo.svg", "address":
-    { "@type": "PostalAddress", "addressLocality": "Eindhoven, The Netherlands",
-    "postalCode": "5621 AA", "streetAddress": "Marconilaan 16" }, "email":
-    "welkom@isaac.nl" } }
-  </script>
+  {`
+	<script type="application/ld+json">${schemaWebsite}</script>
+  	<script type="application/ld+json">${schemaPerson}</script>
+  `}
 </head>
