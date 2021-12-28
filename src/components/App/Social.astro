@@ -39,7 +39,7 @@ const links = [
       rel="noopener"
       data-testid={`navigation-${name}`}
     >
-      <svg>
+      <svg aria-label={name}>
         <use xlink:href={`#${icon}`} />
       </svg>
     </a>
