@@ -8,7 +8,10 @@ function init() {
 }
 
 const swup = new Swup({
-	plugins: [new SwupPreloadPlugin(), new SwupHeadPlugin()],
+	plugins: [
+		new SwupPreloadPlugin(),
+		new SwupHeadPlugin({ persistAssets: true }),
+	],
 });
 
 window.plausible =

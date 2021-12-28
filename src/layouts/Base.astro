@@ -6,7 +6,7 @@ import SvgSprite from "../components/SvgSprite.astro";
 import { getSrcSet } from "../components/Image/cloudinary";
 
 
-const isProd = import.meta.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === 'production'
 const { content } = Astro.props;
 
 let src = '';
@@ -15,7 +15,7 @@ let srcSetWebp = '';
 
 if (content?.thumbnail) {
 	src = getSrcSet({ src: content.thumbnail }).src;
-	src = getSrcSet({ src: content.thumbnail }).srcSet;
+	srcSet = getSrcSet({ src: content.thumbnail }).srcSet;
 	srcSetWebp = getSrcSet({ src: content.thumbnail, type: "webp" }).srcSet;
 }
 
@@ -62,7 +62,7 @@ if (content?.thumbnail) {
 			<Footer/>
 		</div>
 		<script type="module" async src={Astro.resolve("../js/main.js")}></script>
-		{ isProd && `
+		{ isProd &&
 			<script>
 				const statsScript = document.createElement( 'script' );
 				statsScript.setAttribute( 'src', '/js/stats' );
@@ -70,7 +70,7 @@ if (content?.thumbnail) {
 				statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
 				document.body.appendChild( statsScript );
 			</script>
-		`}
+		}
 	</body>
 </html>
 
