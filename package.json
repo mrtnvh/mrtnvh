@@ -75,7 +75,7 @@
     "prettier": "^2.5.1",
     "prettier-plugin-astro": "^0.0.11",
     "prettier-plugin-sh": "^0.8.1",
-    "puppeteer": "^10.4.0",
+    "puppeteer": "^13.0.1",
     "purgecss": "^4.0.3",
     "rollup-plugin-inline-svg": "^2.0.0",
     "rollup-plugin-svgsprite-generator": "^1.0.1",
