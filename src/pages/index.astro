@@ -1,20 +1,21 @@
 ---
-import { orderBy } from 'lodash-es'
+import { orderBy } from 'lodash-es';
 import BaseLayout from '../layouts/Base.astro';
-import Section from "../components/Page/Section.astro";
-import Intro from "../components/Page/Intro.astro";
-import List from "../components/List/List.astro";
+import Section from '../components/Page/Section.astro';
+import Intro from '../components/Page/Intro.astro';
+import List from '../components/List/List.astro';
 
 const data = await Astro.fetchContent('./projects/*.md');
 const projects = orderBy(
-	data.filter(({ current }) => current ),
-	['datePublished'],
-	['desc']
+  data.filter(({ current }) => current),
+  ['datePublished'],
+  ['desc'],
 );
 ---
+
 <BaseLayout {...Astro.props}>
-	<Intro />
-	<Section title="Current" titleSmall="projects">
-		<List items={projects} class="projects" />
-	</Section>
+  <Intro />
+  <Section title="Current" titleSmall="projects">
+    <List items={projects} class="projects" />
+  </Section>
 </BaseLayout>

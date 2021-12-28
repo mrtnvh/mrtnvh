@@ -2,8 +2,8 @@
 layout: ../layouts/About.astro
 title: About
 subtitle: A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
-description: ""
-thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871092/mrtnvh.com/portrait.jpg"
+description: ''
+thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871092/mrtnvh.com/portrait.jpg'
 thumbnailAlt: A portrait photo of Maarten Van Hoof.
 type: about
 datePublished: 20190914
@@ -33,19 +33,21 @@ I want to be part of a team with clear vision and resources to build an awesome 
 <div class="break-inside-avoid mb-ggy">
 
 ## Likes
-*   Isomorphic Web Applications
-*   Offline first
-*   Component-based development
-*   Automating tools
-*   Well-documented & tested projects
-*   Well-grounded arguments
-*   Open, transparent but time-appropriate and concise communication
-*   Dad jokes
+
+- Isomorphic Web Applications
+- Offline first
+- Component-based development
+- Automating tools
+- Well-documented & tested projects
+- Well-grounded arguments
+- Open, transparent but time-appropriate and concise communication
+- Dad jokes
 
 </div>
 </div>
 
 ## Skills
+
 <table class="mb-ggy">
 	<tr>
 		<td>Web</td>
@@ -114,11 +116,8 @@ I want to be part of a team with clear vision and resources to build an awesome 
 	</tr>
 </table>
 
-
-
-
-
 ## Physical languages
+
 <table>
 	<thead>
 		<tr>
@@ -148,14 +147,3 @@ I want to be part of a team with clear vision and resources to build an awesome 
 		</tr>
 	</tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-

@@ -1,35 +1,35 @@
 table {
-	table-layout: fixed;
-	width: 100%;
-	border-collapse: collapse;
-	font-size: 1rem;
-	line-height: var(--line-height);
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  line-height: var(--line-height);
 }
 
 th,
 td {
-	text-align: left;
-	vertical-align: top;
-	border-bottom: 1px solid var(--text-color);
-	padding: calc(var(--space)) 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--text-color);
+  padding: calc(var(--space)) 0;
 
-	.table-borderless & {
-		border-bottom: 0;
-	}
+  .table-borderless & {
+    border-bottom: 0;
+  }
 
-	&:not(:first-child) {
-		padding-left: calc(var(--space) / 2);
-	}
+  &:not(:first-child) {
+    padding-left: calc(var(--space) / 2);
+  }
 
-	&:not(:last-child) {
-		padding-right: calc(var(--space) / 2);
-	}
+  &:not(:last-child) {
+    padding-right: calc(var(--space) / 2);
+  }
 
-	tr:first-child & {
-		border-top: 1px solid var(--text-color);
+  tr:first-child & {
+    border-top: 1px solid var(--text-color);
 
-		.table-borderless & {
-			border-top: 0;
-		}
-	}
+    .table-borderless & {
+      border-top: 0;
+    }
+  }
 }

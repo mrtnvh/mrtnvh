@@ -3,7 +3,7 @@ layout: ../../layouts/Project.astro
 title: Pixeo
 subtitle: Web agency
 description: 6 years of front-end development experience gained, evolving from a absolute beginner to a lead engineer for a small web agency.
-thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/pixeo.jpg"
+thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/pixeo.jpg'
 color: 85FFFF
 current: false
 datePublished: 20130101
@@ -43,7 +43,6 @@ You can visit this platform at mol.evenementenkluis.be and evenementen.balen.be.
 
 </div>
 
-
 ## Omnitruck
 
 <div class="column-lg-2 column-xxl-3 mb-ggy">
@@ -56,22 +55,24 @@ Due to the large number of internationalities of employees within the company, t
 
 I had the opportunity to develop the complete application. This application is built on a [Nuxt.js](https://nuxtjs.org/) frontend and [Laravel](https://laravel.com/) API back-end. The initial load is rendered [Server-Side](https://ssr.vuejs.org/#what-is-server-side-rendering-ssr) and is saved as a [PWA](https://developers.google.com/web/progressive-web-apps/) on the user's device. The applications contains following features:
 
--  Internationalization of 6 languages
--  Authentication via an OAuth2 layer
--  Authorization via multiple roles
--  Diff-view of the latest changes
--  Search
--  PWA functionality
--  Server-side rendering
--  [CKEditor](https://ckeditor.com/ckeditor-5/) integration
--  ...
+- Internationalization of 6 languages
+- Authentication via an OAuth2 layer
+- Authorization via multiple roles
+- Diff-view of the latest changes
+- Search
+- PWA functionality
+- Server-side rendering
+- [CKEditor](https://ckeditor.com/ckeditor-5/) integration
+- ...
 
 </div>
 
 ## Other work
 
 ### [Arkana](https://www.arkana.be/)
+
 Front-end implementation of a design system used throughout the entire [B&R Building Group](http://jobs.benrbouwgroep.be/)
 
 ### [Bemdhal](http://www.bemdhal.be/nl-BE/)
+
 Design & build for a local sports complex

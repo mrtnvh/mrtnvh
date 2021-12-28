@@ -6,71 +6,69 @@ export interface Props {
 const { offCanvas = false } = Astro.props;
 
 const links = [
-	{
-		name: "email",
-		href: "mailto:info@mrtnvh.com",
-		icon: 'email',
-	},
-	{
-		name: "github",
-		href: "https://github.com/vanhoofmaarten/",
-		icon: 'gitHub',
-	},
-	{
-		name: "twitter",
-		href: "https://twitter.com/mrtnvh/",
-		icon: 'twitter',
-	},
-	{
-		name: "linkedin",
-		href: "https://www.linkedin.com/in/mrtnvh/",
-		icon: 'linkedIn',
-	},
+  {
+    name: 'email',
+    href: 'mailto:info@mrtnvh.com',
+    icon: 'email',
+  },
+  {
+    name: 'github',
+    href: 'https://github.com/vanhoofmaarten/',
+    icon: 'gitHub',
+  },
+  {
+    name: 'twitter',
+    href: 'https://twitter.com/mrtnvh/',
+    icon: 'twitter',
+  },
+  {
+    name: 'linkedin',
+    href: 'https://www.linkedin.com/in/mrtnvh/',
+    icon: 'linkedIn',
+  },
 ];
 ---
 
-<nav class={ `social ${offCanvas ? 'social--offCanvas' : ''}` }>
-	{
-		links.map(({ href, name, icon }) =>
-			<a
-				key={href}
-				href={href}
-				class={name}
-				target="_blank"
-				rel="noopener"
-				data-testid={`navigation-${name}`}
-			>
-				<svg>
-					<use xlink:href={`#${icon}`} />
-				</svg>
-			</a>
-		)
-	}
+<nav class={`social ${offCanvas ? 'social--offCanvas' : ''}`}>
+  {links.map(({ href, name, icon }) => (
+    <a
+      key={href}
+      href={href}
+      class={name}
+      target="_blank"
+      rel="noopener"
+      data-testid={`navigation-${name}`}
+    >
+      <svg>
+        <use xlink:href={`#${icon}`} />
+      </svg>
+    </a>
+  ))}
 </nav>
 
 <style>
-.social {
-	display: flex;
-	justify-content: flex-end;
+  .social {
+    display: flex;
+    justify-content: flex-end;
 
-	&.social--offCanvas {
-		padding: var(--grid-gap-y) 0;
-	}
-}
+    &.social--offCanvas {
+      padding: var(--grid-gap-y) 0;
+    }
+  }
 
-button.link,
-a {
-	line-height: 0;
-	margin: calc(var(--space) / 2) calc(var(--space));
-}
+  button.link,
+  a {
+    line-height: 0;
+    margin: calc(var(--space) / 2) calc(var(--space));
+  }
 
-svg {
-	height: calc(var(--space) * 1.25);
-	width: calc(var(--space) * 1.25);
+  svg {
+    height: calc(var(--space) * 1.25);
+    width: calc(var(--space) * 1.25);
 
-	.social--offCanvas & {
-		height: var(--font-size-lg);
-		width: var(--font-size-lg);
-	}
-}
+    .social--offCanvas & {
+      height: var(--font-size-lg);
+      width: var(--font-size-lg);
+    }
+  }
 </style>

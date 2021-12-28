@@ -1,21 +1,21 @@
 .zoom-out-in-fade,
 .zoom-out-in-fade-enter-active,
 .zoom-out-in-fade-leave-active {
-	transition: opacity, transform;
-	transition-duration: var(--animation-duration);
-	transition-timing-function: var(--animation-timing-function);
+  transition: opacity, transform;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 .zoom-out-in-fade-active,
 .zoom-out-in-fade-enter-active,
 .zoom-out-in-fade-leave-active {
-	opacity: 1;
-	transform: scale(1, 1);
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .zoom-out-in-fade-inactive,
 .zoom-out-in-fade-enter,
 .zoom-out-in-fade-leave-to {
-	opacity: 0;
-	transform: scale(2, 2);
+  opacity: 0;
+  transform: scale(2, 2);
 }

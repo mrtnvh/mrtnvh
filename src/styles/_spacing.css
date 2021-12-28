@@ -1,17 +1,17 @@
 .mr-space {
-	margin-right: 0.375em;
+  margin-right: 0.375em;
 }
 
 .mb-ggy {
-	margin-bottom: var(--grid-gap-y);
+  margin-bottom: var(--grid-gap-y);
 }
 
 .clear-inner-spacing {
-	> *:first-child {
-		margin-top: 0 !important;
-	}
+  > *:first-child {
+    margin-top: 0 !important;
+  }
 
-	> *:last-child {
-		margin-top: 0 !important;
-	}
+  > *:last-child {
+    margin-top: 0 !important;
+  }
 }

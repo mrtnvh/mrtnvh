@@ -1,82 +1,86 @@
 ---
 import BaseLayout from './Base.astro';
 import Thumbnail from '../components/Image/Image.astro';
-const { content: { title, subtitle, thumbnail } } = Astro.props;
+const {
+  content: { title, subtitle, thumbnail },
+} = Astro.props;
 ---
 
-<BaseLayout { ...Astro.props } category="Projects">
-	<article id="project" class="container">
-		<header>
-			<div class="sticky">
-				<h1 class="title outline">{ title }</h1>
-				<div class="subtitle">{ subtitle }</div>
-			</div>
-		</header>
-		<figure class="media">
-			{thumbnail && <Thumbnail
-				src={thumbnail}
-				alt={title}
-				class="image"
-				width="1600"
-				height="900"
-			/>}
-		</figure>
-		<div class="body">
-			<slot />
-		</div>
-	</article>
+<BaseLayout {...Astro.props} category="Projects">
+  <article id="project" class="container">
+    <header>
+      <div class="sticky">
+        <h1 class="title outline">{title}</h1>
+        <div class="subtitle">{subtitle}</div>
+      </div>
+    </header>
+    <figure class="media">
+      {thumbnail && (
+        <Thumbnail
+          src={thumbnail}
+          alt={title}
+          class="image"
+          width="1600"
+          height="900"
+        />
+      )}
+    </figure>
+    <div class="body">
+      <slot />
+    </div>
+  </article>
 </BaseLayout>
 
 <style>
-.container {
-	padding-top: var(--grid-gap-y);
-	padding-bottom: var(--grid-gap-y);
-	display: flex;
-	flex-direction: column;
+  .container {
+    padding-top: var(--grid-gap-y);
+    padding-bottom: var(--grid-gap-y);
+    display: flex;
+    flex-direction: column;
 
-	@media (min-width: 800px) {
-		display: grid;
-		grid-template-columns: 30.5% 69.5%;
-		grid-template-areas: "header media" "header body";
-		grid-column-gap: var(--grid-gap-x);
-		width: calc(100% - (var(--grid-gap-x)));
-	}
-}
+    @media (min-width: 800px) {
+      display: grid;
+      grid-template-columns: 30.5% 69.5%;
+      grid-template-areas: 'header media' 'header body';
+      grid-column-gap: var(--grid-gap-x);
+      width: calc(100% - (var(--grid-gap-x)));
+    }
+  }
 
-header {
-	grid-area: header;
-	margin-bottom: var(--grid-gap-y);
+  header {
+    grid-area: header;
+    margin-bottom: var(--grid-gap-y);
 
-	@media (max-width: 799px) {
-		order: 2;
-		margin-top: calc(var(--grid-gap) * -2.5);
-		margin-left: var(--grid-gap);
-	}
-}
+    @media (max-width: 799px) {
+      order: 2;
+      margin-top: calc(var(--grid-gap) * -2.5);
+      margin-left: var(--grid-gap);
+    }
+  }
 
-.sticky {
-	position: sticky;
-	z-index: var(--project-header-zindex);
-	top: var(--project-header-top-position);
-}
+  .sticky {
+    position: sticky;
+    z-index: var(--project-header-zindex);
+    top: var(--project-header-top-position);
+  }
 
-.title {
-	font-size: var(--project-title-size);
-	margin: var(--project-title-margin);
-	text-transform: uppercase;
-	line-height: 0.66em;
-}
+  .title {
+    font-size: var(--project-title-size);
+    margin: var(--project-title-margin);
+    text-transform: uppercase;
+    line-height: 0.66em;
+  }
 
-.media {
-	grid-area: media;
+  .media {
+    grid-area: media;
 
-	@media (max-width: 799px) {
-		order: 1;
-	}
-}
+    @media (max-width: 799px) {
+      order: 1;
+    }
+  }
 
-.body {
-	grid-area: body;
-	order: 3;
-}
+  .body {
+    grid-area: body;
+    order: 3;
+  }
 </style>

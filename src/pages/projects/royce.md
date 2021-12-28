@@ -2,7 +2,7 @@
 layout: ../../layouts/Project.astro
 title: ROYCE
 subtitle: Metal
-thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/royce.jpg"
+thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/royce.jpg'
 description: Guitarist, producer, management, booking & founding member of Belgian metalcore formation ROYCE.
 color: FF005C
 current: true

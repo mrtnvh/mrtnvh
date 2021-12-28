@@ -4,11 +4,11 @@ title: Frontend ♥︎ OpenAPI
 slug: frontend-loves-openapi
 subtitle: API Specification Conference 2021
 description: The OpenAPI specification can so much speed up your Front End workflow, let me show you how.
-thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1632934649/mrtnvh.com/api-spec-conf.png"
+thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1632934649/mrtnvh.com/api-spec-conf.png'
 datePublished: 20210929
-videoPreview: "https://res.cloudinary.com/mrtnvh/image/upload/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg"
-video: "https://www.youtube.com/watch?v=3IKbLDbq5ww"
-demo: "https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo"
+videoPreview: 'https://res.cloudinary.com/mrtnvh/image/upload/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg'
+video: 'https://www.youtube.com/watch?v=3IKbLDbq5ww'
+demo: 'https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo'
 conference: API Specification Conference 2021
 slides: https://frontend-loves-openapi.mrtnvh.com
 ---

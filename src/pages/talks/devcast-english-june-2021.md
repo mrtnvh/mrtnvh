@@ -4,10 +4,10 @@ title: Container Queries
 slug: container-queries-the-next-step-towards-a-truly-modular-css
 subtitle: The next step towards a truly modular CSS
 description: Examples of how the OpenAPI specification can improve your Front End workflow
-thumbnail: "https://res.cloudinary.com/mrtnvh/image/upload/v1627588090/mrtnvh.com/devcast-juni-2021.jpg"
+thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1627588090/mrtnvh.com/devcast-juni-2021.jpg'
 datePublished: 20210615
-videoPreview: "https://res.cloudinary.com/mrtnvh/image/upload/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg"
-video: "https://youtu.be/Hr5lIsbiWpY?t=178"
+videoPreview: 'https://res.cloudinary.com/mrtnvh/image/upload/v1624820160/mrtnvh.com/devcast-juni-2021-thumbnail.jpg'
+video: 'https://youtu.be/Hr5lIsbiWpY?t=178'
 conference: CodeMotion DevCast
 slides: https://devcast-june-2021.mrtnvh.com/
 ---

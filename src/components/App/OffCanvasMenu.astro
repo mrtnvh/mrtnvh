@@ -1,56 +1,56 @@
 ---
-import Nav from "./Nav.astro";
-import Social from "./Social.astro";
+import Nav from './Nav.astro';
+import Social from './Social.astro';
 ---
 
 <button
-	id="offCanvasMenuToggle"
-	class="reset link menu-toggle"
-	data-testid="offcanvasmenu-toggle"
+  id="offCanvasMenuToggle"
+  class="reset link menu-toggle"
+  data-testid="offcanvasmenu-toggle"
 >
-	Menu
+  Menu
 </button>
-<div id="offCanvasMenu" class='offCanvasMenu'>
-	<Nav class="nav" offCanvas />
-	<Social class="social" offCanvas />
+<div id="offCanvasMenu" class="offCanvasMenu">
+  <Nav class="nav" offCanvas />
+  <Social class="social" offCanvas />
 </div>
 
 <script>
-const openClassName = "offCanvasMenu--open";
-const $offCanvasMenu = document.querySelector("#offCanvasMenu");
-const $offCanvasMenuToggle = document.querySelector("#offCanvasMenuToggle");
+  const openClassName = 'offCanvasMenu--open';
+  const $offCanvasMenu = document.querySelector('#offCanvasMenu');
+  const $offCanvasMenuToggle = document.querySelector('#offCanvasMenuToggle');
 
-if ($offCanvasMenuToggle && $offCanvasMenu) {
-	$offCanvasMenuToggle.addEventListener("click", () => {
-		if ($offCanvasMenu.classList.contains(openClassName)) {
-			$offCanvasMenu.classList.remove(openClassName);
-			$offCanvasMenuToggle.textContent = 'Menu';
-		} else {
-			$offCanvasMenu.classList.add(openClassName);
-			$offCanvasMenuToggle.textContent = 'Close';
-		}
-	});
-}
+  if ($offCanvasMenuToggle && $offCanvasMenu) {
+    $offCanvasMenuToggle.addEventListener('click', () => {
+      if ($offCanvasMenu.classList.contains(openClassName)) {
+        $offCanvasMenu.classList.remove(openClassName);
+        $offCanvasMenuToggle.textContent = 'Menu';
+      } else {
+        $offCanvasMenu.classList.add(openClassName);
+        $offCanvasMenuToggle.textContent = 'Close';
+      }
+    });
+  }
 </script>
 
 <style>
-.offCanvasMenu {
-	display: none;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	flex-grow: 1;
-	top: calc(var(--project-header-top-position) * 2.5);
-	left: 0;
-	width: 100%;
-	bottom: 0;
-	background: var(--background-color);
-	z-index: var(--offcanvasmenu-zindex);
-	position: fixed;
-	border-top: 1px solid var(--grey);
-}
+  .offCanvasMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    top: calc(var(--project-header-top-position) * 2.5);
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: var(--background-color);
+    z-index: var(--offcanvasmenu-zindex);
+    position: fixed;
+    border-top: 1px solid var(--grey);
+  }
 
-.offCanvasMenu--open {
-	display: flex;
-}
+  .offCanvasMenu--open {
+    display: flex;
+  }
 </style>
