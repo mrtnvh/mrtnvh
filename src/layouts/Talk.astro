@@ -1,0 +1,114 @@
+---
+import BaseLayout from './Base.astro';
+import Thumbnail from '../components/Image/Image.astro';
+import VideoPreview from '../components/VideoPreview.astro';
+
+const { content } = Astro.props;
+---
+
+<BaseLayout {...Astro.props} category="Talks">
+  <article id="talk" class="container">
+    <header>
+      <div class="sticky">
+        <h1 class="title outline">{content.title}</h1>
+        <div class="subtitle">{content.subtitle}</div>
+      </div>
+    </header>
+    <aside>
+      <table class="table-borderless">
+        {content.slides && (
+          <tr>
+            <td style="width: 6rem;">Slides</td>
+            <td>
+              <a href={content.slides} target="_blank" rel="noopener">
+                {content.slides}
+              </a>
+            </td>
+          </tr>
+        )}
+        {content.demo && (
+          <tr>
+            <td>Demo</td>
+            <td>
+              <a href={content.demo} target="_blank" rel="noopener">
+                {content.demo}
+              </a>
+            </td>
+          </tr>
+        )}
+        {content.video && (
+          <tr>
+            <td>Video</td>
+            <td>
+              <a href={content.video} target="_blank" rel="noopener">
+                {content.video}
+              </a>
+            </td>
+          </tr>
+        )}
+      </table>
+    </aside>
+    <div class="preview">
+      <VideoPreview
+        videoPreview={content.videoPreview}
+        video={content.video}
+        thumbnail={content.thumbnail}
+        title={content.title}
+      />
+    </div>
+    <div class="body">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .container {
+    padding-top: var(--grid-gap-y);
+    padding-bottom: var(--grid-gap-y);
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 800px) {
+      display: grid;
+      grid-template-columns: 30.5% 69.5%;
+      grid-template-areas: 'header header' 'aside preview' 'aside body';
+      grid-column-gap: var(--grid-gap-x);
+      width: calc(100% - (var(--grid-gap-x)));
+    }
+  }
+
+  header {
+    grid-area: header;
+    margin-bottom: var(--grid-gap-y);
+
+    @media (max-width: 799px) {
+      margin-top: calc(var(--grid-gap) * -2.5);
+      margin-left: var(--grid-gap);
+    }
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .title {
+    font-size: var(--talk-title-size);
+    margin: var(--talk-title-margin);
+    text-transform: uppercase;
+    line-height: var(--talk-title-line-height);
+  }
+
+  .preview {
+    grid-area: preview;
+
+    @media (max-width: 799px) {
+      order: 1;
+    }
+  }
+
+  .body {
+    grid-area: body;
+    order: 3;
+  }
+</style>

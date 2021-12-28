@@ -10,27 +10,19 @@
   "prHourlyLimit": 5,
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "^eslint"
-      ],
+      "matchPackagePatterns": ["^eslint"],
       "groupName": "eslint"
     },
     {
-      "matchPackagePatterns": [
-        "^jest"
-      ],
+      "matchPackagePatterns": ["^jest"],
       "groupName": "jest"
     },
     {
-      "matchPackagePatterns": [
-        "^postcss"
-      ],
+      "matchPackagePatterns": ["^postcss"],
       "groupName": "postcss"
     },
     {
-      "matchPackagePatterns": [
-        "^stylelint"
-      ],
+      "matchPackagePatterns": ["^stylelint"],
       "groupName": "stylelint"
     }
   ]

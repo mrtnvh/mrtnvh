@@ -1,0 +1,38 @@
+---
+import Thumbnail from './Image/Image.astro';
+
+export interface Props {
+  video?: string;
+  videoPreview?: string;
+  thumbnail?: string;
+  title: string;
+}
+
+const { video, videoPreview, thumbnail, title } = Astro.props;
+
+const VideoPreview = videoPreview && video ? 'a' : 'figure';
+const videoPreviewProps = {
+  ...(videoPreview && video
+    ? {
+        class: 'media media--video-overlay',
+        href: video,
+        target: '_blank',
+        rel: 'noopener',
+      }
+    : {
+        class: 'media',
+      }),
+};
+---
+
+<VideoPreview {...videoPreviewProps}>
+  {thumbnail && (
+    <Thumbnail
+      src={videoPreview || thumbnail}
+      alt={title}
+      class="image"
+      width="1600"
+      height="900"
+    />
+  )}
+</VideoPreview>

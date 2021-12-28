@@ -1,8 +1,16 @@
-const { port } = require("./config");
+const { port } = require('./config');
 
-exports.getUrl = (p) => `http://localhost:${port}${p}`;
+const removeTrailingSlash = (url) =>
+  url.endsWith('/') ? url.slice(0, url.length - 1) : url;
 
-exports.customSnapshotIdentifier = (path, environmentName) =>
-	`pages${
-		path === "/" ? "-index" : path.split("/").join("-")
-	}-${environmentName}`;
+const getUrl = (p) =>
+  (process.env.CI_BASEURL || `http://localhost:${port}`) + p;
+
+const customSnapshotIdentifier = (path, environmentName) =>
+  `pages${
+    path === '/' ? '-index' : removeTrailingSlash(path).split('/').join('-')
+  }-${environmentName}`;
+
+exports.removeTrailingSlash = removeTrailingSlash;
+exports.customSnapshotIdentifier = customSnapshotIdentifier;
+exports.getUrl = getUrl;
