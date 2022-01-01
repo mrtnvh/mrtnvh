@@ -19,7 +19,7 @@
     "test": "run-s test:*",
     "test:format": "prettier -w --ignore-path .gitignore .",
     "test:lint": "eslint --fix --ext .js,.mjs --ignore-path .gitignore .",
-    "test:style": "stylelint --fix {src,public}/**/*.{css,astro}",
+    "test:style": "stylelint --fix {src,public}/**/*.css",
     "test:e2e": "jest --selectProjects e2e",
     "test:visual": "jest --selectProjects visual",
     "test:performance": "jest --selectProjects performance",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@web/rollup-plugin-html": "^1.10.1",
-    "@wemake-services/stylelint-config-scss": "^0.5.0",
+    "@wemake-services/stylelint-config-scss": "^1.0.0",
     "autoprefixer": "^10.3.7",
     "critters": "0.0.10",
     "cssnano": "^5.0.8",
@@ -79,9 +79,9 @@
     "purgecss": "^4.0.3",
     "rollup-plugin-inline-svg": "^2.0.0",
     "rollup-plugin-svgsprite-generator": "^1.0.1",
-    "stylelint": "^13.13.1",
+    "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-order": "^4.1.0",
+    "stylelint-order": "^5.0.0",
     "urljoin": "^0.1.5",
     "workbox-build": "^6.3.0"
   }

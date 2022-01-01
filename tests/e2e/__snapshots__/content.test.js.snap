@@ -3392,7 +3392,7 @@ Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "media media--video-overlay",
+              "class": "media media-video-overlay",
             },
             "content": Array [
               " ",
@@ -3614,7 +3614,7 @@ Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "media media--video-overlay",
+              "class": "media media-video-overlay",
             },
             "content": Array [
               " ",
@@ -3876,7 +3876,7 @@ Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "media media--video-overlay",
+              "class": "media media-video-overlay",
             },
             "content": Array [
               " ",
