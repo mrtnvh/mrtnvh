@@ -29,7 +29,7 @@ const links = [
 ];
 ---
 
-<nav class={`social ${offCanvas ? 'social--offCanvas' : ''}`}>
+<nav class={`social ${offCanvas ? 'social-off-canvas' : ''}`}>
   {links.map(({ href, name, icon }) => (
     <a
       key={href}
@@ -51,7 +51,7 @@ const links = [
     display: flex;
     justify-content: flex-end;
 
-    &.social--offCanvas {
+    &.social-off-canvas {
       padding: var(--grid-gap-y) 0;
     }
   }
@@ -66,7 +66,7 @@ const links = [
     height: calc(var(--space) * 1.25);
     width: calc(var(--space) * 1.25);
 
-    .social--offCanvas & {
+    .social-off-canvas & {
       height: var(--font-size-lg);
       width: var(--font-size-lg);
     }

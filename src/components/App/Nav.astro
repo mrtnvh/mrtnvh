@@ -25,7 +25,7 @@ const links = [
 ];
 ---
 
-<nav class={`nav ${offCanvas ? 'nav--offCanvas' : ''}`}>
+<nav class={`nav ${offCanvas ? 'nav-off-canvas' : ''}`}>
   {links.map((link) => (
     <a
       key={link.title}
@@ -49,7 +49,7 @@ const links = [
       white-space: nowrap;
     }
 
-    &.nav--offCanvas {
+    &.nav-off-canvas {
       font-size: var(--font-size-3xl);
       font-family: var(--headings-font-family);
       font-weight: var(--fat-font-weight);

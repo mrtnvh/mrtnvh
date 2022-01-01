@@ -6,17 +6,17 @@ import Social from './Social.astro';
 <button
   id="offCanvasMenuToggle"
   class="reset link menu-toggle"
-  data-testid="offcanvasmenu-toggle"
+  data-testid="off-canvas-menu-toggle"
 >
   Menu
 </button>
-<div id="offCanvasMenu" class="offCanvasMenu">
+<div id="offCanvasMenu" class="off-canvas-menu">
   <Nav class="nav" offCanvas />
   <Social class="social" offCanvas />
 </div>
 
 <script>
-  const openClassName = 'offCanvasMenu--open';
+  const openClassName = 'off-canvas-menu-open';
   const $offCanvasMenu = document.querySelector('#offCanvasMenu');
   const $offCanvasMenuToggle = document.querySelector('#offCanvasMenuToggle');
 
@@ -34,7 +34,7 @@ import Social from './Social.astro';
 </script>
 
 <style>
-  .offCanvasMenu {
+  .off-canvas-menu {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ import Social from './Social.astro';
     border-top: 1px solid var(--grey);
   }
 
-  .offCanvasMenu--open {
+  .off-canvas-menu-open {
     display: flex;
   }
 </style>

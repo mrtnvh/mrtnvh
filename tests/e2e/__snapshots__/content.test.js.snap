@@ -57,7 +57,7 @@ Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "intro__subtitle",
+              "class": "intro-subtitle",
             },
             "content": Array [
               " ",

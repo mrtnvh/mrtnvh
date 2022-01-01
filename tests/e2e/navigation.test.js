@@ -29,11 +29,14 @@ describe('Navigation', () => {
         const $document = await getDocument(page);
         const $linkContainer = await getByTestId(
           $document,
-          environmentName === 'mobile' ? `offcanvasmenu` : `app-header-navs`,
+          environmentName === 'mobile' ? `off-canvas-menu` : `app-header-navs`,
         );
 
         if (environmentName === 'mobile') {
-          const $toggle = await getByTestId($document, `offcanvasmenu-toggle`);
+          const $toggle = await getByTestId(
+            $document,
+            `off-canvas-menu-toggle`,
+          );
           await $toggle.click();
         }
 

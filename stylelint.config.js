@@ -11,4 +11,10 @@ module.exports = {
       ignoreAtrules: ['custom-selector'],
     },
   },
+  overrides: [
+    {
+      files: ['.astro'].flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
+      customSyntax: 'postcss-html',
+    },
+  ],
 };
