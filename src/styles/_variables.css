@@ -4,15 +4,15 @@
   /**
 	* Colors
 	*/
-  --dark: hsla(0, 0%, 0%, 1);
-  --grey: hsla(0, 0%, 50%, 1);
-  --grey-light: hsla(0, 0%, 90%, 1);
-  --light: hsla(0, 0%, 100%, 1);
-  --primary: hsla(85, 100%, 50%, 1);
-  --primary-dark: hsla(85, 100%, 26%, 1);
-  --github: hsla(134, 62%, 51%, 1);
-  --twitter: hsla(206, 89%, 59%, 1);
-  --linkedin: hsla(201, 100%, 36%, 1);
+  --dark: hsla(0deg, 0%, 0%, 1);
+  --grey: hsla(0deg, 0%, 50%, 1);
+  --grey-light: hsla(0deg, 0%, 90%, 1);
+  --light: hsla(0deg, 0%, 100%, 1);
+  --primary: hsla(85deg, 100%, 50%, 1);
+  --primary-dark: hsla(85deg, 100%, 26%, 1);
+  --github: hsla(134deg, 62%, 51%, 1);
+  --twitter: hsla(206deg, 89%, 59%, 1);
+  --linkedin: hsla(201deg, 100%, 36%, 1);
   --isaac: rgb(0, 182, 255);
   --text-color: var(--dark);
   --background-color: var(--light);

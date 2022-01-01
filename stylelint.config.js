@@ -7,5 +7,8 @@ module.exports = {
   rules: {
     'scss/media-feature-value-dollar-variable': null,
     'scale-unlimited/declaration-strict-value': null,
+    'csstree/validator': {
+      ignoreAtrules: ['custom-selector'],
+    },
   },
 };
