@@ -10,8 +10,8 @@ th,
 td {
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid var(--text-color);
-  padding: calc(var(--space)) 0;
+  border-bottom: 1px solid var(--grey);
+  padding: 1rem 0;
 
   .table-borderless & {
     border-bottom: 0;
@@ -26,7 +26,7 @@ td {
   }
 
   tr:first-child & {
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid var(--grey);
 
     .table-borderless & {
       border-top: 0;

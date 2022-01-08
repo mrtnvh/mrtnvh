@@ -2,14 +2,15 @@
 
 :root {
   /**
-	* Colors
-	*/
-  --dark: hsla(0deg, 0%, 0%, 1);
-  --grey: hsla(0deg, 0%, 50%, 1);
-  --grey-light: hsla(0deg, 0%, 90%, 1);
-  --light: hsla(0deg, 0%, 100%, 1);
-  --primary: hsla(85deg, 100%, 50%, 1);
-  --primary-dark: hsla(85deg, 100%, 26%, 1);
+  * Colors
+  */
+  --dark: hsl(24, 9.8%, 10%);
+  --grey: hsl(25, 5.3%, 44.7%);
+  --grey-200: #e7e5e4;
+  --grey-light: hsl(60, 4.8%, 95.9%);
+  --light: hsl(60, 9.1%, 97.8%);
+  --primary: hsl(82.7, 78%, 55.5%);
+  --primary-dark: hsl(85.9, 78.4%, 27.3%);
   --github: hsla(134deg, 62%, 51%, 1);
   --twitter: hsla(206deg, 89%, 59%, 1);
   --linkedin: hsla(201deg, 100%, 36%, 1);
@@ -17,15 +18,18 @@
   --text-color: var(--dark);
   --background-color: var(--light);
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     --text-color: var(--light);
     --background-color: var(--dark);
-  }
+  } */
 
   /**
-	* Fonts
-	*/
-  --font-size-root: 14px;
+  * Fonts
+  */
+  --font-size-root: clamp(14px, 2.5vw, 18px);
+  @media (min-width: 800px) {
+    --font-size-root: clamp(14px, 1.5vw, 18px);
+  }
   --font-size-sm: 0.8rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -40,40 +44,44 @@
   --font-size-9xl: 9.313rem;
   --font-family: 'Inter', 'Helvetica Now Text', system-ui;
   --font-weight-normal: 400;
-  --line-height-lg: 1.75;
-  --line-height: 1.5;
-  --line-height-sm: 1.225;
-  --line-height-xxs: 0.75;
+  --line-height-lg: 1.953;
+  --line-height: 1.563;
+  --line-height-sm: 1.25;
+  --line-height-xs: 1;
+  --line-height-xxs: 0.8;
   --headings-font-family: 'Inter', 'Helvetica Now Display', system-ui;
   --headings-color: var(--text-color);
   --headings-font-weight: 800;
+  --headings-letter-spacing: -0.02em;
   --fat-font-weight: 900;
 
+  --mono-font-family: 'IBM Plex Mono', 'Helvetica Now Text', system-ui;
+
   /**
-	* Strokes
-	*/
+  * Strokes
+  */
   --stroke-inner-color: transparent;
   --stroke-width: 1px;
   --stroke-color: var(--text-color);
 
   /**
-	* Media queries
-	*/
+  * Media queries
+  */
   --screen-small: 480px;
   --screen-medium: 764px;
   --screen-large: 1200px;
   --screen-extra-large: 1440px;
 
   /**
-	* Animations
-	*/
+  * Animations
+  */
   --animation-duration: 0.2s;
   --animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);
 
   /**
-	* Spacing
-	*/
-  --space: 1rem;
+  * Spacing
+  */
+  --space: 1.563rem;
   --grid-gap-x: calc(var(--space));
   --grid-gap-y: calc(var(--space) * 2);
 
@@ -81,14 +89,14 @@
     --grid-gap-x: calc(var(--space) * 2);
   }
 
-  @media (min-width: 1200px) {
-    --grid-gap-x: calc(var(--space) * 4);
-    --grid-gap-y: calc(var(--space) * 4);
-  }
+  /**
+  * Bottom navigation
+  */
+  --bottom-navigation-zindex: 100;
 
   /**
-	* Project
-	*/
+  * Project
+  */
   --project-header-zindex: 1;
   --project-header-top-position: var(--grid-gap-y);
   --project-title-size: 10vw;
@@ -100,8 +108,8 @@
   }
 
   /**
-	* Talks
-	*/
+  * Talks
+  */
   --talk-header-zindex: 1;
   --talk-header-top-position: var(--grid-gap-y);
   --talk-title-size: 10vw;
@@ -113,11 +121,13 @@
   }
 
   /**
-	* Folio
-	*/
+  * Folio
+  */
   --folio-header-zindex: 1;
   --folio-header-top-position: var(--grid-gap-y);
-  --folio-title-size: 10vw;
+  --folio-title-size: var(--font-size-lg);
+  --folio-title-weight: var(--headings-font-weight);
+  --folio-title-line-height: var(--line-height-xs);
   --folio-title-margin: 0;
 
   @media (min-width: 800px) {
@@ -126,7 +136,19 @@
   }
 
   /**
-	* Off Canvas Menu
-	*/
+  * Detail page
+  */
+  --detail-title-size: var(--font-size-4xl);
+  --detail-title-font-weight: 800;
+  --detail-title-line-height: var(--line-height-xs);
+  --detail-title-letter-spacing: -0.02em;
+
+  @media (min-width: 800px) {
+    --detail-title-size: var(--font-size-5xl);
+  }
+
+  /**
+  * Off Canvas Menu
+  */
   --offcanvasmenu-zindex: 100;
 }

@@ -1,7 +1,8 @@
 a,
 button.link {
   --link-color: var(--text-color);
-  --link-hover-color: var(--primary-dark);
+  --link-hover-color: var(--light);
+  --link-hover-background-color: var(--text-color);
   --link-transition-speed: 0.15s;
   --link-text-decoration: underline;
   --underline-z-index: -2;
@@ -18,8 +19,8 @@ button.link {
   text-decoration: var(--link-text-decoration);
   position: relative;
   display: inline-block;
-  /* stylelint-disable plugin/no-low-performance-animation-properties */
-  transition: color var(--link-transition-speed);
+  padding-inline: .25em;
+  margin-inline: -.25em;
 
   svg {
     fill: currentColor !important;
@@ -30,6 +31,8 @@ button.link {
   &:focus,
   &.active {
     color: var(--link-hover-color);
+    background-color: var(--link-hover-background-color);
+    display: inline-block;
   }
 
   &.github {
@@ -50,9 +53,6 @@ button.link {
   &.isaac {
     --link-hover-color: var(--isaac);
     --underline-hover-background-color: var(--isaac);
-  }
-  @media (prefers-color-scheme: dark) {
-    --link-hover-color: var(--primary);
   }
 }
 

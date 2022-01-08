@@ -7,6 +7,7 @@ thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871100/mrtnvh.co
 color: FF4E4E
 current: true
 datePublished: 20190520
+tint: sky
 ---
 
 <div class="intro mb-ggy">

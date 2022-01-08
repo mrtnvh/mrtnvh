@@ -1,114 +1,169 @@
 ---
 import BaseLayout from './Base.astro';
-import Thumbnail from '../components/Image/Image.astro';
-import VideoPreview from '../components/VideoPreview.astro';
+import { getSrcSet } from '../components/Image/cloudinary.js';
 
-const { content } = Astro.props;
+const {
+  content: { title, subtitle, thumbnail, slides, demo, video, tint },
+} = Astro.props;
+
+const defaultImageSettings = { src: thumbnail, tint };
+const defaultMobileImageSettings = { ...defaultImageSettings, width: 1600, height: 1200 };
+const defaultDesktopImageSettings = { ...defaultImageSettings, width: 2100, height: 900 };
+const { src, srcSet: srcSetMobile } = getSrcSet({ ...defaultMobileImageSettings });
+const { src: srcWebpMobile, srcSet: srcSetWebpMobile } = getSrcSet({ ...defaultMobileImageSettings, type: 'webp' });
+const { src: srcDesktop, srcSet: srcSetDesktop } = getSrcSet({ ...defaultDesktopImageSettings });
+const { src: srcWebpDesktop, srcSet: srcSetWebpDesktop } = getSrcSet({ ...defaultDesktopImageSettings, type: 'webp' });
+
+const preloadMobileProps = { rel: 'preload', as: 'image', imagesizes: '100vw' };
+const preloadDesktopProps = {
+  rel: 'preload',
+  as: 'image',
+  imagesizes: '100vw, (min-width: 1280px) 1280px',
+  media: '(min-width: 800px)',
+};
+
+const preloads = [
+  { ...preloadDesktopProps, href: srcWebpDesktop, imagesrcset: srcSetWebpMobile, type: 'image/webp' },
+  { ...preloadDesktopProps, href: srcDesktop, imagesrcset: srcSetDesktop },
+  { ...preloadMobileProps, href: srcWebpMobile, imagesrcset: srcSetWebpMobile, type: 'image/webp' },
+  { ...preloadMobileProps, href: src, imagesrcset: srcSetMobile },
+];
+
+const links = [
+  ...(slides ? [{ title: 'Slides', url: slides }] : []),
+  ...(demo ? [{ title: "Demo's", url: demo }] : []),
+  ...(video ? [{ title: 'Video', url: video }] : []),
+];
 ---
 
-<BaseLayout {...Astro.props} category="Talks">
-  <article id="talk" class="container">
-    <header>
-      <div class="sticky">
-        <h1 class="title outline">{content.title}</h1>
-        <div class="subtitle">{content.subtitle}</div>
+<BaseLayout {...Astro.props} category="Talks" {preloads}>
+  <article>
+    <div class="container">
+      <figure class="media">
+        {thumbnail && (
+          <picture>
+            <source sizes="1px" srcset={srcSetWebpMobile} type="image/webp" />
+            <source sizes="1px" srcset={srcSetDesktop} media="(min-width: 800px)" />
+            <source sizes="1px" srcset={srcSetWebpDesktop} type="image/webp" media="(min-width: 800px)" />
+            <img {src} srcset={srcSetMobile} sizes="1px" alt={title} class="image fade fade-inactive" />
+          </picture>
+        )}
+      </figure>
+      <h1 class="title">{title}</h1>
+      <div class="meta">
+        <p class="subtitle">{subtitle}</p>
+        {links.length && (
+          <div class="links">
+            {links.map(({ title, url }) => (
+              <a href={url} target="_blank" rel="noopener">
+                {title}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
-    </header>
-    <aside>
-      <table class="table-borderless">
-        {content.slides && (
-          <tr>
-            <td style="width: 6rem;">Slides</td>
-            <td>
-              <a href={content.slides} target="_blank" rel="noopener">
-                {content.slides}
-              </a>
-            </td>
-          </tr>
-        )}
-        {content.demo && (
-          <tr>
-            <td>Demo</td>
-            <td>
-              <a href={content.demo} target="_blank" rel="noopener">
-                {content.demo}
-              </a>
-            </td>
-          </tr>
-        )}
-        {content.video && (
-          <tr>
-            <td>Video</td>
-            <td>
-              <a href={content.video} target="_blank" rel="noopener">
-                {content.video}
-              </a>
-            </td>
-          </tr>
-        )}
-      </table>
-    </aside>
-    <div class="preview">
-      <VideoPreview
-        videoPreview={content.videoPreview}
-        video={content.video}
-        thumbnail={content.thumbnail}
-        title={content.title}
-      />
-    </div>
-    <div class="body">
-      <slot />
+      <div class="body">
+        <slot />
+      </div>
     </div>
   </article>
 </BaseLayout>
 
 <style>
+  article {
+    @media (max-width: 799px) {
+      margin-block-start: calc(var(--grid-gap-y) * -2);
+    }
+  }
+
   .container {
-    padding-top: var(--grid-gap-y);
-    padding-bottom: var(--grid-gap-y);
     display: flex;
     flex-direction: column;
 
     @media (min-width: 800px) {
       display: grid;
-      grid-template-columns: 30.5% 69.5%;
-      grid-template-areas: 'header header' 'aside preview' 'aside body';
-      grid-column-gap: var(--grid-gap-x);
-      width: calc(100% - (var(--grid-gap-x)));
+      grid-template-columns: 4fr 8fr;
+      gap: 0 var(--grid-gap-x);
+      /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+      grid-template-areas:
+        'media media'
+        'title title'
+        'meta body';
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 1fr 4fr 8fr 1fr;
+      grid-template-areas:
+        'media media media media'
+        '. title title .'
+        '. meta body .';
     }
   }
 
-  header {
-    grid-area: header;
-    margin-bottom: var(--grid-gap-y);
+  .media {
+    grid-area: media;
+    margin-inline: calc(var(--grid-gap-x) * -1);
+    margin-block-end: 0;
+    position: relative;
+    z-index: -1;
 
-    @media (max-width: 799px) {
-      margin-top: calc(var(--grid-gap) * -2.5);
-      margin-left: var(--grid-gap);
+    picture {
+      display: flex;
+      background-color: var(--grey-200);
     }
-  }
 
-  aside {
-    grid-area: aside;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+
+      @media (min-width: 800px) {
+        aspect-ratio: 21 / 9;
+      }
+    }
   }
 
   .title {
-    font-size: var(--talk-title-size);
-    margin: var(--talk-title-margin);
-    text-transform: uppercase;
-    line-height: var(--talk-title-line-height);
+    grid-area: title;
+    font-size: var(--detail-title-size);
+    font-weight: var(--detail-title-font-weight);
+    line-height: var(--detail-title-line-height);
+    margin-block-start: -0.5625em;
   }
 
-  .preview {
-    grid-area: preview;
+  .subtitle {
+    font-weight: 700;
 
-    @media (max-width: 799px) {
-      order: 1;
+    @media (min-width: 800px) {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  .meta {
+    grid-area: meta;
+    margin-block-end: var(--grid-gap-x);
+
+    &,
+    a {
+      color: var(--grey);
+    }
+
+    @media (min-width: 800px) {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+
+    @media (min-width: 800px) {
+      flex-direction: column;
     }
   }
 
   .body {
     grid-area: body;
-    order: 3;
   }
 </style>

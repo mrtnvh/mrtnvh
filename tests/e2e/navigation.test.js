@@ -29,7 +29,7 @@ describe('Navigation', () => {
         const $document = await getDocument(page);
         const $linkContainer = await getByTestId(
           $document,
-          environmentName === 'mobile' ? `off-canvas-menu` : `app-header-navs`,
+          environmentName === 'mobile' ? `off-canvas-menu` : `app-header-nav`,
         );
 
         if (environmentName === 'mobile') {

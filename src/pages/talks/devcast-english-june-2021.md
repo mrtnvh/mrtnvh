@@ -10,6 +10,7 @@ videoPreview: 'https://res.cloudinary.com/mrtnvh/image/upload/v1624820160/mrtnvh
 video: 'https://youtu.be/Hr5lIsbiWpY?t=178'
 conference: CodeMotion DevCast
 slides: https://devcast-june-2021.mrtnvh.com/
+tint: lime
 ---
 
 Modular, componentized frameworks and libraries are more popular than ever, but currently screen size is the only dimensional constraint to which a web design can adapt to. In this talk, Maarten will explain what Container Queries are and show you how each component can adapt its design to the dimensions of its container. Join us on our journey towards a more modular CSS.

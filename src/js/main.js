@@ -1,16 +1,49 @@
 import Swup from 'swup';
-import SwupPreloadPlugin from '@swup/preload-plugin';
+// import SwupPreloadPlugin from '@swup/preload-plugin';
 import SwupHeadPlugin from '@swup/head-plugin';
+import SwupA11yPlugin from '@swup/a11y-plugin';
+import SwupScrollPlugin from '@swup/scroll-plugin';
 import { setImagesSizes } from './setImagesSizes.js';
 
-function init() {
+function setBrandSize() {
+  document.querySelectorAll('.brand').forEach(($brand) => {
+    if (window.location.pathname === '/') {
+      $brand.classList.add('brand-large');
+    } else {
+      $brand.classList.remove('brand-large');
+    }
+  });
+}
+
+function setNavigationActiveLink() {
+  document.querySelectorAll('#nav a').forEach((link) => {
+    const currentPath = window.location.pathname;
+    const linkPath = new URL(link.href).pathname;
+    if (currentPath.includes('activity') && linkPath === '/') {
+      link.setAttribute('data-page-current', '');
+    } else if (currentPath.includes(linkPath) && linkPath !== '/') {
+      link.setAttribute('data-page-current', '');
+    } else {
+      link.removeAttribute('data-page-current');
+    }
+  });
+}
+
+function onContentReplaced() {
   setImagesSizes();
+}
+
+function onWillReplaceContent() {
+  setBrandSize();
+  setNavigationActiveLink();
 }
 
 const swup = new Swup({
   plugins: [
-    new SwupPreloadPlugin(),
+    // new SwupPreloadPlugin(),
     new SwupHeadPlugin({ persistAssets: true }),
+    new SwupA11yPlugin(),
+    new SwupScrollPlugin({ doScrollingRightAway: true, animateScroll: false }),
   ],
 });
 
@@ -22,9 +55,10 @@ window.plausible =
     (window.plausible.q = window.plausible.q || []).push(arguments);
   };
 
-swup.on('contentReplaced', init);
+swup.on('contentReplaced', onContentReplaced);
+swup.on('willReplaceContent', onWillReplaceContent);
 swup.on('pageView', () => {
   window.plausible('pageview');
 });
 
-init();
+onContentReplaced();

@@ -7,6 +7,7 @@ description: Guitarist, producer, management, booking & founding member of Belgi
 color: FF005C
 current: true
 datePublished: 20130813
+tint: rose
 ---
 
 <div class="intro mb-ggy">

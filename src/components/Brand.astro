@@ -1,16 +1,26 @@
-<a href="/" class="brand">
+---
+import clsx from 'clsx';
+const currentPathname = Astro.request.url.pathname;
+---
+
+<a
+  id="brand"
+  href="/"
+  class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}
+>
   <div class="name firstname">Maarten</div>
   <div class="name lastname outline">Van Hoof</div>
 </a>
 
 <style>
   .brand {
-    --brand-font-size: 5vw;
+    --brand-font-size: var(--font-size-lg);
     --brand-font-weight: 900;
     --firstname-z-index: 2;
-    --firstname-letter-spacing: 0.25vw;
+    --firstname-letter-spacing: calc(var(--brand-font-size) / 50);
     --lastname-z-index: 1;
     --brand-animation-constant: 10%;
+    --link-hover-background-color: transparent;
 
     color: var(--headings-color);
     font-family: var(--headings-font-family);
@@ -20,19 +30,31 @@
     text-transform: uppercase;
     text-decoration: none;
 
+    &.brand-large {
+      --brand-font-size: clamp(1rem, 14.5vw, var(--font-size-5xl));
+
+      padding-block-start: calc(var(--grid-gap-y) * 1);
+
+      @media (min-width: 800px) {
+        --brand-font-size: var(--font-size-2xl);
+
+        padding-block-start: 0;
+      }
+    }
+
     &::before,
     &::after {
       display: none;
     }
 
-    @media (min-width: 950px) {
-      --brand-font-size: 3.75rem;
+    @media (min-width: 800px) {
+      --brand-font-size: var(--font-size-2xl);
     }
   }
 
   .name {
     white-space: nowrap;
-    line-height: 1;
+    line-height: 0.8;
     transition: transform 0.33s;
     transition-timing-function: var(--animation-timing-function);
   }
@@ -41,30 +63,25 @@
     position: relative;
     z-index: var(--firstname-z-index);
     letter-spacing: var(--firstname-letter-spacing);
-    transform: translate(0, -25%);
+    transform: translate(-5.25%, 27.5%);
 
     .brand:hover &,
     .brand:focus & {
-      transform: translate(
-        calc(var(--brand-animation-constant) * 0),
-        calc(var(--brand-animation-constant) * -3.75)
-      );
+      transform: translate(0, 0);
     }
   }
 
   .lastname {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
-    left: 1%;
+    left: 0;
     z-index: var(--lastname-z-index);
-    transform: translate(
-      calc(var(--brand-animation-constant) * 1),
-      calc(var(--brand-animation-constant) * 3)
-    );
+    transform: translate(5.25%, -17.5%);
 
     .brand:hover &,
     .brand:focus & {
-      transform: translate(0, calc(var(--brand-animation-constant) * 5));
+      /* transform: translate(0, calc(var(--brand-animation-constant) * 5)); */
+      transform: translate(0, 0);
     }
   }
 </style>

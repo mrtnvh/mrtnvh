@@ -6,14 +6,16 @@ export const getImageSize = ({ image }) => {
 export const setImagesSizes = () => {
   const images = document.querySelectorAll('img[sizes="1px"]');
   images.forEach((image) => {
-    const size = getImageSize({ image });
-    // eslint-disable-next-line no-param-reassign
-    image.sizes = size;
-    image.addEventListener(`load`, () => {
-      image.classList.remove('fade-inactive');
-      image.classList.add('fade-active');
-    });
+    image.addEventListener(
+      `load`,
+      () => {
+        image.classList.remove('fade-inactive');
+        image.classList.add('fade-active');
+      },
+      { once: true },
+    );
 
+    const size = getImageSize({ image });
     const sources = image.parentNode.querySelectorAll('source');
     if (sources) {
       sources.forEach((source) => {
@@ -21,5 +23,8 @@ export const setImagesSizes = () => {
         source.sizes = size;
       });
     }
+
+    // eslint-disable-next-line no-param-reassign
+    image.sizes = size;
   });
 };

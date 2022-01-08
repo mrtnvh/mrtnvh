@@ -7,6 +7,16 @@
     {
       "source": "/api/event",
       "destination": "https://plausible.io/api/event"
+    },
+    {
+      "source": "/projects/:path*",
+      "destination": "/activity/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/activity",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }

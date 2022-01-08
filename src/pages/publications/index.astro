@@ -8,15 +8,15 @@ import Folio from '../../components/Page/Folio.astro';
 const dateNow = format(new Date(), 'yyyyMMdd');
 const allTalks = Astro.fetchContent('./*.md');
 const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
-const publishedTalks = allTalksOrdered.filter(
+const publications = allTalksOrdered.filter(
   ({ datePublished }) => datePublished <= dateNow,
 );
 const baseLayoutProps = defaultsDeep(
   {
     content: {
-      title: 'Talks',
+      title: 'Publications',
       description:
-        "Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
+        "Blogposts, significant tweets and inspiring links",
     },
   },
   Astro.props,
@@ -24,8 +24,8 @@ const baseLayoutProps = defaultsDeep(
 ---
 
 <BaseLayout {...baseLayoutProps}>
-  <Folio title="Talks">
-    <List items={publishedTalks} large />
+  <Folio title="Publications">
+    <List items={publications} large />
   </Folio>
 </BaseLayout>
 

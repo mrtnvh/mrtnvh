@@ -1,5 +1,6 @@
 ---
 import Thumbnail from '../Image/Image.astro';
+import { parse, format } from 'date-fns';
 
 export interface Props {
   item: any;
@@ -7,6 +8,7 @@ export interface Props {
 }
 
 const { item, index = 0 } = Astro.props;
+const date = parse(item.datePublished, 'yyyyMMdd', new Date());
 
 const linkProps = () => {
   if (item?.redirect || item?.astro?.url?.startsWith('http')) {
@@ -30,13 +32,18 @@ const linkProps = () => {
         class="image"
         width="1600"
         height="900"
+        tint={item.tint}
       />
     </figure>
     <div class="content">
-      <h1 class="title outline">
+      <h2 class="title">
         {item.title}
-      </h1>
-      <h2 class="subtitle">{item.subtitle}</h2>
+      </h2>
+      <p class="subtitle">{item.subtitle}</p>
+      <div class="meta">
+        <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+        {item.category && <div class="category">{item.category}</div>}
+      </div>
     </div>
   </a>
 </article>
@@ -44,6 +51,11 @@ const linkProps = () => {
 <style>
   article {
     max-width: 100%;
+    text-align: center;
+
+    @media (min-width: 800px) {
+      text-align: left;
+    }
   }
 
   .media {
@@ -61,26 +73,69 @@ const linkProps = () => {
     &:focus {
       --stroke-inner-color: var(--text-color);
       --stroke-color: var(--text-color);
+      --link-hover-background-color: transparent;
+      --link-hover-color: inherit;
+    }
+
+    @media (min-width: 800px) {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: calc(var(--grid-gap-x) / 1);
     }
   }
 
   .content {
     position: relative;
-    /* stylelint-disable-next-line */
     z-index: 1;
-    margin-top: calc(var(--space) * -1.375);
-    padding: 0 calc(var(--space) * 1.5);
+    margin-block-start: calc(var(--space) * -1);
+    padding: 0 calc(var(--space) / 2);
+
+    @media (min-width: 800px) {
+      margin-block-start: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--grid-gap-y) / 4);
+    }
   }
 
   .title {
-    text-transform: uppercase;
-    margin: 0 0 0.5rem;
-    line-height: 0.85em;
+    margin-block-end: calc(var(--space) / 3);
+    line-height: var(--line-height-xs);
+    font-size: var(--font-size-2xl);
+
+    @media (min-width: 800px) {
+      font-size: clamp(1rem, 7.5vw, var(--font-size-5xl));
+      margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.25) calc(var(--grid-gap-x) * -2);
+      order: 1;
+    }
   }
 
   .subtitle {
-    font-size: var(--font-size-base);
     font-weight: 400;
     margin: 0;
+    order: 3;
+  }
+
+  .meta {
+    display: flex;
+    gap: calc(var(--grid-gap-x) / 2);
+    justify-content: center;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--grey);
+
+    @media (min-width: 800px) {
+      justify-content: start;
+      order: 2;
+    }
+  }
+
+  .category {
+    text-transform: uppercase;
+
+    &::before {
+      content: '#';
+    }
   }
 </style>

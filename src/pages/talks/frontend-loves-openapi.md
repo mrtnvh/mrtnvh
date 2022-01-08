@@ -4,13 +4,16 @@ title: Frontend ♥︎ OpenAPI
 slug: frontend-loves-openapi
 subtitle: API Specification Conference 2021
 description: The OpenAPI specification can so much speed up your Front End workflow, let me show you how.
-thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1632934649/mrtnvh.com/api-spec-conf.png'
+thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1641124321/mrtnvh.com/api-spec-conf-2.jpg'
+thumbnailCredits: Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 datePublished: 20210929
 videoPreview: 'https://res.cloudinary.com/mrtnvh/image/upload/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg'
 video: 'https://www.youtube.com/watch?v=3IKbLDbq5ww'
 demo: 'https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo'
 conference: API Specification Conference 2021
 slides: https://frontend-loves-openapi.mrtnvh.com
+tint: violet
+category: Talks
 ---
 
 As a front end developer, building projects with RESTful API dependencies ain’t all sunshine and rainbows. Security implications, parallel development, time or budget restrictions for writing documentation, …, in an enterprise you might not always have the ability to rely on your RESTful API dependencies for development, let alone for an automated testing environment.

@@ -1,3 +1,5 @@
+import colors from '../../styles/colors.js';
+
 export const SRC_SET_SIZES = [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400];
 
 const isCloudinaryUrl = (url) => url.includes('https://res.cloudinary.com/');
@@ -11,8 +13,12 @@ export const getOgImage = ({ src }) => {
 export const getSrcSet = ({
   publicId: publicIdProp = undefined,
   src,
-  srcSet,
+  srcSet = undefined,
   type = 'auto',
+  tint = undefined,
+  dark = false,
+  width = 1600,
+  height = 900,
 }) => {
   if (!src) return { src, srcSet };
 
@@ -22,16 +28,46 @@ export const getSrcSet = ({
       srcSet,
     };
 
-  const [preUrl, postUrl] = src.split('/upload');
-  const placeholder = `${preUrl}/upload/t_responsive_placeholder${postUrl}`;
+  const [preUrl, postUrl] = src.split('/upload/');
+  let shadows;
+  let highlights;
 
-  const returnValue = {
-    src: placeholder,
-    srcSet: SRC_SET_SIZES.map(
-      (size) =>
-        `${preUrl}/upload/c_scale%2Cdpr_1.0%2Cf_${type}%2Cq_auto%2Cw_${size}${postUrl} ${size}w`,
-    ).join(', '),
+  if (tint) {
+    if (typeof tint === 'string') {
+      if (dark) {
+        shadows = colors[tint]['900'].replace('#', '');
+        highlights = colors[tint]['600'].replace('#', '');
+      } else {
+        shadows = colors[tint]['500'].replace('#', '');
+        highlights = colors[tint]['50'].replace('#', '');
+      }
+    } else if (tint.shadows && tint.highlights) {
+      shadows = tint.shadows.replace('#', '');
+      highlights = tint.highlights.replace('#', '');
+    }
+  }
+
+  const getPlaceholder = () => {
+    let placeholder = `${preUrl}/upload/t_responsive_placeholder`;
+    if (shadows && highlights) {
+      placeholder = `${placeholder}/e_grayscale/e_tint:100:${shadows}:0p:${highlights}:100p/t_noise`;
+    }
+    return `${placeholder}/${postUrl}`;
   };
 
-  return returnValue;
+  const getSrcSetValue = () =>
+    SRC_SET_SIZES.map((size) => {
+      const srcSetWidth = size;
+      const srcSetHeight = Math.ceil((size / width) * height);
+      let transformations = `c_scale/dpr_1.0/f_${type}/q_auto/w_${srcSetWidth}/h_${srcSetHeight}`;
+      if (shadows && highlights) {
+        transformations = `${transformations}/e_grayscale/e_tint:100:${shadows}:0p:${highlights}:100p/t_noise`;
+      }
+      return `${preUrl}/upload/${transformations}/${postUrl} ${size}w`;
+    }).join(', ');
+
+  return {
+    src: getPlaceholder(),
+    srcSet: getSrcSetValue(),
+  };
 };

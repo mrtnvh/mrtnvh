@@ -26,18 +26,22 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@swup/a11y-plugin": "^2.0.0",
     "@swup/head-plugin": "^1.2.0",
     "@swup/preload-plugin": "^1.0.3",
+    "@swup/scroll-plugin": "^1.1.0",
     "astro": "^0.21.12",
     "date-fns": "^2.25.0",
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
+    "prism-themes": "^1.9.0",
     "swup": "^2.0.14"
   },
   "devDependencies": {
     "@web/rollup-plugin-html": "^1.10.1",
     "@wemake-services/stylelint-config-scss": "^1.0.0",
     "autoprefixer": "^10.3.7",
+    "clsx": "^1.1.1",
     "critters": "0.0.10",
     "cssnano": "^5.0.8",
     "del": "^6.0.0",

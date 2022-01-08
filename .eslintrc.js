@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     {
-      files: ['src/js/**/*.*', 'scripts/**/*.*'],
+      files: ['src/**/*.*', 'scripts/**/*.*'],
       rules: {
         'import/extensions': 0,
       },

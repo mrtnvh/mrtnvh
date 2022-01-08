@@ -6,22 +6,23 @@ const { content } = Astro.props;
 
 <BaseLayout {...Astro.props}>
   <article id="folio" class="container">
-    <h1 class="title outline">
-      {content.title}
-    </h1>
-    <aside class="subtitle intro">
-      {content.subtitle}
-      <figure class="media">
+    <figure class="media">
+      <div class="sticky">
         <Thumbnail
           src={content.thumbnail}
           alt={content.title}
           class="image"
           width="800"
           height="800"
+          tint={content.tint}
         />
-      </figure>
-    </aside>
+      </div>
+    </figure>
+    <h1 class="title">
+      {content.title}
+    </h1>
     <section class="body">
+      <p><strong>{content.subtitle}</strong></p>
       <slot />
     </section>
   </article>
@@ -33,60 +34,50 @@ const { content } = Astro.props;
   }
 </style><style>
   .container {
-    padding-top: var(--grid-gap-y);
-    padding-bottom: var(--grid-gap-y);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: var(--grid-gap-y);
+    margin-block-start: calc(var(--grid-gap-y) * -2);
 
     @media (min-width: 800px) {
       display: grid;
-      grid-template-columns: 1fr 2fr;
       grid-template-rows: auto auto;
+      grid-template-columns: repeat(3, 1fr);
       grid-column-gap: var(--grid-gap-x);
+      margin-block-start: 0;
     }
+  }
+
+  .media {
+    margin-inline: calc(var(--grid-gap-x) * -1);
+    margin-bottom: 0;
+    position: relative;
+    z-index: -1;
+
+    @media (min-width: 800px) {
+      grid-area: 1 / 1 / 3 / 2;
+      margin: 0;
+    }
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
   }
 
   .title {
-    font-size: var(--folio-title-size);
-    font-weight: var(--fat-font-weight);
-    text-transform: uppercase;
-    line-height: 0.75em;
-    margin-bottom: 0;
+    font-size: var(--detail-title-size);
+    font-weight: var(--detail-title-font-weight);
+    line-height: var(--detail-title-line-height);
+    margin-block-start: -0.66em;
+    letter-spacing: var(--detail-title-letter-spacing);
 
     @media (min-width: 800px) {
-      grid-area: 1 / 1 / 2 / 3;
-    }
-  }
-
-  .subtitle {
-    @media (min-width: 800px) {
-      grid-area: 2 / 1 / 4 / 2;
-      position: relative;
-    }
-  }
-
-  /* .media-container {
-	@media (min-width: 800px) {
-		grid-area: 2 / 1 / 4 / 2;
-	}
-} */
-
-  .media {
-    margin-top: var(--grid-gap-y);
-    padding-bottom: 100%;
-    margin-bottom: 0;
-
-    @media (min-width: 800px) {
-      position: sticky;
-      z-index: var(--folio-header-zindex);
-      top: var(--folio-header-top-position);
+      font-size:  clamp(var(--font-size-6xl), 9vw, var(--font-size-8xl));
+      margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.5)
+        calc(var(--grid-gap-x) * -2);
+      grid-area: 1 / 2 / 1 / 4;
     }
   }
 
   .body {
-    @media (min-width: 800px) {
-      grid-area: 2 / 2 / 4 / 3;
-    }
+    grid-area: 2 / 2 / 2 / 4;
   }
 </style>

@@ -6,9 +6,12 @@ export interface Props {
   videoPreview?: string;
   thumbnail?: string;
   title: string;
+  tint: string;
+  height: string;
+  width: string;
 }
 
-const { video, videoPreview, thumbnail, title } = Astro.props;
+const { video, videoPreview, thumbnail, title, tint, height, width } = Astro.props;
 
 const VideoPreview = videoPreview && video ? 'a' : 'figure';
 const videoPreviewProps = {
@@ -31,8 +34,9 @@ const videoPreviewProps = {
       src={videoPreview || thumbnail}
       alt={title}
       class="image"
-      width="1600"
-      height="900"
+      {width}
+      {height}
+      {tint}
     />
   )}
 </VideoPreview>
