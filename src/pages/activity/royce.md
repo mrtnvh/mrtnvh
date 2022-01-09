@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Project.astro
+layout: ../../layouts/Detail.astro
 title: ROYCE
 subtitle: Metal
 thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/royce.jpg'

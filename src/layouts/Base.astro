@@ -44,6 +44,8 @@ const { content } = Astro.props;
 				}
 			</script>
 		`}
+
+    {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
   </head>
   <Seo {...Astro.props} />
   <body>
@@ -51,11 +53,13 @@ const { content } = Astro.props;
       <SvgSprite />
     </div>
     <div class="layout">
+      {content?.redirect ? (<main class="centered">Redirecting to {content.redirect}</main>) : (
       <Header />
       <main id="swup" class="transition-fade">
         <slot />
       </main>
       <Footer />
+    ) }
     </div>
     <script type="module" async src={Astro.resolve('../js/main.js')}></script>
     {isProd && (
@@ -89,6 +93,12 @@ const { content } = Astro.props;
   main {
     display: flex !important;
     flex-direction: column;
+  }
+
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   main,

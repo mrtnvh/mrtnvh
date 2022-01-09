@@ -3,11 +3,10 @@ import clsx from 'clsx';
 import Brand from '../Brand.astro';
 import Nav from './Nav.astro';
 
-const { headerAbsolute = false } = Astro.props;
 const currentPathname = Astro.request.url.pathname;
 ---
 
-<header class={clsx({ header: true, 'header-absolute': headerAbsolute })}>
+<header class={clsx({ header: true })}>
   <div class="container">
     <div class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}>
       <Brand />
@@ -45,10 +44,6 @@ const currentPathname = Astro.request.url.pathname;
   .brand {
     &.brand-large {
       --brand-font-size: var(--font-size-5xl);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
       @media (max-width: 799px) {
         margin: 0 auto;

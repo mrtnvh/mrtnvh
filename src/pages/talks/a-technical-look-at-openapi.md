@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Talk.astro
+layout: ../../layouts/Detail.astro
 title: A Technical Look at OpenAPI
 slug: a-technical-look-at-openapi
 subtitle: Tech Fair Live

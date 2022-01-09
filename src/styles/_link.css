@@ -19,8 +19,8 @@ button.link {
   text-decoration: var(--link-text-decoration);
   position: relative;
   display: inline-block;
-  padding-inline: .25em;
-  margin-inline: -.25em;
+  padding-inline: 0.25em;
+  margin-inline: -0.25em;
 
   svg {
     fill: currentColor !important;
@@ -60,5 +60,21 @@ a.reset {
   &::before,
   &::after {
     display: none;
+  }
+}
+
+a.external {
+  &::after {
+    content: '';
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: top;
+    background-color: currentColor;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v9l-3.794-3.793l-5.999 6l-1.414-1.414l5.999-6L12 3h9z" fill="currentColor"></path></svg>');
+    -webkit-mask-size: .8em;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 50%;
   }
 }

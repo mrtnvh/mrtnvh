@@ -66,13 +66,12 @@ const { content } = Astro.props;
     font-size: var(--detail-title-size);
     font-weight: var(--detail-title-font-weight);
     line-height: var(--detail-title-line-height);
-    margin-block-start: -0.66em;
+    margin-block-start: -0.5625em;
     letter-spacing: var(--detail-title-letter-spacing);
 
     @media (min-width: 800px) {
-      font-size:  clamp(var(--font-size-6xl), 9vw, var(--font-size-8xl));
-      margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.5)
-        calc(var(--grid-gap-x) * -2);
+      font-size: clamp(var(--font-size-6xl), 9vw, var(--font-size-8xl));
+      margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.5) calc(var(--grid-gap-x) * -2);
       grid-area: 1 / 2 / 1 / 4;
     }
   }

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Project.astro
+layout: ../../layouts/Detail.astro
 title: Pixeo
 subtitle: Web agency
 description: 6 years of front-end development experience gained, evolving from a absolute beginner to a lead engineer for a small web agency.

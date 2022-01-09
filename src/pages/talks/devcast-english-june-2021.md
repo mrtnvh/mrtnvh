@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Talk.astro
+layout: ../../layouts/Detail.astro
 title: Container Queries
 slug: container-queries-the-next-step-towards-a-truly-modular-css
 subtitle: The next step towards a truly modular CSS

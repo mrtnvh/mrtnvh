@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Project.astro
+layout: ../../layouts/Detail.astro
 title: RockXXL
 subtitle: Loud Noise Community
 description: Breathing new life in RockXXL, a volunteer-ran online platform for the local rock and metal community

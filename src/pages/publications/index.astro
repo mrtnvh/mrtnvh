@@ -6,9 +6,9 @@ import List from '../../components/List/List.astro';
 import Folio from '../../components/Page/Folio.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
-const allTalks = Astro.fetchContent('./*.md');
-const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
-const publications = allTalksOrdered.filter(
+const allPublications = Astro.fetchContent('./*.md');
+const allPublicationsOrdered = orderBy(allPublications, ['datePublished'], ['desc']);
+const publications = allPublicationsOrdered.filter(
   ({ datePublished }) => datePublished <= dateNow,
 );
 const baseLayoutProps = defaultsDeep(
@@ -28,25 +28,3 @@ const baseLayoutProps = defaultsDeep(
     <List items={publications} large />
   </Folio>
 </BaseLayout>
-
-<style>
-  .container {
-    position: relative;
-  }
-
-  .title {
-    font-size: var(--folio-title-size);
-    font-weight: var(--folio-title-weight);
-    line-height: var(--folio-title-line-height);
-    margin: var(--folio-title-margin);
-    position: absolute;
-    inset-inline-end: var(--grid-gap-x);
-    inset-block-start: calc(var(--folio-title-line-height) * -3.5rem);
-  }
-
-  .container >>> img {
-    @media (prefers-color-scheme: dark) {
-      filter: invert(1) hue-rotate(180deg);
-    }
-  }
-</style>

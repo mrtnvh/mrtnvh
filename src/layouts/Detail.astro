@@ -1,9 +1,10 @@
 ---
+import { parse, format } from 'date-fns';
 import BaseLayout from './Base.astro';
 import { getSrcSet } from '../components/Image/cloudinary.js';
 
 const {
-  content: { title, subtitle, thumbnail, slides, demo, video, tint },
+  content: { title, subtitle, thumbnail, slides, demo, video, tint, datePublished, category },
 } = Astro.props;
 
 const defaultImageSettings = { src: thumbnail, tint };
@@ -34,9 +35,11 @@ const links = [
   ...(demo ? [{ title: "Demo's", url: demo }] : []),
   ...(video ? [{ title: 'Video', url: video }] : []),
 ];
+
+const date = parse(datePublished, 'yyyyMMdd', new Date());
 ---
 
-<BaseLayout {...Astro.props} category="Talks" {preloads}>
+<BaseLayout {...Astro.props} {preloads}>
   <article>
     <div class="container">
       <figure class="media">
@@ -51,11 +54,15 @@ const links = [
       </figure>
       <h1 class="title">{title}</h1>
       <div class="meta">
-        <p class="subtitle">{subtitle}</p>
-        {links.length && (
+        <div class="subtitle">{subtitle}</div>
+        <div class="time-category">
+          <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+          {category && <div class="category">{category}</div>}
+        </div>
+        {!!links.length && (
           <div class="links">
             {links.map(({ title, url }) => (
-              <a href={url} target="_blank" rel="noopener">
+              <a href={url} target="_blank" rel="noopener" class="external">
                 {title}
               </a>
             ))}
@@ -142,11 +149,20 @@ const links = [
 
   .meta {
     grid-area: meta;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
     margin-block-end: var(--grid-gap-x);
+    color: var(--grey);
 
-    &,
     a {
       color: var(--grey);
+
+      &:hover,
+      &:focus {
+        color: var(--link-hover-color);
+      }
     }
 
     @media (min-width: 800px) {
@@ -154,12 +170,22 @@ const links = [
     }
   }
 
-  .links {
+  .category {
+    text-transform: uppercase;
+
+    &::before {
+      content: '#';
+    }
+  }
+
+  .links,
+  .time-category {
     display: flex;
     gap: 1rem;
 
     @media (min-width: 800px) {
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 

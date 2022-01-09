@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Talk.astro
+layout: ../../layouts/Detail.astro
 title: Frontend ♥︎ OpenAPI
 slug: frontend-loves-openapi
 subtitle: API Specification Conference 2021

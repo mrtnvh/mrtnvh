@@ -26,14 +26,7 @@ const linkProps = () => {
 <article>
   <a {...linkProps()} class="reset link">
     <figure class="media">
-      <Thumbnail
-        src={item.thumbnail}
-        alt={item.title}
-        class="image"
-        width="1600"
-        height="900"
-        tint={item.tint}
-      />
+      <Thumbnail src={item.thumbnail} alt={item.title} class="image" width="1600" height="900" tint={item.tint} />
     </figure>
     <div class="content">
       <h2 class="title">
@@ -87,7 +80,7 @@ const linkProps = () => {
   .content {
     position: relative;
     z-index: 1;
-    margin-block-start: calc(var(--space) * -1);
+    margin-block-start: calc(var(--space) / -1.5);
     padding: 0 calc(var(--space) / 2);
 
     @media (min-width: 800px) {

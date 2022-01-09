@@ -18,14 +18,22 @@ const Title = titleTag;
     font-weight: var(--folio-title-weight);
     line-height: var(--folio-title-line-height);
     margin: var(--folio-title-margin);
-    position: absolute;
     inset-inline-end: var(--grid-gap-x);
     inset-block-start: calc(var(--folio-title-line-height) * -3.5rem);
-  }
 
-  .container >>> img {
-    @media (prefers-color-scheme: dark) {
-      filter: invert(1) hue-rotate(180deg);
+    @media (max-width: 799px) {
+      position: absolute;
+    }
+
+    @media (min-width: 800px) {
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
     }
   }
 </style>

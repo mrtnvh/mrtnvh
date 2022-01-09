@@ -131,8 +131,8 @@
   --folio-title-margin: 0;
 
   @media (min-width: 800px) {
-    --folio-title-size: 15vw;
-    --folio-title-margin: 0 0 1rem -0.05em;
+    --folio-title-size: var(--font-size-3xl);
+    --folio-title-margin: 0 0 calc(var(--grid-gap-y) / 2) 0;
   }
 
   /**

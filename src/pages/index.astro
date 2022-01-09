@@ -1,18 +1,21 @@
 ---
 import { orderBy } from 'lodash-es';
+import { format } from 'date-fns';
 import BaseLayout from '../layouts/Base.astro';
 import Intro from '../components/Page/Intro.astro';
 import List from '../components/List/List.astro';
 
+const dateNow = format(new Date(), 'yyyyMMdd');
 const data = Astro.fetchContent('./{talks,activity,publications}/*.md');
 const events = orderBy(data, ['datePublished'], ['desc']);
+const publishedEvents = events.filter(({ datePublished }) => datePublished <= dateNow);
 ---
 
 <BaseLayout {...Astro.props}>
   <Intro />
   <section class="events">
     <div class="container">
-      <List items={events} />
+      <List items={publishedEvents} />
     </div>
   </section>
 </BaseLayout>
