@@ -3252,6 +3252,9 @@ Array [
             "content": Array [
               " ",
               Object {
+                "attrs": Object {
+                  "class": "",
+                },
                 "content": Array [
                   Object {
                     "attrs": Object {
@@ -3379,17 +3382,41 @@ Array [
             ],
             "tag": "table",
           },
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
         ],
         "tag": "aside",
       },
-      " ",
+      Object {
+        "attrs": Object {
+          "class": "",
+        },
+        "content": Array [
+          " ",
+        ],
+        "tag": "a",
+      },
       Object {
         "attrs": Object {
           "class": "preview",
         },
         "content": Array [
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
           Object {
             "attrs": Object {
               "class": "media media-video-overlay",
@@ -3447,6 +3474,24 @@ Array [
       " ",
     ],
     "tag": "article",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
   },
   " ",
 ]
@@ -3514,6 +3559,9 @@ Array [
             "content": Array [
               " ",
               Object {
+                "attrs": Object {
+                  "class": "",
+                },
                 "content": Array [
                   Object {
                     "attrs": Object {
@@ -3543,6 +3591,46 @@ Array [
                             },
                             "content": Array [
                               " https://devcast-june-2021.mrtnvh.com/ ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Demo",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
                             ],
                             "tag": "a",
                           },
@@ -3601,17 +3689,41 @@ Array [
             ],
             "tag": "table",
           },
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
         ],
         "tag": "aside",
       },
-      " ",
+      Object {
+        "attrs": Object {
+          "class": "",
+        },
+        "content": Array [
+          " ",
+        ],
+        "tag": "a",
+      },
       Object {
         "attrs": Object {
           "class": "preview",
         },
         "content": Array [
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
           Object {
             "attrs": Object {
               "class": "media media-video-overlay",
@@ -3669,6 +3781,24 @@ Array [
       " ",
     ],
     "tag": "article",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
   },
   " ",
 ]
@@ -3736,6 +3866,9 @@ Array [
             "content": Array [
               " ",
               Object {
+                "attrs": Object {
+                  "class": "",
+                },
                 "content": Array [
                   Object {
                     "attrs": Object {
@@ -3863,17 +3996,41 @@ Array [
             ],
             "tag": "table",
           },
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
         ],
         "tag": "aside",
       },
-      " ",
+      Object {
+        "attrs": Object {
+          "class": "",
+        },
+        "content": Array [
+          " ",
+        ],
+        "tag": "a",
+      },
       Object {
         "attrs": Object {
           "class": "preview",
         },
         "content": Array [
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
           Object {
             "attrs": Object {
               "class": "media media-video-overlay",
@@ -3944,6 +4101,24 @@ Array [
     ],
     "tag": "article",
   },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
+  },
   " ",
 ]
 `;
@@ -4009,29 +4184,164 @@ Array [
             },
             "content": Array [
               " ",
+              Object {
+                "attrs": Object {
+                  "class": "",
+                },
+                "content": Array [
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Slides",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Demo",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Video",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                ],
+                "tag": "tbody",
+              },
             ],
             "tag": "table",
           },
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
         ],
         "tag": "aside",
       },
-      " ",
       Object {
         "attrs": Object {
-          "class": "preview",
+          "class": "",
         },
         "content": Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "media",
+              "class": "preview",
             },
             "content": Array [
               " ",
               Object {
                 "attrs": Object {
-                  "class": "",
+                  "class": "media",
                 },
                 "content": Array [
                   " ",
@@ -4039,40 +4349,67 @@ Array [
                     "attrs": Object {
                       "class": "",
                     },
-                    "tag": "source",
-                  },
-                  " ",
-                  Object {
-                    "attrs": Object {
-                      "class": "fade image fade-active",
-                    },
-                    "tag": "img",
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "fade image fade-active",
+                        },
+                        "tag": "img",
+                      },
+                      " ",
+                    ],
+                    "tag": "picture",
                   },
                   " ",
                 ],
-                "tag": "picture",
+                "tag": "figure",
               },
               " ",
             ],
-            "tag": "figure",
+            "tag": "div",
+          },
+          " ",
+          Object {
+            "attrs": Object {
+              "class": "body",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "div",
           },
           " ",
         ],
-        "tag": "div",
+        "tag": "a",
       },
-      " ",
-      Object {
-        "attrs": Object {
-          "class": "body",
-        },
-        "content": Array [
-          " ",
-        ],
-        "tag": "div",
-      },
-      " ",
     ],
     "tag": "article",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
   },
   " ",
 ]
@@ -4139,29 +4476,164 @@ Array [
             },
             "content": Array [
               " ",
+              Object {
+                "attrs": Object {
+                  "class": "",
+                },
+                "content": Array [
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Slides",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Demo",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Video",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "content": Array [
+                              " ",
+                            ],
+                            "tag": "a",
+                          },
+                          " ",
+                        ],
+                        "tag": "td",
+                      },
+                      " ",
+                    ],
+                    "tag": "tr",
+                  },
+                  " ",
+                ],
+                "tag": "tbody",
+              },
             ],
             "tag": "table",
           },
-          " ",
+          Object {
+            "attrs": Object {
+              "class": "",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "a",
+          },
         ],
         "tag": "aside",
       },
-      " ",
       Object {
         "attrs": Object {
-          "class": "preview",
+          "class": "",
         },
         "content": Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "media",
+              "class": "preview",
             },
             "content": Array [
               " ",
               Object {
                 "attrs": Object {
-                  "class": "",
+                  "class": "media",
                 },
                 "content": Array [
                   " ",
@@ -4169,40 +4641,67 @@ Array [
                     "attrs": Object {
                       "class": "",
                     },
-                    "tag": "source",
-                  },
-                  " ",
-                  Object {
-                    "attrs": Object {
-                      "class": "fade image fade-active",
-                    },
-                    "tag": "img",
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "fade image fade-active",
+                        },
+                        "tag": "img",
+                      },
+                      " ",
+                    ],
+                    "tag": "picture",
                   },
                   " ",
                 ],
-                "tag": "picture",
+                "tag": "figure",
               },
               " ",
             ],
-            "tag": "figure",
+            "tag": "div",
+          },
+          " ",
+          Object {
+            "attrs": Object {
+              "class": "body",
+            },
+            "content": Array [
+              " ",
+            ],
+            "tag": "div",
           },
           " ",
         ],
-        "tag": "div",
+        "tag": "a",
       },
-      " ",
-      Object {
-        "attrs": Object {
-          "class": "body",
-        },
-        "content": Array [
-          " ",
-        ],
-        "tag": "div",
-      },
-      " ",
     ],
     "tag": "article",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
+  },
+  Object {
+    "attrs": Object {
+      "class": "",
+    },
+    "content": Array [
+      " ",
+    ],
+    "tag": "a",
   },
   " ",
 ]
