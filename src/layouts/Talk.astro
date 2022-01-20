@@ -16,36 +16,30 @@ const { content } = Astro.props;
     </header>
     <aside>
       <table class="table-borderless">
-        {content.slides && (
-          <tr>
-            <td style="width: 6rem;">Slides</td>
-            <td>
-              <a href={content.slides} target="_blank" rel="noopener">
-                {content.slides}
-              </a>
-            </td>
-          </tr>
-        )}
-        {content.demo && (
-          <tr>
-            <td>Demo</td>
-            <td>
-              <a href={content.demo} target="_blank" rel="noopener">
-                {content.demo}
-              </a>
-            </td>
-          </tr>
-        )}
-        {content.video && (
-          <tr>
-            <td>Video</td>
-            <td>
-              <a href={content.video} target="_blank" rel="noopener">
-                {content.video}
-              </a>
-            </td>
-          </tr>
-        )}
+        <tr hidden={!content.slides}>
+          <td style="width: 6rem;">Slides</td>
+          <td>
+            <a href={content.slides} target="_blank" rel="noopener">
+              {content.slides}
+            </a>
+          </td>
+        </tr>
+        <tr hidden={!content.demo}>
+          <td>Demo</td>
+          <td>
+            <a href={content.demo} target="_blank" rel="noopener">
+              {content.demo}
+            </a>
+          </td>
+        </tr>
+        <tr hidden={!content.video}>
+          <td>Video</td>
+          <td>
+            <a href={content.video} target="_blank" rel="noopener">
+              {content.video}
+            </a>
+          </td>
+        </tr>
       </table>
     </aside>
     <div class="preview">
