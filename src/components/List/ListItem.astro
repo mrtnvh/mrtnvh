@@ -32,7 +32,7 @@ const linkProps = () => {
       <h2 class="title">
         {item.title}
       </h2>
-      <p class="subtitle">{item.subtitle}</p>
+      <p class="subtitle">{item.subtitle || item.description}</p>
       <div class="meta">
         <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
         {item.category && <div class="category">{item.category}</div>}
@@ -98,6 +98,7 @@ const linkProps = () => {
     font-size: var(--font-size-2xl);
 
     @media (min-width: 800px) {
+      /* stylelint-disable-next-line scss/at-function-named-arguments */
       font-size: clamp(1rem, 7.5vw, var(--font-size-5xl));
       margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.25) calc(var(--grid-gap-x) * -2);
       order: 1;
@@ -106,8 +107,12 @@ const linkProps = () => {
 
   .subtitle {
     font-weight: 400;
-    margin: 0;
     order: 3;
+    margin: 0 0 calc(var(--space) / 3);
+
+    @media (min-width: 800px) {
+      margin: 0;
+    }
   }
 
   .meta {

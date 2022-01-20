@@ -5,26 +5,36 @@ export const getImageSize = ({ image }) => {
 
 export const setImagesSizes = () => {
   const images = document.querySelectorAll('img[sizes="1px"]');
-  images.forEach((image) => {
-    image.addEventListener(
+
+  const lazyImageObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const lazyImage = entry.target;
+        const size = getImageSize({ image: lazyImage });
+        const sources = lazyImage.parentNode.querySelectorAll('source');
+        if (sources) {
+          sources.forEach((source) => {
+            // eslint-disable-next-line no-param-reassign
+            source.sizes = size;
+          });
+        }
+
+        // eslint-disable-next-line no-param-reassign
+        lazyImage.sizes = size;
+        lazyImageObserver.unobserve(lazyImage);
+      }
+    });
+  });
+
+  images.forEach((lazyImage) => {
+    lazyImageObserver.observe(lazyImage);
+    lazyImage.addEventListener(
       `load`,
       () => {
-        image.classList.remove('fade-inactive');
-        image.classList.add('fade-active');
+        lazyImage.classList.remove('fade-inactive');
+        lazyImage.classList.add('fade-active');
       },
       { once: true },
     );
-
-    const size = getImageSize({ image });
-    const sources = image.parentNode.querySelectorAll('source');
-    if (sources) {
-      sources.forEach((source) => {
-        // eslint-disable-next-line no-param-reassign
-        source.sizes = size;
-      });
-    }
-
-    // eslint-disable-next-line no-param-reassign
-    image.sizes = size;
   });
 };

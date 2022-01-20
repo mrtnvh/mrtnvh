@@ -33,23 +33,15 @@ describe('Lighthouse', () => {
 
         const reportFileName = customSnapshotIdentifier(path, environmentName);
 
-        await fs.outputFile(
-          `${__dirname}/__reports__/${reportFileName}.html`,
-          report,
-        );
+        await fs.outputFile(`${__dirname}/__reports__/${reportFileName}.html`, report);
 
-        const scores = Object.values(lhr.categories).map(
-          ({ title, score }) => ({
-            title,
-            score,
-          }),
-        );
+        const scores = Object.values(lhr.categories).map(({ title, score }) => ({
+          title,
+          score,
+        }));
 
         scores.forEach(({ title, score }) => {
-          expect(
-            score,
-            `${title} score below threshold of ${threshold * 100}%`,
-          ).toBeGreaterThanOrEqual(threshold);
+          expect(score, `${title} score below threshold of ${threshold * 100}%`).toBeGreaterThanOrEqual(threshold);
         });
       },
       60 * 1000,

@@ -18,11 +18,7 @@ export const replaceFilesContent = async (glob, callback) => {
       content: await callback(content, path),
     })),
   );
-  await Promise.all(
-    alteredFiles.map(async ({ path, content }) =>
-      fs.outputFile(path, content, 'utf-8'),
-    ),
-  );
+  await Promise.all(alteredFiles.map(async ({ path, content }) => fs.outputFile(path, content, 'utf-8')));
 
   return { files };
 };

@@ -72,3 +72,9 @@ pre {
     line-height: 1.75em;
   }
 }
+
+hr {
+  border: 0 solid rgb(214, 211, 209);
+  border-top-width: 1px;
+  margin-block: var(--space);
+}

@@ -1,10 +1,11 @@
 ---
+import { Markdown } from 'astro/components';
 import { parse, format } from 'date-fns';
 import BaseLayout from './Base.astro';
 import { getSrcSet } from '../components/Image/cloudinary.js';
 
 const {
-  content: { title, subtitle, thumbnail, slides, demo, video, tint, datePublished, category },
+  content: { title, subtitle, thumbnail, thumbnailCredits, slides, demo, video, tint, datePublished, category },
 } = Astro.props;
 
 const defaultImageSettings = { src: thumbnail, tint };
@@ -37,6 +38,7 @@ const links = [
 ];
 
 const date = parse(datePublished, 'yyyyMMdd', new Date());
+const hasCredits = !!thumbnailCredits;
 ---
 
 <BaseLayout {...Astro.props} {preloads}>
@@ -54,7 +56,6 @@ const date = parse(datePublished, 'yyyyMMdd', new Date());
       </figure>
       <h1 class="title">{title}</h1>
       <div class="meta">
-        <div class="subtitle">{subtitle}</div>
         <div class="time-category">
           <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
           {category && <div class="category">{category}</div>}
@@ -71,6 +72,12 @@ const date = parse(datePublished, 'yyyyMMdd', new Date());
       </div>
       <div class="body">
         <slot />
+        {hasCredits && (
+        <hr />
+        <div class="credits">
+          {thumbnailCredits && <Markdown>{thumbnailCredits}</Markdown>}
+        </div>
+        )}
       </div>
     </div>
   </article>
@@ -191,5 +198,10 @@ const date = parse(datePublished, 'yyyyMMdd', new Date());
 
   .body {
     grid-area: body;
+  }
+
+  .credits {
+    font-size: var(--font-size-sm);
+    color: var(--grey);
   }
 </style>

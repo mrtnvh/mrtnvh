@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/Detail.astro
 title: ISAAC
-subtitle: Fullservice Digital Agency
 description: Part of ISAAC's front-end team to build awesome web experiences built on Vue, Nuxt & other JavaScript frameworks.
-thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871100/mrtnvh.com/isaac.jpg'
+thumbnail: https://res.cloudinary.com/mrtnvh/image/upload/v1570871100/mrtnvh.com/isaac.jpg
 color: FF4E4E
 datePublished: 20190520
 tint: sky
+category: Experience
 ---
 
 ISAAC, based in Eindhoven NL, is a fullservice digital agency fond of delivering e-business solutions for complex questions. ISAAC excels at e-commerce, e-finance, Artificial Intelligence & Virtual Reality.

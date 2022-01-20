@@ -33,14 +33,14 @@ const baseLayoutProps = defaultsDeep(
             return (
               <li class="talk">
                 <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
-                <span class="talk-title">{talk.title}</span>
                 {talk.redirect ? (
-                  <a href={talk.redirect} class="talk-subtitle external" rel="noopener" target="_blank">
-                    {talk.subtitle}
+                  <a href={talk.redirect} class="talk-title external" rel="noopener" target="_blank">
+                    {talk.title}
                   </a>
                 ) : (
-                  <span class="talk-subtitle">{talk.subtitle}</span>
+                  <span class="talk-title">{talk.title}</span>
                 )}
+                <span class="talk-subtitle">{talk.subtitle}</span>
               </li>
             );
           })}

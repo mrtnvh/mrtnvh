@@ -14,9 +14,7 @@ describe.each(getPages())('%s', (path) => {
         // Emulate device
         await page.emulate(emulationSettings);
         // Ensure light mode
-        await page.emulateMediaFeatures([
-          { name: 'prefers-color-scheme', value: 'light' },
-        ]);
+        await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }]);
         await page.goto(getUrl(path));
         await page.waitForSelector('img:not([sizes="1px"])');
         await page.waitForTimeout(500);
@@ -31,10 +29,7 @@ describe.each(getPages())('%s', (path) => {
           failureThreshold: 0.2,
           failureThresholdType: 'percent',
           blur: 25,
-          customSnapshotIdentifier: customSnapshotIdentifier(
-            path,
-            environmentName,
-          ),
+          customSnapshotIdentifier: customSnapshotIdentifier(path, environmentName),
           allowSizeMismatch: true,
         });
       },

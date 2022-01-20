@@ -13,16 +13,20 @@ td {
   border-bottom: 1px solid var(--grey);
   padding: 1rem 0;
 
-  .table-borderless & {
-    border-bottom: 0;
-  }
-
   &:not(:first-child) {
     padding-left: calc(var(--space) / 2);
   }
 
   &:not(:last-child) {
     padding-right: calc(var(--space) / 2);
+  }
+
+  .table-borderless & {
+    border-bottom: 0;
+  }
+
+  tr:last-child & {
+    border-bottom: 0;
   }
 
   tr:first-child & {

@@ -77,15 +77,10 @@ const getConfiguration = (pkg) => ({
 
 export default async () => {
   const pkg = await fs.readJSON('package.json');
-  const { html, images, files } = await promisify(favicons)(
-    source,
-    getConfiguration(pkg),
-  );
+  const { html, images, files } = await promisify(favicons)(source, getConfiguration(pkg));
 
   await Promise.all(
-    images.map(async ({ name, contents }) =>
-      fs.outputFile(`${BUILD_DIRECTORY}${iconOutPath}/${name}`, contents),
-    ),
+    images.map(async ({ name, contents }) => fs.outputFile(`${BUILD_DIRECTORY}${iconOutPath}/${name}`, contents)),
   );
 
   await Promise.all(
@@ -99,10 +94,7 @@ export default async () => {
             purpose: 'any maskable',
           })),
         };
-        return fs.outputFile(
-          `${BUILD_DIRECTORY}/${name}`,
-          JSON.stringify(purposedContents),
-        );
+        return fs.outputFile(`${BUILD_DIRECTORY}/${name}`, JSON.stringify(purposedContents));
       }
       return fs.outputFile(`${BUILD_DIRECTORY}/${name}`, contents);
     }),

@@ -8,7 +8,7 @@ const { content } = Astro.props;
     <header>
       <div class="sticky">
         <h1 class="title outline">{content.title}</h1>
-        <div class="subtitle">{content.subtitle}</div>
+        <div class="subtitle">{content.subtitle || content.description}</div>
       </div>
     </header>
     <div class="body">

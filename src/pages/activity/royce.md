@@ -1,22 +1,16 @@
 ---
 layout: ../../layouts/Detail.astro
 title: ROYCE
-subtitle: Metal
-thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/royce.jpg'
+thumbnail: https://res.cloudinary.com/mrtnvh/image/upload/v1570871095/mrtnvh.com/royce.jpg
 description: Guitarist, producer, management, booking & founding member of Belgian metalcore formation ROYCE.
 color: FF005C
 current: true
 datePublished: 20130813
 tint: rose
+category: Experience
 ---
 
-<div class="intro mb-ggy">
-
 Guitarist, producer, management, booking & founding member of Belgian metalcore formation, [ROYCE](https://roycetheband.com). A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you.
-
-</div>
-
-<div class="column-lg-2 column-xxl-3 mb-ggy">
 
 After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy & bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named ROYCE.
 
@@ -28,5 +22,3 @@ Open your eyes, the change is right in front of you.
 
 [Instagram](https://instagram.com/roycetheband) <br/>
 [Facebook](https://facebook.com/roycetheband)
-
-</div>

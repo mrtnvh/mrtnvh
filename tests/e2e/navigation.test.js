@@ -22,46 +22,38 @@ describe('Navigation', () => {
   });
 
   describe.each(Object.entries(links))('Navigate to %s', (key, to) => {
-    test.each(Object.entries(devices))(
-      '%s',
-      async (environmentName, emulationSettings) => {
-        await page.emulate(emulationSettings);
-        const $document = await getDocument(page);
-        const $linkContainer = await getByTestId(
-          $document,
-          environmentName === 'mobile' ? `off-canvas-menu` : `app-header-nav`,
-        );
+    test.each(Object.entries(devices))('%s', async (environmentName, emulationSettings) => {
+      await page.emulate(emulationSettings);
+      const $document = await getDocument(page);
+      const $linkContainer = await getByTestId(
+        $document,
+        environmentName === 'mobile' ? `off-canvas-menu` : `app-header-nav`,
+      );
 
-        if (environmentName === 'mobile') {
-          const $toggle = await getByTestId(
-            $document,
-            `off-canvas-menu-toggle`,
-          );
-          await $toggle.click();
-        }
+      if (environmentName === 'mobile') {
+        const $toggle = await getByTestId($document, `off-canvas-menu-toggle`);
+        await $toggle.click();
+      }
 
-        const $link = await getByTestId($linkContainer, `navigation-${key}`);
-        await $link.click();
+      const $link = await getByTestId($linkContainer, `navigation-${key}`);
+      await $link.click();
 
-        if (to.includes('http')) {
-          await page.waitForTimeout(2000);
-          const tabs = await browser.pages();
-          const latestTabIndex = tabs.length - 1;
-          const url = await tabs[latestTabIndex].url();
+      if (to.includes('http')) {
+        await page.waitForTimeout(2000);
+        const tabs = await browser.pages();
+        const latestTabIndex = tabs.length - 1;
+        const url = await tabs[latestTabIndex].url();
 
-          if (url.includes('linkedin')) {
-            expect(new URL(url).hostname).toEqual(new URL(to).hostname);
-          } else {
-            expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(to));
-          }
+        if (url.includes('linkedin')) {
+          expect(new URL(url).hostname).toEqual(new URL(to).hostname);
         } else {
-          await page.waitForTimeout(300);
-          const url = await page.url();
-          expect(removeTrailingSlash(url)).toEqual(
-            removeTrailingSlash(getUrl(to)),
-          );
+          expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(to));
         }
-      },
-    );
+      } else {
+        await page.waitForTimeout(300);
+        const url = await page.url();
+        expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(getUrl(to)));
+      }
+    });
   });
 });

@@ -3,7 +3,7 @@ layout: ../layouts/About.astro
 title: About
 subtitle: A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
 description: ''
-thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871092/mrtnvh.com/portrait.jpg'
+thumbnail: https://res.cloudinary.com/mrtnvh/image/upload/v1642454529/mrtnvh.com/mrtnvh-portrait-2021.jpg
 thumbnailAlt: A portrait photo of Maarten Van Hoof.
 type: about
 datePublished: 20190914
@@ -35,7 +35,7 @@ I want to be part of a team with clear vision and resources to build an awesome 
 
 ## Skills
 
-<table class="mb-ggy">
+<table>
 	<tr>
 		<td>Web</td>
 		<td colspan="2">
