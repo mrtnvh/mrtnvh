@@ -1,13 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/js/stats",
-      "destination": "https://plausible.io/js/plausible.js"
-    },
-    {
-      "source": "/api/event",
-      "destination": "https://plausible.io/api/event"
-    },
+  "redirects": [
     {
       "source": "/projects/:path*",
       "destination": "/activity/:path*",
@@ -37,6 +29,16 @@
       "source": "/talks/openapi-and-testing",
       "destination": "/talks/ministry-of-testing-ehv-november-19",
       "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/js/stats",
+      "destination": "https://plausible.io/js/plausible.js"
+    },
+    {
+      "source": "/api/event",
+      "destination": "https://plausible.io/api/event"
     }
   ]
 }
