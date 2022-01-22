@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const posthtml = require('posthtml');
 const removeAttributes = require('posthtml-remove-attributes');
 const { getPages } = require('../setup/config');
@@ -8,10 +9,8 @@ describe('Content DOM snapshots', () => {
   test.each(getPages())(
     '%s',
     async (path) => {
-      await page.goto(getUrl(path));
-      await page.waitForTimeout(2000);
-      const content = await page.$eval('main', (el) => el.innerHTML);
-
+      const html = await fetch(getUrl(path)).then((res) => res.text());
+      const [content] = html.match(/<main(.*)main>/gm);
       const { tree: sanitizedContent } = await posthtml()
         .use(
           removeClass('astro'),
@@ -24,7 +23,8 @@ describe('Content DOM snapshots', () => {
           ]),
         )
         .process(content);
-      await expect(sanitizedContent).toMatchSnapshot();
+      // expect(true).toBe(true);
+      await expect(sanitizedContent.match()).toMatchSnapshot();
     },
     10 * 1000,
   );
