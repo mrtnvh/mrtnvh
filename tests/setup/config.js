@@ -1,4 +1,4 @@
-const parser = require('fast-xml-parser');
+const { XMLParser } = require('fast-xml-parser');
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
@@ -14,6 +14,7 @@ module.exports = {
       `${process.cwd()}/dist/${sitemapFileName}`,
       'utf-8',
     );
+    const parser = new XMLParser();
     const sitemapJson = parser.parse(sitemap);
     const pages = sitemapJson.urlset.url.map(({ loc }) => {
       const url = new URL(loc);
