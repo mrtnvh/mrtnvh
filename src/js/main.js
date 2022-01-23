@@ -31,9 +31,6 @@ function setNavigationActiveLink() {
 
 function onContentReplaced() {
   setImagesSizes();
-}
-
-function onWillReplaceContent() {
   setBrandSize();
   setNavigationActiveLink();
 }
@@ -56,7 +53,7 @@ window.plausible =
   };
 
 swup.on('contentReplaced', onContentReplaced);
-swup.on('willReplaceContent', onWillReplaceContent);
+
 swup.on('pageView', () => {
   window.plausible('pageview');
 });
