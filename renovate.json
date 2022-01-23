@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "config:base",
-    "group:allNonMajor",
-    ":automergeAll",
-    ":maintainLockFilesWeekly",
-    "schedule:weekly"
-  ],
+  "extends": ["config:base", "group:allNonMajor", ":automergeAll", ":maintainLockFilesWeekly", "schedule:weekly"],
   "rangeStrategy": "bump",
   "prHourlyLimit": 5,
   "packageRules": [

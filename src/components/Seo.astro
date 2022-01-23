@@ -9,15 +9,12 @@ const titleDefault = 'Maarten Van Hoof \\\\ Front End Developer';
 const descriptionDefault =
   'Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator';
 
-const getTitle = (...args) =>
-  [...args.filter((val) => val?.length), titleDefault].join(' \\\\ ');
+const getTitle = (...args) => [...args.filter((val) => val?.length), titleDefault].join(' \\\\ ');
 
 const siteUrl = 'https://mrtnvh.com';
 const title = getTitle(content?.title, category);
 const description = content?.description || descriptionDefault;
-const image = content?.thumbnail
-  ? getOgImage({ src: content?.thumbnail })
-  : urljoin(siteUrl, '/og.png');
+const image = content?.thumbnail ? getOgImage({ src: content?.thumbnail }) : urljoin(siteUrl, '/og.png');
 
 const schemaWebsite = JSON.stringify({
   '@context': 'http://schema.org',

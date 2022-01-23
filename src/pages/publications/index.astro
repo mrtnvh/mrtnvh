@@ -8,15 +8,12 @@ import Folio from '../../components/Page/Folio.astro';
 const dateNow = format(new Date(), 'yyyyMMdd');
 const allPublications = Astro.fetchContent('./*.md');
 const allPublicationsOrdered = orderBy(allPublications, ['datePublished'], ['desc']);
-const publications = allPublicationsOrdered.filter(
-  ({ datePublished }) => datePublished <= dateNow,
-);
+const publications = allPublicationsOrdered.filter(({ datePublished }) => datePublished <= dateNow);
 const baseLayoutProps = defaultsDeep(
   {
     content: {
       title: 'Publications',
-      description:
-        "Blogposts, significant tweets and inspiring links",
+      description: 'Blogposts, significant tweets and inspiring links',
     },
   },
   Astro.props,
