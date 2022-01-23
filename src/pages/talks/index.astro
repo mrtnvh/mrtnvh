@@ -54,7 +54,7 @@ const baseLayoutProps = defaultsDeep(
 <style>
   .upcoming {
     text-align: center;
-    margin-block-end: var(--grid-gap-y);
+    margin-block-end: clamp(calc(var(--grid-gap-y) * 1), 9vw, calc(var(--grid-gap-y) * 2));
     padding-block: var(--grid-gap-y);
 
     .container {
