@@ -23,7 +23,6 @@ describe('Content DOM snapshots', () => {
           ]),
         )
         .process(content);
-      // expect(true).toBe(true);
       await expect(sanitizedContent.match()).toMatchSnapshot();
     },
     10 * 1000,
