@@ -24,7 +24,7 @@ const baseLayoutProps = defaultsDeep(
 
 <BaseLayout {...baseLayoutProps}>
   <Folio title="Talks">
-    <div class="upcoming full-width">
+    <div class="upcoming full-width bg-grey-noise">
       <div class="container">
         <h2 class="upcoming-title">Upcoming</h2>
         <ul class="talks">
@@ -55,7 +55,6 @@ const baseLayoutProps = defaultsDeep(
   .upcoming {
     text-align: center;
     margin-block-end: var(--grid-gap-y);
-    background: var(--grey-200);
     padding-block: var(--grid-gap-y);
 
     .container {

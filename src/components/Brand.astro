@@ -39,41 +39,17 @@ const currentPathname = Astro.request.url.pathname;
 
 <style>
   .brand {
-    --brand-font-size: var(--font-size-lg);
-    --brand-font-weight: 900;
-    --firstname-z-index: 2;
-    --firstname-letter-spacing: calc(var(--brand-font-size) / 50);
-    --lastname-z-index: 1;
-    --brand-animation-constant: 10%;
     --link-hover-background-color: transparent;
 
     color: var(--headings-color);
-    font-family: var(--headings-font-family);
-    font-size: var(--brand-font-size);
-    font-weight: var(--brand-font-weight);
     position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
 
     &.brand-large {
-      --brand-font-size: clamp(1rem, 14.5vw, var(--font-size-5xl));
-
       padding-block-start: calc(var(--grid-gap-y) * 1);
 
       @media (min-width: 800px) {
-        --brand-font-size: var(--font-size-2xl);
-
         padding-block-start: 0;
       }
-    }
-
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    @media (min-width: 800px) {
-      --brand-font-size: var(--font-size-2xl);
     }
   }
 
@@ -83,14 +59,14 @@ const currentPathname = Astro.request.url.pathname;
     transition-timing-function: var(--animation-timing-function);
 
     svg {
-      width: auto;
-      height: 1em;
+      width: 100%;
+      height: auto;
     }
   }
 
   .firstname {
     position: relative;
-    z-index: var(--firstname-z-index);
+    z-index: 2;
     transform: translate(-5.25%, 27.5%);
 
     .brand:hover &,
@@ -100,17 +76,12 @@ const currentPathname = Astro.request.url.pathname;
   }
 
   .lastname {
-    height: 1.01em;
-    z-index: var(--lastname-z-index);
+    z-index: 1;
     transform: translate(5.25%, -17.5%);
 
     .brand:hover &,
     .brand:focus & {
       transform: translate(0, 0);
-    }
-
-    svg {
-      height: 1.05em;
     }
   }
 </style>

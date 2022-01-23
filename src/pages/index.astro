@@ -21,7 +21,7 @@ const publishedEvents = events.filter(({ datePublished }) => datePublished <= da
 </BaseLayout>
 
 <style>
-.events {
-  padding-block-start: var(--grid-gap-y);
-}
+  .events {
+    padding-block-start: clamp(calc(var(--grid-gap-y) * 1), 9vw, calc(var(--grid-gap-y) * 2));
+  }
 </style>

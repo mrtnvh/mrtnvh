@@ -42,12 +42,22 @@ const currentPathname = Astro.request.url.pathname;
   }
 
   .brand {
+    width: calc(var(--space) * 5);
+
     &.brand-large {
-      --brand-font-size: var(--font-size-5xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @media (max-width: 799px) {
         margin: 0 auto;
+        max-width: calc(var(--space) * 12);
+        width: 100%;
       }
+    }
+
+    @media (min-width: 800px) {
+      width: calc(var(--space) * 7);
     }
   }
 
