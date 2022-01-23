@@ -5,15 +5,6 @@ button.link {
   --link-hover-background-color: var(--text-color);
   --link-transition-speed: 0.15s;
   --link-text-decoration: underline;
-  --underline-z-index: -2;
-  --underline-background-color: var(--grey-light);
-  --underline-height: 0.5rem;
-  --underline-position-left: 0.5rem;
-  --underline-position-bottom: 0.125rem;
-  --underline-position-width: calc(100% - (var(--underline-position-left) / 2));
-  --underline-hover-z-index: -1;
-  --underline-hover-background-color: var(--primary);
-  --underline-animation-timing-function: var(--animation-timing-function);
 
   color: var(--link-color);
   text-decoration: var(--link-text-decoration);
@@ -36,23 +27,19 @@ button.link {
   }
 
   &.github {
-    --link-hover-color: var(--github);
-    --underline-hover-background-color: var(--github);
+    --link-hover-background-color: var(--github);
   }
 
   &.twitter {
-    --link-hover-color: var(--twitter);
-    --underline-hover-background-color: var(--twitter);
+    --link-hover-background-color: var(--twitter);
   }
 
   &.linkedin {
-    --link-hover-color: var(--linkedin);
-    --underline-hover-background-color: var(--linkedin);
+    --link-hover-background-color: var(--linkedin);
   }
 
   &.isaac {
-    --link-hover-color: var(--isaac);
-    --underline-hover-background-color: var(--isaac);
+    --link-hover-background-color: var(--isaac);
   }
 }
 

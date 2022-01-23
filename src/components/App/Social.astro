@@ -1,16 +1,5 @@
 ---
-export interface Props {
-  offCanvas?: boolean;
-}
-
-const { offCanvas = false } = Astro.props;
-
 const links = [
-  {
-    name: 'email',
-    href: 'mailto:info@mrtnvh.com',
-    icon: 'email',
-  },
   {
     name: 'github',
     href: 'https://github.com/vanhoofmaarten/',
@@ -26,19 +15,17 @@ const links = [
     href: 'https://www.linkedin.com/in/mrtnvh/',
     icon: 'linkedIn',
   },
+  {
+    name: 'email',
+    href: 'mailto:info@mrtnvh.com',
+    icon: 'email',
+  },
 ];
 ---
 
-<nav class={`social ${offCanvas ? 'social-off-canvas' : ''}`}>
+<nav class="social">
   {links.map(({ href, name, icon }) => (
-    <a
-      key={href}
-      href={href}
-      class={name}
-      target="_blank"
-      rel="noopener"
-      data-testid={`navigation-${name}`}
-    >
+    <a href={href} class={name} target="_blank" rel="noopener" data-testid={`navigation-${name}`}>
       <svg aria-label={name}>
         <use xlink:href={`#${icon}`} />
       </svg>
@@ -49,26 +36,18 @@ const links = [
 <style>
   .social {
     display: flex;
-    justify-content: flex-end;
-
-    &.social-off-canvas {
-      padding: var(--grid-gap-y) 0;
-    }
+    justify-content: center;
+    gap: var(--space);
   }
 
   button.link,
   a {
     line-height: 0;
-    margin: calc(var(--space) / 2) calc(var(--space));
+    padding: calc(var(--space) * 0.25);
   }
 
   svg {
-    height: calc(var(--space) * 1.25);
-    width: calc(var(--space) * 1.25);
-
-    .social-off-canvas & {
-      height: var(--font-size-lg);
-      width: var(--font-size-lg);
-    }
+    height: calc(var(--space) * 1);
+    width: calc(var(--space) * 1);
   }
 </style>
