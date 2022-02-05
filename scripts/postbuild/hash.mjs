@@ -5,7 +5,18 @@ import { extname, basename } from 'path';
 
 import { BUILD_DIRECTORY, replaceFilesContent } from './_utils.mjs';
 
-const FILES_TO_EXCLUDE = ['robots.txt', 'sitemap.xml', '.html', '.css', '.js', '/_astro/', 'stats.js', 'workbox'];
+const FILES_TO_EXCLUDE = [
+  'robots.txt',
+  'sitemap.xml',
+  '.html',
+  '.css',
+  '.js',
+  '.woff',
+  '.woff2',
+  '/_astro/',
+  'stats.js',
+  'workbox',
+];
 
 const createHashFromFilePath = (filePath, { hashLength, hashAlgorithm } = {}) =>
   new Promise((resolve) => {

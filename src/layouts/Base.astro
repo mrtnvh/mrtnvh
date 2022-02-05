@@ -22,13 +22,6 @@ const { content, preloads } = Astro.props;
     <link rel="preload" href={Astro.resolve('../styles/app.css')} as="style" />
     <link rel="stylesheet" href={Astro.resolve('../styles/app.css')} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-
     {preloads && preloads.map((preload) => <link {...preload} />)}
 
     {isProd && (
