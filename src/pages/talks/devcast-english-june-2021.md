@@ -3,6 +3,7 @@ layout: ../../layouts/Detail.astro
 title: CodeMotion DevCast
 description: Container Queries are the next step towards a truly modular CSS, in the June 2021 episode of Codemotion's DevCast, I talked about why.
 thumbnail: https://res.cloudinary.com/mrtnvh/image/upload/v1642348364/mrtnvh.com/codemotion-devcast.jpg
+thumbnailCredits: Background in thumbnail by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 datePublished: 20210615
 video: 'https://youtu.be/Hr5lIsbiWpY?t=178'
 conference: CodeMotion DevCast June 2021
