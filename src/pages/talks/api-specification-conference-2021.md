@@ -5,7 +5,6 @@ description: In the talk "Frontend ♥︎ OpenAPI", I show how the OpenAPI speci
 thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1641124321/mrtnvh.com/api-spec-conf-2.jpg'
 thumbnailCredits: Background in thumbnail by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 datePublished: 20210929
-videoPreview: 'https://res.cloudinary.com/mrtnvh/image/upload/v1632934738/mrtnvh.com/api-spec-conf-preview.jpg'
 video: 'https://www.youtube.com/watch?v=3IKbLDbq5ww'
 demo: 'https://github.com/vanhoofmaarten/talks/tree/main/packages/frontend-loves-openapi/demo'
 conference: API Specification Conference 2021
