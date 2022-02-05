@@ -26,7 +26,16 @@ const linkProps = () => {
 <article>
   <a {...linkProps()} class="reset link">
     <figure class="media">
-      <Thumbnail src={item.thumbnail} alt={item.title} class="image" width="1600" height="900" tint={item.tint} />
+      <Thumbnail
+        src={item.thumbnail}
+        alt={item.title}
+        class="image"
+        width="1600"
+        height="900"
+        tint={item.tint}
+        loading="lazy"
+        sizes="(min-width: 800px) 58vw, (min-width: 1280px) 650px, (max-width: 799px) 100vw"
+      />
     </figure>
     <div class="content">
       <h2 class="title">

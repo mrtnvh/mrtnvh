@@ -3,10 +3,9 @@ import Seo from '../components/Seo.astro';
 import Header from '../components/App/Header.astro';
 import Footer from '../components/App/Footer.astro';
 import SvgSprite from '../components/SvgSprite.astro';
-import { getSrcSet } from '../components/Image/cloudinary';
 
 const isProd = process.env.NODE_ENV === 'production';
-const { content } = Astro.props;
+const { content, preloads } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ const { content } = Astro.props;
       rel="stylesheet"
     />
 
-    <!-- {preloads.map(preload => <link {...preload} />)} -->
+    {preloads && preloads.map((preload) => <link {...preload} />)}
 
     {isProd &&
       `

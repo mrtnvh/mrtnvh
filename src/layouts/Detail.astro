@@ -2,33 +2,51 @@
 import { Markdown } from 'astro/components';
 import { parse, format } from 'date-fns';
 import BaseLayout from './Base.astro';
-import { getSrcSet } from '../components/Image/cloudinary.js';
+import { getImageVariants } from '../components/Image/cloudinary.js';
 
 const {
-  content: { title, subtitle, thumbnail, thumbnailCredits, slides, demo, video, tint, datePublished, category },
+  content: { title, thumbnail, thumbnailCredits, slides, demo, video, tint, datePublished, category },
 } = Astro.props;
 
 const defaultImageSettings = { src: thumbnail, tint };
-const defaultMobileImageSettings = { ...defaultImageSettings, width: 1600, height: 1200 };
-const defaultDesktopImageSettings = { ...defaultImageSettings, width: 2100, height: 900 };
-const { src, srcSet: srcSetMobile } = getSrcSet({ ...defaultMobileImageSettings });
-const { src: srcWebpMobile, srcSet: srcSetWebpMobile } = getSrcSet({ ...defaultMobileImageSettings, type: 'webp' });
-const { src: srcDesktop, srcSet: srcSetDesktop } = getSrcSet({ ...defaultDesktopImageSettings });
-const { src: srcWebpDesktop, srcSet: srcSetWebpDesktop } = getSrcSet({ ...defaultDesktopImageSettings, type: 'webp' });
+const defaultMobileImageSettings = {
+  ...defaultImageSettings,
+  width: 1600,
+  height: 1200,
+  sizes: '(min-width: 1280px) 1280px, 100vw',
+};
+const defaultDesktopImageSettings = { ...defaultImageSettings, width: 2100, height: 900, sizes: '100vw' };
+const { src, srcSet: srcSetMobile } = getImageVariants({ ...defaultMobileImageSettings });
+const { src: srcWebpMobile, srcSet: srcSetWebpMobile } = getImageVariants({
+  ...defaultMobileImageSettings,
+  type: 'webp',
+});
+const { srcSet: srcSetAvifMobile } = getImageVariants({ ...defaultMobileImageSettings, type: 'avif' });
+const { srcSet: srcSetDesktop } = getImageVariants({ ...defaultDesktopImageSettings });
+const { src: srcWebpDesktop, srcSet: srcSetWebpDesktop } = getImageVariants({
+  ...defaultDesktopImageSettings,
+  type: 'webp',
+});
+const { srcSet: srcSetAvifDesktop } = getImageVariants({ ...defaultDesktopImageSettings, type: 'avif' });
 
-const preloadMobileProps = { rel: 'preload', as: 'image', imagesizes: '100vw' };
+// "...specifying preloading for multiple types of the same resource is discouraged.
+// Instead, the best practice is to specify preloading only for the type the majority of your users are likely to actually use...
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#including_a_mime_type
+const preloadProps = { rel: 'preload', as: 'image' };
+const preloadMobileProps = {
+  ...preloadProps,
+  imagesizes: defaultMobileImageSettings.sizes,
+  media: '(max-width: 799px)',
+};
 const preloadDesktopProps = {
-  rel: 'preload',
-  as: 'image',
-  imagesizes: '100vw, (min-width: 1280px) 1280px',
+  ...preloadProps,
+  imagesizes: defaultDesktopImageSettings.sizes,
   media: '(min-width: 800px)',
 };
 
 const preloads = [
-  { ...preloadDesktopProps, href: srcWebpDesktop, imagesrcset: srcSetWebpMobile, type: 'image/webp' },
-  { ...preloadDesktopProps, href: srcDesktop, imagesrcset: srcSetDesktop },
-  { ...preloadMobileProps, href: srcWebpMobile, imagesrcset: srcSetWebpMobile, type: 'image/webp' },
-  { ...preloadMobileProps, href: src, imagesrcset: srcSetMobile },
+  { ...preloadDesktopProps, imagesrcset: srcSetWebpDesktop, type: 'image/webp' },
+  { ...preloadMobileProps, imagesrcset: srcSetWebpMobile, type: 'image/webp' },
 ];
 
 const links = [
@@ -47,10 +65,13 @@ const hasCredits = !!thumbnailCredits;
       <figure class="media">
         {thumbnail && (
           <picture>
-            <source sizes="1px" srcset={srcSetWebpMobile} type="image/webp" />
-            <source sizes="1px" srcset={srcSetDesktop} media="(min-width: 800px)" />
-            <source sizes="1px" srcset={srcSetWebpDesktop} type="image/webp" media="(min-width: 800px)" />
-            <img {src} srcset={srcSetMobile} sizes="1px" alt={title} class="image fade fade-inactive" />
+            <source sizes={defaultDesktopImageSettings.sizes} srcset={srcSetAvifDesktop} type="image/avif" media="(min-width: 800px)" />
+            <source sizes={defaultDesktopImageSettings.sizes} srcset={srcSetWebpDesktop} type="image/webp" media="(min-width: 800px)" />
+            <source sizes={defaultDesktopImageSettings.sizes} srcset={srcSetDesktop} media="(min-width: 800px)" />
+            <source sizes={defaultMobileImageSettings.sizes} srcset={srcSetAvifMobile} type="image/avif" />
+            <source sizes={defaultMobileImageSettings.sizes} srcset={srcSetWebpMobile} type="image/webp" />
+            <source sizes={defaultMobileImageSettings.sizes} srcset={srcSetMobile} />
+            <img {src} alt={title} class="image" />
           </picture>
         )}
       </figure>
@@ -119,7 +140,6 @@ const hasCredits = !!thumbnailCredits;
     margin-inline: calc(var(--grid-gap-x) * -1);
     margin-block-end: 0;
     position: relative;
-    z-index: -1;
 
     picture {
       display: flex;
@@ -144,6 +164,7 @@ const hasCredits = !!thumbnailCredits;
     font-weight: var(--detail-title-font-weight);
     line-height: var(--detail-title-line-height);
     margin-block-start: -0.5625em;
+    z-index: 1;
   }
 
   .subtitle {

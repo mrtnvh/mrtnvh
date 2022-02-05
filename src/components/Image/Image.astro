@@ -1,5 +1,5 @@
 ---
-import { getSrcSet } from './cloudinary';
+import { getImageVariants } from './cloudinary';
 
 export interface ImageTint {
   shadows: string;
@@ -8,19 +8,29 @@ export interface ImageTint {
 
 export interface Props {
   src: string;
+  sizes?: string;
   alt: string;
   width: string;
   height: string;
   class: string;
-  loading?: boolean;
+  loading?: string;
   tint: ImageTint | string;
 }
 
-const { alt, src: source, width, height, tint, loading = false } = Astro.props as Props;
-const { src, srcSet } = getSrcSet({ src: source, tint });
-const { srcSet: srcSetWebp } = getSrcSet({ src: source, type: 'webp', tint });
-// const { srcSet: srcSetDark } = getSrcSet({ src: source, tint, dark: true });
-// const { srcSet: srcSetDarkWebp } = getSrcSet({
+const {
+  alt,
+  src: source,
+  width,
+  height,
+  tint,
+  loading = false,
+  sizes = `(min-width: 1280px) 1280px, 100vw`,
+} = Astro.props as Props;
+const { src, srcSet } = getImageVariants({ src: source, tint });
+const { srcSet: srcSetWebp } = getImageVariants({ src: source, type: 'webp', tint });
+const { srcSet: srcSetAvif } = getImageVariants({ src: source, type: 'avif', tint });
+// const { srcSet: srcSetDark } = getImageVariants({ src: source, tint, dark: true });
+// const { srcSet: srcSetDarkWebp } = getImageVariants({
 //   src: source,
 //   type: 'webp',
 //   tint,
@@ -29,20 +39,12 @@ const { srcSet: srcSetWebp } = getSrcSet({ src: source, type: 'webp', tint });
 ---
 
 <picture>
-  <!-- <source sizes="1px" srcset={srcSetDark} media="(prefers-color-scheme: dark)" />
-  <source sizes="1px" srcset={srcSetDarkWebp} type="image/webp" media="(prefers-color-scheme: dark)" /> -->
-  <source sizes="1px" srcset={srcSetWebp} type="image/webp" />
-  <img
-    {src}
-    srcset={srcSet}
-    sizes="1px"
-    {alt}
-    class="image fade fade-inactive"
-    {loading}
-    {width}
-    {height}
-    style={`aspect-ratio: ${width} / ${height}`}
-  />
+  <!-- <source sizes={sizes} srcset={srcSetDark} media="(prefers-color-scheme: dark)" />
+  <source sizes={sizes} srcset={srcSetDarkWebp} type="image/webp" media="(prefers-color-scheme: dark)" /> -->
+  <source {sizes} srcset={srcSetAvif} type="image/avif" />
+  <source {sizes} srcset={srcSetWebp} type="image/webp" />
+  <source {sizes} srcset={srcSet} />
+  <img class="image" {src} {alt} {loading} {width} {height} style={`aspect-ratio: ${width} / ${height}`} />
 </picture>
 
 <style>
