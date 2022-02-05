@@ -1,5 +1,4 @@
-const baseConfig = {
-  testRunner: 'jest-circus/runner',
+const puppeteerConfig = {
   preset: 'jest-puppeteer',
   setupFilesAfterEnv: ['./tests/setup/setup-files-after-env.js'],
   globalSetup: './tests/setup/global-setup.js',
@@ -9,17 +8,17 @@ const baseConfig = {
 module.exports = {
   projects: [
     {
-      ...baseConfig,
+      ...puppeteerConfig,
       displayName: 'e2e',
       testMatch: ['<rootDir>/tests/e2e/**/*.test.js'],
     },
     {
-      ...baseConfig,
+      ...puppeteerConfig,
       displayName: 'visual',
       testMatch: ['<rootDir>/tests/visual/**/*.test.js'],
     },
     {
-      ...baseConfig,
+      ...puppeteerConfig,
       displayName: 'performance',
       testMatch: ['<rootDir>/tests/performance/**/*.test.js'],
     },
