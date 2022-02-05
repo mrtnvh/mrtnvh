@@ -1,22 +1,26 @@
 ---
 const links = [
   {
-    name: 'github',
+    label: 'Github profile of Maarten Van Hoof',
+    className: 'github',
     href: 'https://github.com/vanhoofmaarten/',
     icon: 'gitHub',
   },
   {
-    name: 'twitter',
+    label: 'Twitter profile of Maarten Van Hoof',
+    className: 'twitter',
     href: 'https://twitter.com/mrtnvh/',
     icon: 'twitter',
   },
   {
-    name: 'linkedin',
+    label: 'LinkedIn profile of Maarten Van Hoof',
+    className: 'linkedin',
     href: 'https://www.linkedin.com/in/mrtnvh/',
     icon: 'linkedIn',
   },
   {
-    name: 'email',
+    label: 'Send an e-mail to Maarten Van Hoof',
+    className: 'email',
     href: 'mailto:info@mrtnvh.com',
     icon: 'email',
   },
@@ -24,9 +28,16 @@ const links = [
 ---
 
 <nav class="social">
-  {links.map(({ href, name, icon }) => (
-    <a href={href} class={name} target="_blank" rel="noopener" data-testid={`navigation-${name}`}>
-      <svg aria-label={name}>
+  {links.map(({ href, className, icon, label }) => (
+    <a
+      href={href}
+      class={className}
+      aria-label={label}
+      target="_blank"
+      rel="noopener"
+      data-testid={`navigation-${className}`}
+    >
+      <svg>
         <use xlink:href={`#${icon}`} />
       </svg>
     </a>

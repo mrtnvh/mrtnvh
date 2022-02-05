@@ -3,7 +3,12 @@ import clsx from 'clsx';
 const currentPathname = Astro.request.url.pathname;
 ---
 
-<a id="brand" href="/" class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}>
+<a
+  id="brand"
+  href="/"
+  class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}
+  aria-label="Logo of Maarten Van Hoof"
+>
   <div class="name firstname">
     <svg width="263" height="38" viewBox="0 0 263 38" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
