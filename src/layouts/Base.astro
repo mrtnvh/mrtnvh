@@ -4,7 +4,8 @@ import Header from '../components/App/Header.astro';
 import Footer from '../components/App/Footer.astro';
 import SvgSprite from '../components/SvgSprite.astro';
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = import.meta.env.PROD;
+const isMaster = import.meta.env.VITE_PROD === 'true';
 const { content, preloads } = Astro.props;
 ---
 
@@ -30,8 +31,7 @@ const { content, preloads } = Astro.props;
 
     {preloads && preloads.map((preload) => <link {...preload} />)}
 
-    {isProd &&
-      `
+    {isProd && (
 			<script>
 				if ('serviceWorker' in navigator) {
 					window.addEventListener('load', () => {
@@ -39,7 +39,7 @@ const { content, preloads } = Astro.props;
 					});
 				}
 			</script>
-		`}
+		)}
 
     {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
   </head>
@@ -58,7 +58,7 @@ const { content, preloads } = Astro.props;
     ) }
     </div>
     <script type="module" async src={Astro.resolve('../js/main.js')}></script>
-    {isProd && (
+    {isMaster && (
       <script>
         const statsScript = document.createElement( 'script' ); statsScript.setAttribute( 'src', '/js/stats' );
         statsScript.setAttribute( 'defer', true ); statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
