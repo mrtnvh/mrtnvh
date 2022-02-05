@@ -33,7 +33,7 @@ const linkProps = () => {
         width="1600"
         height="900"
         tint={item.tint}
-        loading="lazy"
+        loading={index > 0 ? 'lazy' : 'eager'}
         sizes="(min-width: 800px) 58vw, (min-width: 1280px) 650px, (max-width: 799px) 100vw"
       />
     </figure>

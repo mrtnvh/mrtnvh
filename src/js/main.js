@@ -3,7 +3,6 @@ import Swup from 'swup';
 import SwupHeadPlugin from '@swup/head-plugin';
 import SwupA11yPlugin from '@swup/a11y-plugin';
 import SwupScrollPlugin from '@swup/scroll-plugin';
-import { setImagesSizes } from './setImagesSizes.js';
 
 function setBrandSize() {
   document.querySelectorAll('.brand').forEach(($brand) => {
@@ -30,7 +29,6 @@ function setNavigationActiveLink() {
 }
 
 function onContentReplaced() {
-  setImagesSizes();
   setBrandSize();
   setNavigationActiveLink();
 }
