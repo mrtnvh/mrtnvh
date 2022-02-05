@@ -1,25 +1,24 @@
 ---
 import urljoin from 'urljoin';
-import { getOgImage, getSrcSet } from './Image/cloudinary';
+import { getImageVariants } from './Image/cloudinary';
 
 const { content, category } = Astro.props;
-
-const isBranchMaster = process.env.IS_MASTER === 'true';
 const titleDefault = 'Maarten Van Hoof \\\\ Front End Developer';
 const descriptionDefault =
   'Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator';
+const siteUrl = 'https://mrtnvh.com';
 
 const getTitle = (...args) => [...args.filter((val) => val?.length), titleDefault].join(' \\\\ ');
-
-const siteUrl = 'https://mrtnvh.com';
 const title = getTitle(content?.title, category);
 const description = content?.description || descriptionDefault;
-const image = content?.thumbnail ? getOgImage({ src: content?.thumbnail }) : urljoin(siteUrl, '/og.png');
+const image = content?.thumbnail
+  ? getImageVariants({ src: content?.thumbnail, tint: content?.tint }).og
+  : urljoin(siteUrl, '/og.png');
 
 const schemaWebsite = JSON.stringify({
   '@context': 'http://schema.org',
   '@type': 'WebSite',
-  url: 'https://mrtnvh.com',
+  url: siteUrl,
   name: 'Maarten Van Hoof',
 });
 
@@ -29,25 +28,24 @@ const schemaPerson = JSON.stringify({
   name: 'Maarten Van Hoof',
   image:
     'https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait',
-  jobTitle: 'Front-end Developer',
-  url: 'https://mrtnvh.com',
-  sameAs: 'https://mrtnvh.com',
+  jobTitle: 'Developer Advocate && Front-end Developer',
+  url: siteUrl,
+  sameAs: siteUrl,
   memberOf: {
     '@context': 'http://schema.org',
     '@type': 'Organization',
-    name: 'ISAAC',
-    url: 'https://isaac.nl',
-    sameAs: 'https://isaac.nl',
-    slogan: 'Turning .complexity into profitability',
-    description: 'Digital Agency specialized in Commerce en Finance',
-    image: 'https://www.isaac.nl/global/images/logo.svg',
+    name: 'iO',
+    url: 'https://iodigital.com',
+    sameAs: 'https://iodigital.com',
+    slogan: 'Discover infinite opportunities, together',
+    description: 'Digital Full Service Agency',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Eindhoven, The Netherlands',
       postalCode: '5621 AA',
       streetAddress: 'Marconilaan 16',
     },
-    email: 'welkom@isaac.nl',
+    email: 'info@iodigital.com',
   },
 });
 ---
