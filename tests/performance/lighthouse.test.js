@@ -2,6 +2,7 @@
 const fetch = require('node-fetch');
 const fs = require('fs-extra');
 const lighthouse = require('lighthouse');
+const defaultsDeep = require('lodash/defaultsDeep');
 const lighthouseMobileConfig = require('lighthouse/lighthouse-core/config/lr-mobile-config');
 const lighthouseDesktopConfig = require('lighthouse/lighthouse-core/config/lr-desktop-config');
 
@@ -10,10 +11,10 @@ const threshold = 0.95;
 const { getPages } = require('../setup/config');
 const { getUrl, customSnapshotIdentifier } = require('../setup/utils');
 
-const customConfig = { settings: { skipAudits: ['seo/is-crawlable'] } };
+const customConfig = { settings: { skipAudits: ['is-crawlable'] } };
 const ligthouseConfigs = {
-  mobile: { ...lighthouseMobileConfig, ...customConfig },
-  desktop: { ...lighthouseDesktopConfig, ...customConfig },
+  mobile: defaultsDeep(customConfig, lighthouseMobileConfig),
+  desktop: defaultsDeep(customConfig, lighthouseDesktopConfig),
 };
 
 describe('Lighthouse', () => {
