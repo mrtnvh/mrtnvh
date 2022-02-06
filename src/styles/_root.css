@@ -25,7 +25,7 @@ body {
 svg {
   width: calc(var(--space) * 1.5);
   height: calc(var(--space) * 1.5);
-  fill: currentColor;
+  fill: currentcolor;
 }
 
 figure {
