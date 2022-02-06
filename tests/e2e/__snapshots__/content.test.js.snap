@@ -22,52 +22,177 @@ Array [
               " ",
               Object {
                 "attrs": Object {
-                  "class": "no-break",
+                  "class": "intro-content",
                 },
                 "content": Array [
-                  "Developer Advocate",
-                ],
-                "tag": "span",
-              },
-              " ",
-              Object {
-                "attrs": Object {
-                  "class": "no-break",
-                },
-                "content": Array [
-                  "&amp;",
-                ],
-                "tag": "span",
-              },
-              " ",
-              Object {
-                "attrs": Object {
-                  "class": "no-break",
-                },
-                "content": Array [
-                  "Front-end",
-                ],
-                "tag": "span",
-              },
-              " ",
-              Object {
-                "attrs": Object {
-                  "class": "no-break",
-                },
-                "content": Array [
-                  "at ",
+                  " ",
                   Object {
                     "attrs": Object {
-                      "class": "",
+                      "class": "no-break",
                     },
                     "content": Array [
-                      "iO",
+                      "Developer Advocate",
+                    ],
+                    "tag": "span",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "no-break",
+                    },
+                    "content": Array [
+                      "&amp;",
+                    ],
+                    "tag": "span",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "no-break",
+                    },
+                    "content": Array [
+                      "Front-end",
+                    ],
+                    "tag": "span",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "no-break",
+                    },
+                    "content": Array [
+                      "at ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "iO",
+                        ],
+                        "tag": "a",
+                      },
+                      ".",
+                    ],
+                    "tag": "span",
+                  },
+                  " ",
+                ],
+                "tag": "div",
+              },
+              " ",
+              Object {
+                "attrs": Object {
+                  "class": "social",
+                },
+                "content": Array [
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "github",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "tag": "use",
+                          },
+                          " ",
+                        ],
+                        "tag": "svg",
+                      },
+                      " ",
                     ],
                     "tag": "a",
                   },
-                  ".",
+                  Object {
+                    "attrs": Object {
+                      "class": "twitter",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "tag": "use",
+                          },
+                          " ",
+                        ],
+                        "tag": "svg",
+                      },
+                      " ",
+                    ],
+                    "tag": "a",
+                  },
+                  Object {
+                    "attrs": Object {
+                      "class": "linkedin",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "tag": "use",
+                          },
+                          " ",
+                        ],
+                        "tag": "svg",
+                      },
+                      " ",
+                    ],
+                    "tag": "a",
+                  },
+                  Object {
+                    "attrs": Object {
+                      "class": "email",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          " ",
+                          Object {
+                            "attrs": Object {
+                              "class": "",
+                            },
+                            "tag": "use",
+                          },
+                          " ",
+                        ],
+                        "tag": "svg",
+                      },
+                      " ",
+                    ],
+                    "tag": "a",
+                  },
+                  " ",
                 ],
-                "tag": "span",
+                "tag": "nav",
               },
               " ",
             ],
@@ -3794,7 +3919,7 @@ Array [
           " ",
           Object {
             "attrs": Object {
-              "class": "full-width upcoming",
+              "class": "bg-grey-noise full-width upcoming",
             },
             "content": Array [
               " ",

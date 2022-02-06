@@ -8,7 +8,7 @@ const { getUrl, removeTrailingSlash } = require('../setup/utils');
 
 const links = {
   home: '/',
-  projects: '/projects',
+  publications: '/publications',
   talks: '/talks',
   about: '/about',
   github: 'https://github.com/vanhoofmaarten/',
@@ -25,17 +25,7 @@ describe('Navigation', () => {
     test.each(Object.entries(devices))('%s', async (environmentName, emulationSettings) => {
       await page.emulate(emulationSettings);
       const $document = await getDocument(page);
-      const $linkContainer = await getByTestId(
-        $document,
-        environmentName === 'mobile' ? `off-canvas-menu` : `app-header-nav`,
-      );
-
-      if (environmentName === 'mobile') {
-        const $toggle = await getByTestId($document, `off-canvas-menu-toggle`);
-        await $toggle.click();
-      }
-
-      const $link = await getByTestId($linkContainer, `navigation-${key}`);
+      const $link = await getByTestId($document, `navigation-${key}`);
       await $link.click();
 
       if (to.includes('http')) {
