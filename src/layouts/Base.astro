@@ -42,7 +42,7 @@ const { content, preloads } = Astro.props;
       <SvgSprite />
     </div>
     <div class="layout">
-      {content?.redirect ? (<main class="centered">Redirecting to {content.redirect}</main>) : (
+      {content?.redirect ? (<main class="centered" data-testid="redirect">Redirecting to {content.redirect}</main>) : (
       <Header />
       <main id="swup" class="transition-fade">
         <slot />

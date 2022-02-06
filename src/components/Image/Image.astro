@@ -1,6 +1,13 @@
 ---
 import { getImageVariants } from './cloudinary';
 
+export interface ImageVariant {
+  sizes?: string;
+  width: number;
+  height: number;
+  media?: string;
+}
+
 export interface ImageTint {
   shadows: string;
   highlights: string;
@@ -8,43 +15,42 @@ export interface ImageTint {
 
 export interface Props {
   src: string;
-  sizes?: string;
   alt: string;
-  width: string;
-  height: string;
   class: string;
   loading?: string;
   tint: ImageTint | string;
+  variants?: ImageVariant[];
 }
 
-const {
-  alt,
-  src: source,
-  width,
-  height,
-  tint,
-  loading = false,
-  sizes = `(min-width: 1280px) 1280px, 100vw`,
-} = Astro.props as Props;
-const { src, srcSet } = getImageVariants({ src: source, tint });
-const { srcSet: srcSetWebp } = getImageVariants({ src: source, type: 'webp', tint });
-const { srcSet: srcSetAvif } = getImageVariants({ src: source, type: 'avif', tint });
-// const { srcSet: srcSetDark } = getImageVariants({ src: source, tint, dark: true });
-// const { srcSet: srcSetDarkWebp } = getImageVariants({
-//   src: source,
-//   type: 'webp',
-//   tint,
-//   dark: true,
-// });
+const { alt, src: source, tint, loading = false, variants } = Astro.props as Props;
+const vrnts = variants.map(({ sizes, width, height, media }) => {
+  const baseVariantOptions = { src: source, tint, width, height };
+  const { src, srcSet } = getImageVariants(baseVariantOptions);
+  const { srcSet: srcSetWebp } = getImageVariants({ ...baseVariantOptions, type: 'webp' });
+  const { srcSet: srcSetAvif } = getImageVariants({ ...baseVariantOptions, type: 'avif' });
+  // const { srcSet: srcSetDark } = getImageVariants({ src: source, tint, dark: true });
+  // const { srcSet: srcSetDarkWebp } = getImageVariants({
+  //   src: source,
+  //   type: 'webp',
+  //   tint,
+  //   dark: true,
+  // });
+
+  return { src, srcSet, srcSetWebp, srcSetAvif, sizes, width, height, media };
+});
 ---
 
 <picture>
-  <!-- <source sizes={sizes} srcset={srcSetDark} media="(prefers-color-scheme: dark)" />
-  <source sizes={sizes} srcset={srcSetDarkWebp} type="image/webp" media="(prefers-color-scheme: dark)" /> -->
-  <source {sizes} srcset={srcSetAvif} type="image/avif" />
-  <source {sizes} srcset={srcSetWebp} type="image/webp" />
-  <source {sizes} srcset={srcSet} />
-  <img class="image" {src} {alt} {loading} {width} {height} style={`aspect-ratio: ${width} / ${height}`} />
+  {vrnts.map(({src, srcSet, srcSetWebp, srcSetAvif, sizes, width, height, media}, index) => {
+    return (
+      <>
+        <source {sizes} srcset={srcSetAvif} type="image/avif" {media} />
+        <source {sizes} srcset={srcSetWebp} type="image/webp" {media} />
+        <source {sizes} srcset={srcSet} {media} />
+        {index === vrnts.length - 1 && <img class="image" {src} {sizes} {alt} {loading} {width} {height} style={vrnts.length === 1 && `aspect-ratio: ${width} / ${height}`} />}
+      </>
+    );
+  })}
 </picture>
 
 <style>

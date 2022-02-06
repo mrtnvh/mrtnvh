@@ -7,6 +7,12 @@ module.exports = {
     'csstree/validator': {
       ignoreAtrules: ['custom-selector'],
     },
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: ['global'],
+      },
+    ],
   },
   overrides: [
     {

@@ -1,6 +1,6 @@
 import colors from '../../styles/colors.js';
 
-export const SRC_SET_SIZES = [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400];
+export const SRC_SET_SIZES = [300, 600, 900, 1200, 1500, 1800, 2100, 2400];
 
 const isCloudinaryUrl = (url) => url.includes('https://res.cloudinary.com/');
 
@@ -35,7 +35,7 @@ const getShadowsHighlightFromTintDark = ({ tint, dark }) => {
 
 const getTransformations = ({ shadows, highlights }) => {
   if (shadows && highlights) {
-    return [`e_grayscale`, `e_tint:100:${shadows}:0p:${highlights}:100p`, `t_noise`].join(',');
+    return `${[`e_grayscale`, `e_tint:100:${shadows}:0p:${highlights}:100p`].join(',')}/t_noise`;
   }
   return undefined;
 };

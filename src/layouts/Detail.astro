@@ -3,6 +3,7 @@ import { Markdown } from 'astro/components';
 import { parse, format } from 'date-fns';
 import BaseLayout from './Base.astro';
 import { getImageVariants } from '../components/Image/cloudinary.js';
+import Thumbnail from '../components/Image/Image.astro';
 
 const {
   content: { title, thumbnail, thumbnailCredits, slides, demo, video, tint, datePublished, category },
@@ -13,40 +14,43 @@ const defaultMobileImageSettings = {
   ...defaultImageSettings,
   width: 1600,
   height: 1200,
-  sizes: '(min-width: 1280px) 1280px, 100vw',
+  sizes: '100vw',
+  media: '(max-width: 799px)',
 };
-const defaultDesktopImageSettings = { ...defaultImageSettings, width: 2100, height: 900, sizes: '100vw' };
-const { src, srcSet: srcSetMobile } = getImageVariants({ ...defaultMobileImageSettings });
-const { src: srcWebpMobile, srcSet: srcSetWebpMobile } = getImageVariants({
+const defaultDesktopImageSettings = {
+  ...defaultImageSettings,
+  width: 2100,
+  height: 900,
+  sizes: '(min-width: 1280px) 1280px, 100vw',
+  media: '(min-width: 800px)',
+};
+const { srcSet: srcSetWebpMobile } = getImageVariants({
   ...defaultMobileImageSettings,
   type: 'webp',
 });
-const { srcSet: srcSetAvifMobile } = getImageVariants({ ...defaultMobileImageSettings, type: 'avif' });
-const { srcSet: srcSetDesktop } = getImageVariants({ ...defaultDesktopImageSettings });
-const { src: srcWebpDesktop, srcSet: srcSetWebpDesktop } = getImageVariants({
+
+const { srcSet: srcSetWebpDesktop } = getImageVariants({
   ...defaultDesktopImageSettings,
   type: 'webp',
 });
-const { srcSet: srcSetAvifDesktop } = getImageVariants({ ...defaultDesktopImageSettings, type: 'avif' });
 
 // "...specifying preloading for multiple types of the same resource is discouraged.
 // Instead, the best practice is to specify preloading only for the type the majority of your users are likely to actually use...
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#including_a_mime_type
-const preloadProps = { rel: 'preload', as: 'image' };
-const preloadMobileProps = {
-  ...preloadProps,
-  imagesizes: defaultMobileImageSettings.sizes,
-  media: '(max-width: 799px)',
-};
-const preloadDesktopProps = {
-  ...preloadProps,
-  imagesizes: defaultDesktopImageSettings.sizes,
-  media: '(min-width: 800px)',
-};
-
+const preloadProps = { rel: 'preload', as: 'image', type: 'image/webp' };
 const preloads = [
-  { ...preloadDesktopProps, imagesrcset: srcSetWebpDesktop, type: 'image/webp' },
-  { ...preloadMobileProps, imagesrcset: srcSetWebpMobile, type: 'image/webp' },
+  {
+    ...preloadProps,
+    imagesizes: defaultDesktopImageSettings.sizes,
+    media: defaultDesktopImageSettings.media,
+    imagesrcset: srcSetWebpDesktop,
+  },
+  {
+    ...preloadProps,
+    imagesizes: defaultMobileImageSettings.sizes,
+    media: defaultMobileImageSettings.media,
+    imagesrcset: srcSetWebpMobile,
+  },
 ];
 
 const links = [
@@ -64,15 +68,13 @@ const hasCredits = !!thumbnailCredits;
     <div class="container">
       <figure class="media">
         {thumbnail && (
-          <picture>
-            <source sizes={defaultDesktopImageSettings.sizes} srcset={srcSetAvifDesktop} type="image/avif" media="(min-width: 800px)" />
-            <source sizes={defaultDesktopImageSettings.sizes} srcset={srcSetWebpDesktop} type="image/webp" media="(min-width: 800px)" />
-            <source sizes={defaultDesktopImageSettings.sizes} srcset={srcSetDesktop} media="(min-width: 800px)" />
-            <source sizes={defaultMobileImageSettings.sizes} srcset={srcSetAvifMobile} type="image/avif" />
-            <source sizes={defaultMobileImageSettings.sizes} srcset={srcSetWebpMobile} type="image/webp" />
-            <source sizes={defaultMobileImageSettings.sizes} srcset={srcSetMobile} />
-            <img {src} alt={title} class="image" />
-          </picture>
+          <Thumbnail
+            src={thumbnail}
+            alt={title}
+            class="image"
+            variants={[defaultDesktopImageSettings, defaultMobileImageSettings]}
+            tint={tint}
+          />
         )}
       </figure>
       <h1 class="title">{title}</h1>
@@ -146,7 +148,7 @@ const hasCredits = !!thumbnailCredits;
       background-color: var(--grey-200);
     }
 
-    img {
+    :global(img) {
       width: 100%;
       height: auto;
       object-fit: cover;
