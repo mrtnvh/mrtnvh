@@ -10,8 +10,6 @@
 @import './_container.css';
 @import './_button.css';
 @import './_spacing.css';
-@import './animation/_fade.css';
-@import './animation/_slide-up-fade.css';
-@import './animation/_slide-right-fade.css';
-@import './animation/_zoom-out-in-fade.css';
 @import './_utils.css';
+
+@import './animation/_fade.css';

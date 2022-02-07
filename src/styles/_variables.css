@@ -1,5 +1,3 @@
-/* stylelint-disable no-duplicate-selectors, order/order */
-
 :root {
   /**
   * Colors
@@ -22,10 +20,6 @@
   * Fonts
   */
   --font-size-root: clamp(14px, 2.5vw, 18px);
-  @media (min-width: 800px) {
-    --font-size-root: clamp(14px, 1.5vw, 18px);
-  }
-
   --font-size-sm: 0.8rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -79,55 +73,18 @@
   --grid-gap-x: calc(var(--space));
   --grid-gap-y: calc(var(--space) * 2);
 
-  @media (min-width: 700px) {
-    --grid-gap-x: calc(var(--space) * 2);
-  }
-
   /**
   * Bottom navigation
   */
   --bottom-navigation-zindex: 100;
 
   /**
-  * Project
-  */
-  --project-header-zindex: 1;
-  --project-header-top-position: var(--grid-gap-y);
-  --project-title-size: 10vw;
-  --project-title-margin: 0;
-
-  @media (min-width: 800px) {
-    --project-title-size: 15vw;
-    --project-title-margin: var(--grid-gap-y) 0 calc(var(--grid-gap-y) / 2) -0.05em;
-  }
-
-  /**
-  * Talks
-  */
-  --talk-header-zindex: 1;
-  --talk-header-top-position: var(--grid-gap-y);
-  --talk-title-size: 10vw;
-  --talk-title-margin: 0;
-  --talk-title-line-height: 0.8em;
-
-  @media (min-width: 800px) {
-    --talk-title-size: 10vw;
-  }
-
-  /**
   * Folio
   */
-  --folio-header-zindex: 1;
-  --folio-header-top-position: var(--grid-gap-y);
   --folio-title-size: var(--font-size-lg);
   --folio-title-weight: var(--headings-font-weight);
   --folio-title-line-height: var(--line-height-xs);
   --folio-title-margin: 0;
-
-  @media (min-width: 800px) {
-    --folio-title-size: var(--font-size-3xl);
-    --folio-title-margin: 0 0 calc(var(--grid-gap-y) / 2) 0;
-  }
 
   /**
   * Detail page
@@ -136,13 +93,20 @@
   --detail-title-font-weight: 800;
   --detail-title-line-height: var(--line-height-xs);
   --detail-title-letter-spacing: -0.02em;
+  @media (min-width: 800px) {
+    --font-size-root: clamp(14px, 1.5vw, 18px);
+  }
+
+  @media (min-width: 700px) {
+    --grid-gap-x: calc(var(--space) * 2);
+  }
+
+  @media (min-width: 800px) {
+    --folio-title-size: var(--font-size-3xl);
+    --folio-title-margin: 0 0 calc(var(--grid-gap-y) / 2) 0;
+  }
 
   @media (min-width: 800px) {
     --detail-title-size: var(--font-size-5xl);
   }
-
-  /**
-  * Off Canvas Menu
-  */
-  --offcanvasmenu-zindex: 100;
 }

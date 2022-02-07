@@ -1,5 +1,4 @@
 import Swup from 'swup';
-// import SwupPreloadPlugin from '@swup/preload-plugin';
 import SwupHeadPlugin from '@swup/head-plugin';
 import SwupA11yPlugin from '@swup/a11y-plugin';
 import SwupScrollPlugin from '@swup/scroll-plugin';
