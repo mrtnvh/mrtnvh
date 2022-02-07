@@ -244,17 +244,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -358,17 +369,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -472,17 +494,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -586,17 +619,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -700,17 +744,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -814,17 +869,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -928,17 +994,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -1032,17 +1109,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -1146,17 +1234,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -1260,17 +1359,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -1374,17 +1484,28 @@ Array [
                                   "class": "",
                                 },
                                 "content": Array [
-                                  "  ",
+                                  " ",
                                   Object {
                                     "attrs": Object {
                                       "class": "",
                                     },
                                     "tag": "source",
                                   },
-                                  " ",
                                   Object {
                                     "attrs": Object {
-                                      "class": "fade fade-inactive image",
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "",
+                                    },
+                                    "tag": "source",
+                                  },
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "image",
                                     },
                                     "tag": "img",
                                   },
@@ -1504,17 +1625,28 @@ Array [
                       "class": "",
                     },
                     "content": Array [
-                      "  ",
+                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -2265,24 +2397,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -2609,24 +2756,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -2894,24 +3056,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -3322,24 +3499,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -3555,24 +3747,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -3774,17 +3981,28 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "  ",
+                              " ",
                               Object {
                                 "attrs": Object {
                                   "class": "",
                                 },
                                 "tag": "source",
                               },
-                              " ",
                               Object {
                                 "attrs": Object {
-                                  "class": "fade fade-inactive image",
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "image",
                                 },
                                 "tag": "img",
                               },
@@ -4026,17 +4244,28 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "  ",
+                              " ",
                               Object {
                                 "attrs": Object {
                                   "class": "",
                                 },
                                 "tag": "source",
                               },
-                              " ",
                               Object {
                                 "attrs": Object {
-                                  "class": "fade fade-inactive image",
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "image",
                                 },
                                 "tag": "img",
                               },
@@ -4140,17 +4369,28 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "  ",
+                              " ",
                               Object {
                                 "attrs": Object {
                                   "class": "",
                                 },
                                 "tag": "source",
                               },
-                              " ",
                               Object {
                                 "attrs": Object {
-                                  "class": "fade fade-inactive image",
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "image",
                                 },
                                 "tag": "img",
                               },
@@ -4254,17 +4494,28 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "  ",
+                              " ",
                               Object {
                                 "attrs": Object {
                                   "class": "",
                                 },
                                 "tag": "source",
                               },
-                              " ",
                               Object {
                                 "attrs": Object {
-                                  "class": "fade fade-inactive image",
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "image",
                                 },
                                 "tag": "img",
                               },
@@ -4368,17 +4619,28 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "  ",
+                              " ",
                               Object {
                                 "attrs": Object {
                                   "class": "",
                                 },
                                 "tag": "source",
                               },
-                              " ",
                               Object {
                                 "attrs": Object {
-                                  "class": "fade fade-inactive image",
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "image",
                                 },
                                 "tag": "img",
                               },
@@ -4482,17 +4744,28 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "  ",
+                              " ",
                               Object {
                                 "attrs": Object {
                                   "class": "",
                                 },
                                 "tag": "source",
                               },
-                              " ",
                               Object {
                                 "attrs": Object {
-                                  "class": "fade fade-inactive image",
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "",
+                                },
+                                "tag": "source",
+                              },
+                              Object {
+                                "attrs": Object {
+                                  "class": "image",
                                 },
                                 "tag": "img",
                               },
@@ -4615,24 +4888,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -4859,24 +5147,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -4981,6 +5284,51 @@ Array [
                     "tag": "p",
                   },
                   " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "tag": "hr",
+                  },
+                  Object {
+                    "attrs": Object {
+                      "class": "credits",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Background in thumbnail by ",
+                          Object {
+                            "attrs": Object {
+                              "class": "external",
+                            },
+                            "content": Array [
+                              "Pawel Czerwinski",
+                            ],
+                            "tag": "a",
+                          },
+                          " on ",
+                          Object {
+                            "attrs": Object {
+                              "class": "external",
+                            },
+                            "content": Array [
+                              "Unsplash",
+                            ],
+                            "tag": "a",
+                          },
+                        ],
+                        "tag": "p",
+                      },
+                      " ",
+                    ],
+                    "tag": "div",
+                  },
+                  " ",
                 ],
                 "tag": "div",
               },
@@ -5065,24 +5413,39 @@ Array [
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
                           "class": "",
                         },
                         "tag": "source",
                       },
-                      " ",
                       Object {
                         "attrs": Object {
-                          "class": "fade fade-inactive image",
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "tag": "source",
+                      },
+                      Object {
+                        "attrs": Object {
+                          "class": "image",
                         },
                         "tag": "img",
                       },
@@ -5194,6 +5557,51 @@ Array [
                       "At the first edition of the Tech Fair Live online conference, I shared examples of how and why the OpenAPI specification can improve your Front End workflow.",
                     ],
                     "tag": "p",
+                  },
+                  " ",
+                  Object {
+                    "attrs": Object {
+                      "class": "",
+                    },
+                    "tag": "hr",
+                  },
+                  Object {
+                    "attrs": Object {
+                      "class": "credits",
+                    },
+                    "content": Array [
+                      " ",
+                      Object {
+                        "attrs": Object {
+                          "class": "",
+                        },
+                        "content": Array [
+                          "Background in thumbnail by ",
+                          Object {
+                            "attrs": Object {
+                              "class": "external",
+                            },
+                            "content": Array [
+                              "Pawel Czerwinski",
+                            ],
+                            "tag": "a",
+                          },
+                          " on ",
+                          Object {
+                            "attrs": Object {
+                              "class": "external",
+                            },
+                            "content": Array [
+                              "Unsplash",
+                            ],
+                            "tag": "a",
+                          },
+                        ],
+                        "tag": "p",
+                      },
+                      " ",
+                    ],
+                    "tag": "div",
                   },
                   " ",
                 ],
