@@ -7,4 +7,5 @@ thumbnailCredits: Background in thumbnail by [Pawel Czerwinski](https://unsplash
 redirect: https://mot.mrtnvh.com
 datePublished: 20191111
 tint: teal
+category: Talks
 ---
