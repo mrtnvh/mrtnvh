@@ -93,6 +93,13 @@
   --detail-title-font-weight: 800;
   --detail-title-line-height: var(--line-height-xs);
   --detail-title-letter-spacing: -0.02em;
+
+  @media (prefers-color-scheme: dark) {
+    --dark: rgb(231, 229, 228);
+    --light: rgb(28, 25, 23);
+    --grey: rgb(168, 162, 158);
+    --grey-200: rgb(38, 38, 38);
+  }
   @media (min-width: 800px) {
     --font-size-root: clamp(14px, 1.5vw, 18px);
   }

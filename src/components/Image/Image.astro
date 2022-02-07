@@ -26,24 +26,36 @@ const { alt, src: source, tint, loading = false, variants } = Astro.props as Pro
 const vrnts = variants.map(({ sizes, width, height, media }) => {
   const baseVariantOptions = { src: source, tint, width, height };
   const { src, srcSet } = getImageVariants(baseVariantOptions);
-  const { srcSet: srcSetWebp } = getImageVariants({ ...baseVariantOptions, type: 'webp' });
   const { srcSet: srcSetAvif } = getImageVariants({ ...baseVariantOptions, type: 'avif' });
-  // const { srcSet: srcSetDark } = getImageVariants({ src: source, tint, dark: true });
-  // const { srcSet: srcSetDarkWebp } = getImageVariants({
-  //   src: source,
-  //   type: 'webp',
-  //   tint,
-  //   dark: true,
-  // });
+  const { srcSet: srcSetWebp } = getImageVariants({ ...baseVariantOptions, type: 'webp' });
+  const { srcSet: srcSetDarkAvif } = getImageVariants({ ...baseVariantOptions, type: 'avif', dark: true });
+  const { srcSet: srcSetDarkWebp } = getImageVariants({ ...baseVariantOptions, type: 'webp', dark: true });
+  const { srcSet: srcSetDark } = getImageVariants({ ...baseVariantOptions, dark: true });
 
-  return { src, srcSet, srcSetWebp, srcSetAvif, sizes, width, height, media };
+  return {
+    src,
+    srcSet,
+    srcSetWebp,
+    srcSetAvif,
+    srcSetDarkAvif,
+    srcSetDarkWebp,
+    srcSetDark,
+    sizes,
+    width,
+    height,
+    media,
+  };
 });
 ---
 
 <picture>
-  {vrnts.map(({src, srcSet, srcSetWebp, srcSetAvif, sizes, width, height, media}, index) => {
+  {vrnts.map(({src, srcSet, srcSetWebp, srcSetAvif, srcSetDarkAvif, srcSetDarkWebp, srcSetDark, sizes, width, height, media}, index) => {
+    const darkMedia = media ? `${media} and (prefers-color-scheme: dark)` : `(prefers-color-scheme: dark)`;
     return (
       <>
+        <source {sizes} srcset={srcSetDarkAvif} type="image/avif" media={darkMedia} />
+        <source {sizes} srcset={srcSetDarkWebp} type="image/webp" media={darkMedia} />
+        <source {sizes} srcset={srcSetDark} media={darkMedia} />
         <source {sizes} srcset={srcSetAvif} type="image/avif" {media} />
         <source {sizes} srcset={srcSetWebp} type="image/webp" {media} />
         <source {sizes} srcset={srcSet} {media} />

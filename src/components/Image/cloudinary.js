@@ -10,7 +10,7 @@ const getShadowsHighlightFromTintDark = ({ tint, dark }) => {
       if (dark) {
         return {
           shadows: colors[tint]['900'].replace('#', ''),
-          highlights: colors[tint]['600'].replace('#', ''),
+          highlights: colors[tint]['500'].replace('#', ''),
         };
       }
       return {
