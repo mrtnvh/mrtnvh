@@ -97,7 +97,7 @@ const hasCredits = !!thumbnailCredits;
         <slot />
         {hasCredits && (
         <hr />
-        <div class="credits">
+        <div class="credits clear-inner-spacing">
           {thumbnailCredits && <Markdown>{thumbnailCredits}</Markdown>}
         </div>
         )}
