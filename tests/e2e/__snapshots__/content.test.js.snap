@@ -1070,6 +1070,16 @@ Array [
                                     "tag": "time",
                                   },
                                   " ",
+                                  Object {
+                                    "attrs": Object {
+                                      "class": "category",
+                                    },
+                                    "content": Array [
+                                      "Talks",
+                                    ],
+                                    "tag": "div",
+                                  },
+                                  " ",
                                 ],
                                 "tag": "div",
                               },
@@ -4174,7 +4184,7 @@ Array [
                               "class": "",
                             },
                             "content": Array [
-                              "2022 02 07",
+                              "2022 02 10",
                             ],
                             "tag": "time",
                           },
@@ -4820,6 +4830,16 @@ Array [
                                 "tag": "time",
                               },
                               " ",
+                              Object {
+                                "attrs": Object {
+                                  "class": "category",
+                                },
+                                "content": Array [
+                                  "Talks",
+                                ],
+                                "tag": "div",
+                              },
+                              " ",
                             ],
                             "tag": "div",
                           },
@@ -5054,7 +5074,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "credits",
+                      "class": "clear-inner-spacing credits",
                     },
                     "content": Array [
                       " ",
@@ -5292,7 +5312,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "credits",
+                      "class": "clear-inner-spacing credits",
                     },
                     "content": Array [
                       " ",
@@ -5361,7 +5381,7 @@ Array [
 ]
 `;
 
-exports[`Content DOM snapshots /talks/openapi-and-testing/ 1`] = `
+exports[`Content DOM snapshots /talks/ministry-of-testing-ehv-november-19/ 1`] = `
 Array [
   Object {
     "attrs": Object {
@@ -5567,7 +5587,7 @@ Array [
                   },
                   Object {
                     "attrs": Object {
-                      "class": "credits",
+                      "class": "clear-inner-spacing credits",
                     },
                     "content": Array [
                       " ",
