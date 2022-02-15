@@ -41,6 +41,10 @@ button.link {
   &.isaac {
     --link-hover-background-color: var(--isaac);
   }
+
+  &.youtube {
+    --link-hover-background-color: var(--youtube);
+  }
 }
 
 a.reset {
