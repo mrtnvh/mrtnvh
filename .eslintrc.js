@@ -1,9 +1,11 @@
 module.exports = {
   root: true,
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
   env: {
     browser: true,
     node: true,
-    es6: true,
   },
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
   rules: {
@@ -14,6 +16,15 @@ module.exports = {
       'error',
       {
         ignore: ['.svg'],
+      },
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'always',
+        jsx: 'never',
       },
     ],
   },
@@ -28,19 +39,6 @@ module.exports = {
       files: ['src/**/*.*', 'scripts/**/*.*'],
       rules: {
         'import/extensions': 0,
-      },
-    },
-    {
-      files: ['tests/**/*.*'],
-      extends: ['plugin:jest/recommended'],
-      globals: {
-        page: true,
-        browser: true,
-        context: true,
-        jestPuppeteer: true,
-      },
-      rules: {
-        'jest/valid-expect': 0,
       },
     },
   ],

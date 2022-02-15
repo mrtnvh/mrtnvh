@@ -8,10 +8,6 @@
       "groupName": "eslint"
     },
     {
-      "matchPackagePatterns": ["^jest"],
-      "groupName": "jest"
-    },
-    {
       "matchPackagePatterns": ["^postcss"],
       "groupName": "postcss"
     },
