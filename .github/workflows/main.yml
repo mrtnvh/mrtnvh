@@ -63,7 +63,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Install Playwright deps
-        uses: npx playwright install-deps chromium
+        run: npx playwright install-deps chromium
 
       - name: Download build artifact
         uses: actions/download-artifact@v2
@@ -132,6 +132,9 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+
+      - name: Install Playwright deps
+        run: npx playwright install-deps chromium
 
       - name: Download build artifact
         uses: actions/download-artifact@v2
