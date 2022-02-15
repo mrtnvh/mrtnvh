@@ -24,29 +24,31 @@ const baseLayoutProps = defaultsDeep(
 
 <BaseLayout {...baseLayoutProps}>
   <Folio title="Talks">
-    <div class="upcoming full-width">
-      <div class="container">
-        <h2 class="upcoming-title">Upcoming</h2>
-        <ul class="talks">
-          {unpublishedTalks.map((talk) => {
-            const date = parse(talk.datePublished, 'yyyyMMdd', new Date());
-            return (
-              <li class="talk">
-                <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
-                {talk.redirect ? (
-                  <a href={talk.redirect} class="talk-title external" rel="noopener" target="_blank">
-                    {talk.title}
-                  </a>
-                ) : (
-                  <span class="talk-title">{talk.title}</span>
-                )}
-                <span class="talk-subtitle">{talk.subtitle}</span>
-              </li>
-            );
-          })}
-        </ul>
+    {unpublishedTalks.length > 0 && (
+      <div class="upcoming full-width">
+        <div class="container">
+          <h2 class="upcoming-title">Upcoming</h2>
+          <ul class="talks">
+            {unpublishedTalks.map((talk) => {
+              const date = parse(talk.datePublished, 'yyyyMMdd', new Date());
+              return (
+                <li class="talk">
+                  <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+                  {talk.redirect ? (
+                    <a href={talk.redirect} class="talk-title external" rel="noopener" target="_blank">
+                      {talk.title}
+                    </a>
+                  ) : (
+                    <span class="talk-title">{talk.title}</span>
+                  )}
+                  <span class="talk-subtitle">{talk.subtitle}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
-    </div>
+    )}
     <List items={publishedTalks} large />
   </Folio>
 </BaseLayout>
