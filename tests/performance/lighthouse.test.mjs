@@ -38,7 +38,7 @@ test.describe('Lighthouse', async () => {
   });
 
   getPages().forEach((path) => {
-    test.describe.serial(path, () => {
+    test.describe.parallel(path, () => {
       Object.entries(lighthouseConfig).forEach(([environmentName, environmentConfig]) => {
         let cdpPort;
         let browser;
@@ -66,8 +66,8 @@ test.describe('Lighthouse', async () => {
               environmentConfig,
             );
 
-            const reportFileName = customSnapshotIdentifier(path, environmentName);
-            await fs.outputFile(`${getDirname()}/__reports__/${reportFileName}.html`, report);
+            const reportFileName = customSnapshotIdentifier(path, environmentName, 'html');
+            await fs.outputFile(`${getDirname()}/__reports__/${reportFileName}`, report);
             const scores = Object.values(lhr.categories).map(({ title, score }) => ({
               title,
               score,
