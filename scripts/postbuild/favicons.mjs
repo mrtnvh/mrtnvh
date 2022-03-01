@@ -85,7 +85,7 @@ export default async () => {
 
   await Promise.all(
     Object.values(files).map(async ({ name, contents }) => {
-      if (name === 'manifest.json') {
+      if (name === 'manifest.json' || name === 'manifest.webmanifest') {
         const parsedContents = JSON.parse(contents);
         const purposedContents = {
           ...parsedContents,
