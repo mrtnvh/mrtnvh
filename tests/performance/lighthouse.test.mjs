@@ -38,12 +38,13 @@ test.describe('Lighthouse', async () => {
   });
 
   getPages().forEach((path) => {
-    test.describe.parallel(path, () => {
+    test.describe.serial(path, () => {
       Object.entries(lighthouseConfig).forEach(([environmentName, environmentConfig]) => {
         let cdpPort;
         let browser;
 
-        test.beforeEach(async () => {
+        test.beforeEach(async (_, testInfo) => {
+          testInfo.setTimeout(testInfo.timeout + 30000);
           cdpPort = await getPort();
           browser = await chromium.launch({ args: [`--remote-debugging-port=${cdpPort}`] });
           await browser.newBrowserCDPSession();
