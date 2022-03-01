@@ -69,8 +69,6 @@ const schemaPerson = JSON.stringify({
   <meta property="og:site_name" content="mrtnvh" />
   <meta property="og:title" content={title} />
   <meta property="og:type" content="article" />
-  {`
-	<script type="application/ld+json">${schemaWebsite}</script>
-  	<script type="application/ld+json">${schemaPerson}</script>
-  `}
+  <script type="application/ld+json" set:html={schemaWebsite}></script>
+  <script type="application/ld+json" set:html={schemaPerson}></script>
 </head>

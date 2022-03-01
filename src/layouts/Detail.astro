@@ -98,7 +98,7 @@ const hasCredits = !!thumbnailCredits;
         {hasCredits && (
         <hr />
         <div class="credits clear-inner-spacing">
-          {thumbnailCredits && <Markdown>{thumbnailCredits}</Markdown>}
+          {thumbnailCredits && <Markdown set:html={thumbnailCredits} />}
         </div>
         )}
       </div>
