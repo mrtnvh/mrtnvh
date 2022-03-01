@@ -29,56 +29,64 @@ test.describe('Lighthouse', async () => {
   let server;
 
   test.beforeAll(async () => {
-    port = await getPort();
-    server = await preview({ preview: { port } });
+    if (!process.env.CI_BASEURL) {
+      port = await getPort();
+      server = await preview({ preview: { port } });
+    }
   });
 
   test.afterAll(async () => {
-    await server.httpServer.close();
+    if (!process.env.CI_BASEURL) {
+      await server.httpServer.close();
+    }
   });
 
-  getPages().forEach((path) => {
-    test.describe.serial(path, () => {
-      Object.entries(lighthouseConfig).forEach(([environmentName, environmentConfig]) => {
-        let cdpPort;
-        let browser;
+  getPages()
+    .filter((page, index) => index === 0)
+    .forEach((path) => {
+      test.describe.serial(path, () => {
+        Object.entries(lighthouseConfig).forEach(([environmentName, environmentConfig]) => {
+          let cdpPort;
+          let browser;
 
-        test.beforeEach(async (_, testInfo) => {
-          testInfo.setTimeout(testInfo.timeout + 30000);
-          cdpPort = await getPort();
-          browser = await chromium.launch({ args: [`--remote-debugging-port=${cdpPort}`] });
-          await browser.newBrowserCDPSession();
-        });
+          test.beforeEach(async () => {
+            cdpPort = await getPort();
+            browser = await chromium.launch({ args: [`--remote-debugging-port=${cdpPort}`] });
+            await browser.newBrowserCDPSession();
+          });
 
-        test(environmentName, async ({ request }) => {
-          const url = getUrl(path, port);
-          const html = await (await request.get(url)).text();
-          const clientSideRedirect = html.includes('http-equiv="refresh"');
+          test(environmentName, async ({ request }, testInfo) => {
+            testInfo.setTimeout(60000);
+            const url = getUrl(path, port);
+            const html = await (await request.get(url)).text();
+            const clientSideRedirect = html.includes('http-equiv="refresh"');
 
-          if (clientSideRedirect) {
-            expect(true, `Client side redirect, don't perform performance test`).toBe(true);
-          } else {
-            const { lhr, report } = await lighthouse(
-              url,
-              {
-                port: cdpPort,
-                output: 'html',
-              },
-              environmentConfig,
-            );
+            if (clientSideRedirect) {
+              expect(true, `Client side redirect, don't perform performance test`).toBe(true);
+            } else {
+              const { lhr, report } = await lighthouse(
+                url,
+                {
+                  port: cdpPort,
+                  output: 'html',
+                },
+                environmentConfig,
+              );
 
-            const reportFileName = customSnapshotIdentifier(path, environmentName, 'html');
-            await fs.outputFile(`${getDirname()}/__reports__/${reportFileName}`, report);
-            const scores = Object.values(lhr.categories).map(({ title, score }) => ({
-              title,
-              score,
-            }));
-            scores.forEach(({ title, score }) => {
-              expect(score, `${title} score below threshold of ${threshold * 100}%`).toBeGreaterThanOrEqual(threshold);
-            });
-          }
+              const reportFileName = customSnapshotIdentifier(path, environmentName, 'html');
+              await fs.outputFile(`${getDirname()}/__reports__/${reportFileName}`, report);
+              const scores = Object.values(lhr.categories).map(({ title, score }) => ({
+                title,
+                score,
+              }));
+              scores.forEach(({ title, score }) => {
+                expect(score, `${title} score below threshold of ${threshold * 100}%`).toBeGreaterThanOrEqual(
+                  threshold,
+                );
+              });
+            }
+          });
         });
       });
     });
-  });
 });
