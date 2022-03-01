@@ -22,13 +22,5 @@ export const port = 3001;
 
 export const devices = {
   mobile: playwrightDevices['iPhone X'],
-  desktop: {
-    viewport: {
-      width: 1440,
-      height: 900,
-      deviceScaleFactor: 1,
-      isLandscape: true,
-    },
-    // userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:85.0) Gecko/20100101 Firefox/85.0',
-  },
+  desktop: playwrightDevices['Desktop Chrome'],
 };
