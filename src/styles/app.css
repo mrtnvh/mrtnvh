@@ -1,6 +1,5 @@
 @import 'prism-themes/themes/prism-one-dark.css';
 
-@import './_fonts.css';
 @import './_variables.css';
 @import './_root.css';
 @import './_type.css';

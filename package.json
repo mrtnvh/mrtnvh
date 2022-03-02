@@ -26,8 +26,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fontsource/ibm-plex-mono": "^4.5.3",
-    "@fontsource/inter": "^4.5.4",
     "@swup/a11y-plugin": "^2.0.0",
     "@swup/head-plugin": "^1.2.0",
     "@swup/preload-plugin": "^1.0.3",
