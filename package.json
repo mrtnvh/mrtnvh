@@ -41,6 +41,7 @@
     "swup": "^2.0.14"
   },
   "devDependencies": {
+    "@applitools/eyes-playwright": "^1.11.2",
     "@playwright/test": "^1.19.2",
     "@web/rollup-plugin-html": "^1.10.1",
     "@wemake-services/stylelint-config-scss": "^1.0.0",
@@ -48,6 +49,7 @@
     "critters": "0.0.16",
     "cssnano": "^5.1.0",
     "del": "^6.0.0",
+    "dotenv": "^16.0.0",
     "eslint": "^8.10.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.4.0",
