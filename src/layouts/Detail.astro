@@ -154,8 +154,26 @@ const hasCredits = !!thumbnailCredits;
       object-fit: cover;
       aspect-ratio: 4 / 3;
 
+      @supports not (aspect-ratio: 1 / 1) {
+        &::before {
+          float: left;
+          padding-top: 75%;
+          content: '';
+        }
+
+        &::after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+      }
+
       @media (min-width: 800px) {
         aspect-ratio: 21 / 9;
+
+        @supports not (aspect-ratio: 1 / 1) {
+          padding-top: 42.8571%;
+        }
       }
     }
   }
