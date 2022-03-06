@@ -3,7 +3,9 @@ module.exports = {
     'postcss-import': {},
     'postcss-nested': {},
     'postcss-custom-selectors': {},
-    'postcss-logical': {},
+    'postcss-logical': {
+      dir: 'ltr',
+    },
     autoprefixer: {},
     cssnano: {
       preset: 'default',
