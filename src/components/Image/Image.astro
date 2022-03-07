@@ -1,37 +1,79 @@
 ---
-import { getSrcSet } from './cloudinary';
+import { getImageVariants } from './cloudinary';
+
+export interface ImageVariant {
+  sizes?: string;
+  width: number;
+  height: number;
+  media?: string;
+}
+
+export interface ImageTint {
+  shadows: string;
+  highlights: string;
+}
 
 export interface Props {
   src: string;
   alt: string;
-  width: string;
-  height: string;
   class: string;
+  loading?: string;
+  tint: ImageTint | string;
+  variants?: ImageVariant[];
 }
 
-const { alt, src: source, width, height, loading } = Astro.props;
-const { src, srcSet } = getSrcSet({ src: source });
-const { srcSet: srcSetWebp } = getSrcSet({ src: source, type: 'webp' });
+const { alt, src: source, tint, loading = false, variants } = Astro.props as Props;
+const vrnts = variants.map(({ sizes, width, height, media }) => {
+  const baseVariantOptions = { src: source, tint, width, height };
+  const { src, srcSet } = getImageVariants(baseVariantOptions);
+  const { srcSet: srcSetAvif } = getImageVariants({ ...baseVariantOptions, type: 'avif' });
+  const { srcSet: srcSetWebp } = getImageVariants({ ...baseVariantOptions, type: 'webp' });
+  const { srcSet: srcSetDarkAvif } = getImageVariants({ ...baseVariantOptions, type: 'avif', dark: true });
+  const { srcSet: srcSetDarkWebp } = getImageVariants({ ...baseVariantOptions, type: 'webp', dark: true });
+  const { srcSet: srcSetDark } = getImageVariants({ ...baseVariantOptions, dark: true });
+
+  return {
+    src,
+    srcSet,
+    srcSetWebp,
+    srcSetAvif,
+    srcSetDarkAvif,
+    srcSetDarkWebp,
+    srcSetDark,
+    sizes,
+    width,
+    height,
+    media,
+  };
+});
 ---
 
 <picture>
-  <source sizes="1px" srcset={srcSetWebp} type="image/webp" />
-  <img
-    {src}
-    srcset={srcSet}
-    sizes="1px"
-    {alt}
-    class="image fade fade-inactive"
-    {loading}
-    {width}
-    {height}
-  />
+  {vrnts.map(({src, srcSet, srcSetWebp, srcSetAvif, srcSetDarkAvif, srcSetDarkWebp, srcSetDark, sizes, width, height, media}, index) => {
+    const darkMedia = media ? `${media} and (prefers-color-scheme: dark)` : `(prefers-color-scheme: dark)`;
+    return (
+      <>
+        <source {sizes} srcset={srcSetDarkAvif} type="image/avif" media={darkMedia} />
+        <source {sizes} srcset={srcSetDarkWebp} type="image/webp" media={darkMedia} />
+        <source {sizes} srcset={srcSetDark} media={darkMedia} />
+        <source {sizes} srcset={srcSetAvif} type="image/avif" {media} />
+        <source {sizes} srcset={srcSetWebp} type="image/webp" {media} />
+        <source {sizes} srcset={srcSet} {media} />
+        {index === vrnts.length - 1 && <img class="image" {src} {sizes} {alt} {loading} {width} {height} style={vrnts.length === 1 && `aspect-ratio: ${width} / ${height}`} />}
+      </>
+    );
+  })}
 </picture>
 
 <style>
+  picture {
+    display: flex;
+    background-color: var(--grey-200);
+  }
+
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
 </style>

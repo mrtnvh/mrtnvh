@@ -1,70 +1,92 @@
-<a href="/" class="brand">
-  <div class="name firstname">Maarten</div>
-  <div class="name lastname outline">Van Hoof</div>
+---
+import clsx from 'clsx';
+const currentPathname = Astro.request.url.pathname;
+---
+
+<a
+  id="brand"
+  href="/"
+  class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}
+  aria-label="Logo of Maarten Van Hoof"
+>
+  <div class="name firstname">
+    <svg width="263" height="38" viewBox="0 0 263 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0.712891 0.909058V38H10.5652V16.4119H10.8549L19.1135 37.7102H25.0538L33.3123 16.5568H33.6021V38H43.4544V0.909058H30.9217L22.301 21.9176H21.8663L13.2456 0.909058H0.712891Z"
+        fill="currentcolor"></path>
+      <path
+        d="M57.8615 38L59.9986 30.9005H72.2415L74.3786 38H85.245L73.0021 0.909058H59.2379L46.995 38H57.8615ZM62.2805 23.3664L65.9751 11.1235H66.2649L69.9595 23.3664H62.2805Z"
+        fill="currentcolor"></path>
+      <path
+        d="M98.4523 38L100.589 30.9005H112.832L114.969 38H125.836L113.593 0.909058H99.8287L87.5858 38H98.4523ZM102.871 23.3664L106.566 11.1235H106.856L110.55 23.3664H102.871Z"
+        fill="currentcolor"></path>
+      <path
+        d="M129.408 38H139.478V25.7571H142.955L149.475 38H160.414L152.88 24.1633C156.828 22.2617 159.182 18.6576 159.182 13.5142C159.182 5.61787 153.659 0.909058 145.418 0.909058H129.408V38ZM139.478 17.9332V8.95025H143.028C146.559 8.95025 148.678 10.3267 148.678 13.5142C148.678 16.6836 146.559 17.9332 143.028 17.9332H139.478Z"
+        fill="currentcolor"></path>
+      <path d="M162.46 9.0227H173.617V38H183.541V9.0227H194.698V0.909058H162.46V9.0227Z" fill="currentcolor"></path>
+      <path
+        d="M198.487 38H225.146V29.8863H208.557V23.5113H223.842V15.3977H208.557V9.0227H225.219V0.909058H198.487V38Z"
+        fill="currentcolor"></path>
+      <path
+        d="M262.305 0.909058H252.236V20.3238H251.946L238.761 0.909058H230.213V38H240.282V18.5128H240.5L253.902 38H262.305V0.909058Z"
+        fill="currentcolor"></path>
+    </svg>
+  </div>
+  <div class="name lastname">
+    <svg width="172" height="26" viewBox="0 0 172 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M13.2906 17.9005L18.0369 1.65104H24.2236L16.7466 24.2077H8.6899L1.21294 1.65104H7.39959L12.1459 17.9005L12.251 18.2603H12.6258H12.8107H13.1855L13.2906 17.9005ZM30.8272 19.6988H30.456L30.3486 20.0541L29.093 24.2077H23.2262L30.7031 1.65104H38.7598L46.2368 24.2077H40.3699L39.1143 20.0541L39.0069 19.6988H38.6357H30.8272ZM31.8041 15.2688L31.6087 15.9138H32.2827H37.1803H37.8542L37.6588 15.2688L35.3024 7.4933L35.1948 7.13832H34.8239H34.639H34.2681L34.1605 7.4933L31.8041 15.2688ZM55.13 12.3312V24.2077H49.7077V1.65104H54.3955L62.6557 13.7632L62.8046 13.9815H63.0688H63.2536H63.7536V13.4815V1.65104H69.176V24.2077H64.5787L56.18 12.0471L56.031 11.8312H55.7686H55.63H55.13V12.3312ZM85.6163 15.0059H85.1163V15.5059V24.2077H79.6939V1.65104H85.1163V10.3528V10.8528H85.6163H94.1178H94.6178V10.3528V1.65104H100.04V24.2077H94.6178V15.5059V15.0059H94.1178H85.6163ZM161.789 15.0059H161.289V15.5059V24.2077H155.867V1.65104H171.5V5.80405H161.789H161.289V6.30405V10.3528V10.8528H161.789H170.484V15.0059H161.789ZM115.002 1.32898C118.103 1.32898 120.846 2.34949 122.812 4.28511C124.775 6.21804 126.007 9.10695 126.007 12.9294C126.007 16.7517 124.775 19.6407 122.812 21.5736C120.846 23.5092 118.103 24.5297 115.002 24.5297C111.878 24.5297 109.136 23.4982 107.176 21.5573C105.218 19.6187 103.997 16.7294 103.997 12.9294C103.997 9.10563 105.218 6.21691 107.175 4.28462C109.134 2.34989 111.877 1.32898 115.002 1.32898ZM115.002 19.9626C116.73 19.9626 118.113 19.3309 119.047 18.0828C119.963 16.858 120.399 15.1014 120.399 12.9294C120.399 10.7573 119.963 9.00073 119.047 7.77593C118.113 6.52776 116.73 5.89607 115.002 5.89607C113.274 5.89607 111.891 6.52776 110.957 7.77593C110.041 9.00073 109.604 10.7573 109.604 12.9294C109.604 15.1014 110.041 16.858 110.957 18.0828C111.891 19.3309 113.274 19.9626 115.002 19.9626ZM140.89 1.32898C143.992 1.32898 146.735 2.34949 148.7 4.28511C150.663 6.21804 151.895 9.10695 151.895 12.9294C151.895 16.7517 150.663 19.6407 148.7 21.5736C146.735 23.5092 143.992 24.5297 140.89 24.5297C137.767 24.5297 135.024 23.4982 133.064 21.5573C131.106 19.6187 129.886 16.7294 129.886 12.9294C129.886 9.10563 131.107 6.21691 133.064 4.28462C135.023 2.34989 137.765 1.32898 140.89 1.32898ZM140.89 19.9626C142.619 19.9626 144.002 19.3309 144.935 18.0828C145.851 16.858 146.288 15.1014 146.288 12.9294C146.288 10.7573 145.851 9.00073 144.935 7.77593C144.002 6.52776 142.619 5.89607 140.89 5.89607C139.162 5.89607 137.779 6.52776 136.846 7.77593C135.93 9.00073 135.493 10.7573 135.493 12.9294C135.493 15.1014 135.93 16.858 136.846 18.0828C137.779 19.3309 139.162 19.9626 140.89 19.9626Z"
+        fill="transparent"
+        stroke="currentcolor"></path>
+    </svg>
+  </div>
 </a>
 
 <style>
   .brand {
-    --brand-font-size: 5vw;
-    --brand-font-weight: 900;
-    --firstname-z-index: 2;
-    --firstname-letter-spacing: 0.25vw;
-    --lastname-z-index: 1;
-    --brand-animation-constant: 10%;
+    --link-hover-background-color: transparent;
 
     color: var(--headings-color);
-    font-family: var(--headings-font-family);
-    font-size: var(--brand-font-size);
-    font-weight: var(--brand-font-weight);
     position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
 
-    &::before,
-    &::after {
-      display: none;
-    }
+    &.brand-large {
+      padding-block-start: calc(var(--grid-gap-y) * 1);
 
-    @media (min-width: 950px) {
-      --brand-font-size: 3.75rem;
+      @media (min-width: 800px) {
+        padding-block-start: 0;
+      }
     }
   }
 
   .name {
-    white-space: nowrap;
-    line-height: 1;
+    line-height: 0.8;
     transition: transform 0.33s;
     transition-timing-function: var(--animation-timing-function);
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .firstname {
     position: relative;
-    z-index: var(--firstname-z-index);
-    letter-spacing: var(--firstname-letter-spacing);
-    transform: translate(0, -25%);
+    z-index: 2;
+    transform: translate(-5.25%, 27.5%);
 
     .brand:hover &,
     .brand:focus & {
-      transform: translate(
-        calc(var(--brand-animation-constant) * 0),
-        calc(var(--brand-animation-constant) * -3.75)
-      );
+      transform: translate(0, 0);
     }
   }
 
   .lastname {
-    position: absolute;
-    top: 0;
-    left: 1%;
-    z-index: var(--lastname-z-index);
-    transform: translate(
-      calc(var(--brand-animation-constant) * 1),
-      calc(var(--brand-animation-constant) * 3)
-    );
+    z-index: 1;
+    transform: translate(5.25%, -17.5%);
 
     .brand:hover &,
     .brand:focus & {
-      transform: translate(0, calc(var(--brand-animation-constant) * 5));
+      transform: translate(0, 0);
     }
   }
 </style>

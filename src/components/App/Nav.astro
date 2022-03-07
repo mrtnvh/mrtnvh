@@ -1,16 +1,23 @@
 ---
-const { offCanvas = false } = Astro.props;
+const { offCanvas = false, page } = Astro.props;
+const currentPage = (link) => {
+  if (link.href === '/') {
+    return Astro.request.url.pathname === '/' || Astro.request.url.pathname.includes('activity');
+  }
+
+  return Astro.request.url.pathname.includes(link.href);
+};
 
 const links = [
   {
     key: 'home',
     href: '/',
-    title: 'Home',
+    title: 'Activity',
   },
   {
-    key: 'projects',
-    href: '/projects',
-    title: 'Projects',
+    key: 'publications',
+    href: '/publications',
+    title: 'Publications',
   },
   {
     key: 'talks',
@@ -20,19 +27,14 @@ const links = [
   {
     key: 'about',
     href: '/about',
-    title: 'About me',
+    title: 'About',
   },
 ];
 ---
 
-<nav class={`nav ${offCanvas ? 'nav-off-canvas' : ''}`}>
+<nav id="nav" class="nav">
   {links.map((link) => (
-    <a
-      key={link.title}
-      href={link.href}
-      data-testid={`navigation-${link.key}`}
-      data-swup-preload
-    >
+    <a href={link.href} data-testid={`navigation-${link.key}`} data-swup-preload data-page-current={currentPage(link)}>
       {link.title}
     </a>
   ))}
@@ -40,29 +42,27 @@ const links = [
 
 <style>
   .nav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: minmax(min-content, auto);
-    grid-gap: var(--space);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
 
     a {
       white-space: nowrap;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0 0.33em;
+
+      &[data-page-current],
+      &:focus,
+      &:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+      }
     }
 
-    &.nav-off-canvas {
-      font-size: var(--font-size-3xl);
-      font-family: var(--headings-font-family);
-      font-weight: var(--fat-font-weight);
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-grow: 1;
-
-      a {
-        text-decoration: none;
-      }
+    @media (min-width: 800px) {
+      gap: calc(var(--grid-gap-x) / 3);
     }
   }
 </style>

@@ -1,15 +1,12 @@
-<div class="container">
-  <h1 class="title">
-    {error.statusCode === 404 ? 'Page not found' : 'An error occurred'}
-  </h1>
-  <a href="/">Go to homepage</a>
-</div>
+---
+import BaseLayout from './Base.astro';
+---
 
-<script>
-  // export default {
-  // 	props: { error: { required: true, type: Object } },
-  // };
-</script>
+<BaseLayout {...Astro.props}>
+  <div class="container">
+    <h1>{Astro.props.title}</h1>
+  </div>
+</BaseLayout>
 
 <style>
   .container {
@@ -19,10 +16,14 @@
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+
+    @media (max-width: 800px) {
+      align-items: center;
+    }
   }
 
-  .title {
-    font-size: var(--folio-title-size);
+  h1 {
+    font-size: var(--detail-title-size);
     text-transform: uppercase;
     line-height: 0.75em;
     display: inline-block;

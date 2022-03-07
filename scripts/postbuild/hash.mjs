@@ -11,6 +11,8 @@ const FILES_TO_EXCLUDE = [
   '.html',
   '.css',
   '.js',
+  '.woff',
+  '.woff2',
   '/_astro/',
   'stats.js',
   'workbox',
@@ -19,8 +21,7 @@ const FILES_TO_EXCLUDE = [
 const createHashFromFilePath = (filePath, { hashLength, hashAlgorithm } = {}) =>
   new Promise((resolve) => {
     const hash = crypto.createHash(hashAlgorithm || 'md5');
-    const substr = (value) =>
-      hashLength ? value.substring(0, hashLength) : value;
+    const substr = (value) => (hashLength ? value.substring(0, hashLength) : value);
     fs.createReadStream(filePath)
       .on('data', (data) => hash.update(data))
       .on('end', () => resolve(substr(hash.digest('hex'))));
@@ -28,9 +29,7 @@ const createHashFromFilePath = (filePath, { hashLength, hashAlgorithm } = {}) =>
 
 const getFilePathsToHash = async () => {
   const filePaths = await globby(`${BUILD_DIRECTORY}/**/*.*`);
-  const filteredFilePaths = filePaths.filter(
-    (path) => !FILES_TO_EXCLUDE.some((exclusion) => path.includes(exclusion)),
-  );
+  const filteredFilePaths = filePaths.filter((path) => !FILES_TO_EXCLUDE.some((exclusion) => path.includes(exclusion)));
   const hashedAndOriginalFilePaths = await Promise.all(
     filteredFilePaths.map(async (filteredPath) => {
       const hash = await createHashFromFilePath(filteredPath, {
@@ -50,11 +49,7 @@ const getFilePathsToHash = async () => {
 };
 
 const renameFiles = (hashedAndOriginalFilePaths) =>
-  Promise.all(
-    hashedAndOriginalFilePaths.map(({ original, hashed }) =>
-      fs.move(original, hashed, { overwrite: true }),
-    ),
-  );
+  Promise.all(hashedAndOriginalFilePaths.map(({ original, hashed }) => fs.move(original, hashed, { overwrite: true })));
 
 const replaceReferences = (hashedAndOriginalFilePaths) =>
   replaceFilesContent('**/*.!(png|jpg|ico)', async (content) =>
@@ -70,9 +65,7 @@ const replaceReferences = (hashedAndOriginalFilePaths) =>
 
 export default async () => {
   const hashedAndOriginalFilePaths = await getFilePathsToHash();
-  const { files: alteredFiles } = await replaceReferences(
-    hashedAndOriginalFilePaths,
-  );
+  const { files: alteredFiles } = await replaceReferences(hashedAndOriginalFilePaths);
   await renameFiles(hashedAndOriginalFilePaths);
 
   return {

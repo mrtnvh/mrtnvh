@@ -1,0 +1,292 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "article",
+        "attrs": {
+          "class": ""
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "figure",
+                "attrs": {
+                  "class": "media"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "picture",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "img",
+                        "attrs": {
+                          "class": "image"
+                        }
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "h1",
+                "attrs": {
+                  "class": "title"
+                },
+                "content": [
+                  "API Specification Conference 2021"
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "meta"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "time-category"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "time",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "2021 09 29"
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "div",
+                        "attrs": {
+                          "class": "category"
+                        },
+                        "content": [
+                          "Talks"
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "links"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          " Slides "
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          " Demo's "
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          " Video "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "body"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "As a front end developer, building projects with RESTful API dependencies ain’t all sunshine and rainbows. Security implications, parallel development, time or budget restrictions for writing documentation, …, in an enterprise you might not always have the ability to rely on your RESTful API dependencies for development, let alone for an automated testing environment."
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "content": [
+                      "The OpenAPI ecosystem offers us solutions in the form of virtually complete independence from a REST API during development and testing."
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "content": [
+                      "Maarten will show you how your front-end project workflow can reap the benefits the OpenAPI ecosystem offers with battle-tested examples."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "hr",
+                    "attrs": {
+                      "class": ""
+                    }
+                  },
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "clear-inner-spacing credits"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "p",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "Background in thumbnail by ",
+                          {
+                            "tag": "a",
+                            "attrs": {
+                              "class": "external"
+                            },
+                            "content": [
+                              "Pawel Czerwinski"
+                            ]
+                          },
+                          " on ",
+                          {
+                            "tag": "a",
+                            "attrs": {
+                              "class": "external"
+                            },
+                            "content": [
+                              "Unsplash"
+                            ]
+                          }
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]

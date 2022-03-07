@@ -1,0 +1,248 @@
+---
+import { Markdown } from 'astro/components';
+import { parse, format } from 'date-fns';
+import BaseLayout from './Base.astro';
+import { getImageVariants } from '../components/Image/cloudinary.js';
+import Thumbnail from '../components/Image/Image.astro';
+
+const {
+  content: { title, thumbnail, thumbnailCredits, slides, demo, video, tint, datePublished, category },
+} = Astro.props;
+
+const defaultImageSettings = { src: thumbnail, tint };
+const defaultMobileImageSettings = {
+  ...defaultImageSettings,
+  width: 1600,
+  height: 1200,
+  sizes: '100vw',
+  media: '(max-width: 799px)',
+};
+const defaultDesktopImageSettings = {
+  ...defaultImageSettings,
+  width: 2100,
+  height: 900,
+  sizes: '(min-width: 1280px) 1280px, 100vw',
+  media: '(min-width: 800px)',
+};
+const { srcSet: srcSetWebpMobile } = getImageVariants({
+  ...defaultMobileImageSettings,
+  type: 'webp',
+});
+
+const { srcSet: srcSetWebpDesktop } = getImageVariants({
+  ...defaultDesktopImageSettings,
+  type: 'webp',
+});
+
+// "...specifying preloading for multiple types of the same resource is discouraged.
+// Instead, the best practice is to specify preloading only for the type the majority of your users are likely to actually use...
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#including_a_mime_type
+const preloadProps = { rel: 'preload', as: 'image', type: 'image/webp' };
+const preloads = [
+  {
+    ...preloadProps,
+    imagesizes: defaultDesktopImageSettings.sizes,
+    media: defaultDesktopImageSettings.media,
+    imagesrcset: srcSetWebpDesktop,
+  },
+  {
+    ...preloadProps,
+    imagesizes: defaultMobileImageSettings.sizes,
+    media: defaultMobileImageSettings.media,
+    imagesrcset: srcSetWebpMobile,
+  },
+];
+
+const links = [
+  ...(slides ? [{ title: 'Slides', url: slides }] : []),
+  ...(demo ? [{ title: "Demo's", url: demo }] : []),
+  ...(video ? [{ title: 'Video', url: video }] : []),
+];
+
+const date = parse(datePublished, 'yyyyMMdd', new Date());
+const hasCredits = !!thumbnailCredits;
+---
+
+<BaseLayout {...Astro.props} {preloads}>
+  <article>
+    <div class="container">
+      <figure class="media">
+        {thumbnail && (
+          <Thumbnail
+            src={thumbnail}
+            alt={title}
+            class="image"
+            variants={[defaultDesktopImageSettings, defaultMobileImageSettings]}
+            tint={tint}
+          />
+        )}
+      </figure>
+      <h1 class="title">{title}</h1>
+      <div class="meta">
+        <div class="time-category">
+          <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+          {category && <div class="category">{category}</div>}
+        </div>
+        {!!links.length && (
+          <div class="links">
+            {links.map(({ title, url }) => (
+              <a href={url} target="_blank" rel="noopener" class="external">
+                {title}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+      <div class="body">
+        <slot />
+        {hasCredits && (
+        <hr />
+        <div class="credits clear-inner-spacing">
+          {thumbnailCredits && <Markdown set:html={thumbnailCredits} />}
+        </div>
+        )}
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  article {
+    @media (max-width: 799px) {
+      margin-block-start: calc(var(--grid-gap-y) * -2);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 800px) {
+      display: grid;
+      grid-template-columns: 4fr 8fr;
+      gap: 0 var(--grid-gap-x);
+      /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+      grid-template-areas:
+        'media media'
+        'title title'
+        'meta body';
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 1fr 4fr 8fr 1fr;
+      grid-template-areas:
+        'media media media media'
+        '. title title .'
+        '. meta body .';
+    }
+  }
+
+  .media {
+    grid-area: media;
+    margin-inline: calc(var(--grid-gap-x) * -1);
+    margin-block-end: 0;
+    position: relative;
+
+    picture {
+      display: flex;
+      background-color: var(--grey-200);
+    }
+
+    :global(img) {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+
+      @supports not (aspect-ratio: 1 / 1) {
+        &::before {
+          float: left;
+          padding-top: 75%;
+          content: '';
+        }
+
+        &::after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+      }
+
+      @media (min-width: 800px) {
+        aspect-ratio: 21 / 9;
+
+        @supports not (aspect-ratio: 1 / 1) {
+          padding-top: 42.8571%;
+        }
+      }
+    }
+  }
+
+  .title {
+    grid-area: title;
+    font-size: var(--detail-title-size);
+    font-weight: var(--detail-title-font-weight);
+    line-height: var(--detail-title-line-height);
+    margin-block-start: -0.5625em;
+    z-index: 1;
+  }
+
+  .subtitle {
+    font-weight: 700;
+
+    @media (min-width: 800px) {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  .meta {
+    grid-area: meta;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-block-end: var(--grid-gap-x);
+    color: var(--grey);
+
+    a {
+      color: var(--grey);
+
+      &:hover,
+      &:focus {
+        color: var(--link-hover-color);
+      }
+    }
+
+    @media (min-width: 800px) {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  .category {
+    text-transform: uppercase;
+
+    &::before {
+      content: '#';
+    }
+  }
+
+  .links,
+  .time-category {
+    display: flex;
+    gap: 1rem;
+
+    @media (min-width: 800px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .body {
+    grid-area: body;
+  }
+
+  .credits {
+    font-size: var(--font-size-sm);
+    color: var(--grey);
+  }
+</style>

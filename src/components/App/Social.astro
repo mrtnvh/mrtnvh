@@ -1,45 +1,49 @@
 ---
-export interface Props {
-  offCanvas?: boolean;
-}
-
-const { offCanvas = false } = Astro.props;
-
 const links = [
   {
-    name: 'email',
-    href: 'mailto:info@mrtnvh.com',
-    icon: 'email',
-  },
-  {
-    name: 'github',
+    label: 'Github profile of Maarten Van Hoof',
+    className: 'github',
     href: 'https://github.com/vanhoofmaarten/',
     icon: 'gitHub',
   },
   {
-    name: 'twitter',
+    label: 'YouTube profile of Maarten Van Hoof',
+    className: 'youtube',
+    href: 'https://www.youtube.com/channel/UC7kjbPgAD2QYqX3h-Cqu1nQ',
+    icon: 'youtube',
+  },
+  {
+    label: 'Twitter profile of Maarten Van Hoof',
+    className: 'twitter',
     href: 'https://twitter.com/mrtnvh/',
     icon: 'twitter',
   },
   {
-    name: 'linkedin',
+    label: 'LinkedIn profile of Maarten Van Hoof',
+    className: 'linkedin',
     href: 'https://www.linkedin.com/in/mrtnvh/',
     icon: 'linkedIn',
+  },
+  {
+    label: 'Send an e-mail to Maarten Van Hoof',
+    className: 'email',
+    href: 'mailto:info@mrtnvh.com',
+    icon: 'email',
   },
 ];
 ---
 
-<nav class={`social ${offCanvas ? 'social-off-canvas' : ''}`}>
-  {links.map(({ href, name, icon }) => (
+<nav class="social">
+  {links.map(({ href, className, icon, label }) => (
     <a
-      key={href}
       href={href}
-      class={name}
+      class={className}
+      aria-label={label}
       target="_blank"
       rel="noopener"
-      data-testid={`navigation-${name}`}
+      data-testid={`navigation-${className}`}
     >
-      <svg aria-label={name}>
+      <svg>
         <use xlink:href={`#${icon}`} />
       </svg>
     </a>
@@ -49,26 +53,18 @@ const links = [
 <style>
   .social {
     display: flex;
-    justify-content: flex-end;
-
-    &.social-off-canvas {
-      padding: var(--grid-gap-y) 0;
-    }
+    justify-content: center;
+    gap: var(--space);
   }
 
   button.link,
   a {
     line-height: 0;
-    margin: calc(var(--space) / 2) calc(var(--space));
+    padding: calc(var(--space) * 0.25);
   }
 
   svg {
-    height: calc(var(--space) * 1.25);
-    width: calc(var(--space) * 1.25);
-
-    .social-off-canvas & {
-      height: var(--font-size-lg);
-      width: var(--font-size-lg);
-    }
+    height: calc(var(--space) * 1);
+    width: calc(var(--space) * 1);
   }
 </style>

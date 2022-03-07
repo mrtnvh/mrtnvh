@@ -1,37 +1,95 @@
-export const SRC_SET_SIZES = [150, 300, 600, 900, 1200, 1500, 1800, 2100, 2400];
+import colors from '../../styles/colors.js';
+
+export const SRC_SET_SIZES = [300, 600, 900, 1200, 1500, 1800, 2100, 2400];
 
 const isCloudinaryUrl = (url) => url.includes('https://res.cloudinary.com/');
 
-export const getOgImage = ({ src }) => {
-  if (!isCloudinaryUrl(src)) return src;
-  const [preUrl, postUrl] = src.split('/upload');
-  return `${preUrl}/upload/t_og_image${postUrl}`;
+const getShadowsHighlightFromTintDark = ({ tint, dark }) => {
+  if (tint) {
+    if (typeof tint === 'string') {
+      if (dark) {
+        return {
+          shadows: colors[tint]['900'].replace('#', ''),
+          highlights: colors[tint]['500'].replace('#', ''),
+        };
+      }
+      return {
+        shadows: colors[tint]['500'].replace('#', ''),
+        highlights: colors[tint]['50'].replace('#', ''),
+      };
+    }
+
+    if (tint.shadows && tint.highlights) {
+      return {
+        shadows: tint.shadows.replace('#', ''),
+        highlights: tint.shadows.replace('#', ''),
+      };
+    }
+  }
+
+  return {
+    shadows: undefined,
+    highlights: undefined,
+  };
 };
 
-export const getSrcSet = ({
+const getTransformations = ({ shadows, highlights }) => {
+  if (shadows && highlights) {
+    return `${[`e_grayscale`, `e_tint:100:${shadows}:0p:${highlights}:100p`].join(',')}/t_noise`;
+  }
+  return undefined;
+};
+
+const getPlaceholder = ({ preUrl, postUrl, shadows, highlights }) => {
+  const transformations = [`t_responsive_placeholder`, getTransformations({ shadows, highlights })].join(',');
+  return [preUrl, `upload`, transformations, postUrl].join('/');
+};
+
+const getOgImage = ({ preUrl, postUrl, shadows, highlights }) => {
+  const transformations = [`t_og_image`, getTransformations({ shadows, highlights })].join(',');
+  return [preUrl, `upload`, transformations, postUrl].join('/');
+};
+
+const getSrcSet = ({ preUrl, postUrl, shadows, highlights, width, height, type }) =>
+  SRC_SET_SIZES.map((size) => {
+    const srcSetWidth = size;
+    const srcSetHeight = Math.ceil((size / width) * height);
+    const transformations = [
+      `c_fill`,
+      `dpr_1`,
+      `f_${type}`,
+      `q_auto`,
+      `w_${srcSetWidth}`,
+      `h_${srcSetHeight}`,
+      getTransformations({
+        shadows,
+        highlights,
+      }),
+    ].join(',');
+    const url = [preUrl, `upload`, transformations, postUrl].join('/');
+    return `${url} ${size}w`;
+  }).join(', ');
+
+export const getImageVariants = ({
   publicId: publicIdProp = undefined,
   src,
-  srcSet,
+  srcSet = undefined,
   type = 'auto',
+  tint = undefined,
+  dark = false,
+  width = 1600,
+  height = 900,
 }) => {
-  if (!src) return { src, srcSet };
+  if (!src || (!publicIdProp && !isCloudinaryUrl(src))) {
+    return { src, srcSet, og: src };
+  }
 
-  if (!publicIdProp && !isCloudinaryUrl(src))
-    return {
-      src,
-      srcSet,
-    };
+  const [preUrl, postUrl] = src.split('/upload/');
+  const { shadows, highlights } = getShadowsHighlightFromTintDark({ tint, dark });
 
-  const [preUrl, postUrl] = src.split('/upload');
-  const placeholder = `${preUrl}/upload/t_responsive_placeholder${postUrl}`;
-
-  const returnValue = {
-    src: placeholder,
-    srcSet: SRC_SET_SIZES.map(
-      (size) =>
-        `${preUrl}/upload/c_scale%2Cdpr_1.0%2Cf_${type}%2Cq_auto%2Cw_${size}${postUrl} ${size}w`,
-    ).join(', '),
+  return {
+    src: getPlaceholder({ preUrl, postUrl, shadows, highlights }),
+    srcSet: getSrcSet({ preUrl, postUrl, shadows, highlights, width, height, type }),
+    og: getOgImage({ preUrl, postUrl, shadows, highlights }),
   };
-
-  return returnValue;
 };

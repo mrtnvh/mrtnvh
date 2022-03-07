@@ -1,128 +1,84 @@
 ---
+import clsx from 'clsx';
 import Brand from '../Brand.astro';
-import OffCanvasMenu from './OffCanvasMenu.astro';
 import Nav from './Nav.astro';
-import Social from './Social.astro';
+
+const currentPathname = Astro.request.url.pathname;
 ---
 
-<nav class="header container">
-  <div class="brand">
-    <Brand />
-  </div>
-  <div class="subtitle" id="headerSubtitle" style="display: none;">
-    <span class="mr-space">Front-end developer at</span>
-    <span class="whitespace-nowrap">
-      <a href="https://isaac.nl" target="_blank" rel="noopener" class="isaac">
-        ISAAC
-      </a>
-      in Eindhoven.
-    </span>
-  </div>
-  <div class="navs" data-testid="app-header-navs">
-    <div class="nav">
+<header class={clsx({ header: true })}>
+  <div class="container">
+    <div class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}>
+      <Brand />
+    </div>
+    <div class="nav" data-testid="app-header-nav">
       <Nav />
     </div>
-    <div class="social">
-      <Social />
-    </div>
   </div>
-  <div class="off-canvas-menu" data-testid="off-canvas-menu">
-    <OffCanvasMenu />
-  </div>
-</nav>
-
-<script>
-  const $headerSubtitle = document.querySelector('#headerSubtitle');
-  const isHomepage = window.location.pathname === '/';
-  if (!isHomepage) {
-    $headerSubtitle.style.display = 'block';
-  }
-</script>
+</header>
 
 <style>
   .header {
-    display: grid;
-    align-items: center;
-    padding-top: var(--grid-gap-y);
-    padding-bottom: var(--grid-gap-y);
-    font-size: var(--font-size-sm);
-    grid-column-gap: var(--grid-gap-x);
-    border-bottom: 1px solid var(--grey);
+    padding-block: calc(var(--grid-gap-y) * 0.5);
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 800px) {
       font-size: var(--font-size-base);
-      grid-template-columns: 2fr 4fr;
-      grid-template-rows: 1fr 1.5fr;
+      padding-block: calc(var(--grid-gap-y) * 0.75);
     }
 
-    @media (min-width: 1400px) {
-      display: grid;
-      grid-template-columns: 3.2fr 3fr 3fr;
-      grid-column-gap: var(--grid-gap-x);
-      grid-template-rows: 1fr;
-      align-items: end;
+    @media (max-width: 799px) {
+      &.header-absolute {
+        position: absolute;
+      }
     }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: var(--grid-gap-x);
   }
 
   .brand {
-    grid-area: 1 / 1 / 3 / 2;
-    margin-left: calc(var(--space) / -3);
+    width: calc(var(--space) * 5);
 
-    @media (min-width: 1400px) {
-      grid-area: 1 / 1 / 3 / 3;
+    &.brand-large {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 799px) {
+        margin: 0 auto;
+        max-width: calc(var(--space) * 12);
+        width: 100%;
+      }
     }
 
-    @media (min-width: 1400px) {
-      margin-top: 0;
-    }
-  }
-
-  .subtitle {
-    grid-area: 1 / 2 / 1 / 3;
-
-    @media (min-width: 1400px) {
-      grid-area: 1 / 2/ 1 / 2;
-    }
-  }
-
-  .off-canvas-menu {
-    grid-area: 1 / 3 / 1 / 3;
-    text-align: right;
-    display: block;
-
-    @media (min-width: 500px) {
-      display: none;
+    @media (min-width: 800px) {
+      width: calc(var(--space) * 7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
-  .navs {
-    grid-area: 2 / 2 / 2 / 3;
-    display: none;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: calc(var(--space) / 2);
-    align-items: center;
+  .nav {
+    position: fixed;
+    inset-block-end: 0;
+    inset-inline: 0;
+    background-color: var(--grey-200);
+    padding: calc(var(--grid-gap-y) * 0.5) calc(var(--grid-gap-x) * 1);
+    z-index: var(--bottom-navigation-zindex);
 
-    @media (min-width: 500px) {
-      display: grid;
-    }
-
-    @media (min-width: 1400px) {
-      grid-area: 1 / 3 / 1 / 3;
-    }
-  }
-
-  .brand,
-  .subtitle,
-  .nav,
-  .social {
-    position: relative;
-    /* stylelint-disable-next-line */
-    z-index: 1;
-
-    @media (min-width: 1400px) {
-      grid-area: auto;
-      align-self: auto;
+    @media (min-width: 800px) {
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      flex-grow: 1;
+      display: flex;
+      justify-content: end;
     }
   }
 </style>

@@ -1,3 +1,5 @@
+@import 'prism-themes/themes/prism-one-dark.css';
+
 @import './_variables.css';
 @import './_root.css';
 @import './_type.css';
@@ -6,9 +8,7 @@
 @import './_media.css';
 @import './_container.css';
 @import './_button.css';
-@import './_columns.css';
 @import './_spacing.css';
+@import './_utils.css';
+
 @import './animation/_fade.css';
-@import './animation/_slide-up-fade.css';
-@import './animation/_slide-right-fade.css';
-@import './animation/_zoom-out-in-fade.css';

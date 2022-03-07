@@ -3,20 +3,10 @@ import Seo from '../components/Seo.astro';
 import Header from '../components/App/Header.astro';
 import Footer from '../components/App/Footer.astro';
 import SvgSprite from '../components/SvgSprite.astro';
-import { getSrcSet } from '../components/Image/cloudinary';
 
-const isProd = process.env.NODE_ENV === 'production';
-const { content } = Astro.props;
-
-let src = '';
-let srcSet = '';
-let srcSetWebp = '';
-
-if (content?.thumbnail) {
-  src = getSrcSet({ src: content.thumbnail }).src;
-  srcSet = getSrcSet({ src: content.thumbnail }).srcSet;
-  srcSetWebp = getSrcSet({ src: content.thumbnail, type: 'webp' }).srcSet;
-}
+const isProd = import.meta.env.PROD;
+const isMaster = import.meta.env.VITE_PROD === 'true';
+const { content, preloads } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -29,16 +19,19 @@ if (content?.thumbnail) {
     <meta name="apple-mobile-web-app-title" content="mrtnvh" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#95FF00" />
-    <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preload" href={Astro.resolve('../styles/app.css')} as="style" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/app.css')} />
 
-    {content?.thumbnail && (
-			<link rel="preload" as="image" href={src} imagesrcset={srcSetWebp} imagesizes="66vw" type="image/webp" />
-			<link rel="preload" as="image" href={src} imagesrcset={srcSet} imagesizes="66vw" />
-		)}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    {isProd &&
-      `
+    {preloads && preloads.map((preload) => <link {...preload} />)}
+
+    {isProd && (
 			<script>
 				if ('serviceWorker' in navigator) {
 					window.addEventListener('load', () => {
@@ -46,7 +39,9 @@ if (content?.thumbnail) {
 					});
 				}
 			</script>
-		`}
+		)}
+
+    {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
   </head>
   <Seo {...Astro.props} />
   <body>
@@ -54,27 +49,26 @@ if (content?.thumbnail) {
       <SvgSprite />
     </div>
     <div class="layout">
+      {content?.redirect ? (<main class="centered" data-testid="redirect">Redirecting to {content.redirect}</main>) : (
       <Header />
       <main id="swup" class="transition-fade">
         <slot />
       </main>
       <Footer />
+    ) }
     </div>
     <script type="module" async src={Astro.resolve('../js/main.js')}></script>
-    {isProd && (
+    {isMaster && (
       <script>
-        const statsScript = document.createElement( 'script' );
-        statsScript.setAttribute( 'src', '/js/stats' );
-        statsScript.setAttribute( 'defer', true ); statsScript.setAttribute(
-        'data-domain', 'mrtnvh.com' ); document.body.appendChild( statsScript );
+        const statsScript = document.createElement( 'script' ); statsScript.setAttribute( 'src', '/js/stats' );
+        statsScript.setAttribute( 'defer', true ); statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
+        document.body.appendChild( statsScript );
       </script>
     )}
   </body>
 </html>
 
-<style global>
-  @import '../styles/app.css';
-
+<style>
   .svg-sprite {
     display: none;
   }
@@ -85,11 +79,24 @@ if (content?.thumbnail) {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    padding-block-end: calc(var(--space) * 2);
+
+    @media (min-width: 800px) {
+      padding-block-end: 0;
+    }
   }
 
   main {
     display: flex !important;
     flex-direction: column;
+    padding-block-end: calc(var(--space) * 1);
+    outline: 0;
+  }
+
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   main,

@@ -1,21 +1,11 @@
 {
-  "extends": [
-    "config:base",
-    "group:allNonMajor",
-    ":automergeAll",
-    ":maintainLockFilesWeekly",
-    "schedule:weekly"
-  ],
+  "extends": ["config:base", "group:allNonMajor", ":automergeAll", ":maintainLockFilesWeekly", "schedule:weekly"],
   "rangeStrategy": "bump",
   "prHourlyLimit": 5,
   "packageRules": [
     {
       "matchPackagePatterns": ["^eslint"],
       "groupName": "eslint"
-    },
-    {
-      "matchPackagePatterns": ["^jest"],
-      "groupName": "jest"
     },
     {
       "matchPackagePatterns": ["^postcss"],

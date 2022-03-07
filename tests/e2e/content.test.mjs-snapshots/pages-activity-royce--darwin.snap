@@ -1,0 +1,252 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "article",
+        "attrs": {
+          "class": ""
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "figure",
+                "attrs": {
+                  "class": "media"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "picture",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "img",
+                        "attrs": {
+                          "class": "image"
+                        }
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "h1",
+                "attrs": {
+                  "class": "title"
+                },
+                "content": [
+                  "ROYCE"
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "meta"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "time-category"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "time",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "2013 08 13"
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "div",
+                        "attrs": {
+                          "class": "category"
+                        },
+                        "content": [
+                          "Experience"
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "body"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "Guitarist, producer, management, booking &amp; founding member of Belgian metalcore formation, ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "ROYCE"
+                        ]
+                      },
+                      ". A fresh and exciting combination of local metal alumni which are slowly but steadily unleashing their wrath of fast melodic metalcore upon you."
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "content": [
+                      "After Angelskin had called out an indefinite hiatus in 2012, guitarist Foxy &amp; bass player Matty set out for new musical chapter in their lives. After a mindful search, they teamed up with longtime friends Ben from Strike With Vengeance on drums, Tom of Darker Days Ahead on guitar and Tim on vocals. In the summer of 2013 they started out the new Belgian metal formation which they have named ROYCE."
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "content": [
+                      "After a well thought out one-year writing phase, they released their first self-recorded demo song „Words”. Main influences range from melodic punk like AFI and Alexisonfire via pounding metalcore, Parkway Drive &amp; Trivium to the more extreme forms of the metal genre like Gojira and Behemoth. But that’s only the tip of the iceberg. Their music tends to be an original take on the modern metalcore genre that exists today."
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "content": [
+                      "Combined with several other creative and professional abilities on which they apply a hardcore DIY working ethic they will get you to notice them, in one way or another. ROYCE is about doing the things you like with you’re friends and doing it with most the passion and conviction as possible."
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "content": [
+                      "Open your eyes, the change is right in front of you."
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "external"
+                    },
+                    "content": [
+                      "Instagram"
+                    ]
+                  },
+                  {
+                    "tag": "br"
+                  },
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "external"
+                    },
+                    "content": [
+                      "Facebook"
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]

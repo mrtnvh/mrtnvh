@@ -1,5 +1,5 @@
 export default {
-  '!(*snap)': 'prettier -w',
+  '!*.(snap|svg|jpg|png)': 'prettier -w',
   '*.{js,mjs}': 'eslint --fix',
   '*.{css,astro}': 'stylelint --fix',
 };

@@ -1,15 +1,15 @@
 ---
 import { orderBy, defaultsDeep } from 'lodash-es';
-import { format } from 'date-fns';
+import { parse, format } from 'date-fns';
 import BaseLayout from '../../layouts/Base.astro';
 import List from '../../components/List/List.astro';
+import Folio from '../../components/Page/Folio.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
 const allTalks = Astro.fetchContent('./*.md');
 const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
-const publishedTalks = allTalksOrdered.filter(
-  ({ datePublished }) => datePublished <= dateNow,
-);
+const unpublishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished > dateNow);
+const publishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished <= dateNow);
 const baseLayoutProps = defaultsDeep(
   {
     content: {
@@ -23,28 +23,81 @@ const baseLayoutProps = defaultsDeep(
 ---
 
 <BaseLayout {...baseLayoutProps}>
-  <div class="container">
-    <h1 class="title outline">Talks</h1>
+  <Folio title="Talks">
+    {unpublishedTalks.length > 0 && (
+      <div class="upcoming full-width">
+        <div class="container">
+          <h2 class="upcoming-title">Upcoming</h2>
+          <ul class="talks">
+            {unpublishedTalks.map((talk) => {
+              const date = parse(talk.datePublished, 'yyyyMMdd', new Date());
+              return (
+                <li class="talk">
+                  <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+                  {talk.redirect ? (
+                    <a href={talk.redirect} class="talk-title external" rel="noopener" target="_blank">
+                      {talk.title}
+                    </a>
+                  ) : (
+                    <span class="talk-title">{talk.title}</span>
+                  )}
+                  <span class="talk-subtitle">{talk.subtitle}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    )}
     <List items={publishedTalks} large />
-  </div>
+  </Folio>
 </BaseLayout>
 
 <style>
-  .container {
-    padding-top: var(--grid-gap-y);
-    padding-bottom: var(--grid-gap-y);
-  }
+  .upcoming {
+    background-color: var(--grey-200);
+    text-align: center;
+    margin-block-end: clamp(calc(var(--grid-gap-y) * 1), 9vw, calc(var(--grid-gap-y) * 2));
+    padding-block: var(--grid-gap-y);
 
-  .title {
-    font-size: var(--folio-title-size);
-    text-transform: uppercase;
-    line-height: 0.75em;
-    margin-bottom: var(--grid-gap-y);
-  }
-
-  .container >>> img {
-    @media (prefers-color-scheme: dark) {
-      filter: invert(1) hue-rotate(180deg);
+    .container {
+      @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        align-items: baseline;
+      }
     }
+
+    @media (min-width: 800px) {
+      text-align: left;
+    }
+  }
+
+  .upcoming-title {
+    font-size: var(--font-size-lg);
+    @media (min-width: 800px) {
+      margin-block-end: 0;
+    }
+  }
+
+  .talks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .talk {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: var(--grid-gap-x);
+    justify-content: space-between;
+
+    @media (min-width: 800px) {
+      justify-content: start;
+    }
+  }
+
+  .no-break {
+    white-space: nowrap;
   }
 </style>

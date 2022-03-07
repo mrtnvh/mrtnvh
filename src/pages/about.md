@@ -3,13 +3,12 @@ layout: ../layouts/About.astro
 title: About
 subtitle: A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium.
 description: ''
-thumbnail: 'https://res.cloudinary.com/mrtnvh/image/upload/v1570871092/mrtnvh.com/portrait.jpg'
+thumbnail: https://res.cloudinary.com/mrtnvh/image/upload/v1642454529/mrtnvh.com/mrtnvh-portrait-2021.jpg
 thumbnailAlt: A portrait photo of Maarten Van Hoof.
 type: about
 datePublished: 20190914
+tint: green
 ---
-
-<div class="column-lg-2 column-xxl-3 mb-ggy">
 
 I'm a proud father of Adriaan & Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime.
 
@@ -19,18 +18,9 @@ I have a [Professional Bachelor Multimedia and Communication Technology](https:/
 
 All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software.
 
-</div>
-
-<div class="column-lg-2">
-<div class="break-inside-avoid mb-ggy">
-
 ## Ambition
 
 I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community.
-
-</div>
-
-<div class="break-inside-avoid mb-ggy">
 
 ## Likes
 
@@ -43,12 +33,9 @@ I want to be part of a team with clear vision and resources to build an awesome 
 - Open, transparent but time-appropriate and concise communication
 - Dad jokes
 
-</div>
-</div>
-
 ## Skills
 
-<table class="mb-ggy">
+<table>
 	<tr>
 		<td>Web</td>
 		<td colspan="2">

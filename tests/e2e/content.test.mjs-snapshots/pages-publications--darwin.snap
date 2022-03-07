@@ -1,0 +1,184 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "div",
+        "attrs": {
+          "class": "container"
+        },
+        "content": [
+          " ",
+          {
+            "tag": "h1",
+            "attrs": {
+              "class": "title"
+            },
+            "content": [
+              "Publications"
+            ]
+          },
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "grid grid--large"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "article",
+                "attrs": {
+                  "class": ""
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "link reset"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "figure",
+                        "attrs": {
+                          "class": "media"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "picture",
+                            "attrs": {
+                              "class": ""
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "source",
+                                "attrs": {
+                                  "class": ""
+                                }
+                              },
+                              {
+                                "tag": "source",
+                                "attrs": {
+                                  "class": ""
+                                }
+                              },
+                              {
+                                "tag": "source",
+                                "attrs": {
+                                  "class": ""
+                                }
+                              },
+                              {
+                                "tag": "source",
+                                "attrs": {
+                                  "class": ""
+                                }
+                              },
+                              {
+                                "tag": "source",
+                                "attrs": {
+                                  "class": ""
+                                }
+                              },
+                              {
+                                "tag": "source",
+                                "attrs": {
+                                  "class": ""
+                                }
+                              },
+                              {
+                                "tag": "img",
+                                "attrs": {
+                                  "class": "image"
+                                }
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "div",
+                        "attrs": {
+                          "class": "content"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "h2",
+                            "attrs": {
+                              "class": "title"
+                            },
+                            "content": [
+                              " Open Source Manifesto "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "p",
+                            "attrs": {
+                              "class": "subtitle"
+                            },
+                            "content": [
+                              "Enabling ISAAC developers to give back to the OSS community"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "meta"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "time",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  "2020 09 07"
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "category"
+                                },
+                                "content": [
+                                  "Publications"
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]
