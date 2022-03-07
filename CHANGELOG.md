@@ -2,6 +2,71 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/vanhoofmaarten/mrtnvh/compare/v6.0.0...v7.0.0) (2022-03-07)
+
+### Bug Fixes
+
+- **deps:** update all non-major dependencies ([50949f3](https://github.com/vanhoofmaarten/mrtnvh/commit/50949f33536ba54fb741b6425cf37596fb5b02b7))
+- **deps:** update all non-major dependencies ([24b82b5](https://github.com/vanhoofmaarten/mrtnvh/commit/24b82b5e72f2ffba764bf5e602c4b542cff2eb6e))
+- **deps:** update all non-major dependencies ([6d24b0d](https://github.com/vanhoofmaarten/mrtnvh/commit/6d24b0d20550f4ff0a6d24b9bad0ae8f106b81dc))
+- **deps:** update all non-major dependencies ([d50cc26](https://github.com/vanhoofmaarten/mrtnvh/commit/d50cc269c1b5e266eae3791c97bd31de2de2e329))
+- **deps:** update all non-major dependencies ([fcbbfdf](https://github.com/vanhoofmaarten/mrtnvh/commit/fcbbfdf1b1dc19d5ee7de20d5b669edddd124877))
+- **deps:** update all non-major dependencies ([db63a47](https://github.com/vanhoofmaarten/mrtnvh/commit/db63a47fe3b9cc91d1962c8d3e5bbe075a07dd0c))
+- **deps:** update all non-major dependencies ([#193](https://github.com/vanhoofmaarten/mrtnvh/issues/193)) ([c3693ae](https://github.com/vanhoofmaarten/mrtnvh/commit/c3693aea567adc96ebaf0de396548051feddfe56))
+- **sitemap:** dont hash sitemap ([53a13f8](https://github.com/vanhoofmaarten/mrtnvh/commit/53a13f8b4cb696f7998965365c670baea7d3865a))
+- **Talks:** Use hidden attribute in favor of conditional rendering ([da9c58f](https://github.com/vanhoofmaarten/mrtnvh/commit/da9c58f067c0f191620a37adfe3079416f190f82))
+
+### Test
+
+- **stylelint:** stylelint astro files, fix errors ([3260804](https://github.com/vanhoofmaarten/mrtnvh/commit/3260804975f550ec4080d85f71d0b9fb3ca1b4c1))
+- **Talks:** update talk snapshots with conditional hidden attribute ([fd22fbe](https://github.com/vanhoofmaarten/mrtnvh/commit/fd22fbebc995d3c712230b698399878f1a1c982f))
+
+### Chores
+
+- **deps:** fast-xml-parser, use XMLParser in favor of parser ([772e209](https://github.com/vanhoofmaarten/mrtnvh/commit/772e2096d101801e86b37f83e2836d8a3e8d1490))
+- **deps:** lock file maintenance ([c5e9b81](https://github.com/vanhoofmaarten/mrtnvh/commit/c5e9b8132c107d224a382e60a8771ab4308ae5a7))
+- **deps:** lock file maintenance ([654281b](https://github.com/vanhoofmaarten/mrtnvh/commit/654281be5487e769eadf8404876bcc95cff4b124))
+- **deps:** lock file maintenance ([fdd95e7](https://github.com/vanhoofmaarten/mrtnvh/commit/fdd95e7336534940e16621c28788622f7164ba05))
+- **deps:** lock file maintenance ([103c164](https://github.com/vanhoofmaarten/mrtnvh/commit/103c164408cb7fc9d1964641c88428a719d50aa4))
+- **deps:** lock file maintenance ([2c4cb7c](https://github.com/vanhoofmaarten/mrtnvh/commit/2c4cb7c87f70bcec3d8fa2c746852598fcbc1dbe))
+- **deps:** lock file maintenance ([1a6a693](https://github.com/vanhoofmaarten/mrtnvh/commit/1a6a69369474ed3b51bc25c5ae9f9931bdaa8bf7))
+- **deps:** lock file maintenance ([99f448f](https://github.com/vanhoofmaarten/mrtnvh/commit/99f448f9ae2160d60b41bd0101f99461b227a042))
+- **deps:** lock file maintenance ([16ce0b9](https://github.com/vanhoofmaarten/mrtnvh/commit/16ce0b9bd066056f248fd2d4d0219ad0b3deb8bc))
+- **deps:** lock file maintenance ([1eacf54](https://github.com/vanhoofmaarten/mrtnvh/commit/1eacf54554da85044025c4838e6b85c82aeff188))
+- **deps:** stylelint v14 ([#187](https://github.com/vanhoofmaarten/mrtnvh/issues/187)) ([54bb72b](https://github.com/vanhoofmaarten/mrtnvh/commit/54bb72be3e8fffdaf176cff7068958dfce0731a9))
+- **deps:** update actions/checkout action to v3 ([08e6bec](https://github.com/vanhoofmaarten/mrtnvh/commit/08e6bec7be80bb63faeb3ab5b0953658b366370e))
+- **deps:** update actions/download-artifact action to v3 ([d9274d3](https://github.com/vanhoofmaarten/mrtnvh/commit/d9274d3fd6f41906ef9844ef7bb7e81a48a361a3))
+- **deps:** update actions/setup-node action to v3 ([221a7a7](https://github.com/vanhoofmaarten/mrtnvh/commit/221a7a7df492a814d714a7898f5c94ebdef2ae4e))
+- **deps:** update actions/upload-artifact action to v3 ([0f55a96](https://github.com/vanhoofmaarten/mrtnvh/commit/0f55a96adda7cb6d1cccca49809a0ca8569ebc04))
+- **deps:** update all non-major dependencies ([d971a59](https://github.com/vanhoofmaarten/mrtnvh/commit/d971a5926a8c1fae0f2082686f33606a0470c68b))
+- **deps:** update all non-major dependencies ([63e113a](https://github.com/vanhoofmaarten/mrtnvh/commit/63e113aee7e0c7d09a1fe1795abd81f4a61375b0))
+- **deps:** update dependency eslint to ^8.8.0 ([258173d](https://github.com/vanhoofmaarten/mrtnvh/commit/258173d28f4be87ed6c8e6d26980de7187f98810))
+- **deps:** update dependency eslint to ^8.9.0 ([9e58e87](https://github.com/vanhoofmaarten/mrtnvh/commit/9e58e87c2dadcfcc6344337bd65bd8b985709725))
+- **deps:** update dependency eslint-plugin-jest to ^26.1.0 ([39562e2](https://github.com/vanhoofmaarten/mrtnvh/commit/39562e20038904928a784480745d047a7d9f90d4))
+- **deps:** update dependency eslint-plugin-jest to v26 ([c2f0695](https://github.com/vanhoofmaarten/mrtnvh/commit/c2f0695d75438742ea9236d57dfcdc5dbf488d59))
+- **deps:** update dependency fast-xml-parser to v4 ([99e2732](https://github.com/vanhoofmaarten/mrtnvh/commit/99e2732b8ef19b262a9636b1d94f298088d825c5))
+- **deps:** update dependency globby to v13 ([9c86372](https://github.com/vanhoofmaarten/mrtnvh/commit/9c8637207401cc195d1a021bfdb632311d2a1ef5))
+- **deps:** update dependency htmlnano to v2 ([e577df8](https://github.com/vanhoofmaarten/mrtnvh/commit/e577df8c2ebefa5527f423ae984ea96730d8d371))
+- **deps:** update dependency postcss to ^8.4.6 ([f51747e](https://github.com/vanhoofmaarten/mrtnvh/commit/f51747ef3fa1fac36b369a60536f4a02bae56dbc))
+- **deps:** update dependency postcss to ^8.4.7 ([6c3fbf3](https://github.com/vanhoofmaarten/mrtnvh/commit/6c3fbf34a1bfcc86cde31739420312819245620a))
+- **deps:** update dependency stylelint to ^14.3.0 ([1e0a43f](https://github.com/vanhoofmaarten/mrtnvh/commit/1e0a43fc6e23bd052d804c0ac1df1f643719c1e4))
+- **deps:** update dependency stylelint to ^14.5.0 ([902c67e](https://github.com/vanhoofmaarten/mrtnvh/commit/902c67e065664a7bd3c489dfef864f4367099563))
+- **deps:** update dependency stylelint to ^14.5.1 ([03293b4](https://github.com/vanhoofmaarten/mrtnvh/commit/03293b4eed2acf1295b1cba13898ba317e2963a9))
+- **deps:** update dependency stylelint to ^14.5.3 ([57090ba](https://github.com/vanhoofmaarten/mrtnvh/commit/57090ba942a30c670affa9562f1bca3e90481a88))
+- **deps:** update eslint ([44858fe](https://github.com/vanhoofmaarten/mrtnvh/commit/44858fed712d2bdb1f57e8375408658cfd0c729c))
+- **deps:** update eslint ([d7f36da](https://github.com/vanhoofmaarten/mrtnvh/commit/d7f36da69e3944f42f7acc31aa456634f04b657d))
+- **deps:** update eslint ([6027cfc](https://github.com/vanhoofmaarten/mrtnvh/commit/6027cfcdcc711ecf4207bb3681fd0226ebc1037b))
+- **deps:** update eslint ([1e39eea](https://github.com/vanhoofmaarten/mrtnvh/commit/1e39eea6f5df9cf493c1f6645dd083b71c61314c))
+- **deps:** update eslint ([#189](https://github.com/vanhoofmaarten/mrtnvh/issues/189)) ([81c7f6c](https://github.com/vanhoofmaarten/mrtnvh/commit/81c7f6cfeacce1757a723fb6008e4827ca3401d1))
+- **deps:** update jest ([fb4f483](https://github.com/vanhoofmaarten/mrtnvh/commit/fb4f48385b5653e9855b8c391b32a6ee57737202))
+- **deps:** update jest ([0e50b27](https://github.com/vanhoofmaarten/mrtnvh/commit/0e50b27ed934c6709c72f9d36058a5add42e4cc4))
+- **deps:** update jest ([2d51c2d](https://github.com/vanhoofmaarten/mrtnvh/commit/2d51c2da52f439934fa4d01b2343efb0b80cd0d9))
+- **deps:** update jest to ^27.5.1 ([3d068a4](https://github.com/vanhoofmaarten/mrtnvh/commit/3d068a47a003377e7c92ed96e4c5113602c32aba))
+- **deps:** update postcss ([#188](https://github.com/vanhoofmaarten/mrtnvh/issues/188)) ([f6c0bef](https://github.com/vanhoofmaarten/mrtnvh/commit/f6c0bef029be19ccaeee2c26355bfcb26ae761c0))
+- **editorconfig:** update to v6 prettierconfig ([794821e](https://github.com/vanhoofmaarten/mrtnvh/commit/794821ea184ef7936ced8f5d686efe9d63f19eba))
+- **lint-staged:** fix snap ignore ([68f3448](https://github.com/vanhoofmaarten/mrtnvh/commit/68f3448e4ad8f2d8709e6118ecbed5161bba5ea5))
+- **lint-staged:** ignore jest snapshot ([ea7e02d](https://github.com/vanhoofmaarten/mrtnvh/commit/ea7e02d8abc9d7270fdb7eac8fc349e5f14bc255))
+
 ## [6.0.0](https://github.com/vanhoofmaarten/mrtnvh/compare/v5.1.0...v6.0.0) (2021-12-28)
 
 ### Bug Fixes
