@@ -18,6 +18,8 @@ const FILES_TO_EXCLUDE = [
   'workbox',
 ];
 
+const FILES_TO_INCLUDE = ['sw.js'];
+
 const createHashFromFilePath = (filePath, { hashLength, hashAlgorithm } = {}) =>
   new Promise((resolve) => {
     const hash = crypto.createHash(hashAlgorithm || 'md5');
@@ -29,7 +31,12 @@ const createHashFromFilePath = (filePath, { hashLength, hashAlgorithm } = {}) =>
 
 const getFilePathsToHash = async () => {
   const filePaths = await globby(`${BUILD_DIRECTORY}/**/*.*`);
-  const filteredFilePaths = filePaths.filter((path) => !FILES_TO_EXCLUDE.some((exclusion) => path.includes(exclusion)));
+  const filteredFilePaths = filePaths.filter((path) => {
+    if (FILES_TO_INCLUDE.some((inclusion) => path.includes(inclusion))) {
+      return true;
+    }
+    return !FILES_TO_EXCLUDE.some((exclusion) => path.includes(exclusion));
+  });
   const hashedAndOriginalFilePaths = await Promise.all(
     filteredFilePaths.map(async (filteredPath) => {
       const hash = await createHashFromFilePath(filteredPath, {
@@ -44,7 +51,7 @@ const getFilePathsToHash = async () => {
       };
     }),
   );
-
+  console.log(hashedAndOriginalFilePaths);
   return hashedAndOriginalFilePaths;
 };
 
