@@ -19,7 +19,7 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -35,7 +35,7 @@ jobs:
           CI: true
 
       - name: Archive build output
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: build
           path: dist
@@ -52,7 +52,7 @@ jobs:
         test-type: ['lint', 'style', 'e2e']
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -66,7 +66,7 @@ jobs:
         run: npx playwright install-deps chromium
 
       - name: Download build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: build
           path: dist
@@ -75,7 +75,7 @@ jobs:
         run: 'npm run test:${{ matrix.test-type }}'
 
       - name: Archive snapshot artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         continue-on-error: true
         if: ${{ success() || failure() }}
         with:
@@ -92,10 +92,10 @@ jobs:
       deployment: ${{ steps.deployment-preview.outputs.preview-url || steps.deployment-staging.outputs.preview-url || steps.deployment-prod.outputs.preview-url }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Download build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: build
           path: dist
@@ -123,7 +123,7 @@ jobs:
         test-type: ['performance', 'visual']
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -137,7 +137,7 @@ jobs:
         run: npx playwright install-deps chromium
 
       - name: Download build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: build
           path: dist
@@ -145,7 +145,7 @@ jobs:
       - name: Run ${{ matrix.test-type }}
         run: 'npm run test:${{ matrix.test-type }}'
       - name: Archive performance reports
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         continue-on-error: true
         if: ${{ success() || failure() }}
         with:
@@ -169,10 +169,10 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Download build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: build
           path: dist

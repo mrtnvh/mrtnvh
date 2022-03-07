@@ -30,8 +30,8 @@
     "@swup/head-plugin": "^1.2.0",
     "@swup/preload-plugin": "^1.0.3",
     "@swup/scroll-plugin": "^1.1.0",
-    "astro": "^0.23.3",
     "clsx": "^1.1.1",
+    "astro": "^0.23.7",
     "date-fns": "^2.28.0",
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
@@ -51,8 +51,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "fast-xml-parser": "^4.0.3",
-    "favicons": "^7.0.0-beta.3",
+    "fast-xml-parser": "^4.0.5",
+    "favicons": "^6.2.2",
     "fs-extra": "^10.0.1",
     "get-port": "^6.1.2",
     "globby": "^13.1.1",
@@ -85,6 +85,6 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-order": "^5.0.0",
     "urljoin": "^0.1.5",
-    "workbox-build": "^6.5.0"
+    "workbox-build": "^6.5.1"
   }
 }
