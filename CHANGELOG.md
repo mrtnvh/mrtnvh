@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [7.0.1](https://github.com/vanhoofmaarten/mrtnvh/compare/v7.0.0...v7.0.1) (2022-03-08)
+
+### Bug Fixes
+
+- **hash:** hash sw.js ([1637b07](https://github.com/vanhoofmaarten/mrtnvh/commit/1637b0737bb627f7e9f876ac981c4307df76eadd))
+- **workbox:** cachestorage prefix based on version number ([261e20d](https://github.com/vanhoofmaarten/mrtnvh/commit/261e20db3ab88a060e768d5cfbad1c3b08de4b05))
+
 ## [7.0.0](https://github.com/vanhoofmaarten/mrtnvh/compare/v6.0.0...v7.0.0) (2022-03-07)
 
 ### Bug Fixes
