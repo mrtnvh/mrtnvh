@@ -1,6 +1,4 @@
 /* eslint-disable import/extensions */
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
 import { test, expect } from '@playwright/test';
 import { preview } from 'vite';
 import getPort from 'get-port';
@@ -11,10 +9,7 @@ import { defaultsDeep } from 'lodash-es';
 import lighthouseMobileConfig from 'lighthouse/lighthouse-core/config/lr-mobile-config.js';
 import lighthouseDesktopConfig from 'lighthouse/lighthouse-core/config/lr-desktop-config.js';
 import { getPages } from '../setup/config.mjs';
-import { getUrl, customSnapshotIdentifier } from '../setup/utils.mjs';
-
-const getFilename = () => fileURLToPath(import.meta.url);
-const getDirname = () => dirname(getFilename());
+import { getUrl, customSnapshotIdentifier, getDirname } from '../setup/utils.mjs';
 
 const threshold = 0.95;
 
@@ -74,7 +69,7 @@ test.describe('Lighthouse', async () => {
               );
 
               const reportFileName = customSnapshotIdentifier(path, environmentName, 'html');
-              await fs.outputFile(`${getDirname()}/__reports__/${reportFileName}`, report);
+              await fs.outputFile(`${getDirname(import.meta.url)}/__reports__/${reportFileName}`, report);
               const scores = Object.values(lhr.categories).map(({ title, score }) => ({
                 title,
                 score,

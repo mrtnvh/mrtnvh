@@ -51,7 +51,6 @@ const getFilePathsToHash = async () => {
       };
     }),
   );
-  console.log(hashedAndOriginalFilePaths);
   return hashedAndOriginalFilePaths;
 };
 

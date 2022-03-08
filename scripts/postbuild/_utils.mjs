@@ -1,7 +1,12 @@
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { globby } from 'globby';
 import fs from 'fs-extra';
 
 export const BUILD_DIRECTORY = 'dist';
+
+export const getFilename = fileURLToPath;
+export const getDirname = (path) => dirname(getFilename(path));
 
 export const replaceFilesContent = async (glob, callback) => {
   const out = `${BUILD_DIRECTORY}/${glob}`;
