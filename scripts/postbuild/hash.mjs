@@ -18,7 +18,7 @@ const FILES_TO_EXCLUDE = [
   'workbox',
 ];
 
-const FILES_TO_INCLUDE = ['sw.js'];
+const FILES_TO_INCLUDE = [];
 
 const createHashFromFilePath = (filePath, { hashLength, hashAlgorithm } = {}) =>
   new Promise((resolve) => {
