@@ -58,13 +58,7 @@ const { content, preloads } = Astro.props;
     ) }
     </div>
     <script type="module" async src={Astro.resolve('../js/main.js')}></script>
-    {isMaster && (
-      <script>
-        const statsScript = document.createElement( 'script' ); statsScript.setAttribute( 'src', '/js/stats' );
-        statsScript.setAttribute( 'defer', true ); statsScript.setAttribute( 'data-domain', 'mrtnvh.com' );
-        document.body.appendChild( statsScript );
-      </script>
-    )}
+    {isProd && <script defer data-domain="mrtnvh.com" data-api="/api/event" src="/js/stats"></script>}
   </body>
 </html>
 
