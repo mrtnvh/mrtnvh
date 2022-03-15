@@ -4,7 +4,7 @@ import sitemap from './sitemap.mjs';
 import favicons from './favicons.mjs';
 import hash from './hash.mjs';
 import workbox from './workbox.mjs';
-import html from './html.mjs';
+// import html from './html.mjs';
 
 (async () => {
   console.log('[SITEMAP]', 'Start');
@@ -28,7 +28,7 @@ import html from './html.mjs';
   console.log('[WORKBOX]', 'Completed');
 
   console.log('[HTML]', 'Start');
-  await html();
+  // await html();
   console.log('[HTML]', 'Completed');
 
   console.log('[HASH]', 'Start');
