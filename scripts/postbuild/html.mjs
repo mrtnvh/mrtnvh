@@ -3,7 +3,7 @@ import htmlnano from 'htmlnano';
 import { replaceFilesContent } from './_utils.mjs';
 
 export default async () =>
-  replaceFilesContent('index.html', async (content) => {
+  replaceFilesContent('**/*.html', async (content) => {
     const result = await posthtml()
       .use(
         htmlnano({
