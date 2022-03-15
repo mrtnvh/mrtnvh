@@ -26,7 +26,7 @@ test.describe.parallel('Content DOM snapshots', async () => {
       test(path, async ({ request }) => {
         const url = getUrl(path, port);
         const html = await (await request.get(url)).text();
-        const [content] = html.match(/<main(.*)main>/gm);
+        const [content] = html.match(/<main(.*)main>/gms);
         const { tree: sanitizedContent } = await posthtml()
           .use(
             removeClass('astro'),

@@ -5,35 +5,35 @@
       "class": "transition-fade"
     },
     "content": [
-      " ",
+      "\n        ",
       {
         "tag": "article",
         "attrs": {
           "class": ""
         },
         "content": [
-          " ",
+          "\n    ",
           {
             "tag": "div",
             "attrs": {
               "class": "container"
             },
             "content": [
-              " ",
+              "\n      ",
               {
                 "tag": "figure",
                 "attrs": {
                   "class": "media"
                 },
                 "content": [
-                  " ",
+                  "\n        \n",
                   {
                     "tag": "picture",
                     "attrs": {
                       "class": ""
                     },
                     "content": [
-                      " ",
+                      "\n  ",
                       {
                         "tag": "source",
                         "attrs": {
@@ -112,13 +112,13 @@
                           "class": "image"
                         }
                       },
-                      " "
+                      "\n"
                     ]
                   },
-                  " "
+                  "\n\n\n\n      "
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "h1",
                 "attrs": {
@@ -128,21 +128,21 @@
                   "ROYCE"
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "meta"
                 },
                 "content": [
-                  " ",
+                  "\n        ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "time-category"
                     },
                     "content": [
-                      " ",
+                      "\n          ",
                       {
                         "tag": "time",
                         "attrs": {
@@ -152,7 +152,7 @@
                           "2013 08 13"
                         ]
                       },
-                      " ",
+                      "\n          ",
                       {
                         "tag": "div",
                         "attrs": {
@@ -162,20 +162,20 @@
                           "Experience"
                         ]
                       },
-                      " "
+                      "\n        "
                     ]
                   },
-                  " "
+                  "\n        \n      "
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "body"
                 },
                 "content": [
-                  " ",
+                  "\n        ",
                   {
                     "tag": "p",
                     "content": [
@@ -237,16 +237,16 @@
                       "Facebook"
                     ]
                   },
-                  " "
+                  "\n        \n      "
                 ]
               },
-              " "
+              "\n    "
             ]
           },
-          " "
+          "\n  "
         ]
       },
-      " "
+      "\n      "
     ]
   }
 ]

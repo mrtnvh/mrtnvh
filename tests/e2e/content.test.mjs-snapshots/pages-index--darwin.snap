@@ -258,7 +258,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -401,7 +401,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -544,7 +544,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -687,7 +687,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -830,7 +830,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -973,7 +973,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -1116,7 +1116,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -1259,7 +1259,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -1402,7 +1402,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -1545,7 +1545,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -1688,7 +1688,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",
@@ -1831,7 +1831,7 @@
                       {
                         "tag": "a",
                         "attrs": {
-                          "class": "link reset"
+                          "class": "reset link"
                         },
                         "content": [
                           " ",

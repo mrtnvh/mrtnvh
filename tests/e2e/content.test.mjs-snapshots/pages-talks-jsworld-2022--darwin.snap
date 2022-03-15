@@ -5,35 +5,35 @@
       "class": "transition-fade"
     },
     "content": [
-      " ",
+      "\n        ",
       {
         "tag": "article",
         "attrs": {
           "class": ""
         },
         "content": [
-          " ",
+          "\n    ",
           {
             "tag": "div",
             "attrs": {
               "class": "container"
             },
             "content": [
-              " ",
+              "\n      ",
               {
                 "tag": "figure",
                 "attrs": {
                   "class": "media"
                 },
                 "content": [
-                  " ",
+                  "\n        \n",
                   {
                     "tag": "picture",
                     "attrs": {
                       "class": ""
                     },
                     "content": [
-                      " ",
+                      "\n  ",
                       {
                         "tag": "source",
                         "attrs": {
@@ -112,13 +112,13 @@
                           "class": "image"
                         }
                       },
-                      " "
+                      "\n"
                     ]
                   },
-                  " "
+                  "\n\n\n\n      "
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "h1",
                 "attrs": {
@@ -128,21 +128,21 @@
                   "JSWORLD Conference 2022"
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "meta"
                 },
                 "content": [
-                  " ",
+                  "\n        ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "time-category"
                     },
                     "content": [
-                      " ",
+                      "\n          ",
                       {
                         "tag": "time",
                         "attrs": {
@@ -152,7 +152,7 @@
                           "2022 02 10"
                         ]
                       },
-                      " ",
+                      "\n          ",
                       {
                         "tag": "div",
                         "attrs": {
@@ -162,24 +162,24 @@
                           "Talks"
                         ]
                       },
-                      " "
+                      "\n        "
                     ]
                   },
-                  " ",
+                  "\n        ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "links"
                     },
                     "content": [
-                      " ",
+                      "\n            ",
                       {
                         "tag": "a",
                         "attrs": {
                           "class": "external"
                         },
                         "content": [
-                          " Slides "
+                          "\n                Slides\n              "
                         ]
                       },
                       {
@@ -188,30 +188,30 @@
                           "class": "external"
                         },
                         "content": [
-                          " Video "
+                          "\n                Video\n              "
                         ]
                       },
-                      " "
+                      "\n          "
                     ]
                   },
-                  " "
+                  "\n      "
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "body"
                 },
                 "content": [
-                  " ",
+                  "\n        ",
                   {
                     "tag": "p",
                     "content": [
                       "Why are Container Queries such a helpful new feature for component-based front-end architectures? At JSWORLD Conference 2022, I talked about what Container Queries are, how they improve interoperable styling and how you can experiment with 'm today."
                     ]
                   },
-                  " ",
+                  "\n        ",
                   {
                     "tag": "hr",
                     "attrs": {
@@ -221,10 +221,10 @@
                   {
                     "tag": "div",
                     "attrs": {
-                      "class": "clear-inner-spacing credits"
+                      "class": "credits clear-inner-spacing"
                     },
                     "content": [
-                      " ",
+                      "\n          \n",
                       {
                         "tag": "p",
                         "attrs": {
@@ -253,19 +253,19 @@
                           }
                         ]
                       },
-                      " "
+                      "\n\n        "
                     ]
                   },
-                  " "
+                  "\n      "
                 ]
               },
-              " "
+              "\n    "
             ]
           },
-          " "
+          "\n  "
         ]
       },
-      " "
+      "\n      "
     ]
   }
 ]

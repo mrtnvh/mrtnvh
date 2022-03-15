@@ -5,35 +5,35 @@
       "class": "transition-fade"
     },
     "content": [
-      " ",
+      "\n        ",
       {
         "tag": "article",
         "attrs": {
           "class": "container"
         },
         "content": [
-          " ",
+          "\n    ",
           {
             "tag": "figure",
             "attrs": {
               "class": "media"
             },
             "content": [
-              " ",
+              "\n      ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "sticky"
                 },
                 "content": [
-                  " ",
+                  "\n        \n",
                   {
                     "tag": "picture",
                     "attrs": {
                       "class": ""
                     },
                     "content": [
-                      " ",
+                      "\n  ",
                       {
                         "tag": "source",
                         "attrs": {
@@ -76,33 +76,33 @@
                           "class": "image"
                         }
                       },
-                      " "
+                      "\n"
                     ]
                   },
-                  " "
+                  "\n\n\n\n      "
                 ]
               },
-              " "
+              "\n    "
             ]
           },
-          " ",
+          "\n    ",
           {
             "tag": "h1",
             "attrs": {
               "class": "title"
             },
             "content": [
-              " About "
+              "\n      About\n    "
             ]
           },
-          " ",
+          "\n    ",
           {
             "tag": "section",
             "attrs": {
               "class": "body"
             },
             "content": [
-              " ",
+              "\n      ",
               {
                 "tag": "p",
                 "attrs": {
@@ -120,7 +120,7 @@
                   }
                 ]
               },
-              " ",
+              "\n      ",
               {
                 "tag": "p",
                 "content": [
@@ -202,63 +202,63 @@
               {
                 "tag": "ul",
                 "content": [
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Isomorphic Web Applications"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Offline first"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Component-based development"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Automating tools"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Well-documented &amp; tested projects"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Well-grounded arguments"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Open, transparent but time-appropriate and concise communication"
                     ]
                   },
-                  " ",
+                  "\n",
                   {
                     "tag": "li",
                     "content": [
                       "Dad jokes"
                     ]
                   },
-                  " "
+                  "\n"
                 ]
               },
               {
@@ -273,57 +273,57 @@
               {
                 "tag": "table",
                 "content": [
-                  " ",
+                  "\n\t",
                   {
                     "tag": "tbody",
                     "content": [
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Web"
                             ]
                           },
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " Offline &amp; mobile first ",
+                              "\n\t\t\tOffline &amp; mobile first ",
                               {
                                 "tag": "br"
                               },
-                              " a11y",
+                              "\n\t\t\ta11y",
                               {
                                 "tag": "br"
                               },
-                              " Progressive Web Apps ",
+                              "\n\t\t\tProgressive Web Apps ",
                               {
                                 "tag": "br"
                               },
-                              " OpenAPI "
+                              "\n\t\t\tOpenAPI\n\t\t"
                             ]
                           },
-                          " "
+                          "\n\t"
                         ]
                       },
-                      " ",
+                      "\n\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "HTML"
                             ]
                           },
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "attrs": {
@@ -333,126 +333,126 @@
                               "Semantics"
                             ]
                           },
-                          " "
+                          "\n\t"
                         ]
                       },
-                      " ",
+                      "\n\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "JavaScript"
                             ]
                           },
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " ",
+                              "\n\t\t\t",
                               {
                                 "tag": "div",
                                 "attrs": {
                                   "class": "column-lg-2"
                                 },
                                 "content": [
-                                  " Node ",
+                                  "\n\t\t\t\tNode ",
                                   {
                                     "tag": "br"
                                   },
-                                  " ES20... ",
+                                  "\n\t\t\t\tES20... ",
                                   {
                                     "tag": "br"
                                   },
-                                  " Typescript ",
+                                  "\n\t\t\t\tTypescript ",
                                   {
                                     "tag": "br"
                                   },
-                                  " React ",
+                                  "\n\t\t\t\tReact ",
                                   {
                                     "tag": "br"
                                   },
-                                  " Vue ",
+                                  "\n\t\t\t\tVue ",
                                   {
                                     "tag": "br"
                                   },
-                                  " Web- &amp; service workers ",
+                                  "\n\t\t\t\tWeb- &amp; service workers ",
                                   {
                                     "tag": "br"
                                   },
-                                  " Testing (Unit to e2e) ",
+                                  "\n\t\t\t\tTesting (Unit to e2e) ",
                                   {
                                     "tag": "br"
                                   },
-                                  " Isomorphic web applications "
+                                  "\n\t\t\t\tIsomorphic web applications\n\t\t\t"
                                 ]
                               },
-                              " "
+                              "\n\t\t"
                             ]
                           },
-                          " "
+                          "\n\t"
                         ]
                       },
-                      " ",
+                      "\n\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "CSS"
                             ]
                           },
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " ",
+                              "\n\t\t\t",
                               {
                                 "tag": "div",
                                 "attrs": {
                                   "class": "column-lg-2"
                                 },
                                 "content": [
-                                  " Grid ",
+                                  "\n\t\t\t\tGrid ",
                                   {
                                     "tag": "br"
                                   },
-                                  " Custom properties ",
+                                  "\n\t\t\t\tCustom properties ",
                                   {
                                     "tag": "br"
                                   },
-                                  " CSS-in-JS ",
+                                  "\n\t\t\t\tCSS-in-JS ",
                                   {
                                     "tag": "br"
                                   },
-                                  " SCSS ",
+                                  "\n\t\t\t\tSCSS ",
                                   {
                                     "tag": "br"
                                   },
-                                  " PostCSS "
+                                  "\n\t\t\t\tPostCSS\n\t\t\t"
                                 ]
                               },
-                              " "
+                              "\n\t\t"
                             ]
                           },
-                          " "
+                          "\n\t"
                         ]
                       },
-                      " ",
+                      "\n\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "attrs": {
@@ -462,156 +462,156 @@
                               "Experience with"
                             ]
                           },
-                          " ",
+                          "\n\t\t",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " ",
+                              "\n\t\t\t",
                               {
                                 "tag": "ul",
                                 "attrs": {
                                   "class": "column-lg-2 list-unstyled"
                                 },
                                 "content": [
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Laravel"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Git"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Docker"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "NPM"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "ESLint"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Stylelint"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Prettier"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "EditorConfig"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Webpack"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Grunt"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Gulp"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "EF Core"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Redux"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Material-UI"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "Bootstrap"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "SQL"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "IIS"
                                     ]
                                   },
-                                  " ",
+                                  "\n\t\t\t\t",
                                   {
                                     "tag": "li",
                                     "content": [
                                       "..."
                                     ]
                                   },
-                                  " "
+                                  "\n\t\t\t"
                                 ]
                               },
-                              " "
+                              "\n\t\t"
                             ]
                           },
-                          " "
+                          "\n\t"
                         ]
                       },
-                      " "
+                      "\n"
                     ]
                   }
                 ]
@@ -628,153 +628,153 @@
               {
                 "tag": "table",
                 "content": [
-                  " ",
+                  "\n\t",
                   {
                     "tag": "thead",
                     "content": [
-                      " ",
+                      "\n\t\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "th",
                             "content": [
                               "Language"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "th",
                             "content": [
                               "Written"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "th",
                             "content": [
                               "Spoken"
                             ]
                           },
-                          " "
+                          "\n\t\t"
                         ]
                       },
-                      " "
+                      "\n\t"
                     ]
                   },
-                  " ",
+                  "\n\t",
                   {
                     "tag": "tbody",
                     "content": [
-                      " ",
+                      "\n\t\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
-                              " Dutch ",
+                              "\n\t\t\t\tDutch  ",
                               {
                                 "tag": "br"
                               },
-                              " ",
+                              "\n\t\t\t\t",
                               {
                                 "tag": "em",
                                 "content": [
                                   "Native tongue"
                                 ]
                               },
-                              " "
+                              "\n\t\t\t"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Very good"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Very good"
                             ]
                           },
-                          " "
+                          "\n\t\t"
                         ]
                       },
-                      " ",
+                      "\n\t\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "English"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Good"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Good"
                             ]
                           },
-                          " "
+                          "\n\t\t"
                         ]
                       },
-                      " ",
+                      "\n\t\t",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "French"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Basic"
                             ]
                           },
-                          " ",
+                          "\n\t\t\t",
                           {
                             "tag": "td",
                             "content": [
                               "Basic"
                             ]
                           },
-                          " "
+                          "\n\t\t"
                         ]
                       },
-                      " "
+                      "\n\t"
                     ]
                   },
-                  " "
+                  "\n"
                 ]
               },
-              " "
+              "\n    "
             ]
           },
-          " "
+          "\n  "
         ]
       },
-      " "
+      "\n      "
     ]
   }
 ]
