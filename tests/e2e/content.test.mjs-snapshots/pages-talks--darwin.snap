@@ -5,14 +5,14 @@
       "class": "transition-fade"
     },
     "content": [
-      "\n        \n",
+      " ",
       {
         "tag": "div",
         "attrs": {
           "class": "container"
         },
         "content": [
-          "\n  ",
+          " ",
           {
             "tag": "h1",
             "attrs": {
@@ -22,42 +22,42 @@
               "Talks"
             ]
           },
-          "\n  \n",
+          " ",
           {
             "tag": "div",
             "attrs": {
               "class": "grid grid--large"
             },
             "content": [
-              "\n  \n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -100,30 +100,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        JSWORLD Conference 2022\n      "
+                              " JSWORLD Conference 2022 "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -133,14 +133,14 @@
                               "Why are Container Queries such a helpful new feature for component-based front-end architectures? At JSWORLD Conference 2022, I talked about what Container Queries are, how they improve interoperable styling and how you can experiment with 'm today."
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -150,7 +150,7 @@
                                   "2022 02 10"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -160,47 +160,47 @@
                                   "Talks"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -243,30 +243,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        API Specification Conference 2021\n      "
+                              " API Specification Conference 2021 "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -276,14 +276,14 @@
                               "In the talk \"Frontend ♥︎ OpenAPI\", I show how the OpenAPI specification can so much speed up your Front End workflow."
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -293,7 +293,7 @@
                                   "2021 09 29"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -303,47 +303,47 @@
                                   "Talks"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -386,30 +386,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        CodeMotion DevCast\n      "
+                              " CodeMotion DevCast "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -419,14 +419,14 @@
                               "Container Queries are the next step towards a truly modular CSS, in the June 2021 episode of Codemotion's DevCast, I talked about why."
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -436,7 +436,7 @@
                                   "2021 06 15"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -446,47 +446,47 @@
                                   "Talks"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -529,30 +529,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        Tech Fair Live 2021\n      "
+                              " Tech Fair Live 2021 "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -562,14 +562,14 @@
                               "Examples of how the OpenAPI specification can improve your Front End workflow."
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -579,7 +579,7 @@
                                   "2021 04 30"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -589,47 +589,47 @@
                                   "Talks"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -672,30 +672,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        Tech Tuesdays May 2020\n      "
+                              " Tech Tuesdays May 2020 "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -705,14 +705,14 @@
                               "On the online meetup Tech Tuesdays, I shared my views on how the OpenAPI specification can help your Front-end workflow. (Talk in Dutch)"
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -722,7 +722,7 @@
                                   "2020 05 14"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -732,47 +732,47 @@
                                   "Talks"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -815,30 +815,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        Ministry of Testing EHV November '19\n      "
+                              " Ministry of Testing EHV November '19 "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -848,14 +848,14 @@
                               "At the inaugural Ministry of Testing meetup at Waes Eindhoven NL, I had the oppurtunity to show how OpenAPI can harden your front-end testing capabilities."
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -865,7 +865,7 @@
                                   "2019 11 11"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -875,25 +875,25 @@
                                   "Talks"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n"
+              " "
             ]
           },
-          "\n\n\n\n"
+          " "
         ]
       },
-      "\n\n\n\n      "
+      " "
     ]
   }
 ]

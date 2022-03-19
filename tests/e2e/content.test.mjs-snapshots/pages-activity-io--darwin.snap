@@ -5,35 +5,35 @@
       "class": "transition-fade"
     },
     "content": [
-      "\n        ",
+      " ",
       {
         "tag": "article",
         "attrs": {
           "class": ""
         },
         "content": [
-          "\n    ",
+          " ",
           {
             "tag": "div",
             "attrs": {
               "class": "container"
             },
             "content": [
-              "\n      ",
+              " ",
               {
                 "tag": "figure",
                 "attrs": {
                   "class": "media"
                 },
                 "content": [
-                  "\n        \n",
+                  " ",
                   {
                     "tag": "picture",
                     "attrs": {
                       "class": ""
                     },
                     "content": [
-                      "\n  ",
+                      " ",
                       {
                         "tag": "source",
                         "attrs": {
@@ -112,13 +112,13 @@
                           "class": "image"
                         }
                       },
-                      "\n"
+                      " "
                     ]
                   },
-                  "\n\n\n\n      "
+                  " "
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "h1",
                 "attrs": {
@@ -128,21 +128,21 @@
                   "iO"
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "meta"
                 },
                 "content": [
-                  "\n        ",
+                  " ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "time-category"
                     },
                     "content": [
-                      "\n          ",
+                      " ",
                       {
                         "tag": "time",
                         "attrs": {
@@ -152,7 +152,7 @@
                           "2021 09 01"
                         ]
                       },
-                      "\n          ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
@@ -162,20 +162,20 @@
                           "Experience"
                         ]
                       },
-                      "\n        "
+                      " "
                     ]
                   },
-                  "\n        \n      "
+                  " "
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "body"
                 },
                 "content": [
-                  "\n        ",
+                  " ",
                   {
                     "tag": "p",
                     "content": [
@@ -232,24 +232,24 @@
                   {
                     "tag": "table",
                     "content": [
-                      "\n  ",
+                      " ",
                       {
                         "tag": "tbody",
                         "content": [
                           {
                             "tag": "tr",
                             "content": [
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "th",
                                 "attrs": {
-                                  "style": "width: 33%;"
+                                  "style": "width:33%"
                                 },
                                 "content": [
                                   "Open Source Manifesto"
                                 ]
                               },
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "td",
                                 "content": [
@@ -266,94 +266,94 @@
                                   " to cross-campus an iO Open Source Manifesto, enabling every iO employee to contribute and give back to the Open Source Community."
                                 ]
                               },
-                              "\n  "
+                              " "
                             ]
                           },
-                          "\n    ",
+                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "Open Source Contribution Day"
                                 ]
                               },
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "td",
                                 "content": [
                                   "Half-yearly campus hackathon-esque event to give back to the Open Source Community."
                                 ]
                               },
-                              "\n  "
+                              " "
                             ]
                           },
-                          "\n  ",
+                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "ByteSize"
                                 ]
                               },
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "td",
                                 "content": [
                                   "ByteSize is an internal short-format interview series where we highlight the work, experience and visions of fellow colleagues. (Co-)Responsible for production, videography and edit."
                                 ]
                               },
-                              "\n  "
+                              " "
                             ]
                           },
-                          "\n  ",
+                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "Accessibility"
                                 ]
                               },
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "td",
                                 "content": [
                                   "Member of the iO Accessibility Expert Group. Set iO a11y mission and vision, provide guidance, setup awareness campaigns."
                                 ]
                               },
-                              "\n  "
+                              " "
                             ]
                           },
-                          "\n  ",
+                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "Event support"
                                 ]
                               },
-                              "\n    ",
+                              " ",
                               {
                                 "tag": "td",
                                 "content": [
                                   "Technical audiovisual support for campus live-streamed knowledge sharing sessions. Meetups, internal updates, ... "
                                 ]
                               },
-                              "\n  "
+                              " "
                             ]
                           },
-                          "\n"
+                          " "
                         ]
                       }
                     ]
@@ -377,16 +377,16 @@
                       "."
                     ]
                   },
-                  "\n        \n      "
+                  " "
                 ]
               },
-              "\n    "
+              " "
             ]
           },
-          "\n  "
+          " "
         ]
       },
-      "\n      "
+      " "
     ]
   }
 ]

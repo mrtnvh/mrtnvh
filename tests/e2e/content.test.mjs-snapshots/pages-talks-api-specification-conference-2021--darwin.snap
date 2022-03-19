@@ -5,35 +5,35 @@
       "class": "transition-fade"
     },
     "content": [
-      "\n        ",
+      " ",
       {
         "tag": "article",
         "attrs": {
           "class": ""
         },
         "content": [
-          "\n    ",
+          " ",
           {
             "tag": "div",
             "attrs": {
               "class": "container"
             },
             "content": [
-              "\n      ",
+              " ",
               {
                 "tag": "figure",
                 "attrs": {
                   "class": "media"
                 },
                 "content": [
-                  "\n        \n",
+                  " ",
                   {
                     "tag": "picture",
                     "attrs": {
                       "class": ""
                     },
                     "content": [
-                      "\n  ",
+                      " ",
                       {
                         "tag": "source",
                         "attrs": {
@@ -112,13 +112,13 @@
                           "class": "image"
                         }
                       },
-                      "\n"
+                      " "
                     ]
                   },
-                  "\n\n\n\n      "
+                  " "
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "h1",
                 "attrs": {
@@ -128,21 +128,21 @@
                   "API Specification Conference 2021"
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "meta"
                 },
                 "content": [
-                  "\n        ",
+                  " ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "time-category"
                     },
                     "content": [
-                      "\n          ",
+                      " ",
                       {
                         "tag": "time",
                         "attrs": {
@@ -152,7 +152,7 @@
                           "2021 09 29"
                         ]
                       },
-                      "\n          ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
@@ -162,24 +162,24 @@
                           "Talks"
                         ]
                       },
-                      "\n        "
+                      " "
                     ]
                   },
-                  "\n        ",
+                  " ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "links"
                     },
                     "content": [
-                      "\n            ",
+                      " ",
                       {
                         "tag": "a",
                         "attrs": {
                           "class": "external"
                         },
                         "content": [
-                          "\n                Slides\n              "
+                          " Slides "
                         ]
                       },
                       {
@@ -188,7 +188,7 @@
                           "class": "external"
                         },
                         "content": [
-                          "\n                Demo's\n              "
+                          " Demo's "
                         ]
                       },
                       {
@@ -197,23 +197,23 @@
                           "class": "external"
                         },
                         "content": [
-                          "\n                Video\n              "
+                          " Video "
                         ]
                       },
-                      "\n          "
+                      " "
                     ]
                   },
-                  "\n      "
+                  " "
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "body"
                 },
                 "content": [
-                  "\n        ",
+                  " ",
                   {
                     "tag": "p",
                     "content": [
@@ -232,7 +232,7 @@
                       "Maarten will show you how your front-end project workflow can reap the benefits the OpenAPI ecosystem offers with battle-tested examples."
                     ]
                   },
-                  "\n        ",
+                  " ",
                   {
                     "tag": "hr",
                     "attrs": {
@@ -245,7 +245,7 @@
                       "class": "credits clear-inner-spacing"
                     },
                     "content": [
-                      "\n          \n",
+                      " ",
                       {
                         "tag": "p",
                         "attrs": {
@@ -274,19 +274,19 @@
                           }
                         ]
                       },
-                      "\n\n        "
+                      " "
                     ]
                   },
-                  "\n      "
+                  " "
                 ]
               },
-              "\n    "
+              " "
             ]
           },
-          "\n  "
+          " "
         ]
       },
-      "\n      "
+      " "
     ]
   }
 ]

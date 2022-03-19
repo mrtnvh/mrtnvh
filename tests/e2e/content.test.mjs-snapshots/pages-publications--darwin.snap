@@ -5,14 +5,14 @@
       "class": "transition-fade"
     },
     "content": [
-      "\n        \n",
+      " ",
       {
         "tag": "div",
         "attrs": {
           "class": "container"
         },
         "content": [
-          "\n  ",
+          " ",
           {
             "tag": "h1",
             "attrs": {
@@ -22,42 +22,42 @@
               "Publications"
             ]
           },
-          "\n  \n",
+          " ",
           {
             "tag": "div",
             "attrs": {
               "class": "grid grid--large"
             },
             "content": [
-              "\n  \n",
+              " ",
               {
                 "tag": "article",
                 "attrs": {
                   "class": ""
                 },
                 "content": [
-                  "\n  ",
+                  " ",
                   {
                     "tag": "a",
                     "attrs": {
                       "class": "reset link"
                     },
                     "content": [
-                      "\n    ",
+                      " ",
                       {
                         "tag": "figure",
                         "attrs": {
                           "class": "media"
                         },
                         "content": [
-                          "\n      \n",
+                          " ",
                           {
                             "tag": "picture",
                             "attrs": {
                               "class": ""
                             },
                             "content": [
-                              "\n  ",
+                              " ",
                               {
                                 "tag": "source",
                                 "attrs": {
@@ -100,30 +100,30 @@
                                   "class": "image"
                                 }
                               },
-                              "\n"
+                              " "
                             ]
                           },
-                          "\n\n\n\n    "
+                          " "
                         ]
                       },
-                      "\n    ",
+                      " ",
                       {
                         "tag": "div",
                         "attrs": {
                           "class": "content"
                         },
                         "content": [
-                          "\n      ",
+                          " ",
                           {
                             "tag": "h2",
                             "attrs": {
                               "class": "title"
                             },
                             "content": [
-                              "\n        Open Source Manifesto\n      "
+                              " Open Source Manifesto "
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "p",
                             "attrs": {
@@ -133,14 +133,14 @@
                               "Enabling ISAAC developers to give back to the OSS community"
                             ]
                           },
-                          "\n      ",
+                          " ",
                           {
                             "tag": "div",
                             "attrs": {
                               "class": "meta"
                             },
                             "content": [
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "time",
                                 "attrs": {
@@ -150,7 +150,7 @@
                                   "2020 09 07"
                                 ]
                               },
-                              "\n        ",
+                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
@@ -160,25 +160,25 @@
                                   "Publications"
                                 ]
                               },
-                              "\n      "
+                              " "
                             ]
                           },
-                          "\n    "
+                          " "
                         ]
                       },
-                      "\n  "
+                      " "
                     ]
                   },
-                  "\n"
+                  " "
                 ]
               },
-              "\n\n\n\n"
+              " "
             ]
           },
-          "\n\n\n\n"
+          " "
         ]
       },
-      "\n\n\n\n      "
+      " "
     ]
   }
 ]

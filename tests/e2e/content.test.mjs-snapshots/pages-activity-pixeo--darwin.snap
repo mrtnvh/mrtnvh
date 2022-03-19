@@ -5,35 +5,35 @@
       "class": "transition-fade"
     },
     "content": [
-      "\n        ",
+      " ",
       {
         "tag": "article",
         "attrs": {
           "class": ""
         },
         "content": [
-          "\n    ",
+          " ",
           {
             "tag": "div",
             "attrs": {
               "class": "container"
             },
             "content": [
-              "\n      ",
+              " ",
               {
                 "tag": "figure",
                 "attrs": {
                   "class": "media"
                 },
                 "content": [
-                  "\n        \n",
+                  " ",
                   {
                     "tag": "picture",
                     "attrs": {
                       "class": ""
                     },
                     "content": [
-                      "\n  ",
+                      " ",
                       {
                         "tag": "source",
                         "attrs": {
@@ -112,13 +112,13 @@
                           "class": "image"
                         }
                       },
-                      "\n"
+                      " "
                     ]
                   },
-                  "\n\n\n\n      "
+                  " "
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "h1",
                 "attrs": {
@@ -128,21 +128,21 @@
                   "Pixeo"
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "meta"
                 },
                 "content": [
-                  "\n        ",
+                  " ",
                   {
                     "tag": "div",
                     "attrs": {
                       "class": "time-category"
                     },
                     "content": [
-                      "\n          ",
+                      " ",
                       {
                         "tag": "time",
                         "attrs": {
@@ -152,20 +152,20 @@
                           "2013 01 01"
                         ]
                       },
-                      "\n          \n        "
+                      " "
                     ]
                   },
-                  "\n        \n      "
+                  " "
                 ]
               },
-              "\n      ",
+              " ",
               {
                 "tag": "div",
                 "attrs": {
                   "class": "body"
                 },
                 "content": [
-                  "\n        ",
+                  " ",
                   {
                     "tag": "p",
                     "content": [
@@ -331,56 +331,56 @@
                   {
                     "tag": "ul",
                     "content": [
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "Internationalization of 6 languages"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "Authentication via an OAuth2 layer"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "Authorization via multiple roles"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "Diff-view of the latest changes"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "Search"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "PWA functionality"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "Server-side rendering"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
@@ -396,14 +396,14 @@
                           " integration"
                         ]
                       },
-                      "\n",
+                      " ",
                       {
                         "tag": "li",
                         "content": [
                           "..."
                         ]
                       },
-                      "\n"
+                      " "
                     ]
                   },
                   {
@@ -461,16 +461,16 @@
                       "Design &amp; build for a local sports complex"
                     ]
                   },
-                  "\n        \n      "
+                  " "
                 ]
               },
-              "\n    "
+              " "
             ]
           },
-          "\n  "
+          " "
         ]
       },
-      "\n      "
+      " "
     ]
   }
 ]
