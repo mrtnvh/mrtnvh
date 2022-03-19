@@ -153,7 +153,7 @@ jobs:
           path: tests/performance/__reports__
           retention-days: 5
       - name: Archive visual reports
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         continue-on-error: true
         if: ${{ success() || failure() }}
         with:
