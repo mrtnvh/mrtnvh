@@ -78,7 +78,7 @@
     "purgecss": "^4.1.3",
     "rehype-rewrite": "^3.0.4",
     "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-inline-svg": "^2.0.0",
+    "rollup-plugin-inline-svg": "^3.0.0",
     "rollup-plugin-svgsprite-generator": "^1.0.1",
     "stylelint": "^14.6.1",
     "stylelint-config-html": "^1.0.0",
