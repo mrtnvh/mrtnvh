@@ -31,7 +31,7 @@
     "@swup/preload-plugin": "^1.0.3",
     "@swup/scroll-plugin": "^1.1.0",
     "clsx": "^1.1.1",
-    "astro": "^0.23.7",
+    "astro": "^0.26.1",
     "date-fns": "^2.28.0",
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
