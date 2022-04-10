@@ -1,11 +1,12 @@
 ---
 const { offCanvas = false, page } = Astro.props;
 const currentPage = (link) => {
+  const url = new URL(Astro.request.url)
   if (link.href === '/') {
-    return Astro.request.url.pathname === '/' || Astro.request.url.pathname.includes('activity');
+    return url.pathname === '/' || url.pathname.includes('activity');
   }
 
-  return Astro.request.url.pathname.includes(link.href);
+  return url.pathname.includes(link.href);
 };
 
 const links = [

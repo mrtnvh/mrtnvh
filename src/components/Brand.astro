@@ -1,6 +1,6 @@
 ---
 import clsx from 'clsx';
-const currentPathname = Astro.request.url.pathname;
+const currentPathname = new URL(Astro.request.url).pathname;
 ---
 
 <a

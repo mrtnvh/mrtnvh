@@ -1,12 +1,13 @@
 // @ts-check
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import { camelCase } from 'lodash-es';
 import { svgSprite } from 'rollup-plugin-svgsprite-generator';
 import copy from 'rollup-plugin-copy';
 
-/** @type {import('astro').AstroUserConfig} */
-export default {
-  renderers: [],
-  markdownOptions: {
+export default defineConfig({
+  integrations: [sitemap()],
+  markdown: {
     render: [
       '@astrojs/markdown-remark',
       {
@@ -68,8 +69,5 @@ export default {
       },
     },
   },
-  buildOptions: {
-    site: 'https://mrtnvh.com',
-    sitemap: true,
-  },
-};
+  site: 'https://mrtnvh.com',
+});

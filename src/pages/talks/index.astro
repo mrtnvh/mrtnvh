@@ -6,7 +6,12 @@ import List from '../../components/List/List.astro';
 import Folio from '../../components/Page/Folio.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
-const allTalks = Astro.fetchContent('./*.md');
+const allTalks = await Astro.glob('./*.md').then((files) =>
+  files.map(({ frontmatter, ...data }) => ({
+    ...data,
+    ...frontmatter,
+  })),
+);
 const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
 const unpublishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished > dateNow);
 const publishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished <= dateNow);
@@ -33,7 +38,7 @@ const baseLayoutProps = defaultsDeep(
               const date = parse(talk.datePublished, 'yyyyMMdd', new Date());
               return (
                 <li class="talk">
-                  <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+                  <time datetime={date.toString()}>{format(date, 'yyyy MM dd')}</time>
                   {talk.redirect ? (
                     <a href={talk.redirect} class="talk-title external" rel="noopener" target="_blank">
                       {talk.title}
