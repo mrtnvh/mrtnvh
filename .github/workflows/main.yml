@@ -102,7 +102,7 @@ jobs:
 
       - name: Upload to Vercel (Preview)
         id: deployment-preview
-        uses: amondnet/vercel-action@v20
+        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -179,7 +179,7 @@ jobs:
 
       - name: Upload to Vercel (Staging)
         id: deployment-staging
-        uses: amondnet/vercel-action@v20
+        uses: amondnet/vercel-action@v25
         if: github.ref == 'refs/heads/develop'
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -191,7 +191,7 @@ jobs:
 
       - name: Upload to Vercel (Production)
         id: deployment-prod
-        uses: amondnet/vercel-action@v20
+        uses: amondnet/vercel-action@v25
         if: github.ref == 'refs/heads/main'
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
