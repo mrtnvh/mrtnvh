@@ -28,6 +28,8 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: npm ci --legacy-peer-deps
 
       - name: Run build
         run: 'npm run build'
