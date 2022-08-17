@@ -63,6 +63,8 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: npm ci --legacy-peer-deps
 
       - name: Install Playwright deps
         run: npx playwright install-deps chromium
@@ -134,6 +136,8 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: npm ci --legacy-peer-deps
 
       - name: Install Playwright deps
         run: npx playwright install-deps chromium
