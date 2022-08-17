@@ -1,22 +1,28 @@
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-@custom-selector :--flow-content ul, ol, p, address;
-
-:--flow-content,
-:--headings {
+ul,
+ol,
+p,
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   margin-bottom: var(--space);
   page-break-inside: avoid;
   break-inside: avoid;
 }
 
-:--headings {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--headings-font-weight);
   line-height: var(--line-height-sm);
   letter-spacing: var(--headings-letter-spacing);
-
-  p ~ & {
-    margin-block-start: calc(var(--space) * 2);
-  }
 }
 
 h1 {

@@ -3,12 +3,12 @@ import urljoin from 'urljoin';
 import { getImageVariants } from './Image/cloudinary';
 
 const { content, category } = Astro.props;
-const titleDefault = 'Maarten Van Hoof \\\\ Front End Developer';
+const titleDefault = 'Maarten Van Hoof  Front End Developer';
 const descriptionDefault =
   'Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator';
 const siteUrl = 'https://mrtnvh.com';
 
-const getTitle = (...args) => [...args.filter((val) => val?.length), titleDefault].join(' \\\\ ');
+const getTitle = (...args) => [...args.filter((val) => val?.length), titleDefault].join('  ');
 const title = getTitle(content?.title, category);
 const description = content?.description || descriptionDefault;
 const image = content?.thumbnail
@@ -50,7 +50,7 @@ const schemaPerson = JSON.stringify({
 });
 ---
 
-<head>
+<>
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="author" content="Maarten Van Hoof" />
@@ -71,4 +71,4 @@ const schemaPerson = JSON.stringify({
   <meta property="og:type" content="article" />
   <script type="application/ld+json" set:html={schemaWebsite}></script>
   <script type="application/ld+json" set:html={schemaPerson}></script>
-</head>
+</>

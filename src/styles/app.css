@@ -1,14 +1,15 @@
-@import 'prism-themes/themes/prism-one-dark.css';
+/* stylelint-disable */
 
-@import './_variables.css';
-@import './_root.css';
-@import './_type.css';
-@import './_table.css';
-@import './_link.css';
-@import './_media.css';
-@import './_container.css';
-@import './_button.css';
-@import './_spacing.css';
-@import './_utils.css';
+@import './_variables.css' layer(variables);
+@import './_root.css' layer(root);
+@import './_type.css' layer(type);
+@import './_table.css' layer(table);
+@import './_link.css' layer(link);
+@import './_media.css' layer(media);
+@import './_container.css' layer(container);
+@import './_button.css' layer(button);
+@import './_spacing.css' layer(spacing);
+@import './_utils.css' layer(utils);
 
-@import './animation/_fade.css';
+@import './animation/_fade.css' layer(animations.fade);
+@import 'prism-themes/themes/prism-one-dark.css' layer(code.prism);

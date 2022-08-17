@@ -6,7 +6,7 @@ import List from '../../components/List/List.astro';
 import Folio from '../../components/Page/Folio.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
-const allPublications = await Astro.glob('./*.md').then((files) =>
+const allPublications = await Astro.glob('./*.mdx').then((files) =>
   files.map(({ frontmatter, ...data }) => ({
     ...data,
     ...frontmatter,

@@ -18,9 +18,7 @@ button.link {
     transition: fill var(--link-transition-speed);
   }
 
-  &:hover,
-  &:focus,
-  &.active {
+  &:where(:hover, :focus, :active) {
     color: var(--link-hover-color);
     background-color: var(--link-hover-background-color);
     display: inline-block;

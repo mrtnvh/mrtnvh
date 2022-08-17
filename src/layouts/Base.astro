@@ -17,7 +17,7 @@ const { content, preloads } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
-    <meta httpequiv="Accept-CH" content="DPR, Viewport-Width, Width" />
+    <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
     <meta name="apple-mobile-web-app-title" content="mrtnvh" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#95FF00" />
@@ -28,36 +28,43 @@ const { content, preloads } = Astro.props;
       rel="stylesheet"
     />
 
-    {preloads && preloads.map((preload) => <link {...preload} />)}
-
-    {isProd && (
-			<script is:inline>
-				if ('serviceWorker' in navigator) {
-					window.addEventListener('load', () => {
-						navigator.serviceWorker.register('/sw.js');
-					});
-				}
-			</script>
-		)}
+    {
+      preloads &&
+      preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
+        <link rel={rel} as={as} type={type} imageSizes={imagesizes} media={media} imageSrcSet={imagesrcset} />
+      ))
+    }
 
     {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
+
+    <Seo {...Astro.props} />
   </head>
-  <Seo {...Astro.props} />
+
   <body>
     <div class="svg-sprite">
       <SvgSprite />
     </div>
     <div class="layout">
-      {content?.redirect ? (<main class="centered" data-testid="redirect">Redirecting to {content.redirect}</main>) : (
-      <Header />
-      <main id="swup" class="transition-fade">
-        <slot />
-      </main>
-      <Footer />
-    ) }
+      {
+        content?.redirect ? (
+          <main class="centered" data-testid="redirect">
+            Redirecting to {content.redirect}
+          </main>
+        ) : (
+          <>
+            <Header />
+            <main id="swup" class="transition-fade">
+              <slot />
+            </main>
+            <Footer />
+          </>
+        )
+      }
     </div>
-    <script>import '../js/main.js';</script>
-    {isProd && <script defer data-domain="mrtnvh.com" data-api="/api/event" src="/js/stats"></script>}
+    <script>
+      import '../js/main.js';
+    </script>
+    {isProd && <script defer data-domain="mrtnvh.com" data-api="/api/event" src="/js/stats" />}
   </body>
 </html>
 

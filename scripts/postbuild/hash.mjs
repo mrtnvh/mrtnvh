@@ -7,7 +7,7 @@ import { BUILD_DIRECTORY, replaceFilesContent } from './_utils.mjs';
 
 const FILES_TO_EXCLUDE = [
   'robots.txt',
-  'sitemap.xml',
+  'sitemap',
   '.html',
   '.css',
   '.js',

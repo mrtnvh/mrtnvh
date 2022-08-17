@@ -10,7 +10,7 @@ const { large = false, items = [] } = Astro.props;
 ---
 
 <div class={`grid ${large ? 'grid--large' : ''}`}>
-  {items.map((item: any, index: number) => <ListItem {item} {index} />)}
+  {items.map((item, index) => <ListItem item={item} index={index} />)}
 </div>
 
 <style>

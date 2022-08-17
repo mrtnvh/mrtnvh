@@ -1,7 +1,7 @@
 ---
 const { offCanvas = false, page } = Astro.props;
 const currentPage = (link) => {
-  const url = new URL(Astro.request.url)
+  const url = new URL(Astro.request.url);
   if (link.href === '/') {
     return url.pathname === '/' || url.pathname.includes('activity');
   }
@@ -34,11 +34,18 @@ const links = [
 ---
 
 <nav id="nav" class="nav">
-  {links.map((link) => (
-    <a href={link.href} data-testid={`navigation-${link.key}`} data-swup-preload data-page-current={currentPage(link)}>
-      {link.title}
-    </a>
-  ))}
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        data-testid={`navigation-${link.key}`}
+        data-swup-preload
+        data-page-current={currentPage(link)}
+      >
+        {link.title}
+      </a>
+    ))
+  }
 </nav>
 
 <style>

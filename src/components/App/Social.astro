@@ -34,20 +34,22 @@ const links = [
 ---
 
 <nav class="social">
-  {links.map(({ href, className, icon, label }) => (
-    <a
-      href={href}
-      class={className}
-      aria-label={label}
-      target="_blank"
-      rel="noopener"
-      data-testid={`navigation-${className}`}
-    >
-      <svg>
-        <use xlink:href={`#${icon}`} />
-      </svg>
-    </a>
-  ))}
+  {
+    links.map(({ href, className, icon, label }) => (
+      <a
+        href={href}
+        class={className}
+        aria-label={label}
+        target="_blank"
+        rel="noopener"
+        data-testid={`navigation-${className}`}
+      >
+        <svg>
+          <use href={`#${icon}`} />
+        </svg>
+      </a>
+    ))
+  }
 </nav>
 
 <style>

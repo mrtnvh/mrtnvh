@@ -182,11 +182,12 @@
                       {
                         "tag": "strong",
                         "content": [
-                          "Discover infinite opportunities, together. These transformative times bring challenges and change to your business. But they also create infinite opportunities to grow and excel. We're here to help you identify and seize them. Offering you our strategic perspective and in-depth expertise, end-to-end."
+                          "Discover infinite opportunities, together. These transformative times bring challenges and change to your business. But they also create infinite opportunities to grow and excel. We’re here to help you identify and seize them. Offering you our strategic perspective and in-depth expertise, end-to-end."
                         ]
                       }
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [
@@ -220,6 +221,7 @@
                       " since September 2021."
                     ]
                   },
+                  " ",
                   {
                     "tag": "h2",
                     "attrs": {
@@ -229,17 +231,16 @@
                       "Experience"
                     ]
                   },
+                  " ",
                   {
                     "tag": "table",
                     "content": [
-                      " ",
                       {
                         "tag": "tbody",
                         "content": [
                           {
                             "tag": "tr",
                             "content": [
-                              " ",
                               {
                                 "tag": "th",
                                 "attrs": {
@@ -249,31 +250,42 @@
                                   "Open Source Manifesto"
                                 ]
                               },
-                              " ",
                               {
                                 "tag": "td",
                                 "content": [
-                                  "Integration of the Campus Eindhoven ",
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Integration of the Campus Eindhoven"
+                                    ]
+                                  },
                                   {
                                     "tag": "a",
                                     "attrs": {
                                       "class": "external"
                                     },
                                     "content": [
-                                      "Open Source Manifesto"
+                                      {
+                                        "tag": "span",
+                                        "content": [
+                                          "Open Source Manifesto"
+                                        ]
+                                      }
                                     ]
                                   },
-                                  " to cross-campus an iO Open Source Manifesto, enabling every iO employee to contribute and give back to the Open Source Community."
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "to cross-campus an iO Open Source Manifesto, enabling every iO employee to contribute and give back to the Open Source Community."
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
                           },
-                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              " ",
                               {
                                 "tag": "th",
                                 "content": [
@@ -286,81 +298,84 @@
                                 "content": [
                                   "Half-yearly campus hackathon-esque event to give back to the Open Source Community."
                                 ]
-                              },
-                              " "
+                              }
                             ]
                           },
-                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "ByteSize"
                                 ]
                               },
-                              " ",
                               {
                                 "tag": "td",
                                 "content": [
-                                  "ByteSize is an internal short-format interview series where we highlight the work, experience and visions of fellow colleagues. (Co-)Responsible for production, videography and edit."
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "ByteSize is an internal short-format interview series where we highlight the work, experience and visions of fellow colleagues. (Co-)Responsible for production, videography and edit."
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
                           },
-                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "Accessibility"
                                 ]
                               },
-                              " ",
                               {
                                 "tag": "td",
                                 "content": [
-                                  "Member of the iO Accessibility Expert Group. Set iO a11y mission and vision, provide guidance, setup awareness campaigns."
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Member of the iO Accessibility Expert Group. Set iO a11y mission and vision, provide guidance, setup awareness campaigns."
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
                           },
-                          " ",
                           {
                             "tag": "tr",
                             "content": [
-                              " ",
                               {
                                 "tag": "th",
                                 "content": [
                                   "Event support"
                                 ]
                               },
-                              " ",
                               {
                                 "tag": "td",
                                 "content": [
-                                  "Technical audiovisual support for campus live-streamed knowledge sharing sessions. Meetups, internal updates, ... "
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Technical audiovisual support for campus live-streamed knowledge sharing sessions. Meetups, internal updates, … "
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
-                          },
-                          " "
+                          }
                         ]
                       }
                     ]
                   },
+                  " ",
                   {
                     "tag": "br"
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [

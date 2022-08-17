@@ -6,12 +6,13 @@ import Intro from '../components/Page/Intro.astro';
 import List from '../components/List/List.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
-const data = await Astro.glob('./{talks,activity,publications}/*.md').then((files) =>
+const data = await Astro.glob('./{talks,activity,publications}/*.mdx').then((files) =>
   files.map(({ frontmatter, ...data }) => ({
     ...data,
     ...frontmatter,
   })),
 );
+
 const events = orderBy(data, ['datePublished'], ['desc']);
 const publishedEvents = events.filter(({ datePublished }) => datePublished <= dateNow);
 ---
