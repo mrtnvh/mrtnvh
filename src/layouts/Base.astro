@@ -38,6 +38,14 @@ const { content, preloads } = Astro.props;
     {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
 
     <Seo {...Astro.props} />
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
   </head>
 
   <body>
