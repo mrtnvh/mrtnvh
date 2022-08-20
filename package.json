@@ -17,7 +17,7 @@
     "dev": "astro dev",
     "release": "npx standard-version",
     "test": "run-s test:*",
-    "test:format": "prettier -w --ignore-path .gitignore '**/*.!(snap|svg|jpg|png|txt)'",
+    "test:format": "prettier -w --ignore-path .gitignore '**/*.!(snap|svg|jpg|png|txt|editorconfig)'",
     "test:lint": "eslint --fix --ignore-path .gitignore '*.{js,mjs}'",
     "test:style": "stylelint --fix --ignore-path .gitignore '**/*.{css,astro}'",
     "test:e2e": "playwright test tests/e2e",
