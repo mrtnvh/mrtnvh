@@ -5,7 +5,7 @@ import { devices as playwrightDevices } from 'playwright';
 export function getPages() {
   const sitemapFileName = fs
     .readdirSync(`dist`)
-    .reduce((acc, fileName) => (fileName.includes('sitemap') ? fileName : acc), '');
+    .reduce((acc, fileName) => (fileName.includes('sitemap-0') ? fileName : acc), '');
   const sitemap = fs.readFileSync(`${process.cwd()}/dist/${sitemapFileName}`, 'utf-8');
   const parser = new XMLParser();
   const sitemapJson = parser.parse(sitemap);

@@ -124,9 +124,10 @@
               {
                 "tag": "p",
                 "content": [
-                  "I'm a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime."
+                  "I’m a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I’m incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime."
                 ]
               },
+              " ",
               {
                 "tag": "p",
                 "content": [
@@ -153,6 +154,7 @@
                   " rock out the local and non-local watering holes from time to time."
                 ]
               },
+              " ",
               {
                 "tag": "p",
                 "content": [
@@ -169,12 +171,14 @@
                   ", specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time."
                 ]
               },
+              " ",
               {
                 "tag": "p",
                 "content": [
                   "All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software."
                 ]
               },
+              " ",
               {
                 "tag": "h2",
                 "attrs": {
@@ -184,12 +188,14 @@
                   "Ambition"
                 ]
               },
+              " ",
               {
                 "tag": "p",
                 "content": [
                   "I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community."
                 ]
               },
+              " ",
               {
                 "tag": "h2",
                 "attrs": {
@@ -199,6 +205,7 @@
                   "Likes"
                 ]
               },
+              " ",
               {
                 "tag": "ul",
                 "content": [
@@ -261,6 +268,7 @@
                   " "
                 ]
               },
+              " ",
               {
                 "tag": "h2",
                 "attrs": {
@@ -270,53 +278,58 @@
                   "Skills"
                 ]
               },
+              " ",
               {
                 "tag": "table",
                 "content": [
-                  " ",
                   {
                     "tag": "tbody",
                     "content": [
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
                               "Web"
                             ]
                           },
-                          " ",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " Offline &amp; mobile first ",
+                              {
+                                "tag": "p",
+                                "content": [
+                                  "Offline &amp; mobile first ",
+                                  {
+                                    "tag": "br"
+                                  },
+                                  " a11y"
+                                ]
+                              },
                               {
                                 "tag": "br"
                               },
-                              " a11y",
                               {
-                                "tag": "br"
-                              },
-                              " Progressive Web Apps ",
-                              {
-                                "tag": "br"
-                              },
-                              " OpenAPI "
+                                "tag": "p",
+                                "content": [
+                                  "Progressive Web Apps ",
+                                  {
+                                    "tag": "br"
+                                  },
+                                  " OpenAPI"
+                                ]
+                              }
                             ]
-                          },
-                          " "
+                          }
                         ]
                       },
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
@@ -332,127 +345,122 @@
                             "content": [
                               "Semantics"
                             ]
-                          },
-                          " "
+                          }
                         ]
                       },
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
                               "JavaScript"
                             ]
                           },
-                          " ",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
                                   "class": "column-lg-2"
                                 },
                                 "content": [
-                                  " Node ",
                                   {
-                                    "tag": "br"
-                                  },
-                                  " ES20... ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " Typescript ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " React ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " Vue ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " Web- &amp; service workers ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " Testing (Unit to e2e) ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " Isomorphic web applications "
+                                    "tag": "p",
+                                    "content": [
+                                      "Node ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " ES20… ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Typescript ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " React ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Vue ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Web- &amp; service workers ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Testing (Unit to e2e) ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Isomorphic web applications"
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
-                          },
-                          " "
+                          }
                         ]
                       },
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
                               "CSS"
                             ]
                           },
-                          " ",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " ",
                               {
                                 "tag": "div",
                                 "attrs": {
                                   "class": "column-lg-2"
                                 },
                                 "content": [
-                                  " Grid ",
                                   {
-                                    "tag": "br"
-                                  },
-                                  " Custom properties ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " CSS-in-JS ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " SCSS ",
-                                  {
-                                    "tag": "br"
-                                  },
-                                  " PostCSS "
+                                    "tag": "p",
+                                    "content": [
+                                      "Grid ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Custom properties ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " CSS-in-JS ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " SCSS ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " PostCSS"
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
-                          },
-                          " "
+                          }
                         ]
                       },
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "attrs": {
@@ -462,21 +470,18 @@
                               "Experience with"
                             ]
                           },
-                          " ",
                           {
                             "tag": "td",
                             "attrs": {
                               "colspan": "2"
                             },
                             "content": [
-                              " ",
                               {
                                 "tag": "ul",
                                 "attrs": {
                                   "class": "column-lg-2 list-unstyled"
                                 },
                                 "content": [
-                                  " ",
                                   {
                                     "tag": "li",
                                     "content": [
@@ -599,23 +604,20 @@
                                   {
                                     "tag": "li",
                                     "content": [
-                                      "..."
+                                      "…"
                                     ]
-                                  },
-                                  " "
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
-                          },
-                          " "
+                          }
                         ]
-                      },
-                      " "
+                      }
                     ]
                   }
                 ]
               },
+              " ",
               {
                 "tag": "h2",
                 "attrs": {
@@ -625,18 +627,16 @@
                   "Physical languages"
                 ]
               },
+              " ",
               {
                 "tag": "table",
                 "content": [
-                  " ",
                   {
                     "tag": "thead",
                     "content": [
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "th",
                             "content": [
@@ -656,40 +656,38 @@
                             "content": [
                               "Spoken"
                             ]
-                          },
-                          " "
+                          }
                         ]
-                      },
-                      " "
+                      }
                     ]
                   },
-                  " ",
                   {
                     "tag": "tbody",
                     "content": [
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
-                              " Dutch ",
                               {
-                                "tag": "br"
-                              },
-                              " ",
-                              {
-                                "tag": "em",
+                                "tag": "p",
                                 "content": [
-                                  "Native tongue"
+                                  "Dutch ",
+                                  {
+                                    "tag": "br"
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "em",
+                                    "content": [
+                                      "Native tongue"
+                                    ]
+                                  }
                                 ]
-                              },
-                              " "
+                              }
                             ]
                           },
-                          " ",
                           {
                             "tag": "td",
                             "content": [
@@ -702,15 +700,12 @@
                             "content": [
                               "Very good"
                             ]
-                          },
-                          " "
+                          }
                         ]
                       },
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
@@ -730,15 +725,12 @@
                             "content": [
                               "Good"
                             ]
-                          },
-                          " "
+                          }
                         ]
                       },
-                      " ",
                       {
                         "tag": "tr",
                         "content": [
-                          " ",
                           {
                             "tag": "td",
                             "content": [
@@ -758,14 +750,11 @@
                             "content": [
                               "Basic"
                             ]
-                          },
-                          " "
+                          }
                         ]
-                      },
-                      " "
+                      }
                     ]
-                  },
-                  " "
+                  }
                 ]
               },
               " "

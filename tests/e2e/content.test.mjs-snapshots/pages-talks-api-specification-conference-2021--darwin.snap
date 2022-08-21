@@ -220,12 +220,14 @@
                       "As a front end developer, building projects with RESTful API dependencies ain’t all sunshine and rainbows. Security implications, parallel development, time or budget restrictions for writing documentation, …, in an enterprise you might not always have the ability to rely on your RESTful API dependencies for development, let alone for an automated testing environment."
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [
                       "The OpenAPI ecosystem offers us solutions in the form of virtually complete independence from a REST API during development and testing."
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [

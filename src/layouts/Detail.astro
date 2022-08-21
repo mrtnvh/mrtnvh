@@ -1,5 +1,5 @@
 ---
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 import { parse, format } from 'date-fns';
 import BaseLayout from './Base.astro';
 import { getImageVariants } from '../components/Image/cloudinary.js';
@@ -63,44 +63,51 @@ const date = parse(datePublished, 'yyyyMMdd', new Date());
 const hasCredits = !!thumbnailCredits;
 ---
 
-<BaseLayout {...Astro.props} {preloads}>
+<BaseLayout {...Astro.props} preloads={preloads}>
   <article>
     <div class="container">
       <figure class="media">
-        {thumbnail && (
-          <Thumbnail
-            src={thumbnail}
-            alt={title}
-            class="image"
-            variants={[defaultDesktopImageSettings, defaultMobileImageSettings]}
-            tint={tint}
-          />
-        )}
+        {
+          thumbnail && (
+            <Thumbnail
+              src={thumbnail}
+              alt={title}
+              variants={[defaultDesktopImageSettings, defaultMobileImageSettings]}
+              tint={tint}
+            />
+          )
+        }
       </figure>
       <h1 class="title">{title}</h1>
       <div class="meta">
         <div class="time-category">
-          <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
+          <time datetime={date.toJSON()}>{format(date, 'yyyy MM dd')}</time>
           {category && <div class="category">{category}</div>}
         </div>
-        {!!links.length && (
-          <div class="links">
-            {links.map(({ title, url }) => (
-              <a href={url} target="_blank" rel="noopener" class="external">
-                {title}
-              </a>
-            ))}
-          </div>
-        )}
+        {
+          !!links.length && (
+            <div class="links">
+              {links.map(({ title, url }) => (
+                <a href={url} target="_blank" rel="noopener" class="external">
+                  {title}
+                </a>
+              ))}
+            </div>
+          )
+        }
       </div>
       <div class="body">
         <slot />
-        {hasCredits && (
-        <hr />
-        <div class="credits clear-inner-spacing">
-          {thumbnailCredits && <Markdown set:html={thumbnailCredits} />}
-        </div>
-        )}
+        {
+          hasCredits && (
+            <>
+              <hr />
+              <div class="credits clear-inner-spacing">
+                {thumbnailCredits && <Markdown set:html={thumbnailCredits} />}
+              </div>
+            </>
+          )
+        }
       </div>
     </div>
   </article>

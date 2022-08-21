@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Brand from '../Brand.astro';
 import Nav from './Nav.astro';
 
-const currentPathname = Astro.request.url.pathname;
+const currentPathname = new URL(Astro.request.url).pathname;
 ---
 
 <header class={clsx({ header: true })}>
@@ -78,7 +78,7 @@ const currentPathname = Astro.request.url.pathname;
       padding: 0;
       flex-grow: 1;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
 </style>

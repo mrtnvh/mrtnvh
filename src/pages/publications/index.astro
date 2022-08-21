@@ -6,7 +6,12 @@ import List from '../../components/List/List.astro';
 import Folio from '../../components/Page/Folio.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
-const allPublications = Astro.fetchContent('./*.md');
+const allPublications = await Astro.glob('./*.mdx').then((files) =>
+  files.map(({ frontmatter, ...data }) => ({
+    ...data,
+    ...frontmatter,
+  })),
+);
 const allPublicationsOrdered = orderBy(allPublications, ['datePublished'], ['desc']);
 const publications = allPublicationsOrdered.filter(({ datePublished }) => datePublished <= dateNow);
 const baseLayoutProps = defaultsDeep(

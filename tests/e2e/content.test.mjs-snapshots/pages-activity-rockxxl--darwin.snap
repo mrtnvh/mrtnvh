@@ -179,9 +179,10 @@
                   {
                     "tag": "p",
                     "content": [
-                      "RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ..."
+                      "RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, …"
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [
@@ -238,12 +239,14 @@
                       "."
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [
                       "With the aim of maintaining their SEO ranking, we have been able to move all legacy Wordpress data and images without any problem. All existing URLs are neatly redirected to the new URL structure. Via a few customized scripts, all posts were exported to Markdown files."
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [
@@ -260,6 +263,7 @@
                       ", a heavy-duty media hosting platform with integrated image transformations and CDN. Thanks to Cloudinary, the backend is not required to perform heavy edits and we can still display the most optimal image per user."
                     ]
                   },
+                  " ",
                   {
                     "tag": "p",
                     "content": [
