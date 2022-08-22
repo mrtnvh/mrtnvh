@@ -35,7 +35,7 @@
     "date-fns": "^2.29.2",
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
-    "postcss-load-config": "^3.1.4",
+    "postcss-load-config": "^4.0.1",
     "prism-themes": "^1.9.0",
     "swup": "^2.0.18"
   },
