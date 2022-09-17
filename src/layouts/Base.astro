@@ -30,9 +30,9 @@ const { content, preloads } = Astro.props;
 
     {
       preloads &&
-      preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
-        <link rel={rel} as={as} type={type} imageSizes={imagesizes} media={media} imageSrcSet={imagesrcset} />
-      ))
+        preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
+          <link rel={rel} as={as} type={type} imageSizes={imagesizes} media={media} imageSrcSet={imagesrcset} />
+        ))
     }
 
     {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
