@@ -209,7 +209,7 @@
                   {
                     "tag": "p",
                     "content": [
-                      "This project began at the end of 2017. The Evenementenkluis (roughly translated the “Event Vault”) is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time."
+                      "This project began at the end of 2017. The Evenementenkluis (roughly translated the \"Event Vault\") is a web platform where organizers can manage the entire municipal regulation around an event from start to end in a single place and where local authorities can follow and assist it at any given time."
                     ]
                   },
                   " ",
@@ -223,7 +223,7 @@
                   {
                     "tag": "p",
                     "content": [
-                      "As of 2019, Pixeo is full build-mode for the Evenementenkluis’s next feature, a full blown rental module. This enables organizers to immediately rent out the necessary materials for her/his event. From the organizer’s point of view, everything is nicely bundled and organized within one event view en several subviews. Behind the scenes, the rental request is send to the right person within the municipality, like the rental-manager, logistic personnel."
+                      "As of 2019, Pixeo is full build-mode for the Evenementenkluis's next feature, a full blown rental module. This enables organizers to immediately rent out the necessary materials for her/his event. From the organizer's point of view, everything is nicely bundled and organized within one event view en several subviews. Behind the scenes, the rental request is send to the right person within the municipality, like the rental-manager, logistic personnel."
                     ]
                   },
                   " ",
@@ -285,7 +285,7 @@
                   {
                     "tag": "p",
                     "content": [
-                      "Due to the large number of internationalities of employees within the company, the platform had to be available in 6 different languages. After the first load, the web app skeleton is stored on the user’s device as a ",
+                      "Due to the large number of internationalities of employees within the company, the platform had to be available in 6 different languages. After the first load, the web app skeleton is stored on the user's device as a ",
                       {
                         "tag": "strong",
                         "content": [
@@ -339,7 +339,7 @@
                           "PWA"
                         ]
                       },
-                      " on the user’s device. The applications contains following features:"
+                      " on the user's device. The applications contains following features:"
                     ]
                   },
                   " ",
@@ -415,7 +415,7 @@
                       {
                         "tag": "li",
                         "content": [
-                          "…"
+                          "..."
                         ]
                       },
                       " "

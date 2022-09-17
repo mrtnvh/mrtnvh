@@ -43,6 +43,7 @@ test.describe('Visual snapshot', async () => {
             const screenshot = await body.screenshot();
 
             expect(screenshot).toMatchSnapshot(customSnapshotIdentifier(path, environmentName, 'png'), {
+              maxDiffPixels: 25,
               threshold: 0.3,
             });
           }
