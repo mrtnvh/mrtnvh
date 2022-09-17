@@ -6,8 +6,6 @@ import { svgSprite } from 'rollup-plugin-svgsprite-generator';
 import copy from 'rollup-plugin-copy';
 import rehypeRewrite from 'rehype-rewrite';
 
-const remarkPlugins = { extends: [] };
-
 const rehypePlugins = [
   [
     rehypeRewrite,
@@ -30,7 +28,7 @@ const rehypePlugins = [
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), mdx({ remarkPlugins, rehypePlugins })],
+  integrations: [sitemap(), mdx({ rehypePlugins })],
   markdown: {
     rehypePlugins,
   },
