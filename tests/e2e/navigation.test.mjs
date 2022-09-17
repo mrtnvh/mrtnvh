@@ -27,7 +27,7 @@ const links = {
   },
   twitter: {
     desktop: 'https://twitter.com/mrtnvh/',
-    mobile: 'https://mobile.twitter.com/mrtnvh/',
+    mobile: 'https://twitter.com/mrtnvh/',
   },
   linkedin: {
     desktop: 'https://www.linkedin.com/in/mrtnvh/',
