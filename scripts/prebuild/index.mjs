@@ -1,7 +1,7 @@
-import del from 'del';
+import { deleteAsync } from 'del';
 
 (async () => {
   console.log('[CLEANUP]', 'Start');
-  await del(['dist']);
+  await deleteAsync(['dist']);
   console.log('[CLEANUP]', 'Completed');
 })();
