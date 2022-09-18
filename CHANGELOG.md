@@ -2,6 +2,78 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.0](https://github.com/vanhoofmaarten/mrtnvh/compare/v7.0.3...v7.1.0) (2022-09-18)
+
+### Features
+
+- **astro:** update to Astro v1 ([38a20aa](https://github.com/vanhoofmaarten/mrtnvh/commit/38a20aa056b690fa2ec5ec17c2e98f14e4335e48))
+
+### Bug Fixes
+
+- **astro:** Migrate to v0.26 ([af0752e](https://github.com/vanhoofmaarten/mrtnvh/commit/af0752e2657a4a647d2c7c3edc696a4fee521ae1))
+- **deps:** update dependency astro to ^0.26.1 ([9038a10](https://github.com/vanhoofmaarten/mrtnvh/commit/9038a10683c547a20a35ec95e9e457da2ff88bea))
+- **deps:** update dependency astro to ^1.1.1 ([549772d](https://github.com/vanhoofmaarten/mrtnvh/commit/549772d956e064b06d8bafd81d4a20b43975370f))
+- **deps:** update dependency astro to ^1.2.6 ([864e36d](https://github.com/vanhoofmaarten/mrtnvh/commit/864e36db6be5de61f53d8e3f94133635553a1873))
+- **deps:** update dependency postcss-load-config to v4 ([51ef93b](https://github.com/vanhoofmaarten/mrtnvh/commit/51ef93baf79c189bd47f326f57fabee2fcd4a92c))
+- **images:** Fix image sizes attribute ([be09fee](https://github.com/vanhoofmaarten/mrtnvh/commit/be09feed4bf8f455bd6d1e544f82f3523cceac0c))
+- **postbuild:** disable html minifier ([95f5b89](https://github.com/vanhoofmaarten/mrtnvh/commit/95f5b89eba01b7a66d39be185ee4479c9f9f563d))
+- **workbox:** re-enable service worker ([17323fb](https://github.com/vanhoofmaarten/mrtnvh/commit/17323fb7a4f842323c4b24fcabc471d2474fcd28))
+
+### Style
+
+- **layout:** indenting ([fdf0e2d](https://github.com/vanhoofmaarten/mrtnvh/commit/fdf0e2d3734af254ea9404e5dd09ac52fc7695a4))
+
+### Test
+
+- **e2e:** update snapshots after html minification ([f8ff8fa](https://github.com/vanhoofmaarten/mrtnvh/commit/f8ff8fab3696bc530e74cf96fbb6d7e28aafd961))
+- **navigation:** switch to normal twitter.com ([45b3674](https://github.com/vanhoofmaarten/mrtnvh/commit/45b3674569d2b6c74599fc54c8154b8159c571bc))
+- **visual:** increase maxDiffPixels, update visual snapshots ([3fe6247](https://github.com/vanhoofmaarten/mrtnvh/commit/3fe6247d6a52f3ad41a357bd871c51a104f3b2dc))
+
+### Chores
+
+- **del:** update del import ([9afc3a5](https://github.com/vanhoofmaarten/mrtnvh/commit/9afc3a571508a3650aab6f4641cfbc029227d372))
+- **deps:** lock file maintenance ([2801d48](https://github.com/vanhoofmaarten/mrtnvh/commit/2801d4802c6e7ae99fa4e56f3e13a9af79b382db))
+- **deps:** lock file maintenance ([986a4e8](https://github.com/vanhoofmaarten/mrtnvh/commit/986a4e8219e3ae62e520260924e4bfa5f8ea2634))
+- **deps:** lock file maintenance ([b6abf67](https://github.com/vanhoofmaarten/mrtnvh/commit/b6abf67e80c98b3322e8679e17aa0d564b0ff368))
+- **deps:** lock file maintenance ([04f1a45](https://github.com/vanhoofmaarten/mrtnvh/commit/04f1a4555f182f9f3460ae7e00faff4aad78613f))
+- **deps:** update actions/upload-artifact action to v3 ([5974c00](https://github.com/vanhoofmaarten/mrtnvh/commit/5974c00926a95ef11ffe8b34eb51562bdde7750c))
+- **deps:** update all non-major dependencies ([ec282f1](https://github.com/vanhoofmaarten/mrtnvh/commit/ec282f1228311d086fe734387dcd0c7d346d21fb))
+- **deps:** update all non-major dependencies ([5eed6d7](https://github.com/vanhoofmaarten/mrtnvh/commit/5eed6d714aec39f8159f3674fa232802bf3200ac))
+- **deps:** update all non-major dependencies ([d68d43a](https://github.com/vanhoofmaarten/mrtnvh/commit/d68d43a310c99ae711a023999eee57cfb08b7b6f))
+- **deps:** update all non-major dependencies ([d1ddb71](https://github.com/vanhoofmaarten/mrtnvh/commit/d1ddb718629e08c769474fce7ad823fcb47ac669))
+- **deps:** update amondnet/vercel-action action to v25 ([ee2e299](https://github.com/vanhoofmaarten/mrtnvh/commit/ee2e299f340ead2080f136b5a91126f6dd426455))
+- **deps:** update dependency del to v7 ([6694d10](https://github.com/vanhoofmaarten/mrtnvh/commit/6694d101f43f98628b2f49b100b55b0588b9237b))
+- **deps:** update dependency eslint to ^8.12.0 ([2d64463](https://github.com/vanhoofmaarten/mrtnvh/commit/2d64463afe15a705a3c2ade3baa37b68f1bc8516))
+- **deps:** update dependency eslint to ^8.14.0 ([d1cdb22](https://github.com/vanhoofmaarten/mrtnvh/commit/d1cdb2266e32c2863f11e978bb1f4fb19dd10cdf))
+- **deps:** update dependency eslint to ^8.15.0 ([a89b683](https://github.com/vanhoofmaarten/mrtnvh/commit/a89b683a954a6a502043b414e2c6c229282d8c78))
+- **deps:** update dependency eslint to ^8.16.0 ([8145afe](https://github.com/vanhoofmaarten/mrtnvh/commit/8145afe68f9d15154c264d6ee4a4cb588e909d15))
+- **deps:** update dependency eslint to ^8.17.0 ([c48537d](https://github.com/vanhoofmaarten/mrtnvh/commit/c48537d292bfb15d1307a147868025a4aaee3f08))
+- **deps:** update dependency eslint to ^8.18.0 ([9a07321](https://github.com/vanhoofmaarten/mrtnvh/commit/9a07321500484492ba6e4e48b77f1854537766b9))
+- **deps:** update dependency eslint to ^8.23.0 ([f162fc4](https://github.com/vanhoofmaarten/mrtnvh/commit/f162fc406b0962ee391b5e323a7c3bd2f6714065))
+- **deps:** update dependency husky to v8 ([b592153](https://github.com/vanhoofmaarten/mrtnvh/commit/b59215353a1a63ddb228a2e336d7e0e2c735709a))
+- **deps:** update dependency lint-staged to v13 ([9860376](https://github.com/vanhoofmaarten/mrtnvh/commit/9860376e45f969112e3004a32702d326466271a9))
+- **deps:** update dependency postcss to ^8.4.12 ([a20d8b0](https://github.com/vanhoofmaarten/mrtnvh/commit/a20d8b01c7fcfddfe05d7ad6488cf79d72d68711))
+- **deps:** update dependency postcss to ^8.4.13 ([2265353](https://github.com/vanhoofmaarten/mrtnvh/commit/22653530dde12689a45ffe54efb76ebe971c26b4))
+- **deps:** update dependency postcss to ^8.4.14 ([24f378d](https://github.com/vanhoofmaarten/mrtnvh/commit/24f378d6cf4334dc2fc21d35f785367c2d8547f4))
+- **deps:** update dependency postcss to ^8.4.16 ([7b0e848](https://github.com/vanhoofmaarten/mrtnvh/commit/7b0e84891559b048492c9054c10227f225fe0d91))
+- **deps:** update dependency postcss-custom-selectors to ^6.0.3 ([08c62f4](https://github.com/vanhoofmaarten/mrtnvh/commit/08c62f43fc3b5836ee7efe43a977c693a53adc8b))
+- **deps:** update dependency postcss-html to ^1.4.1 ([75f861f](https://github.com/vanhoofmaarten/mrtnvh/commit/75f861f2ac74a1e84798bcfe60dcb9c667e06691))
+- **deps:** update dependency postcss-html to ^1.5.0 ([6da9b53](https://github.com/vanhoofmaarten/mrtnvh/commit/6da9b5375210bcb6451ce8a767084f469b202be0))
+- **deps:** update dependency postcss-import to v15 ([cb33d4e](https://github.com/vanhoofmaarten/mrtnvh/commit/cb33d4e6d5acc7954b87a3c197ec243773cd2be3))
+- **deps:** update dependency rollup-plugin-inline-svg to v3 ([e571166](https://github.com/vanhoofmaarten/mrtnvh/commit/e5711665d21ea58cfacdeb7396fdd7c93e5cb6b8))
+- **deps:** update dependency stylelint to ^14.10.0 ([036de37](https://github.com/vanhoofmaarten/mrtnvh/commit/036de378d6b76da2210e4ab58882cfc9e914effb))
+- **deps:** update dependency stylelint to ^14.11.0 ([7545bae](https://github.com/vanhoofmaarten/mrtnvh/commit/7545bae1de8884b7542876e27c84babd1d63c771))
+- **deps:** update dependency stylelint to ^14.6.0 ([70a1137](https://github.com/vanhoofmaarten/mrtnvh/commit/70a1137f210927dfb8d51a582b86ffe20a9ce3be))
+- **deps:** update dependency stylelint to ^14.6.1 ([d8f73e8](https://github.com/vanhoofmaarten/mrtnvh/commit/d8f73e89c87a78829908c605e822ae8359eebbbf))
+- **deps:** update dependency stylelint to ^14.7.1 ([323525f](https://github.com/vanhoofmaarten/mrtnvh/commit/323525f33ad689aacf2787712c64b8ab6446a6be))
+- **deps:** update dependency stylelint to ^14.8.2 ([b40bf58](https://github.com/vanhoofmaarten/mrtnvh/commit/b40bf58e7abc7d6e0ebefbf9b85051f8bbf13c6c))
+- **deps:** update dependency stylelint to ^14.8.5 ([c5884fb](https://github.com/vanhoofmaarten/mrtnvh/commit/c5884fb40307819a8593c6e87ffe09648a2d609c))
+- **deps:** update dependency stylelint to ^14.9.1 ([5ad6544](https://github.com/vanhoofmaarten/mrtnvh/commit/5ad654434b033652099e36ea9f55cda180eebdd6))
+- **deps:** update dependency stylelint-config-html to ^1.1.0 ([e880941](https://github.com/vanhoofmaarten/mrtnvh/commit/e880941eb9d6f9ccfe93529b8bb14c725e3d116a))
+- **deps:** update eslint ([8ed02f8](https://github.com/vanhoofmaarten/mrtnvh/commit/8ed02f8906f89f22a38e4baa13a918ebb7ad7706))
+- **deps:** update eslint ([095ae9e](https://github.com/vanhoofmaarten/mrtnvh/commit/095ae9e72988073afa347cf6f06b0c714a75422e))
+- **deps:** update postcss ([364f5ca](https://github.com/vanhoofmaarten/mrtnvh/commit/364f5ca5fb4bbb8b05091a12733cf793a4ea1c74))
+
 ### [7.0.1](https://github.com/vanhoofmaarten/mrtnvh/compare/v7.0.0...v7.0.1) (2022-03-08)
 
 ### Bug Fixes
