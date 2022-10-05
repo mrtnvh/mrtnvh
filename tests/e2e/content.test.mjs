@@ -7,7 +7,7 @@ import { getPages } from '../setup/config.mjs';
 import { getUrl, customSnapshotIdentifier } from '../setup/utils.mjs';
 import removeClass from '../setup/posthtml/removeClass.mjs';
 
-test.skip.describe.parallel('Content DOM snapshots', async () => {
+test.describe.skip('Content DOM snapshots', async () => {
   let port;
   let server;
 
