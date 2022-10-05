@@ -124,7 +124,7 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
-        test-type: ['performance', 'visual']
+        test-type: ['performance']
 
     steps:
       - uses: actions/checkout@v3
