@@ -1,0 +1,72 @@
+---
+import { startCase } from 'lodash-es';
+import clsx from 'clsx';
+import { getCountryFlagAndNameFromCode } from '../lib/useCountries';
+
+export interface Event {
+  title: string;
+  url?: string;
+  location: string;
+  country: string;
+  topic: string;
+  startDate: string;
+  endDate: string;
+}
+
+interface Props {
+  events: Event[];
+  renderTopic?: boolean;
+  renderHeader?: boolean;
+}
+
+const { events: eventsProp, renderTopic = false, renderHeader = false } = Astro.props;
+
+const events = eventsProp.map((event) => {
+  const { country, ...rest } = event;
+  const { flag, name } = getCountryFlagAndNameFromCode(country);
+  return { ...rest, country: { flag, name } };
+});
+---
+
+<table class="table-layout-unset">
+  <thead class={clsx({ 'sr-only': !renderHeader })}>
+    <tr>
+      <th scope="col">Event</th>
+      <th scope="col">Topic</th>
+      <th scope="col">Date</th>
+      <th scope="col">Location</th>
+      <th scope="col">Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      events.map((event) => (
+        <tr>
+          <td>
+            {event.url ? (
+              <a href={event.url} target="_blank" rel="noopener">
+                {event.title}
+              </a>
+            ) : (
+              event.title
+            )}
+          </td>
+          {renderTopic && <td>{startCase(event.topic)}</td>}
+          <td>{event.startDate}</td>
+          <td>{event.location}</td>
+          <td>
+            <span class="sr-only">{event.country.name}</span>
+            <span aria-hidden>{event.country.flag}</span>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style>
+  table :where(td,th):last-child {
+    text-align: end;
+    padding-inline-start: 0;
+  }
+</style>

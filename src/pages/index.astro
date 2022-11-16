@@ -4,9 +4,10 @@ import { format } from 'date-fns';
 import BaseLayout from '../layouts/Base.astro';
 import Intro from '../components/Page/Intro.astro';
 import List from '../components/List/List.astro';
+import UpcomingTalks from '../components/UpcomingTalks.astro';
 
 const dateNow = format(new Date(), 'yyyyMMdd');
-const data = await Astro.glob('./{talks,activity,publications}/*.mdx').then((files) =>
+const data = await Astro.glob('./*.mdx').then((files) =>
   files.map(({ frontmatter, ...data }) => ({
     ...data,
     ...frontmatter,
@@ -14,6 +15,9 @@ const data = await Astro.glob('./{talks,activity,publications}/*.mdx').then((fil
 );
 
 const events = orderBy(data, ['datePublished'], ['desc']);
+const unpublishedTalks = events.filter(
+  ({ datePublished, category }) => datePublished > dateNow && category === 'Talks',
+);
 const publishedEvents = events.filter(({ datePublished }) => datePublished <= dateNow);
 ---
 
@@ -21,6 +25,7 @@ const publishedEvents = events.filter(({ datePublished }) => datePublished <= da
   <Intro />
   <section class="events">
     <div class="container">
+      <UpcomingTalks items={unpublishedTalks} />
       <List items={publishedEvents} />
     </div>
   </section>

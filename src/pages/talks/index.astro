@@ -4,17 +4,19 @@ import { parse, format } from 'date-fns';
 import BaseLayout from '../../layouts/Base.astro';
 import List from '../../components/List/List.astro';
 import Folio from '../../components/Page/Folio.astro';
+import EventsTable, { type Event } from '../../components/EventsTable.astro';
+import events from '../../events.json';
 
-const dateNow = format(new Date(), 'yyyyMMdd');
-const allTalks = await Astro.glob('./*.mdx').then((files) =>
-  files.map(({ frontmatter, ...data }) => ({
-    ...data,
-    ...frontmatter,
-  })),
-);
-const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
-const unpublishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished > dateNow);
-const publishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished <= dateNow);
+// const dateNow = format(new Date(), 'yyyyMMdd');
+// const allTalks = await Astro.glob('./*.mdx').then((files) =>
+//   files.map(({ frontmatter, ...data }) => ({
+//     ...data,
+//     ...frontmatter,
+//   })),
+// );
+// const allTalksOrdered = orderBy(allTalks, ['datePublished'], ['desc']);
+// const unpublishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished > dateNow);
+// const publishedTalks = allTalksOrdered.filter(({ datePublished }) => datePublished <= dateNow);
 const baseLayoutProps = defaultsDeep(
   {
     content: {
@@ -25,38 +27,18 @@ const baseLayoutProps = defaultsDeep(
   },
   Astro.props,
 );
+
+const transformedEvents = (events as unknown as Event[])
+  .sort((a, b) => {
+    const dateA = new Date(a.startDate);
+    const dateB = new Date(b.startDate);
+    return dateB.getTime() - dateA.getTime();
+  });
 ---
 
 <BaseLayout {...baseLayoutProps}>
-  <Folio title="Talks">
-    {
-      unpublishedTalks.length > 0 && (
-        <div class="upcoming full-width">
-          <div class="container">
-            <h2 class="upcoming-title">Upcoming</h2>
-            <ul class="talks">
-              {unpublishedTalks.map((talk) => {
-                const date = parse(talk.datePublished, 'yyyyMMdd', new Date());
-                return (
-                  <li class="talk">
-                    <time datetime={date.toString()}>{format(date, 'yyyy MM dd')}</time>
-                    {talk.redirect ? (
-                      <a href={talk.redirect} class="talk-title external" rel="noopener" target="_blank">
-                        {talk.title}
-                      </a>
-                    ) : (
-                      <span class="talk-title">{talk.title}</span>
-                    )}
-                    <span class="talk-subtitle">{talk.subtitle}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-      )
-    }
-    <List items={publishedTalks} large />
+  <Folio title="Talks" show-title={true}>
+    {(<EventsTable events={transformedEvents} renderTopic={true} renderHeader={true} />)}
   </Folio>
 </BaseLayout>
 

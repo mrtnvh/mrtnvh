@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Modern Frontends Live",
+    "url": "https://modernfrontends.live",
+    "startDate": "2022-11-17",
+    "endDate": "2022-11-18",
+    "location": "London",
+    "country": "GB",
+    "topic": "open-API"
+  },
+  {
+    "title": "Visug XL",
+    "url": "https://www.visug.be/Events/80",
+    "startDate": "2022-10-28",
+    "location": "Hasselt",
+    "country": "BE",
+    "topic": "open-API"
+  },
+  {
+    "title": "Full Stack Antwerp meetup",
+    "url": "https://fullstackbelgium.be/",
+    "startDate": "2022-06-29",
+    "location": "Antwerp",
+    "country": "BE",
+    "topic": "open-API"
+  },
+  {
+    "title": "Tech Fair Live",
+    "url": "https://www.techfairlive.com/",
+    "startDate": "2021-04-30",
+    "location": "Online",
+    "country": "Global",
+    "topic": "open-API"
+  },
+  {
+    "title": "Tech Tuesdays Tilburg",
+    "url": "https://www.meetup.com/tilburg-tech-tuesdays/",
+    "startDate": "2021-05-15",
+    "location": "Tilburg",
+    "country": "NL",
+    "topic": "open-API"
+  },
+  {
+    "title": "Ministry of Testing meetup",
+    "startDate": "2019-11-11",
+    "location": "Eindhoven",
+    "country": "NL",
+    "topic": "open-API"
+  },
+  {
+    "title": "Eindhoven front-end meetup",
+    "url": "https://covenofwisdom.io/",
+    "startDate": "2019-10-06",
+    "location": "Eindhoven",
+    "country": "NL",
+    "topic": "open-API"
+  },
+  {
+    "startDate": "2021-06-15",
+    "title": "CodeMotion DevCast",
+    "url": "https://talks.codemotion.com/container-queries-the-next-step-towards-",
+    "location": "Online",
+    "country": "NL",
+    "topic": "container-queries"
+  },
+  {
+    "startDate": "2022-03-09",
+    "title": "Frontend@Scale by Rabobank",
+    "url": "https://www.meetup.com/frontend-at-scale/",
+    "location": "Online",
+    "country": "NL",
+    "topic": "container-queries"
+  },
+  {
+    "startDate": "2022-04-27",
+    "title": "DeveloperWeek Europe 2022",
+    "url": "https://www.developerweek.com/europe/",
+    "location": "Online",
+    "country": "Global",
+    "topic": "container-queries"
+  },
+  {
+    "startDate": "2022-10-05",
+    "title": "Frontmania 2022",
+    "url": "https://frontmania.com/",
+    "location": "Utrecht",
+    "country": "NL",
+    "topic": "container-queries"
+  },
+  {
+    "startDate": "2022-10-11",
+    "title": "Devoxx",
+    "url": "https://devoxx.be/",
+    "location": "Antwerp",
+    "country": "BE",
+    "topic": "container-queries"
+  },
+  {
+    "startDate": "2021-11-11",
+    "title": "Front-end meetup Eindhoven",
+    "url": "https://covenofwisdom.io/",
+    "location": "Eindhoven",
+    "country": "NL",
+    "topic": "container-queries"
+  }
+]

@@ -4,9 +4,10 @@ import Brand from '../Brand.astro';
 import Nav from './Nav.astro';
 
 const currentPathname = new URL(Astro.request.url).pathname;
+const { inverse } = Astro.props;
 ---
 
-<header class={clsx({ header: true })}>
+<header class={clsx({ header: true, 'header-inverse': inverse })}>
   <div class="container">
     <div class={clsx({ brand: true, 'brand-large': currentPathname === '/' })}>
       <Brand />
@@ -32,6 +33,13 @@ const currentPathname = new URL(Astro.request.url).pathname;
       &.header-absolute {
         position: absolute;
       }
+    }
+  }
+
+  .header-inverse .brand {
+    @media (max-width: 799px) {
+      --text-color: var(--background-color);
+      --headings-color: var(--background-color);
     }
   }
 

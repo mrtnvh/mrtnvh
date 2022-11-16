@@ -59,7 +59,23 @@ const linkProps = () => {
   }
 
   .media {
+    position: relative;
     margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      content: '';
+      z-index: 1;
+      display: block;
+      /* stylelint-disable-next-line plugin/stylelint-no-indistinguishable-colors */
+      background: linear-gradient(37.5deg, rgba(255, 255, 255, 0) 33%, rgba(255, 255, 255, 0.75) 100%);
+
+      @media (prefers-color-scheme: dark) {
+        /* stylelint-disable-next-line plugin/stylelint-no-indistinguishable-colors */
+        background: linear-gradient(37.5deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.75) 100%);
+      }
+    }
   }
 
   .link {

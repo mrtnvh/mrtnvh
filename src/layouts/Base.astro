@@ -8,7 +8,11 @@ import '../styles/app.css';
 
 const isProd = import.meta.env.PROD;
 const isMaster = import.meta.env.VITE_PROD === 'true';
-const { content, preloads } = Astro.props;
+const {
+  content,
+  preloads,
+  frontmatter,
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -60,7 +64,7 @@ const { content, preloads } = Astro.props;
           </main>
         ) : (
           <>
-            <Header />
+            <Header inverse={frontmatter?.headerInverse} />
             <main id="swup" class="transition-fade">
               <slot />
             </main>

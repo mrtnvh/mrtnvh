@@ -27,8 +27,15 @@ const rehypePlugins = [
 ];
 
 // https://astro.build/config
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), mdx({ rehypePlugins })],
+  integrations: [
+    sitemap(),
+    mdx({
+      rehypePlugins,
+    })
+  ],
   markdown: {
     rehypePlugins,
   },
