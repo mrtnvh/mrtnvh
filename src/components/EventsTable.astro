@@ -1,5 +1,4 @@
 ---
-import { startCase } from 'lodash-es';
 import clsx from 'clsx';
 import { getCountryFlagAndNameFromCode } from '../lib/useCountries';
 
@@ -51,7 +50,7 @@ const events = eventsProp.map((event) => {
               event.title
             )}
           </td>
-          {renderTopic && <td>{startCase(event.topic)}</td>}
+          {renderTopic && <td>{event.topic}</td>}
           <td>{event.startDate}</td>
           <td>{event.location}</td>
           <td>
@@ -65,7 +64,7 @@ const events = eventsProp.map((event) => {
 </table>
 
 <style>
-  table :where(td,th):last-child {
+  table :where(td, th):last-child {
     text-align: end;
     padding-inline-start: 0;
   }

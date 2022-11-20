@@ -6,7 +6,7 @@
     "endDate": "2022-11-18",
     "location": "London",
     "country": "GB",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "title": "Visug XL",
@@ -14,7 +14,7 @@
     "startDate": "2022-10-28",
     "location": "Hasselt",
     "country": "BE",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "title": "Full Stack Antwerp meetup",
@@ -22,7 +22,7 @@
     "startDate": "2022-06-29",
     "location": "Antwerp",
     "country": "BE",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "title": "Tech Fair Live",
@@ -30,7 +30,7 @@
     "startDate": "2021-04-30",
     "location": "Online",
     "country": "Global",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "title": "Tech Tuesdays Tilburg",
@@ -38,14 +38,14 @@
     "startDate": "2021-05-15",
     "location": "Tilburg",
     "country": "NL",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "title": "Ministry of Testing meetup",
     "startDate": "2019-11-11",
     "location": "Eindhoven",
     "country": "NL",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "title": "Eindhoven front-end meetup",
@@ -53,7 +53,7 @@
     "startDate": "2019-10-06",
     "location": "Eindhoven",
     "country": "NL",
-    "topic": "open-API"
+    "topic": "OpenAPI"
   },
   {
     "startDate": "2021-06-15",
@@ -61,7 +61,7 @@
     "url": "https://talks.codemotion.com/container-queries-the-next-step-towards-",
     "location": "Online",
     "country": "NL",
-    "topic": "container-queries"
+    "topic": "Container Queries"
   },
   {
     "startDate": "2022-03-09",
@@ -69,7 +69,7 @@
     "url": "https://www.meetup.com/frontend-at-scale/",
     "location": "Online",
     "country": "NL",
-    "topic": "container-queries"
+    "topic": "Container Queries"
   },
   {
     "startDate": "2022-04-27",
@@ -77,7 +77,7 @@
     "url": "https://www.developerweek.com/europe/",
     "location": "Online",
     "country": "Global",
-    "topic": "container-queries"
+    "topic": "Container Queries"
   },
   {
     "startDate": "2022-10-05",
@@ -85,7 +85,7 @@
     "url": "https://frontmania.com/",
     "location": "Utrecht",
     "country": "NL",
-    "topic": "container-queries"
+    "topic": "Container Queries"
   },
   {
     "startDate": "2022-10-11",
@@ -93,7 +93,7 @@
     "url": "https://devoxx.be/",
     "location": "Antwerp",
     "country": "BE",
-    "topic": "container-queries"
+    "topic": "Container Queries"
   },
   {
     "startDate": "2021-11-11",
@@ -101,6 +101,6 @@
     "url": "https://covenofwisdom.io/",
     "location": "Eindhoven",
     "country": "NL",
-    "topic": "container-queries"
+    "topic": "Container Queries"
   }
 ]
