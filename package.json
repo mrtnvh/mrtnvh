@@ -57,7 +57,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "fast-xml-parser": "^4.0.11",
     "favicons": "^6.2.2",
-    "fs-extra": "^10.1.0",
+    "fs-extra": "^11.1.0",
     "get-port": "^6.1.2",
     "globby": "^13.1.2",
     "htmlnano": "^2.0.2",
