@@ -45,7 +45,7 @@
     "@astrojs/sitemap": "^1.0.0",
     "@playwright/test": "^1.27.1",
     "@web/rollup-plugin-html": "^1.11.0",
-    "@wemake-services/stylelint-config-scss": "^1.0.0",
+    "@wemake-services/stylelint-config-scss": "^2.0.0",
     "autoprefixer": "^10.4.13",
     "critters": "0.0.16",
     "cssnano": "^5.1.14",
