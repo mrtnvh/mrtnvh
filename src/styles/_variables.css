@@ -2,19 +2,19 @@
   /**
   * Colors
   */
-  --dark: hsl(24, 9%, 10%);
-  --grey: hsl(25, 5%, 44%);
-  --grey-300: hsl(25, 6%, 85%);
-  --grey-200: hsl(20, 6%, 90%);
-  --grey-100: hsl(60, 4%, 95%);
-  --light: hsl(60, 9%, 97%);
-  --primary: hsl(82, 78%, 55%);
-  --primary-dark: hsl(85, 78%, 27%);
-  --github: hsla(134, 62%, 51%, 1);
-  --twitter: hsla(206, 89%, 59%, 1);
-  --linkedin: hsla(201, 100%, 36%, 1);
-  --youtube: hsl(0, 100%, 50%);
-  --isaac: hsl(197, 100%, 50%);
+  --dark: hsl(24deg, 9%, 10%);
+  --grey: hsl(25deg, 5%, 44%);
+  --grey-300: hsl(25deg, 6%, 85%);
+  --grey-200: hsl(20deg, 6%, 90%);
+  --grey-100: hsl(60deg, 4%, 95%);
+  --light: hsl(60deg, 9%, 97%);
+  --primary: hsl(82deg, 78%, 55%);
+  --primary-dark: hsl(85deg, 78%, 27%);
+  --github: hsla(134deg, 62%, 51%, 1);
+  --twitter: hsla(206deg, 89%, 59%, 1);
+  --linkedin: hsla(201deg, 100%, 36%, 1);
+  --youtube: hsl(0deg, 100%, 50%);
+  --isaac: hsl(197deg, 100%, 50%);
   --text-color: var(--dark);
   --background-color: var(--light);
 
@@ -74,7 +74,7 @@
   * Spacing
   */
   --space: 1.563rem;
-  --grid-gap-x: calc(var(--space));
+  --grid-gap-x: clamp(var(--space), 3.5vw ,var(--space) * 2);
   --grid-gap-y: calc(var(--space) * 2);
 
   /**
@@ -107,15 +107,11 @@
     --dark: rgb(231, 229, 228);
     --light: rgb(28, 25, 23);
     --grey: rgb(168, 162, 158);
-    --grey-200: hsl(0, 0%, 15%);
-    --grey-300: hsl(0, 0%, 25%);
+    --grey-200: hsl(0deg, 0%, 15%);
+    --grey-300: hsl(0deg, 0%, 25%);
   }
   @media (min-width: 800px) {
     --font-size-root: clamp(14px, 1.5vw, 18px);
-  }
-
-  @media (min-width: 700px) {
-    --grid-gap-x: calc(var(--space) * 2);
   }
 
   @media (min-width: 800px) {

@@ -4,6 +4,7 @@ module.exports = {
     'scss/at-function-named-arguments': null,
     'scss/media-feature-value-dollar-variable': null,
     'scale-unlimited/declaration-strict-value': null,
+    'plugin/stylelint-no-indistinguishable-colors': null,
     'csstree/validator': {
       ignoreAtrules: ['custom-selector'],
     },
