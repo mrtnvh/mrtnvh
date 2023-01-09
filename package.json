@@ -86,7 +86,7 @@
     "stylelint": "^14.16.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.4",
-    "stylelint-order": "^5.0.0",
+    "stylelint-order": "^6.0.1",
     "urljoin": "^0.1.5",
     "workbox-build": "^6.5.4"
   }
