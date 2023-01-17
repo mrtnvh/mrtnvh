@@ -5,7 +5,7 @@ import BaseLayout from '../../layouts/Base.astro';
 import List from '../../components/List/List.astro';
 import Folio from '../../components/Page/Folio.astro';
 import EventsTable, { type Event } from '../../components/EventsTable.astro';
-import events from '../../events.json';
+import events from '../../events.csv';
 
 // const dateNow = format(new Date(), 'yyyyMMdd');
 // const allTalks = await Astro.glob('./*.mdx').then((files) =>
@@ -28,12 +28,11 @@ const baseLayoutProps = defaultsDeep(
   Astro.props,
 );
 
-const transformedEvents = (events as unknown as Event[])
-  .sort((a, b) => {
-    const dateA = new Date(a.startDate);
-    const dateB = new Date(b.startDate);
-    return dateB.getTime() - dateA.getTime();
-  });
+const transformedEvents = (events as unknown as Event[]).sort((a, b) => {
+  const dateA = new Date(a.startDate);
+  const dateB = new Date(b.startDate);
+  return dateB.getTime() - dateA.getTime();
+});
 ---
 
 <BaseLayout {...baseLayoutProps}>

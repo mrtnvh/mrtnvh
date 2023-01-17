@@ -5,6 +5,7 @@ import { camelCase } from 'lodash-es';
 import { svgSprite } from 'rollup-plugin-svgsprite-generator';
 import copy from 'rollup-plugin-copy';
 import rehypeRewrite from 'rehype-rewrite';
+import dsv from '@rollup/plugin-dsv';
 
 const rehypePlugins = [
   [
@@ -34,13 +35,14 @@ export default defineConfig({
     sitemap(),
     mdx({
       rehypePlugins,
-    })
+    }),
   ],
   markdown: {
     rehypePlugins,
   },
   vite: {
     plugins: [
+      dsv(),
       copy({
         targets: [
           {

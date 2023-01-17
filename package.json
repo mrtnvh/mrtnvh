@@ -48,6 +48,7 @@
     "@astrojs/mdx": "^0.11.3",
     "@astrojs/sitemap": "^1.0.0",
     "@playwright/test": "^1.26.1",
+    "@rollup/plugin-dsv": "^3.0.1",
     "@types/country-list": "^2.1.1",
     "@types/lodash-es": "^4.17.6",
     "@web/rollup-plugin-html": "^1.11.0",
