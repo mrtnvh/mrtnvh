@@ -5,9 +5,12 @@ import { parse, format } from 'date-fns';
 export interface Props {
   item: any;
   index?: number;
+  showCategory?: boolean;
+  showDate?: boolean;
 }
 
-const { item, index = 0 } = Astro.props;
+const { item, index = 0, showCategory = false, showDate = false } = Astro.props;
+const showMeta = showCategory || showDate;
 const date = parse(item.datePublished, 'yyyyMMdd', new Date());
 
 const linkProps = () => {
@@ -29,7 +32,7 @@ const linkProps = () => {
       <Thumbnail
         src={item.thumbnail}
         alt={item.title}
-        class="image"
+        className="image"
         tint={item.tint}
         loading={index > 0 ? 'lazy' : 'eager'}
         variants={[{ sizes: '(min-width: 800px) 58vw, (min-width: 1280px) 650px, 100vw', width: 1600, height: 900 }]}
@@ -40,10 +43,14 @@ const linkProps = () => {
         {item.title}
       </h2>
       <p class="subtitle" set:html={item.subtitle || item.description}></p>
-      <div class="meta">
-        <time datetime={date}>{format(date, 'yyyy MM dd')}</time>
-        {item.category && <div class="category">{item.category}</div>}
-      </div>
+      {
+        showMeta && (
+          <div class="meta">
+            {showDate && <time datetime={date.toJSON()}>{format(date, 'yyyy MM dd')}</time>}
+            {showCategory && item.category && <div class="category">{item.category}</div>}
+          </div>
+        )
+      }
     </div>
   </a>
 </article>
@@ -61,21 +68,6 @@ const linkProps = () => {
   .media {
     position: relative;
     margin-bottom: 0;
-
-    &::before {
-      position: absolute;
-      inset: 0;
-      content: '';
-      z-index: 1;
-      display: block;
-      /* stylelint-disable-next-line plugin/stylelint-no-indistinguishable-colors */
-      background: linear-gradient(37.5deg, rgba(255, 255, 255, 0) 33%, rgba(255, 255, 255, 0.75) 100%);
-
-      @media (prefers-color-scheme: dark) {
-        /* stylelint-disable-next-line plugin/stylelint-no-indistinguishable-colors */
-        background: linear-gradient(37.5deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.75) 100%);
-      }
-    }
   }
 
   .link {
@@ -123,7 +115,7 @@ const linkProps = () => {
     @media (min-width: 800px) {
       /* stylelint-disable-next-line scss/at-function-named-arguments */
       font-size: clamp(1rem, 7.5vw, var(--font-size-5xl));
-      margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.25) calc(var(--grid-gap-x) * -2);
+      margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.25) calc(var(--grid-gap-x) * -3);
       order: 1;
     }
   }

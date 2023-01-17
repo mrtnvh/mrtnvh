@@ -74,7 +74,7 @@
   * Spacing
   */
   --space: 1.563rem;
-  --grid-gap-x: clamp(var(--space), 3.5vw ,var(--space) * 2);
+  --grid-gap-x: clamp(var(--space), 3.5vw, var(--space) * 2);
   --grid-gap-y: calc(var(--space) * 2);
 
   /**
@@ -109,9 +109,6 @@
     --grey: rgb(168, 162, 158);
     --grey-200: hsl(0deg, 0%, 15%);
     --grey-300: hsl(0deg, 0%, 25%);
-  }
-  @media (min-width: 800px) {
-    --font-size-root: clamp(14px, 1.5vw, 18px);
   }
 
   @media (min-width: 800px) {
