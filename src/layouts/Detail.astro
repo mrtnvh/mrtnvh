@@ -103,14 +103,18 @@ const transformedEvents = (events as unknown as Event[])
           <div class={clsx('media', { 'media-multiple': !!slides && !!video })}>
             <h2 class="sr-only">Media</h2>
             <div class="media-content">
-              <figure>
-                <VisualPreview url={video} alt={videoThumbnailAlt} src={video} />
-                <figcaption>{videoThumbnailAlt}</figcaption>
-              </figure>
-              <figure>
-                <VisualPreview url={slides} src={thumbnail} alt={slidesThumbnailAlt} />
-                <figcaption>{slidesThumbnailAlt}</figcaption>
-              </figure>
+              {video && (
+                <figure>
+                  <VisualPreview url={video} alt={videoThumbnailAlt} src={video} />
+                  <figcaption>{videoThumbnailAlt}</figcaption>
+                </figure>
+              )}
+              {slides && (
+                <figure>
+                  <VisualPreview url={slides} src={thumbnail} alt={slidesThumbnailAlt} />
+                  <figcaption>{slidesThumbnailAlt}</figcaption>
+                </figure>
+              )}
             </div>
           </div>
         )

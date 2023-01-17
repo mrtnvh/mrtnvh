@@ -62,7 +62,9 @@ const { source, icon } = getSourceAndIcon(src);
     display: block;
     color: var(--background-color);
     background-color: var(--dark);
+    /* stylelint-disable */
     container: inline-size;
+    /* stylelint-enable */
   }
 
   .icon {
@@ -77,7 +79,7 @@ const { source, icon } = getSourceAndIcon(src);
     transition: var(--animation-duration) var(--animation-timing-function);
     transition-property: opacity;
     opacity: 0;
-    color: hsl(60, 9%, 97%);
+    color: hsl(60deg, 9%, 97%);
 
     .video:where(:hover, :focus, :active) & {
       opacity: 1;
