@@ -17,7 +17,7 @@ function setNavigationActiveLink() {
   document.querySelectorAll('#nav a').forEach((link) => {
     const currentPath = window.location.pathname;
     const linkPath = new URL(link.href).pathname;
-    if (currentPath.includes('activity') && linkPath === '/') {
+    if (currentPath === '/' && linkPath === '/') {
       link.setAttribute('data-page-current', '');
     } else if (currentPath.includes(linkPath) && linkPath !== '/') {
       link.setAttribute('data-page-current', '');

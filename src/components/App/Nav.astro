@@ -3,7 +3,7 @@ const { offCanvas = false, page } = Astro.props;
 const currentPage = (link) => {
   const url = new URL(Astro.request.url);
   if (link.href === '/') {
-    return url.pathname === '/' || url.pathname.includes('activity');
+    return url.pathname === '/' || url.pathname.includes('topics');
   }
 
   return url.pathname.includes(link.href);
