@@ -34,10 +34,6 @@ td {
     border-bottom: 0;
   }
 
-  tr:last-child & {
-    /* border-bottom: 0; */
-  }
-
   tr:first-child & {
     border-top: 1px solid var(--table-border-color);
 

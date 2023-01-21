@@ -4,25 +4,12 @@ import { clsx } from 'clsx';
 import BaseLayout from './Base.astro';
 import { getImageVariants } from '../components/Image/cloudinary.js';
 import Thumbnail from '../components/Image/Image.astro';
-import events from '../events.csv';
+import events from '../pages/events/events.csv';
 import EventsTable, { type Event } from '../components/EventsTable.astro';
 import VisualPreview from '../components/VisualPreview.astro';
 
 const {
-  content: {
-    title,
-    thumbnail,
-    thumbnailCredits,
-    slides,
-    slidesThumbnailAlt,
-    demo,
-    video,
-    videoThumbnailAlt,
-    tint,
-    datePublished,
-    category,
-    id,
-  },
+  content: { title, thumbnail, thumbnailCredits, slides, slidesThumbnailAlt, video, videoThumbnailAlt, tint, id },
 } = Astro.props;
 
 const defaultImageSettings = { src: thumbnail, tint };

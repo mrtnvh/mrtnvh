@@ -6,27 +6,22 @@ import Intro from '../components/Page/Intro.astro';
 import List from '../components/List/List.astro';
 import UpcomingTalks from '../components/UpcomingTalks.astro';
 
-const dateNow = format(new Date(), 'yyyyMMdd');
-const data = await Astro.glob('./*.mdx').then((files) =>
+const data = await Astro.glob('./topics/*.mdx').then((files) =>
   files.map(({ frontmatter, ...data }) => ({
     ...data,
     ...frontmatter,
   })),
 );
 
-const events = orderBy(data, ['datePublished'], ['desc']);
-const unpublishedTalks = events.filter(
-  ({ datePublished, category }) => datePublished > dateNow && category === 'Talks',
-);
-const publishedEvents = events.filter(({ datePublished }) => datePublished <= dateNow);
+const topics = orderBy(data, ['datePublished'], ['desc']);
 ---
 
 <BaseLayout {...Astro.props}>
   <Intro />
   <section class="events">
     <div class="container">
-      <UpcomingTalks items={unpublishedTalks} />
-      <List items={publishedEvents} />
+      <!-- <UpcomingTalks items={unpublishedTalks} /> -->
+      <List items={topics} />
     </div>
   </section>
 </BaseLayout>

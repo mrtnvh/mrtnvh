@@ -21,7 +21,7 @@
   /**
   * Fonts
   */
-  --font-size-root: clamp(14px, 2.5vw, 18px);
+  --font-size-root: clamp(14px, 2vw, 18px);
   --font-size-sm: 0.8rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;

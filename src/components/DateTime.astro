@@ -1,0 +1,55 @@
+---
+import clsx from 'clsx';
+
+interface Props {
+  date: Date;
+  class: string;
+}
+
+const { date, class: className } = Astro.props;
+const dateLong = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+}).format(date);
+const dateShort = new Intl.DateTimeFormat('en-US', {
+  year: '2-digit',
+  month: '2-digit',
+  day: '2-digit',
+}).format(date);
+---
+
+<span class={clsx(className, 'date')}>
+  <span class="date-short">
+    {dateShort}
+  </span>
+  <div class="date-long">
+    {dateLong}
+  </div>
+</span>
+
+<style>
+  .date {
+    container-type: inline-size;
+    container-name: date;
+  }
+
+  .date-long {
+    display: none;
+  }
+
+  .date-long,
+  .date-short {
+    white-space: nowrap;
+  }
+
+  @container (min-inline-size: 10ch) {
+    .date-long {
+      display: inline;
+    }
+
+    .date-short {
+      display: none;
+    }
+  }
+</style>
