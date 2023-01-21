@@ -6,7 +6,9 @@ module.exports = {
     'scale-unlimited/declaration-strict-value': null,
     'plugin/stylelint-no-indistinguishable-colors': null,
     'csstree/validator': {
-      ignoreAtrules: ['custom-selector'],
+      syntaxExtensions: ['sass'],
+      ignoreAtrules: ['else', 'container'],
+      ignoreProperties: ['container', 'container-type', 'container-name'],
     },
     'selector-pseudo-class-no-unknown': [
       true,

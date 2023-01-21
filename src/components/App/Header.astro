@@ -36,13 +36,6 @@ const { inverse } = Astro.props;
     }
   }
 
-  .header-inverse .brand {
-    @media (max-width: 799px) {
-      --text-color: var(--background-color);
-      --headings-color: var(--background-color);
-    }
-  }
-
   .container {
     display: flex;
     align-items: center;
@@ -61,6 +54,13 @@ const { inverse } = Astro.props;
         margin: 0 auto;
         max-width: calc(var(--space) * 12);
         width: 100%;
+      }
+    }
+
+    .header-inverse & {
+      @media (max-width: 799px) {
+        --text-color: var(--background-color);
+        --headings-color: var(--background-color);
       }
     }
 

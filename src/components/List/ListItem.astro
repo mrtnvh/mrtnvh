@@ -42,7 +42,7 @@ const linkProps = () => {
       <h2 class="title">
         {item.title}
       </h2>
-      <p class="subtitle" set:html={item.subtitle || item.description}></p>
+      <p class="subtitle" set:html={item.subtitle || item.description} />
       {
         showMeta && (
           <div class="meta">
