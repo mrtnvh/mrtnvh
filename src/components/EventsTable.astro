@@ -50,7 +50,7 @@ function parseDate(date: string) {
       {
         events.map((event) => (
           <tr>
-            <td>
+            <td class="table-column-title">
               {event.url ? (
                 <a href={event.url} target="_blank" rel="noopener">
                   {event.title}
@@ -59,12 +59,12 @@ function parseDate(date: string) {
                 event.title
               )}
             </td>
-            {renderTopic && <td>{event.topic}</td>}
-            <td>
+            {renderTopic && <td class="table-column-topic">{event.topic}</td>}
+            <td class="table-column-date">
               <DateTime class="event-date" date={parseDate(event.startDate)} />
             </td>
-            <td>{event.location}</td>
-            <td>
+            <td class="table-column-location">{event.location}</td>
+            <td class="table-column-country">
               <span class="sr-only">{event.country.name}</span>
               <span aria-hidden>{event.country.flag}</span>
             </td>
@@ -78,6 +78,10 @@ function parseDate(date: string) {
 <style>
   .table-wrapper {
     container: events-table / inline-size;
+  }
+
+  .table-column-date {
+    min-width: 12ch;
   }
 
   @container events-table (max-inline-size: 700px) {
@@ -114,24 +118,23 @@ function parseDate(date: string) {
     }
 
     table :where(td, th) {
-      &:nth-child(1) {
+      &.table-column-title {
         grid-area: 1 / 1 / 1 / 4;
       }
 
-      &:nth-child(2) {
+      &.table-column-topic {
         grid-area: 2 / 1 / 2 / 4;
       }
 
-      &:nth-child(3) {
-        min-width: 30ch;
+      &.table-column-date {
         grid-area: 3 / 1 / 3 / 1;
       }
 
-      &:nth-child(4) {
+      &.table-column-location {
         grid-area: 3 / 2 / 3 / 2;
       }
 
-      &:nth-child(5) {
+      &.table-column-country {
         grid-area: 3 / 3 / 3 / 3;
       }
     }
