@@ -208,7 +208,7 @@ const transformedEvents = (events as unknown as Event[])
   }
 
   .media {
-    margin-block-end: clamp(var(--detail-vertical-gap-size) / 1.5);
+    margin-block-end: clamp(var(--detail-vertical-gap-size) / 2, 2vw, var(--grid-gap-y));
 
     &.media-multiple {
       grid-column: 1 / span 4;
