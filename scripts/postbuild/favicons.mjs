@@ -1,4 +1,3 @@
-import { promisify } from 'util';
 import fs from 'fs-extra';
 import favicons from 'favicons';
 import { replaceFilesContent, BUILD_DIRECTORY } from './_utils.mjs';
@@ -77,7 +76,7 @@ const getConfiguration = (pkg) => ({
 
 export default async () => {
   const pkg = await fs.readJSON('package.json');
-  const { html, images, files } = await promisify(favicons)(source, getConfiguration(pkg));
+  const { html, images, files } = await favicons(source, getConfiguration(pkg));
 
   await Promise.all(
     images.map(async ({ name, contents }) => fs.outputFile(`${BUILD_DIRECTORY}${iconOutPath}/${name}`, contents)),
