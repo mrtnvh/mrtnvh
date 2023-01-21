@@ -5,8 +5,7 @@ const currentPage = (link) => {
   if (link.href === '/') {
     return url.pathname === '/' || url.pathname.includes('topics');
   }
-
-  return url.pathname.includes(link.href);
+  return url.pathname.startsWith(link.href);
 };
 
 const links = [
