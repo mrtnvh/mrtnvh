@@ -12,8 +12,6 @@ import lighthouseDesktopConfig from 'lighthouse/lighthouse-core/config/lr-deskto
 import { getPages } from '../setup/config.mjs';
 import { getUrl, customSnapshotIdentifier, getDirname } from '../setup/utils.mjs';
 
-const threshold = 95;
-
 const customConfig = { settings: { skipAudits: ['is-crawlable'] } };
 const lighthouseConfig = {
   mobile: defaultsDeep(customConfig, lighthouseMobileConfig),
@@ -81,11 +79,11 @@ lighthouseTest.describe('Lighthouse', async () => {
                 port,
                 config: environmentConfig,
                 thresholds: {
-                  performance: threshold,
-                  accessibility: threshold,
-                  'best-practices': threshold,
-                  seo: threshold,
-                  pwa: threshold,
+                  performance: 90,
+                  accessibility: 100,
+                  'best-practices': 100,
+                  seo: 100,
+                  pwa: 100,
                 },
                 reports: {
                   formats: {
