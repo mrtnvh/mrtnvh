@@ -1,5 +1,3 @@
-import criticalCss from './critical-css.mjs';
-import purgeCss from './purge-css.mjs';
 import sitemap from './sitemap.mjs';
 import favicons from './favicons.mjs';
 import hash from './hash.mjs';
@@ -14,14 +12,6 @@ import html from './html.mjs';
   console.log('[FAVICONS]', 'Start');
   await favicons();
   console.log('[FAVICONS]', 'Completed');
-
-  console.log('[PURGE CSS]', 'Start');
-  await purgeCss();
-  console.log('[PURGE CSS]', 'Completed');
-
-  console.log('[CRITICAL CSS]', 'Start');
-  await criticalCss();
-  console.log('[CRITICAL CSS]', 'Completed');
 
   console.log('[WORKBOX]', 'Start');
   await workbox();
