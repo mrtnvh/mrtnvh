@@ -21,9 +21,9 @@ const links = {
     desktop: 'https://github.com/vanhoofmaarten/',
     mobile: 'https://github.com/vanhoofmaarten/',
   },
-  twitter: {
-    desktop: 'https://twitter.com/mrtnvh/',
-    mobile: 'https://twitter.com/mrtnvh/',
+  mastodon: {
+    desktop: 'https://techhub.social/@mrtnvh/',
+    mobile: 'https://techhub.social/@mrtnvh/',
   },
   linkedin: {
     desktop: 'https://www.linkedin.com/in/mrtnvh/',
