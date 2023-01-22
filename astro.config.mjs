@@ -3,6 +3,8 @@ import mdx from '@astrojs/mdx'; // eslint-disable-next-line import/no-unresolved
 import sitemap from '@astrojs/sitemap';
 import rehypeRewrite from 'rehype-rewrite';
 import dsv from '@rollup/plugin-dsv';
+import critters from 'astro-critters';
+import purgecss from 'astro-purgecss';
 
 const rehypePlugins = [
   [
@@ -24,11 +26,15 @@ const rehypePlugins = [
   ],
 ];
 
-// https://astro.build/config
-
-// https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), mdx()],
+  integrations: [
+    sitemap(),
+    mdx({
+      rehypePlugins,
+    }),
+    purgecss(),
+    critters(),
+  ],
   markdown: {
     rehypePlugins,
   },
