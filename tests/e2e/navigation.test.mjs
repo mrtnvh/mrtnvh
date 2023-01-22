@@ -33,6 +33,10 @@ const links = {
     desktop: 'https://www.youtube.com/channel/UC7kjbPgAD2QYqX3h-Cqu1nQ',
     mobile: 'https://m.youtube.com/channel/UC7kjbPgAD2QYqX3h-Cqu1nQ',
   },
+  codepen: {
+    desktop: 'https://codepen.io/mrtnvh',
+    mobile: 'https://codepen.io/mrtnvh',
+  },
 };
 
 test.describe('Navigation', async () => {
