@@ -108,7 +108,7 @@ hr {
 .long-form {
   --headings-margin-block-start: calc(var(--space) * 2);
 
-& p + hr {
-  margin-block-start: calc(var(--space) * 2);
-}
+  p + hr {
+    margin-block-start: calc(var(--space) * 2);
+  }
 }
