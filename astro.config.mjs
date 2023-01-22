@@ -5,6 +5,8 @@ import { camelCase } from 'lodash-es';
 import { svgSprite } from 'rollup-plugin-svgsprite-generator';
 import copy from 'rollup-plugin-copy';
 import rehypeRewrite from 'rehype-rewrite';
+import critters from 'astro-critters';
+import purgecss from 'astro-purgecss';
 
 const rehypePlugins = [
   [
@@ -26,9 +28,15 @@ const rehypePlugins = [
   ],
 ];
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), mdx({ rehypePlugins })],
+  integrations: [
+    sitemap(),
+    mdx({
+      rehypePlugins,
+    }),
+    purgecss(),
+    critters(),
+  ],
   markdown: {
     rehypePlugins,
   },
