@@ -1,0 +1,56 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  container: experience / inline-size;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space) / 1.5);
+}
+
+@container experience (min-inline-size: 400px) {
+  .experience-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.experience-title {
+  grid-area: 1 / 1 / 2 / 4;
+  margin: 0;
+}
+
+.experience-company {
+  grid-area: 2 / 1 / 2 / 2;
+}
+
+.experience-location {
+  white-space: nowrap;
+}
+
+.experience-date {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.experience-content {
+  grid-area: 3 / 1 / 3 / 4;
+}
+
+.experience-company,
+.experience-location,
+.experience-date {
+  font-style: italic;
+}
+
+@container experience (min-inline-size: 500px) {
+  .experience-company,
+  .experience-location,
+  .experience-date {
+    font-style: normal;
+  }
+}
