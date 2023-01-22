@@ -26,7 +26,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@astrojs/preact": "^1.2.0",
     "@swup/a11y-plugin": "^2.1.0",
     "@swup/head-plugin": "^1.2.1",
     "@swup/preload-plugin": "^1.1.0",
