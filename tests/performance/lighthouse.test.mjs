@@ -91,23 +91,6 @@ lighthouseTest.describe('Lighthouse', async () => {
                   directory: reportsDirectory,
                 },
               });
-
-              // const { lhr, report } = await lighthouse(
-              //   url,
-              //   {
-              //     port: cdpPort,
-              //     output: 'html',
-              //   },
-              //   environmentConfig,
-              // );
-
-              // const scores = Object.values(lhr.categories).map(({ title, score }) => ({
-              //   title,
-              //   score,
-              // }));
-              // scores.forEach(({ title, score }) => {
-              //   expect(score, `${title} score below threshold of ${threshold * 100}%`).toBeGreaterThanOrEqual(threshold);
-              // });
             }
           });
         });
