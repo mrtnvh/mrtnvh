@@ -61,7 +61,7 @@ function parseDate(date: string) {
             </td>
             {renderTopic && <td class="table-column-topic">{event.topic}</td>}
             <td class="table-column-date">
-              <DateTime class="event-date" date={parseDate(event.startDate)} />
+              <DateTime class="event-date" date={parseDate(event.startDate)} format={'date'} />
             </td>
             <td class="table-column-location">{event.location}</td>
             <td class="table-column-country">

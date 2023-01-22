@@ -1,32 +1,65 @@
 ---
 import clsx from 'clsx';
 
+type Format = 'date' | 'time' | 'datetime';
+type Size = 'short' | 'long';
+
 interface Props {
   date: Date;
   class: string;
+  format?: 'date' | 'time' | 'datetime';
 }
 
-const { date, class: className } = Astro.props;
-const dateLong = new Intl.DateTimeFormat('en-US', {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
-}).format(date);
-const dateShort = new Intl.DateTimeFormat('en-US', {
-  year: '2-digit',
-  month: '2-digit',
-  day: '2-digit',
-}).format(date);
+const { date, class: className, format = 'datetime' } = Astro.props;
+
+function getDateTimeFormatOptions(dateTimeFormat: Format, size: Size): Intl.DateTimeFormatOptions {
+  switch (dateTimeFormat) {
+    case 'date':
+      return {
+        year: size === 'long' ? 'numeric' : '2-digit',
+        month: size === 'long' ? 'short' : '2-digit',
+        day: size === 'long' ? 'numeric' : '2-digit',
+      };
+    case 'time':
+      return {
+        hour: size === 'long' ? 'numeric' : '2-digit',
+        minute: size === 'long' ? 'numeric' : '2-digit',
+      };
+    case 'datetime':
+      return {
+        year: size === 'long' ? 'numeric' : '2-digit',
+        month: size === 'long' ? 'short' : '2-digit',
+        day: size === 'long' ? 'numeric' : '2-digit',
+        hour: size === 'long' ? 'numeric' : '2-digit',
+        minute: size === 'long' ? 'numeric' : '2-digit',
+      };
+  }
+}
+
+function getDateTimeAtributeValue(dateTimeFormat: Format, date: Date): string {
+  switch (dateTimeFormat) {
+    case 'date':
+      return date.toISOString().split('T')[0];
+    case 'time':
+      return date.toISOString().split('T')[1].split('.')[0];
+    case 'datetime':
+      return date.toISOString();
+  }
+}
+
+const dateLong = new Intl.DateTimeFormat('en-US', getDateTimeFormatOptions(format, 'long')).format(date);
+const dateShort = new Intl.DateTimeFormat('en-US', getDateTimeFormatOptions(format, 'short')).format(date);
+const datetimeAttr = getDateTimeAtributeValue(format, date);
 ---
 
-<span class={clsx(className, 'date')}>
+<time class={clsx(className, 'date')} datetime={datetimeAttr}>
   <span class="date-short">
     {dateShort}
   </span>
   <div class="date-long">
     {dateLong}
   </div>
-</span>
+</time>
 
 <style>
   .date {
