@@ -30,10 +30,20 @@ svg {
 
 figure {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space) * 0.5);
 }
 
 img {
   max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: var(--font-size-sm);
+  color: var(--text-color-light);
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

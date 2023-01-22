@@ -1,6 +1,6 @@
 import colors from '../../styles/colors.js';
 
-export const SRC_SET_SIZES = [300, 600, 900, 1200, 1500, 1800, 2100, 2400];
+export const SRC_SET_SIZES = [300, 600, 900, 1200, 1500, 1800];
 
 const isCloudinaryUrl = (url) => url.includes('https://res.cloudinary.com/');
 
@@ -58,7 +58,7 @@ const getSrcSet = ({ preUrl, postUrl, shadows, highlights, width, height, type }
       `c_fill`,
       `dpr_1`,
       `f_${type}`,
-      `q_auto`,
+      `q_50`,
       `w_${srcSetWidth}`,
       `h_${srcSetHeight}`,
       getTransformations({
@@ -69,6 +69,13 @@ const getSrcSet = ({ preUrl, postUrl, shadows, highlights, width, height, type }
     const url = [preUrl, `upload`, transformations, postUrl].join('/');
     return `${url} ${size}w`;
   }).join(', ');
+
+const getPrePostUrl = (url) => {
+  if (url.includes('/upload/')) {
+    return url.split('/upload/');
+  }
+  return [url];
+};
 
 export const getImageVariants = ({
   publicId: publicIdProp = undefined,
@@ -84,8 +91,16 @@ export const getImageVariants = ({
     return { src, srcSet, og: src };
   }
 
-  const [preUrl, postUrl] = src.split('/upload/');
+  const [preUrl, postUrl] = getPrePostUrl(src);
   const { shadows, highlights } = getShadowsHighlightFromTintDark({ tint, dark });
+
+  if (!postUrl) {
+    return {
+      src,
+      srcSet: src,
+      og: src,
+    };
+  }
 
   return {
     src: getPlaceholder({ preUrl, postUrl, shadows, highlights }),

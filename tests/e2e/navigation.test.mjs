@@ -9,13 +9,9 @@ const links = {
     desktop: '/',
     mobile: '/',
   },
-  publications: {
-    desktop: '/publications',
-    mobile: '/publications',
-  },
-  talks: {
-    desktop: '/talks',
-    mobile: '/talks',
+  events: {
+    desktop: '/events',
+    mobile: '/events',
   },
   about: {
     desktop: '/about',

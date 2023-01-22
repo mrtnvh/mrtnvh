@@ -1,0 +1,105 @@
+---
+import Image from './Image/Image.astro';
+
+interface Props {
+  url: string;
+  src: string;
+  alt: string;
+}
+
+const getPreviewUrl = (source: string, id: string) => {
+  const cdnBaseUrl = 'https://res.cloudinary.com/mrtnvh/image';
+  return `${cdnBaseUrl}/${source}/${id}`;
+};
+
+const getSourceAndIcon = (url: string) => {
+  const { host, searchParams } = new URL(url);
+
+  // youtube + youtu.be
+  if (host.includes('youtu')) {
+    const videoId = searchParams.get('v');
+    if (videoId) {
+      const source = getPreviewUrl('youtube', videoId);
+      return { source, icon: 'play' };
+    }
+  }
+
+  return { source: url, icon: 'external-link' };
+};
+
+const { url, alt, src } = Astro.props;
+
+const { source, icon } = getSourceAndIcon(src);
+---
+
+{
+  url && src && alt && (
+    <a href={url} target="_blank" rel="noopener noreferrer" class="video default">
+      <svg aria-label={icon} class="icon">
+        <use href={`#${icon}`} />
+      </svg>
+      <Image
+        src={source}
+        alt={alt}
+        className="thumbnail"
+        variants={[
+          {
+            width: 1600,
+            height: 900,
+            sizes: '50cqw',
+          },
+        ]}
+      />
+    </a>
+  )
+}
+
+<style>
+  .video {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    color: var(--background-color);
+    background-color: var(--dark);
+    /* stylelint-disable */
+    container: inline-size;
+    /* stylelint-enable */
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    z-index: 1;
+    transition: var(--animation-duration) var(--animation-timing-function);
+    transition-property: opacity;
+    opacity: 0;
+    color: hsl(60deg, 9%, 97%);
+
+    .video:where(:hover, :focus, :active) & {
+      opacity: 1;
+    }
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0);
+    transform: scale(1);
+    transition: var(--animation-duration) var(--animation-timing-function);
+    transition-property: transform, filter, opacity;
+    opacity: 1;
+
+    .video:where(:hover, :focus, :active) & {
+      filter: blur(10px);
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+  }
+</style>

@@ -20,6 +20,8 @@ h3,
 h4,
 h5,
 h6 {
+  margin-block-start: var(--headings-margin-block-start);
+  margin-block-end: var(--headings-margin-block-end);
   font-weight: var(--headings-font-weight);
   line-height: var(--line-height-sm);
   letter-spacing: var(--headings-letter-spacing);
@@ -83,4 +85,8 @@ hr {
   border: 0 solid rgb(214, 211, 209);
   border-top-width: 1px;
   margin-block: var(--space);
+}
+
+.long-form {
+  --headings-margin-block-start: calc(var(--space) * 2);
 }

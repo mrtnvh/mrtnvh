@@ -29,6 +29,91 @@
       "source": "/talks/openapi-and-testing",
       "destination": "/talks/ministry-of-testing-ehv-november-19",
       "permanent": true
+    },
+    {
+      "source": "/activity",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/activity/io",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/activity/isaac",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/activity/pixeo",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/activity/rockxxl",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/activity/royce",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/publications",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/publications/isaac-open-source-manifesto",
+      "destination": "/topics/open-source-sustainability",
+      "permanent": true
+    },
+    {
+      "source": "/talks",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/api-specification-conference-2021",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/devcast-english-june-2021",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/devoxx-2022",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/frontmania-2022",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/jsworld-2022",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/ministry-of-testing-ehv-november-19",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/tech-fair-live-2021",
+      "destination": "/events",
+      "permanent": true
+    },
+    {
+      "source": "/talks/tech-tuesdays-may-2020",
+      "destination": "/events",
+      "permanent": true
     }
   ],
   "rewrites": [

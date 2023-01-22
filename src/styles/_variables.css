@@ -2,25 +2,26 @@
   /**
   * Colors
   */
-  --dark: hsl(24deg, 9.8%, 10%);
-  --grey: hsl(25deg, 5.3%, 44.7%);
-  --grey-200: rgb(231, 229, 228);
-  --grey-light: hsl(60deg, 4.8%, 95.9%);
-  --light: hsl(60deg, 9.1%, 97.8%);
-  --primary: hsl(82.7deg, 78%, 55.5%);
-  --primary-dark: hsl(85.9deg, 78.4%, 27.3%);
+  --dark: hsl(24deg, 9%, 10%);
+  --grey: hsl(25deg, 5%, 44%);
+  --grey-300: hsl(25deg, 6%, 85%);
+  --grey-200: hsl(20deg, 6%, 90%);
+  --grey-100: hsl(60deg, 4%, 95%);
+  --light: hsl(60deg, 9%, 97%);
+  --primary: hsl(82deg, 78%, 55%);
+  --primary-dark: hsl(85deg, 78%, 27%);
   --github: hsla(134deg, 62%, 51%, 1);
   --twitter: hsla(206deg, 89%, 59%, 1);
   --linkedin: hsla(201deg, 100%, 36%, 1);
-  --youtube: rgb(255, 0, 0);
-  --isaac: rgb(0, 182, 255);
+  --youtube: hsl(0deg, 100%, 50%);
+  --isaac: hsl(197deg, 100%, 50%);
   --text-color: var(--dark);
   --background-color: var(--light);
 
   /**
   * Fonts
   */
-  --font-size-root: clamp(14px, 2.5vw, 18px);
+  --font-size-root: clamp(14px, 2vw, 18px);
   --font-size-sm: 0.8rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -44,6 +45,8 @@
   --headings-color: var(--text-color);
   --headings-font-weight: 800;
   --headings-letter-spacing: -0.02em;
+  --headings-margin-block-start: 0;
+  --headings-margin-block-end: var(--space);
   --mono-font-family: 'IBM Plex Mono', 'Helvetica Now Text', system-ui;
 
   /**
@@ -71,13 +74,18 @@
   * Spacing
   */
   --space: 1.563rem;
-  --grid-gap-x: calc(var(--space));
+  --grid-gap-x: clamp(var(--space), 3.5vw, var(--space) * 2);
   --grid-gap-y: calc(var(--space) * 2);
 
   /**
   * Bottom navigation
   */
   --bottom-navigation-zindex: 100;
+
+  /**
+  * Table
+  */
+  --table-border-color: var(--grey-300);
 
   /**
   * Folio
@@ -99,14 +107,8 @@
     --dark: rgb(231, 229, 228);
     --light: rgb(28, 25, 23);
     --grey: rgb(168, 162, 158);
-    --grey-200: rgb(38, 38, 38);
-  }
-  @media (min-width: 800px) {
-    --font-size-root: clamp(14px, 1.5vw, 18px);
-  }
-
-  @media (min-width: 700px) {
-    --grid-gap-x: calc(var(--space) * 2);
+    --grey-200: hsl(0deg, 0%, 15%);
+    --grey-300: hsl(0deg, 0%, 25%);
   }
 
   @media (min-width: 800px) {

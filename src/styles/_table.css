@@ -4,14 +4,23 @@ table {
   border-collapse: collapse;
   font-size: 1rem;
   line-height: var(--line-height);
+  margin-bottom: var(--space);
+}
+
+.table-layout-unset {
+  table-layout: unset;
 }
 
 th,
 td {
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--table-border-color);
   padding: 1rem 0;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
 
   &:not(:first-child) {
     padding-left: calc(var(--space) / 2);
@@ -25,12 +34,8 @@ td {
     border-bottom: 0;
   }
 
-  tr:last-child & {
-    border-bottom: 0;
-  }
-
   tr:first-child & {
-    border-top: 1px solid var(--grey);
+    border-top: 1px solid var(--table-border-color);
 
     .table-borderless & {
       border-top: 0;

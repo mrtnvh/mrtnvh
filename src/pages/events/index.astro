@@ -1,0 +1,42 @@
+---
+import { defaultsDeep } from 'lodash-es';
+import BaseLayout from '../../layouts/Base.astro';
+import Folio from '../../components/Page/Folio.astro';
+import EventsTable, { type Event } from '../../components/EventsTable.astro';
+import events from './events.csv';
+
+const baseLayoutProps = defaultsDeep(
+  {
+    content: {
+      title: 'Talks',
+      description:
+        "Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
+    },
+  },
+  Astro.props,
+);
+
+const transformedEvents = (events as unknown as Event[]).sort((a, b) => {
+  const dateA = new Date(a.startDate);
+  const dateB = new Date(b.startDate);
+  return dateB.getTime() - dateA.getTime();
+});
+---
+
+<BaseLayout {...baseLayoutProps}>
+  <Folio title="Talks" show-title={true}>
+    <p>
+      Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards,
+      I'll post my slides here. Other times, I'd like to go to places and meet people and talk about the Web.
+    </p>
+    {(<EventsTable class="events-table" events={transformedEvents} renderTopic={true} renderHeader={true} />)}
+  </Folio>
+</BaseLayout>
+
+<style>
+  .events-table {
+    @media screen and (min-width: 800px) {
+      padding-block-start: var(--space);
+    }
+  }
+</style>
