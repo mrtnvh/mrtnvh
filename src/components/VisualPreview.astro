@@ -27,7 +27,7 @@ const getSourceAndIcon = (url: string) => {
   return { source: url, icon: 'external-link' };
 };
 
-const { url, alt, src } = Astro.props;
+const { url, alt, src, delimiter } = Astro.props;
 
 const { source, icon } = getSourceAndIcon(src);
 ---
@@ -42,6 +42,7 @@ const { source, icon } = getSourceAndIcon(src);
         src={source}
         alt={alt}
         className="thumbnail"
+        loading="lazy"
         variants={[
           {
             width: 1600,
