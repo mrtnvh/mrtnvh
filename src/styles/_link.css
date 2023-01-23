@@ -28,8 +28,8 @@ button.link:not(.default) {
     --link-hover-background-color: var(--github);
   }
 
-  &.twitter {
-    --link-hover-background-color: var(--twitter);
+  &.mastodon {
+    --link-hover-background-color: var(--mastodon);
   }
 
   &.linkedin {

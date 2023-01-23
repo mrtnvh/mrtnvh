@@ -5,7 +5,7 @@ import { getImageVariants } from './Image/cloudinary';
 const { content, category } = Astro.props;
 const titleDefault = 'Maarten Van Hoof  Front End Developer';
 const descriptionDefault =
-  'Front-end developer at ISAAC in Eindhoven NL, Google Mobile Web Specialist, Open Source Contributer, Loud Noise Generator';
+  'Developer Advocate & Front-end Developer at iO in Eindhoven NL. An enthusiast of all things web, living in Turnhout, Belgium.';
 const siteUrl = 'https://mrtnvh.com';
 
 const getTitle = (...args) => [...args.filter((val) => val?.length), titleDefault].join('  ');
@@ -55,11 +55,6 @@ const schemaPerson = JSON.stringify({
   <meta name="description" content={description} />
   <meta name="author" content="Maarten Van Hoof" />
   <meta name="image" content={image} />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:creator" content="@mrtnvh" />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={image} />
-  <meta name="twitter:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image:alt" content={title} />
   <meta property="og:image:height" content="630" />
