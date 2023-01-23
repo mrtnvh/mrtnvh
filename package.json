@@ -38,7 +38,7 @@
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
-    "swup": "^2.0.19"
+    "swup": "^3.0.2"
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.2",
