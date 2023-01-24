@@ -74,7 +74,7 @@
     "playwright-lighthouse": "^2.2.2",
     "postcss": "^8.4.21",
     "postcss-load-config": "^4.0.1",
-    "postcss-custom-selectors": "^7.0.0",
+    "postcss-custom-selectors": "^7.1.0",
     "postcss-html": "^1.5.0",
     "postcss-import": "^15.1.0",
     "postcss-logical": "^5.0.4",
