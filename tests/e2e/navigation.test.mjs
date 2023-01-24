@@ -9,13 +9,9 @@ const links = {
     desktop: '/',
     mobile: '/',
   },
-  publications: {
-    desktop: '/publications',
-    mobile: '/publications',
-  },
-  talks: {
-    desktop: '/talks',
-    mobile: '/talks',
+  events: {
+    desktop: '/events',
+    mobile: '/events',
   },
   about: {
     desktop: '/about',
@@ -25,9 +21,9 @@ const links = {
     desktop: 'https://github.com/vanhoofmaarten/',
     mobile: 'https://github.com/vanhoofmaarten/',
   },
-  twitter: {
-    desktop: 'https://twitter.com/mrtnvh/',
-    mobile: 'https://twitter.com/mrtnvh/',
+  mastodon: {
+    desktop: 'https://techhub.social/@mrtnvh/',
+    mobile: 'https://techhub.social/@mrtnvh/',
   },
   linkedin: {
     desktop: 'https://www.linkedin.com/in/mrtnvh/',
@@ -36,6 +32,10 @@ const links = {
   youtube: {
     desktop: 'https://www.youtube.com/channel/UC7kjbPgAD2QYqX3h-Cqu1nQ',
     mobile: 'https://m.youtube.com/channel/UC7kjbPgAD2QYqX3h-Cqu1nQ',
+  },
+  codepen: {
+    desktop: 'https://codepen.io/mrtnvh',
+    mobile: 'https://codepen.io/mrtnvh',
   },
 };
 

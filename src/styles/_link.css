@@ -1,5 +1,5 @@
-a,
-button.link {
+a:not(.default),
+button.link:not(.default) {
   --link-color: var(--text-color);
   --link-hover-color: var(--light);
   --link-hover-background-color: var(--text-color);
@@ -28,8 +28,8 @@ button.link {
     --link-hover-background-color: var(--github);
   }
 
-  &.twitter {
-    --link-hover-background-color: var(--twitter);
+  &.mastodon {
+    --link-hover-background-color: var(--mastodon);
   }
 
   &.linkedin {

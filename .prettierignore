@@ -1,0 +1,10 @@
+**/__reports__/**
+
+*.csv
+*.npmrc
+*.snap
+*.svg
+*.jpg
+*.png
+*.txt
+*.editorconfig

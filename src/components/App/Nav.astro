@@ -3,27 +3,21 @@ const { offCanvas = false, page } = Astro.props;
 const currentPage = (link) => {
   const url = new URL(Astro.request.url);
   if (link.href === '/') {
-    return url.pathname === '/' || url.pathname.includes('activity');
+    return url.pathname === '/' || url.pathname.includes('topics');
   }
-
-  return url.pathname.includes(link.href);
+  return url.pathname.startsWith(link.href);
 };
 
 const links = [
   {
     key: 'home',
     href: '/',
-    title: 'Activity',
+    title: 'Topics',
   },
   {
-    key: 'publications',
-    href: '/publications',
-    title: 'Publications',
-  },
-  {
-    key: 'talks',
-    href: '/talks',
-    title: 'Talks',
+    key: 'events',
+    href: '/events',
+    title: 'Events',
   },
   {
     key: 'about',
@@ -70,7 +64,7 @@ const links = [
     }
 
     @media (min-width: 800px) {
-      gap: calc(var(--grid-gap-x) / 3);
+      gap: calc(var(--grid-gap-x) / 2);
     }
   }
 </style>
