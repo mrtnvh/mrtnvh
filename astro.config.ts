@@ -11,7 +11,7 @@ const rehypePlugins = [
     rehypeRewrite,
     {
       selector: 'a',
-      rewrite: (node) => {
+      rewrite: (node: any) => {
         if (node?.properties?.href.includes('http')) {
           // eslint-disable-next-line no-param-reassign
           node.properties = {
@@ -30,16 +30,21 @@ export default defineConfig({
   integrations: [
     sitemap(),
     mdx({
+      // @ts-ignore
       rehypePlugins,
     }),
     purgecss(),
     critters(),
   ],
   markdown: {
+    // @ts-ignore
     rehypePlugins,
   },
   vite: {
-    plugins: [dsv()],
+    plugins: [
+      // @ts-ignore
+      dsv(),
+    ],
   },
   site: 'https://mrtnvh.com/',
 });
