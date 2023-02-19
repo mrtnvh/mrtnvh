@@ -1,6 +1,11 @@
 ---
-const { offCanvas = false, page } = Astro.props;
-const currentPage = (link) => {
+type NavLink = {
+  key: string;
+  href: string;
+  title: string;
+};
+
+const currentPage = (link: NavLink) => {
   const url = new URL(Astro.request.url);
   if (link.href === '/') {
     return url.pathname === '/' || url.pathname.includes('topics');
@@ -8,7 +13,7 @@ const currentPage = (link) => {
   return url.pathname.startsWith(link.href);
 };
 
-const links = [
+const links: NavLink[] = [
   {
     key: 'home',
     href: '/',

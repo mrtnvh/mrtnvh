@@ -23,9 +23,12 @@ export const colorKeys = [
   'rose',
 ] as const;
 
-export type ColorKey = (typeof colorKeys)[number];
+export const colorShades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
 
-const colors: Record<ColorKey, Record<number, string>> = {
+export type ColorKey = (typeof colorKeys)[number];
+export type ColorShade = (typeof colorShades)[number];
+
+const colors: Record<ColorKey, Record<ColorShade, string>> = {
   slate: {
     50: '#f8fafc',
     100: '#f1f5f9',
