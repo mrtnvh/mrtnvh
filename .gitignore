@@ -16,3 +16,5 @@ __reports__
 .vercel
 public/fonts
 test-results
+
+.astro

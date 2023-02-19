@@ -1,4 +1,31 @@
-export default {
+export const colorKeys = [
+  'slate',
+  'gray',
+  'zinc',
+  'neutral',
+  'stone',
+  'red',
+  'orange',
+  'amber',
+  'yellow',
+  'lime',
+  'green',
+  'emerald',
+  'teal',
+  'cyan',
+  'sky',
+  'blue',
+  'indigo',
+  'violet',
+  'purple',
+  'fuchsia',
+  'pink',
+  'rose',
+] as const;
+
+export type ColorKey = (typeof colorKeys)[number];
+
+const colors: Record<ColorKey, Record<number, string>> = {
   slate: {
     50: '#f8fafc',
     100: '#f1f5f9',
@@ -264,3 +291,5 @@ export default {
     900: '#881337',
   },
 };
+
+export default colors;

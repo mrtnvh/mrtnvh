@@ -1,0 +1,31 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import { pick } from 'lodash-es';
+import Detail from '../../layouts/Detail.astro';
+
+export async function getStaticPaths() {
+  const topicEntries = await getCollection('topics');
+  return topicEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const entry = Astro.props.entry as CollectionEntry<'topics'>;
+const { Content } = await entry.render();
+const detailProps = pick(entry.data, [
+  'title',
+  'thumbnail',
+  'thumbnailCredits',
+  'slides',
+  'slidesThumbnailAlt',
+  'video',
+  'videoThumbnailAlt',
+  'tint',
+  'id',
+]);
+---
+
+<Detail {...detailProps}>
+  <Content />
+</Detail>

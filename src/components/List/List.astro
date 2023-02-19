@@ -1,9 +1,9 @@
 ---
-import ListItem from './ListItem.astro';
+import ListItem, { ListItemItemProps } from './ListItem.astro';
 
 export interface Props {
   large?: boolean;
-  items: any[];
+  items: ListItemItemProps[];
 }
 
 const { large = false, items = [] } = Astro.props;

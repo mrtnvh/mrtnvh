@@ -41,5 +41,5 @@ export default defineConfig({
   vite: {
     plugins: [dsv()],
   },
-  site: 'https://mrtnvh.com',
+  site: 'https://mrtnvh.com/',
 });
