@@ -11,7 +11,7 @@ const topicsCollection = defineCollection({
       layout: z.string(),
       slides: z.string().optional(),
       slidesThumbnailAlt: z.string().optional(),
-      slug: z.string(),
+      slug: z.string().optional(),
       subtitle: z.string(),
       thumbnail: z.string(),
       thumbnailCredits: z.string(),
