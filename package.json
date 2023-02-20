@@ -89,8 +89,8 @@
     "rehype-rewrite": "^3.0.6",
     "stylelint": "^14.16.1",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-order": "^6.0.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-order": "^6.0.2",
     "urljoin": "^0.1.5",
     "workbox-build": "^6.5.4"
   }
