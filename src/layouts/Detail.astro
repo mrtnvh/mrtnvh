@@ -20,10 +20,15 @@ export interface DetailProps {
   id: string;
 }
 
-export interface Props extends DetailProps {}
+export interface Props {
+  content: DetailProps;
+}
 
-const { title, thumbnail, thumbnailCredits, slides, slidesThumbnailAlt, video, videoThumbnailAlt, tint, id } =
-  Astro.props;
+const {
+  content: { title, thumbnail, thumbnailCredits, slides, slidesThumbnailAlt, video, videoThumbnailAlt, tint, id },
+} = Astro.props;
+
+console.log(Astro.props);
 
 const defaultImageSettings = { src: thumbnail, tint };
 const defaultMobileImageSettings = {

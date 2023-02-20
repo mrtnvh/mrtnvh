@@ -4,9 +4,10 @@ import BaseLayout from '../layouts/Base.astro';
 import Intro from '../components/Page/Intro.astro';
 import List from '../components/List/List.astro';
 import { getCollection } from 'astro:content';
+import urljoin from 'url-join';
 
 const topics = await getCollection('topics').then((collection) => {
-  const entriesData = collection.map((entry) => ({ ...entry.data, url: entry.slug }));
+  const entriesData = collection.map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }));
   return orderBy(entriesData, ['datePublished'], ['desc']);
 });
 ---
