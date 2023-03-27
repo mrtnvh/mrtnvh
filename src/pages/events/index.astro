@@ -2,13 +2,14 @@
 import { defaultsDeep } from 'lodash-es';
 import BaseLayout from '../../layouts/Base.astro';
 import Folio from '../../components/Page/Folio.astro';
-import EventsTable, { type Event } from '../../components/EventsTable.astro';
+import EventsTable from '../../components/EventsTable.astro';
 import events from './events.csv';
+import { getPastEvents, getUpcomingEvents, type Event } from '../../lib/useEvents';
 
 const baseLayoutProps = defaultsDeep(
   {
     content: {
-      title: 'Talks',
+      title: 'Events',
       description:
         "Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards, I'll post my slides here.",
     },
@@ -16,27 +17,36 @@ const baseLayoutProps = defaultsDeep(
   Astro.props,
 );
 
-const transformedEvents = (events as unknown as Event[]).sort((a, b) => {
-  const dateA = new Date(a.startDate);
-  const dateB = new Date(b.startDate);
-  return dateB.getTime() - dateA.getTime();
-});
+const upcomingEvents = getUpcomingEvents(events as unknown as Event[]);
+const pastEvents = getPastEvents(events as unknown as Event[]);
 ---
 
 <BaseLayout {...baseLayoutProps}>
-  <Folio title="Talks" show-title={true}>
-    <p>
-      Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards,
-      I'll post my slides here. Other times, I'd like to go to places and meet people and talk about the Web.
-    </p>
-    {(<EventsTable class="events-table" events={transformedEvents} renderTopic={true} renderHeader={true} />)}
+  <Folio title="Events" show-title={true}>
+    <section>
+      <p>
+        Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise.
+        Afterwards, I'll post my slides here. Other times, I'd like to go to places and meet people and talk about the
+        Web.
+      </p>
+    </section>
+    <section>
+      <h2>Upcoming</h2>
+      {(<EventsTable class="events-table" events={upcomingEvents} renderTopic={true} renderHeader={true} />)}
+    </section>
+    <section>
+      <h2>Past</h2>
+      {(<EventsTable class="events-table" events={pastEvents} renderTopic={true} renderHeader={true} />)}
+    </section>
   </Folio>
 </BaseLayout>
 
 <style>
-  .events-table {
+  section {
+    padding-block-end: calc(var(--space) * 1);
+
     @media screen and (min-width: 800px) {
-      padding-block-start: var(--space);
+      padding-block-end: calc(var(--space) * 2);
     }
   }
 </style>
