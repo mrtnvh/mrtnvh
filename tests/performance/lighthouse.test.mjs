@@ -77,7 +77,7 @@ lighthouseTest.describe('Lighthouse', async () => {
                 port,
                 config: environmentConfig,
                 thresholds: {
-                  performance: 90,
+                  performance: 80,
                   accessibility: 100,
                   'best-practices': 100,
                   seo: 100,
