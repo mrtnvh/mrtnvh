@@ -2,16 +2,7 @@
 import clsx from 'clsx';
 import { getCountryFlagAndNameFromCode } from '../lib/useCountries';
 import DateTime from './DateTime.astro';
-
-export interface Event {
-  title: string;
-  url?: string;
-  location: string;
-  country: string;
-  topic: string;
-  startDate: string;
-  endDate: string;
-}
+import { type Event } from '../lib/useEvents';
 
 interface Props {
   class?: string;
@@ -132,6 +123,7 @@ function parseDate(date: string) {
 
       &.table-column-location {
         grid-area: 3 / 2 / 3 / 2;
+        white-space: nowrap;
       }
 
       &.table-column-country {
