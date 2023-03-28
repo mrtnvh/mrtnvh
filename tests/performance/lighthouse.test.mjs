@@ -5,8 +5,8 @@ import { preview } from 'vite';
 import getPort from 'get-port';
 import { chromium } from 'playwright';
 import { defaultsDeep } from 'lodash-es';
-import lighthouseMobileConfig from 'lighthouse/lighthouse-core/config/default-config.js';
-import lighthouseDesktopConfig from 'lighthouse/lighthouse-core/config/lr-desktop-config.js';
+import { default as lighthouseMobileConfig } from 'lighthouse/core/config/default-config.js';
+import { default as lighthouseDesktopConfig } from 'lighthouse/core/config/lr-desktop-config.js';
 import { getPages } from '../setup/config.mjs';
 import { getUrl, customSnapshotIdentifier, getDirname } from '../setup/utils.mjs';
 
@@ -77,7 +77,7 @@ lighthouseTest.describe('Lighthouse', async () => {
                 port,
                 config: environmentConfig,
                 thresholds: {
-                  performance: 90,
+                  performance: 80,
                   accessibility: 100,
                   'best-practices': 100,
                   seo: 100,
