@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import { test, expect, devices } from '@playwright/test';
+import { expect, devices } from '@playwright/test';
 import { playAudit } from 'playwright-lighthouse';
 import { preview } from 'vite';
 import getPort from 'get-port';
@@ -9,6 +9,7 @@ import { default as lighthouseMobileConfig } from 'lighthouse/core/config/defaul
 import { default as lighthouseDesktopConfig } from 'lighthouse/core/config/lr-desktop-config.js';
 import { getPages } from '../setup/config.mjs';
 import { getUrl, customSnapshotIdentifier, getDirname } from '../setup/utils.mjs';
+import { baseTest } from '../setup/baseTest.mjs';
 
 const customConfig = { settings: { skipAudits: ['is-crawlable'] } };
 const lighthouseConfig = {
@@ -16,7 +17,7 @@ const lighthouseConfig = {
   desktop: defaultsDeep(customConfig, lighthouseDesktopConfig),
 };
 
-const lighthouseTest = test.extend({
+const lighthouseTest = baseTest.extend({
   port: [
     // eslint-disable-next-line no-empty-pattern
     async ({}, use) => {
