@@ -1,0 +1,769 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "article",
+        "attrs": {
+          "class": "container"
+        },
+        "content": [
+          " ",
+          {
+            "tag": "figure",
+            "attrs": {
+              "class": "media"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "sticky"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "picture",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "img",
+                        "attrs": {
+                          "class": "image"
+                        }
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " ",
+          {
+            "tag": "h1",
+            "attrs": {
+              "class": "title"
+            },
+            "content": [
+              " About "
+            ]
+          },
+          " ",
+          {
+            "tag": "section",
+            "attrs": {
+              "class": "body"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "p",
+                "attrs": {
+                  "class": ""
+                },
+                "content": [
+                  {
+                    "tag": "strong",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      "A front-end developer, but mostly an enthusiast of all things web, living in Turnhout, Belgium."
+                    ]
+                  }
+                ]
+              },
+              " ",
+              {
+                "tag": "p",
+                "content": [
+                  "I'm a proud father of Adriaan &amp; Floris, 2 unbelievably smart boys. I'm incredibly humbled to share my life with Sabine, my bestie, and partner-in-crime."
+                ]
+              },
+              " ",
+              {
+                "tag": "p",
+                "content": [
+                  "I have a profound love for ",
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "external"
+                    },
+                    "content": [
+                      "loud and emotive music"
+                    ]
+                  },
+                  ". In 2017, I listened to approximately 51.000 minutes of music. To blow off some steam, me and my buddies in ",
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "external"
+                    },
+                    "content": [
+                      "ROYCE"
+                    ]
+                  },
+                  " rock out the local and non-local watering holes from time to time."
+                ]
+              },
+              " ",
+              {
+                "tag": "p",
+                "content": [
+                  "I have a ",
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "external"
+                    },
+                    "content": [
+                      "Professional Bachelor Multimedia and Communication Technology"
+                    ]
+                  },
+                  ", specialized in Audiovisual productions. However, I quickly refactored myself to web-development due to a much better work-life relationship at the time."
+                ]
+              },
+              " ",
+              {
+                "tag": "p",
+                "content": [
+                  "All the knowledge I currently possess is self-taught through experience, tutorials and occasional Google, StackOverflow and not-so-occasional Open Source Software."
+                ]
+              },
+              " ",
+              {
+                "tag": "h2",
+                "attrs": {
+                  "id": "ambition"
+                },
+                "content": [
+                  "Ambition"
+                ]
+              },
+              " ",
+              {
+                "tag": "p",
+                "content": [
+                  "I want to be part of a team with clear vision and resources to build an awesome product. Something that is used on a day-to-day basis. Something where documentation and automation take away stress and frustration. Where great innovations are quickly evaluated and implemented if proven significant. Where motivation flourishes. Where we can build a positive future by giving back to our community."
+                ]
+              },
+              " ",
+              {
+                "tag": "h2",
+                "attrs": {
+                  "id": "likes"
+                },
+                "content": [
+                  "Likes"
+                ]
+              },
+              " ",
+              {
+                "tag": "ul",
+                "content": [
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Isomorphic Web Applications"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Offline first"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Component-based development"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Automating tools"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Well-documented &amp; tested projects"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Well-grounded arguments"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Open, transparent but time-appropriate and concise communication"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "li",
+                    "content": [
+                      "Dad jokes"
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "h2",
+                "attrs": {
+                  "id": "skills"
+                },
+                "content": [
+                  "Skills"
+                ]
+              },
+              " ",
+              {
+                "tag": "table",
+                "content": [
+                  {
+                    "tag": "tbody",
+                    "content": [
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Web"
+                            ]
+                          },
+                          {
+                            "tag": "td",
+                            "attrs": {
+                              "colspan": "2"
+                            },
+                            "content": [
+                              {
+                                "tag": "p",
+                                "content": [
+                                  "Offline &amp; mobile first ",
+                                  {
+                                    "tag": "br"
+                                  },
+                                  " a11y"
+                                ]
+                              },
+                              {
+                                "tag": "br"
+                              },
+                              {
+                                "tag": "p",
+                                "content": [
+                                  "Progressive Web Apps ",
+                                  {
+                                    "tag": "br"
+                                  },
+                                  " OpenAPI"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              "HTML"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "td",
+                            "attrs": {
+                              "colspan": "2"
+                            },
+                            "content": [
+                              "Semantics"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              "JavaScript"
+                            ]
+                          },
+                          {
+                            "tag": "td",
+                            "attrs": {
+                              "colspan": "2"
+                            },
+                            "content": [
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "column-lg-2"
+                                },
+                                "content": [
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Node ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " ES20... ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Typescript ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " React ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Vue ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Web- &amp; service workers ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Testing (Unit to e2e) ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Isomorphic web applications"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              "CSS"
+                            ]
+                          },
+                          {
+                            "tag": "td",
+                            "attrs": {
+                              "colspan": "2"
+                            },
+                            "content": [
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "column-lg-2"
+                                },
+                                "content": [
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Grid ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " Custom properties ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " CSS-in-JS ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " SCSS ",
+                                      {
+                                        "tag": "br"
+                                      },
+                                      " PostCSS"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "attrs": {
+                              "class": "whitespace-nowrap"
+                            },
+                            "content": [
+                              "Experience with"
+                            ]
+                          },
+                          {
+                            "tag": "td",
+                            "attrs": {
+                              "colspan": "2"
+                            },
+                            "content": [
+                              {
+                                "tag": "ul",
+                                "attrs": {
+                                  "class": "column-lg-2 list-unstyled"
+                                },
+                                "content": [
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Laravel"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Git"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Docker"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "NPM"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "ESLint"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Stylelint"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Prettier"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "EditorConfig"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Webpack"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Grunt"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Gulp"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "EF Core"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Redux"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Material-UI"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "Bootstrap"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "SQL"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "IIS"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "li",
+                                    "content": [
+                                      "..."
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              " ",
+              {
+                "tag": "h2",
+                "attrs": {
+                  "id": "physical-languages"
+                },
+                "content": [
+                  "Physical languages"
+                ]
+              },
+              " ",
+              {
+                "tag": "table",
+                "content": [
+                  {
+                    "tag": "thead",
+                    "content": [
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "th",
+                            "content": [
+                              "Language"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "th",
+                            "content": [
+                              "Written"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "th",
+                            "content": [
+                              "Spoken"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tbody",
+                    "content": [
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              {
+                                "tag": "p",
+                                "content": [
+                                  "Dutch ",
+                                  {
+                                    "tag": "br"
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "em",
+                                    "content": [
+                                      "Native tongue"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Very good"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Very good"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              "English"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Good"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Good"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr",
+                        "content": [
+                          {
+                            "tag": "td",
+                            "content": [
+                              "French"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Basic"
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "td",
+                            "content": [
+                              "Basic"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]

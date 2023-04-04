@@ -1,0 +1,1968 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "section",
+        "attrs": {
+          "class": "intro"
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "intro-content"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "span",
+                    "attrs": {
+                      "class": "no-break"
+                    },
+                    "content": [
+                      "Developer Advocate"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "span",
+                    "attrs": {
+                      "class": "no-break"
+                    },
+                    "content": [
+                      "&amp;"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "span",
+                    "attrs": {
+                      "class": "no-break"
+                    },
+                    "content": [
+                      "Front-end"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "span",
+                    "attrs": {
+                      "class": "no-break"
+                    },
+                    "content": [
+                      "at ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "iO"
+                        ]
+                      },
+                      "."
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "nav",
+                "attrs": {
+                  "class": "social"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "github"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "svg",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "use",
+                            "attrs": {
+                              "class": ""
+                            }
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "youtube"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "svg",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "use",
+                            "attrs": {
+                              "class": ""
+                            }
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "twitter"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "svg",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "use",
+                            "attrs": {
+                              "class": ""
+                            }
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "linkedin"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "svg",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "use",
+                            "attrs": {
+                              "class": ""
+                            }
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  {
+                    "tag": "a",
+                    "attrs": {
+                      "class": "email"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "svg",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "use",
+                            "attrs": {
+                              "class": ""
+                            }
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " ",
+      {
+        "tag": "section",
+        "attrs": {
+          "class": "events"
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "grid"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " JSWORLD Conference 2022 "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Why are Container Queries such a helpful new feature for component-based front-end architectures? At JSWORLD Conference 2022, I talked about what Container Queries are, how they improve interoperable styling and how you can experiment with 'm today."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2022 02 10"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Talks"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " API Specification Conference 2021 "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "In the talk \"Frontend ♥︎ OpenAPI\", I show how the OpenAPI specification can so much speed up your Front End workflow."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2021 09 29"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Talks"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " iO "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Senior Front-end developer and Developer Advocate at Campus Eindhoven (NL)."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2021 09 01"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Experience"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " CodeMotion DevCast "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Container Queries are the next step towards a truly modular CSS, in the June 2021 episode of Codemotion's DevCast, I talked about why."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2021 06 15"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Talks"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " Tech Fair Live 2021 "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Examples of how the OpenAPI specification can improve your Front End workflow."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2021 04 30"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Talks"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " Open Source Manifesto "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Enabling ISAAC developers to give back to the OSS community"
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2020 09 07"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Publications"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " Tech Tuesdays May 2020 "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "On the online meetup Tech Tuesdays, I shared my views on how the OpenAPI specification can help your Front-end workflow. (Talk in Dutch)"
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2020 05 14"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Talks"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " Ministry of Testing EHV November '19 "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "At the inaugural Ministry of Testing meetup at Waes Eindhoven NL, I had the oppurtunity to show how OpenAPI can harden your front-end testing capabilities."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2019 11 11"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Talks"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " ISAAC "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Part of ISAAC's front-end team to build awesome web experiences built on Vue, Nuxt &amp; other JavaScript frameworks."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2019 05 20"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Experience"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " RockXXL "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Breathing new life in RockXXL, a volunteer-ran online platform for the local rock and metal community."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2019 01 05"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Experience"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " ROYCE "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Guitarist, producer, management, booking &amp; founding member of Belgian metalcore formation ROYCE."
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2013 08 13"
+                                    ]
+                                  },
+                                  " ",
+                                  {
+                                    "tag": "div",
+                                    "attrs": {
+                                      "class": "category"
+                                    },
+                                    "content": [
+                                      "Experience"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "article",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "reset link"
+                        },
+                        "content": [
+                          " ",
+                          {
+                            "tag": "figure",
+                            "attrs": {
+                              "class": "media"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "picture",
+                                "attrs": {
+                                  "class": ""
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "source",
+                                    "attrs": {
+                                      "class": ""
+                                    }
+                                  },
+                                  {
+                                    "tag": "img",
+                                    "attrs": {
+                                      "class": "image"
+                                    }
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " ",
+                          {
+                            "tag": "div",
+                            "attrs": {
+                              "class": "content"
+                            },
+                            "content": [
+                              " ",
+                              {
+                                "tag": "h2",
+                                "attrs": {
+                                  "class": "title"
+                                },
+                                "content": [
+                                  " Pixeo "
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "p",
+                                "attrs": {
+                                  "class": "subtitle"
+                                },
+                                "content": [
+                                  "Web agency"
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "div",
+                                "attrs": {
+                                  "class": "meta"
+                                },
+                                "content": [
+                                  " ",
+                                  {
+                                    "tag": "time",
+                                    "attrs": {
+                                      "class": ""
+                                    },
+                                    "content": [
+                                      "2013 01 01"
+                                    ]
+                                  },
+                                  " "
+                                ]
+                              },
+                              " "
+                            ]
+                          },
+                          " "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]
