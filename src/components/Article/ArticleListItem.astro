@@ -1,0 +1,118 @@
+---
+import clsx from 'clsx';
+import { parse } from 'date-fns';
+
+export type ArticleItemProps = {
+  title: string;
+  description: string;
+  datePublished: number;
+  externalUrl?: string;
+  url: string;
+  originalPublication?: string;
+};
+
+export interface Props {
+  item: ArticleItemProps;
+}
+
+const { item } = Astro.props;
+const date = parse(item.datePublished.toString(), 'yyyyMMdd', new Date());
+
+const linkProps = ({ url }: { url: string }) => {
+  const baseClass = 'reset link';
+  if (url.startsWith('http')) {
+    return {
+      href: url,
+      target: '_blank',
+      rel: 'noopener',
+      class: clsx(baseClass, 'external'),
+    };
+  }
+
+  return { href: item.url, class: baseClass };
+};
+---
+
+<article>
+  <div class="container">
+    <h2 class="title">
+      <a {...linkProps({ url: item.externalUrl || item.url })}>
+        {item.title}
+      </a>
+    </h2>
+    <div class="meta">
+      <div class="date">
+        Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
+      </div>
+      <div class="original-publication">
+        {
+          item.externalUrl ? (
+            <>
+              Originally published on{' '}
+              <a {...linkProps({ url: item.externalUrl || item.url })}>{item.originalPublication}</a>
+            </>
+          ) : (
+            item.originalPublication
+          )
+        }
+      </div>
+    </div>
+
+    <div class="description">{item.description}</div>
+  </div>
+</article>
+
+<style>
+  article {
+    container: article / inline-size;
+    padding-block: var(--grid-gap-y);
+
+    &:nth-child(odd) {
+      background-color: var(--grey-200);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .title {
+    margin: 0;
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-xs);
+
+    a {
+      padding-block: calc(var(--space) / 5);
+      display: inline-block;
+
+      &:where(:hover, :focus, :active) {
+        text-decoration: none;
+      }
+    }
+
+    @supports (text-wrap: balance) {
+      text-wrap: balance;
+    }
+  }
+
+  .description {
+    max-width: calc(var(--space) * 25);
+
+    @supports (text-wrap: balance) {
+      max-width: none;
+      text-wrap: balance;
+    }
+  }
+
+  .meta {
+    font-size: var(--font-size-sm);
+    color: var(--grey);
+
+    @container article (min-width: 45rem) {
+      display: flex;
+      gap: calc(var(--grid-gap-x) / 2);
+    }
+  }
+</style>

@@ -46,6 +46,34 @@ figcaption {
   color: var(--text-color-light);
 }
 
+pre {
+  padding: calc(var(--grid-gap-y) / 1.5) var(--grid-gap-x);
+  background-color: #0c0a09 !important;
+  margin-block: var(--space);
+
+  code {
+    background-color: transparent;
+  }
+}
+
+code {
+  background-color: #000;
+  padding: 0.25em 0.33em;
+  margin: -0.25em 0;
+}
+
+.prose {
+  --headings-margin-block-start: calc(var(--space) * 3);
+
+  pre {
+    margin-inline: calc(var(--grid-gap-x) / -2);
+  }
+
+  iframe {
+    margin-block: var(--grid-gap-y);
+  }
+}
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {

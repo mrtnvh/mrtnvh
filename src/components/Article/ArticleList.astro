@@ -1,0 +1,21 @@
+---
+import ArticleListItem, { ArticleListItemProps } from './ArticleListItem.astro';
+
+export interface Props {
+  items: ArticleListItemProps[];
+}
+
+const { items = [] } = Astro.props;
+---
+
+<div class={`article-list`}>
+  {items.map((item) => <ArticleListItem item={item} />)}
+</div>
+
+<style>
+  .article-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: clamp(calc(var(--grid-gap-y) * 1), 9vw, calc(var(--grid-gap-y) * 2)) var(--grid-gap-x); */
+  }
+</style>

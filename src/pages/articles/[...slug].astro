@@ -1,0 +1,98 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/Base.astro';
+import clsx from 'clsx';
+import { parse } from 'date-fns';
+
+export async function getStaticPaths() {
+  const articleEntries = await getCollection('articles');
+  return articleEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const entry = Astro.props.entry as CollectionEntry<'articles'>;
+const { Content } = await entry.render();
+const date = parse(entry.data.datePublished.toString(), 'yyyyMMdd', new Date());
+
+const linkProps = ({ url }: { url: string | undefined }) => {
+  const baseClass = 'reset link';
+  if (url?.startsWith('http')) {
+    return {
+      href: url,
+      target: '_blank',
+      rel: 'noopener',
+      class: clsx(baseClass, 'external'),
+    };
+  }
+
+  return { href: entry.data.url, class: baseClass };
+};
+---
+
+<BaseLayout>
+  <div class="container">
+    <div>
+      <article>
+        <h1 class="title">{entry.data.title}</h1>
+        <p class="description">{entry.data.description}</p>
+        <div class="content prose">
+          <Content />
+        </div>
+        <div class="meta">
+          <div class="date">
+            Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
+          </div>
+          <div class="original-publication">
+            {
+              entry.data.externalUrl ? (
+                <>
+                  Originally published on{' '}
+                  <a {...linkProps({ url: entry.data.externalUrl || entry.data.url })}>
+                    {entry.data.originalPublication}
+                  </a>
+                </>
+              ) : (
+                entry.data.originalPublication
+              )
+            }
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  article {
+    container: article-detail/ inline-size;
+    padding-block: var(--grid-gap-y);
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gap-y);
+  }
+
+  .title {
+    font-size: var(--detail-title-size);
+    font-weight: var(--detail-title-font-weight);
+    line-height: var(--detail-title-line-height);
+    margin: 0;
+    text-shadow: var(--text-shadow-outline);
+  }
+
+  .description {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-sm);
+    margin: 0;
+  }
+
+  .content :global(*:not(pre, iframe, img)) {
+    max-inline-size: 43.5rem;
+  }
+
+  .meta {
+    font-size: var(--font-size-sm);
+    color: var(--grey);
+  }
+</style>

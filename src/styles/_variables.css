@@ -17,6 +17,7 @@
   --isaac: hsl(197deg, 100%, 50%);
   --text-color: var(--dark);
   --background-color: var(--light);
+  --code-background-color: #0c0a09;
 
   /**
   * Fonts
@@ -47,7 +48,7 @@
   --headings-letter-spacing: -0.02em;
   --headings-margin-block-start: 0;
   --headings-margin-block-end: var(--space);
-  --mono-font-family: 'IBM Plex Mono', 'Helvetica Now Text', system-ui;
+  --mono-font-family: 'IBM Plex Mono', 'Courier New', monospace;
 
   /**
   * Strokes
@@ -100,7 +101,7 @@
   */
   --detail-title-size: var(--font-size-4xl);
   --detail-title-font-weight: 800;
-  --detail-title-line-height: var(--line-height-xs);
+  --detail-title-line-height: calc(1.125em - clamp(0em, 1cqi, 0.25em));
   --detail-title-letter-spacing: -0.02em;
 
   @media (prefers-color-scheme: dark) {
@@ -113,10 +114,24 @@
 
   @media (min-width: 800px) {
     --folio-title-size: var(--font-size-6xl);
-    --folio-title-margin: 0 0 calc(var(--grid-gap-y) / 2) 0;
+    --folio-title-margin: calc(var(--grid-gap-y) / 2) 0 calc(var(--grid-gap-y)) 0;
   }
 
   @media (min-width: 800px) {
     --detail-title-size: var(--font-size-5xl);
   }
+
+  /**
+   * Text shadow
+   */
+  --text-shadow-outline-color: var(--background-color);
+  --text-shadow-outline-width: 1.5px;
+  --text-shadow-outline: calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * -1) 0
+      var(--background-color),
+    0 calc(var(--text-shadow-outline-width) * -1) 0 var(--background-color), 1px -1px 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * 1) 0 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * 1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    0 calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * -1) 0 0 var(--background-color);
 }
