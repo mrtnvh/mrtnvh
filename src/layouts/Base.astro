@@ -8,11 +8,7 @@ import '../styles/app.css';
 
 const isProd = import.meta.env.PROD;
 const isMaster = import.meta.env.VITE_PROD === 'true';
-const {
-  content,
-  preloads,
-  frontmatter,
-} = Astro.props;
+const { content, preloads, frontmatter } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -77,52 +73,51 @@ const {
       import '../js/main.js';
     </script>
     {isProd && <script defer data-domain="mrtnvh.com" data-api="/api/event" src="/js/stats" />}
+    <style>
+      .svg-sprite {
+        display: none;
+      }
+
+      .layout {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        padding-block-end: calc(var(--space) * 2);
+
+        @media (min-width: 800px) {
+          padding-block-end: 0;
+        }
+      }
+
+      main {
+        display: flex !important;
+        flex-direction: column;
+        padding-block-end: calc(var(--space) * 1);
+        outline: 0;
+      }
+
+      .centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main,
+      .portal {
+        flex-grow: 1;
+      }
+
+      .portal {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:empty {
+          display: none;
+        }
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  .svg-sprite {
-    display: none;
-  }
-
-  .layout {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    padding-block-end: calc(var(--space) * 2);
-
-    @media (min-width: 800px) {
-      padding-block-end: 0;
-    }
-  }
-
-  main {
-    display: flex !important;
-    flex-direction: column;
-    padding-block-end: calc(var(--space) * 1);
-    outline: 0;
-  }
-
-  .centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  main,
-  .portal {
-    flex-grow: 1;
-  }
-
-  .portal {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    &:empty {
-      display: none;
-    }
-  }
-</style>

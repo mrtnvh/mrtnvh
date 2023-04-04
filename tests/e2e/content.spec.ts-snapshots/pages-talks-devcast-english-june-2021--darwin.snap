@@ -1,0 +1,271 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "article",
+        "attrs": {
+          "class": ""
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "figure",
+                "attrs": {
+                  "class": "media"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "picture",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "img",
+                        "attrs": {
+                          "class": "image"
+                        }
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "h1",
+                "attrs": {
+                  "class": "title"
+                },
+                "content": [
+                  "CodeMotion DevCast"
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "meta"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "time-category"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "time",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "2021 06 15"
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "div",
+                        "attrs": {
+                          "class": "category"
+                        },
+                        "content": [
+                          "Talks"
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "links"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          " Slides "
+                        ]
+                      },
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          " Video "
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "body"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "Modular, componentized frameworks and libraries are more popular than ever, but currently screen size is the only dimensional constraint to which a web design can adapt to. In this talk, Maarten will explain what Container Queries are and show you how each component can adapt its design to the dimensions of its container. Join us on our journey towards a more modular CSS."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "hr",
+                    "attrs": {
+                      "class": ""
+                    }
+                  },
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "credits clear-inner-spacing"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "p",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "Background in thumbnail by ",
+                          {
+                            "tag": "a",
+                            "attrs": {
+                              "class": "external"
+                            },
+                            "content": [
+                              "Pawel Czerwinski"
+                            ]
+                          },
+                          " on ",
+                          {
+                            "tag": "a",
+                            "attrs": {
+                              "class": "external"
+                            },
+                            "content": [
+                              "Unsplash"
+                            ]
+                          }
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]

@@ -8,9 +8,27 @@ import events from '../pages/events/events.csv';
 import EventsTable, { type Event } from '../components/EventsTable.astro';
 import VisualPreview from '../components/VisualPreview.astro';
 
+export interface DetailProps {
+  title: string;
+  thumbnail: string;
+  thumbnailCredits: string;
+  slides?: string | undefined;
+  slidesThumbnailAlt?: string | undefined;
+  video?: string | undefined;
+  videoThumbnailAlt?: string | undefined;
+  tint: string;
+  id: string;
+}
+
+export interface Props {
+  content: DetailProps;
+}
+
 const {
   content: { title, thumbnail, thumbnailCredits, slides, slidesThumbnailAlt, video, videoThumbnailAlt, tint, id },
 } = Astro.props;
+
+console.log(Astro.props);
 
 const defaultImageSettings = { src: thumbnail, tint };
 const defaultMobileImageSettings = {
@@ -90,13 +108,13 @@ const transformedEvents = (events as unknown as Event[])
           <div class={clsx('media', { 'media-multiple': !!slides && !!video })}>
             <h2 class="sr-only">Media</h2>
             <div class="media-content">
-              {video && (
+              {video && videoThumbnailAlt && (
                 <figure>
                   <VisualPreview url={video} alt={videoThumbnailAlt} src={video} />
                   <figcaption>{videoThumbnailAlt}</figcaption>
                 </figure>
               )}
-              {slides && (
+              {slides && slidesThumbnailAlt && (
                 <figure>
                   <VisualPreview url={slides} src={thumbnail} alt={slidesThumbnailAlt} />
                   <figcaption>{slidesThumbnailAlt}</figcaption>

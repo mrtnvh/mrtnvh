@@ -2,12 +2,13 @@
 import clsx from 'clsx';
 import type { ClassValue } from 'clsx';
 import { getImageVariants, ImageTint, ImageVariant } from './cloudinary';
+import type { ColorKey } from '../../styles/colors';
 
 export interface Props {
   src: string;
   alt: string;
   loading?: astroHTML.JSX.ImgHTMLAttributes['loading'];
-  tint?: ImageTint | string;
+  tint?: ImageTint | ColorKey | undefined;
   variants: ImageVariant[];
   className?: ClassValue;
   delimiter?: string;
@@ -76,7 +77,7 @@ const vrnts = variants.map(({ sizes, width, height, media }) => {
                 loading={loading}
                 width={width}
                 height={height}
-                style={vrnts.length === 1 && `aspect-ratio: ${width} / ${height}`}
+                style={vrnts.length === 1 ? `aspect-ratio: ${width} / ${height}` : undefined}
               />
             )}
           </>

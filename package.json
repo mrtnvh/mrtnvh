@@ -3,6 +3,7 @@
   "description": "Website for Maarten Van Hoof, Full Stack Developer from Turnhout, Belgium",
   "homepage": "https://mrtnvh.com",
   "private": true,
+  "type": "module",
   "version": "8.3.0",
   "author": {
     "name": "Maarten Van Hoof",
@@ -38,7 +39,8 @@
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
-    "swup": "^3.0.5"
+    "swup": "^3.0.5",
+    "url-join": "^5.0.0"
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.3",
@@ -48,6 +50,7 @@
     "@rollup/plugin-dsv": "^3.0.2",
     "@types/country-list": "^2.1.1",
     "@types/lodash-es": "^4.17.7",
+    "@types/url-join": "^4.0.1",
     "@web/rollup-plugin-html": "^1.11.0",
     "@wemake-services/stylelint-config-scss": "^3.0.0",
     "astro-critters": "^1.1.31",
@@ -91,7 +94,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.3",
-    "urljoin": "^0.1.5",
+    "utility-types": "^3.10.0",
     "workbox-build": "^6.5.4"
   }
 }

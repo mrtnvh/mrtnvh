@@ -1,5 +1,5 @@
 ---
-import urljoin from 'urljoin';
+import urlJoin from 'url-join';
 import { getImageVariants } from './Image/cloudinary';
 
 const { content, category } = Astro.props;
@@ -8,12 +8,12 @@ const descriptionDefault =
   'Developer Advocate & Front-end Developer at iO in Eindhoven NL. An enthusiast of all things web, living in Turnhout, Belgium.';
 const siteUrl = 'https://mrtnvh.com';
 
-const getTitle = (...args) => [...args.filter((val) => val?.length), titleDefault].join('  ');
+const getTitle = (...args: string[]) => [...args.filter((val) => val?.length), titleDefault].join('  ');
 const title = getTitle(content?.title, category);
 const description = content?.description || descriptionDefault;
 const image = content?.thumbnail
   ? getImageVariants({ src: content?.thumbnail, tint: content?.tint }).og
-  : urljoin(siteUrl, '/og.png');
+  : urlJoin(siteUrl, '/og.png');
 
 const schemaWebsite = JSON.stringify({
   '@context': 'http://schema.org',
