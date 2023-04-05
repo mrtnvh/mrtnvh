@@ -1,16 +1,17 @@
-title,url,startDate,endDate,location,country,topic
-JSHeroes,https://jsheroes.io/,2023-05-18,2023-05-19,Cluj-Napoca,RO,Container Queries
-AppDevCon,https://appdevcon.nl/session/frontend-%e2%9d%a4%ef%b8%8f-openapi/,2023-05-12,,Amsterdam,NL,OpenAPI
-Modern Frontends Live,https://modernfrontends.live,2022-11-17,2022-11-18,London,GB,OpenAPI
-Visug XL,https://www.visug.be/Events/80,2022-10-28,,Hasselt,BE,OpenAPI
-Full Stack Antwerp meetup,https://fullstackbelgium.be/,2022-06-29,,Antwerp,BE,OpenAPI
-Tech Fair Live,https://www.techfairlive.com/,2021-04-30,,Online,Global,OpenAPI
-Tech Tuesdays Tilburg,https://www.meetup.com/tilburg-tech-tuesdays/,2021-05-15,,Tilburg,NL,OpenAPI
-Ministry of Testing meetup,,2019-11-11,,Eindhoven,NL,OpenAPI
-Eindhoven front-end meetup,https://covenofwisdom.io/,2019-10-06,,Eindhoven,NL,OpenAPI
-CodeMotion DevCast,https://talks.codemotion.com/container-queries-the-next-step-towards-,2021-06-15,,Online,Global,Container Queries
-Frontend@Scale by Rabobank,https://www.meetup.com/frontend-at-scale/,2022-03-09,,Online,Global,Container Queries
-DeveloperWeek Europe 2022,https://www.developerweek.com/europe/,2022-04-27,,Online,Global,Container Queries
-Frontmania 2022,https://frontmania.com/,2022-10-05,,Utrecht,NL,Container Queries
-Devoxx,https://devoxx.be/,2022-10-11,,Antwerp,BE,Container Queries
-Front-end meetup Eindhoven,https://covenofwisdom.io/,2021-11-11,,Eindhoven,NL,Container Queries
+title,url,startDate,endDate,location,country,topic,role
+JSHeroes,https://jsheroes.io/,2023-05-18,2023-05-19,Cluj-Napoca,RO,Container Queries,Speaker
+AppDevCon,https://appdevcon.nl/session/frontend-%e2%9d%a4%ef%b8%8f-openapi/,2023-05-12,,Amsterdam,NL,OpenAPI,Speaker
+Modern Frontends Live,https://modernfrontends.live,2022-11-17,2022-11-18,London,GB,OpenAPI,Speaker
+Visug XL,https://www.visug.be/Events/80,2022-10-28,,Hasselt,BE,OpenAPI,Speaker
+Full Stack Antwerp meetup,https://fullstackbelgium.be/,2022-06-29,,Antwerp,BE,OpenAPI,Speaker
+Tech Fair Live,https://www.techfairlive.com/,2021-04-30,,Online,Global,OpenAPI,Speaker
+Tech Tuesdays Tilburg,https://www.meetup.com/tilburg-tech-tuesdays/,2021-05-15,,Tilburg,NL,OpenAPI,Speaker
+Ministry of Testing meetup,,2019-11-11,,Eindhoven,NL,OpenAPI,Speaker
+Eindhoven front-end meetup,https://covenofwisdom.io/,2019-10-06,,Eindhoven,NL,OpenAPI,Speaker
+CodeMotion DevCast,https://talks.codemotion.com/container-queries-the-next-step-towards-,2021-06-15,,Online,Global,Container Queries,Speaker
+Frontend@Scale by Rabobank,https://www.meetup.com/frontend-at-scale/,2022-03-09,,Online,Global,Container Queries,Speaker
+DeveloperWeek Europe 2022,https://www.developerweek.com/europe/,2022-04-27,,Online,Global,Container Queries,Speaker
+Frontmania 2022,https://frontmania.com/,2022-10-05,,Utrecht,NL,Container Queries,Speaker
+Devoxx,https://devoxx.be/,2022-10-11,,Antwerp,BE,Container Queries,Speaker
+Front-end meetup Eindhoven,https://covenofwisdom.io/,2021-11-11,,Eindhoven,NL,Container Queries,Speaker
+Coven of Wisdom - EHV - Hyvä edition,https://www.meetup.com/coven-of-wisdom/events/292356004,2023-05-11,,Eindhoven,NL,,Co-organizer

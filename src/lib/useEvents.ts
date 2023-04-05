@@ -6,6 +6,7 @@ export interface Event {
   topic: string;
   startDate: string;
   endDate: string;
+  role: string;
 }
 
 export function getUpcomingEvents(events: Event[]) {

@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import { getCountryFlagAndNameFromCode } from '../lib/useCountries';
 import DateTime from './DateTime.astro';
-import { type Event } from '../lib/useEvents';
+import type { Event } from '../lib/useEvents';
 
 interface Props {
   class?: string;
@@ -30,6 +30,7 @@ function parseDate(date: string) {
       <tr>
         <th scope="col">Event</th>
         <th scope="col">Topic</th>
+        <th scope="col">Role</th>
         <th scope="col">Date</th>
         <th scope="col">Location</th>
         <th scope="col">
@@ -51,6 +52,7 @@ function parseDate(date: string) {
               )}
             </td>
             {renderTopic && <td class="table-column-topic">{event.topic}</td>}
+            <td class="table-column-role">{event.role}</td>
             <td class="table-column-date">
               <DateTime class="event-date" date={parseDate(event.startDate)} format={'date'} />
             </td>
