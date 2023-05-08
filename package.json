@@ -51,7 +51,7 @@
     "@types/country-list": "^2.1.1",
     "@types/lodash-es": "^4.17.7",
     "@types/url-join": "^4.0.1",
-    "@web/rollup-plugin-html": "^1.11.1",
+    "@web/rollup-plugin-html": "^2.0.0",
     "@wemake-services/stylelint-config-scss": "^3.0.0",
     "astro-critters": "^1.1.31",
     "astro-purgecss": "^2.0.1",
