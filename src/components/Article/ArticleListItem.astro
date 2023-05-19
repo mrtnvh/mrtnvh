@@ -58,7 +58,7 @@ const linkProps = ({ url }: { url: string }) => {
       </div>
     </div>
 
-    <div class="description">{item.description}</div>
+    <div class="description margin-block-trim" set:html={item.description} />
   </div>
 </article>
 

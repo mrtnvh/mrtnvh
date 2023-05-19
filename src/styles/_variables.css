@@ -17,7 +17,7 @@
   --isaac: hsl(197deg, 100%, 50%);
   --text-color: var(--dark);
   --background-color: var(--light);
-  --code-background-color: #0c0a09;
+  --code-background-color: rgb(12, 10, 9);
 
   /**
   * Fonts
@@ -104,6 +104,20 @@
   --detail-title-line-height: calc(1.125em - clamp(0em, 1cqi, 0.25em));
   --detail-title-letter-spacing: -0.02em;
 
+  /**
+   * Text shadow
+   */
+  --text-shadow-outline-color: var(--background-color);
+  --text-shadow-outline-width: 1.5px;
+  --text-shadow-outline: calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * -1) 0
+      var(--background-color),
+    0 calc(var(--text-shadow-outline-width) * -1) 0 var(--background-color), 1px -1px 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * 1) 0 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * 1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    0 calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * -1) 0 0 var(--background-color);
+
   @media (prefers-color-scheme: dark) {
     --dark: rgb(231, 229, 228);
     --light: rgb(28, 25, 23);
@@ -120,18 +134,4 @@
   @media (min-width: 800px) {
     --detail-title-size: var(--font-size-5xl);
   }
-
-  /**
-   * Text shadow
-   */
-  --text-shadow-outline-color: var(--background-color);
-  --text-shadow-outline-width: 1.5px;
-  --text-shadow-outline: calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * -1) 0
-      var(--background-color),
-    0 calc(var(--text-shadow-outline-width) * -1) 0 var(--background-color), 1px -1px 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * 1) 0 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * 1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
-    0 calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * -1) 0 0 var(--background-color);
 }

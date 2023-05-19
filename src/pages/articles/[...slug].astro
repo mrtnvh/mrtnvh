@@ -36,8 +36,8 @@ const linkProps = ({ url }: { url: string | undefined }) => {
     <div>
       <article>
         <h1 class="title">{entry.data.title}</h1>
-        <p class="description">{entry.data.description}</p>
-        <div class="content prose">
+        <div class="description margin-block-trim" set:html={entry.data.description} />
+        <div class="content long-form">
           <Content />
         </div>
         <div class="meta">
@@ -87,7 +87,7 @@ const linkProps = ({ url }: { url: string | undefined }) => {
     margin: 0;
   }
 
-  .content :global(*:not(pre, iframe, img)) {
+  .content :global(> *:not(pre, iframe, img, figure)) {
     max-inline-size: 43.5rem;
   }
 

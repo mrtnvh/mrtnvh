@@ -83,11 +83,6 @@ h6,
   white-space: nowrap;
 }
 
-pre[class*='language-'] {
-  padding: var(--space);
-  border-radius: 0;
-}
-
 code,
 pre {
   &,
@@ -96,6 +91,23 @@ pre {
     font-weight: 500;
     font-size: var(--font-size-sm);
     line-height: 1.75em;
+    background-color: rgb(12, 10, 9);
+  }
+}
+
+code {
+  padding: 0.25em 0.33em;
+  margin: -0.25em 0;
+}
+
+pre {
+  padding: calc(var(--grid-gap-y) / 1.5) var(--grid-gap-x);
+  border-radius: 0;
+  background-color: rgb(12, 10, 9) !important;
+  margin-block: var(--space);
+
+  code {
+    background-color: transparent;
   }
 }
 
@@ -106,9 +118,35 @@ hr {
 }
 
 .long-form {
-  --headings-margin-block-start: calc(var(--space) * 2);
+  *:not(:where(h1, h2, h3, h4, h5, h6) + :where(h1, h2, h3, h4, h5, h6)) {
+    --headings-margin-block-start: calc(var(--space) * 3);
+  }
 
   p + hr {
     margin-block-start: calc(var(--space) * 2);
+  }
+
+  pre {
+    margin-inline: calc(var(--grid-gap-x) / -2);
+  }
+
+  iframe {
+    margin-block: var(--grid-gap-y);
+  }
+
+  figure {
+    margin-block: var(--grid-gap-y);
+
+    iframe {
+      margin-block: 0;
+    }
+  }
+
+  li :is(p, ul, ol) {
+    margin-block: 0;
+  }
+
+  figcaption {
+    text-align: left;
   }
 }

@@ -1,0 +1,245 @@
+---
+title: 'Thoughts on switching layouts with container style queries'
+description: '<p>With style container queries, we basically now have a way to declare conditionals in CSS. With a change of a just single CSS custom property, we can alter layouts.</p> <p>But should we?</p>'
+datePublished: 20230519
+---
+
+Responsive tabular data has tormented many web developers for many decades. How can you easily present a nice table elegantly on small viewports?
+
+CSS frameworks like eg. [Bootstrap](https://getbootstrap.com/docs/5.0/content/tables/#responsive-tables) took the route of providing a small viewport solution in which tables are horizontally scrollable. Chris Coyier [wrote a round-up](https://css-tricks.com/responsive-data-tables/) of different approaches to this problem. None of these approaches are perfect. They all have their own UX drawbacks. You either can't see every piece of information in one glance, you lose track of the column or row you want to focus on whilst scrolling both horizontally or vertically, or you have a lot of repeating information of the table header on each row.
+
+I wanted to find out if I could come up with a solution that is visually more elegant.
+
+## Goals
+
+1. Use semantic markup
+2. 'Small viewport'- friendly layout
+3. 'Large viewport'- friendly layout
+4. Bonus: The user can switch between layouts
+
+## Design
+
+import design from './design.svg';
+
+<figure>
+  <img
+    src={design}
+    alt="A design of a table of users on both a small and large viewport. The small viewport lays out the users as a list of cards, while the large viewport uses a table layout."
+  />
+  <figcaption>Design of a table of users on both a small and large viewport.</figcaption>
+</figure>
+
+We want to visually represent the data of multiple users.
+
+In this case, for small viewports, a list of cards seems the way to go. The information is presented in a way that is easy to scan. The full name is a bit larger, the date of birth is a bit smaller, and the layout is more spread out evenly over a few columns. This allows parts of the information to be more emphasized. The constraint of preventing a horizontal scroll allows better focus on a single user.
+
+For large viewports, let's go with a table. We have sufficient screen real estate to show all the information per user in one single row. At the top of the table, we have the column headers. Screen readers will add the header text when reading out the table cells.
+
+## Experiments
+
+In true CSS Zen Garden fashion, I try to use the same markup. As the large viewport layout is a table, we'll go with a `<table>` element. Using a table will give users of screen readers the bonus of the text of the column headers when reading out the table cells, also on small viewports, where the table headers are visually hidden.
+
+### Experiment 1: Media queries + HTML table
+
+First, let's try to use media queries to switch between the two layouts. At the breakpoint of `768px`, we switch from a list of cards to a table. As our user agent automatically provides `table` elements with default styling and the goal of the large viewport is to show a table, we'll use media queries to override and add styling for small viewports.
+
+Let me try to share the point of this experiment with a very basic example containing the pieces of CSS to make my point clear.
+
+```css
+/* Shared styles */
+/* ... */
+
+/* Small viewport styles */
+@media (max-inline-size: 749px) {
+  tbody {
+    /* Display HTML table as grid */
+    display: grid;
+
+    /* ... */
+  }
+  /* ... */
+}
+
+/* Large viewport styles */
+@media (min-inline-size: 750px) {
+  tr:nth-child(odd) {
+    background-color: lightgrey;
+    /* ... */
+  }
+  /* ... */
+}
+```
+
+Pretty straightforward. We have a shared set of styles that are applied to both layouts. Then we have a set of styles that are applied to the small viewport layout and a set of styles that are applied to the large viewport layout.
+
+Check out this CodePen where I added additional styling to make it look a bit nicer. Use the CodePen zoom feature to activate the layout switch, or visit the [Full Page View](https://codepen.io/mrtnvh/full/dyqxBVx) and resize your browser viewport.
+
+<figure>
+  <iframe
+    height="650"
+    style="width: 100%;"
+    scrolling="no"
+    title="Container Style Queries - View selector - Media queries + HTML table"
+    src="https://codepen.io/mrtnvh/embed/preview/dyqxBVx?default-tab=css%2Cresult"
+    frameborder="no"
+    loading="lazy"
+    allowtransparency="true"
+    allowfullscreen="true"
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/mrtnvh/pen/dyqxBVx">
+      Container Style Queries - View selector - Media queries + HTML table
+    </a>
+    by Maarten Van Hoof (<a href="https://codepen.io/mrtnvh">@mrtnvh</a>) on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+  <figcaption style="display:flex; align-items:baseline; justify-content: space-between;">
+    <span>Use the zoom feature to activate the layout switch.</span>
+    <span>
+      View on <a href="https://codepen.io/mrtnvh/pen/dyqxBVx">CodePen</a>.
+    </span>
+  </figcaption>
+</figure>
+
+### Experiment 2: Size container queries + HTML table
+
+Media queries are great, but now we have container queries. This means we can encapsulate this responsive styling within the user list component itself and reuse it in other contexts, which are perhaps not the full page width. A quick wrap of the table to set containment on and a change of `@media` to `@container` and we're good to go.
+
+```css
+/* Shared styles */
+.user-datalist-wrapper {
+  container-type: inline-size;
+}
+
+/* ... */
+
+/* Small container styles */
+@container (max-inline-size: 749px) {
+  tbody {
+    /* Display HTML table as grid */
+    display: grid;
+
+    /* ... */
+  }
+  /* ... */
+}
+
+/* Large container styles */
+@container (min-inline-size: 750px) {
+  tr:nth-child(odd) {
+    background-color: lightgrey;
+    /* ... */
+  }
+  /* ... */
+}
+```
+
+<figure>
+  <iframe
+    height="500"
+    style="width: 100%;"
+    scrolling="no"
+    title="Container Style Queries - View selector - Size container queries + HTML table"
+    src="https://codepen.io/mrtnvh/embed/preview/mdzPbPd?default-tab=css%2Cresult&zoom=0.5"
+    frameborder="no"
+    loading="lazy"
+    allowtransparency="true"
+    allowfullscreen="true"
+  >
+    See the Pen{' '}
+    <a href="https://codepen.io/mrtnvh/pen/mdzPbPd">
+      Container Style Queries - View selector - Size container queries + HTML table
+    </a>
+    by Maarten Van Hoof (<a href="https://codepen.io/mrtnvh">@mrtnvh</a>) on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+  <figcaption style="display:flex; align-items:baseline; justify-content: space-between;">
+    <span>Zoom to 0.5x and resize the table container to toggle the layout switch.</span>
+    <span>
+      View on <a href="https://codepen.io/mrtnvh/pen/mdzPbPd">CodePen</a>.
+    </span>
+  </figcaption>
+</figure>
+
+### Experiment 3: Style container queries + HTML table
+
+Style container queries kind of introduce a way to write conditionals in CSS. By setting a CSS custom property and querying the value of the custom property on the container, we could alter styling and switch between layouts, at runtime, using (mostly) CSS!
+
+You might be thinking: 'But we can already do that by adding a class to the container and using that class to switch between layouts.' Yes, you're right. But with the style container query approach, we are **not** increasing specificity, which makes your subsequent styling less complex.
+
+Let's rework our previous example. Instead of querying for the `inline-size` of the container, we'll query for the value of a CSS custom property named `--user-datalist-view` to either the value `grid` or `table`.
+
+```css
+/* Shared styles */
+.user-datalist-wrapper {
+  --user-datalist-view: grid; /* Allowed values: grid, table */
+}
+
+/* ... */
+
+/* Grid container styles */
+@container style(--user-datalist-view: grid) {
+  tbody {
+    /* Display HTML table as grid */
+    display: grid;
+
+    /* ... */
+  }
+  /* ... */
+}
+
+/* Table styles */
+@container style(--user-datalist-view: table) {
+  tr:nth-child(odd) {
+    background-color: lightgrey;
+    /* ... */
+  }
+  /* ... */
+}
+```
+
+```js
+// Set the custom property to an allowed value to switch to the layout
+document.querySelector('.user-datalist-wrapper').style.setProperty('--user-datalist-view', 'table');
+```
+
+<figure>
+  <iframe
+    height="500"
+    style="width: 100%;"
+    scrolling="no"
+    title="Container Style Queries - View selector - Style container queries + HTML table"
+    src="https://codepen.io/mrtnvh/embed/preview/KKxeLrX?default-tab=result"
+    frameborder="no"
+    loading="lazy"
+    allowtransparency="true"
+    allowfullscreen="true"
+  >
+    See the Pen
+    <a href="https://codepen.io/mrtnvh/pen/KKxeLrX">
+      Container Style Queries - View selector - Style container queries + HTML table
+    </a>
+    by Maarten Van Hoof (<a href="https://codepen.io/mrtnvh">@mrtnvh</a>) on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+  <figcaption style="display:flex; align-items:baseline; justify-content: end;">
+    <span>
+      View on <a href="https://codepen.io/mrtnvh/pen/KKxeLrX">CodePen</a>.
+    </span>
+  </figcaption>
+</figure>
+
+From a CSS perspective, it seems like the most flexible approach. We can switch between layouts with a single CSS custom property. If we want to change the layout based on either the viewport or the container inline-size, we just have to change the value of the custom property in either a media or container query rule.
+
+But should we?
+
+## Accessibility
+
+Rachel Andrew shared the potential accessibility issues when we are re-ordering the visual layout sequence from the document sequence, at [her talk at axe-con 2021](https://youtu.be/YXXvP3jtcCo).
+
+WCAG [Success Criterion 1.3.2](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence) tells us that re-ordering the presentation of the content should **maintain a meaningful sequence**.
+
+Although I tried to keep the example's visual sequence shift as minimal as possible, do be aware that overly using this technique could lead to potential accessibility issues.
+
+If you have any feedback about what these examples might be doing here concerning accessibility, feel free to reach out via [Mastodon](https://techhub.social/@mrtnvh)
+
+<br />
+
+✌️
