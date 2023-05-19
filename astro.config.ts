@@ -28,7 +28,9 @@ const rehypePlugins = [
 
 export default defineConfig({
   integrations: [
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.includes('kitchensink'),
+    }),
     mdx({
       // @ts-ignore
       rehypePlugins,
