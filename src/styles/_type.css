@@ -83,31 +83,30 @@ h6,
   white-space: nowrap;
 }
 
-code,
+code {
+  padding: 0.25em 0.33em;
+  margin: -0.25em 0;
+  font-weight: 500;
+  background-color: var(--grey-200);
+}
+
 pre {
+  padding: calc(var(--grid-gap-y) / 1.5) var(--grid-gap-x);
+  border-radius: 0;
+  background-color: var(--dark) !important;
+  margin-block: var(--space);
+
+  code {
+    background-color: transparent;
+  }
+
   &,
   [class*='language-'] {
     font-family: var(--mono-font-family);
     font-weight: 500;
     font-size: var(--font-size-sm);
     line-height: 1.75em;
-    background-color: rgb(12, 10, 9);
-  }
-}
-
-code {
-  padding: 0.25em 0.33em;
-  margin: -0.25em 0;
-}
-
-pre {
-  padding: calc(var(--grid-gap-y) / 1.5) var(--grid-gap-x);
-  border-radius: 0;
-  background-color: rgb(12, 10, 9) !important;
-  margin-block: var(--space);
-
-  code {
-    background-color: transparent;
+    background-color: var(--dark);
   }
 }
 
