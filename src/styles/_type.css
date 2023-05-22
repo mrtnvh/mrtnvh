@@ -86,14 +86,14 @@ h6,
 code {
   padding: 0.25em 0.33em;
   margin: -0.25em 0;
-  font-weight: 500;
+  font-weight: 600;
   background-color: var(--grey-200);
 }
 
 pre {
   padding: calc(var(--grid-gap-y) / 1.5) var(--grid-gap-x);
   border-radius: 0;
-  background-color: var(--dark) !important;
+  background-color: var(--code-background-color) !important;
   margin-block: var(--space);
 
   code {
@@ -102,11 +102,8 @@ pre {
 
   &,
   [class*='language-'] {
-    font-family: var(--mono-font-family);
-    font-weight: 500;
-    font-size: var(--font-size-sm);
-    line-height: 1.75em;
-    background-color: var(--dark);
+    font-size: 0.875em;
+    line-height: 2em;
   }
 }
 
@@ -126,7 +123,8 @@ hr {
   }
 
   pre {
-    margin-inline: calc(var(--grid-gap-x) / -2);
+    margin-inline: calc(var(--grid-gap-x) / -1);
+    border: 1px solid var(--grey-300);
   }
 
   iframe {
