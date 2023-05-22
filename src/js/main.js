@@ -57,3 +57,13 @@
 // });
 
 // onContentReplaced();
+
+document.documentElement.addEventListener('click', (event) => {
+  if (event.target.matches('[data-template-id]')) {
+    event.preventDefault();
+    const { templateId } = event.target.dataset;
+    const template = document.getElementById(templateId);
+    const templateContent = template.content.cloneNode(true);
+    event.target.parentNode.replaceChild(templateContent, event.target);
+  }
+});
