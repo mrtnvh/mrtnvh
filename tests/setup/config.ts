@@ -9,10 +9,12 @@ export function getPages(): string[] {
   const sitemap = fs.readFileSync(`${process.cwd()}/dist/${sitemapFileName}`, 'utf-8');
   const parser = new XMLParser();
   const sitemapJson = parser.parse(sitemap);
-  const pages = sitemapJson.urlset.url.map(({ loc }: { loc: string }) => {
-    const url = new URL(loc);
-    return url.pathname;
-  });
+  const pages = sitemapJson.urlset.url
+    .map(({ loc }: { loc: string }) => {
+      const url = new URL(loc);
+      return url.pathname;
+    })
+    .filter((pathname: string) => !pathname.includes('kitchensink'));
   return pages;
 }
 
