@@ -93,7 +93,6 @@ code {
 pre {
   padding: calc(var(--grid-gap-y) / 1.5) var(--grid-gap-x);
   border-radius: 0;
-  background-color: var(--code-background-color) !important;
   margin-block: var(--space);
 
   code {
@@ -123,8 +122,8 @@ hr {
   }
 
   pre {
-    margin-inline: calc(var(--grid-gap-x) / -1);
-    border: 1px solid var(--grey-300);
+    margin-inline: calc((var(--grid-gap-x) / -1) - 2px);
+    border: 1px solid var(--grey);
   }
 
   iframe {

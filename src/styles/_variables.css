@@ -4,9 +4,9 @@
   */
   --dark: hsl(24deg, 9%, 10%);
   --grey: hsl(25deg, 5%, 42%);
-  --grey-300: hsl(25deg, 6%, 85%);
-  --grey-200: hsl(20deg, 6%, 90%);
-  --grey-100: hsl(60deg, 4%, 95%);
+  --grey-300: hsl(24deg, 9%, 85%);
+  --grey-200: hsl(24deg, 9%, 90%);
+  --grey-100: hsl(24deg, 9%, 95%);
   --light: hsl(60deg, 9%, 97%);
   --primary: hsl(82deg, 78%, 55%);
   --primary-dark: hsl(85deg, 78%, 27%);
@@ -17,7 +17,19 @@
   --isaac: hsl(197deg, 100%, 50%);
   --text-color: var(--dark);
   --background-color: var(--light);
-  --code-background-color: rgb(28, 25, 23);
+
+  /* Light Theme */
+  --astro-code-color-text: var(--text-color);
+  --astro-code-color-background: var(--background-color);
+  --astro-code-token-constant: rgb(5, 80, 174);
+  --astro-code-token-string: rgb(10, 48, 105);
+  --astro-code-token-comment: rgb(106, 114, 124);
+  --astro-code-token-keyword: rgb(207, 34, 46);
+  --astro-code-token-parameter: rgb(17, 99, 41);
+  --astro-code-token-function: rgb(130, 80, 223);
+  --astro-code-token-string-expression: rgb(10, 48, 105);
+  --astro-code-token-punctuation: rgb(33, 33, 33);
+  --astro-code-token-link: rgb(10, 48, 105);
 
   /**
   * Fonts
@@ -125,6 +137,15 @@
     --grey-100: hsl(0deg, 0%, 12.5%);
     --grey-200: hsl(0deg, 0%, 15%);
     --grey-300: hsl(0deg, 0%, 25%);
+    --astro-code-token-constant: rgb(121, 192, 255);
+    --astro-code-token-string: rgb(165, 214, 255);
+    --astro-code-token-comment: rgb(139, 148, 158);
+    --astro-code-token-keyword: rgb(255, 123, 114);
+    --astro-code-token-parameter: rgb(126, 231, 135);
+    --astro-code-token-function: rgb(210, 168, 255);
+    --astro-code-token-string-expression: rgb(165, 214, 255);
+    --astro-code-token-punctuation: rgb(33, 33, 33);
+    --astro-code-token-link: rgb(165, 214, 255);
   }
 
   @media (min-width: 800px) {
