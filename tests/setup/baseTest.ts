@@ -24,7 +24,7 @@ export const baseTest = base.extend<{}, { lhPort: number }>({
 
   context: async ({ context }, use) => {
     // Ignore third party scripts
-    await context.route(/(vercel.live\/_next-live)/, (route) => route.abort());
+    await context.route(/(vercel.live\/_next-live|codepen.io)/, (route) => route.abort());
     await use(context);
   },
 });

@@ -28,4 +28,13 @@ button {
     border: 0;
     padding: 0;
   }
+
+  &.outline {
+    border: 1px solid var(--grey);
+    font-weight: 400;
+
+    &:where(:hover, :focus) {
+      background-color: var(--grey-200);
+    }
+  }
 }

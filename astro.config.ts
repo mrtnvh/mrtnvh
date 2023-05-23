@@ -28,7 +28,9 @@ const rehypePlugins = [
 
 export default defineConfig({
   integrations: [
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.includes('kitchensink'),
+    }),
     mdx({
       // @ts-ignore
       rehypePlugins,
@@ -39,6 +41,12 @@ export default defineConfig({
   markdown: {
     // @ts-ignore
     rehypePlugins,
+
+    shikiConfig: {
+      // Choose from Shiki's built-in themes (or add your own)
+      // https://github.com/shikijs/shiki/blob/main/docs/themes.md
+      theme: 'css-variables',
+    },
   },
   vite: {
     plugins: [

@@ -1,12 +1,12 @@
 ---
 import clsx from 'clsx';
 
-const { title, titleTag = 'h1', showTitle = false } = Astro.props;
+const { title, titleTag = 'h1', showTitle = false, container = true } = Astro.props;
 const Title = titleTag;
 ---
 
-<div class="container">
-  <Title class={clsx('title', { 'title-hidden': showTitle })}>{title}</Title>
+<div class={clsx({ container })}>
+  <Title class={clsx('title', { 'title-hidden': !showTitle })}>{title}</Title>
   <slot />
 </div>
 

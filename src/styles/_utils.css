@@ -17,3 +17,13 @@
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
+.margin-block-trim {
+  > *:first-child {
+    margin-block-start: 0;
+  }
+
+  > *:last-child {
+    margin-block-end: 0;
+  }
+}

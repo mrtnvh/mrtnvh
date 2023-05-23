@@ -11,5 +11,12 @@
     "**/.project": true,
     "**/.settings": true
   },
-  "explorerExclude.backup": {}
+  "explorerExclude.backup": {},
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "src/content/articles/thoughts-on-switching-layouts-with-container-style-queries/index.mdx"
+    }
+  ]
 }

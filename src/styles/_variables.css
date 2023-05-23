@@ -3,10 +3,10 @@
   * Colors
   */
   --dark: hsl(24deg, 9%, 10%);
-  --grey: hsl(25deg, 5%, 44%);
-  --grey-300: hsl(25deg, 6%, 85%);
-  --grey-200: hsl(20deg, 6%, 90%);
-  --grey-100: hsl(60deg, 4%, 95%);
+  --grey: hsl(25deg, 5%, 42%);
+  --grey-300: hsl(24deg, 9%, 85%);
+  --grey-200: hsl(24deg, 9%, 90%);
+  --grey-100: hsl(24deg, 9%, 95%);
   --light: hsl(60deg, 9%, 97%);
   --primary: hsl(82deg, 78%, 55%);
   --primary-dark: hsl(85deg, 78%, 27%);
@@ -17,6 +17,19 @@
   --isaac: hsl(197deg, 100%, 50%);
   --text-color: var(--dark);
   --background-color: var(--light);
+
+  /* Light Theme */
+  --astro-code-color-text: var(--text-color);
+  --astro-code-color-background: var(--background-color);
+  --astro-code-token-constant: rgb(5, 80, 174);
+  --astro-code-token-string: rgb(10, 48, 105);
+  --astro-code-token-comment: rgb(106, 114, 124);
+  --astro-code-token-keyword: rgb(207, 34, 46);
+  --astro-code-token-parameter: rgb(17, 99, 41);
+  --astro-code-token-function: rgb(130, 80, 223);
+  --astro-code-token-string-expression: rgb(10, 48, 105);
+  --astro-code-token-punctuation: rgb(33, 33, 33);
+  --astro-code-token-link: rgb(10, 48, 105);
 
   /**
   * Fonts
@@ -47,7 +60,7 @@
   --headings-letter-spacing: -0.02em;
   --headings-margin-block-start: 0;
   --headings-margin-block-end: var(--space);
-  --mono-font-family: 'IBM Plex Mono', 'Helvetica Now Text', system-ui;
+  --mono-font-family: 'IBM Plex Mono', 'Courier New', monospace;
 
   /**
   * Strokes
@@ -100,20 +113,44 @@
   */
   --detail-title-size: var(--font-size-4xl);
   --detail-title-font-weight: 800;
-  --detail-title-line-height: var(--line-height-xs);
+  --detail-title-line-height: calc(1.125em - clamp(0em, 1cqi, 0.25em));
   --detail-title-letter-spacing: -0.02em;
+
+  /**
+   * Text shadow
+   */
+  --text-shadow-outline-color: var(--background-color);
+  --text-shadow-outline-width: 1.5px;
+  --text-shadow-outline: calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * -1) 0
+      var(--background-color),
+    0 calc(var(--text-shadow-outline-width) * -1) 0 var(--background-color), 1px -1px 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * 1) 0 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * 1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    0 calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
+    calc(var(--text-shadow-outline-width) * -1) 0 0 var(--background-color);
 
   @media (prefers-color-scheme: dark) {
     --dark: rgb(231, 229, 228);
     --light: rgb(28, 25, 23);
     --grey: rgb(168, 162, 158);
+    --grey-100: hsl(0deg, 0%, 12.5%);
     --grey-200: hsl(0deg, 0%, 15%);
     --grey-300: hsl(0deg, 0%, 25%);
+    --astro-code-token-constant: rgb(121, 192, 255);
+    --astro-code-token-string: rgb(165, 214, 255);
+    --astro-code-token-comment: rgb(139, 148, 158);
+    --astro-code-token-keyword: rgb(255, 123, 114);
+    --astro-code-token-parameter: rgb(126, 231, 135);
+    --astro-code-token-function: rgb(210, 168, 255);
+    --astro-code-token-string-expression: rgb(165, 214, 255);
+    --astro-code-token-punctuation: rgb(33, 33, 33);
+    --astro-code-token-link: rgb(165, 214, 255);
   }
 
   @media (min-width: 800px) {
     --folio-title-size: var(--font-size-6xl);
-    --folio-title-margin: 0 0 calc(var(--grid-gap-y) / 2) 0;
+    --folio-title-margin: calc(var(--grid-gap-y) / 2) 0 calc(var(--grid-gap-y)) 0;
   }
 
   @media (min-width: 800px) {
