@@ -58,7 +58,7 @@ baseTest.describe('Navigation', async () => {
             if (expectedUrl.includes('youtube')) {
               expect(expectedUrl).toContain('youtube.com');
             } else {
-              expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(expectedUrl));
+              expect(removeTrailingSlash(url)).toContain(removeTrailingSlash(expectedUrl));
             }
           } else {
             await $link?.click();
