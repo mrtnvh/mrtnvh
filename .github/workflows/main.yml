@@ -153,7 +153,7 @@ jobs:
                   const url = new URL(loc);
                   return `${process.env.CI_BASEURL}${url.pathname}`;
                 })
-                .filter((pathname: string) => !pathname.includes("kitchensink"));
+                .filter((pathname) => !pathname.includes("kitchensink"));
               return pages;
             }
             core.setOutput('urls', getPages().join('\n'));
