@@ -36,12 +36,12 @@ function getDateTimeFormatOptions(dateTimeFormat: Format, size: Size): Intl.Date
   }
 }
 
-function getDateTimeAtributeValue(dateTimeFormat: Format, date: Date): string {
+function getDateTimeAtributeValue(dateTimeFormat: Format, date: Date) {
   switch (dateTimeFormat) {
     case 'date':
       return date.toISOString().split('T')[0];
     case 'time':
-      return date.toISOString().split('T')[1].split('.')[0];
+      return date.toISOString().split('T')[1]?.split('.')[0];
     case 'datetime':
       return date.toISOString();
   }

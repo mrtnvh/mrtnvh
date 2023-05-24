@@ -1,0 +1,407 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "article",
+        "attrs": {
+          "class": ""
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "figure",
+                "attrs": {
+                  "class": "media"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "picture",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "img",
+                        "attrs": {
+                          "class": "image"
+                        }
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "h1",
+                "attrs": {
+                  "class": "title"
+                },
+                "content": [
+                  "iO"
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "meta"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "time-category"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "time",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "2021 09 01"
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "div",
+                        "attrs": {
+                          "class": "category"
+                        },
+                        "content": [
+                          "Experience"
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "body"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      {
+                        "tag": "strong",
+                        "content": [
+                          "Discover infinite opportunities, together. These transformative times bring challenges and change to your business. But they also create infinite opportunities to grow and excel. We're here to help you identify and seize them. Offering you our strategic perspective and in-depth expertise, end-to-end."
+                        ]
+                      }
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "As part of the ",
+                      {
+                        "tag": "strong",
+                        "content": [
+                          "Becoming One"
+                        ]
+                      },
+                      " vision, ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "ISAAC"
+                        ]
+                      },
+                      " and all sister companies have rebranded to ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "iO"
+                        ]
+                      },
+                      " since September 2021."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "h2",
+                    "attrs": {
+                      "id": "experience"
+                    },
+                    "content": [
+                      "Experience"
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "table",
+                    "content": [
+                      {
+                        "tag": "tbody",
+                        "content": [
+                          {
+                            "tag": "tr",
+                            "content": [
+                              {
+                                "tag": "th",
+                                "attrs": {
+                                  "style": "width:33%"
+                                },
+                                "content": [
+                                  "Open Source Manifesto"
+                                ]
+                              },
+                              {
+                                "tag": "td",
+                                "content": [
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Integration of the Campus Eindhoven"
+                                    ]
+                                  },
+                                  {
+                                    "tag": "a",
+                                    "attrs": {
+                                      "class": "external"
+                                    },
+                                    "content": [
+                                      {
+                                        "tag": "span",
+                                        "content": [
+                                          "Open Source Manifesto"
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "to cross-campus an iO Open Source Manifesto, enabling every iO employee to contribute and give back to the Open Source Community."
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "tr",
+                            "content": [
+                              {
+                                "tag": "th",
+                                "content": [
+                                  "Open Source Contribution Day"
+                                ]
+                              },
+                              " ",
+                              {
+                                "tag": "td",
+                                "content": [
+                                  "Half-yearly campus hackathon-esque event to give back to the Open Source Community."
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "tr",
+                            "content": [
+                              {
+                                "tag": "th",
+                                "content": [
+                                  "ByteSize"
+                                ]
+                              },
+                              {
+                                "tag": "td",
+                                "content": [
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "ByteSize is an internal short-format interview series where we highlight the work, experience and visions of fellow colleagues. (Co-)Responsible for production, videography and edit."
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "tr",
+                            "content": [
+                              {
+                                "tag": "th",
+                                "content": [
+                                  "Accessibility"
+                                ]
+                              },
+                              {
+                                "tag": "td",
+                                "content": [
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Member of the iO Accessibility Expert Group. Set iO a11y mission and vision, provide guidance, setup awareness campaigns."
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "tr",
+                            "content": [
+                              {
+                                "tag": "th",
+                                "content": [
+                                  "Event support"
+                                ]
+                              },
+                              {
+                                "tag": "td",
+                                "content": [
+                                  {
+                                    "tag": "p",
+                                    "content": [
+                                      "Technical audiovisual support for campus live-streamed knowledge sharing sessions. Meetups, internal updates, ... "
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "br"
+                  },
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "For more info, visit ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "iodigital.com"
+                        ]
+                      },
+                      "."
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]

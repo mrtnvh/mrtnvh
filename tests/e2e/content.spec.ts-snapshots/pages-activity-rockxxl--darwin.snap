@@ -1,0 +1,285 @@
+[
+  {
+    "tag": "main",
+    "attrs": {
+      "class": "transition-fade"
+    },
+    "content": [
+      " ",
+      {
+        "tag": "article",
+        "attrs": {
+          "class": ""
+        },
+        "content": [
+          " ",
+          {
+            "tag": "div",
+            "attrs": {
+              "class": "container"
+            },
+            "content": [
+              " ",
+              {
+                "tag": "figure",
+                "attrs": {
+                  "class": "media"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "picture",
+                    "attrs": {
+                      "class": ""
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "source",
+                        "attrs": {
+                          "class": ""
+                        }
+                      },
+                      {
+                        "tag": "img",
+                        "attrs": {
+                          "class": "image"
+                        }
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "h1",
+                "attrs": {
+                  "class": "title"
+                },
+                "content": [
+                  "RockXXL"
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "meta"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "div",
+                    "attrs": {
+                      "class": "time-category"
+                    },
+                    "content": [
+                      " ",
+                      {
+                        "tag": "time",
+                        "attrs": {
+                          "class": ""
+                        },
+                        "content": [
+                          "2019 01 05"
+                        ]
+                      },
+                      " ",
+                      {
+                        "tag": "div",
+                        "attrs": {
+                          "class": "category"
+                        },
+                        "content": [
+                          "Experience"
+                        ]
+                      },
+                      " "
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " ",
+              {
+                "tag": "div",
+                "attrs": {
+                  "class": "body"
+                },
+                "content": [
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "RockXXL is a 100% volunteer-ran organization that offers an online platform for the rock and metal world in general (with a nod to Belgium in particular!). Their goal is to put smaller, Belgian underground bands and both established ones in the spotlight by using reviews, interviews, live reports, setting up shows, ..."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "At the end of 2018 they were looking for a volunteer to breathe new life into their website. I immediately offered my services. The old website has been transformed from WordPress into a immaculate JAMstack. ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "rockxxl.be"
+                        ]
+                      },
+                      " now runs on ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "Gatsby.js"
+                        ]
+                      },
+                      ", is managed via ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "Netlify CMS"
+                        ]
+                      },
+                      " and is 100% free hosted on ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "Netlify"
+                        ]
+                      },
+                      ". The source code 100% open source and is ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "available on Github"
+                        ]
+                      },
+                      "."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "With the aim of maintaining their SEO ranking, we have been able to move all legacy Wordpress data and images without any problem. All existing URLs are neatly redirected to the new URL structure. Via a few customized scripts, all posts were exported to Markdown files."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "Images are hosted on ",
+                      {
+                        "tag": "a",
+                        "attrs": {
+                          "class": "external"
+                        },
+                        "content": [
+                          "Cloudinary"
+                        ]
+                      },
+                      ", a heavy-duty media hosting platform with integrated image transformations and CDN. Thanks to Cloudinary, the backend is not required to perform heavy edits and we can still display the most optimal image per user."
+                    ]
+                  },
+                  " ",
+                  {
+                    "tag": "p",
+                    "content": [
+                      "After only a handful of evenings, a funky fresh RockXXL is ready rock your socks off!"
+                    ]
+                  },
+                  " "
+                ]
+              },
+              " "
+            ]
+          },
+          " "
+        ]
+      },
+      " "
+    ]
+  }
+]

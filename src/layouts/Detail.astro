@@ -2,11 +2,29 @@
 import Markdown from '@astrojs/markdown-component';
 import { clsx } from 'clsx';
 import BaseLayout from './Base.astro';
-import { getImageVariants } from '../components/Image/cloudinary.js';
+import { ImageTint, getImageVariants } from '../components/Image/cloudinary.js';
 import Thumbnail from '../components/Image/Image.astro';
 import events from '../pages/events/events.csv';
-import EventsTable, { type Event } from '../components/EventsTable.astro';
+import EventsTable from '../components/EventsTable.astro';
+import type { Event } from '../lib/useEvents';
 import VisualPreview from '../components/VisualPreview.astro';
+import type { ColorKey } from '../styles/colors';
+
+export interface DetailProps {
+  title: string;
+  thumbnail: string;
+  thumbnailCredits: string;
+  slides?: string | undefined;
+  slidesThumbnailAlt?: string | undefined;
+  video?: string | undefined;
+  videoThumbnailAlt?: string | undefined;
+  tint?: ImageTint | ColorKey | undefined;
+  id: string;
+}
+
+export interface Props {
+  content: DetailProps;
+}
 
 const {
   content: { title, thumbnail, thumbnailCredits, slides, slidesThumbnailAlt, video, videoThumbnailAlt, tint, id },
@@ -90,13 +108,13 @@ const transformedEvents = (events as unknown as Event[])
           <div class={clsx('media', { 'media-multiple': !!slides && !!video })}>
             <h2 class="sr-only">Media</h2>
             <div class="media-content">
-              {video && (
+              {video && videoThumbnailAlt && (
                 <figure>
                   <VisualPreview url={video} alt={videoThumbnailAlt} src={video} />
                   <figcaption>{videoThumbnailAlt}</figcaption>
                 </figure>
               )}
-              {slides && (
+              {slides && slidesThumbnailAlt && (
                 <figure>
                   <VisualPreview url={slides} src={thumbnail} alt={slidesThumbnailAlt} />
                   <figcaption>{slidesThumbnailAlt}</figcaption>
@@ -119,7 +137,7 @@ const transformedEvents = (events as unknown as Event[])
 
       {
         !!thumbnailCredits && (
-          <div class="credits clear-inner-spacing">{thumbnailCredits && <Markdown set:html={thumbnailCredits} />}</div>
+          <div class="credits margin-block-trim">{thumbnailCredits && <Markdown set:html={thumbnailCredits} />}</div>
         )
       }
     </div>

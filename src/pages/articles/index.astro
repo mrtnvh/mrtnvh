@@ -1,0 +1,38 @@
+---
+import { defaultsDeep, orderBy } from 'lodash-es';
+import BaseLayout from '../../layouts/Base.astro';
+import ArticleList from '../../components/Article/ArticleList.astro';
+import { getCollection } from 'astro:content';
+import urljoin from 'url-join';
+import Folio from '../../components/Page/Folio.astro';
+
+const articles = await getCollection('articles').then((collection) => {
+  const entriesData = collection.map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }));
+  return orderBy(entriesData, ['datePublished'], ['desc']);
+});
+
+const baseLayoutProps = defaultsDeep(
+  {
+    content: {
+      title: 'Articles',
+      description:
+        'Trying to help the rest of the world to understand the world of web development by writing down my brainfarts.',
+    },
+  },
+  Astro.props,
+);
+---
+
+<BaseLayout {...baseLayoutProps}>
+  <Folio title="Articles" show-title={false}>
+    <div class="full-width">
+      <ArticleList items={articles} />
+    </div>
+  </Folio>
+</BaseLayout>
+
+<style>
+  .articles {
+    padding-block-start: clamp(calc(var(--grid-gap-y) * 1), 9vw, calc(var(--grid-gap-y) * 2));
+  }
+</style>

@@ -1,9 +1,21 @@
 ---
 import Thumbnail from '../Image/Image.astro';
 import { parse, format } from 'date-fns';
+import type { ImageTint } from '../Image/cloudinary';
+
+export type ListItemItemProps = {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  datePublished: number;
+  category?: string | undefined;
+  thumbnail: string;
+  tint: string | ImageTint;
+  url: string;
+};
 
 export interface Props {
-  item: any;
+  item: ListItemItemProps;
   index?: number;
   showCategory?: boolean;
   showDate?: boolean;
@@ -11,12 +23,12 @@ export interface Props {
 
 const { item, index = 0, showCategory = false, showDate = false } = Astro.props;
 const showMeta = showCategory || showDate;
-const date = parse(item.datePublished, 'yyyyMMdd', new Date());
+const date = parse(item.datePublished.toString(), 'yyyyMMdd', new Date());
 
 const linkProps = () => {
-  if (item?.redirect || item?.astro?.url?.startsWith('http')) {
+  if (item.url.startsWith('http')) {
     return {
-      href: item.redirect || item.astro?.url,
+      href: item.url,
       target: '_blank',
       rel: 'noopener',
     };

@@ -1,4 +1,5 @@
-import colors from '../../styles/colors.js';
+import colors, { colorKeys } from '../../styles/colors';
+import type { ColorKey } from '../../styles/colors';
 
 export interface ImageVariant {
   sizes?: string;
@@ -9,13 +10,19 @@ export interface ImageVariant {
 
 export const SRC_SET_SIZES = [300, 600, 900, 1200, 1500, 1800];
 
-const isCloudinaryUrl = (url) => url.includes('https://res.cloudinary.com/');
+const isCloudinaryUrl = (url: string) => url.includes('https://res.cloudinary.com/');
 
 const delimiters = ['youtube', 'upload', 'vimeo'];
 
-const getShadowsHighlightFromTintDark = ({ tint, dark }) => {
+const getShadowsHighlightFromTintDark = ({ tint, dark }: { tint: ColorKey | ImageTint | undefined; dark: boolean }) => {
   if (tint) {
-    if (typeof tint === 'string') {
+    if (typeof tint !== 'string' && 'shadows' in tint && 'highlights' in tint) {
+      return {
+        shadows: tint.shadows.replace('#', ''),
+        highlights: tint.shadows.replace('#', ''),
+      };
+    }
+    if (colorKeys.includes(tint)) {
       if (dark) {
         return {
           shadows: colors[tint]['900'].replace('#', ''),
@@ -27,13 +34,6 @@ const getShadowsHighlightFromTintDark = ({ tint, dark }) => {
         highlights: colors[tint]['50'].replace('#', ''),
       };
     }
-
-    if (tint.shadows && tint.highlights) {
-      return {
-        shadows: tint.shadows.replace('#', ''),
-        highlights: tint.shadows.replace('#', ''),
-      };
-    }
   }
 
   return {
@@ -42,28 +42,48 @@ const getShadowsHighlightFromTintDark = ({ tint, dark }) => {
   };
 };
 
-const getShadowsHighlights = ({ shadows, highlights }) => {
-  if (shadows && highlights) {
-    return `${[`e_grayscale`, `e_tint:100:${shadows}:0p:${highlights}:100p`].join(',')}/t_noise`;
-  }
-  return undefined;
+const getShadowsHighlights = ({
+  shadows,
+  highlights,
+}: {
+  shadows: string | undefined;
+  highlights: string | undefined;
+}) => {
+  if (!shadows || !highlights) return undefined;
+  return `${[`e_grayscale`, `e_tint:100:${shadows}:0p:${highlights}:100p`].join(',')}/t_noise`;
 };
 
-const getPlaceholder = ({ preUrl, postUrl, shadows, highlights, delimiter }) => {
+type GetPlaceholderOptions = {
+  preUrl: string | undefined;
+  postUrl: string | undefined;
+  shadows: string | undefined;
+  highlights: string | undefined;
+  delimiter: string | undefined;
+};
+
+const getPlaceholder = ({ preUrl, postUrl, shadows, highlights, delimiter }: GetPlaceholderOptions) => {
   const transformations = [`t_responsive_placeholder`, getShadowsHighlights({ shadows, highlights })]
     .filter((transformation) => !!transformation)
     .join(',');
   return [preUrl, delimiter, transformations, postUrl].join('/');
 };
 
-const getOgImage = ({ preUrl, postUrl, shadows, highlights, delimiter }) => {
+type GetOgImageOptions = GetPlaceholderOptions;
+
+const getOgImage = ({ preUrl, postUrl, shadows, highlights, delimiter }: GetOgImageOptions) => {
   const transformations = [`t_og_image`, getShadowsHighlights({ shadows, highlights })]
     .filter((transformation) => !!transformation)
     .join(',');
   return [preUrl, delimiter, transformations, postUrl].join('/');
 };
 
-const getSrcSet = ({ preUrl, postUrl, shadows, highlights, width, height, type, delimiter }) =>
+type GetSrcSetOptions = GetPlaceholderOptions & {
+  width: number;
+  height: number;
+  type: string;
+};
+
+const getSrcSet = ({ preUrl, postUrl, shadows, highlights, width, height, type, delimiter }: GetSrcSetOptions) =>
   SRC_SET_SIZES.map((size) => {
     const srcSetWidth = size;
     const srcSetHeight = Math.ceil((size / width) * height);
@@ -87,8 +107,8 @@ const getSrcSet = ({ preUrl, postUrl, shadows, highlights, width, height, type, 
     .filter((transformation) => !!transformation)
     .join(', ');
 
-const getPrePostUrl = ({ src, delimiter }) => {
-  if (src.includes(`/${delimiter}/`)) {
+const getPrePostUrl = ({ src, delimiter }: { src: string; delimiter: string | undefined }) => {
+  if (src.includes(`/${delimiter}/`) && !!delimiter) {
     return src.split(`/${delimiter}/`);
   }
   return [src];
@@ -104,7 +124,7 @@ export type ImageVariantsParams = {
   src?: string;
   srcSet?: string;
   type?: 'auto' | 'jpg' | 'png' | 'webp' | 'avif';
-  tint?: ImageTint | string;
+  tint?: ImageTint | ColorKey | undefined;
   dark?: boolean;
   width?: number;
   height?: number;
