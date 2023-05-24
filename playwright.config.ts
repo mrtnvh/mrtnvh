@@ -6,6 +6,9 @@ export default defineConfig({
   use: {
     baseURL: process.env.CI_BASEURL || `http://localhost:${port}`,
   },
+  ...(!process.env.CI && {
+    workers: 1,
+  }),
   /* Run your local dev server before starting the tests */
   ...(!process.env.CI_BASEURL && {
     webServer: {
