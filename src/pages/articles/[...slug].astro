@@ -1,4 +1,5 @@
 ---
+import { kebabCase } from 'lodash-es';
 import { CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/Base.astro';
 import clsx from 'clsx';
@@ -15,6 +16,7 @@ export async function getStaticPaths() {
 const entry = Astro.props.entry as CollectionEntry<'articles'>;
 const { Content } = await entry.render();
 const date = parse(entry.data.datePublished.toString(), 'yyyyMMdd', new Date());
+const viewTransitionBaseId = kebabCase(Astro.url.pathname);
 
 const linkProps = ({ url }: { url: string | undefined }) => {
   const baseClass = 'reset link';
@@ -35,9 +37,13 @@ const linkProps = ({ url }: { url: string | undefined }) => {
   <div class="container">
     <div>
       <article>
-        <h1 class="title">{entry.data.title}</h1>
-        <div class="description margin-block-trim" set:html={entry.data.description} />
-        <div class="content long-form">
+        <h1 class="title" style={`view-transition-name: ${viewTransitionBaseId}-title`}>{entry.data.title}</h1>
+        <div
+          class="description margin-block-trim"
+          set:html={entry.data.description}
+          style={`view-transition-name: ${viewTransitionBaseId}-description`}
+        />
+        <div class="content long-form" style={`view-transition-name: ${viewTransitionBaseId}-content`}>
           <Content />
         </div>
         <div class="meta">
