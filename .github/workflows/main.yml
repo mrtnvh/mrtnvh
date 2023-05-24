@@ -138,9 +138,8 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            import { XMLParser } from "fast-xml-parser";
-            import fs from "fs";
-            import { get } from "lodash";
+            const { XMLParser } = require("fast-xml-parser");
+            const fs = require("fs");
 
             function getPages() {
               const sitemapFileName = fs
