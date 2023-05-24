@@ -170,7 +170,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    needs: [build, test, tests-on-preview]
+    needs: [build, test, lighthouse]
 
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
 
