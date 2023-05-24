@@ -113,8 +113,8 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
 
-  tests-on-preview:
-    runs-on: macos-12
+  lighthouse:
+    runs-on: ubuntu-latest
 
     needs: deploy-preview
 
@@ -124,7 +124,6 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
-        test-type: ['performance']
 
     steps:
       - uses: actions/checkout@v3
@@ -134,38 +133,39 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      - name: Get URLS from sitemap
+        id: urls
+        uses: actions/github-script@v6
         with:
-          install-command: npm ci --legacy-peer-deps
+          script: |
+            import { XMLParser } from "fast-xml-parser";
+            import fs from "fs";
+            import { get } from "lodash";
 
-      - name: Install Playwright deps
-        run: npx playwright install-deps chromium
+            function getPages() {
+              const sitemapFileName = fs
+                .readdirSync(`dist`)
+                .reduce((acc, fileName) => (fileName.includes("sitemap-0") ? fileName : acc), "");
+              const sitemap = fs.readFileSync('${{ github.workspace }}/dist/${sitemapFileName}', "utf-8");
+              const parser = new XMLParser();
+              const sitemapJson = parser.parse(sitemap);
+              const pages = sitemapJson.urlset.url
+                .map(({ loc }) => {
+                  const url = new URL(loc);
+                  return `${process.env.CI_BASEURL}${url.pathname}`;
+                })
+                .filter((pathname: string) => !pathname.includes("kitchensink"));
+              return pages;
+            }
+            core.setOutput('urls', getPages().join('\n'));
 
-      - name: Download build artifact
-        uses: actions/download-artifact@v3
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
         with:
-          name: build
-          path: dist
-
-      - name: Run ${{ matrix.test-type }}
-        run: 'npm run test:${{ matrix.test-type }}'
-      - name: Archive performance reports
-        uses: actions/upload-artifact@v3
-        continue-on-error: true
-        if: ${{ success() || failure() }}
-        with:
-          name: performance_reports
-          path: tests/performance/__reports__
-          retention-days: 5
-      - name: Archive visual reports
-        uses: actions/upload-artifact@v3
-        continue-on-error: true
-        if: ${{ success() || failure() }}
-        with:
-          name: visual_reports
-          path: test-results
-          retention-days: 5
+          urls: |
+            ${{ steps.urls.outputs.urls }}
+          # budgetPath: ./budget.json
+          uploadArtifacts: true
 
   deploy:
     runs-on: ubuntu-latest
