@@ -36,7 +36,7 @@ baseTest.describe('Lighthouse', async () => {
             if (clientSideRedirect) {
               expect(true, `Client side redirect, don't perform performance test`).toBe(true);
             } else {
-              await page.goto(path);
+              await page.goto(path, { waitUntil: 'networkidle' });
               const reportFileName = customSnapshotIdentifier(path, environmentName, 'html');
               const reportsDirectory = `${getDirname(import.meta.url)}/__reports__/`;
               await playAudit({
