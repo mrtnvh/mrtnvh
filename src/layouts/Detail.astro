@@ -1,4 +1,5 @@
 ---
+import { kebabCase } from 'lodash-es';
 import Markdown from '@astrojs/markdown-component';
 import { clsx } from 'clsx';
 import BaseLayout from './Base.astro';
@@ -80,12 +81,14 @@ const transformedEvents = (events as unknown as Event[])
     const dateB = new Date(b.startDate);
     return dateB.getTime() - dateA.getTime();
   });
+
+const viewTransitionBaseId = kebabCase(Astro.url.pathname);
 ---
 
 <BaseLayout {...Astro.props} preloads={preloads}>
   <article>
     <div class="container">
-      <figure class="hero">
+      <figure class="hero" style={`view-transition-name: ${viewTransitionBaseId}-hero`}>
         {
           thumbnail && (
             <Thumbnail
@@ -97,7 +100,7 @@ const transformedEvents = (events as unknown as Event[])
           )
         }
       </figure>
-      <h1 class="title">{title}</h1>
+      <h1 class="title" style={`view-transition-name: ${viewTransitionBaseId}-title`}>{title}</h1>
 
       <div class="body long-form">
         <slot />
