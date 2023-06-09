@@ -8,6 +8,7 @@ export default defineConfig({
   },
   ...(!process.env.CI && {
     workers: 1,
+    retries: 2,
   }),
   /* Run your local dev server before starting the tests */
   ...(!process.env.CI_BASEURL && {
