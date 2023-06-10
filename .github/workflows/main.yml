@@ -127,8 +127,6 @@ jobs:
         test-type: ['performance']
         shard: [1/5, 2/5, 3/5, 4/5, 5/5]
 
-    continue-on-error: true
-
     steps:
       - uses: actions/checkout@v3
 
@@ -153,6 +151,8 @@ jobs:
 
       - name: Run ${{ matrix.test-type }}
         run: 'npm run test:${{ matrix.test-type }} -- --shard=${{ matrix.shard }}'
+        continue-on-error: true
+        if: ${{ success() || failure() }}
 
       - name: Archive performance reports
         uses: actions/upload-artifact@v3
