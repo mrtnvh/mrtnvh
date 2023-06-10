@@ -5,6 +5,7 @@ import Folio from '../../components/Page/Folio.astro';
 import EventsTable from '../../components/EventsTable.astro';
 import events from './events.csv';
 import { getPastEvents, getUpcomingEvents, type Event } from '../../lib/useEvents';
+import clsx from 'clsx';
 
 const baseLayoutProps = defaultsDeep(
   {
@@ -24,18 +25,19 @@ const pastEvents = getPastEvents(events as unknown as Event[]);
 <BaseLayout {...baseLayoutProps}>
   <Folio title="Events" showTitle={true}>
     <section>
-      <p>
-        Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise.
-        Afterwards, I'll post my slides here. Other times, I'd like to go to places and meet people and talk about the
-        Web.
-      </p>
+      Sometimes, I'll get on a stage and talk about the stuff I like. Like rocking out, but with less noise. Afterwards,
+      I'll post my slides here. Other times, I'd like to go to places and meet people and talk about the Web.
     </section>
+    {
+      !!upcomingEvents.length && (
+        <section>
+          <h2>Upcoming</h2>
+          {<EventsTable class="events-table" events={upcomingEvents} renderTopic={true} renderHeader={true} />}
+        </section>
+      )
+    }
     <section>
-      <h2>Upcoming</h2>
-      {(<EventsTable class="events-table" events={upcomingEvents} renderTopic={true} renderHeader={true} />)}
-    </section>
-    <section>
-      <h2>Past</h2>
+      <h2 class={clsx({ 'sr-only': !upcomingEvents.length })}>Past</h2>
       {(<EventsTable class="events-table" events={pastEvents} renderTopic={true} renderHeader={true} />)}
     </section>
   </Folio>

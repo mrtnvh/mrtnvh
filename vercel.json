@@ -114,6 +114,11 @@
       "source": "/talks/tech-tuesdays-may-2020",
       "destination": "/events",
       "permanent": true
+    },
+    {
+      "source": "/articles/thoughts-on-switching-layouts-with-container-style-queries",
+      "destination": "/articles/experimenting-with-tabular-data-and-container-queries",
+      "permanent": true
     }
   ],
   "rewrites": [

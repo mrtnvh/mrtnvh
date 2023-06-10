@@ -25,7 +25,7 @@ const { content, preloads, frontmatter } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;700;800&family=Inter+Tight:wght@800&display=swap"
       rel="stylesheet"
     />
 
@@ -41,6 +41,10 @@ const { content, preloads, frontmatter } = Astro.props;
     <Seo {...Astro.props} />
 
     <script>
+      window.addEventListener('beforeinstallprompt', (event) => {
+        event.preventDefault();
+      });
+
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/sw.js');
@@ -62,7 +66,7 @@ const { content, preloads, frontmatter } = Astro.props;
         ) : (
           <>
             <Header inverse={frontmatter?.headerInverse} />
-            <main id="swup" class="transition-fade">
+            <main>
               <slot />
             </main>
             <Footer />

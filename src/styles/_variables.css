@@ -34,19 +34,36 @@
   /**
   * Fonts
   */
+
+  /* Steps */
+
+  /* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1280,20,1.25,9,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.61rem, calc(0.56rem + 0.22vw), 0.72rem);
+  --step--1: clamp(0.73rem, calc(0.66rem + 0.33vw), 0.90rem);
+  --step-0: clamp(0.88rem, calc(0.78rem + 0.48vw), 1.13rem);
+  --step-1: clamp(1.05rem, calc(0.91rem + 0.68vw), 1.41rem);
+  --step-2: clamp(1.26rem, calc(1.07rem + 0.95vw), 1.76rem);
+  --step-3: clamp(1.51rem, calc(1.25rem + 1.31vw), 2.20rem);
+  --step-4: clamp(1.81rem, calc(1.46rem + 1.78vw), 2.75rem);
+  --step-5: clamp(2.18rem, calc(1.70rem + 2.40vw), 3.43rem);
+  --step-6: clamp(2.61rem, calc(1.97rem + 3.21vw), 4.29rem);
+  --step-7: clamp(3.14rem, calc(2.28rem + 4.27vw), 5.36rem);
+  --step-8: clamp(3.76rem, calc(2.64rem + 5.63vw), 6.71rem);
+  --step-9: clamp(4.51rem, calc(3.03rem + 7.40vw), 8.38rem);
+
+  /* Font sizes */
   --font-size-root: clamp(14px, 2vw, 18px);
   --font-size-sm: 0.8rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.25rem;
-  --font-size-xl: 1.563rem;
-  --font-size-2xl: 1.953rem;
-  --font-size-3xl: 2.441rem;
-  --font-size-4xl: 3.052rem;
-  --font-size-5xl: 3.815rem;
-  --font-size-6xl: 4.768rem;
-  --font-size-7xl: 5.96rem;
-  --font-size-8xl: 7.451rem;
-  --font-size-9xl: 9.313rem;
+  --font-size-base: var(--step-0);
+  --font-size-lg: var(--step-1);
+  --font-size-xl: var(--step-2);
+  --font-size-2xl: var(--step-3);
+  --font-size-3xl: var(--step-4);
+  --font-size-4xl: var(--step-5);
+  --font-size-5xl: var(--step-6);
+  --font-size-6xl: var(--step-7);
+  --font-size-7xl: var(--step-8);
+  --font-size-8xl: var(--step-9);
   --font-family: 'Inter', 'Helvetica Now Text', system-ui;
   --font-weight-normal: 400;
   --line-height-lg: 1.953;
@@ -54,10 +71,10 @@
   --line-height-sm: 1.25;
   --line-height-xs: 1;
   --line-height-xxs: 0.8;
-  --headings-font-family: 'Inter', 'Helvetica Now Display', system-ui;
+  --headings-font-family: 'Inter Tight', 'Helvetica Now Display', system-ui;
   --headings-color: var(--text-color);
   --headings-font-weight: 800;
-  --headings-letter-spacing: -0.02em;
+  --headings-letter-spacing: 0;
   --headings-margin-block-start: 0;
   --headings-margin-block-end: var(--space);
   --mono-font-family: 'IBM Plex Mono', 'Courier New', monospace;
@@ -112,9 +129,7 @@
   * Detail page
   */
   --detail-title-size: var(--font-size-4xl);
-  --detail-title-font-weight: 800;
   --detail-title-line-height: calc(1.125em - clamp(0em, 1cqi, 0.25em));
-  --detail-title-letter-spacing: -0.02em;
 
   /**
    * Text shadow

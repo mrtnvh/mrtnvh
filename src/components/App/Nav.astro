@@ -40,12 +40,7 @@ const links: NavLink[] = [
 <nav id="nav" class="nav" style={`view-transition-name: nav`}>
   {
     links.map((link) => (
-      <a
-        href={link.href}
-        data-testid={`navigation-${link.key}`}
-        data-swup-preload
-        data-page-current={currentPage(link)}
-      >
+      <a href={link.href} data-testid={`navigation-${link.key}`} data-page-current={currentPage(link)}>
         {link.title}
       </a>
     ))
@@ -60,9 +55,10 @@ const links: NavLink[] = [
     position: relative;
 
     a {
+      font-family: var(--headings-font-family);
+      font-weight: var(--headings-font-weight);
       white-space: nowrap;
       text-decoration: none;
-      font-weight: 700;
       padding: 0 0.33em;
 
       &[data-page-current],
