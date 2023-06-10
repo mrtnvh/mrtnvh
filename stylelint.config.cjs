@@ -8,7 +8,7 @@ module.exports = {
     'csstree/validator': {
       syntaxExtensions: ['sass'],
       ignoreAtrules: ['else', 'container'],
-      ignoreProperties: ['container', 'container-type', 'container-name'],
+      ignoreProperties: ['container', 'container-type', 'container-name', 'text-wrap'],
     },
     'selector-pseudo-class-no-unknown': [
       true,
@@ -16,6 +16,7 @@ module.exports = {
         ignorePseudoClasses: ['global'],
       },
     ],
+    'custom-property-pattern': null,
   },
   overrides: [
     {

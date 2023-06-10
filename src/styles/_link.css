@@ -9,7 +9,6 @@ button.link:not(.default) {
   color: var(--link-color);
   text-decoration: var(--link-text-decoration);
   position: relative;
-  display: inline-block;
   padding-inline: 0.25em;
   margin-inline: -0.25em;
 
@@ -21,7 +20,6 @@ button.link:not(.default) {
   &:where(:hover, :focus, :active) {
     color: var(--link-hover-color);
     background-color: var(--link-hover-background-color);
-    display: inline-block;
   }
 
   &.github {

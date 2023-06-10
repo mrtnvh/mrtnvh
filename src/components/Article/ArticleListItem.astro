@@ -45,7 +45,7 @@ const linkProps = ({ url }: { url: string }) => {
         {item.title}
       </a>
     </h2>
-    <div class="meta">
+    <div class="meta" style={`view-transition-name: ${viewTransitionBaseId}-meta`}>
       <div class="date">
         Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
       </div>

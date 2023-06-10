@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import { getCountryFlagAndNameFromCode } from '../lib/useCountries';
 import DateTime from './DateTime.astro';
-import { type Event } from '../lib/useEvents';
+import type { Event } from '../lib/useEvents';
 
 interface Props {
   class?: string;
@@ -68,14 +68,19 @@ function parseDate(date: string) {
 
 <style>
   .table-wrapper {
-    container: events-table / inline-size;
+    /* container: events-table / inline-size; */
+    overflow-x: auto;
+  }
+
+  td {
+    white-space: nowrap;
   }
 
   .table-column-date {
     min-width: 12ch;
   }
 
-  @container events-table (max-inline-size: 700px) {
+  /* @container events-table (max-inline-size: 700px) {
     table,
     thead,
     tbody,
@@ -159,7 +164,7 @@ function parseDate(date: string) {
       border-right: 1px solid var(--table-border-color);
       padding-inline-end: var(--space);
     }
-  }
+  } */
 
   table :where(td, th):nth-child(3) {
     min-width: 9ch;

@@ -36,7 +36,7 @@ const linkProps = () => {
     };
   }
 
-  return { href: item.url, ['data-swup-preload']: true, style: `view-transition-name: ${viewTransitionBaseId}` };
+  return { href: item.url, style: `view-transition-name: ${viewTransitionBaseId}` };
 };
 ---
 
@@ -149,7 +149,6 @@ const linkProps = () => {
     gap: calc(var(--grid-gap-x) / 2);
     justify-content: center;
     font-size: var(--font-size-sm);
-    font-weight: 500;
     color: var(--grey);
 
     @media (min-width: 800px) {
