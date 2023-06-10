@@ -109,7 +109,7 @@ pre {
 }
 
 hr {
-  border: 0 solid var(--grey-300);
+  border: 0 solid var(--dark);
   border-top-width: 1px;
   margin-block: var(--space);
 }
