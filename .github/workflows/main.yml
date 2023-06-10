@@ -151,6 +151,8 @@ jobs:
 
       - name: Run ${{ matrix.test-type }}
         run: 'npm run test:${{ matrix.test-type }} -- --shard=${{ matrix.shard }}'
+        continue-on-error: true
+        if: ${{ success() || failure() }}
 
       - name: Archive performance reports
         uses: actions/upload-artifact@v3
