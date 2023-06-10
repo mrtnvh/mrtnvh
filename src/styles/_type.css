@@ -121,10 +121,10 @@ hr {
 
   hr {
     margin-inline: 0;
-
-  @nest p + & {
-    margin-block-start: calc(var(--space) * 3);
   }
+
+  p + hr {
+    margin-block-start: calc(var(--space) * 3);
   }
 
   pre {
