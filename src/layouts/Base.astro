@@ -41,6 +41,10 @@ const { content, preloads, frontmatter } = Astro.props;
     <Seo {...Astro.props} />
 
     <script>
+      window.addEventListener('beforeinstallprompt', (event) => {
+        event.preventDefault();
+      });
+
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/sw.js');
