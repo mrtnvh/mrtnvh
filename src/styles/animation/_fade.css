@@ -1,9 +1,0 @@
-.transition-fade {
-  opacity: 1;
-  transition: opacity var(--animation-duration);
-  transition-timing-function: var(--animation-timing-function);
-
-  html.is-animating & {
-    opacity: 0;
-  }
-}

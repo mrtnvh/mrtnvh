@@ -11,5 +11,4 @@
 @import './_experience.css' layer(experience);
 @import './_utils.css' layer(utils);
 
-@import './animation/_fade.css' layer(animations.fade);
 @import 'prism-themes/themes/prism-one-dark.css' layer(code.prism);

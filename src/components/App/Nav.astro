@@ -40,12 +40,7 @@ const links: NavLink[] = [
 <nav id="nav" class="nav" style={`view-transition-name: nav`}>
   {
     links.map((link) => (
-      <a
-        href={link.href}
-        data-testid={`navigation-${link.key}`}
-        data-swup-preload
-        data-page-current={currentPage(link)}
-      >
+      <a href={link.href} data-testid={`navigation-${link.key}`} data-page-current={currentPage(link)}>
         {link.title}
       </a>
     ))
