@@ -1,10 +1,9 @@
 ---
-title: 'Thoughts on switching layouts with container style queries'
-description: '<p>With style container queries, we basically now have a way to declare conditionals in CSS. With a change of a just single CSS custom property, we can alter layouts.</p> <p>But should we?</p>'
+title: 'Experimenting with tabular data and container queries'
+description: '<p>Responsive tabular data has tormented many web developers for many decades. How can we provide our users with semantical markup whilst making sure the visual layout adapts itself to the size available? Container Queries give us the power to create an out-of-the-box solution.</p><p>Can we harness it?</p>'
 datePublished: 20230519
+dateUpdated: 20230610
 ---
-
-Responsive tabular data has tormented many web developers for many decades. How can you easily present a nice table elegantly on small viewports?
 
 CSS frameworks like eg. [Bootstrap](https://getbootstrap.com/docs/5.0/content/tables/#responsive-tables) took the route of providing a small viewport solution in which tables are horizontally scrollable. Chris Coyier [wrote a round-up](https://css-tricks.com/responsive-data-tables/) of different approaches to this problem. None of these approaches are perfect. They all have their own UX drawbacks. You either can't see every piece of information in one glance, you lose track of the column or row you want to focus on whilst scrolling both horizontally or vertically, or you have a lot of repeating information of the table header on each row.
 
@@ -37,7 +36,7 @@ For large viewports, let's go with a table. We have sufficient screen real estat
 
 ## Experiments
 
-In true CSS Zen Garden fashion, I try to use the same markup. As the large viewport layout is a table, we'll go with a `<table>` element. Using a table will give users of screen readers the bonus of the text of the column headers when reading out the table cells, also on small viewports, where the table headers are visually hidden.
+In true [CSS Zen Garden](https://www.csszengarden.com/) fashion, I try to use the same markup. As the large viewport layout is a table, we'll go with a `<table>` element. Using a table will give users of screen readers the bonus of the text of the column headers when reading out the table cells, also on small viewports, where the table headers are visually hidden.
 
 ### Experiment 1: Media queries + HTML table
 
@@ -248,14 +247,39 @@ But should we?
 
 ## Accessibility
 
+As web artisans, we have to keep in mind that our projects are accessibility for all. With these experiments, I found two accessibility concerns.
+
+### Document sequence
+
 Rachel Andrew shared the potential accessibility issues when we are re-ordering the visual layout sequence from the document sequence, at [her talk at axe-con 2021](https://youtu.be/YXXvP3jtcCo).
 
 WCAG [Success Criterion 1.3.2](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence) tells us that re-ordering the presentation of the content should **maintain a meaningful sequence**.
 
 Although I tried to keep the example's visual sequence shift as minimal as possible, do be aware that overly using this technique could lead to potential accessibility issues.
 
-If you have any feedback about what these examples might be doing here concerning accessibility, feel free to reach out via [Mastodon](https://techhub.social/@mrtnvh)
+### Browsers break a11y via Display Properties
+
+A few years ago, depending on when you read this, [Adrian Roselli](https://adrianroselli.com/) discovered that several browsers [break accessibility via Display Properties](https://adrianroselli.com/2022/07/its-mid-2022-and-browsers-mostly-safari-still-break-accessibility-via-display-properties.html). As our previous experiments are actively changing the default table-related display properties to something else, we are potentially causing issues for users visiting using a screen reader.
+
+---
+
+## Conclusion
+
+Although the power of container queries allow us to build in an automatic visual layout changes to tables, based on the given space that they have available, or just by setting a single custom property, the fact that we cannot guarantee an accessible solution makes it that we just cannot have our cake and eat it, yet, I hope.
+
+If you have any feedback, feel free to reach out via [Mastodon](https://techhub.social/@mrtnvh).
 
 <br />
 
 ✌️
+
+---
+
+<h2 class="h6">Edits</h2>
+
+<strong>Sat. 10th of June 2023</strong>
+<br />
+
+1. Renamed article from _Thoughts on switching layouts with container style queries_ to _Experimenting with tabular data and container queries_ to better fit the content.
+2. Refined the intro and added a conclusion.
+3. Added Adrian Roselli's article [It’s Mid-2022 and Browsers (Mostly Safari) Still Break Accessibility via Display Properties](https://adrianroselli.com/2022/07/its-mid-2022-and-browsers-mostly-safari-still-break-accessibility-via-display-properties.html) to the [Accessibility](#accessibility) section.
