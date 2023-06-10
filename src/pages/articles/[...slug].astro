@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 const entry = Astro.props.entry as CollectionEntry<'articles'>;
 const { Content } = await entry.render();
 const date = parse(entry.data.datePublished.toString(), 'yyyyMMdd', new Date());
+const dateEdited = entry.data.dateEdited && parse(entry.data.dateEdited.toString(), 'yyyyMMdd', new Date());
 const viewTransitionBaseId = kebabCase(Astro.url.pathname);
 
 const linkProps = ({ url }: { url: string | undefined }) => {
@@ -38,6 +39,31 @@ const linkProps = ({ url }: { url: string | undefined }) => {
     <div>
       <article>
         <h1 class="title" style={`view-transition-name: ${viewTransitionBaseId}-title`}>{entry.data.title}</h1>
+        <div class="meta" style={`view-transition-name: ${viewTransitionBaseId}-meta`}>
+          <div class="date">
+            Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'long' })}</time>
+          </div>
+          {
+            dateEdited && (
+              <div class="date-edited">
+                Edited on{' '}
+                <time datetime={dateEdited.toJSON()}>{dateEdited.toLocaleDateString('en', { dateStyle: 'long' })}</time>
+              </div>
+            )
+          }
+          {
+            entry.data.externalUrl ? (
+              <div class="original-publication">
+                Originally published on{' '}
+                <a {...linkProps({ url: entry.data.externalUrl || entry.data.url })}>
+                  {entry.data.originalPublication}
+                </a>
+              </div>
+            ) : (
+              entry.data.originalPublication
+            )
+          }
+        </div>
         <div
           class="description margin-block-trim"
           set:html={entry.data.description}
@@ -45,25 +71,6 @@ const linkProps = ({ url }: { url: string | undefined }) => {
         />
         <div class="content long-form" style={`view-transition-name: ${viewTransitionBaseId}-content`}>
           <Content />
-        </div>
-        <div class="meta">
-          <div class="date">
-            Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
-          </div>
-          <div class="original-publication">
-            {
-              entry.data.externalUrl ? (
-                <>
-                  Originally published on{' '}
-                  <a {...linkProps({ url: entry.data.externalUrl || entry.data.url })}>
-                    {entry.data.originalPublication}
-                  </a>
-                </>
-              ) : (
-                entry.data.originalPublication
-              )
-            }
-          </div>
         </div>
       </article>
     </div>
@@ -100,5 +107,8 @@ const linkProps = ({ url }: { url: string | undefined }) => {
   .meta {
     font-size: var(--font-size-sm);
     color: var(--grey);
+    display: flex;
+    gap: 0 var(--grid-gap-x);
+    flex-wrap: wrap;
   }
 </style>
