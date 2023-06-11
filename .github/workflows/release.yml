@@ -60,10 +60,7 @@ jobs:
       # Release version
       # --------------------------------------------------------------------------------
       - name: Release version
-        uses: cycjimmy/semantic-release-action@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          extends: './release.main.config.cjs'
+        run: 'npx semantic-release --extends ./release.main.config.cjs'
 
       - name: Merge newly released version of main into develop
         if: github.ref == 'refs/heads/main'
