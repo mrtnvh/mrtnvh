@@ -2,7 +2,7 @@
 
 module.exports = {
   branches: ['main'],
-  dryRun: true,
+  dryRun: false,
   plugins: [
     // https://github.com/semantic-release/release-notes-generator
     [

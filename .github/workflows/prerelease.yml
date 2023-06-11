@@ -1,18 +1,28 @@
-name: Prepare release
+name: Release
+
+# When on develop
+#  - Determine the new version
+#  - Open PR from develop to main
+
+# When on main
+#  - release the version
+#  - merge the version into develop
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * TUE'
+  push:
+    branches:
+      - main
 
 env:
   CI: true
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  prep-release-pr:
+  release:
     runs-on: ubuntu-latest
-
-    if: github.ref == 'refs/heads/develop'
 
     strategy:
       matrix:
@@ -31,26 +41,31 @@ jobs:
         with:
           install-command: npm ci
 
-      - name: Run build
-        run: 'npx semantic-release'
-        env:
-          CI: true
-
+      # Determine version
+      # --------------------------------------------------------------------------------
       - name: Determine version
         uses: cycjimmy/semantic-release-action@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: github.ref == 'refs/heads/develop'
 
-      - name: Archive build output
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: dist
-          retention-days: 1
-
-      - name: pull-request-action
+      - name: Open release PR
         uses: vsoch/pull-request-action@master
+        if: github.ref == 'refs/heads/develop'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PULL_REQUEST_BRANCH: 'master'
+          PULL_REQUEST_BRANCH: 'main'
           PULL_REQUEST_TITLE: 'Release ${{ steps.semantic.outputs.new_release_version }}'
+
+      # Release version
+      # --------------------------------------------------------------------------------
+      - name: Release version
+        uses: cycjimmy/semantic-release-action@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          extends: './release.main.config.cjs'
+
+      - name: Merge newly released version of main into develop
+        if: github.ref == 'refs/heads/main'
+        uses: devmasx/merge-branch@v1
+        with:
+          type: now
+          target_branch: develop
+          github_token: ${{ secrets.GITHUB_TOKEN }}
