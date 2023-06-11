@@ -53,7 +53,9 @@ jobs:
         if: github.ref == 'refs/heads/develop'
         env:
           PULL_REQUEST_BRANCH: 'main'
-          PULL_REQUEST_TITLE: 'Release ${{ steps.semantic_determine.outputs.new_release_version }}'
+          PULL_REQUEST_TITLE: 'Release v${{ steps.semantic_determine.outputs.new_release_version }}'
+          PULL_REQUEST_BODY: '${{ steps.semantic_determine.outputs.new_release_notes }}'
+          PULL_REQUEST_UPDATE: true
 
       # Release version
       # --------------------------------------------------------------------------------
