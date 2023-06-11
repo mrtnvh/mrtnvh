@@ -44,6 +44,7 @@ jobs:
       # Determine version
       # --------------------------------------------------------------------------------
       - name: Determine version
+        id: semantic_determine
         uses: cycjimmy/semantic-release-action@v3
         if: github.ref == 'refs/heads/develop'
 
@@ -52,7 +53,7 @@ jobs:
         if: github.ref == 'refs/heads/develop'
         env:
           PULL_REQUEST_BRANCH: 'main'
-          PULL_REQUEST_TITLE: 'Release ${{ steps.semantic.outputs.new_release_version }}'
+          PULL_REQUEST_TITLE: 'Release ${{ steps.semantic_determine.outputs.new_release_version }}'
 
       # Release version
       # --------------------------------------------------------------------------------
