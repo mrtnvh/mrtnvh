@@ -1,0 +1,71 @@
+name: Release
+
+# When on develop
+#  - Determine the new version
+#  - Open PR from develop to main
+
+# When on main
+#  - release the version
+#  - merge the version into develop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *'
+  push:
+    branches:
+      - main
+
+env:
+  CI: true
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+        with:
+          install-command: npm ci
+
+      # Determine version
+      # --------------------------------------------------------------------------------
+      - name: Determine version
+        id: semantic_determine
+        uses: cycjimmy/semantic-release-action@v3
+        if: github.ref == 'refs/heads/develop'
+
+      - name: Open release PR
+        uses: vsoch/pull-request-action@master
+        if: github.ref == 'refs/heads/develop'
+        env:
+          PULL_REQUEST_BRANCH: 'main'
+          PULL_REQUEST_TITLE: 'Release v${{ steps.semantic_determine.outputs.new_release_version }}'
+          PULL_REQUEST_BODY: '${{ steps.semantic_determine.outputs.new_release_notes }}'
+          PULL_REQUEST_UPDATE: true
+
+      # Release version
+      # --------------------------------------------------------------------------------
+      - name: Release version
+        run: 'npx semantic-release --extends ./release.main.config.cjs'
+
+      - name: Merge newly released version of main into develop
+        if: github.ref == 'refs/heads/main'
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: develop
+          github_token: ${{ secrets.GITHUB_TOKEN }}
