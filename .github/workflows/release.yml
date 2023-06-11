@@ -64,7 +64,7 @@ jobs:
 
       - name: Merge newly released version of main into develop
         if: github.ref == 'refs/heads/main'
-        uses: devmasx/merge-branch@v1
+        uses: devmasx/merge-branch@master
         with:
           type: now
           target_branch: develop
