@@ -34,7 +34,7 @@ const linkProps = ({ url }: { url: string | undefined }) => {
 };
 ---
 
-<BaseLayout>
+<BaseLayout {...Astro.props} content={entry.data}>
   <div class="container">
     <div>
       <article>
