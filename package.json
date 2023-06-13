@@ -101,6 +101,6 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.3",
     "utility-types": "^3.10.0",
-    "workbox-build": "^6.6.0"
+    "workbox-build": "^7.0.0"
   }
 }
