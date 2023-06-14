@@ -13,6 +13,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     strategy:
       matrix:
@@ -45,6 +46,7 @@ jobs:
 
   test:
     runs-on: macos-12
+    timeout-minutes: 15
 
     needs: build
 
@@ -89,6 +91,7 @@ jobs:
 
   deploy-preview:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     needs: build
 
@@ -115,6 +118,7 @@ jobs:
 
   tests-on-preview:
     runs-on: macos-12
+    timeout-minutes: 30
 
     needs: deploy-preview
 
@@ -173,6 +177,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     needs: [build, test, tests-on-preview]
 
