@@ -17,8 +17,8 @@ const links = {
     mobile: '/about',
   },
   github: {
-    desktop: 'https://github.com/vanhoofmaarten/',
-    mobile: 'https://github.com/vanhoofmaarten/',
+    desktop: 'https://github.com/mrtnvh/',
+    mobile: 'https://github.com/mrtnvh/',
   },
   mastodon: {
     desktop: 'https://techhub.social/@mrtnvh/',

@@ -1,16 +1,20 @@
 ---
+import sanitizeHtml from 'sanitize-html';
 import urlJoin from 'url-join';
 import { getImageVariants } from './Image/cloudinary';
 
 const { content, category } = Astro.props;
-const titleDefault = 'Maarten Van Hoof  Front End Developer';
+const titleDefault = 'Maarten Van Hoof \\\\ Front End Developer';
 const descriptionDefault =
-  'Developer Advocate & Front-end Developer at iO in Eindhoven NL. An enthusiast of all things web, living in Turnhout, Belgium.';
+  'Developer Advocate & Lead Front-end Developer at iO in Eindhoven NL. An enthusiast of all things web, living in Turnhout, Belgium.';
 const siteUrl = 'https://mrtnvh.com';
 
-const getTitle = (...args: string[]) => [...args.filter((val) => val?.length), titleDefault].join('  ');
+const getTitle = (...args: string[]) => [...args.filter((val) => val?.length), titleDefault].join(' \\\\ ');
 const title = getTitle(content?.title, category);
-const description = content?.description || descriptionDefault;
+const description = sanitizeHtml(content?.description || descriptionDefault, {
+  allowedTags: [],
+  allowedAttributes: [],
+});
 const image = content?.thumbnail
   ? getImageVariants({ src: content?.thumbnail, tint: content?.tint }).og
   : urlJoin(siteUrl, '/og.png');
@@ -28,7 +32,7 @@ const schemaPerson = JSON.stringify({
   name: 'Maarten Van Hoof',
   image:
     'https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait',
-  jobTitle: 'Developer Advocate && Front-end Developer',
+  jobTitle: 'Developer Advocate && Lead Front-end Developer',
   url: siteUrl,
   sameAs: siteUrl,
   memberOf: {
@@ -64,7 +68,7 @@ const schemaPerson = JSON.stringify({
   <meta property="og:site_name" content="mrtnvh" />
   <meta property="og:title" content={title} />
   <meta property="og:type" content="article" />
-  <script type="application/ld+json" set:html={schemaWebsite}></script>
-  <script type="application/ld+json" set:html={schemaPerson}></script>
+  <script type="application/ld+json" set:html={schemaWebsite} />
+  <script type="application/ld+json" set:html={schemaPerson} />
   <link rel="me" href="https://techhub.social/@mrtnvh" />
 </>

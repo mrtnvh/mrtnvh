@@ -28,7 +28,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "astro": "^2.5.7",
+    "astro": "^2.7.2",
     "clsx": "^1.2.1",
     "country-list": "^2.3.0",
     "date-fns": "^2.30.0",
@@ -36,6 +36,7 @@
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
+    "sanitize-html": "^2.10.0",
     "url-join": "^5.0.0"
   },
   "devDependencies": {
@@ -51,16 +52,17 @@
     "@semantic-release/release-notes-generator": "^11.0.3",
     "@types/country-list": "^2.1.1",
     "@types/lodash-es": "^4.17.7",
+    "@types/sanitize-html": "^2.9.0",
     "@types/url-join": "^4.0.1",
     "@web/rollup-plugin-html": "^2.0.0",
     "@wemake-services/stylelint-config-scss": "^3.0.0",
     "astro-critters": "^1.1.38",
-    "astro-purgecss": "^2.0.1",
+    "astro-purgecss": "^2.2.0",
     "autoprefixer": "^10.4.14",
     "conventional-changelog-conventionalcommits": "^6.0.0",
     "cssnano": "^6.0.1",
     "del": "^7.0.0",
-    "eslint": "^8.42.0",
+    "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
@@ -94,11 +96,11 @@
     "purgecss": "^5.0.0",
     "rehype-rewrite": "^3.0.6",
     "semantic-release": "^21.0.5",
-    "stylelint": "^15.6.3",
+    "stylelint": "^15.9.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.3",
     "utility-types": "^3.10.0",
-    "workbox-build": "^6.6.0"
+    "workbox-build": "^7.0.0"
   }
 }
