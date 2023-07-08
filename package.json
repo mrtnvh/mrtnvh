@@ -55,7 +55,7 @@
     "@types/sanitize-html": "^2.9.0",
     "@types/url-join": "^4.0.1",
     "@web/rollup-plugin-html": "^2.0.0",
-    "@wemake-services/stylelint-config-scss": "^3.0.0",
+    "@wemake-services/stylelint-config-scss": "^4.0.1",
     "astro-critters": "^1.1.38",
     "astro-purgecss": "^2.2.0",
     "autoprefixer": "^10.4.14",
