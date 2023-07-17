@@ -28,7 +28,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "astro": "^2.8.0",
+    "astro": "^2.8.3",
     "clsx": "^1.2.1",
     "country-list": "^2.3.0",
     "date-fns": "^2.30.0",
