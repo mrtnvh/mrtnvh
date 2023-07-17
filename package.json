@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "astro": "^2.8.3",
-    "clsx": "^1.2.1",
+    "clsx": "^2.0.0",
     "country-list": "^2.3.0",
     "date-fns": "^2.30.0",
     "emoji-flag": "^1.1.0",
