@@ -18,6 +18,10 @@
     {
       "matchPackagePatterns": ["^astro"],
       "groupName": "astro"
+    },
+    {
+      "matchPackagePatterns": ["^prettier"],
+      "groupName": "prettier"
     }
   ]
 }
