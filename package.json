@@ -56,7 +56,7 @@
     "@types/url-join": "^4.0.1",
     "@web/rollup-plugin-html": "^2.0.0",
     "@wemake-services/stylelint-config-scss": "^4.0.1",
-    "astro-critters": "^1.1.40",
+    "astro-critters": "^2.0.11",
     "astro-purgecss": "^2.3.0",
     "autoprefixer": "^10.4.14",
     "conventional-changelog-conventionalcommits": "^6.0.0",
