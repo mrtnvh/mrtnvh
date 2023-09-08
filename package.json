@@ -59,7 +59,7 @@
     "astro-critters": "^2.0.11",
     "astro-purgecss": "^2.3.0",
     "autoprefixer": "^10.4.15",
-    "conventional-changelog-conventionalcommits": "^7.0.1",
+    "conventional-changelog-conventionalcommits": "^6.1.0",
     "cssnano": "^6.0.1",
     "del": "^7.1.0",
     "eslint": "^8.48.0",
