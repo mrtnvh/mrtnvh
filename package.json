@@ -42,7 +42,7 @@
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
     "@astrojs/mdx": "^0.19.7",
-    "@astrojs/sitemap": "^2.0.2",
+    "@astrojs/sitemap": "^3.0.0",
     "@playwright/test": "^1.37.1",
     "@rollup/plugin-dsv": "^3.0.2",
     "@semantic-release/changelog": "^6.0.3",
