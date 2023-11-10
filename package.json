@@ -28,7 +28,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "astro": "^2.10.15",
+    "astro": "^3.5.2",
     "clsx": "^2.0.0",
     "country-list": "^2.3.0",
     "date-fns": "^2.30.0",
@@ -57,7 +57,7 @@
     "@web/rollup-plugin-html": "^2.0.1",
     "@wemake-services/stylelint-config-scss": "^4.0.1",
     "astro-critters": "^2.0.11",
-    "astro-purgecss": "^2.3.0",
+    "astro-purgecss": "^3.2.1",
     "autoprefixer": "^10.4.15",
     "conventional-changelog-conventionalcommits": "^6.1.0",
     "cssnano": "^6.0.1",
