@@ -69,7 +69,7 @@ jobs:
           install-command: npm ci --legacy-peer-deps
 
       - name: Install Playwright deps
-        run: npx playwright install-deps chromium
+        run: npx playwright install --with-deps
 
       - name: Download build artifact
         uses: actions/download-artifact@v3
