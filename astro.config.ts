@@ -3,8 +3,6 @@ import mdx from '@astrojs/mdx'; // eslint-disable-next-line import/no-unresolved
 import sitemap from '@astrojs/sitemap';
 import rehypeRewrite from 'rehype-rewrite';
 import dsv from '@rollup/plugin-dsv';
-import critters from 'astro-critters';
-import purgecss from 'astro-purgecss';
 import vercel from '@astrojs/vercel/serverless';
 
 const rehypePlugins = [
@@ -37,8 +35,6 @@ export default defineConfig({
       // @ts-ignore
       rehypePlugins,
     }),
-    purgecss(),
-    critters(),
   ],
   markdown: {
     // @ts-ignore
