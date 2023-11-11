@@ -1,9 +1,9 @@
 ---
 import { kebabCase } from 'lodash-es';
-import Markdown from '@astrojs/markdown-component';
+import { Markdown } from 'astro-remote';
 import { clsx } from 'clsx';
 import BaseLayout from './Base.astro';
-import { ImageTint, getImageVariants } from '../components/Image/cloudinary.js';
+import { type ImageTint, getImageVariants } from '../components/Image/cloudinary.js';
 import Thumbnail from '../components/Image/Image.astro';
 import events from '../pages/events/events.csv';
 import EventsTable from '../components/EventsTable.astro';
@@ -153,7 +153,7 @@ const viewTransitionBaseId = kebabCase(Astro.url.pathname);
   }
 
   article {
-    @media (max-width: 799px) {
+    @media (width <= 799px) {
       margin-block-start: calc(var(--grid-gap-y) * -2);
     }
   }
@@ -163,7 +163,7 @@ const viewTransitionBaseId = kebabCase(Astro.url.pathname);
     flex-direction: column;
     gap: var(--grid-gap-x);
 
-    @media (min-width: 900px) {
+    @media (width >= 900px) {
       display: grid;
       grid-template-columns: 1fr minmax(auto, 332px) minmax(auto, 332px) 1fr;
       grid-template-rows: auto;
@@ -202,7 +202,7 @@ const viewTransitionBaseId = kebabCase(Astro.url.pathname);
         }
       }
 
-      @media (min-width: 800px) {
+      @media (width >= 800px) {
         aspect-ratio: 21 / 9;
 
         @supports not (aspect-ratio: 1 / 1) {
