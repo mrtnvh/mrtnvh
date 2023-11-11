@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: dist
+          path: .vercel
           retention-days: 1
 
   test:
@@ -75,7 +75,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: dist
+          path: .vercel
 
       - name: Run ${{ matrix.test-type }}
         run: 'npm run test:${{ matrix.test-type }}'
@@ -105,7 +105,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: dist
+          path: .vercel
 
       - name: Upload to Vercel (Preview)
         id: deployment-preview
@@ -151,7 +151,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: dist
+          path: .vercel
 
       - name: Run ${{ matrix.test-type }}
         run: 'npm run test:${{ matrix.test-type }} -- --shard=${{ matrix.shard }}'
@@ -190,7 +190,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: dist
+          path: .vercel
 
       - name: Upload to Vercel (Staging)
         id: deployment-staging
