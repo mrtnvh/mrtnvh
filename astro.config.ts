@@ -3,8 +3,7 @@ import mdx from '@astrojs/mdx'; // eslint-disable-next-line import/no-unresolved
 import sitemap from '@astrojs/sitemap';
 import rehypeRewrite from 'rehype-rewrite';
 import dsv from '@rollup/plugin-dsv';
-import critters from 'astro-critters';
-import purgecss from 'astro-purgecss';
+import vercel from '@astrojs/vercel/serverless';
 
 const rehypePlugins = [
   [
@@ -26,22 +25,20 @@ const rehypePlugins = [
   ],
 ];
 
+// https://astro.build/config
 export default defineConfig({
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('kitchensink'),
+      filter: (page: string) => !page.includes('kitchensink'),
     }),
     mdx({
       // @ts-ignore
       rehypePlugins,
     }),
-    purgecss(),
-    critters(),
   ],
   markdown: {
     // @ts-ignore
     rehypePlugins,
-
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
       // https://github.com/shikijs/shiki/blob/main/docs/themes.md
@@ -55,4 +52,6 @@ export default defineConfig({
     ],
   },
   site: 'https://mrtnvh.com/',
+  output: 'server',
+  adapter: vercel(),
 });

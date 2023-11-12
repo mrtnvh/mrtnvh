@@ -1,4 +1,8 @@
 {
+  "framework": "astro",
+  "outputDirectory": ".vercel/output",
+  "trailingSlash": false,
+  "regions": ["fra1"],
   "redirects": [
     {
       "source": "/projects/:path*",

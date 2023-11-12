@@ -3,7 +3,7 @@ import { fileURLToPath } from 'url';
 import { globby } from 'globby';
 import fs from 'fs-extra';
 
-export const BUILD_DIRECTORY = 'dist';
+export const BUILD_DIRECTORY = '.vercel/output/static';
 
 export const getFilename = fileURLToPath;
 export const getDirname = (path) => dirname(getFilename(path));

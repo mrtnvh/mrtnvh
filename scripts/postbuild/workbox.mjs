@@ -10,7 +10,7 @@ export default async () => {
     globDirectory: BUILD_DIRECTORY,
     globPatterns: ['**/*.{html,json,js,css}'],
     globIgnores: ['**/stats.js'],
-    swDest: 'dist/sw.js',
+    swDest: '.vercel/output/static/sw.js',
     sourcemap: false,
     cleanupOutdatedCaches: true,
     runtimeCaching: [
