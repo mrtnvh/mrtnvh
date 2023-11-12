@@ -64,7 +64,7 @@ jobs:
         run: 'npx semantic-release --extends ./release.main.config.cjs'
 
       - name: Merge newly released version of main into develop
-        if: github.ref_name == 'refs/heads/main'
+        if: github.ref_name == 'main'
         uses: devmasx/merge-branch@master
         with:
           type: now
