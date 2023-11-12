@@ -22,6 +22,10 @@
     {
       "matchPackagePatterns": ["^prettier"],
       "groupName": "prettier"
+    },
+    {
+      "matchPackagePatterns": ["semantic-release"],
+      "groupName": "semantic-release"
     }
   ]
 }
