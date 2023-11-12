@@ -4,9 +4,9 @@ import { devices as playwrightDevices } from 'playwright';
 
 export function getPages(): string[] {
   const sitemapFileName = fs
-    .readdirSync(`dist`)
+    .readdirSync(`.vercel/output/static`)
     .reduce((acc, fileName) => (fileName.includes('sitemap-0') ? fileName : acc), '');
-  const sitemap = fs.readFileSync(`${process.cwd()}/dist/${sitemapFileName}`, 'utf-8');
+  const sitemap = fs.readFileSync(`${process.cwd()}/.vercel/output/static/${sitemapFileName}`, 'utf-8');
   const parser = new XMLParser();
   const sitemapJson = parser.parse(sitemap);
   const pages = sitemapJson.urlset.url
