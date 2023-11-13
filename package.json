@@ -72,7 +72,7 @@
     "favicons": "^7.1.4",
     "fs-extra": "^11.1.1",
     "get-port": "^7.0.0",
-    "globby": "^13.2.2",
+    "globby": "^14.0.0",
     "htmlnano": "^2.1.0",
     "husky": "^8.0.3",
     "lighthouse": "^11.3.0",
