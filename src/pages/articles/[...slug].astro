@@ -1,19 +1,13 @@
 ---
 import { kebabCase } from 'lodash-es';
-import { CollectionEntry, getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
 import clsx from 'clsx';
 import { parse } from 'date-fns';
+import BaseLayout from '../../layouts/Base.astro';
 
-export async function getStaticPaths() {
-  const articleEntries = await getCollection('articles');
-  return articleEntries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
-}
-
-const entry = Astro.props.entry as CollectionEntry<'articles'>;
+const articleEntries = await getCollection('articles');
+const entry = articleEntries.find((entry) => entry.slug === Astro.params.slug);
+if (!entry) return new Response('Not found', { status: 404 });
 const { Content } = await entry.render();
 const date = parse(entry.data.datePublished.toString(), 'yyyyMMdd', new Date());
 const dateEdited = entry.data.dateEdited && parse(entry.data.dateEdited.toString(), 'yyyyMMdd', new Date());

@@ -1,15 +1,9 @@
 ---
-import { CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 
-export async function getStaticPaths() {
-  const topicEntries = await getCollection('topics');
-  return topicEntries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
-}
-
-const entry = Astro.props.entry as CollectionEntry<'topics'>;
+const topicEntries = await getCollection('topics');
+const entry = topicEntries.find((entry) => entry.slug === Astro.params.slug);
+if (!entry) return new Response('Not found', { status: 404 });
 const { Content } = await entry.render();
 ---
 
