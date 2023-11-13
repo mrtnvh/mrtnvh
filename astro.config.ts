@@ -5,6 +5,8 @@ import rehypeRewrite from 'rehype-rewrite';
 import dsv from '@rollup/plugin-dsv';
 import vercel from '@astrojs/vercel/serverless';
 
+const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+
 const rehypePlugins = [
   [
     rehypeRewrite,
@@ -51,7 +53,10 @@ export default defineConfig({
       dsv(),
     ],
   },
-  site: 'https://mrtnvh.com/',
+  site: process.env.NODE_ENV === 'production' ? 'https://mrtnvh.com/' : `http://localhost:${port}/`,
   output: 'server',
   adapter: vercel(),
+  server: {
+    port,
+  },
 });

@@ -5,7 +5,7 @@ import { customSnapshotIdentifier } from '../setup/utils.js';
 import { baseTest } from '../setup/baseTest.js';
 
 baseTest.describe('Visual snapshot', async () => {
-  getPages().forEach((path) => {
+  (await getPages()).forEach((path) => {
     baseTest.describe.parallel(path, () => {
       Object.entries(devices).forEach(([environmentName, emulationSettings]) => {
         baseTest.use({ contextOptions: { ...emulationSettings, colorScheme: 'light' } });

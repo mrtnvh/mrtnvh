@@ -1,10 +1,10 @@
 import { defineConfig } from '@playwright/test';
 
-const port = 3000;
+import { baseURL, port } from './tests/setup/config.js';
 
 export default defineConfig({
   use: {
-    baseURL: process.env.CI_BASEURL || `http://localhost:${port}`,
+    baseURL,
   },
   ...(!process.env.CI && {
     workers: 1,

@@ -1,14 +1,14 @@
 import { XMLParser } from 'fast-xml-parser';
-import fs from 'fs';
 import { devices as playwrightDevices } from 'playwright';
 
-export function getPages(): string[] {
-  const sitemapFileName = fs
-    .readdirSync(`.vercel/output/static`)
-    .reduce((acc, fileName) => (fileName.includes('sitemap-0') ? fileName : acc), '');
-  const sitemap = fs.readFileSync(`${process.cwd()}/.vercel/output/static/${sitemapFileName}`, 'utf-8');
+export const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+export const baseURL = process.env.CI_BASEURL || `http://localhost:${3000}`;
+
+export async function getPages(): Promise<string[]> {
+  const sitemap = await fetch(`${baseURL}/sitemap.xml`).then((res) => res.text());
   const parser = new XMLParser();
   const sitemapJson = parser.parse(sitemap);
+  console.log(sitemapJson);
   const pages = sitemapJson.urlset.url
     .map(({ loc }: { loc: string }) => {
       const url = new URL(loc);
@@ -19,8 +19,6 @@ export function getPages(): string[] {
 }
 
 export const browserTimeout = 30 * 1000;
-
-export const port = 3001;
 
 export const devices: Record<'mobile' | 'desktop', any> = {
   mobile: playwrightDevices['iPhone X'],

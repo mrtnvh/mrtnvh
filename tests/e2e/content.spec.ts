@@ -9,7 +9,7 @@ import removeClass from '../setup/posthtml/removeClass.js';
 import removeAttributes from 'posthtml-remove-attributes';
 
 baseTest.describe.skip('Content DOM snapshots', async () => {
-  getPages()
+  (await getPages())
     // .filter((link, index) => index === 0)
     .forEach((path) => {
       baseTest(path, async ({ request, baseURL }) => {

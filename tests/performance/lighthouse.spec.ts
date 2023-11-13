@@ -15,7 +15,7 @@ const lighthouseConfig = {
 };
 
 baseTest.describe('Lighthouse', async () => {
-  getPages()
+  (await getPages())
     // .filter((_, index) => index === 0)
     .forEach((path) => {
       baseTest.describe.parallel(path, () => {
