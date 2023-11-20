@@ -85,7 +85,7 @@
     "postcss-custom-selectors": "^7.1.6",
     "postcss-html": "^1.5.0",
     "postcss-import": "^15.1.0",
-    "postcss-load-config": "^4.0.1",
+    "postcss-load-config": "^4.0.2",
     "postcss-logical": "^7.0.0",
     "postcss-nested": "^6.0.1",
     "postcss-url": "^10.1.3",
