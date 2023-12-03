@@ -2,16 +2,6 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/projects/:path*",
-      "destination": "/activity/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/activity",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/talks/frontend-loves-openapi",
       "destination": "/talks/api-specification-conference-2021",
       "permanent": true
@@ -29,11 +19,6 @@
     {
       "source": "/talks/openapi-and-testing",
       "destination": "/talks/ministry-of-testing-ehv-november-19",
-      "permanent": true
-    },
-    {
-      "source": "/activity",
-      "destination": "/about",
       "permanent": true
     },
     {
@@ -58,6 +43,16 @@
     },
     {
       "source": "/activity/royce",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:path*",
+      "destination": "/activity/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/activity",
       "destination": "/about",
       "permanent": true
     },
