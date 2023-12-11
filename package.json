@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/mdx": "^1.1.5",
+    "@astrojs/mdx": "^2.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@playwright/test": "^1.40.1",
     "@rollup/plugin-dsv": "^3.0.4",
