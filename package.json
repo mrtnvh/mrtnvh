@@ -100,7 +100,7 @@
     "stylelint": "^15.11.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.5",
-    "stylelint-order": "^6.0.3",
+    "stylelint-order": "^6.0.4",
     "utility-types": "^3.10.0",
     "workbox-build": "^7.0.0"
   }
