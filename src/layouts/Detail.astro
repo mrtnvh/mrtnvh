@@ -88,7 +88,7 @@ const viewTransitionBaseId = kebabCase(Astro.url.pathname);
 <BaseLayout {...Astro.props} preloads={preloads}>
   <article>
     <div class="container">
-      <figure class="hero" style={`view-transition-name: ${viewTransitionBaseId}-hero`}>
+      <figure class="hero" transition:name={`${viewTransitionBaseId}-hero`}>
         {
           thumbnail && (
             <Thumbnail
@@ -100,7 +100,7 @@ const viewTransitionBaseId = kebabCase(Astro.url.pathname);
           )
         }
       </figure>
-      <h1 class="title" style={`view-transition-name: ${viewTransitionBaseId}-title`}>{title}</h1>
+      <h1 class="title" transition:name={`${viewTransitionBaseId}-title`}>{title}</h1>
 
       <div class="body long-form">
         <slot />

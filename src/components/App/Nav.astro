@@ -37,7 +37,7 @@ const links: NavLink[] = [
 ];
 ---
 
-<nav id="nav" class="nav" style={`view-transition-name: nav`}>
+<nav id="nav" class="nav" transition:name="nav">
   {
     links.map((link) => (
       <a href={link.href} data-testid={`navigation-${link.key}`} data-page-current={currentPage(link)}>
@@ -69,7 +69,7 @@ const links: NavLink[] = [
       }
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       gap: calc(var(--grid-gap-x) / 2);
     }
   }

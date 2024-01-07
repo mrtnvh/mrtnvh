@@ -38,14 +38,11 @@ const linkProps = ({ url }: { url: string }) => {
 <article>
   <div class="container">
     <h2 class="title">
-      <a
-        {...linkProps({ url: item.externalUrl || item.url })}
-        style={`view-transition-name: ${viewTransitionBaseId}-title`}
-      >
+      <a {...linkProps({ url: item.externalUrl || item.url })} transition:name={`${viewTransitionBaseId}-title`}>
         {item.title}
       </a>
     </h2>
-    <div class="meta" style={`view-transition-name: ${viewTransitionBaseId}-meta`}>
+    <div class="meta" transition:name={`${viewTransitionBaseId}-meta`}>
       <div class="date">
         Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
       </div>
@@ -66,7 +63,7 @@ const linkProps = ({ url }: { url: string }) => {
     <div
       class="description margin-block-trim"
       set:html={item.description}
-      style={`view-transition-name: ${viewTransitionBaseId}-description`}
+      transition:name={`${viewTransitionBaseId}-description`}
     />
   </div>
 </article>

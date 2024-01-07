@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import Seo from '../components/Seo.astro';
 import Header from '../components/App/Header.astro';
 import Footer from '../components/App/Footer.astro';
@@ -11,12 +12,11 @@ const isMaster = import.meta.env.VITE_PROD === 'true';
 const { content, preloads, frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="view-transition" content="same-origin" />
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
     <meta name="apple-mobile-web-app-title" content="mrtnvh" />
@@ -51,6 +51,8 @@ const { content, preloads, frontmatter } = Astro.props;
         });
       }
     </script>
+
+    <ViewTransitions />
   </head>
 
   <body>
@@ -91,7 +93,7 @@ const { content, preloads, frontmatter } = Astro.props;
         overflow-x: hidden;
         padding-block-end: calc(var(--space) * 2);
 
-        @media (min-width: 800px) {
+        @media (width >= 800px) {
           padding-block-end: 0;
         }
       }
