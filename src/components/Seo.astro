@@ -13,7 +13,7 @@ const getTitle = (...args: string[]) => [...args.filter((val) => val?.length), t
 const title = getTitle(content?.title, category);
 const description = sanitizeHtml(content?.description || descriptionDefault, {
   allowedTags: [],
-  allowedAttributes: [],
+  allowedAttributes: {},
 });
 const image = content?.thumbnail
   ? getImageVariants({ src: content?.thumbnail, tint: content?.tint }).og

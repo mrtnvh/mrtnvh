@@ -7,9 +7,23 @@ import SvgSprite from '../components/SvgSprite.astro';
 
 import '../styles/app.css';
 
+interface BaseLayoutProps {
+  content: any;
+  preloads: {
+    rel: string;
+    as: string;
+    type: string;
+    imagesizes: string;
+    media: string;
+    imagesrcset: string;
+  }[];
+  frontmatter: {
+    headerInverse?: boolean;
+  };
+}
+
 const isProd = import.meta.env.PROD;
-const isMaster = import.meta.env.VITE_PROD === 'true';
-const { content, preloads, frontmatter } = Astro.props;
+const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
 ---
 
 <!doctype html>
@@ -28,32 +42,32 @@ const { content, preloads, frontmatter } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;700;800&family=Inter+Tight:wght@800&display=swap"
       rel="stylesheet"
     />
+  </head>imagesrcset
+  {
+    preloads &&
+      preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
+        <link rel={rel} as={as} type={type} imagesizes={imagesizes} media={media} imagesrcset={imagesrcset} />
+      ))
+  }
 
-    {
-      preloads &&
-        preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
-          <link rel={rel} as={as} type={type} imageSizes={imagesizes} media={media} imageSrcSet={imagesrcset} />
-        ))
-    }
+  {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
 
-    {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
+  <Seo {...Astro.props} />
 
-    <Seo {...Astro.props} />
+  <script>
+    window.addEventListener('beforeinstallprompt', (event) => {
+      event.preventDefault();
+    });
 
-    <script>
-      window.addEventListener('beforeinstallprompt', (event) => {
-        event.preventDefault();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
       });
+    }
+  </script>
 
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js');
-        });
-      }
-    </script>
+  <ViewTransitions />
 
-    <ViewTransitions />
-  </head>
 
   <body>
     <div class="svg-sprite">

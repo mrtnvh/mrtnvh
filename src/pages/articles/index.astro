@@ -5,9 +5,21 @@ import ArticleList from '../../components/Article/ArticleList.astro';
 import { getCollection } from 'astro:content';
 import urljoin from 'url-join';
 import Folio from '../../components/Page/Folio.astro';
+import type { ArticleListItemProps } from '../../components/Article/ArticleListItem.astro';
 
 const articles = await getCollection('articles').then((collection) => {
-  const entriesData = collection.map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }));
+  const entriesData = collection
+    .map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }))
+    .map(
+      (entry): ArticleListItemProps => ({
+        title: entry.title,
+        description: entry.description,
+        url: entry.url,
+        datePublished: entry.datePublished,
+        originalPublication: entry.originalPublication,
+        externalUrl: entry.externalUrl,
+      }),
+    );
   return orderBy(entriesData, ['datePublished'], ['desc']);
 });
 

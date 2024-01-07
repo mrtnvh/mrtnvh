@@ -3,17 +3,17 @@ import { kebabCase } from 'lodash-es';
 import clsx from 'clsx';
 import { parse } from 'date-fns';
 
-export type ArticleItemProps = {
+export type ArticleListItemProps = {
   title: string;
   description: string;
   datePublished: number;
-  externalUrl?: string;
+  externalUrl?: string | undefined;
   url: string;
-  originalPublication?: string;
+  originalPublication?: string | undefined;
 };
 
 export interface Props {
-  item: ArticleItemProps;
+  item: ArticleListItemProps;
 }
 
 const { item } = Astro.props;

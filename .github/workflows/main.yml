@@ -53,7 +53,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
-        test-type: ['lint', 'style', 'e2e']
+        test-type: ['type', 'lint', 'style', 'e2e']
 
     steps:
       - uses: actions/checkout@v4

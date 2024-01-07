@@ -1,3 +1,4 @@
+// @ts-nocheck
 export default (classNames) => {
   return (tree) => {
     tree.walk((node) => {

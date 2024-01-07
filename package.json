@@ -19,6 +19,7 @@
     "dev": "astro dev",
     "release": "npx standard-version",
     "test": "run-s test:*",
+    "test:type": "astro check",
     "test:format": "prettier -w --ignore-path .gitignore --ignore-path .prettierignore .",
     "test:lint": "eslint --fix --ignore-path .gitignore '*.{js,mjs}'",
     "test:style": "stylelint --fix --ignore-path .gitignore '**/*.{css,astro}'",
@@ -28,6 +29,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@astrojs/check": "^0.3.4",
     "astro": "^4.0.8",
     "clsx": "^2.1.0",
     "country-list": "^2.3.0",
@@ -37,6 +39,7 @@
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
     "sanitize-html": "^2.11.0",
+    "typescript": "^5.3.3",
     "url-join": "^5.0.0"
   },
   "devDependencies": {

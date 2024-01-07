@@ -5,9 +5,22 @@ import Intro from '../components/Page/Intro.astro';
 import List from '../components/List/List.astro';
 import { getCollection } from 'astro:content';
 import urljoin from 'url-join';
+import type { ListItemItemProps } from '../components/List/ListItem.astro';
+import type { ImageTint } from '../components/Image/cloudinary';
 
 const topics = await getCollection('topics').then((collection) => {
-  const entriesData = collection.map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }));
+  const entriesData = collection
+    .map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }))
+    .map(
+      (entry): ListItemItemProps => ({
+        title: entry.title,
+        description: entry.description,
+        url: entry.url,
+        datePublished: entry.datePublished,
+        thumbnail: entry.thumbnail,
+        tint: entry.tint as unknown as ImageTint,
+      }),
+    );
   return orderBy(entriesData, ['datePublished'], ['desc']);
 });
 ---
