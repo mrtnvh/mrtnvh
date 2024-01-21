@@ -1,7 +1,7 @@
 ---
 import clsx from 'clsx';
 import type { ClassValue } from 'clsx';
-import { getImageVariants, ImageTint, ImageVariant } from './cloudinary';
+import { getImageVariants, type ImageTint, type ImageVariant } from './cloudinary';
 import type { ColorKey } from '../../styles/colors';
 
 export interface Props {
@@ -12,6 +12,7 @@ export interface Props {
   variants: ImageVariant[];
   className?: ClassValue;
   delimiter?: string;
+  class?: ClassValue;
 }
 
 const { alt, src: source, tint, loading, className, variants, delimiter } = Astro.props as Props;

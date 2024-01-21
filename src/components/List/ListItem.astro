@@ -11,7 +11,7 @@ export type ListItemItemProps = {
   datePublished: number;
   category?: string | undefined;
   thumbnail: string;
-  tint: string | ImageTint;
+  tint: ImageTint;
   url: string;
 };
 
@@ -36,13 +36,13 @@ const linkProps = () => {
     };
   }
 
-  return { href: item.url, style: `view-transition-name: ${viewTransitionBaseId}` };
+  return { href: item.url, ['transition:name']: `${viewTransitionBaseId}` };
 };
 ---
 
 <article>
   <a {...linkProps()} class="reset link">
-    <figure class="media" style={`view-transition-name: ${viewTransitionBaseId}-hero`}>
+    <figure class="media" transition:name={`${viewTransitionBaseId}-hero`}>
       <Thumbnail
         src={item.thumbnail}
         alt={item.title}
@@ -53,7 +53,7 @@ const linkProps = () => {
       />
     </figure>
     <div class="content">
-      <h2 class="title" style={`view-transition-name: ${viewTransitionBaseId}-title`}>
+      <h2 class="title" transition:name={`${viewTransitionBaseId}-title`}>
         {item.title}
       </h2>
       <p class="subtitle" set:html={item.subtitle || item.description} />
@@ -74,7 +74,7 @@ const linkProps = () => {
     max-width: 100%;
     text-align: center;
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       text-align: left;
     }
   }
@@ -99,7 +99,7 @@ const linkProps = () => {
       --link-hover-color: inherit;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       display: grid;
       grid-template-columns: 7fr 5fr;
       gap: calc(var(--grid-gap-x) / 1);
@@ -112,7 +112,7 @@ const linkProps = () => {
     margin-block-start: calc(var(--space) / -1.5);
     padding: 0 calc(var(--space) / 2);
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       margin-block-start: 0;
       padding: 0;
       display: flex;
@@ -126,7 +126,7 @@ const linkProps = () => {
     line-height: var(--line-height-xs);
     font-size: var(--font-size-2xl);
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       /* stylelint-disable-next-line scss/at-function-named-arguments */
       font-size: clamp(1rem, 7.5vw, var(--font-size-5xl));
       margin: calc(var(--grid-gap-y) * 0.5) 0 calc(var(--grid-gap-y) * 0.25) calc(var(--grid-gap-x) * -3);
@@ -139,7 +139,7 @@ const linkProps = () => {
     order: 3;
     margin: 0 0 calc(var(--space) / 3);
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       margin: 0;
     }
   }
@@ -151,7 +151,7 @@ const linkProps = () => {
     font-size: var(--font-size-sm);
     color: var(--grey);
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       justify-content: start;
       order: 2;
     }

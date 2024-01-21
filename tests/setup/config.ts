@@ -1,6 +1,5 @@
 import { XMLParser } from 'fast-xml-parser';
 import fs from 'fs';
-import { devices as playwrightDevices } from 'playwright';
 
 export function getPages(): string[] {
   const sitemapFileName = fs
@@ -21,14 +20,3 @@ export function getPages(): string[] {
 export const browserTimeout = 30 * 1000;
 
 export const port = 3001;
-
-export const devices: Record<'mobile' | 'desktop', any> = {
-  mobile: playwrightDevices['iPhone X'],
-  desktop: {
-    ...playwrightDevices['Desktop Chrome'],
-    viewport: {
-      width: 1440,
-      height: 900,
-    },
-  },
-};

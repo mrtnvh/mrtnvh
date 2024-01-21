@@ -1,6 +1,6 @@
 ---
 import { kebabCase } from 'lodash-es';
-import { CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/Base.astro';
 import clsx from 'clsx';
 import { parse } from 'date-fns';
@@ -38,8 +38,8 @@ const linkProps = ({ url }: { url: string | undefined }) => {
   <div class="container">
     <div>
       <article>
-        <h1 class="title" style={`view-transition-name: ${viewTransitionBaseId}-title`}>{entry.data.title}</h1>
-        <div class="meta" style={`view-transition-name: ${viewTransitionBaseId}-meta`}>
+        <h1 class="title" transition:name={`${viewTransitionBaseId}-title`}>{entry.data.title}</h1>
+        <div class="meta" transition:name={`${viewTransitionBaseId}-meta`}>
           <div class="date">
             Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'long' })}</time>
           </div>
@@ -67,9 +67,9 @@ const linkProps = ({ url }: { url: string | undefined }) => {
         <div
           class="description margin-block-trim"
           set:html={entry.data.description}
-          style={`view-transition-name: ${viewTransitionBaseId}-description`}
+          transition:name={`${viewTransitionBaseId}-description`}
         />
-        <div class="content long-form" style={`view-transition-name: ${viewTransitionBaseId}-content`}>
+        <div class="content long-form" transition:name={`${viewTransitionBaseId}-content`}>
           <Content />
         </div>
       </article>

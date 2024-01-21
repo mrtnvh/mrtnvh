@@ -1,3 +1,4 @@
+// @ts-expect-error
 import flag from 'emoji-flag';
 import { getName } from 'country-list';
 
@@ -7,6 +8,6 @@ export const getCountryFlagAndNameFromCode = (code: string): { flag: string; nam
   }
   return {
     flag: flag(code),
-    name: getName(code),
+    name: getName(code) || code,
   };
 };

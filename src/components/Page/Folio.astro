@@ -24,7 +24,7 @@ const Title = titleTag;
     inset-block-start: calc(var(--folio-title-line-height) * -3.5rem);
 
     &.title-hidden {
-      @media (min-width: 800px) {
+      @media (width >= 800px) {
         clip: rect(1px, 1px, 1px, 1px);
         clip-path: inset(50%);
         height: 1px;
@@ -36,7 +36,7 @@ const Title = titleTag;
       }
     }
 
-    @media (max-width: 799px) {
+    @media (width <= 799px) {
       position: absolute;
     }
   }

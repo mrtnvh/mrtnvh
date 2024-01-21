@@ -32,8 +32,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-block-start: var(--headings-margin-block-start);
-  margin-block-end: var(--headings-margin-block-end);
+  margin-block: var(--headings-margin-block-start) var(--headings-margin-block-end);
   font-family: var(--headings-font-family);
   font-weight: var(--headings-font-weight);
   line-height: var(--line-height-sm);
@@ -121,10 +120,10 @@ hr {
 
   hr {
     margin-inline: 0;
-  }
 
-  p + hr {
-    margin-block-start: calc(var(--space) * 3);
+    @nest p + & {
+      margin-block-start: calc(var(--space) * 3);
+    }
   }
 
   pre {

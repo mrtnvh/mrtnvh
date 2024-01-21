@@ -47,7 +47,7 @@ const pastEvents = getPastEvents(events as unknown as Event[]);
   section {
     padding-block-end: calc(var(--space) * 1);
 
-    @media screen and (min-width: 800px) {
+    @media screen and (width >= 800px) {
       padding-block-end: calc(var(--space) * 2);
     }
   }
