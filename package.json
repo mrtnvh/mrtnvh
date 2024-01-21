@@ -30,6 +30,7 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "astro": "^4.0.8",
+    "astro-capo": "^0.0.1",
     "clsx": "^2.1.0",
     "country-list": "^2.3.0",
     "date-fns": "^3.0.6",
