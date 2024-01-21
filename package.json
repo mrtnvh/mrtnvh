@@ -23,7 +23,6 @@
     "test:lint": "eslint --fix --ignore-path .gitignore '*.{js,mjs}'",
     "test:style": "stylelint --fix --ignore-path .gitignore '**/*.{css,astro}'",
     "test:e2e": "playwright test tests/e2e",
-    "test:visual": "playwright test tests/visual",
     "test:performance": "playwright test tests/performance",
     "prepare": "husky install"
   },

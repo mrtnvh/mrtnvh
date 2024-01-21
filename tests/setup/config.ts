@@ -1,6 +1,5 @@
 import { XMLParser } from 'fast-xml-parser';
 import fs from 'fs';
-import { devices as playwrightDevices } from 'playwright';
 
 export function getPages(): string[] {
   const sitemapFileName = fs

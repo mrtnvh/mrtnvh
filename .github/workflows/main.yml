@@ -166,14 +166,6 @@ jobs:
           name: performance_reports
           path: tests/performance/__reports__
           retention-days: 5
-      - name: Archive visual reports
-        uses: actions/upload-artifact@v3
-        continue-on-error: true
-        if: ${{ success() || failure() }}
-        with:
-          name: visual_reports
-          path: test-results
-          retention-days: 5
 
   deploy:
     runs-on: ubuntu-latest

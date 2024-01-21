@@ -9,3 +9,6 @@
 *.txt
 *.editorconfig
 *.patch
+
+pre-commit
+.prettierignore
