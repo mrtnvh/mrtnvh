@@ -11,7 +11,6 @@
     "url": "https://mrtnvh.com"
   },
   "scripts": {
-    "postinstall": "patch-package",
     "start": "astro preview",
     "build": "astro build",
     "prebuild": "node scripts/prebuild/index.mjs",
@@ -81,7 +80,6 @@
     "lighthouse": "^11.4.0",
     "lint-staged": "^15.2.0",
     "npm-run-all": "^4.1.5",
-    "patch-package": "^8.0.0",
     "playwright": "^1.40.1",
     "playwright-lighthouse": "^3.2.5",
     "postcss": "^8.4.32",
