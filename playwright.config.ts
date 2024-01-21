@@ -1,4 +1,4 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 
 const port = 3000;
 
@@ -10,6 +10,16 @@ export default defineConfig({
     workers: 1,
     retries: 2,
   }),
+  projects: [
+    {
+      name: `desktop`,
+      use: { ...devices['Desktop Chrome'], colorScheme: 'light' },
+    },
+    {
+      name: `mobile`,
+      use: { ...devices['Pixel 5'], colorScheme: 'light' },
+    },
+  ],
   /* Run your local dev server before starting the tests */
   ...(!process.env.CI_BASEURL && {
     webServer: {

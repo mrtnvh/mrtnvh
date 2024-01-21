@@ -55,4 +55,7 @@ export default defineConfig({
     ],
   },
   site: 'https://mrtnvh.com/',
+  devToolbar: {
+    enabled: false,
+  },
 });

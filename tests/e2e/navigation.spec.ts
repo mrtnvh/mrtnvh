@@ -1,5 +1,4 @@
 import { expect } from '@playwright/test';
-import { devices } from '../setup/config.js';
 import { removeTrailingSlash } from '../setup/utils.js';
 import { baseTest } from '../setup/baseTest.js';
 
@@ -40,33 +39,30 @@ const links = {
 
 baseTest.describe('Navigation', async () => {
   Object.entries(links).forEach(([key, to]) => {
-    baseTest.describe.parallel(`Navigation to ${key}`, async () => {
-      Object.entries(devices).forEach(async ([environmentName, emulationSettings]) => {
-        baseTest.use({ contextOptions: { ...emulationSettings, colorScheme: 'light' } });
+    baseTest(`Can navigate to ${key}`, async ({ page, baseURL }, workerInfo) => {
+      console.log('workerInfo', workerInfo.project);
 
-        baseTest(environmentName, async ({ page, baseURL }) => {
-          // @ts-ignore
-          const expectedUrl = to[environmentName];
-          await page.goto('/');
-          const $link = await page.$(`[data-testid="navigation-${key}"]`);
+      // @ts-ignore
+      const expectedUrl = to[workerInfo.project.name];
+      await page.goto('/');
+      const $link = await page.$(`[data-testid="navigation-${key}"]`);
 
-          if (expectedUrl.includes('http')) {
-            const [popup] = await Promise.all([page.waitForEvent('popup'), $link?.click()]);
-            await popup.waitForLoadState();
-            const url = popup.url();
+      if (expectedUrl.includes('http')) {
+        const [popup] = await Promise.all([page.waitForEvent('popup'), $link?.click()]);
+        await popup.waitForLoadState();
+        const url = popup.url();
 
-            if (expectedUrl.includes('youtube')) {
-              expect(expectedUrl).toContain('youtube.com');
-            } else {
-              expect(removeTrailingSlash(url)).toContain(removeTrailingSlash(expectedUrl));
-            }
-          } else {
-            await $link?.click();
-            const url = page.url();
-            expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(baseURL + expectedUrl));
-          }
-        });
-      });
+        if (expectedUrl.includes('youtube')) {
+          expect(expectedUrl).toContain('youtube.com');
+        } else {
+          expect(removeTrailingSlash(url)).toContain(removeTrailingSlash(expectedUrl));
+        }
+      } else {
+        await $link?.click();
+        await page.waitForLoadState('networkidle');
+        const url = page.url();
+        expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(baseURL + expectedUrl));
+      }
     });
   });
 });
