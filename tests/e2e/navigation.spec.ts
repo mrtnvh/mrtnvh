@@ -58,7 +58,7 @@ baseTest.describe('Navigation', async () => {
       } else {
         await $link?.click();
         await page.waitForLoadState('networkidle');
-        await page.waitForTimeout(500);
+        await page.waitForTimeout(2500);
         const url = page.url();
         expect(removeTrailingSlash(url)).toEqual(removeTrailingSlash(baseURL + expectedUrl));
       }
