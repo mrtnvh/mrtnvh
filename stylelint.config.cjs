@@ -7,7 +7,7 @@ module.exports = {
     'plugin/stylelint-no-indistinguishable-colors': null,
     'csstree/validator': {
       syntaxExtensions: ['sass'],
-      ignoreAtrules: ['else', 'container'],
+      ignoreAtrules: ['else', 'container', 'nest'],
       ignoreProperties: ['container', 'container-type', 'container-name', 'text-wrap'],
     },
     'selector-pseudo-class-no-unknown': [

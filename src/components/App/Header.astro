@@ -24,12 +24,12 @@ const { inverse } = Astro.props;
     position: relative;
     z-index: 2;
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       font-size: var(--font-size-base);
       padding-block: calc(var(--grid-gap-y) * 0.75);
     }
 
-    @media (max-width: 799px) {
+    @media (width <= 799px) {
       &.header-absolute {
         position: absolute;
       }
@@ -50,7 +50,7 @@ const { inverse } = Astro.props;
       align-items: center;
       justify-content: center;
 
-      @media (max-width: 799px) {
+      @media (width <= 799px) {
         margin: 0 auto;
         max-width: calc(var(--space) * 12);
         width: 100%;
@@ -58,13 +58,13 @@ const { inverse } = Astro.props;
     }
 
     .header-inverse & {
-      @media (max-width: 799px) {
+      @media (width <= 799px) {
         --text-color: var(--background-color);
         --headings-color: var(--background-color);
       }
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       width: calc(var(--space) * 7);
       display: flex;
       align-items: center;
@@ -80,7 +80,7 @@ const { inverse } = Astro.props;
     padding: calc(var(--grid-gap-y) * 0.5) calc(var(--grid-gap-x) * 1);
     z-index: var(--bottom-navigation-zindex);
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       position: static;
       background-color: transparent;
       padding: 0;

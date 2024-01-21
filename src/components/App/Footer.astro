@@ -35,7 +35,7 @@ const yearNow = new Date().getFullYear();
     justify-content: center;
     text-align: center;
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       display: grid;
       grid-template-columns: 5fr 6.9fr 1fr;
       gap: 0 var(--grid-gap-x);
@@ -53,7 +53,7 @@ const yearNow = new Date().getFullYear();
       height: 1rem;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       margin-top: 0;
     }
   }

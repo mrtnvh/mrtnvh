@@ -42,15 +42,18 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;700;800&family=Inter+Tight:wght@800&display=swap"
       rel="stylesheet"
     />
-  </head>imagesrcset
-  {
-    preloads &&
-      preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
-        <link rel={rel} as={as} type={type} imagesizes={imagesizes} media={media} imagesrcset={imagesrcset} />
-      ))
-  }
+  </head>
 
-  {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
+  <>
+    {
+      preloads &&
+        preloads.map(({ rel, as, type, imagesizes, media, imagesrcset }) => (
+          <link rel={rel} as={as} type={type} imagesizes={imagesizes} media={media} imagesrcset={imagesrcset} />
+        ))
+    }
+
+    {content?.redirect && <meta http-equiv="refresh" content={`0;URL='${content.redirect}'`} />}
+  </>
 
   <Seo {...Astro.props} />
 
@@ -67,7 +70,6 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
   </script>
 
   <ViewTransitions />
-
 
   <body>
     <div class="svg-sprite">
@@ -141,4 +143,6 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
       }
     </style>
   </body>
+
+
 </html>
