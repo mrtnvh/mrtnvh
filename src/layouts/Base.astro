@@ -36,12 +36,8 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
     <meta name="apple-mobile-web-app-title" content="mrtnvh" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#95FF00" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;700;800&family=Inter+Tight:wght@800&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <>
@@ -142,6 +138,11 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
         }
       }
     </style>
+    <!-- https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;700;800&family=Inter+Tight:wght@800&display=swap"
+      rel="stylesheet"
+    />
   </body>
 
 

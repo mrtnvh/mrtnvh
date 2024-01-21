@@ -40,8 +40,6 @@ const links = {
 baseTest.describe('Navigation', async () => {
   Object.entries(links).forEach(([key, to]) => {
     baseTest(`Can navigate to ${key}`, async ({ page, baseURL }, workerInfo) => {
-      console.log('workerInfo', workerInfo.project);
-
       // @ts-ignore
       const expectedUrl = to[workerInfo.project.name];
       await page.goto('/');
