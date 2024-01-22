@@ -1,0 +1,71 @@
+diff --git a/node_modules/semantic-release/lib/get-config.js b/node_modules/semantic-release/lib/get-config.js
+index cf30586..a32a182 100644
+--- a/node_modules/semantic-release/lib/get-config.js
++++ b/node_modules/semantic-release/lib/get-config.js
+@@ -1,7 +1,7 @@
+ import { dirname } from "node:path";
+ import { fileURLToPath } from "node:url";
+ 
+-import { castArray, isNil, isPlainObject, isString, pickBy } from "lodash-es";
++import { castArray, defaultsDeep, isNil, isPlainObject, isString, pickBy } from "lodash-es";
+ import { readPackageUp } from "read-pkg-up";
+ import { cosmiconfig } from "cosmiconfig";
+ import importFrom from "import-from-esm";
+@@ -30,33 +30,32 @@ export default async (context, cliOptions) => {
+   ({ extends: extendPaths, ...options } = options);
+   if (extendPaths) {
+     // If `extends` is defined, load and merge each shareable config with `options`
+-    options = {
+-      ...(await castArray(extendPaths).reduce(async (eventualResult, extendPath) => {
+-        const result = await eventualResult;
+-        const extendsOptions = (await importFrom.silent(__dirname, extendPath)) || (await importFrom(cwd, extendPath));
++    const newOptions = (await castArray(extendPaths).reduce(async (eventualResult, extendPath) => {
++      const result = await eventualResult;
++      const extendsOptions = (await importFrom.silent(__dirname, extendPath)) || (await importFrom(cwd, extendPath));
+ 
+-        // For each plugin defined in a shareable config, save in `pluginsPath` the extendable config path,
+-        // so those plugin will be loaded relative to the config file
+-        Object.entries(extendsOptions)
+-          .filter(([, value]) => Boolean(value))
+-          .reduce((pluginsPath, [option, value]) => {
+-            castArray(value).forEach((plugin) => {
+-              if (option === "plugins" && validatePlugin(plugin)) {
+-                pluginsPath[parseConfig(plugin)[0]] = extendPath;
+-              } else if (
+-                PLUGINS_DEFINITIONS[option] &&
+-                (isString(plugin) || (isPlainObject(plugin) && isString(plugin.path)))
+-              ) {
+-                pluginsPath[isString(plugin) ? plugin : plugin.path] = extendPath;
+-              }
+-            });
+-            return pluginsPath;
+-          }, pluginsPath);
++      // For each plugin defined in a shareable config, save in `pluginsPath` the extendable config path,
++      // so those plugin will be loaded relative to the config file
++      Object.entries(extendsOptions)
++        .filter(([, value]) => Boolean(value))
++        .reduce((pluginsPath, [option, value]) => {
++          castArray(value).forEach((plugin) => {
++            if (option === "plugins" && validatePlugin(plugin)) {
++              pluginsPath[parseConfig(plugin)[0]] = extendPath;
++            } else if (
++              PLUGINS_DEFINITIONS[option] &&
++              (isString(plugin) || (isPlainObject(plugin) && isString(plugin.path)))
++            ) {
++              pluginsPath[isString(plugin) ? plugin : plugin.path] = extendPath;
++            }
++          });
++          return pluginsPath;
++        }, pluginsPath);
+ 
+-        return { ...result, ...extendsOptions };
+-      }, {})),
+-      ...options,
+-    };
++      return { ...result, ...extendsOptions };
++    }, {}))
++
++    options = defaultsDeep(newOptions, options);
+   }
+ 
+   // Set default options values if not defined yet
