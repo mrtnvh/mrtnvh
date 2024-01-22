@@ -24,7 +24,8 @@
     "test:style": "stylelint --fix --ignore-path .gitignore '**/*.{css,astro}'",
     "test:e2e": "playwright test tests/e2e",
     "test:performance": "playwright test tests/performance",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
