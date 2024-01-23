@@ -106,5 +106,8 @@
     "stylelint-order": "^6.0.4",
     "utility-types": "^3.11.0",
     "workbox-build": "^7.0.0"
+  },
+  "volta": {
+    "node": "20.11.0"
   }
 }
