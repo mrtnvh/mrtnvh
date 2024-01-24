@@ -47,6 +47,8 @@ jobs:
         id: semantic_determine
         uses: cycjimmy/semantic-release-action@v3
         if: github.ref_name == 'develop'
+        with:
+          dry_run: true
 
       - name: Open release PR
         uses: vsoch/pull-request-action@master

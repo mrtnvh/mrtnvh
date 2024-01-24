@@ -2,8 +2,6 @@ const conventionalChangelogConfig = require('./conventionalchangelog.config.cjs'
 
 module.exports = {
   branches: ['develop'],
-  ci: true,
-  dryRun: true,
   plugins: [
     // https://github.com/semantic-release/commit-analyzer/
     [

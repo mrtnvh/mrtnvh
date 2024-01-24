@@ -3,7 +3,6 @@ const baseConfig = require('./release.config.cjs');
 const config = {
   ...baseConfig,
   branches: ['main'],
-  dryRun: false,
   plugins: [
     ...baseConfig.plugins,
     // https://github.com/semantic-release/changelog
