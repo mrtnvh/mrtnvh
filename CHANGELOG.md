@@ -1,3 +1,22 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [8.4.9](https://github.com/mrtnvh/mrtnvh/compare/v8.4.8...v8.4.9) (2024-01-24)
+
+### Bug Fixes
+
+- **deps:** update all non-major dependencies ([a729095](https://github.com/mrtnvh/mrtnvh/commit/a72909514966fe2d135d6b3867abd17d166f6f1e))
+- **deps:** update astro ([059839e](https://github.com/mrtnvh/mrtnvh/commit/059839e64b82c334a6814e10e69188be340ba594))
+- remake CHANGELOG.md ([045b372](https://github.com/mrtnvh/mrtnvh/commit/045b37285c9b9de1dc1a21f48fcdf68d914316e0))
+
+### Chores
+
+- **deps:** lock file maintenance ([9f18ecd](https://github.com/mrtnvh/mrtnvh/commit/9f18ecd8d5b3e4208ac6414e1cf720ebb68f87bc))
+- **deps:** update dependency semantic-release to v23 ([18d299b](https://github.com/mrtnvh/mrtnvh/commit/18d299b890d8f7598c9765e3401a3d15172e63f3))
+- upgrade to node v20 ([daaa62f](https://github.com/mrtnvh/mrtnvh/commit/daaa62f26de15760d9c7224f6379a97682253095))
+
 ## [8.4.0](https://github.com/mrtnvh/mrtnvh/compare/v8.4.8...v8.4.0) (2024-01-24)
 
 ### Bug Fixes
