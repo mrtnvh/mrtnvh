@@ -26,11 +26,11 @@ const getShadowsHighlightFromTintDark = ({ tint, dark }: { tint: ColorKey | Imag
       if (dark) {
         return {
           shadows: colors[tint]['900'].replace('#', ''),
-          highlights: colors[tint]['500'].replace('#', ''),
+          highlights: colors[tint]['200'].replace('#', ''),
         };
       }
       return {
-        shadows: colors[tint]['500'].replace('#', ''),
+        shadows: colors[tint]['700'].replace('#', ''),
         highlights: colors[tint]['50'].replace('#', ''),
       };
     }

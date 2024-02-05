@@ -5,10 +5,8 @@ import Social from '../App/Social.astro';
 <section class="intro">
   <div class="container">
     <div class="intro-content">
-      <span class="no-break">Developer Advocate</span>
-      <span class="no-break">&</span>
-      <span class="no-break">Front-end</span>
-      <span class="no-break">at <a href="https://iodigital.com">iO</a>.</span>
+      <span class="no-break">Front-end DevOps Engineer</span>
+      <span class="no-break">at <a href="https://essent.nl">Essent</a>.</span>
     </div>
     <Social />
   </div>
@@ -54,5 +52,9 @@ import Social from '../App/Social.astro';
     gap: 0.33ch;
     flex-grow: 1;
     justify-content: center;
+
+    @media (width >= 800px) {
+      justify-content: start;
+    }
   }
 </style>

@@ -12,3 +12,4 @@
 @import './_utils.css' layer(utils);
 
 @import 'prism-themes/themes/prism-one-dark.css' layer(code.prism);
+@import './code.css' layer(code.custom);
