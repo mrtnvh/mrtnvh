@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.10](https://github.com/mrtnvh/mrtnvh/compare/v8.4.9...v8.4.10) (2024-01-24)
+
+### Bug Fixes
+
+- **release:** fix semantic-release config ([accb8b9](https://github.com/mrtnvh/mrtnvh/commit/accb8b94df77e9e6b02aebc2bf0f93ae1cf4cd01))
+
 ## [8.4.9](https://github.com/mrtnvh/mrtnvh/compare/v8.4.8...v8.4.9) (2024-01-24)
 
 ### Bug Fixes
