@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.0](https://github.com/mrtnvh/mrtnvh/compare/v8.4.10...v8.5.0) (2024-02-05)
+
+### Features
+
+- New job at Essent ([37f5c2e](https://github.com/mrtnvh/mrtnvh/commit/37f5c2e50e72d8acd45af9e2e40ad9c5e979a1bc))
+
+### Bug Fixes
+
+- **deps:** update dependency astro to ^4.3.2 ([7594b0d](https://github.com/mrtnvh/mrtnvh/commit/7594b0d5a12543c29dea43d0cb80c8a945e39ac1))
+
+### Chores
+
+- **deps:** replace dependency npm-run-all with npm-run-all2 ^5.0.0 ([ea07901](https://github.com/mrtnvh/mrtnvh/commit/ea07901c21969bd27b8bf7f33471ee891af97334))
+- **deps:** update all non-major dependencies ([8a5385c](https://github.com/mrtnvh/mrtnvh/commit/8a5385ce20bf7e588a8c918163c5f548c70444d7))
+- **deps:** update dependency husky to v9 ([d895cf9](https://github.com/mrtnvh/mrtnvh/commit/d895cf97754e42c4b9e566f64b61f6ed55a67596))
+- **deps:** update dependency prettier to ^3.2.5 ([178c3a7](https://github.com/mrtnvh/mrtnvh/commit/178c3a7cb654c4e28c65bb698e1d3342a4834c20))
+
 ## [8.4.10](https://github.com/mrtnvh/mrtnvh/compare/v8.4.9...v8.4.10) (2024-01-24)
 
 ### Bug Fixes
