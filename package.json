@@ -28,7 +28,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
+    "@astrojs/check": "^0.5.4",
     "astro": "^4.3.2",
     "clsx": "^2.1.0",
     "country-list": "^2.3.0",
@@ -75,11 +75,11 @@
     "favicons": "^7.1.5",
     "fs-extra": "^11.2.0",
     "get-port": "^7.0.0",
-    "globby": "^14.0.0",
+    "globby": "^14.0.1",
     "htmlnano": "^2.1.0",
     "husky": "^9.0.10",
     "lighthouse": "^11.5.0",
-    "lint-staged": "^15.2.1",
+    "lint-staged": "^15.2.2",
     "npm-run-all2": "^6.1.2",
     "patch-package": "^8.0.0",
     "playwright": "^1.41.2",
