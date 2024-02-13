@@ -38,7 +38,7 @@ jobs:
           CI: true
 
       - name: Archive build output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build
           path: dist
@@ -81,7 +81,7 @@ jobs:
         run: 'npm run test:${{ matrix.test-type }}'
 
       - name: Archive snapshot artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         continue-on-error: true
         if: ${{ success() || failure() }}
         with:
@@ -159,7 +159,7 @@ jobs:
         if: ${{ success() || failure() }}
 
       - name: Archive performance reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         continue-on-error: true
         if: ${{ success() || failure() }}
         with:
