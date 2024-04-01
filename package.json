@@ -97,7 +97,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-sh": "^0.14.0",
-    "purgecss": "^5.0.0",
+    "purgecss": "^6.0.0",
     "rehype-rewrite": "^4.0.2",
     "semantic-release": "23.0.6",
     "stylelint": "^15.11.0",
