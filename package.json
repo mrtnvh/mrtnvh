@@ -44,8 +44,8 @@
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/mdx": "^2.2.1",
-    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/sitemap": "^3.1.2",
     "@playwright/test": "^1.42.1",
     "@rollup/plugin-dsv": "^3.0.4",
     "@semantic-release/changelog": "^6.0.3",
@@ -64,7 +64,7 @@
     "astro-remote": "^0.2.4",
     "autoprefixer": "^10.4.19",
     "conventional-changelog-conventionalcommits": "^6.1.0",
-    "cssnano": "^6.1.1",
+    "cssnano": "^6.1.2",
     "del": "^7.1.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -108,6 +108,6 @@
     "workbox-build": "^7.0.0"
   },
   "volta": {
-    "node": "20.11.1"
+    "node": "20.12.0"
   }
 }
