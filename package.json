@@ -39,14 +39,14 @@
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
     "sanitize-html": "^2.13.0",
-    "typescript": "^5.4.3",
+    "typescript": "^5.4.4",
     "url-join": "^5.0.0"
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/mdx": "^2.2.4",
     "@astrojs/sitemap": "^3.1.2",
-    "@playwright/test": "^1.42.1",
+    "@playwright/test": "^1.43.0",
     "@rollup/plugin-dsv": "^3.0.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^12.0.0",
@@ -82,7 +82,7 @@
     "lint-staged": "^15.2.2",
     "npm-run-all2": "^6.1.2",
     "patch-package": "^8.0.0",
-    "playwright": "^1.42.1",
+    "playwright": "^1.43.0",
     "playwright-lighthouse": "^4.0.0",
     "postcss": "^8.4.38",
     "postcss-custom-selectors": "^7.1.8",
@@ -108,6 +108,6 @@
     "workbox-build": "^7.0.0"
   },
   "volta": {
-    "node": "20.12.0"
+    "node": "20.12.1"
   }
 }
