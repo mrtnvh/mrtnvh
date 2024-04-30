@@ -3,8 +3,8 @@ import mdx from '@astrojs/mdx'; // eslint-disable-next-line import/no-unresolved
 import sitemap from '@astrojs/sitemap';
 import rehypeRewrite from 'rehype-rewrite';
 import dsv from '@rollup/plugin-dsv';
-import critters from 'astro-critters';
 import purgecss from 'astro-purgecss';
+import playformInline from '@playform/inline';
 
 const rehypePlugins = [
   [
@@ -26,6 +26,7 @@ const rehypePlugins = [
   ],
 ];
 
+// https://astro.build/config
 export default defineConfig({
   integrations: [
     sitemap({
@@ -36,12 +37,11 @@ export default defineConfig({
       rehypePlugins,
     }),
     purgecss(),
-    critters(),
+    playformInline({}),
   ],
   markdown: {
     // @ts-ignore
     rehypePlugins,
-
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
       // https://github.com/shikijs/shiki/blob/main/docs/themes.md
