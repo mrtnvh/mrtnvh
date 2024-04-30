@@ -91,7 +91,7 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
     <script>
       import '../js/main.js';
     </script>
-    {isProd && <script defer data-domain="mrtnvh.com" data-api="/api/event" src="/js/stats" />}
+    {isProd && <script is:inline defer data-domain="mrtnvh.com" data-api="/api/event" src="/js/stats" />}
     <style>
       .svg-sprite {
         display: none;
