@@ -193,8 +193,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          alias-domains: |
-            staging.mrtnvh.com
 
       - name: Upload to Vercel (Production)
         id: deployment-prod
