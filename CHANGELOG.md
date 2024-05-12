@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.1](https://github.com/mrtnvh/mrtnvh/compare/v8.5.0...v8.5.1) (2024-05-12)
+
+### Bug Fixes
+
+- **deps:** update all non-major dependencies ([820e334](https://github.com/mrtnvh/mrtnvh/commit/820e334a36ba7b4f8206621e009ac4287ca32b9e))
+- **deps:** update all non-major dependencies ([9221cf0](https://github.com/mrtnvh/mrtnvh/commit/9221cf01180b3dd833fff50a05b774fc296a96e4))
+- **deps:** update all non-major dependencies ([a0e0cb1](https://github.com/mrtnvh/mrtnvh/commit/a0e0cb1c800f41821d9b09aa5c99ebff70b812d3))
+- **deps:** update all non-major dependencies ([52df494](https://github.com/mrtnvh/mrtnvh/commit/52df49482b6c519343025df01b2fd83cdfeaa3ba))
+- **deps:** update all non-major dependencies ([b609e6c](https://github.com/mrtnvh/mrtnvh/commit/b609e6c82f48a9621ec4957b0f26b1470cb73523))
+- **deps:** update all non-major dependencies ([f79d721](https://github.com/mrtnvh/mrtnvh/commit/f79d721341df5d8fb4cd0774882cf8b94b226c36))
+- **deps:** update astro ([0b79b33](https://github.com/mrtnvh/mrtnvh/commit/0b79b333717e895446e4a107238dc5b7c37d99eb))
+- **deps:** update astro ([1ecbfd7](https://github.com/mrtnvh/mrtnvh/commit/1ecbfd79d54ac3821dfeec9a58708cde3850e177))
+- pin conventional-changelog-conventionalcommits to v7 ([#621](https://github.com/mrtnvh/mrtnvh/issues/621)) ([d94993b](https://github.com/mrtnvh/mrtnvh/commit/d94993b3f181dfa2c59b480780b717b2760d3696))
+- pkg json version ([9103799](https://github.com/mrtnvh/mrtnvh/commit/91037997794435528b85d4cbc578ccea42a79189))
+
+### Chores
+
+- cycjimmy/semantic-release-action to v4 ([f3b2cce](https://github.com/mrtnvh/mrtnvh/commit/f3b2cce10f1bb2ff3b3d0699ca506126b301f23c))
+- **deps:** lock file maintenance ([437e9e8](https://github.com/mrtnvh/mrtnvh/commit/437e9e8c50e21d204d6ea105b4ec25894d35d17c))
+- **deps:** lock file maintenance ([6e160dd](https://github.com/mrtnvh/mrtnvh/commit/6e160dd570e00e2531818c3657201c16091332fa))
+- **deps:** update all non-major dependencies ([0bb30b3](https://github.com/mrtnvh/mrtnvh/commit/0bb30b36468a56b979e7d445e4decb00234654d8))
+- **deps:** update all non-major dependencies ([c8df347](https://github.com/mrtnvh/mrtnvh/commit/c8df34798d96e5eb16ceeaa89d75640b59e3aced))
+- **deps:** update all non-major dependencies ([bb0e8f2](https://github.com/mrtnvh/mrtnvh/commit/bb0e8f2839424a7a71895ba0321d566c3b2b1596))
+- **deps:** update all non-major dependencies ([034dd63](https://github.com/mrtnvh/mrtnvh/commit/034dd6307eb4e5e603eabfafa863b91d59e772d5))
+- **deps:** update all non-major dependencies ([d28bebf](https://github.com/mrtnvh/mrtnvh/commit/d28bebf15aebad1869e2a7a1ef60fdbc7c4740f9))
+- **deps:** update dependency @semantic-release/release-notes-generator to v13 ([089042b](https://github.com/mrtnvh/mrtnvh/commit/089042bc7fa01ab62c4cdc92cfd113bcf274279f))
+- **deps:** update dependency conventional-changelog-conventionalcommits to v8 ([089144d](https://github.com/mrtnvh/mrtnvh/commit/089144dd7a5d11134ea73c42847c6124d3f844e6))
+- **deps:** update dependency cssnano to v7 ([7ffced2](https://github.com/mrtnvh/mrtnvh/commit/7ffced29ede2c4fe44977b4b7cb8260c9f123f6d))
+- **deps:** update dependency eslint to ^8.57.0 ([e4702c4](https://github.com/mrtnvh/mrtnvh/commit/e4702c4db08e858524d0e40920227534ad8c2a4d))
+- **deps:** update dependency lighthouse to v12 ([d49ce50](https://github.com/mrtnvh/mrtnvh/commit/d49ce50b73f30276156aafd68cccdca7418ce99b))
+- **deps:** update dependency npm-run-all2 to v6 ([7c05336](https://github.com/mrtnvh/mrtnvh/commit/7c0533607110aa99a42c7d283764241cbfe94ba3))
+- **deps:** update dependency postcss-custom-selectors to ^7.1.7 ([39c695f](https://github.com/mrtnvh/mrtnvh/commit/39c695fdf2ca76cfb467d09fb1e195cfcd5435ec))
+- **deps:** update dependency postcss-import to ^16.0.1 ([f0ea224](https://github.com/mrtnvh/mrtnvh/commit/f0ea224b8dab09cdd186fe860cb7eca887f56fcd))
+- **deps:** update dependency purgecss to v6 ([fe95499](https://github.com/mrtnvh/mrtnvh/commit/fe95499335b16700fab7acb3a4b288e490ccfa97))
+- **deps:** update dependency semantic-release to v23.0.2 ([04f3ff5](https://github.com/mrtnvh/mrtnvh/commit/04f3ff5d3bc4cd0ba499e22edcb78a0609b9dc50))
+- **deps:** update dependency semantic-release to v23.0.4 ([87d0d54](https://github.com/mrtnvh/mrtnvh/commit/87d0d540ff8ac8e365ab9be3b353f82fa8b2d6c5))
+- **deps:** update dependency semantic-release to v23.0.6 ([7cdec5b](https://github.com/mrtnvh/mrtnvh/commit/7cdec5b298d39aad8e03f863721ed8e15de768df))
+- **deps:** update dependency semantic-release to v23.1.1 ([d6d9232](https://github.com/mrtnvh/mrtnvh/commit/d6d92327c43d1c11da202079011cbd33eaf2cfbf))
+- **deps:** update github artifact actions to v4 ([684f89b](https://github.com/mrtnvh/mrtnvh/commit/684f89bbb9ede5325a61ee72eca7c0668c1fa735))
+- **deps:** update postcss ([c55cc9d](https://github.com/mrtnvh/mrtnvh/commit/c55cc9df1a007ca01e0a5be204ec13ec815fa387))
+- **deps:** update postcss ([dc5ad08](https://github.com/mrtnvh/mrtnvh/commit/dc5ad0876ded0ef9b0f55160ff72826f5090d3c4))
+- **deps:** update postcss ([4bc3575](https://github.com/mrtnvh/mrtnvh/commit/4bc3575f35c30f0755801e05848b3379baf976d8))
+- **deps:** update postcss ([89084ae](https://github.com/mrtnvh/mrtnvh/commit/89084ae9e4f67e6e8c4e69b269e90711dbf3cb09))
+- **deps:** update semantic-release ([389a576](https://github.com/mrtnvh/mrtnvh/commit/389a5766fd0404b740210216177286b368d3f387))
+- **deps:** update semantic-release ([28ac066](https://github.com/mrtnvh/mrtnvh/commit/28ac066d2ff0ec06222d64555e26df8bbd11df5c))
+- **release:** v8.5.0 ([55a48f2](https://github.com/mrtnvh/mrtnvh/commit/55a48f249b27948ef72848d8f1463674403bd2cf))
+
+### Refactors
+
+- astro-critters with @playform/inline ([736f66a](https://github.com/mrtnvh/mrtnvh/commit/736f66a326fa1ea8791cc9ab7710478158f02558))
+- update semantic-release patch ([47354c2](https://github.com/mrtnvh/mrtnvh/commit/47354c28e74221ccae7eb2d6faa14bbf6b707c5c))
+
+### CI
+
+- **release:** add extra steps to semantic release in main workflow ([3d73277](https://github.com/mrtnvh/mrtnvh/commit/3d732771d7433c02932b53c76b52cbf885f92377))
+- **release:** pin semantic release version ([549d523](https://github.com/mrtnvh/mrtnvh/commit/549d5234dbc9b8f9644cd0961bda259a971cc525))
+- **release:** pin semantic release version in main workflow ([68a0234](https://github.com/mrtnvh/mrtnvh/commit/68a0234e41551a143fad8dc86ad23f3864aab241))
+- remove vercel alias-domains ([a207b1b](https://github.com/mrtnvh/mrtnvh/commit/a207b1b1305866919e55464893b1aec92c4e4e8d))
+
 ## [8.5.0](https://github.com/mrtnvh/mrtnvh/compare/v8.4.10...v8.5.0) (2024-02-05)
 
 ### Features
