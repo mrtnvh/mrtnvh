@@ -167,6 +167,15 @@ jobs:
           path: tests/performance/__reports__
           retention-days: 5
 
+  test-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine version
+        id: semantic_determine
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          dry_run: true
+
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
