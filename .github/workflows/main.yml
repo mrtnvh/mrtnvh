@@ -169,9 +169,26 @@ jobs:
 
   test-release:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
     steps:
-      - name: Determine version
-        id: semantic_determine
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+        with:
+          install-command: npm ci
+
+      - name: Test Semantic Release
+        id: test_semantic_release
         uses: cycjimmy/semantic-release-action@v4
         with:
           semantic_version: 23.1.1
