@@ -1,9 +1,10 @@
-// const baseConfig = require('./release.config.cjs');
+const baseConfig = require('./release.config.cjs');
 
-module.exports = {
+const config = {
+  ...baseConfig,
   branches: ['main'],
-  dryRun: false,
   plugins: [
+    ...baseConfig.plugins,
     // https://github.com/semantic-release/changelog
     // Must be called before npm and git plugins
     // Uses the result of the release-notes-generator to generate the CHANGELOG.md.
@@ -27,3 +28,5 @@ module.exports = {
     '@semantic-release/github',
   ],
 };
+
+module.exports = config;

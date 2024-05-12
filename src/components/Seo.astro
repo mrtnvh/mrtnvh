@@ -6,7 +6,7 @@ import { getImageVariants } from './Image/cloudinary';
 const { content, category } = Astro.props;
 const titleDefault = 'Maarten Van Hoof \\\\ Front End Developer';
 const descriptionDefault =
-  'Developer Advocate & Lead Front-end Developer at iO in Eindhoven NL. An enthusiast of all things web, living in Turnhout, Belgium.';
+  "Developer Advocate & Front-end DevOps Engineer at Essent in 's Hertogenbosch NL. An enthusiast of all things web, living in Arendonk, Belgium.";
 const siteUrl = 'https://mrtnvh.com';
 
 const getTitle = (...args: string[]) => [...args.filter((val) => val?.length), titleDefault].join(' \\\\ ');
@@ -31,26 +31,10 @@ const schemaPerson = JSON.stringify({
   '@type': 'Person',
   name: 'Maarten Van Hoof',
   image:
-    'https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/portrait',
-  jobTitle: 'Developer Advocate && Lead Front-end Developer',
+    'https://res.cloudinary.com/mrtnvh/image/upload/c_scale,dpr_1.0,f_auto,q_auto,w_1200/v1570871092/mrtnvh.com/mrtnvh-2024.jpg',
+  jobTitle: 'Front-end DevOps Engineer',
   url: siteUrl,
   sameAs: siteUrl,
-  memberOf: {
-    '@context': 'http://schema.org',
-    '@type': 'Organization',
-    name: 'iO',
-    url: 'https://iodigital.com',
-    sameAs: 'https://iodigital.com',
-    slogan: 'Discover infinite opportunities, together',
-    description: 'Digital Full Service Agency',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Eindhoven, The Netherlands',
-      postalCode: '5621 AA',
-      streetAddress: 'Marconilaan 16',
-    },
-    email: 'info@iodigital.com',
-  },
 });
 ---
 
@@ -68,7 +52,7 @@ const schemaPerson = JSON.stringify({
   <meta property="og:site_name" content="mrtnvh" />
   <meta property="og:title" content={title} />
   <meta property="og:type" content="article" />
-  <script type="application/ld+json" set:html={schemaWebsite} />
-  <script type="application/ld+json" set:html={schemaPerson} />
+  <script is:inline type="application/ld+json" set:html={schemaWebsite} />
+  <script is:inline type="application/ld+json" set:html={schemaPerson} />
   <link rel="me" href="https://techhub.social/@mrtnvh" />
 </>
