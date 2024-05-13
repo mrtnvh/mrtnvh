@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.2](https://github.com/mrtnvh/mrtnvh/compare/v8.5.1...v8.5.2) (2024-05-13)
+
+### Bug Fixes
+
+- pkg version ([7c1726a](https://github.com/mrtnvh/mrtnvh/commit/7c1726ab0a212090aca7563428543e10358899fc))
+
 ## [8.5.1](https://github.com/mrtnvh/mrtnvh/compare/v8.5.0...v8.5.1) (2024-05-12)
 
 ### Bug Fixes
