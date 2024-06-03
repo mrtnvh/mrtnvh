@@ -47,7 +47,7 @@
     "@astrojs/markdown-component": "^1.0.5",
     "@astrojs/mdx": "^3.0.1",
     "@astrojs/sitemap": "^3.1.5",
-    "@playform/inline": "^0.0.4",
+    "@playform/inline": "^0.0.6",
     "@playwright/test": "^1.44.1",
     "@rollup/plugin-dsv": "^3.0.4",
     "@semantic-release/changelog": "^6.0.3",
@@ -107,9 +107,9 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.4",
     "utility-types": "^3.11.0",
-    "workbox-build": "^7.1.0"
+    "workbox-build": "^7.1.1"
   },
   "volta": {
-    "node": "20.13.1"
+    "node": "20.14.0"
   }
 }
