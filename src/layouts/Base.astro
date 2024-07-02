@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import { Head } from 'astro-capo';
 import Seo from '../components/Seo.astro';
 import Header from '../components/App/Header.astro';
 import Footer from '../components/App/Footer.astro';
@@ -28,7 +29,7 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
 
 <!doctype html>
 <html lang="en">
-  <head>
+  <Head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
@@ -38,7 +39,11 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
     <meta name="theme-color" content="#95FF00" />
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Inter:wght@400;700;800&family=Inter+Tight:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </Head>
 
   <>
     {
@@ -144,6 +149,4 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
       rel="stylesheet"
     />
   </body>
-
-
 </html>
