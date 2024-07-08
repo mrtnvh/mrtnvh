@@ -87,7 +87,7 @@
     "playwright": "^1.45.1",
     "playwright-lighthouse": "^4.0.0",
     "postcss": "^8.4.39",
-    "postcss-custom-selectors": "^7.1.11",
+    "postcss-custom-selectors": "^7.1.12",
     "postcss-html": "^1.7.0",
     "postcss-import": "^16.1.0",
     "postcss-load-config": "^6.0.1",
