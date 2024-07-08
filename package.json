@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "astro": "^4.11.3",
+    "astro": "^4.11.5",
     "astro-capo": "^0.0.1",
     "clsx": "^2.1.1",
     "country-list": "^2.3.0",
