@@ -28,7 +28,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/check": "^0.8.1",
     "astro": "^4.11.5",
     "astro-capo": "^0.0.1",
     "clsx": "^2.1.1",
@@ -110,6 +110,6 @@
     "workbox-build": "^7.1.1"
   },
   "volta": {
-    "node": "20.15.0"
+    "node": "20.15.1"
   }
 }
