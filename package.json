@@ -33,7 +33,7 @@
     "astro-capo": "^0.0.1",
     "clsx": "^2.1.1",
     "country-list": "^2.3.0",
-    "date-fns": "^3.6.0",
+    "date-fns": "^4.0.0",
     "defu": "^6.1.4",
     "emoji-flag": "^1.1.0",
     "lodash-es": "^4.17.21",
