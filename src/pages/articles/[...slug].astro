@@ -38,7 +38,7 @@ const linkProps = ({ url }: { url: string | undefined }) => {
   <div class="container">
     <div>
       <article>
-        <h1 class="title" transition:name={`${viewTransitionBaseId}-title`}>{entry.data.title}</h1>
+        <h1 class="title display-1" transition:name={`${viewTransitionBaseId}-title`}>{entry.data.title}</h1>
         <div class="meta" transition:name={`${viewTransitionBaseId}-meta`}>
           <div class="date">
             Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'long' })}</time>
@@ -64,13 +64,15 @@ const linkProps = ({ url }: { url: string | undefined }) => {
             )
           }
         </div>
-        <div
-          class="description margin-block-trim"
-          set:html={entry.data.description}
-          transition:name={`${viewTransitionBaseId}-description`}
-        />
-        <div class="content long-form" transition:name={`${viewTransitionBaseId}-content`}>
-          <Content />
+        <div class="long-form">
+          <div
+            class="description margin-block-trim"
+            set:html={entry.data.description}
+            transition:name={`${viewTransitionBaseId}-description`}
+          />
+          <div class="content" transition:name={`${viewTransitionBaseId}-content`}>
+            <Content />
+          </div>
         </div>
       </article>
     </div>
@@ -88,27 +90,31 @@ const linkProps = ({ url }: { url: string | undefined }) => {
 
   .title {
     font-size: var(--detail-title-size);
-    font-weight: var(--detail-title-font-weight);
-    line-height: var(--detail-title-line-height);
     margin: 0;
-    text-shadow: var(--text-shadow-outline);
+    text-align: center;
   }
 
-  .description {
-    font-size: var(--font-size-lg);
-    line-height: var(--line-height-sm);
-    margin: 0;
-  }
-
-  .content :global(> *:not(pre, iframe, img, figure)) {
+  .meta,
+  .description,
+  .content :global(> *:not(iframe, img, figure), figcaption) {
     max-inline-size: 43.5rem;
+    margin-inline: auto;
+    inline-size: 100%;
+  }
+
+  .content :global(pre) {
+    max-inline-size: calc(43.5rem + (var(--grid-gap-x) * 2));
   }
 
   .meta {
-    font-size: var(--font-size-sm);
-    color: var(--grey);
+    font-size: var(--font-size-xs);
+    font-weight: 450;
+    letter-spacing: 0.05em;
     display: flex;
     gap: 0 var(--grid-gap-x);
     flex-wrap: wrap;
+    text-transform: uppercase;
+    justify-content: space-between;
+    inline-size: 100%;
   }
 </style>

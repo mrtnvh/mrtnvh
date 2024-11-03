@@ -37,7 +37,7 @@ const linkProps = ({ url }: { url: string }) => {
 
 <article>
   <div class="container">
-    <h2 class="title">
+    <h2 class="title display-1">
       <a {...linkProps({ url: item.externalUrl || item.url })} transition:name={`${viewTransitionBaseId}-title`}>
         {item.title}
       </a>
@@ -71,10 +71,11 @@ const linkProps = ({ url }: { url: string }) => {
 <style>
   article {
     container: article / inline-size;
-    padding-block: var(--grid-gap-y);
+    border-block-start: 1px solid var(--foreground-color);
+    padding-block: calc(var(--grid-gap-y));
 
-    &:nth-child(odd) {
-      background-color: var(--grey-100);
+    &:last-child {
+      border-block-end: 1px solid var(--foreground-color);
     }
   }
 
@@ -86,11 +87,12 @@ const linkProps = ({ url }: { url: string }) => {
 
   .title {
     margin: 0;
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-7xl);
     line-height: var(--line-height-xs);
 
     a {
-      padding-block: calc(var(--space) / 5);
+      text-decoration-thickness: 0.05em;
+      padding-block: calc(var(--space) / 2.25) 0;
       display: inline-block;
 
       &:where(:hover, :focus, :active) {
@@ -104,17 +106,19 @@ const linkProps = ({ url }: { url: string }) => {
   }
 
   .description {
-    max-width: calc(var(--space) * 25);
+    max-inline-size: 80ch;
 
     @supports (text-wrap: balance) {
-      max-width: none;
       text-wrap: balance;
     }
   }
 
   .meta {
-    font-size: var(--font-size-sm);
-    color: var(--grey);
+    font-size: var(--font-size-xs);
+    font-weight: 450;
+    letter-spacing: 0.05em;
+    color: var(--foreground-color);
+    text-transform: uppercase;
 
     @container article (min-width: 45rem) {
       display: flex;

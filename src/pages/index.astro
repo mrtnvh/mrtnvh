@@ -1,41 +1,46 @@
 ---
-import { orderBy } from 'lodash-es';
 import BaseLayout from '../layouts/Base.astro';
-import Intro from '../components/Page/Intro.astro';
-import List from '../components/List/List.astro';
-import { getCollection } from 'astro:content';
-import urljoin from 'url-join';
-import type { ListItemItemProps } from '../components/List/ListItem.astro';
-import type { ImageTint } from '../components/Image/cloudinary';
-
-const topics = await getCollection('topics').then((collection) => {
-  const entriesData = collection
-    .map((entry) => ({ ...entry.data, url: urljoin(entry.collection, entry.slug) }))
-    .map(
-      (entry): ListItemItemProps => ({
-        title: entry.title,
-        description: entry.description,
-        url: entry.url,
-        datePublished: entry.datePublished,
-        thumbnail: entry.thumbnail,
-        tint: entry.tint as unknown as ImageTint,
-      }),
-    );
-  return orderBy(entriesData, ['datePublished'], ['desc']);
-});
+import FitToWidth from '../components/FitToWidth.astro';
 ---
 
 <BaseLayout {...Astro.props}>
-  <Intro />
-  <section class="events">
-    <div class="container">
-      <List items={topics} />
+  <div class="page-home container">
+    <div class="suptitles">'sup? I'm</div>
+    <FitToWidth class="title display-1">Maarten Van Hoof</FitToWidth>
+    <div class="subtitles">
+      <div>Defender of the web</div>
+      <div class="bullet">&bull;</div>
+      <div>Design Engineer <a href="https://essent.nl">Essent</a></div>
+      <div class="bullet">&bull;</div>
+      <div><a href="https://roycetheband.com">Keeper of the riff</a></div>
     </div>
-  </section>
+  </div>
 </BaseLayout>
 
 <style>
-  .events {
-    padding-block-start: clamp(calc(var(--grid-gap-y) * 1), 9vw, calc(var(--grid-gap-y) * 2));
+  .page-home {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    gap: var(--space);
+    text-align: center;
+    container: page-home / inline-size;
+  }
+
+  .subtitles {
+    display: flex;
+    gap: calc(var(--space) / 2);
+    justify-content: space-between;
+
+    @container page-home (width < 650px) {
+      flex-direction: column;
+    }
+  }
+
+  .bullet {
+    @container page-home (width < 800px) {
+      display: none;
+    }
   }
 </style>

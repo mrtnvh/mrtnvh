@@ -1,8 +1,8 @@
 a:not(.default),
 button.link:not(.default) {
-  --link-color: var(--text-color);
-  --link-hover-color: var(--light);
-  --link-hover-background-color: var(--text-color);
+  --link-color: var(--foreground-color);
+  --link-hover-color: var(--background-color);
+  --link-hover-background-color: var(--foreground-color);
   --link-transition-speed: 0.15s;
   --link-text-decoration: underline;
 
@@ -17,29 +17,9 @@ button.link:not(.default) {
     transition: fill var(--link-transition-speed);
   }
 
-  &:where(:hover, :focus, :active) {
+  &:where(:hover, :focus-visible, :active) {
     color: var(--link-hover-color);
     background-color: var(--link-hover-background-color);
-  }
-
-  &.github {
-    --link-hover-background-color: var(--github);
-  }
-
-  &.mastodon {
-    --link-hover-background-color: var(--mastodon);
-  }
-
-  &.linkedin {
-    --link-hover-background-color: var(--linkedin);
-  }
-
-  &.isaac {
-    --link-hover-background-color: var(--isaac);
-  }
-
-  &.youtube {
-    --link-hover-background-color: var(--youtube);
   }
 }
 

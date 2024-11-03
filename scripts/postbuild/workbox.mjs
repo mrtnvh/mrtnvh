@@ -18,10 +18,6 @@ export default async () => {
         urlPattern: 'https?://res.cloudinary.com/mrtnvh/.*',
         handler: 'StaleWhileRevalidate',
       },
-      {
-        urlPattern: 'https?://rsms.me/inter/.*',
-        handler: 'StaleWhileRevalidate',
-      },
     ],
   });
 };

@@ -1,3 +1,7 @@
+/**
+ * Type reset
+ */
+
 ul,
 ol,
 p,
@@ -20,6 +24,9 @@ h6,
   break-inside: avoid;
 }
 
+/**
+ * Headings
+ */
 h1,
 .h1,
 h2,
@@ -70,10 +77,21 @@ h6,
   font-size: var(--font-size-base);
 }
 
-.outline {
-  color: var(--stroke-inner-color);
-  -webkit-text-stroke: var(--stroke-width) var(--stroke-color);
+/**
+ * Display
+ */
+.display-1 {
+  font-family: var(--display-font-family);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.825;
+  margin-block-end: -3%;
+  letter-spacing: 0;
 }
+
+/**
+ * Lists
+ */
 
 .list-unstyled {
   list-style: none;
@@ -84,11 +102,15 @@ h6,
   white-space: nowrap;
 }
 
+/**
+ * Code
+ */
 code {
   padding: 0.25em 0.33em;
   margin: -0.25em 0;
   font-weight: 600;
-  background-color: var(--grey-200);
+  background-color: oklch(from var(--background-color) 90% c h);
+  border-radius: .25em;
 }
 
 pre {
@@ -102,7 +124,7 @@ pre {
 
   &,
   [class*='language-'] {
-    font-size: 0.875em;
+    font-size: var(--font-size-xs);
     line-height: 2em;
   }
 }
@@ -113,22 +135,27 @@ hr {
   margin-block: var(--space);
 }
 
+/**
+ * Long form
+ */
 .long-form {
+  line-height: var(--line-height-lg);
+
   *:not(:where(h1, h2, h3, h4, h5, h6) + :where(h1, h2, h3, h4, h5, h6)) {
-    --headings-margin-block-start: calc(var(--space) * 3);
+    --headings-margin-block-start: calc(var(--space) * 2);
   }
 
   hr {
     margin-inline: 0;
 
-    @nest p + & {
+    p + & {
       margin-block-start: calc(var(--space) * 3);
     }
   }
 
   pre {
     margin-inline: calc((var(--grid-gap-x) / -1) - 2px);
-    border: 1px solid var(--grey);
+    border: 1px solid var(--foreground-color);
   }
 
   iframe {

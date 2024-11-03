@@ -1,5 +1,5 @@
 html {
-  font-size: var(--font-size-root);
+  font-size: var(--font-size-base);
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -14,10 +14,20 @@ html {
 }
 
 body {
-  font-size: 1rem; /* stylelint-disable-line */
-  font-family: var(--font-family);
-  color: var(--text-color);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  color: var(--foreground-color);
   background: var(--background-color);
+  background-image: linear-gradient(
+      180deg,
+      oklch(from var(--background-color) l c h / 0) 100dvh,
+      var(--background-color) 125dvh
+    ),
+    var(--background-image);
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: top top;
+  background-size: auto 125dvh;
   margin: 0;
   padding: 0;
   line-height: var(--line-height);
