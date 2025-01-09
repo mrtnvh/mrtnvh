@@ -39,16 +39,16 @@
     "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
-    "sanitize-html": "^2.13.1",
-    "typescript": "^5.6.3",
+    "sanitize-html": "^2.14.0",
+    "typescript": "^5.7.3",
     "url-join": "^5.0.0"
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/mdx": "^4.0.1",
+    "@astrojs/mdx": "^4.0.3",
     "@astrojs/sitemap": "^3.2.1",
-    "@playform/inline": "^0.1.0",
-    "@playwright/test": "^1.48.2",
+    "@playform/inline": "^0.1.1",
+    "@playwright/test": "^1.49.1",
     "@rollup/plugin-dsv": "^3.0.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
@@ -73,18 +73,18 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "fast-xml-parser": "^4.5.0",
+    "fast-xml-parser": "^4.5.1",
     "favicons": "^7.2.0",
     "fs-extra": "^11.2.0",
     "get-port": "^7.1.0",
     "globby": "^14.0.2",
     "htmlnano": "^2.1.1",
-    "husky": "^9.1.6",
-    "lighthouse": "^12.2.2",
-    "lint-staged": "^15.2.10",
-    "npm-run-all2": "^7.0.1",
+    "husky": "^9.1.7",
+    "lighthouse": "^12.3.0",
+    "lint-staged": "^15.3.0",
+    "npm-run-all2": "^7.0.2",
     "patch-package": "^8.0.0",
-    "playwright": "^1.48.2",
+    "playwright": "^1.49.1",
     "playwright-lighthouse": "^4.0.0",
     "postcss": "^8.4.49",
     "postcss-custom-selectors": "^8.0.4",
@@ -110,6 +110,6 @@
     "workbox-build": "^7.3.0"
   },
   "volta": {
-    "node": "22.11.0"
+    "node": "22.13.0"
   }
 }
