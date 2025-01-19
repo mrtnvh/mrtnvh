@@ -71,11 +71,11 @@ const linkProps = ({ url }: { url: string }) => {
 <style>
   article {
     container: article / inline-size;
-    border-block-start: 1px solid var(--foreground-color);
+    border-block-start: var(--stroke-width) solid var(--stroke-color);
     padding-block: calc(var(--grid-gap-y));
 
     &:last-child {
-      border-block-end: 1px solid var(--foreground-color);
+      border-block-end: var(--stroke-width) solid var(--stroke-color);
     }
   }
 

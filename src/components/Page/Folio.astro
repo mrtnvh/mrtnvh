@@ -1,9 +1,9 @@
 ---
-const { title, titleTag = 'h1' } = Astro.props;
+const { title, titleTag = 'h1', showTitle } = Astro.props;
 const Title = titleTag;
 ---
 
 <div class="container">
-  <Title class="sr-only">{title}</Title>
+  <Title class="display-1" class:list={{ 'sr-only': !showTitle }}>{title}</Title>
   <slot />
 </div>

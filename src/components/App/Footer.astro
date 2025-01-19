@@ -5,17 +5,11 @@ const yearNow = new Date().getFullYear();
 <footer>
   <div class="container">
     <div class="copyright">&copy; {yearNow} Maarten Van Hoof</div>
-    <div class="buildwith">
-      Built with
-      <a href="https://astro.build/" rel="noopener" target="_blank" class="external">Astro</a>. Hosted on
-      <a href="https://www.vercel.co/" rel="noopener" target="_blank" class="external">Vercel</a>
-      &
-      <a href="https://www.cloudinary.com/" rel="noopener" target="_blank" class="external">Cloudinary</a>.
-    </div>
     <div class="peace">
       <svg aria-label="Peace">
         <use href="#peace"></use>
       </svg>
+      <div class="ally">🏳️‍🌈</div>
     </div>
   </div>
 </footer>
@@ -35,10 +29,8 @@ const yearNow = new Date().getFullYear();
     text-align: center;
 
     @media (width >= 800px) {
-      display: grid;
-      grid-template-columns: 5fr 6.9fr 1fr;
-      gap: 0 var(--grid-gap-x);
-      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -55,5 +47,9 @@ const yearNow = new Date().getFullYear();
     @media (width >= 800px) {
       margin-top: 0;
     }
+  }
+
+  .ally {
+    font-size: var(--font-size-base);
   }
 </style>

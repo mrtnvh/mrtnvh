@@ -42,7 +42,7 @@ h6,
   margin-block: var(--headings-margin-block-start) var(--headings-margin-block-end);
   font-family: var(--headings-font-family);
   font-weight: var(--headings-font-weight);
-  line-height: var(--line-height-sm);
+  line-height: var(--line-height-xs);
   letter-spacing: var(--headings-letter-spacing);
   text-wrap: balance;
 }
@@ -85,7 +85,6 @@ h6,
   text-transform: uppercase;
   font-weight: 700;
   line-height: 0.825;
-  margin-block-end: -3%;
   letter-spacing: 0;
 }
 
@@ -110,6 +109,7 @@ code {
   margin: -0.25em 0;
   font-weight: 600;
   background-color: oklch(from var(--background-color) 90% c h);
+  color: oklch(from var(--foreground-color) 10% c h);
   border-radius: .25em;
 }
 
@@ -124,13 +124,13 @@ pre {
 
   &,
   [class*='language-'] {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     line-height: 2em;
   }
 }
 
 hr {
-  border: 0 solid var(--dark);
+  border: 0 solid var(--stroke-color);
   border-top-width: 1px;
   margin-block: var(--space);
 }
@@ -140,22 +140,26 @@ hr {
  */
 .long-form {
   line-height: var(--line-height-lg);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
-  *:not(:where(h1, h2, h3, h4, h5, h6) + :where(h1, h2, h3, h4, h5, h6)) {
-    --headings-margin-block-start: calc(var(--space) * 2);
+  :is(h1, h2, h3, h4, h5, h6) {
+    margin-block-start: calc(var(--space) * 2);
+
+    ~ hr {
+      margin-block-start: calc(var(--space) * 2);
+    }
   }
 
-  hr {
-    margin-inline: 0;
-
-    p + & {
-      margin-block-start: calc(var(--space) * 3);
-    }
+  * {
+    margin-block:  0;
   }
 
   pre {
     margin-inline: calc((var(--grid-gap-x) / -1) - 2px);
-    border: 1px solid var(--foreground-color);
+    border: var(--stroke-width) solid var(--stroke-color);
   }
 
   iframe {
@@ -163,7 +167,7 @@ hr {
   }
 
   figure {
-    margin-block: var(--grid-gap-y);
+    /* margin-block: var(--grid-gap-y); */
 
     iframe {
       margin-block: 0;

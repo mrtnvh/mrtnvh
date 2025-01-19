@@ -66,11 +66,11 @@ const linkProps = ({ url }: { url: string | undefined }) => {
         </div>
         <div class="long-form">
           <div
-            class="description margin-block-trim"
+            class="description margin-block-trim long-form"
             set:html={entry.data.description}
             transition:name={`${viewTransitionBaseId}-description`}
           />
-          <div class="content" transition:name={`${viewTransitionBaseId}-content`}>
+          <div class="content long-form" transition:name={`${viewTransitionBaseId}-content`}>
             <Content />
           </div>
         </div>

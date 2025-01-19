@@ -2,8 +2,8 @@
   /**
   * Colors
   */
-  --dark: oklch(0% 0 1);
-  --light: oklch(100% 0 0);
+  --dark: oklch(0% 0 1deg);
+  --light: oklch(100% 0 0deg);
 
   /* Light Theme */
   --foreground-color: var(--dark);
@@ -54,14 +54,14 @@
   --font-size-4xl: var(--step-5);
   --font-size-5xl: var(--step-6);
   --font-size-7xl: var(--step-7);
-  --font-family-base: 'Space Grotesk Variable', Helvetica, system-ui;
+  --font-family-base: 'Space Grotesk Variable', helvetica, system-ui;
   --font-weight-normal: 400;
 
   /* Line height */
   --line-height-lg: 1.953;
   --line-height: 1.563;
   --line-height-sm: 1.25;
-  --line-height-xs: 1;
+  --line-height-xs: 1.125;
   --line-height-xxs: 0.8;
 
   /* Headings */
@@ -73,7 +73,7 @@
   --headings-margin-block-end: var(--space);
 
   /* Display */
-  --display-font-family: Humane, 'Space Grotesk Variable', Helvetica, system-ui;
+  --display-font-family: humane, 'Space Grotesk Variable', helvetica, system-ui;
 
   /* Code */
   --mono-font-family: 'Monospace Argon', 'Courier New', monospace;
@@ -83,7 +83,7 @@
   */
   --stroke-inner-color: transparent;
   --stroke-width: 1px;
-  --stroke-color: var(--foreground-color);
+  --stroke-color: oklch(from var(--light) l c h / 0.3);
 
   /**
   * Animations
@@ -101,15 +101,15 @@
   /**
   * Table
   */
-  --table-border-color: oklch(from var(--light) l c h / 30%);
+  --table-border-color: var(--stroke-color);
+  --table-border-width: 1px;
 
   /**
   * Detail page
   */
   --detail-title-size: clamp(3.2475rem, -0.6533rem + 19.5042vw, 14.95rem);
-}
+  --detail-title-font-family: var(--display-font-family);
 
-:root {
   /* Dark Theme */
   @media (prefers-color-scheme: dark) {
     --foreground-color: var(--light);

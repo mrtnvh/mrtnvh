@@ -24,9 +24,8 @@ body {
       var(--background-color) 125dvh
     ),
     var(--background-image);
-
   background-repeat: no-repeat, no-repeat;
-  background-position: top top;
+  background-position: 0 0;
   background-size: auto 125dvh;
   margin: 0;
   padding: 0;
@@ -53,7 +52,7 @@ img {
 figcaption {
   text-align: center;
   font-style: italic;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   color: var(--text-color-light);
 }
 
