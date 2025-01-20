@@ -110,7 +110,7 @@ code {
   font-weight: 600;
   background-color: oklch(from var(--background-color) 90% c h);
   color: oklch(from var(--foreground-color) 10% c h);
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 pre {
@@ -154,7 +154,7 @@ hr {
   }
 
   * {
-    margin-block:  0;
+    margin-block: 0;
   }
 
   pre {

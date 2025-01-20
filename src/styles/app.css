@@ -1,4 +1,4 @@
-@import "@fontsource/monaspace-argon" layer(fonts);
+@import '@fontsource/monaspace-argon' layer(fonts);
 @import '@fontsource-variable/space-grotesk' layer(fonts);
 @import './_fonts.css' layer(fonts);
 @import './_variables.css' layer(variables);

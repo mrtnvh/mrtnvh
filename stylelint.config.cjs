@@ -17,6 +17,7 @@ module.exports = {
       },
     ],
     'custom-property-pattern': null,
+    'scss/at-import-no-partial-leading-underscore': null,
   },
   overrides: [
     {
