@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import { Head } from 'astro-capo';
 import spaceGroteskVariableWoff2 from '@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2?url';
 
@@ -40,6 +40,7 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#000000" />
     <link rel="preload" as="font" type="font/woff2" href={spaceGroteskVariableWoff2} crossorigin="anonymous" />
+    <ClientRouter />
   </Head>
 
   <>
@@ -66,8 +67,6 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
       });
     }
   </script>
-
-  <ViewTransitions />
 
   <body>
     <div class="svg-sprite">
