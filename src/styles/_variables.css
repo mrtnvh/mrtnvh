@@ -39,6 +39,9 @@
   --step-6: clamp(2.0273rem, 1.0341rem + 4.9658vw, 5.0068rem);
   --step-7: clamp(2.2807rem, 0.9548rem + 6.6297vw, 6.2585rem);
 
+  /* Max size */
+  --layout-max-inline-size: 90rem;
+
   /**
   * Fonts
   */
@@ -83,7 +86,7 @@
   */
   --stroke-inner-color: transparent;
   --stroke-width: 1px;
-  --stroke-color: oklch(from var(--light) l c h / 0.3);
+  --stroke-color: oklch(from var(--foreground-color) l c h / 0.25);
 
   /**
   * Animations

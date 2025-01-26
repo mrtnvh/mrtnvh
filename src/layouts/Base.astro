@@ -105,6 +105,8 @@ const { content, preloads, frontmatter } = Astro.props as BaseLayoutProps;
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
+        max-inline-size: var(--layout-max-inline-size);
+        margin-inline: auto;
       }
 
       main {

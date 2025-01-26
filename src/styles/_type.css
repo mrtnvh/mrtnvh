@@ -139,7 +139,6 @@ hr {
  * Long form
  */
 .long-form {
-  line-height: var(--line-height-lg);
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
