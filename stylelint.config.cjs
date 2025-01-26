@@ -9,6 +9,7 @@ module.exports = {
       syntaxExtensions: ['sass'],
       ignoreAtrules: ['else', 'container', 'nest'],
       ignoreProperties: ['container', 'container-type', 'container-name', 'text-wrap'],
+      ignoreValue: 'clamp',
     },
     'selector-pseudo-class-no-unknown': [
       true,
