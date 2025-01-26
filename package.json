@@ -112,8 +112,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.4",
-    "utility-types": "^3.11.0",
-    "workbox-build": "^7.3.0"
+    "utility-types": "^3.11.0"
   },
   "volta": {
     "node": "22.13.0"

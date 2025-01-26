@@ -5,18 +5,7 @@ import { extname, basename } from 'path';
 
 import { BUILD_DIRECTORY, replaceFilesContent } from './_utils.mjs';
 
-const FILES_TO_EXCLUDE = [
-  'robots.txt',
-  'sitemap',
-  '.html',
-  '.css',
-  '.js',
-  '.woff',
-  '.woff2',
-  '/_astro/',
-  'stats.js',
-  'workbox',
-];
+const FILES_TO_EXCLUDE = ['robots.txt', 'sitemap', '.html', '.css', '.js', '.woff', '.woff2', '/_astro/', 'stats.js'];
 
 const FILES_TO_INCLUDE = [];
 
