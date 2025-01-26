@@ -7,8 +7,8 @@ export default defineConfig({
     baseURL: process.env.CI_BASEURL || `http://localhost:${port}`,
   },
   ...(!process.env.CI && {
-    workers: 1,
-    retries: 2,
+    workers: 5,
+    retries: 1,
   }),
   projects: [
     {

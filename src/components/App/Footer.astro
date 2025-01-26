@@ -1,10 +1,13 @@
 ---
+import Social from './Social.astro';
+
 const yearNow = new Date().getFullYear();
 ---
 
 <footer>
   <div class="container">
     <div class="copyright">&copy; {yearNow} Maarten Van Hoof</div>
+    <Social />
     <div class="peace">
       <svg aria-label="Peace">
         <use href="#peace"></use>
