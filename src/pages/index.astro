@@ -37,6 +37,10 @@ import FitToWidth from '../components/FitToWidth.astro';
     gap: calc(var(--space) / 2);
     justify-content: space-between;
 
+    > *:not(.bullet) {
+      white-space: nowrap;
+    }
+
     @container page-home (width < 650px) {
       flex-direction: column;
     }
