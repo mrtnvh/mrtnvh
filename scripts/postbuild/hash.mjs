@@ -58,7 +58,7 @@ const renameFiles = (hashedAndOriginalFilePaths) =>
   Promise.all(hashedAndOriginalFilePaths.map(({ original, hashed }) => fs.move(original, hashed, { overwrite: true })));
 
 const replaceReferences = (hashedAndOriginalFilePaths) =>
-  replaceFilesContent('**/*.!(png|jpg|ico)', async (content) =>
+  replaceFilesContent('**/!(*.png|*.jpg|*.ico|*.woff|*.woff2|!(*.*))', async (content) =>
     hashedAndOriginalFilePaths.reduce((acc, { original, hashed }) => {
       const originalBasename = basename(original);
       const hashedBasename = basename(hashed);
