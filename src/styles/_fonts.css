@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Humane;
+  src: url('/fonts/humane/Humane-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

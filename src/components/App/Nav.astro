@@ -15,11 +15,6 @@ const currentPage = (link: NavLink) => {
 
 const links: NavLink[] = [
   {
-    key: 'home',
-    href: '/',
-    title: 'Topics',
-  },
-  {
     key: 'articles',
     href: '/articles',
     title: 'Articles',
@@ -49,28 +44,23 @@ const links: NavLink[] = [
 
 <style>
   .nav {
+    font-size: var(--font-size-sm);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: calc(var(--grid-gap-x) / 2);
+    justify-content: flex-end;
     position: relative;
 
     a {
-      font-family: var(--headings-font-family);
-      font-weight: var(--headings-font-weight);
       white-space: nowrap;
-      text-decoration: none;
       padding: 0 0.33em;
 
-      &[data-page-current],
+      &[data-page-current='true'],
       &:focus,
       &:hover {
-        background-color: var(--text-color);
+        background-color: var(--foreground-color);
         color: var(--background-color);
       }
-    }
-
-    @media (width >= 800px) {
-      gap: calc(var(--grid-gap-x) / 2);
     }
   }
 </style>

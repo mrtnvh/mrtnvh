@@ -85,16 +85,16 @@ const linkProps = () => {
   }
 
   .link {
-    --link-color: var(--text-color);
-    --link-hover-color: var(--text-color);
+    --link-color: var(--foreground-color);
+    --link-hover-color: var(--foreground-color);
     --link-text-decoration: none;
 
     display: block;
 
     &:hover,
     &:focus {
-      --stroke-inner-color: var(--text-color);
-      --stroke-color: var(--text-color);
+      --stroke-inner-color: var(--foreground-color);
+      --stroke-color: var(--foreground-color);
       --link-hover-background-color: transparent;
       --link-hover-color: inherit;
     }
@@ -150,7 +150,7 @@ const linkProps = () => {
     gap: calc(var(--grid-gap-x) / 2);
     justify-content: center;
     font-size: var(--font-size-sm);
-    color: var(--grey);
+    color: var(--foreground-color);
 
     @media (width >= 800px) {
       justify-content: start;

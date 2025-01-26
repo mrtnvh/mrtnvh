@@ -1,7 +1,6 @@
 import sitemap from './sitemap.mjs';
 import favicons from './favicons.mjs';
 import hash from './hash.mjs';
-import workbox from './workbox.mjs';
 import html from './html.mjs';
 
 (async () => {
@@ -12,10 +11,6 @@ import html from './html.mjs';
   console.log('[FAVICONS]', 'Start');
   await favicons();
   console.log('[FAVICONS]', 'Completed');
-
-  console.log('[WORKBOX]', 'Start');
-  await workbox();
-  console.log('[WORKBOX]', 'Completed');
 
   console.log('[HTML]', 'Start');
   await html();

@@ -9,6 +9,8 @@
 *.txt
 *.editorconfig
 *.patch
+*.gitignore
+*.woff2
 
 pre-commit
 .prettierignore

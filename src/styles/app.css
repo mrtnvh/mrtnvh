@@ -1,5 +1,6 @@
-/* stylelint-disable */
-
+@import '@fontsource/monaspace-argon' layer(fonts);
+@import '@fontsource-variable/space-grotesk' layer(fonts);
+@import './_fonts.css' layer(fonts);
 @import './_variables.css' layer(variables);
 @import './_root.css' layer(root);
 @import './_type.css' layer(type);
@@ -12,4 +13,3 @@
 @import './_utils.css' layer(utils);
 
 @import 'prism-themes/themes/prism-one-dark.css' layer(code.prism);
-@import './code.css' layer(code.custom);

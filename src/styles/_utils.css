@@ -10,7 +10,8 @@
 }
 
 .full-width {
-  width: 100vw;
+  inline-size: 100vw;
+  max-inline-size: var(--layout-max-inline-size);
   position: relative;
   left: 50%;
   right: 50%;

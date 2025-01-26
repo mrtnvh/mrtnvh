@@ -9,6 +9,7 @@ module.exports = {
       syntaxExtensions: ['sass'],
       ignoreAtrules: ['else', 'container', 'nest'],
       ignoreProperties: ['container', 'container-type', 'container-name', 'text-wrap'],
+      ignoreValue: 'clamp',
     },
     'selector-pseudo-class-no-unknown': [
       true,
@@ -17,6 +18,7 @@ module.exports = {
       },
     ],
     'custom-property-pattern': null,
+    'scss/at-import-no-partial-leading-underscore': null,
   },
   overrides: [
     {

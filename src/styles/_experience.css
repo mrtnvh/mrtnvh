@@ -1,7 +1,6 @@
 .experience {
   display: flex;
   flex-direction: column;
-  gap: var(--space);
   container: experience / inline-size;
 }
 
@@ -9,6 +8,8 @@
   display: flex;
   flex-direction: column;
   gap: calc(var(--space) / 1.5);
+  border-block-start: var(--stroke-width) solid var(--stroke-color);
+  padding-block: var(--grid-gap-y);
 }
 
 @container experience (min-inline-size: 400px) {

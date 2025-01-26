@@ -2,24 +2,14 @@
   /**
   * Colors
   */
-  --dark: hsl(24deg, 9%, 10%);
-  --grey: hsl(25deg, 5%, 42%);
-  --grey-300: hsl(24deg, 9%, 85%);
-  --grey-200: hsl(24deg, 9%, 90%);
-  --grey-100: hsl(24deg, 9%, 95%);
-  --light: hsl(60deg, 9%, 97%);
-  --primary: hsl(82deg, 78%, 55%);
-  --primary-dark: hsl(85deg, 78%, 27%);
-  --github: hsla(134deg, 62%, 51%, 1);
-  --mastodon: rgb(48, 136, 212);
-  --linkedin: hsla(201deg, 100%, 36%, 1);
-  --youtube: hsl(0deg, 100%, 50%);
-  --isaac: hsl(197deg, 100%, 50%);
-  --text-color: var(--dark);
-  --background-color: var(--light);
+  --dark: oklch(0% 0 1deg);
+  --light: oklch(100% 0 0deg);
 
   /* Light Theme */
-  --astro-code-color-text: var(--text-color);
+  --foreground-color: var(--dark);
+  --background-color: var(--light);
+  --background-image: url('https://res.cloudinary.com/mrtnvh/image/upload/f_auto,q_auto/e_unsharp_mask:500/e_brightness:-70/e_negate/t_noise/mrtnvh.com/qkyp7kk442gn5xvn7w0h.jpg');
+  --astro-code-color-text: var(--foreground-color);
   --astro-code-color-background: var(--background-color);
   --astro-code-token-constant: rgb(5, 80, 174);
   --astro-code-token-string: rgb(10, 48, 105);
@@ -32,28 +22,33 @@
   --astro-code-token-link: rgb(10, 48, 105);
 
   /**
-  * Fonts
+  * Dimensions
   */
 
   /* Steps */
 
-  /* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1280,20,1.25,9,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --step--2: clamp(0.61rem, calc(0.56rem + 0.22vw), 0.72rem);
-  --step--1: clamp(0.73rem, calc(0.66rem + 0.33vw), 0.9rem);
-  --step-0: clamp(0.88rem, calc(0.78rem + 0.48vw), 1.13rem);
-  --step-1: clamp(1.05rem, calc(0.91rem + 0.68vw), 1.41rem);
-  --step-2: clamp(1.26rem, calc(1.07rem + 0.95vw), 1.76rem);
-  --step-3: clamp(1.51rem, calc(1.25rem + 1.31vw), 2.2rem);
-  --step-4: clamp(1.81rem, calc(1.46rem + 1.78vw), 2.75rem);
-  --step-5: clamp(2.18rem, calc(1.7rem + 2.4vw), 3.43rem);
-  --step-6: clamp(2.61rem, calc(1.97rem + 3.21vw), 4.29rem);
-  --step-7: clamp(3.14rem, calc(2.28rem + 4.27vw), 5.36rem);
-  --step-8: clamp(3.76rem, calc(2.64rem + 5.63vw), 6.71rem);
-  --step-9: clamp(4.51rem, calc(3.03rem + 7.4vw), 8.38rem);
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1280,21,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.7901rem, 0.7735rem + 0.0831vw, 0.84rem);
+  --step--1: clamp(0.8889rem, 0.8352rem + 0.2685vw, 1.05rem);
+  --step-0: clamp(1rem, 0.8958rem + 0.5208vw, 1.3125rem);
+  --step-1: clamp(1.125rem, 0.9531rem + 0.8594vw, 1.6406rem);
+  --step-2: clamp(1.2656rem, 1.0039rem + 1.3086vw, 2.0508rem);
+  --step-3: clamp(1.4238rem, 1.0439rem + 1.8994vw, 2.5635rem);
+  --step-4: clamp(1.6018rem, 1.0676rem + 2.6709vw, 3.2043rem);
+  --step-5: clamp(1.802rem, 1.0676rem + 3.6723vw, 4.0054rem);
+  --step-6: clamp(2.0273rem, 1.0341rem + 4.9658vw, 5.0068rem);
+  --step-7: clamp(2.2807rem, 0.9548rem + 6.6297vw, 6.2585rem);
+
+  /* Max size */
+  --layout-max-inline-size: 90rem;
+
+  /**
+  * Fonts
+  */
 
   /* Font sizes */
-  --font-size-root: clamp(14px, 2vw, 18px);
-  --font-size-sm: 0.8rem;
+  --font-size-xs: var(--step--2);
+  --font-size-sm: var(--step--1);
   --font-size-base: var(--step-0);
   --font-size-lg: var(--step-1);
   --font-size-xl: var(--step-2);
@@ -61,38 +56,37 @@
   --font-size-3xl: var(--step-4);
   --font-size-4xl: var(--step-5);
   --font-size-5xl: var(--step-6);
-  --font-size-6xl: var(--step-7);
-  --font-size-7xl: var(--step-8);
-  --font-size-8xl: var(--step-9);
-  --font-family: 'Inter', 'Helvetica Now Text', system-ui;
+  --font-size-7xl: var(--step-7);
+  --font-family-base: 'Space Grotesk Variable', helvetica, system-ui;
   --font-weight-normal: 400;
+
+  /* Line height */
   --line-height-lg: 1.953;
   --line-height: 1.563;
   --line-height-sm: 1.25;
-  --line-height-xs: 1;
+  --line-height-xs: 1.125;
   --line-height-xxs: 0.8;
-  --headings-font-family: 'Inter Tight', 'Helvetica Now Display', system-ui;
-  --headings-color: var(--text-color);
-  --headings-font-weight: 800;
-  --headings-letter-spacing: 0;
+
+  /* Headings */
+  --headings-font-family: var(--font-family-base);
+  --headings-color: var(--foreground-color);
+  --headings-font-weight: 700;
+  --headings-letter-spacing: -0.05em;
   --headings-margin-block-start: 0;
   --headings-margin-block-end: var(--space);
-  --mono-font-family: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* Display */
+  --display-font-family: humane, 'Space Grotesk Variable', helvetica, system-ui;
+
+  /* Code */
+  --mono-font-family: 'Monospace Argon', 'Courier New', monospace;
 
   /**
   * Strokes
   */
   --stroke-inner-color: transparent;
   --stroke-width: 1px;
-  --stroke-color: var(--text-color);
-
-  /**
-  * Media queries
-  */
-  --screen-small: 480px;
-  --screen-medium: 764px;
-  --screen-large: 1200px;
-  --screen-extra-large: 1440px;
+  --stroke-color: oklch(from var(--foreground-color) l c h / 0.25);
 
   /**
   * Animations
@@ -108,50 +102,22 @@
   --grid-gap-y: calc(var(--space) * 2);
 
   /**
-  * Bottom navigation
-  */
-  --bottom-navigation-zindex: 100;
-
-  /**
   * Table
   */
-  --table-border-color: var(--grey-300);
-
-  /**
-  * Folio
-  */
-  --folio-title-size: var(--font-size-lg);
-  --folio-title-weight: var(--headings-font-weight);
-  --folio-title-line-height: var(--line-height-xs);
-  --folio-title-margin: 0;
+  --table-border-color: var(--stroke-color);
+  --table-border-width: 1px;
 
   /**
   * Detail page
   */
-  --detail-title-size: var(--font-size-4xl);
-  --detail-title-line-height: calc(1.125em - clamp(0em, 1cqi, 0.25em));
+  --detail-title-size: clamp(3.2475rem, -0.6533rem + 19.5042vw, 14.95rem);
+  --detail-title-font-family: var(--display-font-family);
 
-  /**
-   * Text shadow
-   */
-  --text-shadow-outline-color: var(--background-color);
-  --text-shadow-outline-width: 1.5px;
-  --text-shadow-outline: calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * -1) 0
-      var(--background-color),
-    0 calc(var(--text-shadow-outline-width) * -1) 0 var(--background-color), 1px -1px 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * 1) 0 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * 1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
-    0 calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * -1) calc(var(--text-shadow-outline-width) * 1) 0 var(--background-color),
-    calc(var(--text-shadow-outline-width) * -1) 0 0 var(--background-color);
-
+  /* Dark Theme */
   @media (prefers-color-scheme: dark) {
-    --dark: rgb(231, 229, 228);
-    --light: rgb(28, 25, 23);
-    --grey: rgb(168, 162, 158);
-    --grey-100: hsl(0deg, 0%, 12.5%);
-    --grey-200: hsl(0deg, 0%, 15%);
-    --grey-300: hsl(0deg, 0%, 25%);
+    --foreground-color: var(--light);
+    --background-color: var(--dark);
+    --background-image: url('https://res.cloudinary.com/mrtnvh/image/upload/f_auto,q_auto/e_unsharp_mask:500/e_brightness:-70/t_noise/mrtnvh.com/qkyp7kk442gn5xvn7w0h.jpg');
     --astro-code-token-constant: rgb(121, 192, 255);
     --astro-code-token-string: rgb(165, 214, 255);
     --astro-code-token-comment: rgb(139, 148, 158);
@@ -161,14 +127,5 @@
     --astro-code-token-string-expression: rgb(165, 214, 255);
     --astro-code-token-punctuation: rgb(33, 33, 33);
     --astro-code-token-link: rgb(165, 214, 255);
-  }
-
-  @media (width >= 800px) {
-    --folio-title-size: var(--font-size-6xl);
-    --folio-title-margin: calc(var(--grid-gap-y) / 2) 0 calc(var(--grid-gap-y)) 0;
-  }
-
-  @media (width >= 800px) {
-    --detail-title-size: var(--font-size-5xl);
   }
 }

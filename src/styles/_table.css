@@ -15,7 +15,7 @@ th,
 td {
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid var(--table-border-color);
+  border-bottom: var(--table-border-width) solid var(--table-border-color);
   padding: 1rem 0;
 
   *:last-child {
@@ -35,7 +35,7 @@ td {
   }
 
   tr:first-child & {
-    border-top: 1px solid var(--table-border-color);
+    border-top: var(--table-border-width) solid var(--table-border-color);
 
     .table-borderless & {
       border-top: 0;

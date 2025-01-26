@@ -36,61 +36,58 @@ const linkProps = ({ url }: { url: string }) => {
 ---
 
 <article>
-  <div class="container">
-    <h2 class="title">
-      <a {...linkProps({ url: item.externalUrl || item.url })} transition:name={`${viewTransitionBaseId}-title`}>
-        {item.title}
-      </a>
-    </h2>
-    <div class="meta" transition:name={`${viewTransitionBaseId}-meta`}>
-      <div class="date">
-        Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
-      </div>
-      <div class="original-publication">
-        {
-          item.externalUrl ? (
-            <>
-              Originally published on{' '}
-              <a {...linkProps({ url: item.externalUrl || item.url })}>{item.originalPublication}</a>
-            </>
-          ) : (
-            item.originalPublication
-          )
-        }
-      </div>
+  <h2 class="title display-1">
+    <a {...linkProps({ url: item.externalUrl || item.url })} transition:name={`${viewTransitionBaseId}-title`}>
+      {item.title}
+    </a>
+  </h2>
+  <div class="meta" transition:name={`${viewTransitionBaseId}-meta`}>
+    <div class="date">
+      Published on <time datetime={date.toJSON()}>{date.toLocaleDateString('en', { dateStyle: 'full' })}</time>
     </div>
-
-    <div
-      class="description margin-block-trim"
-      set:html={item.description}
-      transition:name={`${viewTransitionBaseId}-description`}
-    />
+    <div class="original-publication">
+      {
+        item.externalUrl ? (
+          <>
+            Originally published on{' '}
+            <a {...linkProps({ url: item.externalUrl || item.url })}>{item.originalPublication}</a>
+          </>
+        ) : (
+          item.originalPublication
+        )
+      }
+    </div>
   </div>
+
+  <div
+    class="description margin-block-trim"
+    set:html={item.description}
+    transition:name={`${viewTransitionBaseId}-description`}
+  />
 </article>
 
 <style>
   article {
     container: article / inline-size;
-    padding-block: var(--grid-gap-y);
-
-    &:nth-child(odd) {
-      background-color: var(--grey-100);
-    }
-  }
-
-  .container {
+    border-block-start: var(--stroke-width) solid var(--stroke-color);
+    padding-block: calc(var(--grid-gap-y));
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    &:last-child {
+      border-block-end: var(--stroke-width) solid var(--stroke-color);
+    }
   }
 
   .title {
     margin: 0;
-    font-size: var(--font-size-3xl);
-    line-height: var(--line-height-xs);
+    font-size: var(--font-size-7xl);
+    line-height: calc(var(--line-height-xxs) * 1.2);
 
     a {
-      padding-block: calc(var(--space) / 5);
+      text-decoration-thickness: 0.05em;
+      padding-block: calc(var(--space) / 2.25) 0;
       display: inline-block;
 
       &:where(:hover, :focus, :active) {
@@ -104,17 +101,20 @@ const linkProps = ({ url }: { url: string }) => {
   }
 
   .description {
-    max-width: calc(var(--space) * 25);
+    max-inline-size: 80ch;
 
     @supports (text-wrap: balance) {
-      max-width: none;
       text-wrap: balance;
     }
   }
 
   .meta {
-    font-size: var(--font-size-sm);
-    color: var(--grey);
+    font-size: var(--font-size-xs);
+    font-weight: 450;
+    letter-spacing: 0.05em;
+    color: var(--foreground-color);
+    text-transform: uppercase;
+    white-space: nowrap;
 
     @container article (min-width: 45rem) {
       display: flex;

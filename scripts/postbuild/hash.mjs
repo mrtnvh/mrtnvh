@@ -5,18 +5,7 @@ import { extname, basename } from 'path';
 
 import { BUILD_DIRECTORY, replaceFilesContent } from './_utils.mjs';
 
-const FILES_TO_EXCLUDE = [
-  'robots.txt',
-  'sitemap',
-  '.html',
-  '.css',
-  '.js',
-  '.woff',
-  '.woff2',
-  '/_astro/',
-  'stats.js',
-  'workbox',
-];
+const FILES_TO_EXCLUDE = ['robots.txt', 'sitemap', '.html', '.css', '.js', '.woff', '.woff2', '/_astro/', 'stats.js'];
 
 const FILES_TO_INCLUDE = [];
 
@@ -58,7 +47,7 @@ const renameFiles = (hashedAndOriginalFilePaths) =>
   Promise.all(hashedAndOriginalFilePaths.map(({ original, hashed }) => fs.move(original, hashed, { overwrite: true })));
 
 const replaceReferences = (hashedAndOriginalFilePaths) =>
-  replaceFilesContent('**/*.!(png|jpg|ico)', async (content) =>
+  replaceFilesContent('**/!(*.png|*.jpg|*.ico|*.woff|*.woff2|!(*.*))', async (content) =>
     hashedAndOriginalFilePaths.reduce((acc, { original, hashed }) => {
       const originalBasename = basename(original);
       const hashedBasename = basename(hashed);
