@@ -114,7 +114,11 @@ const linkProps = ({ url }: { url: string | undefined }) => {
     gap: 0 var(--grid-gap-x);
     flex-wrap: wrap;
     text-transform: uppercase;
-    justify-content: space-between;
+    justify-content: center;
     inline-size: 100%;
+
+    @media (width > 450px) {
+      justify-content: space-between;
+    }
   }
 </style>
