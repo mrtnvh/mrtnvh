@@ -30,6 +30,7 @@ const yearNow = new Date().getFullYear();
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: calc(var(--grid-gap-x) / 2);
 
     @media (width >= 800px) {
       flex-direction: row;
@@ -41,14 +42,11 @@ const yearNow = new Date().getFullYear();
     justify-content: flex-end;
     display: flex;
     align-items: center;
-    margin-block-start: calc(var(--grid-gap-y) / 4);
+    gap: var(--grid-gap-x);
 
     svg {
       height: 1rem;
-    }
-
-    @media (width >= 800px) {
-      margin-top: 0;
+      inline-size: 1rem;
     }
   }
 
