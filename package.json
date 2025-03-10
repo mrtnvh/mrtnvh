@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "astro": "^5.4.1",
+    "astro": "^5.4.2",
     "astro-capo": "^0.0.1",
     "clsx": "^2.1.1",
     "country-list": "^2.3.0",
@@ -62,7 +62,7 @@
     "@types/url-join": "^4.0.3",
     "@web/rollup-plugin-html": "^2.3.0",
     "@wemake-services/stylelint-config-scss": "^4.0.1",
-    "astro-purgecss": "^5.2.1",
+    "astro-purgecss": "^5.2.2",
     "astro-remote": "^0.3.3",
     "autoprefixer": "^10.4.20",
     "conventional-changelog-conventionalcommits": "^7.0.2",
