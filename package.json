@@ -59,7 +59,7 @@
     "@types/country-list": "^2.1.4",
     "@types/lodash-es": "^4.17.12",
     "@types/sanitize-html": "^2.15.0",
-    "@types/url-join": "^4.0.3",
+    "@types/url-join": "^5.0.0",
     "@web/rollup-plugin-html": "^2.3.0",
     "@wemake-services/stylelint-config-scss": "^4.0.1",
     "astro-purgecss": "^5.2.2",
