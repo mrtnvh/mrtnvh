@@ -98,7 +98,7 @@
     "posthtml-remove-attributes": "^1.0.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-sh": "^0.16.1",
+    "prettier-plugin-sh": "^0.17.2",
     "purgecss": "^7.0.2",
     "rehype-rewrite": "^4.0.2",
     "semantic-release": "24.2.3",
