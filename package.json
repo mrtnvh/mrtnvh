@@ -45,8 +45,8 @@
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/mdx": "^4.2.4",
-    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/sitemap": "^3.3.1",
     "@playform/inline": "^0.1.2",
     "@playwright/test": "^1.52.0",
     "@rollup/plugin-dsv": "^3.0.5",
@@ -73,14 +73,14 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.6",
-    "fast-xml-parser": "^5.2.0",
+    "fast-xml-parser": "^5.2.1",
     "favicons": "^7.2.0",
     "fs-extra": "^11.3.0",
     "get-port": "^7.1.0",
     "globby": "^14.1.0",
     "htmlnano": "^2.1.1",
     "husky": "^9.1.7",
-    "lighthouse": "^12.5.1",
+    "lighthouse": "^12.6.0",
     "lint-staged": "^15.5.1",
     "npm-run-all2": "^7.0.2",
     "patch-package": "^8.0.0",
@@ -110,6 +110,6 @@
     "workbox-build": "^7.3.0"
   },
   "volta": {
-    "node": "22.14.0"
+    "node": "22.15.0"
   }
 }
