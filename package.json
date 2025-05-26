@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/mdx": "^4.3.0",
     "@astrojs/sitemap": "^3.4.0",
     "@playform/inline": "^0.1.2",
     "@playwright/test": "^1.52.0",
@@ -82,7 +82,7 @@
     "husky": "^9.1.7",
     "lighthouse": "^12.6.0",
     "lint-staged": "^16.0.0",
-    "npm-run-all2": "^8.0.2",
+    "npm-run-all2": "^8.0.4",
     "patch-package": "^8.0.0",
     "playwright": "^1.52.0",
     "playwright-lighthouse": "^4.0.0",
@@ -110,6 +110,6 @@
     "workbox-build": "^7.3.0"
   },
   "volta": {
-    "node": "22.15.1"
+    "node": "22.16.0"
   }
 }
