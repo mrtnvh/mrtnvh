@@ -16,6 +16,8 @@ const config = {
           '# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines.',
       },
     ],
+    // https://github.com/semantic-release/npm
+    '@semantic-release/npm',
     // https://github.com/semantic-release/git
     [
       '@semantic-release/git',
